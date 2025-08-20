@@ -1,0 +1,337 @@
+from __future__ import annotations
+from enum import Enum
+import re
+from typing import Dict, List, Optional, Sequence
+
+from pydantic import BaseModel, ConfigDict, Field
+
+
+
+class FrozenBaseModel(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+
+class ClauseDefinition(FrozenBaseModel):
+    """Definition of a clause expected in a given contract type template."""
+
+    key: str = Field(..., description="Stable key identifier for the clause (e.g., 'termination').")
+    title: str = Field(..., description="Human-readable clause title (e.g., 'Termination').")
+    description: Optional[str] = Field(
+        default=None,
+        description="Optional explanation of the clause's scope and intent.",
+    )
+    # required: bool = Field(
+    #     default=True,
+    #     description="Whether this clause is required for this contract type.",
+    # )
+
+class EnumOption(FrozenBaseModel):
+    """One permissible value for an enum, identified by a stable code and a description."""
+
+    code: str = Field(
+        ..., description="Stable enum code to be used in outputs (e.g., 'NY', 'USD')."
+    )
+    description: Optional[str] = Field(
+        default=None,
+        description="Human-readable description or definition for this code.",
+    )
+
+
+class EnumDefinition(FrozenBaseModel):
+    """Reusable enumeration definition that can be referenced by datapoints via 'enum_key'."""
+
+    key: str = Field(
+        ..., description="Stable key for this enum list (e.g., 'governing_law_codes')."
+    )
+    title: Optional[str] = Field(
+        default=None,
+        description="Optional title for this enum list.",
+    )
+    # description: Optional[str] = Field(
+    #     default=None,
+    #     description="Optional description of the enum's intended use.",
+    # )
+    options: Sequence[EnumOption] = Field(
+        ..., description="List of permissible enum options (code and description)."
+    )
+
+class ExtractionScope(str, Enum):
+    """Defines where in the document the datapoint was extracted from"""
+    CLAUSE = "clause"
+    DOCUMENT = "document"
+    BEGINNING = "beginning"
+
+   
+class DatapointDefinition(FrozenBaseModel):
+    """Definition of a datapoint to be extracted from a contract."""
+
+    key: str = Field(..., description="Stable key identifier for the datapoint (e.g., 'effective_date').")
+    title: str = Field(..., description="Human-readable datapoint name (e.g., 'Effective Date').")
+    description: Optional[str] = Field(
+        default=None,
+        description="Optional guidance on how to interpret or extract this datapoint.",
+    )
+    data_type: str = Field(
+        default="string",
+        description="Logical data type: e.g., 'string', 'number', 'date', 'party', 'money'.",
+    )
+    # required: bool = Field(
+    #     default=False,
+    #     description="Whether this datapoint is required for this contract type.",
+    # )
+    scope: ExtractionScope = Field(
+        default=ExtractionScope.CLAUSE,
+        description="Where in the document the datapoint was extracted from.",
+    )
+    # Optional enum constraints for structured outputs
+    enum_key: Optional[str] = Field(
+        default=None,
+        description=(
+            "If set, references a named enum in template.enums. When present, outputs should use "
+            "one of the enum option codes."
+        ),
+    )
+    enum_multi_select: bool = Field(
+        default=False,
+        description="Whether multiple enum codes can be selected for this datapoint.",
+    )
+    clause_keys: Optional[Sequence[str]] = Field(
+        default=None,
+        description="Clause key(s) where this datapoint is typically located.",
+    )
+
+
+class ContractTypeTemplate(FrozenBaseModel):
+    """Template describing expected clauses and datapoints for a contract type."""
+
+    key: str = Field(..., description="Stable key identifier for the contract type (e.g., 'NDA').")
+    name: str = Field(..., description="Template name (e.g., 'NDA', 'Loan Agreement').")
+    description: Optional[str] = Field(
+        ..., description="Optional description of the contract type template."
+    )
+    clauses: Sequence[ClauseDefinition] = Field(
+        ..., description="List of clause definitions expected in this contract type."
+    )
+    datapoints: Sequence[DatapointDefinition] = Field(
+        ..., description="List of datapoint definitions to extract for this contract type."
+    )
+    enums: Sequence[EnumDefinition] = Field(
+        default=None,
+        description=(
+            "Rreusable enum definitions that datapoints can reference via 'enum_key'."
+        ),
+    )
+
+
+class Paragraph(FrozenBaseModel):
+    """A paragraph of the contract with an index for stable referencing."""
+
+    index: int = Field(..., description="Zero-based index of the paragraph within the document.")
+    text: str = Field(..., description="Raw paragraph text.")
+
+
+class ClassifiedParagraph(FrozenBaseModel):
+    """Classification result for a single paragraph."""
+
+    paragraph: Paragraph = Field(..., description="The paragraph being classified.")
+    clause_key: Optional[str] = Field(
+        default=None,
+        description="Predicted clause key or None if unclassified/other.",
+    )
+    confidence: Optional[float] = Field(
+        default=None,
+        description="Confidence score in [0,1] for the classification, if available.",
+    )
+
+
+class DocumentClassification(FrozenBaseModel):
+    """Aggregate classification results for a document."""
+
+    paragraphs: Sequence[ClassifiedParagraph] = Field(
+        ..., description="Per-paragraph classifications across the document."
+    )
+    # Optional map from clause_key to paragraph indices for quick lookup
+    clause_to_paragraphs: Optional[Dict[str, List[int]]] = Field(
+        default=None,
+        description="Optional index for quick retrieval of paragraphs by clause key.",
+    )
+
+
+class ExtractedDatapoint(FrozenBaseModel):
+    """Value extracted for a datapoint along with optional provenance info."""
+
+    key: str = Field(..., description="Datapoint key (matches a definition in the template).")
+    value: Optional[str] = Field(
+        default=None,
+        description="Extracted value as normalized text; None if not found.",
+    )
+    # Indices of paragraphs that support/justify the extracted value
+    evidence_paragraph_indices: Optional[Sequence[int]] = Field(
+        default=None,
+        description="Paragraph indices that provide evidence for this value.",
+    )
+    confidence: Optional[float] = Field(
+        default=None,
+        description="Confidence score in [0,1] for the extraction, if available.",
+    )
+
+
+class ExtractionResult(FrozenBaseModel):
+    """Aggregate datapoint extraction results."""
+
+    datapoints: Sequence[ExtractedDatapoint] = Field(
+        ..., description="All extracted datapoints for the document."
+    )
+
+
+class RevisionInstruction(FrozenBaseModel):
+    """Instruction for revising content: target clause key and desired change."""
+
+    clause_key: str = Field(
+        ..., description="Target clause key to revise (must exist in the template)."
+    )
+    change_summary: str = Field(
+        ..., description="High-level summary of the intended change."
+    )
+    # Optional suggested new text for the clause
+    proposed_text: Optional[str] = Field(
+        default=None,
+        description="Optional full or partial proposed replacement text for the clause.",
+    )
+
+
+class RevisedContract(FrozenBaseModel):
+    """The resulting amended and restated contract content with metadata."""
+
+    content: str = Field(..., description="Final amended and restated contract text.")
+    applied_instructions: Sequence[RevisionInstruction] = Field(
+        ..., description="List of revision instructions that were applied."
+    )
+
+
+def split_text_into_paragraphs(text: str) -> List[Paragraph]:
+    """Split text into paragraphs with markdown cleanup and heuristic merging.
+
+    Cleanup rules:
+    - Collapse multiple consecutive empty lines into a single empty line
+    - If a line contains '|' but neither the previous nor next line contains '|',
+      replace '|' with a space (break stray table artifacts)
+    - If a line contains only '|' and '-' characters and neither neighbor line
+      contains '|', drop the line (remove markdown table separator rows)
+
+    Paragraph merge rules (merge current line into the previous paragraph only if):
+    - The previous line does not end with one of . : ! ?
+    - The current line does not start with a list/enumeration marker like
+      '-', '1)', '1.', 'a)', '(a)', '(1)', etc.
+    - Neither the previous line nor the current line contains a '|'
+    """
+
+    if not text:
+        return []
+
+    # Normalize newlines and split
+    raw_lines = text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
+
+    # Determine pipe presence per original line
+    has_pipe = ["|" in ln for ln in raw_lines]
+
+    cleaned_lines: List[str] = []
+    n = len(raw_lines)
+    only_pipes_dashes_re = re.compile(r"^[\s\|\-]+$")
+    only_pd_flags = [bool(only_pipes_dashes_re.match(ln.strip())) for ln in raw_lines]
+    only_stars_re = re.compile(r"^[\s\*]+$")
+
+    i = 0
+    while i < n:
+        line = raw_lines[i]
+        prev_has_pipe = has_pipe[i - 1] if i - 1 >= 0 else False
+        next_has_pipe = has_pipe[i + 1] if i + 1 < n else False
+        stripped = line.strip()
+
+        # Remove lines that are only stars (e.g., markdown separators)
+        if stripped and only_stars_re.match(stripped):
+            i += 1
+            continue
+
+        if stripped and only_pd_flags[i]:
+            # Detect consecutive runs of only pipes/dashes; drop the entire run if length >= 2
+            j = i + 1
+            while j < n and raw_lines[j].strip() and only_pd_flags[j]:
+                j += 1
+            run_len = j - i
+            if run_len >= 2:
+                i = j
+                continue
+            # Single isolated only-pipes/dashes line: drop if neighbors have no pipes
+            if not prev_has_pipe and not next_has_pipe:
+                i += 1
+                continue
+            # Otherwise, keep as-is (likely part of a real table)
+            cleaned_lines.append(line)
+            i += 1
+            continue
+
+        # Replace solitary '|' characters when neighbors have no pipes
+        if "|" in line and not prev_has_pipe and not next_has_pipe:
+            line = line.replace("|", " ")
+
+        cleaned_lines.append(line)
+        i += 1
+
+    # Collapse multiple consecutive empty lines into a single empty line
+    collapsed_lines: List[str] = []
+    empty_streak = 0
+    for line in cleaned_lines:
+        if line.strip() == "":
+            empty_streak += 1
+            if empty_streak > 1:
+                continue
+        else:
+            empty_streak = 0
+        collapsed_lines.append(line)
+
+    # Merge lines into paragraphs using heuristics
+    paragraphs: List[str] = []
+    buffer = ""
+    prev_line_text: Optional[str] = None
+
+    list_marker_re = re.compile(r"^\s*(?:-+|\d+\)|\d+\.|[A-Za-z]\)|\([A-Za-z]\)|\(\d+\))\s+")
+
+    for line in collapsed_lines:
+        stripped = line.strip()
+        if stripped == "":
+            if buffer:
+                paragraphs.append(buffer.strip())
+                buffer = ""
+                prev_line_text = None
+            continue
+
+        if not buffer:
+            buffer = stripped
+            prev_line_text = line
+            continue
+
+        # Decide merge vs start new paragraph
+        assert prev_line_text is not None
+        prev_last_char = buffer.rstrip()[-1] if buffer.rstrip() else ""
+        prev_ends_sentence = prev_last_char in ".:!?"
+        curr_starts_list = bool(list_marker_re.match(stripped))
+        prev_has_pipe_now = "|" in prev_line_text
+        curr_has_pipe_now = "|" in line
+
+        can_merge = (not prev_ends_sentence) and (not curr_starts_list) and (not prev_has_pipe_now) and (not curr_has_pipe_now)
+
+        if can_merge:
+            buffer = f"{buffer.rstrip()} {stripped}"
+        else:
+            paragraphs.append(buffer.strip())
+            buffer = stripped
+
+        prev_line_text = line
+
+    if buffer:
+        paragraphs.append(buffer.strip())
+
+    return [Paragraph(index=i, text=block) for i, block in enumerate(paragraphs) if block]
+
+

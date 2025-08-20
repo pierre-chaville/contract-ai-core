@@ -1,0 +1,5 @@
+key,title,code,description
+party_types,Party types,A,Party A
+party_types,Party types,B,Party B
+party_types,Party types,AB,Party A and Party B
+party_types,Party types,NONE,No party

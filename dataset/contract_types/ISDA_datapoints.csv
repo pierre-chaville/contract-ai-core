@@ -1,0 +1,10 @@
+key,title,data_type,enum_key,enum_muti_select,scope,clause_keys,description
+party_A,Party A,string,,FALSE,beginning,,Name of party A
+party_B,party_B,string,,FALSE,beginning,,Name of party B
+process_agent_A,Process agent fro party A,string,,FALSE,clause,process_agent,
+process_agent_B,Process agent fro party A,string,,FALSE,clause,process_agent,
+multibranch_party_A,Party A is a Multibranch party,boolean,,FALSE,clause,multibranch_party,is Party A a Multibranch party
+multibranch_party_A_offices,Party A offices,string,,FALSE,clause,multibranch_party,offices for  Party A when a Multibranch party
+multibranch_party_B,Party B is a Multibranch party,boolean,,FALSE,clause,multibranch_party,is Party B a Multibranch party
+multibranch_party_B_offices,Party B offices,string,,FALSE,clause,multibranch_party,offices for  Party B when a Multibranch party
+calculation_agent,Party for calculation agent,enum,party_types,FALSE,clause,calculation_agent,Party for calculation agent

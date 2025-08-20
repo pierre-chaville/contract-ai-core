@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contract-ai-core"
+version = "0.1.0"
+description = "Core library for AI-driven legal contract processing (no UI/APIs)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Your Name", email = "you@example.com" }
+]
+keywords = ["contracts", "llm", "nlp", "legal", "ai"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "python-dotenv>=1.0.1,<2.0.0",
+  "pydantic>=2.7.0,<3.0.0",
+  "typing-extensions>=4.10.0,<5.0.0",
+  "openai>=1.0.0,<2.0.0",
+  "streamlit>=1.36.0,<2.0.0",
+  "langchain>=0.2.0,<1.0.0",
+  "langchain-openai>=0.1.0,<1.0.0",
+]
+
+[project.urls]
+Homepage = "https://example.com"
+Repository = "https://example.com/repo"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["contract_core_ai*"]
+exclude = []
+
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+  "E",  # pycodestyle errors
+  "F",  # pyflakes
+  "I",  # isort (import sorting)
+  "UP", # pyupgrade
+  "B",  # flake8-bugbear
+]
+ignore = []
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+check_untyped_defs = true
+strict_optional = true
+show_error_codes = true
+pretty = true
+ignore_missing_imports = true
+
