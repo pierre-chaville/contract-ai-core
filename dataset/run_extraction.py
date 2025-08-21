@@ -79,7 +79,6 @@ def main() -> None:
     repo_root = Path(__file__).resolve().parents[1]
     docs_dir = repo_root / "dataset" / "documents" / template_key
     gold_cls_dir = repo_root / "dataset" / "gold" / "clauses" / template_key
-    template_path = repo_root / "dataset" / "contract_types" / f"{template_key}.json"
     output_dir = repo_root / "dataset" / "output" / "datapoints" / template_key / model_name
     output_dir.mkdir(parents=True, exist_ok=True)
 

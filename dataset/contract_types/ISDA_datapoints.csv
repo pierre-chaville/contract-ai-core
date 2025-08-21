@@ -1,10 +1,30 @@
-key,title,data_type,enum_key,enum_muti_select,scope,clause_keys,description
-party_A,Party A,string,,FALSE,beginning,,Name of party A
-party_B,party_B,string,,FALSE,beginning,,Name of party B
-process_agent_A,Process agent fro party A,string,,FALSE,clause,process_agent,
-process_agent_B,Process agent fro party A,string,,FALSE,clause,process_agent,
-multibranch_party_A,Party A is a Multibranch party,boolean,,FALSE,clause,multibranch_party,is Party A a Multibranch party
-multibranch_party_A_offices,Party A offices,string,,FALSE,clause,multibranch_party,offices for  Party A when a Multibranch party
-multibranch_party_B,Party B is a Multibranch party,boolean,,FALSE,clause,multibranch_party,is Party B a Multibranch party
-multibranch_party_B_offices,Party B offices,string,,FALSE,clause,multibranch_party,offices for  Party B when a Multibranch party
-calculation_agent,Party for calculation agent,enum,party_types,FALSE,clause,calculation_agent,Party for calculation agent
+key,title,data_type,enum_key,clause_keys,description,enum_muti_select,scope
+party_A,Party A,string,,,Name of party A,FALSE,beginning
+party_B,party_B,string,,,Name of party B,FALSE,beginning
+specified_entity_A_5av,Specified entity Party A section 5(a)(v),string,,specified_entity,Specified entity Party A section 5(a)(v) or None,FALSE,clause
+specified_entity_A_5avi,Specified entity Party A section 5(a)(vi),string,,specified_entity,Specified entity Party A section 5(a)(vi) or None,FALSE,clause
+specified_entity_A_5avii,Specified entity Party A section 5(a)(vii),string,,specified_entity,Specified entity Party A section 5(a)(vii) or None,FALSE,clause
+specified_entity_A_5bv,Specified entity Party A section 5(b)(v),string,,specified_entity,Specified entity Party A section 5(b)(v) or None,FALSE,clause
+specified_entity_B_5av,Specified entity Party B section 5(a)(v),string,,specified_entity,Specified entity Party B section 5(a)(v) or None,FALSE,clause
+specified_entity_B_5avi,Specified entity Party B section 5(a)(vi),string,,specified_entity,Specified entity Party B section 5(a)(vi) or None,FALSE,clause
+specified_entity_B_5avii,Specified entity Party B section 5(a)(vii),string,,specified_entity,Specified entity Party B section 5(a)(vii) or None,FALSE,clause
+specified_entity_B_5bv,Specified entity Party B section 5(b)(v),string,,specified_entity,Specified entity Party B section 5(b)(v) or None,FALSE,clause
+specified_transaction,Specified transaction scope,enum,specified_transaction_scope,specified_transaction,Specified transaction scope,FALSE,clause
+cross_default,Cross default applicable parties,enum,party_types,cross_default,Cross default applicable parties,FALSE,clause
+specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,boolean,,specified_indebtness,Specified indebtness includes borrowed_money,FALSE,clause
+specified_indebtness_deposits,Specified indebtness excludes deposits,boolean,,specified_indebtness,Specified indebtness excludes deposits,FALSE,clause
+threshold_amount_A_amount,amount for threshold amount for Party A ,float,,threshold_amount,amount for threshold amount for Party A ,FALSE,clause
+threshold_amount_A_percent,percentage for threshold amount for Party A ,float,,threshold_amount,percentage for threshold amount for Party A ,FALSE,clause
+threshold_amount_B_amount,amount for threshold amount for Party B,float,,threshold_amount,amount for threshold amount for Party B,FALSE,clause
+threshold_amount_B_percent,percentage for threshold amount for Party B,float,,threshold_amount,percentage for threshold amount for Party B,FALSE,clause
+credit_event_upon_merger,Credit Event Upon Merger  applicable parties,enum,party_types,credit_event_upon_merger,Credit Event Upon Merger  applicable parties,FALSE,clause
+automatic_early_termination,Automatic Early Termination  applicable parties,enum,party_types,automatic_early_termination,Automatic Early Termination  applicable parties,FALSE,clause
+termination_currency,Termination Currency,string,,termination_currency,Termination Currency in ISO format,FALSE,clause
+process_agent_A,Process agent fro party A,string,,process_agent,,FALSE,clause
+process_agent_B,Process agent fro party A,string,,process_agent,,FALSE,clause
+multibranch_party_A,Party A is a Multibranch party,boolean,,multibranch_party,is Party A a Multibranch party,FALSE,clause
+multibranch_party_A_offices,Party A offices,string,,multibranch_party,offices for  Party A when a Multibranch party,FALSE,clause
+multibranch_party_B,Party B is a Multibranch party,boolean,,multibranch_party,is Party B a Multibranch party,FALSE,clause
+multibranch_party_B_offices,Party B offices,string,,multibranch_party,offices for  Party B when a Multibranch party,FALSE,clause
+calculation_agent,Party for calculation agent,enum,party_types,calculation_agent,Party for calculation agent,FALSE,clause
+governing_law,Governing Law,enum,law,governing_law,Governing Law,FALSE,clause

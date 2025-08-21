@@ -38,9 +38,11 @@ dist/
 .ipynb_checkpoints/
 
 # Project outputs
-output/
+dataset/documents/
+dataset/gold/
 dataset/output/
-dataset/metrics/results/
+dataset/metrics/
+dataset/gold/
 
 # Local Python version files
 .python-version

@@ -22,7 +22,7 @@ Status: initial scaffold (no implementations).
 contract-ai-core/
   docs/
   src/
-    contract_core_ai/
+    contract_ai_core/
       __init__.py
       classifier.py
       extractor.py
@@ -34,7 +34,7 @@ contract-ai-core/
   .env.example
 ```
 
-Note: The Python package is located under `src/contract_core_ai` and is importable as `contract_core_ai`.
+Note: The Python package is located under `src/contract_ai_core` and is importable as `contract_ai_core`.
 
 ### Quick start
 
@@ -68,7 +68,7 @@ You can load environment variables at runtime using `python-dotenv` if desired.
 ```python
 from pathlib import Path
 
-from contract_core_ai import (
+from contract_ai_core import (
     ContractTypeTemplate, ClauseDefinition, DatapointDefinition,
     ClauseClassifier, DatapointExtractor, ContractReviser,
 )

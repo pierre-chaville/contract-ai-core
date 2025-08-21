@@ -24,6 +24,7 @@ delivery_failure,Delivery Failure,"Termination event  if a party fails to delive
 specified_transaction_termination,Specified Transaction Termination Event,"Termination event If a related financing, loan, or hedge transaction outside the ISDA is terminated, causing linked exposure."
 sanctions_event,Sanctions Event,"Termination event occurs if a party becomes subject to international sanctions, making performance illegal or impractical."
 non_posting_of_collateral,Non-Posting of Collateral,Termination event If a party fails to post collateral as agreed (sometimes treated as a Termination Event instead of Event of Default).
+payer_representations,Payer Representations,Party representations about eligibility for tax exemptions.
 payee_representations,Payee Representations,Party representations about eligibility for tax exemptions.
 delivery_of_tax_forms,Delivery of Tax Forms,"Obligations to deliver forms such as IRS W-8, W-9, etc."
 tax_provisions,Tax Provisions,Elections on tax gross-up obligations and exemptions.

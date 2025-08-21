@@ -183,29 +183,65 @@ class ExtractionResult(FrozenBaseModel):
         ..., description="All extracted datapoints for the document."
     )
 
-
 class RevisionInstruction(FrozenBaseModel):
-    """Instruction for revising content: target clause key and desired change."""
+    """Instruction for revising content: target section."""
 
-    clause_key: str = Field(
-        ..., description="Target clause key to revise (must exist in the template)."
+    amendment_start_line: int = Field(
+        ..., description="The line number where the amendment starts."
     )
-    change_summary: str = Field(
-        ..., description="High-level summary of the intended change."
+    amendment_end_line: int = Field(
+        ..., description="The line number where the amendment ends."
     )
-    # Optional suggested new text for the clause
-    proposed_text: Optional[str] = Field(
+    target_section: str = Field(
+        ..., description="Section to revise in the contract, e.g., 'Part 1 (a)(ii)."
+    )
+    confidence_target: float = Field(
+        ..., description="Confidence score in [0,1] for the target section."
+    )
+    change_explanation: str = Field(
+        ..., description="Explanation of the intended change."
+    )
+
+class RevisionInstructionTarget(RevisionInstruction):
+    """Instruction for revising content: target paragraph indices."""
+
+    target_paragraph_indices: Optional[Sequence[int]] = Field(
         default=None,
-        description="Optional full or partial proposed replacement text for the clause.",
+        description="Target paragraph indices to revise.",
+    )
+    confidence_target_paragraph_indices: float = Field(
+        ..., description="Confidence score in [0,1] for the target paragraph indices."
+    )
+    target_paragraph_explanation: str = Field(
+        ..., description="Explanation of the target section."
+    )
+
+class RevisedSection(RevisionInstructionTarget):
+    """Section revised with instructions."""
+
+    initial_paragraphs: Optional[Sequence[Paragraph]] = Field(
+        default=None,
+        description="Initial paragraphs to revise in the contract.",
+    )
+    revised_paragraphs: Optional[Sequence[Paragraph]] = Field(
+        default=None,
+        description="Revised paragraphs in the contract.",
+    )
+    confidence_revision: float = Field(
+        ..., description="Confidence score in [0,1] for the revision."
+    )
+    revision_explanation: str = Field(
+        ..., description="Explanation of the revision."
     )
 
 
 class RevisedContract(FrozenBaseModel):
     """The resulting amended and restated contract content with metadata."""
 
-    content: str = Field(..., description="Final amended and restated contract text.")
-    applied_instructions: Sequence[RevisionInstruction] = Field(
-        ..., description="List of revision instructions that were applied."
+    new_content: Sequence[Paragraph]  = Field(
+        ..., description="Final amended and restated contract text as paragraphs.")
+    applied_instructions: Sequence[RevisedSection] = Field(
+        ..., description="List of revised sections that were applied."
     )
 
 
