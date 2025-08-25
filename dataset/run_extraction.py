@@ -63,7 +63,8 @@ def main() -> None:
 
     repo_root = Path(__file__).resolve().parents[1]
     docs_dir = repo_root / "dataset" / "documents" / template_key
-    cls_dir = repo_root / "dataset" / "clauses" / template_key / model_name
+    cls_dir = repo_root / "dataset" / "output" / "clauses" / template_key / model_name
+    cls_dir.mkdir(parents=True, exist_ok=True)
     output_dir = repo_root / "dataset" / "output" / "datapoints" / template_key / model_name
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -102,15 +103,17 @@ def main() -> None:
             classification = build_classification_from_csv(cls_path)
         else:
             print("  -> running classifier to generate classification CSV")
-            classifier = ClauseClassifier(ClauseClassifierConfig(provider="openai", model=model_name))
-            classification = classifier.classify_paragraphs(_paragraphs, template, source_id=doc_path.name)
             cls_dir.mkdir(parents=True, exist_ok=True)
+            classifier = ClauseClassifier(ClauseClassifierConfig(provider="openai", model=model_name))
+            classification, usage = classifier.classify_paragraphs_with_usage(_paragraphs, template, source_id=doc_path.name)
+            write_tokens_usage("clauses", doc_path.name, model_name, usage, len(_paragraphs), repo_root)
             with cls_path.open("w", encoding="utf-8", newline="") as f:
                 writer = csv.writer(f)
                 writer.writerow(["index", "clause_key", "confidence", "text"])
                 for cp in classification.paragraphs:
                     conf_pct = round(cp.confidence * 100) if cp.confidence is not None else ""
                     writer.writerow([cp.paragraph.index, cp.clause_key or "", conf_pct, cp.paragraph.text])
+        
         extraction = extractor.extract(
             text=text,
             template=template,

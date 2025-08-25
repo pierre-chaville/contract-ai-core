@@ -1,5 +1,6 @@
 import io
 import json
+from datetime import datetime, timezone
 import pandas as pd
 from pathlib import Path
 
@@ -118,7 +119,7 @@ def write_tokens_usage(category: str, source_id: str, model: str, usage: dict | 
             "usage": usage or {},
         }
         with out_path.open("a", encoding="utf-8") as f:
-            import json as _json
-            f.write(_json.dumps(payload, ensure_ascii=False) + "\n")
-    except Exception:
+            f.write(json.dumps(payload, ensure_ascii=False) + "\n")
+    except Exception as e:
+        print(f"Error writing tokens usage: {e}")
         return

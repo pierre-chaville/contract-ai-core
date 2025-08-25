@@ -56,11 +56,23 @@ class ClauseClassifier:
         if not paragraphs:
             return DocumentClassification(paragraphs=[], clause_to_paragraphs={})
 
+        classification, _usage = self.classify_paragraphs_with_usage(
+            paragraphs, template, source_id=source_id
+        )
+        return classification
+
+    def classify_paragraphs_with_usage(
+        self,
+        paragraphs: Sequence[Paragraph],
+        template: ContractTypeTemplate,
+        *,
+        source_id: Optional[str] = None,
+    ) -> Tuple[DocumentClassification, Dict[str, Optional[int]]]:
         clause_index_to_key, clauses_block = self._build_clauses_block(template)
         paragraphs_block = self._build_paragraphs_block(paragraphs)
         prompt = self._build_prompt(template, clauses_block, paragraphs_block)
         with open("prompt.txt", "w", encoding="utf-8") as f:
-            f.write(prompt) 
+            f.write(prompt)
 
         raw_output, usage = self._call_openai(prompt)
         parsed = self._parse_llm_output(raw_output)
@@ -103,7 +115,8 @@ class ClauseClassifier:
             )
             clause_to_paragraphs.setdefault(clause_key, []).append(line_index)
 
-        return DocumentClassification(paragraphs=classified, clause_to_paragraphs=clause_to_paragraphs)
+        doc = DocumentClassification(paragraphs=classified, clause_to_paragraphs=clause_to_paragraphs)
+        return doc, usage
 
 
     # ------------------------

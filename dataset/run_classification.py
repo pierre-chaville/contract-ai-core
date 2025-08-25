@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import argparse
 import csv
-import json
 import os
 from pathlib import Path
 from typing import List
@@ -27,8 +26,10 @@ def classify_file(
 ) -> dict:
     text = md_path.read_text(encoding="utf-8")
     paragraphs: List[Paragraph] = split_text_into_paragraphs(text)
-    classification = classifier.classify_paragraphs(paragraphs, template, source_id=md_path.name)
-    write_tokens_usage("clauses", md_path.name, model_name, None, len(paragraphs), repo_root)
+    classification, usage = classifier.classify_paragraphs_with_usage(
+        paragraphs, template, source_id=md_path.name
+    )
+    write_tokens_usage("clauses", md_path.name, model_name, usage, len(paragraphs), repo_root)
 
     rows = []
     for cp in classification.paragraphs:
