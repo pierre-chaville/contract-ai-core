@@ -105,16 +105,6 @@ class ClauseClassifier:
 
         return DocumentClassification(paragraphs=classified, clause_to_paragraphs=clause_to_paragraphs)
 
-    def classify_document(
-        self,
-        text: str,
-        template: ContractTypeTemplate,
-        *,
-        source_id: Optional[str] = None,
-    ) -> DocumentClassification:
-        """Split the document into paragraphs and classify them."""
-        paragraphs = split_text_into_paragraphs(text)
-        return self.classify_paragraphs(paragraphs=paragraphs, template=template, source_id=source_id)
 
     # ------------------------
     # Prompt construction

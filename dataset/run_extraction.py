@@ -7,11 +7,13 @@ import os
 from pathlib import Path
 from typing import List
 from datetime import datetime, timezone
-from load_template import load_template
+from utilities import load_template, write_tokens_usage
 from contract_ai_core import (
     ContractTypeTemplate,
     DatapointExtractor,
     DatapointExtractorConfig,
+    ClauseClassifier,
+    ClauseClassifierConfig,
     Paragraph,
     DocumentClassification,
     ClassifiedParagraph,
@@ -50,27 +52,6 @@ def build_classification_from_csv(csv_path: Path) -> DocumentClassification:
     return DocumentClassification(paragraphs=cls_paragraphs, clause_to_paragraphs=clause_to_paragraphs or None)
 
 
-def _write_tokens_usage(source_id: str, model: str, num_paragraphs: int, base_dir: Path) -> None:
-    """Append a JSONL record for extraction calls (usage not available via LangChain here)."""
-    try:
-        out_dir = base_dir / "dataset" / "output" / "datapoints"
-        out_dir.mkdir(parents=True, exist_ok=True)
-        out_path = out_dir / "tokens.jsonl"
-        payload = {
-            "timestamp": datetime.now(timezone.utc).isoformat(),
-            "source_id": source_id,
-            "provider": "openai",
-            "model": model,
-            "num_paragraphs": num_paragraphs,
-            "usage": {},
-        }
-        with out_path.open("a", encoding="utf-8") as f:
-            import json as _json
-            f.write(_json.dumps(payload, ensure_ascii=False) + "\n")
-    except Exception:
-        return
-
-
 def main() -> None:
     parser = argparse.ArgumentParser(description="Extract datapoints using gold classifications")
     parser.add_argument("--template", required=True, help="Template key (e.g., ISDA)")
@@ -82,7 +63,7 @@ def main() -> None:
 
     repo_root = Path(__file__).resolve().parents[1]
     docs_dir = repo_root / "dataset" / "documents" / template_key
-    gold_cls_dir = repo_root / "dataset" / "gold" / "clauses" / template_key
+    cls_dir = repo_root / "dataset" / "clauses" / template_key / model_name
     output_dir = repo_root / "dataset" / "output" / "datapoints" / template_key / model_name
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -108,18 +89,28 @@ def main() -> None:
     key_to_title = {dp.key: dp.title for dp in template.datapoints}
 
     for doc_path in md_files:
-        cls_path = gold_cls_dir / (doc_path.stem + ".csv")
-        if not cls_path.exists():
-            print(f"Skipping {doc_path.name}: missing classification {cls_path}")
-            continue
+        cls_path = cls_dir / (doc_path.stem + ".csv")
         if os.path.exists(output_dir / (doc_path.stem + ".csv")):
             print(f"Skipping {doc_path.name} because it already exists")
             continue
-        print(f"Extracting datapoints from {doc_path.name} using {cls_path.name} ...")
+        print(f"Extracting datapoints from {doc_path.name} ...")
 
         text = doc_path.read_text(encoding="utf-8")
         _paragraphs: List[Paragraph] = split_text_into_paragraphs(text)
-        classification = build_classification_from_csv(cls_path)
+        if cls_path.exists():
+            print(f"  -> using existing classification {cls_path.name}")
+            classification = build_classification_from_csv(cls_path)
+        else:
+            print("  -> running classifier to generate classification CSV")
+            classifier = ClauseClassifier(ClauseClassifierConfig(provider="openai", model=model_name))
+            classification = classifier.classify_paragraphs(_paragraphs, template, source_id=doc_path.name)
+            cls_dir.mkdir(parents=True, exist_ok=True)
+            with cls_path.open("w", encoding="utf-8", newline="") as f:
+                writer = csv.writer(f)
+                writer.writerow(["index", "clause_key", "confidence", "text"])
+                for cp in classification.paragraphs:
+                    conf_pct = round(cp.confidence * 100) if cp.confidence is not None else ""
+                    writer.writerow([cp.paragraph.index, cp.clause_key or "", conf_pct, cp.paragraph.text])
         extraction = extractor.extract(
             text=text,
             template=template,
@@ -127,7 +118,7 @@ def main() -> None:
         )
 
         # Log a usage record per document (token details not exposed via LangChain here)
-        _write_tokens_usage(doc_path.name, model_name, len(_paragraphs), repo_root)
+        write_tokens_usage("datapoints", doc_path.name, model_name, None, len(_paragraphs), repo_root)
 
         out_path = output_dir / (doc_path.stem + ".csv")
         with out_path.open("w", encoding="utf-8", newline="") as f:

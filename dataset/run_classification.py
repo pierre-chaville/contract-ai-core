@@ -6,7 +6,7 @@ import json
 import os
 from pathlib import Path
 from typing import List
-from load_template import load_template
+from utilities import load_template, write_tokens_usage
 
 from contract_ai_core import (
     ClauseClassifier,
@@ -18,26 +18,6 @@ from contract_ai_core import (
 from datetime import datetime, timezone
 
 
-def _write_tokens_usage(source_id: str, model: str, usage: dict | None, num_paragraphs: int, base_dir: Path) -> None:
-    try:
-        out_dir = base_dir / "dataset" / "output" / "clauses"
-        out_dir.mkdir(parents=True, exist_ok=True)
-        out_path = out_dir / "tokens.jsonl"
-        payload = {
-            "timestamp": datetime.now(timezone.utc).isoformat(),
-            "source_id": source_id,
-            "provider": "openai",
-            "model": model,
-            "num_paragraphs": num_paragraphs,
-            "usage": usage or {},
-        }
-        with out_path.open("a", encoding="utf-8") as f:
-            import json as _json
-            f.write(_json.dumps(payload, ensure_ascii=False) + "\n")
-    except Exception:
-        return
-
-
 def classify_file(
     classifier: ClauseClassifier,
     template: ContractTypeTemplate,
@@ -47,10 +27,8 @@ def classify_file(
 ) -> dict:
     text = md_path.read_text(encoding="utf-8")
     paragraphs: List[Paragraph] = split_text_into_paragraphs(text)
-    classification = classifier.classify_paragraphs(
-        paragraphs, template, source_id=md_path.name
-    )
-    _write_tokens_usage(md_path.name, model_name, None, len(paragraphs), repo_root)
+    classification = classifier.classify_paragraphs(paragraphs, template, source_id=md_path.name)
+    write_tokens_usage("clauses", md_path.name, model_name, None, len(paragraphs), repo_root)
 
     rows = []
     for cp in classification.paragraphs:
@@ -76,9 +54,9 @@ def main() -> None:
     input_dir = repo_root / "dataset" / "documents" / template_key
     output_dir = repo_root / "dataset" / "output" / "clauses" / template_key / model_name
     output_dir.mkdir(parents=True, exist_ok=True)
-    
+
     # temperature for gpt-5 is different from other models
-    temperature = 1.0 if 'gpt-5' in model_name else 0.0
+    temperature = 1.0 if "gpt-5" in model_name else 0.0
 
     classifier = ClauseClassifier(
         ClauseClassifierConfig(provider="openai", model=model_name, temperature=temperature)

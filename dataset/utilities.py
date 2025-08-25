@@ -104,3 +104,21 @@ def load_template(template_key):
     return model
 
 
+def write_tokens_usage(category: str, source_id: str, model: str, usage: dict | None, num_paragraphs: int, base_dir: Path) -> None:
+    try:
+        out_dir = base_dir / "dataset" / "output" / category
+        out_dir.mkdir(parents=True, exist_ok=True)
+        out_path = out_dir / "tokens.jsonl"
+        payload = {
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "source_id": source_id,
+            "provider": "openai",
+            "model": model,
+            "num_paragraphs": num_paragraphs,
+            "usage": usage or {},
+        }
+        with out_path.open("a", encoding="utf-8") as f:
+            import json as _json
+            f.write(_json.dumps(payload, ensure_ascii=False) + "\n")
+    except Exception:
+        return
