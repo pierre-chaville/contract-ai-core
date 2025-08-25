@@ -15,34 +15,42 @@ from contract_ai_core import (
     Paragraph,
     split_text_into_paragraphs,
 )
+from datetime import datetime, timezone
 
 
-def read_markdown(path: Path) -> str:
-    candidate_encodings = [
-        "utf-8",
-        "utf-8-sig",
-        "cp1252",
-        "latin-1",
-        "utf-16",
-        "utf-16-le",
-        "utf-16-be",
-    ]
-    for enc in candidate_encodings:
-        try:
-            return path.read_text(encoding=enc)
-        except UnicodeDecodeError:
-            continue
-    return path.read_text(encoding="utf-8", errors="replace")
+def _write_tokens_usage(source_id: str, model: str, usage: dict | None, num_paragraphs: int, base_dir: Path) -> None:
+    try:
+        out_dir = base_dir / "dataset" / "output" / "clauses"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        out_path = out_dir / "tokens.jsonl"
+        payload = {
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "source_id": source_id,
+            "provider": "openai",
+            "model": model,
+            "num_paragraphs": num_paragraphs,
+            "usage": usage or {},
+        }
+        with out_path.open("a", encoding="utf-8") as f:
+            import json as _json
+            f.write(_json.dumps(payload, ensure_ascii=False) + "\n")
+    except Exception:
+        return
 
 
 def classify_file(
     classifier: ClauseClassifier,
     template: ContractTypeTemplate,
     md_path: Path,
+    model_name: str,
+    repo_root: Path,
 ) -> dict:
-    text = read_markdown(md_path)
+    text = md_path.read_text(encoding="utf-8")
     paragraphs: List[Paragraph] = split_text_into_paragraphs(text)
-    classification = classifier.classify_paragraphs(paragraphs, template, source_id=md_path.name)
+    classification = classifier.classify_paragraphs(
+        paragraphs, template, source_id=md_path.name
+    )
+    _write_tokens_usage(md_path.name, model_name, None, len(paragraphs), repo_root)
 
     rows = []
     for cp in classification.paragraphs:
@@ -83,15 +91,17 @@ def main() -> None:
         return
 
     for md_path in md_files:
+        if os.path.exists(output_dir / (md_path.stem + ".csv")):
+            print(f"Skipping {md_path.name} because it already exists")
+            continue
         print(f"Classifying {md_path.name} ...")
-        result = classify_file(classifier, template, md_path)
+        result = classify_file(classifier, template, md_path, model_name, repo_root)
 
         out_path = output_dir / (md_path.stem + ".csv")
         with out_path.open("w", encoding="utf-8", newline="") as f:
             writer = csv.writer(f)
             writer.writerow(["index", "clause_key", "confidence", "text"])
             writer.writerows(result["rows"])  # type: ignore[index]
-        print(f"  -> wrote {out_path}")
 
 
 if __name__ == "__main__":

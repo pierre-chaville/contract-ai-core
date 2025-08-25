@@ -3,9 +3,6 @@ from __future__ import annotations
 from dataclasses import dataclass
 import os
 import re
-import json
-from datetime import datetime, timezone
-from pathlib import Path
 from typing import Dict, List, Optional, Sequence, Tuple
 
 from .schema import (
@@ -61,19 +58,11 @@ class ClauseClassifier:
 
         clause_index_to_key, clauses_block = self._build_clauses_block(template)
         paragraphs_block = self._build_paragraphs_block(paragraphs)
-        prompt = self._build_prompt(clauses_block, paragraphs_block)
+        prompt = self._build_prompt(template, clauses_block, paragraphs_block)
         with open("prompt.txt", "w", encoding="utf-8") as f:
             f.write(prompt) 
 
         raw_output, usage = self._call_openai(prompt)
-        if source_id is not None:
-            self._write_tokens_usage(
-                source_id=source_id,
-                provider=self.config.provider,
-                model=self.config.model or "gpt-4.1-mini",
-                usage=usage,
-                num_paragraphs=len(paragraphs),
-            )
         parsed = self._parse_llm_output(raw_output)
 
         classified: List[ClassifiedParagraph] = []
@@ -147,10 +136,11 @@ class ClauseClassifier:
         lines = [f"{p.index}: {p.text}" for p in paragraphs]
         return "\n".join(lines)
 
-    def _build_prompt(self, clauses_block: str, paragraphs_block: str) -> str:
+    def _build_prompt(self, template: ContractTypeTemplate, clauses_block: str, paragraphs_block: str) -> str:
         instructions = (
             "You are an expert legal clause classifier.\n"
             "Given: (1) a list of clause categories and (2) a list of contract paragraphs,\n"
+            f"The contract is a {template.description}.\n"
             "classify each paragraph to the single most likely clause category.\n\n"
             "Important rules:\n"
             "- Output exactly one line per paragraph provided.\n"
@@ -206,8 +196,7 @@ class ClauseClassifier:
 
         client = OpenAI(api_key=api_key)
 
-        model_name = self.config.model or "gpt-4.1-mini"
-        print('model_name', model_name)
+        model_name = self.config.model or "gpt-4.1"
         temperature = float(self.config.temperature)
         max_tokens = self.config.max_tokens
 
@@ -221,7 +210,6 @@ class ClauseClassifier:
             max_completion_tokens=max_tokens,
         )
         content = response.choices[0].message.content or ""
-        print('content', content)
         usage = getattr(response, "usage", None)
         usage_dict: Dict[str, Optional[int]] = {
             "prompt_tokens": getattr(usage, "prompt_tokens", None) if usage is not None else None,
@@ -266,39 +254,6 @@ class ClauseClassifier:
 
         return result
 
-    # ------------------------
-    # Token usage logging
-    # ------------------------
-    def _write_tokens_usage(
-        self,
-        *,
-        source_id: str,
-        provider: str,
-        model: str,
-        usage: Dict[str, Optional[int]] | None,
-        num_paragraphs: int,
-    ) -> None:
-        """Append a JSONL record with token usage metadata into dataset/output/tokens.jsonl.
-
-        On any error, silently no-op to avoid disrupting classification.
-        """
-        try:
-            repo_root = Path(__file__).resolve().parents[2]
-            out_dir = repo_root / "dataset" / "output"
-            out_dir.mkdir(parents=True, exist_ok=True)
-            out_path = out_dir / "tokens.jsonl"
-
-            payload = {
-                "timestamp": datetime.now(timezone.utc).isoformat(),
-                "source_id": source_id,
-                "provider": provider,
-                "model": model,
-                "num_paragraphs": num_paragraphs,
-                "usage": usage or {},
-            }
-            with out_path.open("a", encoding="utf-8") as f:
-                f.write(json.dumps(payload, ensure_ascii=False) + "\n")
-        except Exception:
-            return
+    
 
 

@@ -7,3 +7,5 @@ specified_transaction_scope,Specified transaction scope,STD,Standard (Section 14
 specified_transaction_scope,Specified transaction scope,NONSTD,Non standard (changes to Section 14)
 law,Applicable Law,ENGLISH,English Law
 law,Applicable Law,NEW-YORK,New-York law
+threshold_reference,Percentage Reference,NAV,Net asset value
+threshold_reference,Percentage Reference,SHAREHOLDER,Shareholder's equity

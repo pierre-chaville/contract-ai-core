@@ -6,6 +6,7 @@ import json
 import os
 from pathlib import Path
 from typing import List
+from datetime import datetime, timezone
 from load_template import load_template
 from contract_ai_core import (
     ContractTypeTemplate,
@@ -16,24 +17,6 @@ from contract_ai_core import (
     ClassifiedParagraph,
     split_text_into_paragraphs,
 )
-
-
-def read_text_best_effort(path: Path) -> str:
-    encodings = [
-        "utf-8",
-        "utf-8-sig",
-        "cp1252",
-        "latin-1",
-        "utf-16",
-        "utf-16-le",
-        "utf-16-be",
-    ]
-    for enc in encodings:
-        try:
-            return path.read_text(encoding=enc)
-        except UnicodeDecodeError:
-            continue
-    return path.read_text(encoding="utf-8", errors="replace")
 
 
 def build_classification_from_csv(csv_path: Path) -> DocumentClassification:
@@ -65,6 +48,27 @@ def build_classification_from_csv(csv_path: Path) -> DocumentClassification:
             if clause_key:
                 clause_to_paragraphs.setdefault(clause_key, []).append(idx)
     return DocumentClassification(paragraphs=cls_paragraphs, clause_to_paragraphs=clause_to_paragraphs or None)
+
+
+def _write_tokens_usage(source_id: str, model: str, num_paragraphs: int, base_dir: Path) -> None:
+    """Append a JSONL record for extraction calls (usage not available via LangChain here)."""
+    try:
+        out_dir = base_dir / "dataset" / "output" / "datapoints"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        out_path = out_dir / "tokens.jsonl"
+        payload = {
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "source_id": source_id,
+            "provider": "openai",
+            "model": model,
+            "num_paragraphs": num_paragraphs,
+            "usage": {},
+        }
+        with out_path.open("a", encoding="utf-8") as f:
+            import json as _json
+            f.write(_json.dumps(payload, ensure_ascii=False) + "\n")
+    except Exception:
+        return
 
 
 def main() -> None:
@@ -108,30 +112,34 @@ def main() -> None:
         if not cls_path.exists():
             print(f"Skipping {doc_path.name}: missing classification {cls_path}")
             continue
-
+        if os.path.exists(output_dir / (doc_path.stem + ".csv")):
+            print(f"Skipping {doc_path.name} because it already exists")
+            continue
         print(f"Extracting datapoints from {doc_path.name} using {cls_path.name} ...")
 
-        text = read_text_best_effort(doc_path)
+        text = doc_path.read_text(encoding="utf-8")
         _paragraphs: List[Paragraph] = split_text_into_paragraphs(text)
         classification = build_classification_from_csv(cls_path)
-
         extraction = extractor.extract(
             text=text,
             template=template,
             classified_clauses=classification,
         )
 
+        # Log a usage record per document (token details not exposed via LangChain here)
+        _write_tokens_usage(doc_path.name, model_name, len(_paragraphs), repo_root)
+
         out_path = output_dir / (doc_path.stem + ".csv")
         with out_path.open("w", encoding="utf-8", newline="") as f:
             writer = csv.writer(f)
-            writer.writerow(["key", "title", "confidence", "value"])
+            writer.writerow(["key", "title", "confidence", "value", "explanation"])
             for dp in extraction.datapoints:
                 title = key_to_title.get(dp.key, "")
                 confidence = dp.confidence
                 confidence_percent = (
                     round(confidence * 100) if isinstance(confidence, (int, float)) else ""
                 )
-                writer.writerow([dp.key, title, confidence_percent, dp.value])
+                writer.writerow([dp.key, title, confidence_percent, dp.value, getattr(dp, "explanation", "") or ""])
         print(f"  -> wrote {out_path}")
 
 

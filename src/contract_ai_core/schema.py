@@ -106,6 +106,8 @@ class ContractTypeTemplate(FrozenBaseModel):
 
     key: str = Field(..., description="Stable key identifier for the contract type (e.g., 'NDA').")
     name: str = Field(..., description="Template name (e.g., 'NDA', 'Loan Agreement').")
+    use_case: str = Field(
+        ..., description="Use case for the contract type (e.g., 'extraction of clauses', 'amendment of clauses').")
     description: Optional[str] = Field(
         ..., description="Optional description of the contract type template."
     )
@@ -164,6 +166,10 @@ class ExtractedDatapoint(FrozenBaseModel):
     value: Optional[str] = Field(
         default=None,
         description="Extracted value as normalized text; None if not found.",
+    )
+    explanation: Optional[str] = Field(
+        default=None,
+        description="Short explanation or rationale for the extracted value.",
     )
     # Indices of paragraphs that support/justify the extracted value
     evidence_paragraph_indices: Optional[Sequence[int]] = Field(
@@ -268,48 +274,40 @@ def split_text_into_paragraphs(text: str) -> List[Paragraph]:
     # Normalize newlines and split
     raw_lines = text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
 
-    # Determine pipe presence per original line
-    has_pipe = ["|" in ln for ln in raw_lines]
-
     cleaned_lines: List[str] = []
     n = len(raw_lines)
     only_pipes_dashes_re = re.compile(r"^[\s\|\-]+$")
-    only_pd_flags = [bool(only_pipes_dashes_re.match(ln.strip())) for ln in raw_lines]
     only_stars_re = re.compile(r"^[\s\*]+$")
+    star_rule_re = re.compile(r"^\*+(?:\s*\*+){2,}$")
+
+    def remove_md_emphasis(s: str) -> str:
+        # Remove strong/italic/strike emphasis markers: **text**, *text*, __text__, _text_, ~~text~~
+        s = re.sub(r"(\*\*|__)(.*?)\1", r"\2", s)
+        s = re.sub(r"(\*|_)(.*?)\1", r"\2", s)
+        s = re.sub(r"~~(.*?)~~", r"\1", s)
+        return s
 
     i = 0
     while i < n:
         line = raw_lines[i]
-        prev_has_pipe = has_pipe[i - 1] if i - 1 >= 0 else False
-        next_has_pipe = has_pipe[i + 1] if i + 1 < n else False
         stripped = line.strip()
 
-        # Remove lines that are only stars (e.g., markdown separators)
-        if stripped and only_stars_re.match(stripped):
+        # Remove markdown emphasis markers inline
+        line = remove_md_emphasis(line)
+
+        # Remove lines that are only stars (e.g., markdown separators) or star rules like * * *
+        if stripped and (only_stars_re.match(stripped) or star_rule_re.match(stripped)):
             i += 1
             continue
 
-        if stripped and only_pd_flags[i]:
-            # Detect consecutive runs of only pipes/dashes; drop the entire run if length >= 2
-            j = i + 1
-            while j < n and raw_lines[j].strip() and only_pd_flags[j]:
-                j += 1
-            run_len = j - i
-            if run_len >= 2:
-                i = j
-                continue
-            # Single isolated only-pipes/dashes line: drop if neighbors have no pipes
-            if not prev_has_pipe and not next_has_pipe:
-                i += 1
-                continue
-            # Otherwise, keep as-is (likely part of a real table)
-            cleaned_lines.append(line)
+        # Remove any line consisting solely of '|' and '-' (table separators), unconditionally
+        if stripped and only_pipes_dashes_re.match(stripped):
             i += 1
             continue
 
-        # Replace solitary '|' characters when neighbors have no pipes
-        if "|" in line and not prev_has_pipe and not next_has_pipe:
-            line = line.replace("|", " ")
+        # Convert all pipes to tabs to normalize table-like content into columns
+        if "|" in line:
+            line = line.replace("|", "\t")
 
         cleaned_lines.append(line)
         i += 1

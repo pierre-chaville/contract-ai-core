@@ -6,6 +6,7 @@ specified_indebtness,Specified Indebtness,This defines the type of indebtedness 
 threshold_amount,Threshold amount,This is the minimum aggregate amount of Specified Indebtedness defaults that must occur before a Cross-Default is triggered
 credit_event_upon_merger,Credit Event Upon Merger,"This is an optional Termination Event where if a party (or sometimes its Specified Entities) merges, consolidates, or transfers substantially all its assets and the resulting entity is not as creditworthy, the counterparty may terminat"
 automatic_early_termination,Automatic Early Termination,Election whether AET applies in the event of insolvency.
+payments_early_termination,Payments on Early Termination,Section under the 1992 ISDA
 termination_currency,Termination Currency,Specifies the default currency for close-out calculations.
 force_majeure,Force Majeure ,Election and modifications to the Force Majeure provision in the 2002 Agreement.
 additional_termination_events,Additional Termination Events,"Custom termination events agreed by the parties (e.g. credit rating downgrade, regulatory changes)."
@@ -17,6 +18,11 @@ tax_event,Tax Event / Tax Event Upon Merger (Expanded),"Termination event when t
 ownership,Ownership / Change of Control,"Termination event  triggered if a party undergoes a merger, acquisition, privatization, or change in controlling ownership."
 regulatory_event,Regulatory Event / Dodd-Frank / EMIR Event,"Termination event occurs if compliance with derivatives regulations (e.g., clearing, margin, registration) prevents or burdens performance."
 nav_trigger,NAV Trigger (for Funds),Termination event if a fund's Net Asset Value falls below a specified threshold or by a certain percentage.
+asset_floor,AUM/Asset Floor,Termination event if assets under management fall below an agreed level.
+investor_redemptions,Investor Redemptions,"Termination event if redemptions exceed a set percentage (e.g., 25, 30% of NAV in a quarter)."
+key_person,Key Person Event,"Termination event if a named portfolio manager (or team) departs, termination can be triggered."
+breach_investment_guidelines,Breach of Investment Guidelines,"Termination event if Material breach of agreed trading restrictions (e.g., leverage caps, concentration limits)."
+fund_termination,Fund Termination / Liquidation,Termination event if the fund itself winds up or enters liquidation.
 portfolio_trigger,Portfolio/Asset Trigger,"Termination event linked to performance or impairment of a specified pool of assets, often in structured finance swaps."
 loss_of_hedge_provider,Loss of Hedge Provider Status,"Termination event  if a party ceases to qualify as a registered swap dealer, bank, or other regulated trading entity."
 governmental_intervention,Governmental Intervention / Bail-in,Termination event  triggered by regulatory intervention such as resolution authority action under EU BRRD or similar regimes.
@@ -24,6 +30,7 @@ delivery_failure,Delivery Failure,"Termination event  if a party fails to delive
 specified_transaction_termination,Specified Transaction Termination Event,"Termination event If a related financing, loan, or hedge transaction outside the ISDA is terminated, causing linked exposure."
 sanctions_event,Sanctions Event,"Termination event occurs if a party becomes subject to international sanctions, making performance illegal or impractical."
 non_posting_of_collateral,Non-Posting of Collateral,Termination event If a party fails to post collateral as agreed (sometimes treated as a Termination Event instead of Event of Default).
+other_termination_events,Other Termination events,Termination event not listed above
 payer_representations,Payer Representations,Party representations about eligibility for tax exemptions.
 payee_representations,Payee Representations,Party representations about eligibility for tax exemptions.
 delivery_of_tax_forms,Delivery of Tax Forms,"Obligations to deliver forms such as IRS W-8, W-9, etc."
@@ -35,7 +42,7 @@ guarantees,Guarantees,Delivery of parent guarantees or other credit support docu
 other_documents,Other Documents,Any bespoke documents the parties agree to provide.
 address_for_notices,Address for Notices,Specifies mailing/email addresses and contacts for official notices.
 process_agent,Process Agent,"If required, designates a process agent for service of process."
-offices,Offices,Election whether the agreement applies to multiple offices/branches.
+offices,Offices,"Usually in part 4., provisions of Section 10(a)"
 multibranch_party,Multibranch Party,Specifies if a party may transact through multiple branches.
 calculation_agent,Calculation Agent,Designation of which party (or third party) will act as Calculation Agent.
 credit_support_document,Credit Support Document,"In Part 4, this refers to any collateral or guarantee agreement provided to secure the obligations under the ISDA Master Agreement"
@@ -50,7 +57,7 @@ no_agency,No Agency,"Confirms that the relationship is principal-to-principal, n
 additional_representation,Additional Representation,"This is a catch-all for any bespoke representation the parties want to include beyond the standard ISDA reps (e.g., eligibility, regulatory status, compliance)."
 additional_events_of_default,Additional Events of Default,Bespoke default provisions (e.g. failure to deliver collateral).
 amendments_to_master,Amendments to Master,Negotiated changes to the printed Master Agreement clauses.
-netting_of_payments,Netting of Payments,This confirms (or customizes) the ISDA�s netting provisions.
+netting_of_payments,Netting of Payments,This confirms (or customizes) the ISDAs netting provisions.
 set-off,Set-off,Optional clause giving set-off rights upon default or termination.
 recording_of_conversations,Recording of Conversations,Election to allow recording of telephone conversations.
 confidentiality,Confidentiality,Custom confidentiality obligations.
@@ -60,9 +67,11 @@ escrow_payments,Escrow Payments,"Provides that if there is a dispute over a paym
 limitation_of_liability,Limitation of Liability,Caps or excludes certain liabilities.
 2002_protocol,2002 Master Agreement Protocol.,"The ISDA 2002 Protocol introduced standard amendments (close-out methodology, set-off, etc.)."
 hire_act_protocols,HIRE Act Protocols,"Refers to the ISDA Protocol implementing the U.S. Hiring Incentives to Restore Employment (HIRE) Act of 2010, which imposed withholding tax rules."
-fatca,Foreign Account Tax Compliance Act,FATCA imposes U.S. withholding tax obligations on certain cross-border payments.
+fatca,Foreign Account Tax Compliance Act,Clause related to FATCA regulation
 cps,Conditions Precedent,Lists conditions that must be satisfied before obligations arise (on top of those in Section 2(a)(iii)).
-dodd_frank,Dodd-Frank,"U.S. Dodd-Frank Act introduced mandatory swap regulations (reporting, clearing, business conduct)."
-us_qfc,U.S. QFC,U.S. Qualified Financial Contracts (QFC) Stay Rules require counterparties of large U.S. banks to agree to temporary stays on termination rights in resolution.
-resolution_stay,ISDA 2018 U.S. Resolution Stay Protocol,This is the formal ISDA protocol implementing the U.S. QFC Stay Rules.
+dodd_frank,Dodd-Frank,Clause related to DODD FRANK regulation
+us_qfc,U.S. QFC,Clause related to US QF Stay regulation
 transfer_restrictions,Transfer Restrictions,Restrictions on assigning rights and obligations.
+fx_transactions,Foreign Exchange and Foreign Exchange Option Transactions,Foreign Exchange and Foreign Exchange Option Transactions
+commodity,Commodity transactions,Commodity transactions (full section related to FX transactions)
+forms,Forms,Forms in appendix

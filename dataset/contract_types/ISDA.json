@@ -1,5 +1,6 @@
 {
     "key": "ISDA_2002",
-    "name": "ISDA Master Agreement (2002)",
-    "description": "Template for OTC derivatives under the 2002 ISDA Master Agreement, including core sections and common Schedule elections."
+    "name": "ISDA Master Agreement (92 or 2002 version)",
+    "use_case": "Extraction of clauses, datapoints and management of amendments for ISDA master agreements",
+    "description": "Schedule of an ISDA Master Agreement (92 or 2002 version)"
 }

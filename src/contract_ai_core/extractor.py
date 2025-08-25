@@ -137,6 +137,10 @@ class DatapointExtractor:
                     ge=0.0,
                     le=1.0,
                 )
+                explanation: Optional[str] = Field(
+                    default=None,
+                    description="Short rationale for the extracted value.",
+                )
 
             fields: Dict[str, Tuple[Optional[FieldResult], Field]] = {}
             for dp in datapoints:
@@ -146,10 +150,12 @@ class DatapointExtractor:
 
             instruction = (
                 "You are a precise information extraction model.\n"
+                f"The contract is a {template.description}.\n"
                 "Extract the requested fields based only on the provided text.\n"
-                "Return, for each field, an object with keys 'value' and 'confidence'.\n"
+                "Return, for each field, an object with keys 'value', 'confidence', and 'explanation'.\n"
                 "- value: the extracted string, or null if not present.\n"
                 "- confidence: a float between 0 and 1, or null if you cannot judge.\n"
+                "- explanation: short rationale or source cue for the value.\n"
             )
 
             # Provide a concise list of fields to extract (only essential info)
@@ -157,7 +163,8 @@ class DatapointExtractor:
             for dp in datapoints:
                 title = dp.title or dp.key
                 desc = dp.description or ""
-                field_specs.append(f"- {dp.key} ({title})" + (f": {desc}" if desc else ""))
+                data_type = dp.data_type or ""
+                field_specs.append(f"- {dp.key} ({title})" + (f": {desc}" if desc else "") + (f" ({data_type})" if data_type else ""))
 
             # ENUMS section: include any enum lists referenced by datapoints in this scope
             enums_text = ""
@@ -177,6 +184,8 @@ class DatapointExtractor:
                         enum_lines.append(f"  - {opt.code}: {desc}")
                 if enum_lines:
                     enums_text = (
+                        "For boolean fields, return true or false (false if not found)\n"
+                        "For date fields, return the date in the format YYYY-MM-DD\n"
                         "For enum fields, use ONLY the provided codes (e.g., DRAFT, not Draft or draft)\n"
                         "ENUMS (for fields referencing an enum, return the code(s) exactly as listed):\n"
                         + "\n".join(enum_lines)
@@ -217,14 +226,11 @@ class DatapointExtractor:
             data: Dict[str, Optional[dict]] = res["data"]  # type: ignore[index]
             datapoints = res["datapoints"]  # type: ignore[index]
             evidence = res["evidence"]  # type: ignore[index]
-            print('data', data)
-            print('datapoints', datapoints)
-            print('evidence', evidence)
-
             for dp in datapoints:  # type: ignore[assignment]
                 item = (data or {}).get(dp.key) or {}
                 value = item.get("value")
                 conf = item.get("confidence")
+                expl = item.get("explanation")
                 if isinstance(conf, (int, float)):
                     conf = max(0.0, min(1.0, float(conf)))
                 else:
@@ -233,6 +239,7 @@ class DatapointExtractor:
                     ExtractedDatapoint(
                         key=dp.key,
                         value=value if value is not None else None,
+                        explanation=expl if isinstance(expl, str) and expl.strip() else None,
                         evidence_paragraph_indices=evidence,
                         confidence=conf,
                     )
@@ -272,8 +279,6 @@ class DatapointExtractor:
 
             print('--------------------------------')
             print('prompt', prompt)
-            print('datapoints', datapoints)
-            print('evidence', evidence)
 
             structured_llm = llm.with_structured_output(OutputModel)  # type: ignore[arg-type]
             async with sem:
