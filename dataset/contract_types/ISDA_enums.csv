@@ -1,11 +1,16 @@
 key,title,code,description
-party_types,Party types,A,Party A
-party_types,Party types,B,Party B
-party_types,Party types,AB,Party A and Party B
-party_types,Party types,NONE,No party
-specified_transaction_scope,Specified transaction scope,STD,Standard (Section 14)
-specified_transaction_scope,Specified transaction scope,NONSTD,Non standard (changes to Section 14)
-law,Applicable Law,ENGLISH,English Law
-law,Applicable Law,NEW-YORK,New-York law
-threshold_reference,Percentage Reference,NAV,Net asset value
-threshold_reference,Percentage Reference,SHAREHOLDER,Shareholder's equity
+PARTY_TYPES,Party types,A,Party A
+PARTY_TYPES,Party types,B,Party B
+PARTY_TYPES,Party types,AB,Party A and Party B
+PARTY_TYPES,Party types,NONE,No party
+SPECIFIED_TRANSACTION_SCOPE,Specified transaction scope,STD,Standard (Section 14)
+SPECIFIED_TRANSACTION_SCOPE,Specified transaction scope,NONSTD,Non standard (changes to Section 14)
+LAW,Applicable Law,ENGLISH,English Law
+LAW,Applicable Law,NEW-YORK,New-York law
+LAW,Applicable Law,OTHER,Other
+THRESHOLD_REFERENCE,Percentage Reference,NAV,Net asset value
+THRESHOLD_REFERENCE,Percentage Reference,SHAREHOLDER,Shareholder's equity
+THRESHOLD_REFERENCE,Percentage Reference,OTHER,Other
+BOOLEAN,Boolean,YES,YES
+BOOLEAN,Boolean,NO,NO
+BOOLEAN,Boolean,UNKNOWN,UNKNOWN

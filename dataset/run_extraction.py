@@ -132,14 +132,14 @@ def main() -> None:
         out_path = output_dir / (doc_path.stem + ".csv")
         with out_path.open("w", encoding="utf-8", newline="") as f:
             writer = csv.writer(f)
-            writer.writerow(["key", "title", "confidence", "value", "explanation"])
+            writer.writerow(["key", "title", "confidence", "value", "evidence", "explanation"])
             for dp in extraction.datapoints:
                 title = key_to_title.get(dp.key, "")
                 confidence = dp.confidence
                 confidence_percent = (
                     round(confidence * 100) if isinstance(confidence, (int, float)) else ""
                 )
-                writer.writerow([dp.key, title, confidence_percent, dp.value, getattr(dp, "explanation", "") or ""])
+                writer.writerow([dp.key, title, confidence_percent, dp.value, dp.evidence_paragraph_indices, getattr(dp, "explanation", "") or ""])
         print(f"  -> wrote {out_path}")
 
 

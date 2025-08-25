@@ -10,12 +10,13 @@ payments_early_termination,Payments on Early Termination,Section under the 1992 
 termination_currency,Termination Currency,Specifies the default currency for close-out calculations.
 force_majeure,Force Majeure ,Election and modifications to the Force Majeure provision in the 2002 Agreement.
 additional_termination_events,Additional Termination Events,"Custom termination events agreed by the parties (e.g. credit rating downgrade, regulatory changes)."
-credit_rating_downgrade,Credit Rating Downgrade,"Ttermination event  triggered if a party or its credit support provider is downgraded below a specified rating by a rating agency, often linked to collateral posting or termination."
-credit_support_provider_event,Credit Support Provider Event,"Ttermination event  occurs if a guarantor, parent, or other credit support provider fails to maintain creditworthiness or withdraws its support."
+credit_rating_downgrade,Credit Rating Downgrade,"Termination event  triggered if a party or its credit support provider is downgraded below a specified rating by a rating agency, often linked to collateral posting or termination."
+credit_support_provider_event,Credit Support Provider Event,"Termination event  occurs if a guarantor, parent, or other credit support provider fails to maintain creditworthiness or withdraws its support."
 hedging_disruption,Hedging Disruption,Termination event if a party is unable to hedge its exposure due to changes in market conditions or liquidity constraints.
-increased_costs_of_hedging,Increased Costs of Hedging / Illegality,Termination event  triggered when regulatory or legal changes make the transaction more expensive or unlawful to perform.
+increased_costs_of_hedging,Increased Costs of Hedging,Termination event  triggered when regulatory or legal changes make the transaction more expensive or unlawful to perform.
 tax_event,Tax Event / Tax Event Upon Merger (Expanded),"Termination event when tax law changes that increase a party's tax burden, or adverse tax consequences arising from a merger or reorganization."
 ownership,Ownership / Change of Control,"Termination event  triggered if a party undergoes a merger, acquisition, privatization, or change in controlling ownership."
+document_event,Failure to comply with documents,Termination event if failure to comply with pecific  documents
 regulatory_event,Regulatory Event / Dodd-Frank / EMIR Event,"Termination event occurs if compliance with derivatives regulations (e.g., clearing, margin, registration) prevents or burdens performance."
 nav_trigger,NAV Trigger (for Funds),Termination event if a fund's Net Asset Value falls below a specified threshold or by a certain percentage.
 asset_floor,AUM/Asset Floor,Termination event if assets under management fall below an agreed level.
@@ -31,6 +32,7 @@ specified_transaction_termination,Specified Transaction Termination Event,"Termi
 sanctions_event,Sanctions Event,"Termination event occurs if a party becomes subject to international sanctions, making performance illegal or impractical."
 non_posting_of_collateral,Non-Posting of Collateral,Termination event If a party fails to post collateral as agreed (sometimes treated as a Termination Event instead of Event of Default).
 other_termination_events,Other Termination events,Termination event not listed above
+failure_to_pay,Failure to pay or deliver,Failure to pay or deliver
 payer_representations,Payer Representations,Party representations about eligibility for tax exemptions.
 payee_representations,Payee Representations,Party representations about eligibility for tax exemptions.
 delivery_of_tax_forms,Delivery of Tax Forms,"Obligations to deliver forms such as IRS W-8, W-9, etc."
@@ -56,7 +58,7 @@ absence_of_litigation,Absence of Litigation,This is an additional representation
 no_agency,No Agency,"Confirms that the relationship is principal-to-principal, not agent-to-agent."
 additional_representation,Additional Representation,"This is a catch-all for any bespoke representation the parties want to include beyond the standard ISDA reps (e.g., eligibility, regulatory status, compliance)."
 additional_events_of_default,Additional Events of Default,Bespoke default provisions (e.g. failure to deliver collateral).
-amendments_to_master,Amendments to Master,Negotiated changes to the printed Master Agreement clauses.
+amendments,Amendments,Bespoke clause related to the management of amendments
 netting_of_payments,Netting of Payments,This confirms (or customizes) the ISDAs netting provisions.
 set-off,Set-off,Optional clause giving set-off rights upon default or termination.
 recording_of_conversations,Recording of Conversations,Election to allow recording of telephone conversations.
@@ -67,8 +69,7 @@ escrow_payments,Escrow Payments,"Provides that if there is a dispute over a paym
 limitation_of_liability,Limitation of Liability,Caps or excludes certain liabilities.
 2002_protocol,2002 Master Agreement Protocol.,"The ISDA 2002 Protocol introduced standard amendments (close-out methodology, set-off, etc.)."
 hire_act_protocols,HIRE Act Protocols,"Refers to the ISDA Protocol implementing the U.S. Hiring Incentives to Restore Employment (HIRE) Act of 2010, which imposed withholding tax rules."
-fatca,Foreign Account Tax Compliance Act,Clause related to FATCA regulation
-cps,Conditions Precedent,Lists conditions that must be satisfied before obligations arise (on top of those in Section 2(a)(iii)).
+fatca,Foreign Account Tax Compliance Act,Specific provisopn related to FATCA (withholding is carved out from tax gross-up obligations)
 dodd_frank,Dodd-Frank,Clause related to DODD FRANK regulation
 us_qfc,U.S. QFC,Clause related to US QF Stay regulation
 transfer_restrictions,Transfer Restrictions,Restrictions on assigning rights and obligations.

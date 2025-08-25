@@ -149,13 +149,14 @@ class DatapointExtractor:
             OutputModel: BaseModel = create_model("ScopeExtraction", **fields)  # type: ignore[assignment]
 
             instruction = (
-                "You are a precise information extraction model.\n"
+                "You are an expert in the field of contract law. Your job is to extract the information from the contract.\n"
                 f"The contract is a {template.description}.\n"
                 "Extract the requested fields based only on the provided text.\n"
                 "Return, for each field, an object with keys 'value', 'confidence', and 'explanation'.\n"
-                "- value: the extracted string, or null if not present.\n"
+                "- value: the extracted value, or null if not present.\n"
                 "- confidence: a float between 0 and 1, or null if you cannot judge.\n"
                 "- explanation: short rationale or source cue for the value.\n"
+                "For fields of type date, return the date in the format YYYY-MM-DD\n"
             )
 
             # Provide a concise list of fields to extract (only essential info)
@@ -164,7 +165,9 @@ class DatapointExtractor:
                 title = dp.title or dp.key
                 desc = dp.description or ""
                 data_type = dp.data_type or ""
-                field_specs.append(f"- {dp.key} ({title})" + (f": {desc}" if desc else "") + (f" ({data_type})" if data_type else ""))
+                if dp.data_type == "enum":
+                    data_type = f"enum: {dp.enum_key}"
+                field_specs.append(f"- {dp.key}"  + (f" [{data_type}]" if data_type else "") + (f": {desc}" if desc else ""))
 
             # ENUMS section: include any enum lists referenced by datapoints in this scope
             enums_text = ""
@@ -184,9 +187,7 @@ class DatapointExtractor:
                         enum_lines.append(f"  - {opt.code}: {desc}")
                 if enum_lines:
                     enums_text = (
-                        "For boolean fields, return true or false (false if not found)\n"
-                        "For date fields, return the date in the format YYYY-MM-DD\n"
-                        "For enum fields, use ONLY the provided codes (e.g., DRAFT, not Draft or draft)\n"
+                        "For fields of type enum, use ONLY the provided codes (e.g., DRAFT, not Draft or draft)\n"
                         "ENUMS (for fields referencing an enum, return the code(s) exactly as listed):\n"
                         + "\n".join(enum_lines)
                         + "\n\n"
@@ -284,6 +285,10 @@ class DatapointExtractor:
             async with sem:
                 output: BaseModel = await structured_llm.ainvoke(prompt)  # type: ignore[assignment]
             data = output.model_dump()  # type: ignore[attr-defined]
+            # print('--------------------------------')
+            # print("data", data)
+            # print('datapoints', datapoints)
+            # print('evidence', evidence)
             return {"data": data, "datapoints": datapoints, "evidence": evidence}
 
         tasks = [asyncio.create_task(run_one(job)) for job in jobs]
