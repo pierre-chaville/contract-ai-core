@@ -64,6 +64,7 @@ class ContractReviser:
         class AmendmentItem(BaseModel):
             amendment_start_line: int = Field(..., description="Start line index (inclusive) in the amendment text")
             amendment_end_line: int = Field(..., description="End line index (inclusive) in the amendment text")
+            amendment_span_text: str = Field(..., description="Text of the amendment span")
             target_section: str = Field(..., description="Target section identifier in the base contract")
             confidence_target: float = Field(..., ge=0.0, le=1.0, description="Confidence in [0,1]")
             change_explanation: str = Field(..., description="Short rationale of the change")
@@ -102,6 +103,7 @@ class ContractReviser:
                 RevisionInstruction(
                     amendment_start_line=item.amendment_start_line,
                     amendment_end_line=item.amendment_end_line,
+                    amendment_span_text=item.amendment_span_text,
                     target_section=item.target_section,
                     confidence_target=item.confidence_target,
                     change_explanation=item.change_explanation,
@@ -211,6 +213,7 @@ class ContractReviser:
                 RevisionInstructionTarget(
                     amendment_start_line=ins.amendment_start_line,
                     amendment_end_line=ins.amendment_end_line,
+                    amendment_span_text=ins.amendment_span_text,
                     target_section=ins.target_section,
                     confidence_target=ins.confidence_target,
                     change_explanation=ins.change_explanation,
@@ -289,15 +292,16 @@ class ContractReviser:
             structured_llm = llm.with_structured_output(ApplyOutput)  # type: ignore[arg-type]
 
             ins: RevisionInstructionTarget = job["ins"]
+            print(f"Ins: {ins}")
             instruction_text = (
                 "You are an expert legal editor. Given ONLY the target span paragraphs (with line numbers), "
                 "update that span to implement the described amendment. Do not introduce unrelated changes. "
                 "Preserve style, defined terms, and numbering within the span."
             )
             guidance_text = (
-                f"Target section identifier: {ins.target_section}\n"
-                f"Amendment description: {ins.change_explanation}\n"
-                "If no target span is provided, return an empty list for revised_paragraphs and low confidence."
+                f"TARGET SECTIONr: {ins.target_section}\n"
+                f"AMENDMENT INSTRUCTION: {ins.amendment_span_text}\n"
+                #"If no target span is provided, return an empty list for revised_paragraphs and low confidence."
             )
             prompt = (
                 instruction_text
@@ -346,6 +350,7 @@ class ContractReviser:
                 RevisedSection(
                     amendment_start_line=ins.amendment_start_line,
                     amendment_end_line=ins.amendment_end_line,
+                    amendment_span_text=ins.amendment_span_text,
                     target_section=ins.target_section,
                     confidence_target=ins.confidence_target,
                     change_explanation=ins.change_explanation,

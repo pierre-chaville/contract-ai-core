@@ -18,8 +18,11 @@ from pydantic import BaseModel, Field, create_model
 
 try:
     from langchain_openai import ChatOpenAI  # type: ignore
-except Exception:  # pragma: no cover
+    # from langchain.globals import set_debug
+    # set_debug(True)
+except Exception as e:  # pragma: no cover
     ChatOpenAI = None  # type: ignore
+    print('setting ChatOpenAI to None', e)
 
 ScopeId = str
 
@@ -217,7 +220,7 @@ class DatapointExtractor:
                 jobs=jobs,
                 model_name=self.config.model or "gpt-4.1-mini",
                 temperature=float(self.config.temperature),
-                concurrency=8,
+                concurrency=4,
             )
         )
 
@@ -254,7 +257,7 @@ class DatapointExtractor:
         jobs: List[Dict[str, object]],
         model_name: str,
         temperature: float,
-        concurrency: int = 8,
+        concurrency: int = 4,
     ) -> List[Dict[str, object]]:
         """Run scope extractions concurrently and return raw model_dump data per job."""
         if ChatOpenAI is None:
@@ -281,7 +284,7 @@ class DatapointExtractor:
             print('--------------------------------')
             print('prompt', prompt)
 
-            structured_llm = llm.with_structured_output(OutputModel)  # type: ignore[arg-type]
+            structured_llm = llm.with_structured_output(OutputModel, temperature=temperature)  # type: ignore[arg-type]
             async with sem:
                 output: BaseModel = await structured_llm.ainvoke(prompt)  # type: ignore[assignment]
             data = output.model_dump()  # type: ignore[attr-defined]

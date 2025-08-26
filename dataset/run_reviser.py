@@ -4,7 +4,7 @@ import argparse
 import json
 from pathlib import Path
 from typing import List
-from load_template import load_template
+from utilities import load_template
 
 from contract_ai_core import (
     ContractReviser,
@@ -97,6 +97,11 @@ def main() -> None:
                     {
                         "amendment_start_line": r.amendment_start_line,
                         "amendment_end_line": r.amendment_end_line,
+                        "amendment_span_text": "\n\n".join(
+                            p.text
+                            for p in amendment_paras
+                            if (r.amendment_start_line is not None and r.amendment_end_line is not None and r.amendment_start_line <= p.index <= r.amendment_end_line)
+                        ).strip(),
                         "target_section": r.target_section,
                         "confidence_target": r.confidence_target,
                         "change_explanation": r.change_explanation,

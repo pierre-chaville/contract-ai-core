@@ -113,6 +113,7 @@ def normalize_date(value: str) -> str:
         return f"{re_match.group(1)}-{re_match.group(2)}-{re_match.group(3)}"
     if year and mon and day:
         return f"{year}-{mon}-{day}"
+    print('value', value, 'normalized', normalize_relaxed(value))
     return normalize_relaxed(value)
 
 
@@ -292,7 +293,16 @@ def main() -> None:
             writer.writerow([k, per_key_accuracy.get(k, float("nan")), per_key_present[k]])
 
     print(yaml.safe_dump(summary, sort_keys=False, allow_unicode=True))
-
+    print('--------------------------------')
+    print('total_gold_present', total_gold_present)
+    print('total_relaxed_correct', total_relaxed_correct)
+    print('relaxed_accuracy', relaxed_accuracy)
+    print('type_acc', type_acc)
+    print('completion_score', completion_score)
+    print('hc_accuracy', hc_accuracy)
+    print('hc_coverage', hc_coverage)
+    print('per_key_f1', per_key_f1)
+    print('per_key_accuracy', per_key_accuracy)
 
 if __name__ == "__main__":
     main()

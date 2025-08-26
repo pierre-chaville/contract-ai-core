@@ -198,6 +198,9 @@ class RevisionInstruction(FrozenBaseModel):
     amendment_end_line: int = Field(
         ..., description="The line number where the amendment ends."
     )
+    amendment_span_text: str = Field(
+        ..., description="Text of the amendment span"
+    )
     target_section: str = Field(
         ..., description="Section to revise in the contract, e.g., 'Part 1 (a)(ii)."
     )
