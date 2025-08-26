@@ -49,7 +49,6 @@ class ContractReviser:
 
         For example, replace this section ... with this text: ...
         """
-        print(f"Analyzing amendments for template: {template.name}")
         if self.config.provider != "openai":
             raise NotImplementedError(f"Unsupported provider: {self.config.provider}")
 
@@ -125,7 +124,6 @@ class ContractReviser:
             raise RuntimeError(
                 "langchain-openai is required. Install with: pip install langchain langchain-openai"
             )
-        print(f"Finding revisions targets")
         # Build contract lines block
         contract_block = "\n".join(f"{p.index}: {p.text}" for p in contracts_paragraphs)
 
@@ -156,7 +154,6 @@ class ContractReviser:
             pass
         api_key = os.getenv("OPENAI_API_KEY")
 
-        print(f"Using model: {self.config.model}")
         llm = ChatOpenAI(
             model=self.config.model or "gpt-4.1-mini",
             temperature=float(self.config.temperature),
@@ -185,7 +182,6 @@ class ContractReviser:
         )
 
         output: TargetLocations = structured_llm.invoke(prompt)  # type: ignore[assignment]
-        print(f"Output: {output}")
 
         # Map results back to input instructions by target_section
         results: List[RevisionInstructionTarget] = []
@@ -205,7 +201,6 @@ class ContractReviser:
                     target_indices = None
                 conf = float(loc.confidence)
                 explanation = loc.explanation
-            print(f"Target indices: {target_indices}")
             if target_indices is None:
                 print(f"Target indices is None for {ins.target_section}")
                 target_indices = []
@@ -292,7 +287,6 @@ class ContractReviser:
             structured_llm = llm.with_structured_output(ApplyOutput)  # type: ignore[arg-type]
 
             ins: RevisionInstructionTarget = job["ins"]
-            print(f"Ins: {ins}")
             instruction_text = (
                 "You are an expert legal editor. Given ONLY the target span paragraphs (with line numbers), "
                 "update that span to implement the described amendment. Do not introduce unrelated changes. "
@@ -310,9 +304,9 @@ class ContractReviser:
                 + "\n\n"
                 + guidance_text
             )
-            print('--- Run job ---')
-            print(f"Running job: {ins.target_section}")
-            print(f"Prompt: {prompt}")
+            # print('--- Run job ---')
+            # print(f"Running job: {ins.target_section}")
+            # print(f"Prompt: {prompt}")
             out: ApplyOutput = await structured_llm.ainvoke(prompt)  # type: ignore[assignment]
             return job, out
 
@@ -343,9 +337,9 @@ class ContractReviser:
             if start_idx >= 0:
                 for offset, txt in enumerate(out.revised_paragraphs):
                     revised_paras.append(Paragraph(index=start_idx + offset, text=txt))
-            print('--- Revised paragraphs ---')
-            print(f"Initial paragraphs: {initial}")
-            print(f"Revised paragraphs: {revised_paras}")
+            # print('--- Revised paragraphs ---')
+            # print(f"Initial paragraphs: {initial}")
+            # print(f"Revised paragraphs: {revised_paras}")
             revised_sections.append(
                 RevisedSection(
                     amendment_start_line=ins.amendment_start_line,

@@ -2,24 +2,24 @@
   {
     "amendment_start_line": 10,
     "amendment_end_line": 14,
-    "amendment_span_text": "(a) \t\"Specified Entity\" means in relation to Party A for the purpose of:\nSection 5(a)(v): None Section 5(a)(vi): None Section 5(a)(vii): None Section 5(b)(ii): None\nand in relation to Party B for the purpose of:\nSection 5(a)(v): None Section 5(a)(vi): None Section 5(a)(vii): Party B, Mediabistro.com, Ellen L. Meckler and Alan M. Meckler Section 5(b)(ii): None",
-    "target_section": "Part 1(a) of the Schedule",
+    "amendment_span_text": "Part 1(a) of the Schedule is hereby amended in its entirety to read as follows: \"Specified Entity\" means in relation to Party A for the purpose of: Section 5(a)(v): None Section 5(a)(vi): None Section 5(a)(vii): None Section 5(b)(ii): None and in relation to Party B for the purpose of: Section 5(a)(v): None Section 5(a)(vi): None Section 5(a)(vii): Party B, Mediabistro.com, Ellen L. Meckler and Alan M. Meckler Section 5(b)(ii): None",
+    "target_section": "Part 1(a)",
     "confidence_target": 0.95,
-    "change_explanation": "This amendment replaces the definition of 'Specified Entity' for both Party A and Party B, specifying which entities are included for various sections. For Party B, it now includes additional named individuals and entities for Section 5(a)(vii).",
+    "change_explanation": "Amendment replaces Part 1(a) of the Schedule to update the definition of \"Specified Entity\" for Party A and Party B, adding specific entities for Party B under Section 5(a)(vii).",
     "target_paragraph_indices": [
       20,
       21
     ],
-    "confidence_target_paragraph_indices": 0.98,
-    "target_paragraph_explanation": "Lines 20-21 contain the definition of 'Specified Entity' for both Party A and Party B, matching the description of Part 1(a) in the Schedule."
+    "confidence_target_paragraph_indices": 0.95,
+    "target_paragraph_explanation": "Lines 20-21 contain the definition of \"Specified Entity\" for Party A and Party B under Part 1(a), matching the target section description."
   },
   {
     "amendment_start_line": 15,
     "amendment_end_line": 18,
-    "amendment_span_text": "(i) Additional Termination Event: For the purpose of Section 5(b)(iii) of this Agreement, it shall be an \"Additional Termination Event\" with Party B being the Affected Party if:\n(i) any Credit Support Document, in accordance with its terms, expires, terminates, or ceases to be in full force and effect for the purpose of this Agreement unless (i) this Agreement is expressly amended in writing to reflect that it is no longer a Credit Support Document hereunder or (ii) a replacement Credit Support Document is entered into the terms of which are satisfactory to Party A in its sole discretion; or\n(ii) on any date (assuming, for the purpose of such calculation, that such date is an Early Termination Date), the amount payable by Party B pursuant to Section 6(e) of the Master Agreement would be zero.",
-    "target_section": "Part 1(g) of the Schedule",
+    "amendment_span_text": "Part 1(g) of the Schedule is hereby amended in its entirety to read as follows: Additional Termination Event: For the purpose of Section 5(b)(iii) of this Agreement, it shall be an \"Additional Termination Event\" with Party B being the Affected Party if: (i) any Credit Support Document expires, terminates, or ceases to be in full force and effect unless amended or replaced; or (ii) on any date, the amount payable by Party B pursuant to Section 6(e) would be zero.",
+    "target_section": "Part 1(g)",
     "confidence_target": 0.95,
-    "change_explanation": "This amendment replaces the entirety of Part 1(g) to define new Additional Termination Events, including failure of Credit Support Documents or a zero payment calculation for Party B.",
+    "change_explanation": "Amendment adds new Additional Termination Events under Part 1(g) related to Credit Support Documents and payment obligations under Section 6(e).",
     "target_paragraph_indices": [
       37,
       38,
@@ -31,59 +31,61 @@
       44,
       45
     ],
-    "confidence_target_paragraph_indices": 0.98,
-    "target_paragraph_explanation": "Lines 37-45 are labeled as (g) and define 'Additional Termination Event,' matching the description for Part 1(g) of the Schedule."
+    "confidence_target_paragraph_indices": 0.95,
+    "target_paragraph_explanation": "Lines 37-45 detail \"Additional Termination Event\" provisions under Part 1(g), including events related to Credit Support Documents and payment obligations, consistent with the amendment description."
   },
   {
     "amendment_start_line": 19,
     "amendment_end_line": 20,
-    "amendment_span_text": "(b) Quarterly and annual financial statements of Party B when reasonably requested by Party A and not otherwise provided to Party A under the Credit Support Documents.",
-    "target_section": "Part 2(b) of the Schedule",
-    "confidence_target": 0.95,
-    "change_explanation": "This amendment replaces Part 2(b) to require Party B to provide quarterly and annual financial statements to Party A upon reasonable request, unless already provided under Credit Support Documents.",
+    "amendment_span_text": "Part 2(b) of the Schedule is hereby amended in its entirety to read as follows: Quarterly and annual financial statements of Party B when reasonably requested by Party A and not otherwise provided under the Credit Support Documents.",
+    "target_section": "Part 2(b)",
+    "confidence_target": 0.9,
+    "change_explanation": "Amendment revises Part 2(b) to specify financial statement provision obligations of Party B to Party A.",
     "target_paragraph_indices": [
-      76,
-      77,
-      78
+      56,
+      57,
+      58,
+      59,
+      60
     ],
-    "confidence_target_paragraph_indices": 0.95,
-    "target_paragraph_explanation": "Lines 76-78 specify Party B's obligation to provide annual and quarterly financial statements, which aligns with the requirements for Part 2(b) of the Schedule."
+    "confidence_target_paragraph_indices": 0.9,
+    "target_paragraph_explanation": "Lines 56-60 contain Payee Representations under Part 2(b), specifying financial statement provision obligations of Party B to Party A."
   },
   {
     "amendment_start_line": 21,
     "amendment_end_line": 31,
-    "amendment_span_text": "(c) Credit Support Document: In relation to Party A, means not applicable. In relation to Party B, means:\n(i) Each of the following documents, as each such document may from time to time be amended, restated or otherwise modified:\n(a) that certain Guaranty of Payment, dated as of February 23, 2009, from Alan M. Meckler to Party A;\n(b) that certain Security Agreement, dated as of February 23, 2009, from Party B to Party A;\n(c) that certain Security Agreement, dated as of July 30, 2007, delivered by Mediabistro.com to Party A, as amended by that certain First Amendment to Security Agreement, dated as of February 23, 2009;\n(d) that certain Intellectual Property Security Agreement, dated as of July 12, 2007, delivered by Party B to Party A, as amended by that certain First Amendment to Intellectual Property Security Agreement, dated as of February 23, 2009;\n(e) that certain Intellectual Property Security Agreement, dated as of July 30, 2007, delivered by Mediabistro.com to Party A, as amended by that certain First Amendment to Intellectual Property Security Agreement, dated as of February 23, 2009;\n(f) that certain Pledge Agreement, dated as of July 12, 2007, delivered by Party B to Party A, as amended by that certain First Amendment to Pledge Agreement, dated as of February 23, 2009; and\n(g) that certain Mortgage, Security Agreement, Assignment of Leases and Rents and Fixture Filing, dated as of February 23, 2009, from Ellen Meckler to Party A.\n(ii) any other guarantee, security agreement, or other document (not referenced in subpart (i) above) entered into on or after February 23, 2009, that, by its terms, guarantees, secures or otherwise supports the performance of Party B's obligations under this Agreement.",
-    "target_section": "Part 4(f) of the Schedule",
+    "amendment_span_text": "Part 4(f) of the Schedule is hereby amended in its entirety to read as follows: Credit Support Document definition for Party A (not applicable) and Party B listing specific guaranty, security, intellectual property security agreements, pledge agreements, mortgage and other documents dated on or after February 23, 2009, that guarantee or secure Party B's obligations.",
+    "target_section": "Part 4(f)",
     "confidence_target": 0.95,
-    "change_explanation": "This amendment replaces Part 4(f) to comprehensively define which documents are considered Credit Support Documents for Party B, listing specific agreements and allowing for additional documents entered into after February 23, 2009.",
+    "change_explanation": "Amendment updates Part 4(f) to define Credit Support Documents applicable to Party B, listing specific documents and allowing for additional documents entered after February 23, 2009.",
     "target_paragraph_indices": [
       107
     ],
-    "confidence_target_paragraph_indices": 0.98,
-    "target_paragraph_explanation": "Line 107 is labeled as (f) and defines 'Credit Support Document' for Party B, matching the description for Part 4(f) of the Schedule."
+    "confidence_target_paragraph_indices": 0.9,
+    "target_paragraph_explanation": "Line 107 defines \"Credit Support Document\" applicable to Party B, listing specific documents and conditions, matching Part 4(f)."
   },
   {
     "amendment_start_line": 32,
     "amendment_end_line": 33,
-    "amendment_span_text": "(d) Credit Support Provider. In relation to Party A, means not applicable. In relation to Party B, means each party to any Credit Support Document of Party B, other than (i) Party A or Party B, (ii) any Affiliate of Party A, or (iii) any other secured party under such Credit Support Document.",
-    "target_section": "Part 4(g) of the Schedule",
+    "amendment_span_text": "Part 4(g) of the Schedule is hereby amended in its entirety to read as follows: Credit Support Provider definition for Party A (not applicable) and Party B as each party to any Credit Support Document of Party B excluding Party A, Party B, Affiliates of Party A, or other secured parties under such documents.",
+    "target_section": "Part 4(g)",
     "confidence_target": 0.95,
-    "change_explanation": "This amendment replaces Part 4(g) to redefine 'Credit Support Provider' for Party B, specifying exclusions for Party A, Party B, any Affiliate of Party A, or any other secured party.",
+    "change_explanation": "Amendment revises Part 4(g) to define Credit Support Providers related to Party B's Credit Support Documents with specified exclusions.",
     "target_paragraph_indices": [
       108
     ],
-    "confidence_target_paragraph_indices": 0.98,
-    "target_paragraph_explanation": "Line 108 is labeled as (g) and defines 'Credit Support Provider' for Party B, matching the description for Part 4(g) of the Schedule."
+    "confidence_target_paragraph_indices": 0.9,
+    "target_paragraph_explanation": "Line 108 defines \"Credit Support Provider\" related to Party B's Credit Support Documents with specified exclusions, consistent with Part 4(g)."
   },
   {
     "amendment_start_line": 35,
     "amendment_end_line": 37,
-    "amendment_span_text": "The 2007 Confirmation is hereby amended to delete the \"Other Terms and Conditions\" provision therefrom and to insert in place thereof the following:\nOther Term and Conditions:\nParty B agrees to deposit into a deposit account with Party A (the \"Blocked Account\"), commencing February 23, 2009, and continuing on each April 1, July 1, October 1, and January 1 thereafter, cash in amount equal to the Fixed Amount that would be payable for the current Calculation Period. Party B hereby grants to Party A a security interest in and an assignment of the Blocked Account, and pledges and assigns the Blocked Account to Party A, to secure the prompt and full payment and performance of the obligations of Party B hereunder. Party B hereby irrevocably authorizes Party A, at any time and from time to time, to cause any and all of the funds, credits and balances in the Blocked Account, to be applied to the payments due hereunder. Party A agrees to pay interest at a rate per annum equal to the overnight Federal Funds Rate for the funds deposited in the Blocked Account.",
-    "target_section": "Other Terms and Conditions of the 2007 Confirmation",
+    "amendment_span_text": "The 2007 Confirmation is amended to delete the \"Other Terms and Conditions\" provision and insert a new provision requiring Party B to deposit cash into a Blocked Account with Party A on specified dates, granting Party A a security interest and assignment in the Blocked Account, with Party A authorized to apply funds to payments due and paying interest at the overnight Federal Funds Rate.",
+    "target_section": "2007 Confirmation Other Terms and Conditions",
     "confidence_target": 0.95,
-    "change_explanation": "This amendment deletes the existing 'Other Terms and Conditions' in the 2007 Confirmation and replaces it with a new provision requiring Party B to deposit cash into a Blocked Account, grants Party A a security interest in the account, and sets the interest rate for funds deposited.",
+    "change_explanation": "Amendment modifies the 2007 Confirmation by replacing the \"Other Terms and Conditions\" provision with new terms regarding Party B's deposit obligations, security interest, and interest payments on the Blocked Account.",
     "target_paragraph_indices": [],
     "confidence_target_paragraph_indices": 0.1,
-    "target_paragraph_explanation": "There is no section in the provided contract text labeled as 'Other Terms and Conditions of the 2007 Confirmation,' nor is there any text that matches the described amendment. It appears this content is not present in the provided contract."
+    "target_paragraph_explanation": "No explicit section titled \"2007 Confirmation Other Terms and Conditions\" found in the provided contract text."
   }
 ]

@@ -43,11 +43,10 @@ def main() -> None:
 
     repo_root = Path(__file__).resolve().parents[1]
 
-    contracts_dir = repo_root / "dataset" / "documents" / template_key
-    amendments_dir = repo_root / "dataset" / "documents" / "amendments"
-    template_path = repo_root / "dataset" / "contract_types" / f"{template_key}.json"
-    out_restated_dir = repo_root / "dataset" / "output" / "amendments" / "restated"
-    out_instructions_dir = repo_root / "dataset" / "output" / "amendments" / "instructions"
+    contracts_dir = repo_root / "dataset" / "documents" / "amendments"/ "initial"
+    amendments_dir = repo_root / "dataset" / "documents" / "amendments" / "amendment"
+    out_restated_dir = repo_root / "dataset" / "output" / "amendments" / "restated" / model_name
+    out_instructions_dir = repo_root / "dataset" / "output" / "amendments" / "instructions" / model_name
     out_restated_dir.mkdir(parents=True, exist_ok=True)
     out_instructions_dir.mkdir(parents=True, exist_ok=True)
 
