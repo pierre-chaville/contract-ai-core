@@ -18,8 +18,8 @@ from pydantic import BaseModel, Field, create_model
 
 try:
     from langchain_openai import ChatOpenAI  # type: ignore
-    # from langchain.globals import set_debug
-    # set_debug(True)
+    from langchain.globals import set_debug
+    set_debug(False)
 except Exception as e:  # pragma: no cover
     ChatOpenAI = None  # type: ignore
     print('setting ChatOpenAI to None', e)
@@ -43,6 +43,8 @@ class DatapointExtractorConfig:
     temperature: float = 0.0
     max_tokens: Optional[int] = None
     beginning_paragraphs: int = 20
+    # Maximum number of concurrent scope extraction requests
+    concurrency: int = 8
 
 
 class DatapointExtractor:
@@ -112,6 +114,26 @@ class DatapointExtractor:
                 # document: use full text later
                 pass
 
+        # Merge all empty-clauses scopes into a single document-scope job
+        empty_clause_scope_ids: List[str] = [
+            sid for sid, (scp, idxs) in scopes.items() if scp.kind == "clauses" and not idxs
+        ]
+        if empty_clause_scope_ids:
+            merged_dp_indices: List[int] = []
+            for sid in empty_clause_scope_ids:
+                merged_dp_indices.extend(scope_to_datapoints.get(sid, []))
+            merged_dp_indices = sorted(set(merged_dp_indices))
+            # Remove empty clause scopes
+            for sid in empty_clause_scope_ids:
+                scopes.pop(sid, None)
+                scope_to_datapoints.pop(sid, None)
+            # Create or extend a single document scope holder
+            doc_scope_id = "document"
+            if doc_scope_id not in scopes:
+                scopes[doc_scope_id] = (_ExtractionScope(kind="document"), [])
+                scope_to_datapoints[doc_scope_id] = []
+            scope_to_datapoints[doc_scope_id].extend(merged_dp_indices)
+
         # Build jobs for parallel execution
         jobs: List[Dict[str, object]] = []
         for scope_id, (scope, indices) in scopes.items():
@@ -131,30 +153,47 @@ class DatapointExtractor:
                 scope_text = text
                 evidence = None
 
-            # Structured output model for this scope: each field returns {value, confidence}
-            class FieldResult(BaseModel):
-                value: Optional[str] = Field(default=None, description="Extracted value or null if not found.")
-                confidence: Optional[float] = Field(
-                    default=None,
-                    description="Model confidence in [0,1]; null if not available.",
-                    ge=0.0,
-                    le=1.0,
-                )
-                explanation: Optional[str] = Field(
-                    default=None,
-                    description="Short rationale for the extracted value.",
-                )
+            # Structured output model for this scope: each field returns {value, confidence, explanation}
+            def _map_data_type_to_py_type(dt: Optional[str]):
+                dt_norm = (dt or "").strip().lower()
+                if dt_norm in ("str", "string", "text"):
+                    return str
+                if dt_norm in ("bool", "boolean"):
+                    return bool
+                if dt_norm in ("int", "integer"):
+                    return int
+                if dt_norm in ("float", "number", "double"):
+                    return float
+                if dt_norm in ("date", "datetime"):
+                    # Dates are returned as ISO strings (YYYY-MM-DD)
+                    return str
+                if dt_norm == "enum":
+                    # enums should return their code as a string
+                    return str
+                return str
 
-            fields: Dict[str, Tuple[Optional[FieldResult], Field]] = {}
+            fields: Dict[str, Tuple[Optional[BaseModel], Field]] = {}
             for dp in datapoints:
                 desc = dp.description or f"Extract value for '{dp.title}'."
-                fields[dp.key] = (Optional[FieldResult], Field(default=None, description=desc))
+                py_type = _map_data_type_to_py_type(getattr(dp, "data_type", None))
+                # Create a typed FieldResult model per datapoint so `value` matches expected type
+                FieldResultModel: BaseModel = create_model(
+                    f"FieldResult_{dp.key}",
+                    value=(Optional[py_type], Field(default=None, description="Extracted value or null if not found.")),
+                    confidence=(
+                        Optional[float],
+                        Field(default=None, description="Model confidence in [0,1]; null if not available.", ge=0.0, le=1.0),
+                    ),
+                    explanation=(Optional[str], Field(default=None, description="Short rationale for the extracted value.")),
+                )  # type: ignore[assignment]
+                fields[dp.key] = (FieldResultModel, Field(..., description=desc))
+
             OutputModel: BaseModel = create_model("ScopeExtraction", **fields)  # type: ignore[assignment]
 
             instruction = (
                 "You are an expert in the field of contract law. Your job is to extract the information from the contract.\n"
                 f"The contract is a {template.description}.\n"
-                "Extract the requested fields based only on the provided text.\n"
+                "Extract the requested fields based only on the provided text in json format. Do not include any other text in your response.\n"
                 "Return, for each field, an object with keys 'value', 'confidence', and 'explanation'.\n"
                 "- value: the extracted value, or null if not present.\n"
                 "- confidence: a float between 0 and 1, or null if you cannot judge.\n"
@@ -220,16 +259,19 @@ class DatapointExtractor:
                 jobs=jobs,
                 model_name=self.config.model or "gpt-4.1-mini",
                 temperature=float(self.config.temperature),
-                concurrency=4,
+                concurrency=int(self.config.concurrency),
             )
         )
 
-        # Build extracted list from results
+        # Build extracted list from results (robust to missing/failed jobs)
         extracted: List[ExtractedDatapoint] = []
         for res in results:
-            data: Dict[str, Optional[dict]] = res["data"]  # type: ignore[index]
-            datapoints = res["datapoints"]  # type: ignore[index]
-            evidence = res["evidence"]  # type: ignore[index]
+            if not isinstance(res, dict):
+                continue
+            data_obj = res.get("data")
+            data: Dict[str, Optional[dict]] = data_obj if isinstance(data_obj, dict) else {}
+            datapoints = res.get("datapoints") or []
+            evidence = res.get("evidence")
             for dp in datapoints:  # type: ignore[assignment]
                 item = (data or {}).get(dp.key) or {}
                 value = item.get("value")
@@ -257,7 +299,7 @@ class DatapointExtractor:
         jobs: List[Dict[str, object]],
         model_name: str,
         temperature: float,
-        concurrency: int = 4,
+        concurrency: int = 8,
     ) -> List[Dict[str, object]]:
         """Run scope extractions concurrently and return raw model_dump data per job."""
         if ChatOpenAI is None:
@@ -281,18 +323,23 @@ class DatapointExtractor:
             datapoints = job["datapoints"]  # type: ignore[index]
             evidence = job["evidence"]  # type: ignore[index]
 
-            print('--------------------------------')
-            print('prompt', prompt)
-
-            structured_llm = llm.with_structured_output(OutputModel, temperature=temperature)  # type: ignore[arg-type]
-            async with sem:
-                output: BaseModel = await structured_llm.ainvoke(prompt)  # type: ignore[assignment]
-            data = output.model_dump()  # type: ignore[attr-defined]
             # print('--------------------------------')
-            # print("data", data)
-            # print('datapoints', datapoints)
+            # print('OutputModel', OutputModel.model_json_schema())
+            # print('datapoints', [dp.key for dp in datapoints])
             # print('evidence', evidence)
-            return {"data": data, "datapoints": datapoints, "evidence": evidence}
+            # print('prompt', prompt)
+            # print('--------------------------------')
+
+            try:
+                structured_llm = llm.with_structured_output(OutputModel, temperature=temperature, max_tokens=8000)  # type: ignore[arg-type]
+                async with sem:
+                    output: BaseModel = await structured_llm.ainvoke(prompt)  # type: ignore[assignment]
+                data = output.model_dump()  # type: ignore[attr-defined]
+                return {"data": data, "datapoints": datapoints, "evidence": evidence}
+            except Exception as e:  # pragma: no cover
+                # Return an empty result for this job so the caller can proceed
+                print('run_one error:', repr(e))
+                return {"data": {}, "datapoints": datapoints, "evidence": evidence, "error": repr(e)}
 
         tasks = [asyncio.create_task(run_one(job)) for job in jobs]
         return await asyncio.gather(*tasks)

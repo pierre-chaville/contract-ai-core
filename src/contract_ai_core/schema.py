@@ -1,7 +1,7 @@
 from __future__ import annotations
 from enum import Enum
 import re
-from typing import Dict, List, Optional, Sequence
+from typing import Dict, List, Optional, Sequence, Any
 
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -163,9 +163,9 @@ class ExtractedDatapoint(FrozenBaseModel):
     """Value extracted for a datapoint along with optional provenance info."""
 
     key: str = Field(..., description="Datapoint key (matches a definition in the template).")
-    value: Optional[str] = Field(
+    value: Any = Field(
         default=None,
-        description="Extracted value as normalized text; None if not found.",
+        description="Extracted value; type depends on datapoint data_type (str/bool/int/float).",
     )
     explanation: Optional[str] = Field(
         default=None,

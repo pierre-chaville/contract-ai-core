@@ -1,0 +1,9 @@
+key,title,data_type,enum_key,enum_muti_select,scope,clause_keys,description
+threshold_amount_A_amount,amount for Party A,float,,FALSE,clause,threshold_amount,amount for threshold amount for Party A 
+threshold_amount_A_currency,currency for Party A ,str,,FALSE,clause,threshold_amount,"currency for threshold amount for Party A, ISO format (e.g. USD, EUR)"
+threshold_amount_A_percent,percentage for Party A ,float,,FALSE,clause,threshold_amount,"percentage for threshold amount for Party A  (provide number in percentage, i.e. 3 for 3%)"
+threshold_amount_A_percent_reference,percentage reference for Party A ,enum,THRESHOLD_REFERENCE,FALSE,clause,threshold_amount,reference of the percentage for Party A (if percentage)
+threshold_amount_B_amount,amount for Party B,float,,FALSE,clause,threshold_amount,amount for threshold amount for Party B
+threshold_amount_B_currency,currency for Party B,str,,FALSE,clause,threshold_amount,"currency for threshold amount for Party B, ISO format (e.g. USD, EUR)"
+threshold_amount_B_percent,percentage for Party B,float,,FALSE,clause,threshold_amount,"percentage for threshold amount for Party B (provide number in percentage, i.e. 3 for 3%)"
+threshold_amount_B_percent_reference,percentage reference for Party B,enum,THRESHOLD_REFERENCE,,clause,threshold_amount,reference of the percentage for Party B (if percentage)

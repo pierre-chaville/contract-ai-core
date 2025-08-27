@@ -1,35 +1,35 @@
 key,title,data_type,enum_key,enum_muti_select,scope,clause_keys,description
 date,Date of the contract,date,,,beginning,,Date of the contract
-party_A,Party A,string,,FALSE,beginning,,Name of party A
-party_B,party_B,string,,FALSE,beginning,,Name of party B
-specified_entity_A,Specified entity Party A,string,,FALSE,clause,specified_entity,Specified entity Party A (null if none or not applicable)
-specified_entity_B,Specified entity Party B,string,,FALSE,clause,specified_entity,Specified entity Party B (null if none or not applicable)
+party_A,Party A,str,,FALSE,beginning,,Name of party A
+party_B,party_B,str,,FALSE,beginning,,Name of party B
+specified_entity_A,Specified entity Party A,str,,FALSE,clause,specified_entity,Specified entity Party A (null if none or not applicable)
+specified_entity_B,Specified entity Party B,str,,FALSE,clause,specified_entity,Specified entity Party B (null if none or not applicable)
 specified_transaction,Specified transaction scope,enum,SPECIFIED_TRANSACTION_SCOPE,FALSE,clause,specified_transaction,Specified transaction scope
 cross_default,Cross default applicable parties,enum,PARTY_TYPES,FALSE,clause,cross_default,Cross default applicable parties
-specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,enum,BOOLEAN,FALSE,clause,specified_indebtness,Specified indebtness includes borrowed_money? (NO if not mentioned)
-specified_indebtness_deposits,Specified indebtness excludes deposits,enum,BOOLEAN,FALSE,clause,specified_indebtness,Specified indebtness excludes deposits? (NO if not mentioned)
+specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,bool,,FALSE,clause,specified_indebtness,Specified indebtness includes borrowed_money? (NO if not mentioned)
+specified_indebtness_deposits,Specified indebtness excludes deposits,bool,,FALSE,clause,specified_indebtness,Specified indebtness excludes deposits? (NO if not mentioned)
 threshold_amount_A_amount,amount for Party A,float,,FALSE,clause,threshold_amount,amount for threshold amount for Party A 
-threshold_amount_A_currency,currency for Party A ,string,,FALSE,clause,threshold_amount,"currency for threshold amount for Party A, ISO format (e.g. USD, EUR)"
+threshold_amount_A_currency,currency for Party A ,str,,FALSE,clause,threshold_amount,"currency for threshold amount for Party A, ISO format (e.g. USD, EUR)"
 threshold_amount_A_percent,percentage for Party A ,float,,FALSE,clause,threshold_amount,"percentage for threshold amount for Party A  (in percentage, i.e. 3 for 3%)"
 threshold_amount_A_percent_reference,percentage reference for Party A ,enum,THRESHOLD_REFERENCE,FALSE,clause,threshold_amount,reference of the percentage for Party A (if percentage)
 threshold_amount_B_amount,amount for Party B,float,,FALSE,clause,threshold_amount,amount for threshold amount for Party B
-threshold_amount_B_currency,currency for Party B,string,,FALSE,clause,threshold_amount,"currency for threshold amount for Party B, ISO format (e.g. USD, EUR)"
+threshold_amount_B_currency,currency for Party B,str,,FALSE,clause,threshold_amount,"currency for threshold amount for Party B, ISO format (e.g. USD, EUR)"
 threshold_amount_B_percent,percentage for Party B,float,,FALSE,clause,threshold_amount,"percentage for threshold amount for Party B  (in percentage, i.e. 3 for 3%)"
 threshold_amount_B_percent_reference,percentage reference for Party B,enum,THRESHOLD_REFERENCE,,clause,threshold_amount,reference of the percentage for Party B (if percentage)
 credit_event_upon_merger,Credit Event Upon Merger  applicable parties,enum,PARTY_TYPES,FALSE,clause,credit_event_upon_merger,Credit Event Upon Merger  applicable parties
 automatic_early_termination,Automatic Early Termination  applicable parties,enum,PARTY_TYPES,FALSE,clause,automatic_early_termination,Automatic Early Termination  applicable parties
-termination_currency,Termination Currency,string,,FALSE,clause,termination_currency,"Termination Currency in ISO format (e.g. USD, EUR, ...)"
-notices_A,Address for notices for Party A,string,,FALSE,clause,address_for_notices,Address for notices for Party A
-notices_B,Address for notices for Party B,string,,FALSE,clause,address_for_notices,Address for notices for Party B
-process_agent_A,Process agent for party A,enum,BOOLEAN,FALSE,clause,process_agent,Is process agent applicable for Party A?
-process_agent_name_A,Name of process agent for party A,string,,FALSE,clause,process_agent,Name of process agent for Party A if applicable
-process_agent_address_A,Address of process agent for party A,string,,FALSE,clause,process_agent,Address of process agent for Party A if applicable
-process_agent_B,Process agent for party B,enum,BOOLEAN,FALSE,clause,process_agent,Is process agent applicable for Party B?
-process_agent_name_B,Name of process agent for party B,string,,FALSE,clause,process_agent,Name of process agent for Party B if applicable
-process_agent_address_B,Address of process agent for party B,string,,FALSE,clause,process_agent,Address of process agent for Party B if applicable
-multibranch_party_A,Party A is a Multibranch party,enum,BOOLEAN,FALSE,clause,multibranch_party,is Party A a Multibranch party?
-multibranch_party_A_offices,Party A offices,string,,FALSE,clause,multibranch_party,offices for  Party A when a Multibranch party
-multibranch_party_B,Party B is a Multibranch party,enum,BOOLEAN,FALSE,clause,multibranch_party,is Party B a Multibranch party ?
-multibranch_party_B_offices,Party B offices,string,,FALSE,clause,multibranch_party,offices for  Party B when a Multibranch party
+termination_currency,Termination Currency,str,,FALSE,clause,termination_currency,"Termination Currency in ISO format (e.g. USD, EUR, ...)"
+notices_A,Email for notices for Party A,str,,FALSE,clause,address_for_notices,email  for notices for Party A
+notices_B,Email for notices for Party B,str,,FALSE,clause,address_for_notices,email  for notices for Party B
+process_agent_A,Process agent for party A,bool,,FALSE,clause,process_agent,Is process agent applicable for Party A?
+process_agent_name_A,Name of process agent for party A,str,,FALSE,clause,process_agent,Name of process agent for Party A if applicable
+process_agent_address_A,Address of process agent for party A,str,,FALSE,clause,process_agent,Address of process agent for Party A if applicable
+process_agent_B,Process agent for party B,bool,,FALSE,clause,process_agent,Is process agent applicable for Party B?
+process_agent_name_B,Name of process agent for party B,str,,FALSE,clause,process_agent,Name of process agent for Party B if applicable
+process_agent_address_B,Address of process agent for party B,str,,FALSE,clause,process_agent,Address of process agent for Party B if applicable
+multibranch_party_A,Party A is a Multibranch party,bool,,FALSE,clause,multibranch_party,is Party A a Multibranch party?
+multibranch_party_A_offices,Party A offices,str,,FALSE,clause,multibranch_party,offices for  Party A when a Multibranch party
+multibranch_party_B,Party B is a Multibranch party,bool,,FALSE,clause,multibranch_party,is Party B a Multibranch party ?
+multibranch_party_B_offices,Party B offices,str,,FALSE,clause,multibranch_party,offices for  Party B when a Multibranch party
 calculation_agent,Party for calculation agent,enum,party_types,FALSE,clause,calculation_agent,Party for calculation agent
 governing_law,Governing Law,enum,LAW,FALSE,clause,governing_law,Governing Law

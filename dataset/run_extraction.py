@@ -70,7 +70,7 @@ def main() -> None:
 
     # Config
     # temperature for gpt-5 is different from other models
-    extractor_temperature = 1.0 if 'gpt-5' in model_name else 0.0    
+    extractor_temperature = 1.0 if 'gpt-5' in model_name else 0.2   
     extractor = DatapointExtractor(
         DatapointExtractorConfig(
             provider="openai",
@@ -133,7 +133,7 @@ def main() -> None:
                 confidence_percent = (
                     round(confidence * 100) if isinstance(confidence, (int, float)) else ""
                 )
-                writer.writerow([dp.key, title, confidence_percent, dp.value, dp.evidence_paragraph_indices, getattr(dp, "explanation", "") or ""])
+                writer.writerow([dp.key, title, confidence_percent, str(dp.value), dp.evidence_paragraph_indices, getattr(dp, "explanation", "") or ""])
         print(f"  -> wrote {out_path}")
 
 

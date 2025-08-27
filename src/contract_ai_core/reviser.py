@@ -108,7 +108,6 @@ class ContractReviser:
                     change_explanation=item.change_explanation,
                 )
             )
-        json.dump([x.model_dump() for x in results], open("results_1.json", "w"), indent=2)
         return results
 
     def find_revisions_targets(
@@ -218,7 +217,6 @@ class ContractReviser:
                 )
             )
 
-        json.dump([x.model_dump() for x in results], open("results_2.json", "w"), indent=2)
         return results
 
     def apply_revisions(

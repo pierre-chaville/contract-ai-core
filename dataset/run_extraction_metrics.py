@@ -9,6 +9,8 @@ import numpy as np
 from sklearn.metrics import f1_score
 import yaml
 
+from utilities import load_template
+
 
 def load_pred_datapoints(path: Path) -> Dict[str, Tuple[str, float]]:
     """Load predicted datapoints from CSV to a map: key -> (value, confidence_percent).
@@ -91,6 +93,7 @@ MONTHS = {
 
 
 def normalize_date(value: str) -> str:
+    print("value date", value)
     if value is None:
         return ""
     v = value.strip().casefold()
@@ -113,8 +116,44 @@ def normalize_date(value: str) -> str:
         return f"{re_match.group(1)}-{re_match.group(2)}-{re_match.group(3)}"
     if year and mon and day:
         return f"{year}-{mon}-{day}"
-    print('value', value, 'normalized', normalize_relaxed(value))
+    print("value", value, "normalized", normalize_relaxed(value))
     return normalize_relaxed(value)
+
+
+def normalize_bool(value: str) -> str:
+    if value is None:
+        return "false"
+    v = value.strip().casefold()
+    if v in ("true", "yes", "1"):
+        return "true"
+    if v in ("false", "no", "0"):
+        return "false"
+    return "false"
+
+def normalize_float(value: str) -> str:
+    if value is None:
+        return ""
+    v = value.strip().casefold()
+    # Remove thousands separators and percent sign
+    v = v.replace(",", "").replace("%", "")
+    return v
+
+
+def normalize_int(value: str) -> str:
+    if value is None:
+        return ""
+    v = value.strip().casefold()
+    v = v.replace(",", "").replace("%", "")
+    return v
+
+
+def normalize_enum(value: str) -> str:
+    if value is None:
+        return ""
+    v = value.strip()
+    # Keep only alphanumerics, compare case-insensitively
+    v = "".join(ch for ch in v if ch.isalnum())
+    return v.casefold()
 
 
 def relaxed_equal(gold: str, pred: str, dtype: str) -> bool:
@@ -122,17 +161,59 @@ def relaxed_equal(gold: str, pred: str, dtype: str) -> bool:
         gold = ""
     if pred is None:
         pred = ""
-    if dtype.lower() in ("money", "currency", "amount"):
-        return normalize_money(gold) == normalize_money(pred)
-    if dtype.lower() in ("date",):
+
+    dt = (dtype or "").strip().lower()
+    # Floats (allow tolerance); support synonyms
+    if dt in ("float", "number", "double", "percent"):
+        gs = normalize_float(gold)
+        ps = normalize_float(pred)
+        try:
+            gv = float(gs) if gs != "" else float("nan")
+            pv = float(ps) if ps != "" else float("nan")
+            if np.isnan(gv) or np.isnan(pv):
+                return gs == ps
+            tol = max(1e-6, 1e-3 * max(abs(gv), abs(pv)))
+            return abs(gv - pv) <= tol
+        except Exception:
+            return gs == ps
+
+    # Integers
+    if dt in ("int", "integer"):
+        gs = normalize_int(gold)
+        ps = normalize_int(pred)
+        try:
+            gv = int(float(gs)) if gs not in ("", "nan") else None
+            pv = int(float(ps)) if ps not in ("", "nan") else None
+            return gv == pv
+        except Exception:
+            return gs == ps
+
+    # Booleans
+    if dt in ("bool", "boolean"):
+        return normalize_bool(gold) == normalize_bool(pred)
+
+    # Dates
+    if dt in ("date", "datetime"):
         return normalize_date(gold) == normalize_date(pred)
+
+    # Enums
+    if dt in ("enum",):
+        return normalize_enum(gold) == normalize_enum(pred)
+
+    # Money/amount (if provided)
+    if dt in ("money", "amount"):
+        return normalize_money(gold) == normalize_money(pred)
+
+    # Default string compare
     return normalize_relaxed(gold) == normalize_relaxed(pred)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Compute datapoint extraction metrics")
     parser.add_argument("--template", required=True, help="Template key (e.g., ISDA)")
-    parser.add_argument("--model", required=True, help="Model name used for predictions (folder name)")
+    parser.add_argument(
+        "--model", required=True, help="Model name used for predictions (folder name)"
+    )
     args = parser.parse_args()
 
     template_key = args.template
@@ -142,16 +223,19 @@ def main() -> None:
 
     gold_dir = repo_root / "dataset" / "gold" / "datapoints" / template_key
     pred_dir = repo_root / "dataset" / "output" / "datapoints" / template_key / model_name
-    template_path = repo_root / "dataset" / "contract_types" / f"{template_key}.json"
-    out_dir = repo_root / "dataset" / "metrics" / "results" / "extraction" / template_key / model_name
+    out_dir = (
+        repo_root / "dataset" / "metrics" / "results" / "extraction" / template_key / model_name
+    )
     out_dir.mkdir(parents=True, exist_ok=True)
 
     # Load template for types and required flags
-    import json
-    with template_path.open("r", encoding="utf-8") as f:
-        template = json.load(f)
-    key_to_type = {dp["key"]: dp.get("data_type", "string") for dp in template.get("datapoints", [])}
-    required_keys = {dp["key"] for dp in template.get("datapoints", []) if dp.get("required", False)}
+    template = load_template(template_key)
+    key_to_type = {
+        dp["key"]: dp.get("data_type", "string") for dp in template.get("datapoints", [])
+    }
+    required_keys = {
+        dp["key"] for dp in template.get("datapoints", []) if dp.get("required", False)
+    }
 
     gold_files = {p.stem: p for p in gold_dir.glob("*.csv")}
     pred_files = {p.stem: p for p in pred_dir.glob("*.csv")}
@@ -173,10 +257,16 @@ def main() -> None:
     per_key_correct: Dict[str, int] = {}
 
     # Type-specific
-    type_counts: Dict[str, Tuple[int, int]] = {"date": (0, 0), "money": (0, 0)}  # (gold_present, correct)
+    type_counts: Dict[str, Tuple[int, int]] = {
+        "date": (0, 0),
+        "money": (0, 0),
+    }  # (gold_present, correct)
 
     # Completion
     completion_fractions: List[float] = []
+
+    # Collect mismatches for a consolidated CSV: file, key, gold_value, pred_value
+    mismatches: List[Tuple[str, str, str, str]] = []
 
     # Selective extraction at 90% confidence
     hc_threshold = 90.0
@@ -192,6 +282,7 @@ def main() -> None:
         for key, gold_val in gold_map.items():
             dtype = key_to_type.get(key, "string")
             pred_val, pred_conf = pred_map.get(key, ("", float("nan")))
+            print(key, dtype, gold_val, pred_val, pred_conf)
             if gold_val.strip() != "":
                 total_gold_present += 1
                 # High-confidence tracking denominator
@@ -206,16 +297,23 @@ def main() -> None:
                         hc_selected += 1
                         hc_correct += 1
                 else:
+                    mismatches.append((stem, key, gold_val, pred_val))
                     if not np.isnan(pred_conf) and pred_conf >= hc_threshold:
                         hc_selected += 1
 
                 # Type-specific for certain dtypes
                 if dtype.lower() == "date":
                     gp, cc = type_counts["date"]
-                    type_counts["date"] = (gp + 1, cc + (1 if relaxed_equal(gold_val, pred_val, dtype) else 0))
+                    type_counts["date"] = (
+                        gp + 1,
+                        cc + (1 if relaxed_equal(gold_val, pred_val, dtype) else 0),
+                    )
                 if dtype.lower() in ("money", "amount"):
                     gp, cc = type_counts["money"]
-                    type_counts["money"] = (gp + 1, cc + (1 if relaxed_equal(gold_val, pred_val, dtype) else 0))
+                    type_counts["money"] = (
+                        gp + 1,
+                        cc + (1 if relaxed_equal(gold_val, pred_val, dtype) else 0),
+                    )
 
             # Field-level F1 accounting (single value per field per doc)
             if gold_val.strip() == "":
@@ -234,15 +332,17 @@ def main() -> None:
 
         # Document completion score: fraction of required keys with any predicted value
         if required_keys:
-            num_present = sum(1 for k in required_keys if pred_map.get(k, ("", float("nan")))[0].strip() != "")
+            num_present = sum(
+                1 for k in required_keys if pred_map.get(k, ("", float("nan")))[0].strip() != ""
+            )
             completion_fractions.append(num_present / len(required_keys))
 
     # Compute overall metrics
     relaxed_accuracy = (total_relaxed_correct / total_gold_present) if total_gold_present else 0.0
-    type_acc = {
-        t: (c[1] / c[0] if c[0] else float("nan")) for t, c in type_counts.items()
-    }
-    completion_score = (sum(completion_fractions) / len(completion_fractions)) if completion_fractions else 0.0
+    type_acc = {t: (c[1] / c[0] if c[0] else float("nan")) for t, c in type_counts.items()}
+    completion_score = (
+        (sum(completion_fractions) / len(completion_fractions)) if completion_fractions else 0.0
+    )
     hc_accuracy = (hc_correct / hc_selected) if hc_selected else float("nan")
     hc_coverage = (hc_selected / hc_total_gold_present) if hc_total_gold_present else 0.0
 
@@ -294,17 +394,13 @@ def main() -> None:
 
     print(yaml.safe_dump(summary, sort_keys=False, allow_unicode=True))
     print('--------------------------------')
-    print('total_gold_present', total_gold_present)
-    print('total_relaxed_correct', total_relaxed_correct)
-    print('relaxed_accuracy', relaxed_accuracy)
-    print('type_acc', type_acc)
-    print('completion_score', completion_score)
-    print('hc_accuracy', hc_accuracy)
-    print('hc_coverage', hc_coverage)
-    print('per_key_f1', per_key_f1)
-    print('per_key_accuracy', per_key_accuracy)
+    if mismatches:
+        with (out_dir / "mismatches.csv").open("w", encoding="utf-8", newline="") as f:
+            writer = csv.writer(f)
+            writer.writerow(["file", "key", "gold_value", "pred_value"])
+            for row in sorted(mismatches):
+                print('mismatch', list(row))
+                writer.writerow(list(row))
 
 if __name__ == "__main__":
     main()
-
-

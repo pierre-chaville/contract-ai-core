@@ -37,12 +37,6 @@ dist/
 .mypy_cache/
 .ipynb_checkpoints/
 
-# Project outputs
-dataset/documents/
-dataset/gold/
-dataset/output/
-dataset/metrics/
-dataset/gold/
 
 # Local Python version files
 .python-version
