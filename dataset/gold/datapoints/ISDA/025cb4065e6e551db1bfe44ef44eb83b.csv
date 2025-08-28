@@ -7,10 +7,10 @@ specified_entity_B,Specified entity Party B,100,None,[8],The text explicitly sta
 specified_transaction,Specified transaction scope,100,NONSTD,"[4, 12, 121, 140, 146]","The text states that only the Class A Swap is governed by the Agreement and that references to 'Transactions' are deemed to refer only to the Class A Swap. This is a non-standard limitation of the scope of 'Specified Transaction' compared to the standard ISDA definition, which would cover a broader range of transactions."
 cross_default,Cross default applicable parties,100,A,[13],The text states that Cross Default provisions apply to Party A and will not apply to Party B.
 specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,50,None,[14],The text does not mention whether borrowed money is included or excluded in Specified Indebtedness; it only refers to the definition in Section 14.
-specified_indebtness_deposits,Specified indebtness excludes deposits,100,True,[14],The text explicitly states that Specified Indebtedness shall not include deposits received in the course of a party's ordinary banking business.
+specified_indebtness_deposits,Specified indebtness excludes deposits,100,TRUE,[14],The text explicitly states that Specified Indebtedness shall not include deposits received in the course of a party's ordinary banking business.
 threshold_amount_A_amount,amount for Party A,100,None,"[15, 18]","The text specifies a percentage (3%) of shareholder's equity, not a fixed amount."
 threshold_amount_A_currency,currency for Party A ,100,None,"[15, 18]","No specific currency is mentioned; the amount is defined as a percentage of shareholder's equity, or its equivalent in any other currency."
-threshold_amount_A_percent,percentage for Party A ,100,3.0,"[15, 18]",The text states '3% of its total shareholders equity' for Party A.
+threshold_amount_A_percent,percentage for Party A ,100,3,"[15, 18]",The text states '3% of its total shareholders equity' for Party A.
 threshold_amount_A_percent_reference,percentage reference for Party A ,100,SHAREHOLDER,"[15, 18]",The percentage is referenced to 'total shareholders equity'.
 threshold_amount_B_amount,amount for Party B,100,None,"[15, 18]",No information is provided regarding Party B's threshold amount.
 threshold_amount_B_currency,currency for Party B,100,None,"[15, 18]",No information is provided regarding Party B's threshold currency.
@@ -21,15 +21,15 @@ automatic_early_termination,Automatic Early Termination  applicable parties,100,
 termination_currency,Termination Currency,100,USD,[25],"The text explicitly states 'Termination Currency means United States Dollars', and USD is the ISO code for United States Dollars."
 notices_A,Email for notices for Party A,100,None,"[90, 91, 92, 95, 96, 97, 98, 99]","The provided text for Party A only lists physical address, facsimile, and phone number; no email address is mentioned."
 notices_B,Email for notices for Party B,100,None,"[90, 91, 92, 95, 96, 97, 98, 99]","The provided text for Party B only lists physical addresses, phone, and facsimile numbers; no email address is mentioned."
-process_agent_A,Process agent for party A,100,True,"[114, 115, 116]","The text states 'Party A appoints as it Process Agent for the purpose of Section 13(c): Barclays Capital 200 Park Avenue New York, NY 10166 Attn: Legal Department', confirming a process agent is appointed for Party A."
+process_agent_A,Process agent for party A,100,TRUE,"[114, 115, 116]","The text states 'Party A appoints as it Process Agent for the purpose of Section 13(c): Barclays Capital 200 Park Avenue New York, NY 10166 Attn: Legal Department', confirming a process agent is appointed for Party A."
 process_agent_name_A,Name of process agent for party A,100,Barclays Capital,"[114, 115, 116]","The process agent named for Party A is 'Barclays Capital', as stated in the text."
 process_agent_address_A,Address of process agent for party A,100,"200 Park Avenue New York, NY 10166 Attn: Legal Department","[114, 115, 116]","The address given for Party A's process agent is '200 Park Avenue New York, NY 10166 Attn: Legal Department'."
-process_agent_B,Process agent for party B,100,False,"[114, 115, 116]","The text states 'Party B appoints as its Process Agent for the purpose of Section 13(c): Not applicable.', indicating no process agent for Party B."
+process_agent_B,Process agent for party B,100,FALSE,"[114, 115, 116]","The text states 'Party B appoints as its Process Agent for the purpose of Section 13(c): Not applicable.', indicating no process agent for Party B."
 process_agent_name_B,Name of process agent for party B,100,None,"[114, 115, 116]","No process agent is appointed for Party B, so no name is provided."
 process_agent_address_B,Address of process agent for party B,100,None,"[114, 115, 116]","No process agent is appointed for Party B, so no address is provided."
-multibranch_party_A,Party A is a Multibranch party,100,True,"[103, 104, 105]",The text states 'Party A is a Multibranch Party and may act through its London and New York Offices.'
+multibranch_party_A,Party A is a Multibranch party,100,TRUE,"[103, 104, 105]",The text states 'Party A is a Multibranch Party and may act through its London and New York Offices.'
 multibranch_party_A_offices,Party A offices,100,London and New York Offices,"[103, 104, 105]",The text specifies that Party A may act through its London and New York Offices.
-multibranch_party_B,Party B is a Multibranch party,100,False,"[103, 104, 105]",The text states 'Party B is not a Multibranch Party.'
+multibranch_party_B,Party B is a Multibranch party,100,FALSE,"[103, 104, 105]",The text states 'Party B is not a Multibranch Party.'
 multibranch_party_B_offices,Party B offices,100,None,"[103, 104, 105]","Party B is not a Multibranch Party, so no offices are listed."
-calculation_agent,Party for calculation agent,100,Party A,[106],"The text explicitly states 'The Calculation Agent is Party A', with a proviso for default, but the primary designation is clear."
+calculation_agent,Party for calculation agent,100,A,[106],"The text explicitly states 'The Calculation Agent is Party A', with a proviso for default, but the primary designation is clear."
 governing_law,Governing Law,100,NEW-YORK,[89],The text explicitly states that the agreement will be governed by the laws of the State of New York.

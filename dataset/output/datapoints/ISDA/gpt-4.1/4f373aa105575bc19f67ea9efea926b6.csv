@@ -1,35 +1,35 @@
 key,title,confidence,value,evidence,explanation
 date,Date of the contract,100,2024-02-15,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","The text states: 'SCHEDULE to the 2002 Master Agreement dated as of February 15, 2024'."
-party_A,Party A,100,BNP PARIBAS,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","The text lists 'BNP PARIBAS' first, and then refers to it as 'Party A'."
-party_B,party_B,100,FSSL FINANCE BNPP TRS LLC,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",The text lists 'FSSL FINANCE BNPP TRS LLC' after BNP PARIBAS and refers to it as 'Party B'.
-specified_entity_A,Specified entity Party A,100,None,"[4, 5, 6, 7, 8, 104]","The text explicitly states 'Specified Entity' means with respect to Party A, None."
-specified_entity_B,Specified entity Party B,100,None,"[4, 5, 6, 7, 8, 104]","The text explicitly states 'Specified Entity' means with respect to Party B, None."
-specified_transaction,Specified transaction scope,100,NONSTD,"[9, 112]","The text modifies the standard Section 14 definition by excluding certain transaction types, indicating a non-standard scope."
+party_A,Party A,100,FSSL FINANCE BNPP TRS LLC,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","The text lists 'BNP PARIBAS FSSL FINANCE BNPP TRS LLC (""Party A"")', indicating FSSL FINANCE BNPP TRS LLC is Party A."
+party_B,party_B,20,None,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","The text only shows 'And (""Party B"")' without specifying a name for Party B."
+specified_entity_A,Specified entity Party A,100,None,"[4, 5, 6, 7, 8, 104]","The text explicitly states that 'Specified Entity' means with respect to Party A, None."
+specified_entity_B,Specified entity Party B,100,None,"[4, 5, 6, 7, 8, 104]","The text explicitly states that 'Specified Entity' means with respect to Party B, None."
+specified_transaction,Specified transaction scope,95,NONSTD,"[9, 112]","The text modifies the standard Section 14 definition by excluding certain transaction types (repurchase, reverse repurchase, etc.), indicating a non-standard scope."
 cross_default,Cross default applicable parties,100,AB,"[10, 12, 13, 14, 15]","The text states that the 'Cross Default' provisions will apply to Party A and Party B, indicating both parties are subject to cross default."
-specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,50,None,[11],The text does not mention 'borrowed money' specifically in the definition or exclusion for Specified Indebtedness.
+specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,50,None,[11],"The text does not mention whether borrowed money is included in Specified Indebtedness, only that deposits are excluded."
 specified_indebtness_deposits,Specified indebtness excludes deposits,100,True,[11],The text explicitly states that Specified Indebtedness will exclude deposits received by a party in the ordinary course of its banking business.
-threshold_amount_A_amount,amount for Party A,100,None,[16],No fixed amount is specified for Party A; only a percentage is given.
-threshold_amount_A_currency,currency for Party A ,100,None,[16],"No specific currency is given for Party A; it is stated as a percentage of shareholders' equity, or equivalent in any currency."
+threshold_amount_A_amount,amount for Party A,100,None,[16],"The threshold for Party A is defined as a percentage (3%) of shareholders' equity, not a fixed amount."
+threshold_amount_A_currency,currency for Party A ,100,None,[16],"No specific currency is given for Party A; it is based on shareholders' equity, which could be in any currency."
 threshold_amount_A_percent,percentage for Party A ,100,3.0,[16],The text states 'an amount equal to 3% of Party A's shareholders' equity'.
 threshold_amount_A_percent_reference,percentage reference for Party A ,100,SHAREHOLDER,[16],The percentage is referenced to 'shareholders' equity'.
-threshold_amount_B_amount,amount for Party B,100,50.0,[16],The text states 'an amount equal to USD 50 million and 3% of the Net Asset Value of Party B'.
-threshold_amount_B_currency,currency for Party B,100,USD,[16],The amount for Party B is specified as 'USD 50 million'.
-threshold_amount_B_percent,percentage for Party B,100,3.0,[16],The text states '3% of the Net Asset Value of Party B'.
+threshold_amount_B_amount,amount for Party B,100,50000000.0,[16],The text states 'an amount equal to USD 50 million' for Party B's Credit Support Provider.
+threshold_amount_B_currency,currency for Party B,100,USD,[16],The fixed amount for Party B is specified as USD 50 million.
+threshold_amount_B_percent,percentage for Party B,100,3.0,[16],The text states 'and 3% of the Net Asset Value of Party B'.
 threshold_amount_B_percent_reference,percentage reference for Party B,100,NAV,[16],The percentage for Party B is referenced to 'Net Asset Value'.
 credit_event_upon_merger,Credit Event Upon Merger  applicable parties,100,AB,[17],"The text states that the 'Credit Event Upon Merger' provisions will apply to Party A and to Party B, indicating both parties are applicable."
 automatic_early_termination,Automatic Early Termination  applicable parties,100,NONE,[18],The text explicitly states that Automatic Early Termination will not apply to Party A and will not apply to Party B.
-termination_currency,Termination Currency,100,USD,[19],"The text explicitly states 'Termination Currency means United States Dollars', and the ISO code for United States Dollars is USD."
-notices_A,Email for notices for Party A,90,portfoliorec.eu@uk.bnpparibas.com,"[76, 77, 78, 80, 81, 82, 83, 84, 85, 86, 157, 158]","Section 4 lists 'Party A: portfoliorec.eu@uk.bnpparibas.com' as the email address for Portfolio Data, Notice of discrepancy, and Dispute Notice. No other email for Party A is provided elsewhere."
-notices_B,Email for notices for Party B,90,investmentops@fsinvestments.com,"[76, 77, 78, 80, 81, 82, 83, 84, 85, 86, 157, 158]","Section 4 lists 'Party B: investmentops@fsinvestments.com' as the email address for Portfolio Data, Notice of discrepancy, and Dispute Notice. This is the only explicit Party B email provided."
+termination_currency,Termination Currency,100,USD,[19],"The text explicitly states that 'Termination Currency' means United States Dollars, which corresponds to the ISO code USD."
+notices_A,Email for notices for Party A,80,portfoliorec.eu@uk.bnpparibas.com,"[76, 77, 78, 80, 81, 82, 83, 84, 85, 86, 157, 158]","Section 4 lists 'Party A: portfoliorec.eu@uk.bnpparibas.com' as the email for Portfolio Data, Notice of discrepancy, and Dispute Notice. No general notice email is specified, but this is the only email provided for Party A."
+notices_B,Email for notices for Party B,80,investmentops@fsinvestments.com,"[76, 77, 78, 80, 81, 82, 83, 84, 85, 86, 157, 158]","Section 4 lists 'Party B: investmentops@fsinvestments.com' as the email for Portfolio Data, Notice of discrepancy, and Dispute Notice. This is the only email explicitly tied to Party B for notices."
 process_agent_A,Process agent for party A,100,True,"[87, 88, 89]",The text states 'Party A appoints as its Process Agent its New York Branch...'. This confirms a process agent is applicable for Party A.
-process_agent_name_A,Name of process agent for party A,95,New York Branch,"[87, 88, 89]",The process agent is described as 'its New York Branch located at 787 Seventh Avenue...'. The name is 'New York Branch'.
-process_agent_address_A,Address of process agent for party A,100,"787 Seventh Avenue, New York, New York 10019, Attn: CIB Legal - ISDA Documentation Team","[87, 88, 89]",The address is explicitly stated in the text following the process agent appointment for Party A.
-process_agent_B,Process agent for party B,100,False,"[87, 88, 89]",The text states 'Party B appoints as its Process Agent: Not Applicable.' This means no process agent for Party B.
-process_agent_name_B,Name of process agent for party B,100,None,"[87, 88, 89]","Since process agent is not applicable for Party B, there is no name to extract."
-process_agent_address_B,Address of process agent for party B,100,None,"[87, 88, 89]","Since process agent is not applicable for Party B, there is no address to extract."
-multibranch_party_A,Party A is a Multibranch party,100,True,"[91, 92, 93]",The text states 'Party A is a Multibranch Party'.
-multibranch_party_A_offices,Party A offices,100,"BNP Paribas Head Office, London and New York","[91, 92, 93]","The text specifies 'may act through the following Offices: BNP Paribas Head Office, London and New York.'"
+process_agent_name_A,Name of process agent for party A,95,New York Branch,"[87, 88, 89]",The process agent for Party A is referred to as 'its New York Branch'.
+process_agent_address_A,Address of process agent for party A,100,"787 Seventh Avenue, New York, New York 10019, Attn: CIB Legal - ISDA Documentation Team","[87, 88, 89]",The full address is provided in the text for Party A's process agent.
+process_agent_B,Process agent for party B,100,False,"[87, 88, 89]",The text states 'Party B appoints as its Process Agent: Not Applicable.'
+process_agent_name_B,Name of process agent for party B,100,None,"[87, 88, 89]","Not applicable for Party B, as explicitly stated."
+process_agent_address_B,Address of process agent for party B,100,None,"[87, 88, 89]","Not applicable for Party B, as explicitly stated."
+multibranch_party_A,Party A is a Multibranch party,100,True,"[91, 92, 93]",The text states 'Party A is a Multibranch Party and may act through the following Offices...'.
+multibranch_party_A_offices,Party A offices,100,"BNP Paribas Head Office, London and New York","[91, 92, 93]",The text lists the offices through which Party A may act as a Multibranch Party.
 multibranch_party_B,Party B is a Multibranch party,100,False,"[91, 92, 93]",The text states 'Party B is not a Multibranch Party.'
 multibranch_party_B_offices,Party B offices,100,None,"[91, 92, 93]","Party B is not a Multibranch Party, so no offices are listed."
-calculation_agent,Party for calculation agent,95,Party A,[94],"The text states 'The Calculation Agent shall be Party A, unless ...', indicating Party A is the default calculation agent except in specified circumstances."
-governing_law,Governing Law,100,NEW-YORK,[100],The text explicitly states that the Agreement will be governed by the laws of the State of New York.
+calculation_agent,Party for calculation agent,95,A,[94],"The text states 'The Calculation Agent shall be Party A, unless ...', indicating Party A is the default Calculation Agent except in specified circumstances."
+governing_law,Governing Law,100,NEW-YORK,[100],The text explicitly states that the agreement will be governed by the laws of the State of New York.

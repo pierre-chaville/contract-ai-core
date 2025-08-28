@@ -1,2 +1,20 @@
 file,key,gold_value,pred_value
-4b5d1fdfb11450aaab7654927eb24d06,date,3/20/2019,2019-03-20
+0b4058ba0dcd589c94e0ef1969f2fe13,automatic_early_termination,NONE,AB
+1ac97046876756bb8bcc28581198bdeb,credit_event_upon_merger,B,NONE
+1d7c4032c83b5569a8e06ae1044acead,notices_A,jpmnavdata@jpmorgan.com,None
+3aa24fc8e5e95724b53d37347cd28c50,notices_A,jpm nav data@jpmorgan.com,None
+3ab9f5646fdc56eaa53dfdc67849c114,multibranch_party_A_offices,"Charlotte, North Carolina; Chicago, Illinois; San Francisco, California; New York, New York; Boston, Massachusetts; London, England; Canada Branch, Toronto, Ontario; or such other Office as may be agreed to by the parties in connection with a Transaction.","Charlotte, North Carolina; Chicago, Illinois; San Francisco, California; New York, New York; Boston, Massachusetts; London, England; Canada Branch in Toronto, Ontario; or such other Office as may be agreed to by the parties in connection with a Transaction."
+4f373aa105575bc19f67ea9efea926b6,calculation_agent,AB,A
+4f373aa105575bc19f67ea9efea926b6,party_A,BNP PARIBAS,FSSL FINANCE BNPP TRS LLC
+4f373aa105575bc19f67ea9efea926b6,party_B,FSSL FINANCE BNPP TRS LLC,None
+4f373aa105575bc19f67ea9efea926b6,threshold_amount_B_amount,50,50000000.0
+7fc1ca3135555cd98794717a904fe5d2,multibranch_party_A_offices,"Charlotte, North Carolina; Chicago, Illinois; San Francisco, California; New York, New York; Boston, Massachusetts; London, England; Canada Branch (Toronto, Ontario); or such other Office as may be agreed to by the parties in connection with a Transaction.","Charlotte, North Carolina; Chicago, Illinois; San Francisco, California; New York, New York; Boston, Massachusetts; London, England; Canada Branch in Toronto, Ontario; or such other Office as may be agreed to by the parties in connection with a Transaction."
+81bd69c83e4c5232a081ec0540950c94,cross_default,AB,None
+856ab885a80d50b8908539c16aa2ad16,specified_indebtness_borrowed_money,None,True
+9f041ef804325654bbac2eae8db1c7cc,specified_entity_B,"Subsidiaries (and Significant Subsidiaries for Bankruptcy), as defined in the Credit Agreement","Subsidiaries (for 5(a)(v), 5(a)(vi), 5(b)(iv)); Significant Subsidiaries (for 5(a)(vii)), as defined in the Credit Agreement"
+a68440b7c9ea57c39f2756e432f5cbbf,calculation_agent,Party A,A
+a68440b7c9ea57c39f2756e432f5cbbf,specified_entity_A,"Citigroup Global Markets Limited, Citigroup Global Markets Inc., Citigroup Global Markets Commercial Corp., Citicorp Securities Services, Inc., Citibank Europe PLC, Citigroup Financial Products Inc., Citigroup Global Markets Deutschland AG, Citigroup Energy Inc., Citibank Canada, Citigroup Energy Canada ULC, Citibank International Limited and Citibank Japan Ltd.",None
+a68440b7c9ea57c39f2756e432f5cbbf,specified_entity_B,"FS Investment Corporation IV, a Maryland corporation",None
+a68440b7c9ea57c39f2756e432f5cbbf,specified_indebtness_deposits,True,None
+c5ef841693d651229f98f0e474aded4b,calculation_agent,"Party A (unless an Event of Default occurs and is continuing in respect of Party A, in which case Party B or an Independent Dealer selected by Party B)",A
+c5ef841693d651229f98f0e474aded4b,notices_A,None,jpmnavdata@jpmorgan.com

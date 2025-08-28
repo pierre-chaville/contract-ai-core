@@ -6,13 +6,13 @@ specified_entity_A,Specified entity Party A,100,none,"[14, 15, 98, 99]",The text
 specified_entity_B,Specified entity Party B,100,any Affiliate of Party B,"[14, 15, 98, 99]",The text explicitly states: 'Specified Entity means in relation to Party B ... any Affiliate of Party B.'
 specified_transaction,Specified transaction scope,100,NONSTD,[16],"The text explicitly states that the definition of 'Specified Transaction' is amended beyond the standard Section 14 definition, indicating a non-standard scope."
 cross_default,Cross default applicable parties,100,AB,"[17, 18, 19]","The text states that the Cross-Default provisions will apply to Party A and will apply to Party B, so both parties are included."
-specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,100,True,"[20, 21]",The text explicitly states that Specified Indebtedness includes 'any obligation in respect of borrowed money.'
-specified_indebtness_deposits,Specified indebtness excludes deposits,100,True,"[20, 21]","The text states that Specified Indebtedness 'shall not include obligations in respect of deposits received in the ordinary course of a party's banking business,' thus deposits are excluded."
+specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,100,TRUE,"[20, 21]",The text explicitly states that Specified Indebtedness includes 'any obligation in respect of borrowed money.'
+specified_indebtness_deposits,Specified indebtness excludes deposits,100,TRUE,"[20, 21]","The text states that Specified Indebtedness 'shall not include obligations in respect of deposits received in the ordinary course of a party's banking business,' thus deposits are excluded."
 threshold_amount_A_amount,amount for Party A,100,None,[22],"The threshold for Party A is defined as a percentage, not a fixed amount."
 threshold_amount_A_currency,currency for Party A ,100,None,[22],"No currency is specified for Party A, as the threshold is a percentage."
-threshold_amount_A_percent,percentage for Party A ,100,3.0,[22],The text states 'three percent (3%)' for Party A.
+threshold_amount_A_percent,percentage for Party A ,100,3,[22],The text states 'three percent (3%)' for Party A.
 threshold_amount_A_percent_reference,percentage reference for Party A ,100,SHAREHOLDER,[22],"The reference is 'Shareholders' Equity of Bank of America Corporation', matching the SHAREHOLDER enum."
-threshold_amount_B_amount,amount for Party B,100,0.0,[22],"The text states 'with respect to Party B, zero ($0)'."
+threshold_amount_B_amount,amount for Party B,100,0,[22],"The text states 'with respect to Party B, zero ($0)'."
 threshold_amount_B_currency,currency for Party B,100,USD,[22],"The amount for Party B is given as $0, which is in USD."
 threshold_amount_B_percent,percentage for Party B,100,None,[22],"No percentage is specified for Party B, only a fixed amount."
 threshold_amount_B_percent_reference,percentage reference for Party B,100,None,[22],"No percentage is specified for Party B, so no reference applies."
@@ -21,15 +21,15 @@ automatic_early_termination,Automatic Early Termination  applicable parties,100,
 termination_currency,Termination Currency,100,USD,[30],"The text explicitly states 'Termination Currency means United States Dollars', and USD is the ISO code for United States Dollars."
 notices_A,Email for notices for Party A,100,None,"[51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 72, 73, 74, 75, 76, 77, 78, 79, 122]","No email address is provided for Party A in the notice section; only physical addresses, telephone, and facsimile numbers are listed."
 notices_B,Email for notices for Party B,100,kwolf@nai-online.com,"[51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 72, 73, 74, 75, 76, 77, 78, 79, 122]",The text explicitly lists 'Email Address: kwolf@nai-online.com' under the notice information for Party B.
-process_agent_A,Process agent for party A,100,False,"[80, 81, 82]",The text states 'Party A appoints as its Process Agent: Not applicable.'
+process_agent_A,Process agent for party A,100,FALSE,"[80, 81, 82]",The text states 'Party A appoints as its Process Agent: Not applicable.'
 process_agent_name_A,Name of process agent for party A,100,None,"[80, 81, 82]","Process agent is not applicable for Party A, so no name is provided."
 process_agent_address_A,Address of process agent for party A,100,None,"[80, 81, 82]","Process agent is not applicable for Party A, so no address is provided."
-process_agent_B,Process agent for party B,100,False,"[80, 81, 82]",The text states 'Party B appoints as its Process Agent: Not applicable.'
+process_agent_B,Process agent for party B,100,FALSE,"[80, 81, 82]",The text states 'Party B appoints as its Process Agent: Not applicable.'
 process_agent_name_B,Name of process agent for party B,100,None,"[80, 81, 82]","Process agent is not applicable for Party B, so no name is provided."
 process_agent_address_B,Address of process agent for party B,100,None,"[80, 81, 82]","Process agent is not applicable for Party B, so no address is provided."
-multibranch_party_A,Party A is a Multibranch party,100,True,"[84, 85, 86]",The text explicitly states 'Party A is a Multibranch Party'.
+multibranch_party_A,Party A is a Multibranch party,100,TRUE,"[84, 85, 86]",The text explicitly states 'Party A is a Multibranch Party'.
 multibranch_party_A_offices,Party A offices,100,"Charlotte, North Carolina; Chicago, Illinois; San Francisco, California; New York, New York; Boston, Massachusetts; London, England; Canada Branch, Toronto, Ontario; or such other Office as may be agreed to by the parties in connection with a Transaction.","[84, 85, 86]",The offices are listed directly after stating Party A is a Multibranch Party.
-multibranch_party_B,Party B is a Multibranch party,100,False,"[84, 85, 86]",The text explicitly states 'Party B is not a Multibranch Party.'
+multibranch_party_B,Party B is a Multibranch party,100,FALSE,"[84, 85, 86]",The text explicitly states 'Party B is not a Multibranch Party.'
 multibranch_party_B_offices,Party B offices,100,None,"[84, 85, 86]","Party B is not a Multibranch Party, so no offices are listed."
-calculation_agent,Party for calculation agent,100,Party A,[87],The text explicitly states: 'The Calculation Agent is Party A.'
+calculation_agent,Party for calculation agent,100,A,[87],The text explicitly states: 'The Calculation Agent is Party A.'
 governing_law,Governing Law,100,NEW-YORK,[93],The text explicitly states that the agreement is governed by the laws of the State of New York.

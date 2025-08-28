@@ -4,6 +4,7 @@ from dataclasses import dataclass
 from typing import Dict, List, Optional, Sequence, Tuple
 import os
 import asyncio
+import random
 
 from .schema import (
     ContractTypeTemplate,
@@ -45,6 +46,8 @@ class DatapointExtractorConfig:
     beginning_paragraphs: int = 20
     # Maximum number of concurrent scope extraction requests
     concurrency: int = 8
+    # Number of retries for LLM calls on transient errors (e.g., TPM/rate limits)
+    max_retries: int = 5
 
 
 class DatapointExtractor:
@@ -330,16 +333,35 @@ class DatapointExtractor:
             # print('prompt', prompt)
             # print('--------------------------------')
 
+            structured_llm = llm.with_structured_output(OutputModel, temperature=temperature, max_tokens=8000)  # type: ignore[arg-type]
+
+            attempt = 1
+            delay_seconds = 1.0
             try:
-                structured_llm = llm.with_structured_output(OutputModel, temperature=temperature, max_tokens=8000)  # type: ignore[arg-type]
-                async with sem:
-                    output: BaseModel = await structured_llm.ainvoke(prompt)  # type: ignore[assignment]
-                data = output.model_dump()  # type: ignore[attr-defined]
-                return {"data": data, "datapoints": datapoints, "evidence": evidence}
-            except Exception as e:  # pragma: no cover
-                # Return an empty result for this job so the caller can proceed
-                print('run_one error:', repr(e))
-                return {"data": {}, "datapoints": datapoints, "evidence": evidence, "error": repr(e)}
+                max_retries = int(self.config.max_retries)
+            except Exception:
+                max_retries = 5
+
+            last_error: Optional[Exception] = None
+            while attempt <= max_retries:
+                try:
+                    async with sem:
+                        output: BaseModel = await structured_llm.ainvoke(prompt)  # type: ignore[assignment]
+                    data = output.model_dump()  # type: ignore[attr-defined]
+                    return {"data": data, "datapoints": datapoints, "evidence": evidence}
+                except Exception as e:  # pragma: no cover
+                    last_error = e
+                    if attempt >= max_retries:
+                        break
+                    # Exponential backoff with jitter
+                    jitter = random.uniform(0.0, delay_seconds * 0.25)
+                    await asyncio.sleep(delay_seconds + jitter)
+                    delay_seconds = min(delay_seconds * 2.0, 30.0)
+                    attempt += 1
+
+            # Return an empty result for this job so the caller can proceed
+            print('run_one error after retries:', repr(last_error))
+            return {"data": {}, "datapoints": datapoints, "evidence": evidence, "error": repr(last_error) if last_error else "unknown"}
 
         tasks = [asyncio.create_task(run_one(job)) for job in jobs]
         return await asyncio.gather(*tasks)

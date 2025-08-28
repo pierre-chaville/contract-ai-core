@@ -7,12 +7,12 @@ specified_entity_B,Specified entity Party B,100,None,"[8, 9, 10, 60, 61]","The t
 specified_transaction,Specified transaction scope,95,STD,"[11, 74]","The text states that 'Specified Transaction' will have the meaning specified in Section 14, indicating the standard definition is used without modification."
 cross_default,Cross default applicable parties,100,AB,"[12, 13, 14]","The text states that the Cross Default provisions will apply to Party A and will apply to Party B, indicating both parties are subject to Cross Default."
 specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,50,None,[15],"The text does not mention 'borrowed money' specifically, nor does it explicitly include or exclude it from Specified Indebtedness."
-specified_indebtness_deposits,Specified indebtness excludes deposits,100,True,[15],The text explicitly states that Specified Indebtedness shall not include obligations in respect of deposits received in the ordinary course of a party's banking business.
+specified_indebtness_deposits,Specified indebtness excludes deposits,100,TRUE,[15],The text explicitly states that Specified Indebtedness shall not include obligations in respect of deposits received in the ordinary course of a party's banking business.
 threshold_amount_A_amount,amount for Party A,100,None,[16],"The threshold for Party A is defined as a percentage, not a fixed amount."
 threshold_amount_A_currency,currency for Party A ,100,None,[16],"No currency is specified for Party A, as the threshold is a percentage of shareholders' equity."
-threshold_amount_A_percent,percentage for Party A ,100,3.0,[16],The text states 'an amount equal to 3% of the shareholders' equity of Party A'.
+threshold_amount_A_percent,percentage for Party A ,100,3,[16],The text states 'an amount equal to 3% of the shareholders' equity of Party A'.
 threshold_amount_A_percent_reference,percentage reference for Party A ,100,SHAREHOLDER,[16],"The reference is 'shareholders' equity of Party A', which matches the SHAREHOLDER enum."
-threshold_amount_B_amount,amount for Party B,100,50000000.0,[16],"The text states 'in relation to Party B, $50,000,000.'"
+threshold_amount_B_amount,amount for Party B,100,50000000,[16],"The text states 'in relation to Party B, $50,000,000.'"
 threshold_amount_B_currency,currency for Party B,100,USD,[16],The $ symbol indicates US dollars.
 threshold_amount_B_percent,percentage for Party B,100,None,[16],"No percentage threshold is specified for Party B, only a fixed amount."
 threshold_amount_B_percent_reference,percentage reference for Party B,100,None,[16],No percentage threshold is specified for Party B.
@@ -21,15 +21,15 @@ automatic_early_termination,Automatic Early Termination  applicable parties,100,
 termination_currency,Termination Currency,100,USD,[19],"The text explicitly states that 'Termination Currency' means United States Dollars, which corresponds to the ISO code USD."
 notices_A,Email for notices for Party A,100,tradingops@capitalone.com,"[39, 40, 41, 42, 43, 44, 45]",The email for notices to Party A is explicitly listed as 'Email: tradingops@capitalone.com' under the address for Party A.
 notices_B,Email for notices for Party B,100,bfitzpatrick@mack-cali.com,"[39, 40, 41, 42, 43, 44, 45]","The email for notices to Party B is explicitly listed as 'Email: bfitzpatrick@mack-cali.com' under the address for Party B. The Chatham Financial email is for a copy, not the main notice."
-process_agent_A,Process agent for party A,100,False,"[46, 47, 48]",The text states 'Party A appoints as its Process Agent: Not applicable.' indicating no process agent for Party A.
+process_agent_A,Process agent for party A,100,FALSE,"[46, 47, 48]",The text states 'Party A appoints as its Process Agent: Not applicable.' indicating no process agent for Party A.
 process_agent_name_A,Name of process agent for party A,100,None,"[46, 47, 48]","Not applicable is specified for Party A, so no name is provided."
 process_agent_address_A,Address of process agent for party A,100,None,"[46, 47, 48]","Not applicable is specified for Party A, so no address is provided."
-process_agent_B,Process agent for party B,100,False,"[46, 47, 48]",The text states 'Party B appoints as its Process Agent: Not applicable.' indicating no process agent for Party B.
+process_agent_B,Process agent for party B,100,FALSE,"[46, 47, 48]",The text states 'Party B appoints as its Process Agent: Not applicable.' indicating no process agent for Party B.
 process_agent_name_B,Name of process agent for party B,100,None,"[46, 47, 48]","Not applicable is specified for Party B, so no name is provided."
 process_agent_address_B,Address of process agent for party B,100,None,"[46, 47, 48]","Not applicable is specified for Party B, so no address is provided."
-multibranch_party_A,Party A is a Multibranch party,100,False,"[50, 51, 52]",The text explicitly states 'Party A is not a Multibranch Party.'
+multibranch_party_A,Party A is a Multibranch party,100,FALSE,"[50, 51, 52]",The text explicitly states 'Party A is not a Multibranch Party.'
 multibranch_party_A_offices,Party A offices,100,None,"[50, 51, 52]","Party A is not a Multibranch Party, so no offices are specified."
-multibranch_party_B,Party B is a Multibranch party,100,False,"[50, 51, 52]",The text explicitly states 'Party B is not a Multibranch Party.'
+multibranch_party_B,Party B is a Multibranch party,100,FALSE,"[50, 51, 52]",The text explicitly states 'Party B is not a Multibranch Party.'
 multibranch_party_B_offices,Party B offices,100,None,"[50, 51, 52]","Party B is not a Multibranch Party, so no offices are specified."
-calculation_agent,Party for calculation agent,100,Party A,[53],"The text explicitly states 'The Calculation Agent is Party A', with a provision for substitution only if an Event of Default occurs with respect to Party A."
+calculation_agent,Party for calculation agent,100,A,[53],"The text explicitly states 'The Calculation Agent is Party A', with a provision for substitution only if an Event of Default occurs with respect to Party A."
 governing_law,Governing Law,100,NEW-YORK,[56],The text explicitly states that the agreement is governed by the law of the State of New York.

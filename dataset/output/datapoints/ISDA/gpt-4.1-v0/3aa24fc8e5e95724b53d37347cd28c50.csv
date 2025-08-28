@@ -1,0 +1,35 @@
+key,title,confidence,value,evidence,explanation
+date,Date of the contract,100,2017-07-12,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","The text states '2002 ISDA Master Agreement dated as of July 12, 2017', which is the date of the contract."
+party_A,Party A,100,"JPMorgan Chase Bank, N.A.","[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","The text specifies 'JPMorgan Chase Bank, N.A., a national banking association... (""Party A"")'."
+party_B,party_B,100,"CMF TT II, LLC","[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","The text specifies 'CMF TT II, LLC, a limited liability corporation... (""Party B"")'."
+specified_entity_A,Specified entity Party A,100,none,"[9, 10, 11, 98, 99]","The text explicitly states: '""Specified Entity"" means, in relation to Party A: none.'"
+specified_entity_B,Specified entity Party B,100,none,"[9, 10, 11, 98, 99]","The text explicitly states: '""Specified Entity"" means, in relation to Party B:none.'"
+specified_transaction,Specified transaction scope,100,NONSTD,"[12, 119, 182]","The definition of 'Specified Transaction' is amended in multiple ways: (1) margin loans are added, (2) agreements relating to clearing are included, and (3) certain language is excluded for the purposes of 'Specified Agreement'. These are non-standard changes to Section 14."
+cross_default,Cross default applicable parties,95,AB,"[13, 16, 17, 18]","The text states that the 'Cross-Default' provisions of Section 5(a)(vi) will apply, but does not specify only one party; by default, this means it applies to both Party A and Party B."
+specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,20,None,[14],The text does not mention whether borrowed money is included or excluded in Specified Indebtedness.
+specified_indebtness_deposits,Specified indebtness excludes deposits,100,True,[14],"The text explicitly states that Specified Indebtedness shall exclude, in relation to Party A, any deposits received in the ordinary course of business."
+threshold_amount_A_amount,amount for Party A,100,None,[15],No fixed amount is specified for Party A; only a percentage is given.
+threshold_amount_A_currency,currency for Party A ,100,None,[15],No currency is specified for Party A; the threshold is defined as a percentage of shareholders' equity.
+threshold_amount_A_percent,percentage for Party A ,100,3.0,[15],The text states 'an amount equal to 3 % of its total shareholders' equity' for Party A.
+threshold_amount_A_percent_reference,percentage reference for Party A ,100,SHAREHOLDER,[15],"The reference for Party A is 'total shareholders' equity', which matches the SHAREHOLDER enum."
+threshold_amount_B_amount,amount for Party B,100,None,[15],No fixed amount is specified for Party B; only a percentage is given.
+threshold_amount_B_currency,currency for Party B,100,None,[15],No currency is specified for Party B; the threshold is defined as a percentage of Net Asset Value.
+threshold_amount_B_percent,percentage for Party B,100,3.0,[15],The text states 'an amount equal to 3% of its Net Asset Value' for Party B.
+threshold_amount_B_percent_reference,percentage reference for Party B,100,NAV,[15],"The reference for Party B is 'Net Asset Value', which matches the NAV enum."
+credit_event_upon_merger,Credit Event Upon Merger  applicable parties,100,NONE,[20],"The text states that the 'Credit Event Upon Merger' provisions will not apply, indicating no party is applicable."
+automatic_early_termination,Automatic Early Termination  applicable parties,100,NONE,[21],"The text explicitly states that the Automatic Early Termination provisions will not apply, indicating no party is subject to these provisions."
+termination_currency,Termination Currency,100,USD,[19],"The text explicitly states 'Termination Currency' means United States Dollars, which is ISO code USD."
+notices_A,Email for notices for Party A,90,jpm nav data@jpmorgan.com,"[62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82]","The only email address listed for Party A is for Net Asset Value statements, sent to 'jpm nav data@jpmorgan.com'. There is no explicit general notices email, but this is the only email provided for Party A."
+notices_B,Email for notices for Party B,100,Patrick.egan@morganstanley.com,"[62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82]",The text explicitly states that notices to Party B should be sent to 'Patrick.egan@morganstanley.com'.
+process_agent_A,Process agent for party A,100,False,"[83, 84]",The text states 'Party A appoints as its Process Agent: Not applicable.'
+process_agent_name_A,Name of process agent for party A,100,None,"[83, 84]","Process agent is not applicable for Party A, so no name is provided."
+process_agent_address_A,Address of process agent for party A,100,None,"[83, 84]","Process agent is not applicable for Party A, so no address is provided."
+process_agent_B,Process agent for party B,100,False,"[83, 84]",The text states 'Party B appoints as its Process Agent: Not applicable.'
+process_agent_name_B,Name of process agent for party B,100,None,"[83, 84]","Process agent is not applicable for Party B, so no name is provided."
+process_agent_address_B,Address of process agent for party B,100,None,"[83, 84]","Process agent is not applicable for Party B, so no address is provided."
+multibranch_party_A,Party A is a Multibranch party,100,True,"[86, 87]",The text states 'Party A is a Multibranch Party'.
+multibranch_party_A_offices,Party A offices,100,any Office specified in a Confirmation,"[86, 87]",The text states Party A may act through any Office specified in a Confirmation.
+multibranch_party_B,Party B is a Multibranch party,100,False,"[86, 87]",The text states 'Party B is not a Multibranch Party.'
+multibranch_party_B_offices,Party B offices,100,None,"[86, 87]","Party B is not a Multibranch Party, so no offices are specified."
+calculation_agent,Party for calculation agent,95,Party A,"[123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137]","The text states: 'the Calculation Agent will be Party A; provided, however, that if an Event of Default occurs and is continuing in respect of Party A, the Calculation Agent will be Party B or an Independent Dealer...'. Therefore, the default Calculation Agent is Party A, unless an Event of Default occurs for Party A."
+governing_law,Governing Law,100,NEW-YORK,[93],The text explicitly states that the agreement will be governed by the laws of the State of New York.

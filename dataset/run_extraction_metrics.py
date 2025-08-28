@@ -93,7 +93,6 @@ MONTHS = {
 
 
 def normalize_date(value: str) -> str:
-    print("value date", value)
     if value is None:
         return ""
     v = value.strip().casefold()
@@ -116,7 +115,7 @@ def normalize_date(value: str) -> str:
         return f"{re_match.group(1)}-{re_match.group(2)}-{re_match.group(3)}"
     if year and mon and day:
         return f"{year}-{mon}-{day}"
-    print("value", value, "normalized", normalize_relaxed(value))
+    # print("value", value, "normalized", normalize_relaxed(value))
     return normalize_relaxed(value)
 
 
@@ -282,7 +281,6 @@ def main() -> None:
         for key, gold_val in gold_map.items():
             dtype = key_to_type.get(key, "string")
             pred_val, pred_conf = pred_map.get(key, ("", float("nan")))
-            print(key, dtype, gold_val, pred_val, pred_conf)
             if gold_val.strip() != "":
                 total_gold_present += 1
                 # High-confidence tracking denominator
@@ -373,6 +371,23 @@ def main() -> None:
         "per_key_accuracy": per_key_accuracy,
     }
 
+    def _to_pct(val: float) -> str:
+        try:
+            if val is None or (isinstance(val, float) and np.isnan(val)):
+                return "nan"
+            return f"{int(round(float(val) * 100))}%"
+        except Exception:
+            return str(val)
+
+    def _map_to_pct(obj):
+        if isinstance(obj, dict):
+            return {k: _map_to_pct(v) for k, v in obj.items()}
+        if isinstance(obj, (int, float)):
+            return _to_pct(float(obj))
+        return obj
+
+    summary_pct = _map_to_pct(summary)
+
     out_dir = repo_root / "dataset" / "metrics" / "results" / "extraction"
     out_dir.mkdir(parents=True, exist_ok=True)
     with (out_dir / "summary.yaml").open("w", encoding="utf-8") as f:
@@ -392,15 +407,15 @@ def main() -> None:
         for k in sorted(per_key_present.keys()):
             writer.writerow([k, per_key_accuracy.get(k, float("nan")), per_key_present[k]])
 
-    print(yaml.safe_dump(summary, sort_keys=False, allow_unicode=True))
-    print('--------------------------------')
-    if mismatches:
-        with (out_dir / "mismatches.csv").open("w", encoding="utf-8", newline="") as f:
-            writer = csv.writer(f)
-            writer.writerow(["file", "key", "gold_value", "pred_value"])
-            for row in sorted(mismatches):
-                print('mismatch', list(row))
-                writer.writerow(list(row))
+    print(yaml.safe_dump(summary_pct, sort_keys=False, allow_unicode=True))
+    # print('--------------------------------')
+    # if mismatches:
+    #     with (out_dir / "mismatches.csv").open("w", encoding="utf-8", newline="") as f:
+    #         writer = csv.writer(f)
+    #         writer.writerow(["file", "key", "gold_value", "pred_value"])
+    #         for row in sorted(mismatches):
+    #             print('mismatch', list(row))
+    #             writer.writerow(list(row))
 
 if __name__ == "__main__":
     main()

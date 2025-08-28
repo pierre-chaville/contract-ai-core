@@ -1,7 +1,7 @@
 key,title,confidence,value,evidence,explanation
-date,Date of the contract,,None,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",
-party_A,Party A,,None,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",
-party_B,party_B,,None,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",
+date,Date of the contract,2006-02-13,2006-02-13,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",
+party_A,Party A,"HSBC Bank USA, N.A","HSBC Bank USA, N.A.","[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",
+party_B,party_B,Volkswagen Auto Loan Enhanced Trust 2007-1,Volkswagen Auto Loan Enhanced Trust 2007-1,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",
 specified_entity_A,Specified entity Party A,100,None,[11],The text states 'Specified Entity' none specified in relation to either Party A or Party B.
 specified_entity_B,Specified entity Party B,100,None,[11],The text states 'Specified Entity' none specified in relation to either Party A or Party B.
 specified_transaction,Specified transaction scope,100,STD,[12],"The text states that 'Specified Transaction' will have the meaning specified in Section 14, indicating the standard definition is used."
@@ -10,17 +10,17 @@ automatic_early_termination,Automatic Early Termination  applicable parties,100,
 termination_currency,Termination Currency,100,USD,[35],The text explicitly states: 'Termination Currency' means U.S. Dollars. The ISO code for U.S. Dollars is USD.
 notices_A,Email for notices for Party A,100,None,"[88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 104]","No email address is provided for Party A in the notices section; only physical address, attention, facsimile, and telephone are listed."
 notices_B,Email for notices for Party B,100,None,"[88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 104]","No email address is provided for Party B in the notices section; only physical address, attention, facsimile, and telephone are listed. Electronic Messaging System Details are marked as 'Not applicable.'"
-process_agent_A,Process agent for party A,100,False,"[102, 103]","The text states 'Party A appoints as its Process Agent Not applicable', indicating no process agent is appointed for Party A."
+process_agent_A,Process agent for party A,100,FALSE,"[102, 103]","The text states 'Party A appoints as its Process Agent Not applicable', indicating no process agent is appointed for Party A."
 process_agent_name_A,Name of process agent for party A,100,None,"[102, 103]","Not applicable is specified, so there is no process agent name for Party A."
 process_agent_address_A,Address of process agent for party A,100,None,"[102, 103]","Not applicable is specified, so there is no process agent address for Party A."
-process_agent_B,Process agent for party B,100,False,"[102, 103]","The text states 'Party B appoints as its Process Agent Not applicable', indicating no process agent is appointed for Party B."
+process_agent_B,Process agent for party B,100,FALSE,"[102, 103]","The text states 'Party B appoints as its Process Agent Not applicable', indicating no process agent is appointed for Party B."
 process_agent_name_B,Name of process agent for party B,100,None,"[102, 103]","Not applicable is specified, so there is no process agent name for Party B."
 process_agent_address_B,Address of process agent for party B,100,None,"[102, 103]","Not applicable is specified, so there is no process agent address for Party B."
-multibranch_party_A,Party A is a Multibranch party,100,False,"[106, 107, 108]",The text explicitly states 'Party A is not a Multibranch Party.'
+multibranch_party_A,Party A is a Multibranch party,100,FALSE,"[106, 107, 108]",The text explicitly states 'Party A is not a Multibranch Party.'
 multibranch_party_A_offices,Party A offices,100,None,"[106, 107, 108]","Party A is not a Multibranch Party, so no offices are specified."
-multibranch_party_B,Party B is a Multibranch party,100,False,"[106, 107, 108]",The text explicitly states 'Party B is not a Multibranch Party.'
+multibranch_party_B,Party B is a Multibranch party,100,FALSE,"[106, 107, 108]",The text explicitly states 'Party B is not a Multibranch Party.'
 multibranch_party_B_offices,Party B offices,100,None,"[106, 107, 108]","Party B is not a Multibranch Party, so no offices are specified."
-calculation_agent,Party for calculation agent,100,Party B,[109],"The text explicitly states 'The Calculation Agent is Party B, unless otherwise specified in a Confirmation.'"
+calculation_agent,Party for calculation agent,100,B,[109],"The text explicitly states 'The Calculation Agent is Party B, unless otherwise specified in a Confirmation.'"
 governing_law,Governing Law,100,NEW-YORK,[115],The text explicitly states that the Agreement will be governed by the laws of the State of New York.
 cross_default,Cross default applicable parties,100,NONE,,Section Part 1(a)(i) and (iii) state that Section 5(a)(vi) (Cross Default) will in no circumstances be regarded as having given rise to an Event of Default with respect to either Party A or Party B.
 specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,50,None,,"The text does not mention 'specified indebtness' or 'borrowed money' in the context of the definition, so cannot determine inclusion."
