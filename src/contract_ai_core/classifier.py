@@ -13,6 +13,8 @@ import re
 from collections.abc import Sequence
 from dataclasses import dataclass
 
+from openai import OpenAI
+
 from .schema import (
     ClassifiedParagraph,
     ContractTypeTemplate,
@@ -190,15 +192,6 @@ class ClauseClassifier:
                 load_dotenv()
             except Exception:  # pragma: no cover
                 pass
-
-        try:
-            # Using OpenAI Python SDK v1
-            from openai import OpenAI
-        except Exception as exc:  # pragma: no cover - helpful error if not installed
-            raise RuntimeError(
-                "The 'openai' package is required to use ClauseClassifier with provider 'openai'. "
-                "Install it with: pip install openai"
-            ) from exc
 
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:

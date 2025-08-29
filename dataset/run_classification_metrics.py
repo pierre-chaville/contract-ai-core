@@ -57,7 +57,7 @@ def write_confusion_matrix_csv(out_csv: Path, labels: list[str], cm: np.ndarray)
 def write_confusion_matrix_png(out_png: Path, labels: list[str], cm: np.ndarray) -> None:
     out_png.parent.mkdir(parents=True, exist_ok=True)
     fig, ax = plt.subplots(figsize=(max(6, len(labels) * 0.6), max(5, len(labels) * 0.6)))
-    im = ax.imshow(cm, interpolation="nearest", cmap=plt.cm.Blues)
+    im = ax.imshow(cm, interpolation="nearest", cmap="Blues")
     ax.figure.colorbar(im, ax=ax)
     # Ticks and labels
     ax.set(
@@ -175,7 +175,25 @@ def main() -> None:
 
     write_confusion_matrix_csv(out_dir / "confusion_matrix.csv", labels, cm)
     write_confusion_matrix_png(out_dir / "confusion_matrix.png", labels, cm)
-    print(yaml.safe_dump(summary, sort_keys=False, allow_unicode=True))
+
+    # Pretty print key metrics as percentages
+    def _to_pct(val: float) -> str:
+        if val is None or (isinstance(val, float) and np.isnan(val)):
+            return "nan"
+        return f"{int(round(float(val) * 100))}%"
+
+    summary_pct = {
+        "num_examples": len(all_true),
+        "labels": labels,
+        "accuracy": _to_pct(accuracy),
+        "cohen_kappa": _to_pct(kappa),
+        "high_confidence_threshold_percent": threshold,
+        "high_confidence_accuracy": _to_pct(high_conf_accuracy),
+        "high_confidence_coverage": _to_pct(coverage),
+        "macro_f1": _to_pct(macro_f1),
+        "per_category_f1": {k: _to_pct(v) for k, v in per_category.items()},
+    }
+    print(yaml.safe_dump(summary_pct, sort_keys=False, allow_unicode=True))
 
 
 if __name__ == "__main__":

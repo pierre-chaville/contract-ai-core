@@ -2,7 +2,7 @@ from contract_ai_core.extractor import DatapointExtractor, DatapointExtractorCon
 from contract_ai_core.schema import ClauseDefinition, ContractTypeTemplate, DatapointDefinition
 
 
-def _template_with_types():
+def _template_with_types() -> ContractTypeTemplate:
     return ContractTypeTemplate(
         key="T",
         name="T",
@@ -21,7 +21,7 @@ def _template_with_types():
     )
 
 
-def test_field_models_value_types():
+def test_field_models_value_types() -> None:
     ext = DatapointExtractor(DatapointExtractorConfig())
     template = _template_with_types()
 

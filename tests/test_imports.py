@@ -1,4 +1,4 @@
-def test_can_import_package():
+def test_can_import_package() -> None:
     import importlib
 
     pkg = importlib.import_module("contract_ai_core")

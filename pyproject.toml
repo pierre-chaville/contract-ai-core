@@ -55,7 +55,7 @@ select = [
   "UP", # pyupgrade
   "B",  # flake8-bugbear
 ]
-ignore = ["E", "UP]
+ignore = ["E", "UP"]
 
 [tool.black]
 line-length = 100
@@ -65,7 +65,7 @@ target-version = ["py310"]
 python_version = "3.10"
 warn_unused_configs = true
 warn_redundant_casts = true
-warn_unused_ignores = true
+warn_unused_ignores = false
 disallow_untyped_defs = true
 no_implicit_optional = true
 check_untyped_defs = true
@@ -73,4 +73,6 @@ strict_optional = true
 show_error_codes = true
 pretty = true
 ignore_missing_imports = true
+explicit_package_bases = true
+disable_error_code = ["call-overload"]
 

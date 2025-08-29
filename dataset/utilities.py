@@ -5,7 +5,7 @@ from pathlib import Path
 import pandas as pd
 
 
-def load_template(template_key):
+def load_template(template_key: str) -> dict:
     repo_root = Path(__file__).resolve().parents[1]
     folder_path = repo_root / "dataset" / "contract_types"
     json_path = folder_path / f"{template_key}.json"

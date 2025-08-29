@@ -11,8 +11,6 @@ import json
 import logging
 from pathlib import Path
 
-from utilities import load_template
-
 from contract_ai_core import (
     ContractReviser,
     ContractReviserConfig,
@@ -20,6 +18,7 @@ from contract_ai_core import (
     Paragraph,
     split_text_into_paragraphs,
 )
+from utilities import load_template
 
 
 def read_text_best_effort(path: Path) -> str:

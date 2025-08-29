@@ -5,12 +5,13 @@ import logging
 import os
 import random
 from dataclasses import dataclass
-from typing import Optional
+from typing import Any, Optional, cast
 
 from pydantic import BaseModel, Field, create_model
 
 from .schema import (
     ContractTypeTemplate,
+    DatapointDefinition,
     DocumentClassification,
     ExtractedDatapoint,
     ExtractionResult,
@@ -173,7 +174,7 @@ class DatapointExtractor:
                 evidence = None
 
             # Structured output model for this scope: each field returns {value, confidence, explanation}
-            def _map_data_type_to_py_type(dt: str | None):
+            def _map_data_type_to_py_type(dt: Any | None) -> Any:
                 dt_norm = (dt or "").strip().lower()
                 if dt_norm in ("str", "string", "text"):
                     return str
@@ -191,12 +192,14 @@ class DatapointExtractor:
                     return str
                 return str
 
-            fields: dict[str, tuple[BaseModel | None, Field]] = {}
+            # Store dynamic field definitions for create_model; Field(...) returns FieldInfo at runtime
+            # Use Any for the tuple elements to satisfy mypy
+            fields: dict[str, tuple[Any, Any]] = {}
             for dp in datapoints:
                 desc = dp.description or f"Extract value for '{dp.title}'."
                 py_type = _map_data_type_to_py_type(getattr(dp, "data_type", None))
                 # Create a typed FieldResult model per datapoint so `value` matches expected type
-                FieldResultModel: BaseModel = create_model(
+                FieldResultModel: type[BaseModel] = create_model(
                     f"FieldResult_{dp.key}",
                     value=(
                         Optional[py_type],
@@ -215,10 +218,11 @@ class DatapointExtractor:
                         Optional[str],
                         Field(default=None, description="Short rationale for the extracted value."),
                     ),
-                )  # type: ignore[assignment]
+                )
                 fields[dp.key] = (FieldResultModel, Field(..., description=desc))
 
-            OutputModel: BaseModel = create_model("ScopeExtraction", **fields)  # type: ignore[assignment]
+            _field_defs = cast(dict[str, tuple[type[Any], Any]], fields)
+            OutputModel: type[BaseModel] = create_model("ScopeExtraction", **_field_defs)
 
             instruction = (
                 "You are an expert in the field of contract law. Your job is to extract the information from the contract.\n"
@@ -250,19 +254,18 @@ class DatapointExtractor:
             template_enums = getattr(template, "enums", None)
             if template_enums:
                 enum_by_key = {e.key: e for e in template_enums}
-                enum_keys = sorted(
-                    {
-                        getattr(dp, "enum_key", None)
-                        for dp in datapoints
-                        if getattr(dp, "enum_key", None)
-                    }
-                )
+                enum_keys_set: set[str] = set()
+                for dp in datapoints:
+                    ek = getattr(dp, "enum_key", None)
+                    if isinstance(ek, str) and ek:
+                        enum_keys_set.add(ek)
+                enum_keys = sorted(enum_keys_set)
                 enum_lines: list[str] = []
                 for ek in enum_keys:
                     enum_def = enum_by_key.get(ek)
                     if not enum_def:
                         continue
-                    title = enum_def.title or ek
+                    title = enum_def.title if enum_def.title is not None else ek
                     enum_lines.append(f"- {ek} ({title}):")
                     for opt in enum_def.options:
                         desc = opt.description or ""
@@ -310,8 +313,13 @@ class DatapointExtractor:
                 continue
             data_obj = res.get("data")
             data: dict[str, dict | None] = data_obj if isinstance(data_obj, dict) else {}
-            datapoints = res.get("datapoints") or []
-            evidence = res.get("evidence")
+            dp_obj = res.get("datapoints")
+            if isinstance(dp_obj, list):
+                datapoints = cast(list[DatapointDefinition], dp_obj)
+            else:
+                datapoints = []
+            ev_obj = res.get("evidence")
+            evidence = cast(list[int] | None, ev_obj) if (isinstance(ev_obj, list) or ev_obj is None) else None
             for dp in datapoints:  # type: ignore[assignment]
                 item = (data or {}).get(dp.key) or {}
                 value = item.get("value")
@@ -358,7 +366,7 @@ class DatapointExtractor:
             pass
 
         api_key = os.getenv("OPENAI_API_KEY")
-        llm = ChatOpenAI(model=model_name, temperature=temperature, api_key=api_key)
+        llm = ChatOpenAI(model=model_name, temperature=temperature, api_key=api_key) # type: ignore[arg-type]
         sem = asyncio.Semaphore(concurrency)
 
         async def run_one(job: dict[str, object]) -> dict[str, object]:
@@ -387,7 +395,7 @@ class DatapointExtractor:
             while attempt <= max_retries:
                 try:
                     async with sem:
-                        output: BaseModel = await structured_llm.ainvoke(prompt)  # type: ignore[assignment]
+                        output: BaseModel = await structured_llm.ainvoke(prompt)  # type: ignore[assignment, arg-type]
                     data = output.model_dump()  # type: ignore[attr-defined]
                     return {"data": data, "datapoints": datapoints, "evidence": evidence}
                 except Exception as e:  # pragma: no cover

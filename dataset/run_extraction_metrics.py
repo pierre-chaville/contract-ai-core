@@ -10,6 +10,7 @@ import argparse
 import csv
 import logging
 from pathlib import Path
+from typing import Any
 
 import numpy as np
 import yaml
@@ -187,8 +188,8 @@ def relaxed_equal(gold: str, pred: str, dtype: str) -> bool:
         gs = normalize_int(gold)
         ps = normalize_int(pred)
         try:
-            gv = int(float(gs)) if gs not in ("", "nan") else None
-            pv = int(float(ps)) if ps not in ("", "nan") else None
+            gv = int(float(gs)) if gs not in ("", "nan") else -1
+            pv = int(float(ps)) if ps not in ("", "nan") else -1
             return gv == pv
         except Exception:
             return gs == ps
@@ -388,7 +389,7 @@ def main() -> None:
         except Exception:
             return str(val)
 
-    def _map_to_pct(obj):
+    def _map_to_pct(obj: Any) -> Any:
         if isinstance(obj, dict):
             return {k: _map_to_pct(v) for k, v in obj.items()}
         if isinstance(obj, int | float):
@@ -397,7 +398,7 @@ def main() -> None:
 
     summary_pct = _map_to_pct(summary)
 
-    out_dir = repo_root / "dataset" / "metrics" / "results" / "extraction"
+    out_dir = repo_root / "dataset" / "metrics" / "results" / "extraction" / template_key / model_name
     out_dir.mkdir(parents=True, exist_ok=True)
     with (out_dir / "summary.yaml").open("w", encoding="utf-8") as f:
         yaml.safe_dump(summary, f, sort_keys=False, allow_unicode=True)

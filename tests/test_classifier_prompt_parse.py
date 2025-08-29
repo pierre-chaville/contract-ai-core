@@ -1,7 +1,7 @@
 from contract_ai_core.classifier import ClauseClassifier
 
 
-def test_parse_llm_output_tolerant_without_confidence():
+def test_parse_llm_output_tolerant_without_confidence() -> None:
     cc = ClauseClassifier()
     raw = "1: 2\n2: 0\n3: 5"
     parsed = cc._parse_llm_output(raw)
@@ -10,7 +10,7 @@ def test_parse_llm_output_tolerant_without_confidence():
     assert parsed[3] == (5, None)
 
 
-def test_parse_llm_output_with_confidence():
+def test_parse_llm_output_with_confidence() -> None:
     cc = ClauseClassifier()
     raw = "1: 3 | 95%\n2: 0 | 5%"
     parsed = cc._parse_llm_output(raw)

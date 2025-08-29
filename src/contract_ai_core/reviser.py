@@ -95,7 +95,7 @@ class ContractReviser:
         llm = ChatOpenAI(
             model=self.config.model or "gpt-4.1-mini",
             temperature=float(self.config.temperature),
-            api_key=api_key,
+            api_key=api_key,  # type: ignore[arg-type]
         )
         structured_llm = llm.with_structured_output(AmendmentsOutput)  # type: ignore[arg-type]
 
@@ -170,7 +170,7 @@ class ContractReviser:
         llm = ChatOpenAI(
             model=self.config.model or "gpt-4.1-mini",
             temperature=float(self.config.temperature),
-            api_key=api_key,
+            api_key=api_key,  # type: ignore[arg-type]
         )
         structured_llm = llm.with_structured_output(TargetLocations)  # type: ignore[arg-type]
 
@@ -293,14 +293,14 @@ class ContractReviser:
             pass
         api_key = os.getenv("OPENAI_API_KEY")
 
-        async def run_job(job):
-            ApplyOutput = job["model"]
+        async def run_job(job: dict) -> tuple[dict, BaseModel]:
+            ApplyOutputModel = job["model"]
             llm = ChatOpenAI(
                 model=self.config.model or "gpt-4.1-mini",
                 temperature=float(self.config.temperature),
-                api_key=api_key,
+                api_key=api_key,  # type: ignore[arg-type]
             )
-            structured_llm = llm.with_structured_output(ApplyOutput)  # type: ignore[arg-type]
+            structured_llm = llm.with_structured_output(ApplyOutputModel)  # type: ignore[arg-type]
 
             ins: RevisionInstructionTarget = job["ins"]
             instruction_text = (
@@ -322,14 +322,14 @@ class ContractReviser:
             )
             # Debug logging can be enabled if needed
             # logging.getLogger(__name__).debug("Running job for section %s", ins.target_section)
-            out: ApplyOutput = await structured_llm.ainvoke(prompt)  # type: ignore[assignment]
+            out: BaseModel = await structured_llm.ainvoke(prompt)  # type: ignore[assignment]
             return job, out
 
         # Run with limited concurrency
-        async def runner():
+        async def runner() -> list[tuple[dict, BaseModel]]:
             sem = asyncio.Semaphore(8)
 
-            async def wrapped(job):
+            async def wrapped(job: dict) -> tuple[dict, BaseModel]:
                 async with sem:
                     return await run_job(job)
 
@@ -340,34 +340,34 @@ class ContractReviser:
 
         revised_sections: list[RevisedSection] = []
         for job, out in results:
-            ins: RevisionInstructionTarget = job["ins"]
-            initial: list[Paragraph] = job["initial"]
+            ins_item: RevisionInstructionTarget = job["ins"]
+            initial_paras: list[Paragraph] = job["initial"]
 
             # Build revised Paragraph objects, assigning indices starting from the first target index
-            if initial:
-                start_idx = initial[0].index
+            if initial_paras:
+                start_idx = initial_paras[0].index
             else:
                 start_idx = -1
             revised_paras: list[Paragraph] = []
             if start_idx >= 0:
-                for offset, txt in enumerate(out.revised_paragraphs):
+                for offset, txt in enumerate(out.revised_paragraphs):  # type: ignore[attr-defined]
                     revised_paras.append(Paragraph(index=start_idx + offset, text=txt))
-            # logging.getLogger(__name__).debug("Revised paragraphs for %s: %d", ins.target_section, len(revised_paras))
+            # logging.getLogger(__name__).debug("Revised paragraphs for %s: %d", ins_item.target_section, len(revised_paras))
             revised_sections.append(
                 RevisedSection(
-                    amendment_start_line=ins.amendment_start_line,
-                    amendment_end_line=ins.amendment_end_line,
-                    amendment_span_text=ins.amendment_span_text,
-                    target_section=ins.target_section,
-                    confidence_target=ins.confidence_target,
-                    change_explanation=ins.change_explanation,
-                    target_paragraph_indices=ins.target_paragraph_indices,
-                    confidence_target_paragraph_indices=ins.confidence_target_paragraph_indices,
-                    target_paragraph_explanation=ins.target_paragraph_explanation,
-                    initial_paragraphs=initial if initial else None,
+                    amendment_start_line=ins_item.amendment_start_line,
+                    amendment_end_line=ins_item.amendment_end_line,
+                    amendment_span_text=ins_item.amendment_span_text,
+                    target_section=ins_item.target_section,
+                    confidence_target=ins_item.confidence_target,
+                    change_explanation=ins_item.change_explanation,
+                    target_paragraph_indices=ins_item.target_paragraph_indices,
+                    confidence_target_paragraph_indices=ins_item.confidence_target_paragraph_indices,
+                    target_paragraph_explanation=ins_item.target_paragraph_explanation,
+                    initial_paragraphs=initial_paras if initial_paras else None,
                     revised_paragraphs=revised_paras if revised_paras else None,
-                    confidence_revision=out.confidence_revision,
-                    revision_explanation=out.revision_explanation,
+                    confidence_revision=out.confidence_revision,  # type: ignore[attr-defined]
+                    revision_explanation=out.revision_explanation,  # type: ignore[attr-defined]
                 )
             )
 

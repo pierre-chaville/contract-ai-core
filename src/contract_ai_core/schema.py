@@ -3,7 +3,7 @@ from __future__ import annotations
 import re
 from collections.abc import Sequence
 from enum import Enum
-from typing import Any
+from typing import Any, Optional
 
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -125,7 +125,7 @@ class ContractTypeTemplate(FrozenBaseModel):
     datapoints: Sequence[DatapointDefinition] = Field(
         ..., description="List of datapoint definitions to extract for this contract type."
     )
-    enums: Sequence[EnumDefinition] = Field(
+    enums: Optional[Sequence[EnumDefinition]] = Field(
         default=None,
         description=("Rreusable enum definitions that datapoints can reference via 'enum_key'."),
     )

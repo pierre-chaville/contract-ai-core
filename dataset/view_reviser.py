@@ -12,7 +12,6 @@ from pathlib import Path
 
 import pandas as pd
 import streamlit as st
-
 from contract_ai_core.schema import split_text_into_paragraphs  # type: ignore
 
 

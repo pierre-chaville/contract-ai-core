@@ -5,8 +5,6 @@ import csv
 import os
 from pathlib import Path
 
-from utilities import load_template, write_tokens_usage
-
 from contract_ai_core import (
     ClauseClassifier,
     ClauseClassifierConfig,
@@ -14,6 +12,7 @@ from contract_ai_core import (
     Paragraph,
     split_text_into_paragraphs,
 )
+from utilities import load_template, write_tokens_usage
 
 
 def classify_file(

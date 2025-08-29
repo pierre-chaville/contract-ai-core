@@ -7,7 +7,7 @@ from contract_ai_core.schema import (
 )
 
 
-def test_materialize_changes_bottom_up_ordering():
+def test_materialize_changes_bottom_up_ordering() -> None:
     # Minimal template
     template = ContractTypeTemplate(
         key="T",

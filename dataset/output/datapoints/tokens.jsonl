@@ -64,3 +64,5 @@
 {"timestamp": "2025-08-28T11:02:09.407701+00:00", "source_id": "c5ef841693d651229f98f0e474aded4b.md", "provider": "openai", "model": "gpt-4.1", "num_paragraphs": 212, "usage": {}}
 {"timestamp": "2025-08-28T11:03:06.340795+00:00", "source_id": "44b1a05087fa5df2aefd185b306464c7.md", "provider": "openai", "model": "gpt-4.1", "num_paragraphs": 216, "usage": {}}
 {"timestamp": "2025-08-28T11:03:10.857686+00:00", "source_id": "4986adbaccdf53b8b2b59669fa5f9210.md", "provider": "openai", "model": "gpt-4.1", "num_paragraphs": 97, "usage": {}}
+{"timestamp": "2025-08-29T16:39:10.777922+00:00", "source_id": "025cb4065e6e551db1bfe44ef44eb83b.md", "provider": "openai", "model": "gpt-4.1-mini", "num_paragraphs": 201, "usage": {}}
+{"timestamp": "2025-08-29T16:39:33.629951+00:00", "source_id": "0b4058ba0dcd589c94e0ef1969f2fe13.md", "provider": "openai", "model": "gpt-4.1-mini", "num_paragraphs": 141, "usage": {}}

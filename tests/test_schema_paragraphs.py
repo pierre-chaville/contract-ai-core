@@ -1,7 +1,7 @@
 from contract_ai_core.schema import split_text_into_paragraphs
 
 
-def test_split_text_into_paragraphs_basic_merge_and_cleanup():
+def test_split_text_into_paragraphs_basic_merge_and_cleanup() -> None:
     text = (
         "Header line without period\n"
         "continues here on next line\n\n"
