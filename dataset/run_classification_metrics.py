@@ -6,7 +6,7 @@ from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
-import yaml
+import yaml  # type: ignore[import-untyped]
 from sklearn.metrics import accuracy_score, cohen_kappa_score, confusion_matrix, f1_score
 
 

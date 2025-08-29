@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
-import yaml
+import yaml  # type: ignore[import-untyped]
 from utilities import load_template
 
 
