@@ -1,14 +1,10 @@
 ## contract-ai-core
 
-Core library for AI-driven legal contract processing. This package provides the building blocks (no UI or APIs) to:
+AI-driven legal contract processing. This repo includes a core Python library and dataset tools to:
 
 - Classify contract paragraphs into clause categories
 - Extract structured datapoints from contracts
-- Generate an amended and restated contract using a contract type template
-
-The repository is scaffolded with interfaces and types, ready for concrete LLM-backed implementations.
-
-Status: initial scaffold (no implementations).
+- Generate an amended-and-restated contract from an amendment
 
 ### Highlights
 
@@ -20,21 +16,15 @@ Status: initial scaffold (no implementations).
 
 ```
 contract-ai-core/
-  docs/
-  src/
-    contract_ai_core/
-      __init__.py
-      classifier.py
-      extractor.py
-      reviser.py
-      schema.py
+  documentation/
+  dataset/
+  src/contract_ai_core/
   tests/
   README.md
   requirements.txt
-  .env.example
 ```
 
-Note: The Python package is located under `src/contract_ai_core` and is importable as `contract_ai_core`.
+The Python package is importable as `contract_ai_core`.
 
 ### Quick start
 
@@ -59,38 +49,42 @@ You can load environment variables at runtime using `python-dotenv` if desired.
 ### Library overview
 
 - `schema.py`: Data models for templates, classification results, extracted datapoints, and revision artifacts
-- `classifier.py`: Interfaces for paragraph and document clause classification
-- `extractor.py`: Interfaces for extracting datapoints (using template and optionally classifications)
-- `reviser.py`: Interfaces for proposing and applying revisions to produce an amended and restated contract
+- `classifier.py`: Clause classification for paragraphs/documents
+- `extractor.py`: Datapoint extraction (typed values, concurrency, retries)
+- `reviser.py`: Amendment analysis and restated contract generation
 
-### Usage sketch (to be implemented by you)
+See full docs under `documentation/`:
+
+- `[documentation/index.md](documentation/index.md)`
+- `[documentation/core_library.md](documentation/core_library.md)`
+- `[documentation/dataset.md](documentation/dataset.md)`
+- `[documentation/dataset_tools.md](documentation/dataset_tools.md)`
+
+### Usage sketch
 
 ```python
-from pathlib import Path
+from contract_ai_core.schema import split_text_into_paragraphs
+from contract_ai_core.classifier import ClauseClassifier
+from contract_ai_core.extractor import DatapointExtractor, DatapointExtractorConfig
+from contract_ai_core.reviser import ContractReviser, ContractReviserConfig
 
-from contract_ai_core import (
-    ContractTypeTemplate, ClauseDefinition, DatapointDefinition,
-    ClauseClassifier, DatapointExtractor, ContractReviser,
-)
+text = open("./dataset/documents/ISDA/example.md", "r", encoding="utf-8").read()
+paragraphs = split_text_into_paragraphs(text)
 
-# 1) Build or load a ContractTypeTemplate (see schema.py)
-# template = ContractTypeTemplate(...)
+# Classify
+clf = ClauseClassifier()
+doc_cls = clf.classify_document(paragraphs, template)
 
-# 2) Classify
-# classifier = ClauseClassifier(model="gpt-4o")
-# classified = classifier.classify_document(text=Path("contract.txt").read_text(encoding="utf-8"), template=template)
+# Extract
+ext = DatapointExtractor(DatapointExtractorConfig(model="gpt-4.1-mini", concurrency=2))
+result = ext.extract(text, template, classified_clauses=doc_cls)
 
-# 3) Extract datapoints
-# extractor = DatapointExtractor(model="gpt-4o")
-# datapoints = extractor.extract(text, template=template, classified_clauses=classified)
-
-# 4) Generate amended and restated contract
-# reviser = ContractReviser(model="gpt-4o")
-# revised = reviser.generate_amended_and_restated(original_text=text, template=template, datapoints=datapoints)
-# print(revised.content)
+# Revise
+reviser = ContractReviser(ContractReviserConfig(model="gpt-4.1-mini"))
+revised = reviser.generate_amended_and_restated(contract=paragraphs, amendment=amend_paragraphs, template=template)
 ```
 
-All public methods are currently stubs (`NotImplementedError`) and are intended as extension points for your implementations.
+Documents should be `.md`/`.txt`. Use `split_text_into_paragraphs` to normalize paragraphs.
 
 ### Environment and secrets
 

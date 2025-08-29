@@ -1,8 +1,15 @@
 from __future__ import annotations
+"""Clause classifier: assign clause categories to paragraphs for a given template.
+
+Public API:
+- ClauseClassifier.classify_paragraphs
+- ClauseClassifier.classify_paragraphs_with_usage
+"""
 
 from dataclasses import dataclass
 import os
 import re
+import logging
 from typing import Dict, List, Optional, Sequence, Tuple
 
 from .schema import (
@@ -201,6 +208,7 @@ class ClauseClassifier:
         temperature = float(self.config.temperature)
         max_tokens = self.config.max_tokens
 
+        logging.getLogger(__name__).debug("Calling OpenAI model=%s temperature=%s", model_name, temperature)
         response = client.chat.completions.create(
             model=model_name,
             messages=[
@@ -212,6 +220,12 @@ class ClauseClassifier:
         )
         content = response.choices[0].message.content or ""
         usage = getattr(response, "usage", None)
+        logging.getLogger(__name__).debug(
+            "OpenAI usage prompt=%s completion=%s total=%s",
+            getattr(usage, "prompt_tokens", None) if usage is not None else None,
+            getattr(usage, "completion_tokens", None) if usage is not None else None,
+            getattr(usage, "total_tokens", None) if usage is not None else None,
+        )
         usage_dict: Dict[str, Optional[int]] = {
             "prompt_tokens": getattr(usage, "prompt_tokens", None) if usage is not None else None,
             "completion_tokens": getattr(usage, "completion_tokens", None) if usage is not None else None,

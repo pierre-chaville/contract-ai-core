@@ -1,10 +1,19 @@
 from __future__ import annotations
+"""Contract reviser: plan and apply amendment instructions to produce a restated contract.
+
+Public API:
+- ContractReviser.analyze_amendments: parse amendment paragraphs into structured instructions
+- ContractReviser.find_revisions_targets: locate target spans in the original contract
+- ContractReviser.apply_revisions: generate revised paragraphs for each instruction
+- ContractReviser.generate_amended_and_restated: end-to-end pipeline helper
+"""
 
 from dataclasses import dataclass
 from typing import Optional, Sequence, List
 import asyncio
 import os
 import json
+import logging
 
 from .schema import (
     ContractTypeTemplate,
@@ -201,7 +210,7 @@ class ContractReviser:
                 conf = float(loc.confidence)
                 explanation = loc.explanation
             if target_indices is None:
-                print(f"Target indices is None for {ins.target_section}")
+                logging.getLogger(__name__).warning("No target indices for section: %s", ins.target_section)
                 target_indices = []
             results.append(
                 RevisionInstructionTarget(
@@ -234,7 +243,7 @@ class ContractReviser:
             )
 
         # Prepare jobs per instruction
-        print(f"Applying revisions")
+        logging.getLogger(__name__).info("Applying %d revision jobs", len(instructions))
         jobs = []
         for ins in instructions:
             target_idxs = list(ins.target_paragraph_indices) if ins.target_paragraph_indices else []
@@ -302,9 +311,8 @@ class ContractReviser:
                 + "\n\n"
                 + guidance_text
             )
-            # print('--- Run job ---')
-            # print(f"Running job: {ins.target_section}")
-            # print(f"Prompt: {prompt}")
+            # Debug logging can be enabled if needed
+            # logging.getLogger(__name__).debug("Running job for section %s", ins.target_section)
             out: ApplyOutput = await structured_llm.ainvoke(prompt)  # type: ignore[assignment]
             return job, out
 
@@ -335,9 +343,7 @@ class ContractReviser:
             if start_idx >= 0:
                 for offset, txt in enumerate(out.revised_paragraphs):
                     revised_paras.append(Paragraph(index=start_idx + offset, text=txt))
-            # print('--- Revised paragraphs ---')
-            # print(f"Initial paragraphs: {initial}")
-            # print(f"Revised paragraphs: {revised_paras}")
+            # logging.getLogger(__name__).debug("Revised paragraphs for %s: %d", ins.target_section, len(revised_paras))
             revised_sections.append(
                 RevisedSection(
                     amendment_start_line=ins.amendment_start_line,

@@ -5,6 +5,7 @@ from typing import Dict, List, Optional, Sequence, Tuple
 import os
 import asyncio
 import random
+import logging
 
 from .schema import (
     ContractTypeTemplate,
@@ -23,7 +24,7 @@ try:
     set_debug(False)
 except Exception as e:  # pragma: no cover
     ChatOpenAI = None  # type: ignore
-    print('setting ChatOpenAI to None', e)
+    logging.getLogger(__name__).warning('ChatOpenAI unavailable: %r', e)
 
 ScopeId = str
 
@@ -122,6 +123,7 @@ class DatapointExtractor:
             sid for sid, (scp, idxs) in scopes.items() if scp.kind == "clauses" and not idxs
         ]
         if empty_clause_scope_ids:
+            logging.getLogger(__name__).debug("Merging %d empty clause scopes into document scope", len(empty_clause_scope_ids))
             merged_dp_indices: List[int] = []
             for sid in empty_clause_scope_ids:
                 merged_dp_indices.extend(scope_to_datapoints.get(sid, []))
@@ -256,7 +258,7 @@ class DatapointExtractor:
                 }
             )
 
-        # Execute jobs concurrently (up to 8)
+        # Execute jobs concurrently
         results = asyncio.run(
             self._run_scope_extractions(
                 jobs=jobs,
@@ -304,7 +306,10 @@ class DatapointExtractor:
         temperature: float,
         concurrency: int = 8,
     ) -> List[Dict[str, object]]:
-        """Run scope extractions concurrently and return raw model_dump data per job."""
+        """Run scope extractions concurrently and return raw model_dump data per job.
+
+        Retries with exponential backoff are applied per job to handle transient rate limits.
+        """
         if ChatOpenAI is None:
             raise RuntimeError(
                 "langchain-openai is required. Install with: pip install langchain langchain-openai"
@@ -360,7 +365,7 @@ class DatapointExtractor:
                     attempt += 1
 
             # Return an empty result for this job so the caller can proceed
-            print('run_one error after retries:', repr(last_error))
+            logging.getLogger(__name__).error('Job failed after retries: %r', last_error)
             return {"data": {}, "datapoints": datapoints, "evidence": evidence, "error": repr(last_error) if last_error else "unknown"}
 
         tasks = [asyncio.create_task(run_one(job)) for job in jobs]

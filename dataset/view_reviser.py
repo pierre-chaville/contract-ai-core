@@ -1,4 +1,9 @@
 from __future__ import annotations
+"""Streamlit viewer for amendment instructions and restated documents.
+
+Browse instruction JSONs by model, inspect original/amendment/restated content.
+Run: streamlit run dataset/view_reviser.py
+"""
 
 import json
 import html
@@ -163,7 +168,6 @@ def build_table(instructions: list[dict]) -> str:
             "</tr>"
         )
         rows.append(row)
-        print('-'*100)
 
 
     table_html = styles + "<table class='rev-table'>" + header + "".join(rows) + "</table>"

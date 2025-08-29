@@ -40,6 +40,8 @@ where = ["src"]
 include = ["contract_core_ai*"]
 exclude = []
 
+[tool.pytest.ini_options]
+addopts = "-p no:cacheprovider"
 
 [tool.ruff]
 line-length = 100

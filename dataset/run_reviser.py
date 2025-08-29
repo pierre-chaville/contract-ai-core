@@ -1,10 +1,16 @@
 from __future__ import annotations
+"""CLI: Generate amended-and-restated contracts and instruction JSONs for a dataset.
+
+Usage:
+  python dataset/run_reviser.py --template ISDA --model gpt-4.1-mini
+"""
 
 import argparse
 import json
 from pathlib import Path
 from typing import List
 from utilities import load_template
+import logging
 
 from contract_ai_core import (
     ContractReviser,
@@ -33,6 +39,7 @@ def read_text_best_effort(path: Path) -> str:
 
 
 def main() -> None:
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
     parser = argparse.ArgumentParser(description="Generate amended and restated contract")
     parser.add_argument("--template", required=True, help="Template key (e.g., ISDA)")
     parser.add_argument("--model", required=True, help="Model name for reviser (e.g., gpt-4.1-mini)")
@@ -58,16 +65,16 @@ def main() -> None:
     # Iterate over amendments; expect matching contract file by stem
     amend_files = sorted(amendments_dir.glob("*.md"))
     if not amend_files:
-        print(f"No amendment markdown files found in {amendments_dir}")
+        logging.warning("No amendment markdown files found in %s", amendments_dir)
         return
 
     for amend_path in amend_files:
         contract_path = contracts_dir / amend_path.name
         if not contract_path.exists():
-            print(f"Skipping {amend_path.name}: missing contract {contract_path}")
+            logging.warning("Skipping %s: missing contract %s", amend_path.name, contract_path)
             continue
 
-        print(f"Processing {amend_path.name} against {contract_path.name} ...")
+        logging.info("Processing %s against %s ...", amend_path.name, contract_path.name)
 
         contract_text = read_text_best_effort(contract_path)
         amendment_text = read_text_best_effort(amend_path)
@@ -123,8 +130,8 @@ def main() -> None:
                 indent=2,
             )
 
-        print(f"  -> wrote {restated_path.relative_to(repo_root)}")
-        print(f"  -> wrote {instructions_path.relative_to(repo_root)}")
+        logging.info("wrote %s", restated_path.relative_to(repo_root))
+        logging.info("wrote %s", instructions_path.relative_to(repo_root))
 
 
 if __name__ == "__main__":

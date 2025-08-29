@@ -1,9 +1,15 @@
 from __future__ import annotations
+"""CLI: Compute extraction metrics (relaxed accuracy, per-key accuracy/F1, completion).
+
+Usage:
+  python dataset/run_extraction_metrics.py --template ISDA --model gpt-4.1-mini
+"""
 
 import csv
 from pathlib import Path
 from typing import Dict, List, Tuple
 import argparse
+import logging
 
 import numpy as np
 from sklearn.metrics import f1_score
@@ -208,6 +214,7 @@ def relaxed_equal(gold: str, pred: str, dtype: str) -> bool:
 
 
 def main() -> None:
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
     parser = argparse.ArgumentParser(description="Compute datapoint extraction metrics")
     parser.add_argument("--template", required=True, help="Template key (e.g., ISDA)")
     parser.add_argument(
@@ -240,7 +247,7 @@ def main() -> None:
     pred_files = {p.stem: p for p in pred_dir.glob("*.csv")}
     common_docs = sorted(set(gold_files.keys()) & set(pred_files.keys()))
     if not common_docs:
-        print("No overlapping files between gold and predictions.")
+        logging.warning("No overlapping files between gold=%s and preds=%s", gold_dir, pred_dir)
         return
 
     # Aggregates
@@ -407,7 +414,7 @@ def main() -> None:
         for k in sorted(per_key_present.keys()):
             writer.writerow([k, per_key_accuracy.get(k, float("nan")), per_key_present[k]])
 
-    print(yaml.safe_dump(summary_pct, sort_keys=False, allow_unicode=True))
+    logging.info("\n%s", yaml.safe_dump(summary_pct, sort_keys=False, allow_unicode=True))
     # print('--------------------------------')
     # if mismatches:
     #     with (out_dir / "mismatches.csv").open("w", encoding="utf-8", newline="") as f:
