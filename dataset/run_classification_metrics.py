@@ -1,24 +1,23 @@
 from __future__ import annotations
 
+import argparse
 import csv
 from pathlib import Path
-from typing import Dict, List, Tuple
-import argparse
 
-import numpy as np
-from sklearn.metrics import accuracy_score, confusion_matrix, cohen_kappa_score, f1_score
 import matplotlib.pyplot as plt
+import numpy as np
 import yaml
+from sklearn.metrics import accuracy_score, cohen_kappa_score, confusion_matrix, f1_score
 
 
-def load_labels_from_csv(path: Path) -> Tuple[Dict[int, str], Dict[int, float]]:
+def load_labels_from_csv(path: Path) -> tuple[dict[int, str], dict[int, float]]:
     """Load index -> clause_key and index -> confidence_percent from a classification CSV.
 
     Expects columns: index, clause_key, confidence, text
     Returns: (index_to_label, index_to_confidence_percent)
     """
-    index_to_label: Dict[int, str] = {}
-    index_to_conf: Dict[int, float] = {}
+    index_to_label: dict[int, str] = {}
+    index_to_conf: dict[int, float] = {}
     with path.open("r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -38,7 +37,7 @@ def load_labels_from_csv(path: Path) -> Tuple[Dict[int, str], Dict[int, float]]:
     return index_to_label, index_to_conf
 
 
-def align_gold_pred(gold: Dict[int, str], pred: Dict[int, str]) -> Tuple[List[str], List[str]]:
+def align_gold_pred(gold: dict[int, str], pred: dict[int, str]) -> tuple[list[str], list[str]]:
     """Align gold and predicted labels by index (intersection only)."""
     common = sorted(set(gold.keys()) & set(pred.keys()))
     y_true = [gold[i] for i in common]
@@ -46,7 +45,7 @@ def align_gold_pred(gold: Dict[int, str], pred: Dict[int, str]) -> Tuple[List[st
     return y_true, y_pred
 
 
-def write_confusion_matrix_csv(out_csv: Path, labels: List[str], cm: np.ndarray) -> None:
+def write_confusion_matrix_csv(out_csv: Path, labels: list[str], cm: np.ndarray) -> None:
     out_csv.parent.mkdir(parents=True, exist_ok=True)
     with out_csv.open("w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
@@ -55,19 +54,33 @@ def write_confusion_matrix_csv(out_csv: Path, labels: List[str], cm: np.ndarray)
             writer.writerow([labels[i]] + list(map(int, row)))
 
 
-def write_confusion_matrix_png(out_png: Path, labels: List[str], cm: np.ndarray) -> None:
+def write_confusion_matrix_png(out_png: Path, labels: list[str], cm: np.ndarray) -> None:
     out_png.parent.mkdir(parents=True, exist_ok=True)
     fig, ax = plt.subplots(figsize=(max(6, len(labels) * 0.6), max(5, len(labels) * 0.6)))
     im = ax.imshow(cm, interpolation="nearest", cmap=plt.cm.Blues)
     ax.figure.colorbar(im, ax=ax)
     # Ticks and labels
-    ax.set(xticks=np.arange(cm.shape[1]), yticks=np.arange(cm.shape[0]), xticklabels=labels, yticklabels=labels, ylabel="True label", xlabel="Predicted label")
+    ax.set(
+        xticks=np.arange(cm.shape[1]),
+        yticks=np.arange(cm.shape[0]),
+        xticklabels=labels,
+        yticklabels=labels,
+        ylabel="True label",
+        xlabel="Predicted label",
+    )
     plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
     # Annotate cells
     thresh = cm.max() / 2.0 if cm.size else 0
     for i in range(cm.shape[0]):
         for j in range(cm.shape[1]):
-            ax.text(j, i, format(int(cm[i, j])), ha="center", va="center", color="white" if cm[i, j] > thresh else "black")
+            ax.text(
+                j,
+                i,
+                format(int(cm[i, j])),
+                ha="center",
+                va="center",
+                color="white" if cm[i, j] > thresh else "black",
+            )
     ax.set_title("Confusion Matrix")
     fig.tight_layout()
     fig.savefig(out_png, dpi=200, bbox_inches="tight")
@@ -77,7 +90,9 @@ def write_confusion_matrix_png(out_png: Path, labels: List[str], cm: np.ndarray)
 def main() -> None:
     parser = argparse.ArgumentParser(description="Compute clause classification metrics")
     parser.add_argument("--template", required=True, help="Template key (e.g., ISDA)")
-    parser.add_argument("--model", required=True, help="Model name used for predictions (folder name)")
+    parser.add_argument(
+        "--model", required=True, help="Model name used for predictions (folder name)"
+    )
     args = parser.parse_args()
 
     template_key = args.template
@@ -87,7 +102,9 @@ def main() -> None:
 
     gold_dir = repo_root / "dataset" / "gold" / "clauses" / template_key
     pred_dir = repo_root / "dataset" / "output" / "clauses" / template_key / model_name
-    out_dir = repo_root / "dataset" / "metrics" / "results" / "classification" / template_key / model_name
+    out_dir = (
+        repo_root / "dataset" / "metrics" / "results" / "classification" / template_key / model_name
+    )
     out_dir.mkdir(parents=True, exist_ok=True)
 
     gold_files = {p.stem: p for p in gold_dir.glob("*.csv")}
@@ -98,9 +115,9 @@ def main() -> None:
         print("No overlapping files between gold and predictions.")
         return
 
-    all_true: List[str] = []
-    all_pred: List[str] = []
-    all_pred_conf: List[float] = []
+    all_true: list[str] = []
+    all_pred: list[str] = []
+    all_pred_conf: list[float] = []
 
     for stem in common_docs:
         gold_labels, _ = load_labels_from_csv(gold_files[stem])
@@ -124,8 +141,8 @@ def main() -> None:
     # High-confidence accuracy (threshold in percent)
     threshold = 80.0
     hc_mask = [not np.isnan(c) and c >= threshold for c in all_pred_conf]
-    hc_true = [t for t, m in zip(all_true, hc_mask) if m]
-    hc_pred = [p for p, m in zip(all_pred, hc_mask) if m]
+    hc_true = [t for t, m in zip(all_true, hc_mask, strict=False) if m]
+    hc_pred = [p for p, m in zip(all_pred, hc_mask, strict=False) if m]
     if hc_true:
         high_conf_accuracy = float(accuracy_score(hc_true, hc_pred))
         coverage = float(len(hc_true)) / float(len(all_true))
@@ -139,7 +156,7 @@ def main() -> None:
     # Per-category F1 (macro averaged also)
     f1_per_label = f1_score(all_true, all_pred, labels=labels, average=None, zero_division=0)
     macro_f1 = float(f1_score(all_true, all_pred, labels=labels, average="macro", zero_division=0))
-    per_category = {label: float(score) for label, score in zip(labels, f1_per_label)}
+    per_category = {label: float(score) for label, score in zip(labels, f1_per_label, strict=False)}
 
     # Write outputs
     summary = {
@@ -163,5 +180,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-

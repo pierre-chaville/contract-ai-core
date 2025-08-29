@@ -1,10 +1,11 @@
 from __future__ import annotations
-from enum import Enum
+
 import re
-from typing import Dict, List, Optional, Sequence, Any
+from collections.abc import Sequence
+from enum import Enum
+from typing import Any
 
 from pydantic import BaseModel, ConfigDict, Field
-
 
 
 class FrozenBaseModel(BaseModel):
@@ -16,7 +17,7 @@ class ClauseDefinition(FrozenBaseModel):
 
     key: str = Field(..., description="Stable key identifier for the clause (e.g., 'termination').")
     title: str = Field(..., description="Human-readable clause title (e.g., 'Termination').")
-    description: Optional[str] = Field(
+    description: str | None = Field(
         default=None,
         description="Optional explanation of the clause's scope and intent.",
     )
@@ -25,13 +26,14 @@ class ClauseDefinition(FrozenBaseModel):
     #     description="Whether this clause is required for this contract type.",
     # )
 
+
 class EnumOption(FrozenBaseModel):
     """One permissible value for an enum, identified by a stable code and a description."""
 
     code: str = Field(
         ..., description="Stable enum code to be used in outputs (e.g., 'NY', 'USD')."
     )
-    description: Optional[str] = Field(
+    description: str | None = Field(
         default=None,
         description="Human-readable description or definition for this code.",
     )
@@ -43,7 +45,7 @@ class EnumDefinition(FrozenBaseModel):
     key: str = Field(
         ..., description="Stable key for this enum list (e.g., 'governing_law_codes')."
     )
-    title: Optional[str] = Field(
+    title: str | None = Field(
         default=None,
         description="Optional title for this enum list.",
     )
@@ -55,19 +57,23 @@ class EnumDefinition(FrozenBaseModel):
         ..., description="List of permissible enum options (code and description)."
     )
 
+
 class ExtractionScope(str, Enum):
     """Defines where in the document the datapoint was extracted from"""
+
     CLAUSE = "clause"
     DOCUMENT = "document"
     BEGINNING = "beginning"
 
-   
+
 class DatapointDefinition(FrozenBaseModel):
     """Definition of a datapoint to be extracted from a contract."""
 
-    key: str = Field(..., description="Stable key identifier for the datapoint (e.g., 'effective_date').")
+    key: str = Field(
+        ..., description="Stable key identifier for the datapoint (e.g., 'effective_date')."
+    )
     title: str = Field(..., description="Human-readable datapoint name (e.g., 'Effective Date').")
-    description: Optional[str] = Field(
+    description: str | None = Field(
         default=None,
         description="Optional guidance on how to interpret or extract this datapoint.",
     )
@@ -84,7 +90,7 @@ class DatapointDefinition(FrozenBaseModel):
         description="Where in the document the datapoint was extracted from.",
     )
     # Optional enum constraints for structured outputs
-    enum_key: Optional[str] = Field(
+    enum_key: str | None = Field(
         default=None,
         description=(
             "If set, references a named enum in template.enums. When present, outputs should use "
@@ -95,7 +101,7 @@ class DatapointDefinition(FrozenBaseModel):
         default=False,
         description="Whether multiple enum codes can be selected for this datapoint.",
     )
-    clause_keys: Optional[Sequence[str]] = Field(
+    clause_keys: Sequence[str] | None = Field(
         default=None,
         description="Clause key(s) where this datapoint is typically located.",
     )
@@ -107,8 +113,10 @@ class ContractTypeTemplate(FrozenBaseModel):
     key: str = Field(..., description="Stable key identifier for the contract type (e.g., 'NDA').")
     name: str = Field(..., description="Template name (e.g., 'NDA', 'Loan Agreement').")
     use_case: str = Field(
-        ..., description="Use case for the contract type (e.g., 'extraction of clauses', 'amendment of clauses').")
-    description: Optional[str] = Field(
+        ...,
+        description="Use case for the contract type (e.g., 'extraction of clauses', 'amendment of clauses').",
+    )
+    description: str | None = Field(
         ..., description="Optional description of the contract type template."
     )
     clauses: Sequence[ClauseDefinition] = Field(
@@ -119,9 +127,7 @@ class ContractTypeTemplate(FrozenBaseModel):
     )
     enums: Sequence[EnumDefinition] = Field(
         default=None,
-        description=(
-            "Rreusable enum definitions that datapoints can reference via 'enum_key'."
-        ),
+        description=("Rreusable enum definitions that datapoints can reference via 'enum_key'."),
     )
 
 
@@ -136,11 +142,11 @@ class ClassifiedParagraph(FrozenBaseModel):
     """Classification result for a single paragraph."""
 
     paragraph: Paragraph = Field(..., description="The paragraph being classified.")
-    clause_key: Optional[str] = Field(
+    clause_key: str | None = Field(
         default=None,
         description="Predicted clause key or None if unclassified/other.",
     )
-    confidence: Optional[float] = Field(
+    confidence: float | None = Field(
         default=None,
         description="Confidence score in [0,1] for the classification, if available.",
     )
@@ -153,7 +159,7 @@ class DocumentClassification(FrozenBaseModel):
         ..., description="Per-paragraph classifications across the document."
     )
     # Optional map from clause_key to paragraph indices for quick lookup
-    clause_to_paragraphs: Optional[Dict[str, List[int]]] = Field(
+    clause_to_paragraphs: dict[str, list[int]] | None = Field(
         default=None,
         description="Optional index for quick retrieval of paragraphs by clause key.",
     )
@@ -167,16 +173,16 @@ class ExtractedDatapoint(FrozenBaseModel):
         default=None,
         description="Extracted value; type depends on datapoint data_type (str/bool/int/float).",
     )
-    explanation: Optional[str] = Field(
+    explanation: str | None = Field(
         default=None,
         description="Short explanation or rationale for the extracted value.",
     )
     # Indices of paragraphs that support/justify the extracted value
-    evidence_paragraph_indices: Optional[Sequence[int]] = Field(
+    evidence_paragraph_indices: Sequence[int] | None = Field(
         default=None,
         description="Paragraph indices that provide evidence for this value.",
     )
-    confidence: Optional[float] = Field(
+    confidence: float | None = Field(
         default=None,
         description="Confidence score in [0,1] for the extraction, if available.",
     )
@@ -189,72 +195,66 @@ class ExtractionResult(FrozenBaseModel):
         ..., description="All extracted datapoints for the document."
     )
 
+
 class RevisionInstruction(FrozenBaseModel):
     """Instruction for revising content: target section."""
 
     amendment_start_line: int = Field(
         ..., description="The line number where the amendment starts."
     )
-    amendment_end_line: int = Field(
-        ..., description="The line number where the amendment ends."
-    )
-    amendment_span_text: str = Field(
-        ..., description="Text of the amendment span"
-    )
+    amendment_end_line: int = Field(..., description="The line number where the amendment ends.")
+    amendment_span_text: str = Field(..., description="Text of the amendment span")
     target_section: str = Field(
         ..., description="Section to revise in the contract, e.g., 'Part 1 (a)(ii)."
     )
     confidence_target: float = Field(
         ..., description="Confidence score in [0,1] for the target section."
     )
-    change_explanation: str = Field(
-        ..., description="Explanation of the intended change."
-    )
+    change_explanation: str = Field(..., description="Explanation of the intended change.")
+
 
 class RevisionInstructionTarget(RevisionInstruction):
     """Instruction for revising content: target paragraph indices."""
 
-    target_paragraph_indices: Optional[Sequence[int]] = Field(
+    target_paragraph_indices: Sequence[int] | None = Field(
         default=None,
         description="Target paragraph indices to revise.",
     )
     confidence_target_paragraph_indices: float = Field(
         ..., description="Confidence score in [0,1] for the target paragraph indices."
     )
-    target_paragraph_explanation: str = Field(
-        ..., description="Explanation of the target section."
-    )
+    target_paragraph_explanation: str = Field(..., description="Explanation of the target section.")
+
 
 class RevisedSection(RevisionInstructionTarget):
     """Section revised with instructions."""
 
-    initial_paragraphs: Optional[Sequence[Paragraph]] = Field(
+    initial_paragraphs: Sequence[Paragraph] | None = Field(
         default=None,
         description="Initial paragraphs to revise in the contract.",
     )
-    revised_paragraphs: Optional[Sequence[Paragraph]] = Field(
+    revised_paragraphs: Sequence[Paragraph] | None = Field(
         default=None,
         description="Revised paragraphs in the contract.",
     )
     confidence_revision: float = Field(
         ..., description="Confidence score in [0,1] for the revision."
     )
-    revision_explanation: str = Field(
-        ..., description="Explanation of the revision."
-    )
+    revision_explanation: str = Field(..., description="Explanation of the revision.")
 
 
 class RevisedContract(FrozenBaseModel):
     """The resulting amended and restated contract content with metadata."""
 
-    new_content: Sequence[Paragraph]  = Field(
-        ..., description="Final amended and restated contract text as paragraphs.")
+    new_content: Sequence[Paragraph] = Field(
+        ..., description="Final amended and restated contract text as paragraphs."
+    )
     applied_instructions: Sequence[RevisedSection] = Field(
         ..., description="List of revised sections that were applied."
     )
 
 
-def split_text_into_paragraphs(text: str) -> List[Paragraph]:
+def split_text_into_paragraphs(text: str) -> list[Paragraph]:
     """Split text into paragraphs with markdown cleanup and heuristic merging.
 
     Cleanup rules:
@@ -277,7 +277,7 @@ def split_text_into_paragraphs(text: str) -> List[Paragraph]:
     # Normalize newlines and split
     raw_lines = text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
 
-    cleaned_lines: List[str] = []
+    cleaned_lines: list[str] = []
     n = len(raw_lines)
     only_pipes_dashes_re = re.compile(r"^[\s\|\-]+$")
     only_stars_re = re.compile(r"^[\s\*]+$")
@@ -316,7 +316,7 @@ def split_text_into_paragraphs(text: str) -> List[Paragraph]:
         i += 1
 
     # Collapse multiple consecutive empty lines into a single empty line
-    collapsed_lines: List[str] = []
+    collapsed_lines: list[str] = []
     empty_streak = 0
     for line in cleaned_lines:
         if line.strip() == "":
@@ -328,9 +328,9 @@ def split_text_into_paragraphs(text: str) -> List[Paragraph]:
         collapsed_lines.append(line)
 
     # Merge lines into paragraphs using heuristics
-    paragraphs: List[str] = []
+    paragraphs: list[str] = []
     buffer = ""
-    prev_line_text: Optional[str] = None
+    prev_line_text: str | None = None
 
     list_marker_re = re.compile(r"^\s*(?:-+|\d+\)|\d+\.|[A-Za-z]\)|\([A-Za-z]\)|\(\d+\))\s+")
 
@@ -356,7 +356,12 @@ def split_text_into_paragraphs(text: str) -> List[Paragraph]:
         prev_has_pipe_now = "|" in prev_line_text
         curr_has_pipe_now = "|" in line
 
-        can_merge = (not prev_ends_sentence) and (not curr_starts_list) and (not prev_has_pipe_now) and (not curr_has_pipe_now)
+        can_merge = (
+            (not prev_ends_sentence)
+            and (not curr_starts_list)
+            and (not prev_has_pipe_now)
+            and (not curr_has_pipe_now)
+        )
 
         if can_merge:
             buffer = f"{buffer.rstrip()} {stripped}"
@@ -370,5 +375,3 @@ def split_text_into_paragraphs(text: str) -> List[Paragraph]:
         paragraphs.append(buffer.strip())
 
     return [Paragraph(index=i, text=block) for i, block in enumerate(paragraphs) if block]
-
-

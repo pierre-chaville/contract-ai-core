@@ -1,19 +1,19 @@
 from __future__ import annotations
+
 """Streamlit viewer for amendment instructions and restated documents.
 
 Browse instruction JSONs by model, inspect original/amendment/restated content.
 Run: streamlit run dataset/view_reviser.py
 """
 
-import json
 import html
+import json
 from pathlib import Path
-from contract_ai_core.schema import split_text_into_paragraphs  # type: ignore
 
-import streamlit as st
-import streamlit.components.v1 as components
 import pandas as pd
-import sys
+import streamlit as st
+
+from contract_ai_core.schema import split_text_into_paragraphs  # type: ignore
 
 
 def get_repo_root() -> Path:

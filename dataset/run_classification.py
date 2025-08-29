@@ -4,7 +4,7 @@ import argparse
 import csv
 import os
 from pathlib import Path
-from typing import List
+
 from utilities import load_template, write_tokens_usage
 
 from contract_ai_core import (
@@ -14,7 +14,6 @@ from contract_ai_core import (
     Paragraph,
     split_text_into_paragraphs,
 )
-from datetime import datetime, timezone
 
 
 def classify_file(
@@ -25,7 +24,7 @@ def classify_file(
     repo_root: Path,
 ) -> dict:
     text = md_path.read_text(encoding="utf-8")
-    paragraphs: List[Paragraph] = split_text_into_paragraphs(text)
+    paragraphs: list[Paragraph] = split_text_into_paragraphs(text)
     classification, usage = classifier.classify_paragraphs_with_usage(
         paragraphs, template, source_id=md_path.name
     )

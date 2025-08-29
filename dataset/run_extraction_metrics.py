@@ -1,29 +1,27 @@
 from __future__ import annotations
+
 """CLI: Compute extraction metrics (relaxed accuracy, per-key accuracy/F1, completion).
 
 Usage:
   python dataset/run_extraction_metrics.py --template ISDA --model gpt-4.1-mini
 """
 
-import csv
-from pathlib import Path
-from typing import Dict, List, Tuple
 import argparse
+import csv
 import logging
+from pathlib import Path
 
 import numpy as np
-from sklearn.metrics import f1_score
 import yaml
-
 from utilities import load_template
 
 
-def load_pred_datapoints(path: Path) -> Dict[str, Tuple[str, float]]:
+def load_pred_datapoints(path: Path) -> dict[str, tuple[str, float]]:
     """Load predicted datapoints from CSV to a map: key -> (value, confidence_percent).
 
     Expects columns: key, title, confidence, value
     """
-    data: Dict[str, Tuple[str, float]] = {}
+    data: dict[str, tuple[str, float]] = {}
     with path.open("r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -40,12 +38,12 @@ def load_pred_datapoints(path: Path) -> Dict[str, Tuple[str, float]]:
     return data
 
 
-def load_gold_datapoints(path: Path) -> Dict[str, str]:
-    """Load gold datapoints from CSV to a map: key -> value.
-
+def load_gold_datapoints(path: Path) -> dict[str, str]:
+    """
+    Load gold datapoints from CSV to a map: key -> value.
     Expected columns: key, value (other columns ignored)
     """
-    data: Dict[str, str] = {}
+    data: dict[str, str] = {}
     with path.open("r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -58,8 +56,9 @@ def load_gold_datapoints(path: Path) -> Dict[str, str]:
 
 
 def normalize_relaxed(value: str) -> str:
-    """Relaxed normalization for general strings: casefold, trim, collapse spaces, strip quotes/punct.
-    Also removes commas in numbers.
+    """
+    Relaxed normalization for general strings: casefold, trim, collapse spaces,
+    strip quotes/punct. Also removes commas in numbers.
     """
     if value is None:
         return ""
@@ -134,6 +133,7 @@ def normalize_bool(value: str) -> str:
     if v in ("false", "no", "0"):
         return "false"
     return "false"
+
 
 def normalize_float(value: str) -> str:
     if value is None:
@@ -214,7 +214,9 @@ def relaxed_equal(gold: str, pred: str, dtype: str) -> bool:
 
 
 def main() -> None:
-    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
+    logging.basicConfig(
+        level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s"
+    )
     parser = argparse.ArgumentParser(description="Compute datapoint extraction metrics")
     parser.add_argument("--template", required=True, help="Template key (e.g., ISDA)")
     parser.add_argument(
@@ -255,24 +257,24 @@ def main() -> None:
     total_relaxed_correct = 0
 
     # Per-key counts for F1
-    per_key_tp: Dict[str, int] = {}
-    per_key_fp: Dict[str, int] = {}
-    per_key_fn: Dict[str, int] = {}
+    per_key_tp: dict[str, int] = {}
+    per_key_fp: dict[str, int] = {}
+    per_key_fn: dict[str, int] = {}
     # Per-key accuracy components (considering only docs where gold has a value)
-    per_key_present: Dict[str, int] = {}
-    per_key_correct: Dict[str, int] = {}
+    per_key_present: dict[str, int] = {}
+    per_key_correct: dict[str, int] = {}
 
     # Type-specific
-    type_counts: Dict[str, Tuple[int, int]] = {
+    type_counts: dict[str, tuple[int, int]] = {
         "date": (0, 0),
         "money": (0, 0),
     }  # (gold_present, correct)
 
     # Completion
-    completion_fractions: List[float] = []
+    completion_fractions: list[float] = []
 
     # Collect mismatches for a consolidated CSV: file, key, gold_value, pred_value
-    mismatches: List[Tuple[str, str, str, str]] = []
+    mismatches: list[tuple[str, str, str, str]] = []
 
     # Selective extraction at 90% confidence
     hc_threshold = 90.0
@@ -352,7 +354,7 @@ def main() -> None:
     hc_coverage = (hc_selected / hc_total_gold_present) if hc_total_gold_present else 0.0
 
     # Per-key F1
-    per_key_f1: Dict[str, float] = {}
+    per_key_f1: dict[str, float] = {}
     for key in set(list(per_key_tp.keys()) + list(per_key_fp.keys()) + list(per_key_fn.keys())):
         tp = per_key_tp.get(key, 0)
         fp = per_key_fp.get(key, 0)
@@ -363,7 +365,7 @@ def main() -> None:
         per_key_f1[key] = f1
 
     # Per-key accuracy (support-limited to gold-present docs)
-    per_key_accuracy: Dict[str, float] = {}
+    per_key_accuracy: dict[str, float] = {}
     for key, present in per_key_present.items():
         correct = per_key_correct.get(key, 0)
         per_key_accuracy[key] = (correct / present) if present else float("nan")
@@ -389,7 +391,7 @@ def main() -> None:
     def _map_to_pct(obj):
         if isinstance(obj, dict):
             return {k: _map_to_pct(v) for k, v in obj.items()}
-        if isinstance(obj, (int, float)):
+        if isinstance(obj, int | float):
             return _to_pct(float(obj))
         return obj
 
@@ -423,6 +425,7 @@ def main() -> None:
     #         for row in sorted(mismatches):
     #             print('mismatch', list(row))
     #             writer.writerow(list(row))
+
 
 if __name__ == "__main__":
     main()

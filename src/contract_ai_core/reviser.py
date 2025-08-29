@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 """Contract reviser: plan and apply amendment instructions to produce a restated contract.
 
 Public API:
@@ -9,17 +10,15 @@ Public API:
 """
 
 import asyncio
-import json
 import logging
 import os
+from collections.abc import Sequence
 from dataclasses import dataclass
-from typing import List, Optional, Sequence
 
 from pydantic import BaseModel, Field
 
 from .schema import (
     ContractTypeTemplate,
-    ExtractionResult,
     Paragraph,
     RevisedContract,
     RevisedSection,
@@ -38,21 +37,19 @@ class ContractReviserConfig:
     """Configuration for the contract reviser backend."""
 
     provider: str = "openai"
-    model: Optional[str] = None
+    model: str | None = None
     temperature: float = 0.2
-    max_tokens: Optional[int] = None
+    max_tokens: int | None = None
 
 
 class ContractReviser:
     """Produces an amended and restated contract according to a template."""
 
-    def __init__(self, config: Optional[ContractReviserConfig] = None) -> None:
+    def __init__(self, config: ContractReviserConfig | None = None) -> None:
         self.config = config or ContractReviserConfig()
 
     def analyze_amendments(
-        self,
-        amendment_paragraphs: Sequence[Paragraph],
-        template: ContractTypeTemplate
+        self, amendment_paragraphs: Sequence[Paragraph], template: ContractTypeTemplate
     ) -> Sequence[RevisionInstruction]:
         """Return a sequence of high-level revision instructions.
 
@@ -70,19 +67,26 @@ class ContractReviser:
         lines_block = "\n".join(f"{p.index}: {p.text}" for p in amendment_paragraphs)
 
         class AmendmentItem(BaseModel):
-            amendment_start_line: int = Field(..., description="Start line index (inclusive) in the amendment text")
-            amendment_end_line: int = Field(..., description="End line index (inclusive) in the amendment text")
+            amendment_start_line: int = Field(
+                ..., description="Start line index (inclusive) in the amendment text"
+            )
+            amendment_end_line: int = Field(
+                ..., description="End line index (inclusive) in the amendment text"
+            )
             amendment_span_text: str = Field(..., description="Text of the amendment span")
-            target_section: str = Field(..., description="Target section identifier in the base contract")
+            target_section: str = Field(
+                ..., description="Target section identifier in the base contract"
+            )
             confidence_target: float = Field(..., ge=0.0, le=1.0, description="Confidence in [0,1]")
             change_explanation: str = Field(..., description="Short rationale of the change")
 
         class AmendmentsOutput(BaseModel):
-            amendments: List[AmendmentItem]
+            amendments: list[AmendmentItem]
 
         # Load .env and API key
         try:
             from dotenv import load_dotenv
+
             load_dotenv()
         except Exception:
             pass
@@ -105,7 +109,7 @@ class ContractReviser:
         prompt = instruction + "\n\nAmendment paragraphs (line_number: text):\n" + lines_block
 
         output: AmendmentsOutput = structured_llm.invoke(prompt)  # type: ignore[assignment]
-        results: List[RevisionInstruction] = []
+        results: list[RevisionInstruction] = []
         for item in output.amendments:
             results.append(
                 RevisionInstruction(
@@ -152,11 +156,12 @@ class ContractReviser:
             explanation: str = Field(..., description="Brief rationale for the chosen span")
 
         class TargetLocations(BaseModel):
-            locations: List[TargetLocationItem]
+            locations: list[TargetLocationItem]
 
         # Load .env and API key
         try:
             from dotenv import load_dotenv
+
             load_dotenv()
         except Exception:
             pass
@@ -174,11 +179,10 @@ class ContractReviser:
             "and a list of target sections to locate, identify for each target the start and end line "
             "indices (inclusive) in the contract that best correspond to the target section."
         )
-        guidance_text = (
-            "If a target cannot be confidently located, return start_line=-1 and end_line=-1 with a low confidence."
-        )
+        guidance_text = "If a target cannot be confidently located, return start_line=-1 and end_line=-1 with a low confidence."
 
         import json as _json
+
         prompt = (
             instruction_text
             + "\n\nTargets to locate (JSON):\n"
@@ -192,14 +196,14 @@ class ContractReviser:
         output: TargetLocations = structured_llm.invoke(prompt)  # type: ignore[assignment]
 
         # Map results back to input instructions by target_section
-        results: List[RevisionInstructionTarget] = []
+        results: list[RevisionInstructionTarget] = []
         # Build lookup from target_section to item
         loc_by_section = {loc.target_section: loc for loc in output.locations}
 
         for ins in instructions:
             loc = loc_by_section.get(ins.target_section)
             if loc is None or loc.start_line is None or loc.end_line is None:
-                target_indices: Optional[Sequence[int]] = None
+                target_indices: Sequence[int] | None = None
                 conf = 0.0
                 explanation = "Not found"
             else:
@@ -210,7 +214,9 @@ class ContractReviser:
                 conf = float(loc.confidence)
                 explanation = loc.explanation
             if target_indices is None:
-                logging.getLogger(__name__).warning("No target indices for section: %s", ins.target_section)
+                logging.getLogger(__name__).warning(
+                    "No target indices for section: %s", ins.target_section
+                )
                 target_indices = []
             results.append(
                 RevisionInstructionTarget(
@@ -247,7 +253,9 @@ class ContractReviser:
         jobs = []
         for ins in instructions:
             target_idxs = list(ins.target_paragraph_indices) if ins.target_paragraph_indices else []
-            initial = [section_paragraphs[i] for i in target_idxs if 0 <= i < len(section_paragraphs)]
+            initial = [
+                section_paragraphs[i] for i in target_idxs if 0 <= i < len(section_paragraphs)
+            ]
 
             # Build context only with target span lines
             target_block = (
@@ -257,7 +265,7 @@ class ContractReviser:
             )
 
             class ApplyOutput(BaseModel):
-                revised_paragraphs: List[str] = Field(
+                revised_paragraphs: list[str] = Field(
                     ..., description="List of revised paragraphs text for the target span, ordered."
                 )
                 confidence_revision: float = Field(
@@ -279,6 +287,7 @@ class ContractReviser:
         # Load API key once
         try:
             from dotenv import load_dotenv
+
             load_dotenv()
         except Exception:
             pass
@@ -302,7 +311,7 @@ class ContractReviser:
             guidance_text = (
                 f"TARGET SECTIONr: {ins.target_section}\n"
                 f"AMENDMENT INSTRUCTION: {ins.amendment_span_text}\n"
-                #"If no target span is provided, return an empty list for revised_paragraphs and low confidence."
+                # "If no target span is provided, return an empty list for revised_paragraphs and low confidence."
             )
             prompt = (
                 instruction_text
@@ -329,17 +338,17 @@ class ContractReviser:
 
         results = asyncio.run(runner()) if jobs else []
 
-        revised_sections: List[RevisedSection] = []
+        revised_sections: list[RevisedSection] = []
         for job, out in results:
             ins: RevisionInstructionTarget = job["ins"]
-            initial: List[Paragraph] = job["initial"]
+            initial: list[Paragraph] = job["initial"]
 
             # Build revised Paragraph objects, assigning indices starting from the first target index
             if initial:
                 start_idx = initial[0].index
             else:
                 start_idx = -1
-            revised_paras: List[Paragraph] = []
+            revised_paras: list[Paragraph] = []
             if start_idx >= 0:
                 for offset, txt in enumerate(out.revised_paragraphs):
                     revised_paras.append(Paragraph(index=start_idx + offset, text=txt))
@@ -375,13 +384,15 @@ class ContractReviser:
         instructions = self.analyze_amendments(amendment_paragraphs=amendment, template=template)
 
         # 2) Locate target spans in the base contract
-        targeted = self.find_revisions_targets(contracts_paragraphs=contract, instructions=instructions)
+        targeted = self.find_revisions_targets(
+            contracts_paragraphs=contract, instructions=instructions
+        )
 
         # 3) Apply revisions to produce revised sections
         revised_sections = self.apply_revisions(section_paragraphs=contract, instructions=targeted)
 
         # 4) Materialize new contract content by replacing each targeted span with revised paragraphs
-        new_content_list: List[Paragraph] = list(contract)
+        new_content_list: list[Paragraph] = list(contract)
 
         # Build list of applicable changes with ranges
         changes = []
@@ -401,8 +412,8 @@ class ContractReviser:
             new_content_list[start : end + 1] = revised
 
         # Re-index final paragraphs
-        reindexed: List[Paragraph] = [Paragraph(index=i, text=p.text) for i, p in enumerate(new_content_list)]
+        reindexed: list[Paragraph] = [
+            Paragraph(index=i, text=p.text) for i, p in enumerate(new_content_list)
+        ]
 
         return RevisedContract(new_content=reindexed, applied_instructions=revised_sections)
-
-

@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 """CLI: Generate amended-and-restated contracts and instruction JSONs for a dataset.
 
 Usage:
@@ -7,10 +8,10 @@ Usage:
 
 import argparse
 import json
-from pathlib import Path
-from typing import List
-from utilities import load_template
 import logging
+from pathlib import Path
+
+from utilities import load_template
 
 from contract_ai_core import (
     ContractReviser,
@@ -19,6 +20,7 @@ from contract_ai_core import (
     Paragraph,
     split_text_into_paragraphs,
 )
+
 
 def read_text_best_effort(path: Path) -> str:
     encodings = [
@@ -39,10 +41,14 @@ def read_text_best_effort(path: Path) -> str:
 
 
 def main() -> None:
-    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
+    logging.basicConfig(
+        level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s"
+    )
     parser = argparse.ArgumentParser(description="Generate amended and restated contract")
     parser.add_argument("--template", required=True, help="Template key (e.g., ISDA)")
-    parser.add_argument("--model", required=True, help="Model name for reviser (e.g., gpt-4.1-mini)")
+    parser.add_argument(
+        "--model", required=True, help="Model name for reviser (e.g., gpt-4.1-mini)"
+    )
     args = parser.parse_args()
 
     template_key = args.template
@@ -50,10 +56,12 @@ def main() -> None:
 
     repo_root = Path(__file__).resolve().parents[1]
 
-    contracts_dir = repo_root / "dataset" / "documents" / "amendments"/ "initial"
+    contracts_dir = repo_root / "dataset" / "documents" / "amendments" / "initial"
     amendments_dir = repo_root / "dataset" / "documents" / "amendments" / "amendment"
     out_restated_dir = repo_root / "dataset" / "output" / "amendments" / "restated" / model_name
-    out_instructions_dir = repo_root / "dataset" / "output" / "amendments" / "instructions" / model_name
+    out_instructions_dir = (
+        repo_root / "dataset" / "output" / "amendments" / "instructions" / model_name
+    )
     out_restated_dir.mkdir(parents=True, exist_ok=True)
     out_instructions_dir.mkdir(parents=True, exist_ok=True)
 
@@ -79,8 +87,8 @@ def main() -> None:
         contract_text = read_text_best_effort(contract_path)
         amendment_text = read_text_best_effort(amend_path)
 
-        contract_paras: List[Paragraph] = split_text_into_paragraphs(contract_text)
-        amendment_paras: List[Paragraph] = split_text_into_paragraphs(amendment_text)
+        contract_paras: list[Paragraph] = split_text_into_paragraphs(contract_text)
+        amendment_paras: list[Paragraph] = split_text_into_paragraphs(amendment_text)
 
         revised = reviser.generate_amended_and_restated(
             contract=contract_paras,
@@ -106,7 +114,11 @@ def main() -> None:
                         "amendment_span_text": "\n\n".join(
                             p.text
                             for p in amendment_paras
-                            if (r.amendment_start_line is not None and r.amendment_end_line is not None and r.amendment_start_line <= p.index <= r.amendment_end_line)
+                            if (
+                                r.amendment_start_line is not None
+                                and r.amendment_end_line is not None
+                                and r.amendment_start_line <= p.index <= r.amendment_end_line
+                            )
                         ).strip(),
                         "target_section": r.target_section,
                         "confidence_target": r.confidence_target,
@@ -136,5 +148,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-

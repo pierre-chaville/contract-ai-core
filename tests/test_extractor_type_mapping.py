@@ -1,6 +1,5 @@
-from pydantic import BaseModel
 from contract_ai_core.extractor import DatapointExtractor, DatapointExtractorConfig
-from contract_ai_core.schema import ContractTypeTemplate, ClauseDefinition, DatapointDefinition
+from contract_ai_core.schema import ClauseDefinition, ContractTypeTemplate, DatapointDefinition
 
 
 def _template_with_types():
@@ -25,7 +24,6 @@ def _template_with_types():
 def test_field_models_value_types():
     ext = DatapointExtractor(DatapointExtractorConfig())
     template = _template_with_types()
-    paragraphs = []
 
     # Build one job like in extract(), verifying created model fields types
     # Accessing private behavior indirectly via naming convention

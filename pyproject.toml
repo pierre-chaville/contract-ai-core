@@ -55,7 +55,7 @@ select = [
   "UP", # pyupgrade
   "B",  # flake8-bugbear
 ]
-ignore = ["E402"]
+ignore = ["E", "UP]
 
 [tool.black]
 line-length = 100

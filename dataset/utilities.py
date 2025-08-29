@@ -1,10 +1,9 @@
-import io
 import json
 from datetime import datetime, timezone
-import pandas as pd
 from pathlib import Path
 
 import pandas as pd
+
 
 def load_template(template_key):
     repo_root = Path(__file__).resolve().parents[1]
@@ -14,7 +13,7 @@ def load_template(template_key):
     csv_path_enums = folder_path / f"{template_key}_enums.csv"
     csv_path_datapoints = folder_path / f"{template_key}_datapoints.csv"
 
-    model = json.loads(open(json_path, "r", encoding="utf-8").read())
+    model = json.loads(open(json_path, encoding="utf-8").read())
     model["clauses"] = []
     model["enums"] = []
     model["datapoints"] = []
@@ -33,11 +32,13 @@ def load_template(template_key):
         if clause_key is None or clause_title is None:
             continue
 
-        model["clauses"].append({
-            "key": str(clause_key),
-            "title": str(clause_title),
-            "description": None if pd.isna(clause_description) else str(clause_description),
-        })
+        model["clauses"].append(
+            {
+                "key": str(clause_key),
+                "title": str(clause_title),
+                "description": None if pd.isna(clause_description) else str(clause_description),
+            }
+        )
 
     # Read CSV with tolerant decoding
     df_enums = pd.read_csv(csv_path_enums, encoding="utf-8")
@@ -60,17 +61,17 @@ def load_template(template_key):
                 "options": [],
             }
 
-        enums[enum_key]["options"].append({
-            "code": row.get("code"),
-            "description": row.get("description"),
-        })
+        enums[enum_key]["options"].append(
+            {
+                "code": row.get("code"),
+                "description": row.get("description"),
+            }
+        )
 
     for enum_key, enum in enums.items():
-        model["enums"].append({
-            "key": str(enum_key),
-            "title": str(enum["title"]),
-            "options": enum['options']
-    })
+        model["enums"].append(
+            {"key": str(enum_key), "title": str(enum["title"]), "options": enum["options"]}
+        )
 
     # Read CSV with tolerant decoding
     df = pd.read_csv(csv_path_datapoints, encoding="utf-8")
@@ -91,21 +92,36 @@ def load_template(template_key):
         if datapoint_key is None or datapoint_title is None:
             continue
 
-        model["datapoints"].append({
-            "key": str(datapoint_key),
-            "title": str(datapoint_title),
-            "description": None if pd.isna(datapoint_description) else str(datapoint_description),
-            "data_type": str(datapoint_data_type),
-            "enum_key": str(datapoint_enum_key),
-            "enum_multi_select": bool(datapoint_enum_multi_select),
-            "scope": str(datapoint_scope),
-            "clause_keys": None if pd.isna(datapoint_clause_keys) else str(datapoint_clause_keys).split(","),
-        })
+        model["datapoints"].append(
+            {
+                "key": str(datapoint_key),
+                "title": str(datapoint_title),
+                "description": (
+                    None if pd.isna(datapoint_description) else str(datapoint_description)
+                ),
+                "data_type": str(datapoint_data_type),
+                "enum_key": str(datapoint_enum_key),
+                "enum_multi_select": bool(datapoint_enum_multi_select),
+                "scope": str(datapoint_scope),
+                "clause_keys": (
+                    None
+                    if pd.isna(datapoint_clause_keys)
+                    else str(datapoint_clause_keys).split(",")
+                ),
+            }
+        )
 
     return model
 
 
-def write_tokens_usage(category: str, source_id: str, model: str, usage: dict | None, num_paragraphs: int, base_dir: Path) -> None:
+def write_tokens_usage(
+    category: str,
+    source_id: str,
+    model: str,
+    usage: dict | None,
+    num_paragraphs: int,
+    base_dir: Path,
+) -> None:
     try:
         out_dir = base_dir / "dataset" / "output" / category
         out_dir.mkdir(parents=True, exist_ok=True)

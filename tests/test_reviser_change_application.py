@@ -1,5 +1,10 @@
 from contract_ai_core.reviser import ContractReviser
-from contract_ai_core.schema import Paragraph, ContractTypeTemplate, ClauseDefinition, DatapointDefinition
+from contract_ai_core.schema import (
+    ClauseDefinition,
+    ContractTypeTemplate,
+    DatapointDefinition,
+    Paragraph,
+)
 
 
 def test_materialize_changes_bottom_up_ordering():

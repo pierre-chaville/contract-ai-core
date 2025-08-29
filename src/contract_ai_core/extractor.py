@@ -1,30 +1,31 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
-from typing import Dict, List, Optional, Sequence, Tuple
-import os
 import asyncio
-import random
 import logging
+import os
+import random
+from dataclasses import dataclass
+from typing import Optional
+
+from pydantic import BaseModel, Field, create_model
 
 from .schema import (
     ContractTypeTemplate,
     DocumentClassification,
-    ExtractionResult,
     ExtractedDatapoint,
+    ExtractionResult,
     Paragraph,
     split_text_into_paragraphs,
 )
 
-from pydantic import BaseModel, Field, create_model
-
 try:
-    from langchain_openai import ChatOpenAI
     from langchain.globals import set_debug
+    from langchain_openai import ChatOpenAI
+
     set_debug(False)
 except Exception as e:  # pragma: no cover
     ChatOpenAI = None  # type: ignore
-    logging.getLogger(__name__).warning('ChatOpenAI unavailable: %r', e)
+    logging.getLogger(__name__).warning("ChatOpenAI unavailable: %r", e)
 
 ScopeId = str
 
@@ -32,8 +33,8 @@ ScopeId = str
 @dataclass(frozen=True)
 class _ExtractionScope:
     kind: str  # 'clauses' | 'beginning' | 'document'
-    clause_keys: Optional[Tuple[str, ...]] = None
-    beginning_paragraphs: Optional[int] = None
+    clause_keys: tuple[str, ...] | None = None
+    beginning_paragraphs: int | None = None
 
 
 @dataclass
@@ -41,9 +42,9 @@ class DatapointExtractorConfig:
     """Configuration for the datapoint extractor backend (LLM or rule-based)."""
 
     provider: str = "openai"
-    model: Optional[str] = None
+    model: str | None = None
     temperature: float = 0.0
-    max_tokens: Optional[int] = None
+    max_tokens: int | None = None
     beginning_paragraphs: int = 20
     # Maximum number of concurrent scope extraction requests
     concurrency: int = 8
@@ -54,14 +55,14 @@ class DatapointExtractorConfig:
 class DatapointExtractor:
     """Extracts datapoints from contract text, optionally using classifications."""
 
-    def __init__(self, config: Optional[DatapointExtractorConfig] = None) -> None:
+    def __init__(self, config: DatapointExtractorConfig | None = None) -> None:
         self.config = config or DatapointExtractorConfig()
 
     def extract(
         self,
         text: str,
         template: ContractTypeTemplate,
-        classified_clauses: Optional[DocumentClassification] = None,
+        classified_clauses: DocumentClassification | None = None,
     ) -> ExtractionResult:
         """Return extracted datapoints following the provided template.
 
@@ -77,11 +78,11 @@ class DatapointExtractor:
                 "langchain-openai is required. Install with: pip install langchain langchain-openai"
             )
 
-        paragraphs: List[Paragraph] = split_text_into_paragraphs(text)
-        index_to_para: Dict[int, Paragraph] = {p.index: p for p in paragraphs}
+        paragraphs: list[Paragraph] = split_text_into_paragraphs(text)
+        index_to_para: dict[int, Paragraph] = {p.index: p for p in paragraphs}
 
-        scopes: Dict[ScopeId, Tuple[_ExtractionScope, List[int]]] = {}
-        scope_to_datapoints: Dict[ScopeId, List[int]] = {}
+        scopes: dict[ScopeId, tuple[_ExtractionScope, list[int]]] = {}
+        scope_to_datapoints: dict[ScopeId, list[int]] = {}
 
         # Assign datapoints to scopes
         for dp_idx, dp in enumerate(template.datapoints):
@@ -93,11 +94,15 @@ class DatapointExtractor:
                 else:
                     # Empty clause_keys → treat as beginning by default
                     scope_id = "beginning"
-                    scope = _ExtractionScope(kind="beginning", beginning_paragraphs=self.config.beginning_paragraphs)
+                    scope = _ExtractionScope(
+                        kind="beginning", beginning_paragraphs=self.config.beginning_paragraphs
+                    )
             else:
                 # No clause_keys provided → default to beginning scope (first K paragraphs)
                 scope_id = "beginning"
-                scope = _ExtractionScope(kind="beginning", beginning_paragraphs=self.config.beginning_paragraphs)
+                scope = _ExtractionScope(
+                    kind="beginning", beginning_paragraphs=self.config.beginning_paragraphs
+                )
 
             if scope_id not in scopes:
                 scopes[scope_id] = (scope, [])
@@ -105,9 +110,14 @@ class DatapointExtractor:
             scope_to_datapoints[scope_id].append(dp_idx)
 
         # Resolve paragraph indices per scope
-        for scope_id, (scope, indices) in scopes.items():
-            if scope.kind == "clauses" and scope.clause_keys and classified_clauses and classified_clauses.clause_to_paragraphs:
-                gathered: List[int] = []
+        for _scope_id, (scope, indices) in scopes.items():
+            if (
+                scope.kind == "clauses"
+                and scope.clause_keys
+                and classified_clauses
+                and classified_clauses.clause_to_paragraphs
+            ):
+                gathered: list[int] = []
                 for ck in scope.clause_keys:
                     gathered.extend(classified_clauses.clause_to_paragraphs.get(ck, []))
                 indices.extend(sorted(set(gathered)))
@@ -119,12 +129,14 @@ class DatapointExtractor:
                 pass
 
         # Merge all empty-clauses scopes into a single document-scope job
-        empty_clause_scope_ids: List[str] = [
+        empty_clause_scope_ids: list[str] = [
             sid for sid, (scp, idxs) in scopes.items() if scp.kind == "clauses" and not idxs
         ]
         if empty_clause_scope_ids:
-            logging.getLogger(__name__).debug("Merging %d empty clause scopes into document scope", len(empty_clause_scope_ids))
-            merged_dp_indices: List[int] = []
+            logging.getLogger(__name__).debug(
+                "Merging %d empty clause scopes into document scope", len(empty_clause_scope_ids)
+            )
+            merged_dp_indices: list[int] = []
             for sid in empty_clause_scope_ids:
                 merged_dp_indices.extend(scope_to_datapoints.get(sid, []))
             merged_dp_indices = sorted(set(merged_dp_indices))
@@ -140,7 +152,7 @@ class DatapointExtractor:
             scope_to_datapoints[doc_scope_id].extend(merged_dp_indices)
 
         # Build jobs for parallel execution
-        jobs: List[Dict[str, object]] = []
+        jobs: list[dict[str, object]] = []
         for scope_id, (scope, indices) in scopes.items():
             dp_indices = scope_to_datapoints[scope_id]
             datapoints = [template.datapoints[i] for i in dp_indices]
@@ -150,16 +162,18 @@ class DatapointExtractor:
                 k = scope.beginning_paragraphs or self.config.beginning_paragraphs
                 selected = [p for p in paragraphs[:k]]
                 scope_text = "\n\n".join(p.text for p in selected)
-                evidence: Optional[List[int]] = [p.index for p in selected] if selected else []
+                evidence: list[int] | None = [p.index for p in selected] if selected else []
             elif scope.kind == "clauses" and indices:
-                scope_text = "\n\n".join(index_to_para[i].text for i in indices if i in index_to_para)
+                scope_text = "\n\n".join(
+                    index_to_para[i].text for i in indices if i in index_to_para
+                )
                 evidence = indices
             else:
                 scope_text = text
                 evidence = None
 
             # Structured output model for this scope: each field returns {value, confidence, explanation}
-            def _map_data_type_to_py_type(dt: Optional[str]):
+            def _map_data_type_to_py_type(dt: str | None):
                 dt_norm = (dt or "").strip().lower()
                 if dt_norm in ("str", "string", "text"):
                     return str
@@ -177,19 +191,30 @@ class DatapointExtractor:
                     return str
                 return str
 
-            fields: Dict[str, Tuple[Optional[BaseModel], Field]] = {}
+            fields: dict[str, tuple[BaseModel | None, Field]] = {}
             for dp in datapoints:
                 desc = dp.description or f"Extract value for '{dp.title}'."
                 py_type = _map_data_type_to_py_type(getattr(dp, "data_type", None))
                 # Create a typed FieldResult model per datapoint so `value` matches expected type
                 FieldResultModel: BaseModel = create_model(
                     f"FieldResult_{dp.key}",
-                    value=(Optional[py_type], Field(default=None, description="Extracted value or null if not found.")),
+                    value=(
+                        Optional[py_type],
+                        Field(default=None, description="Extracted value or null if not found."),
+                    ),
                     confidence=(
                         Optional[float],
-                        Field(default=None, description="Model confidence in [0,1]; null if not available.", ge=0.0, le=1.0),
+                        Field(
+                            default=None,
+                            description="Model confidence in [0,1]; null if not available.",
+                            ge=0.0,
+                            le=1.0,
+                        ),
                     ),
-                    explanation=(Optional[str], Field(default=None, description="Short rationale for the extracted value.")),
+                    explanation=(
+                        Optional[str],
+                        Field(default=None, description="Short rationale for the extracted value."),
+                    ),
                 )  # type: ignore[assignment]
                 fields[dp.key] = (FieldResultModel, Field(..., description=desc))
 
@@ -207,22 +232,32 @@ class DatapointExtractor:
             )
 
             # Provide a concise list of fields to extract (only essential info)
-            field_specs: List[str] = []
+            field_specs: list[str] = []
             for dp in datapoints:
                 title = dp.title or dp.key
                 desc = dp.description or ""
                 data_type = dp.data_type or ""
                 if dp.data_type == "enum":
                     data_type = f"enum: {dp.enum_key}"
-                field_specs.append(f"- {dp.key}"  + (f" [{data_type}]" if data_type else "") + (f": {desc}" if desc else ""))
+                field_specs.append(
+                    f"- {dp.key}"
+                    + (f" [{data_type}]" if data_type else "")
+                    + (f": {desc}" if desc else "")
+                )
 
             # ENUMS section: include any enum lists referenced by datapoints in this scope
             enums_text = ""
             template_enums = getattr(template, "enums", None)
             if template_enums:
                 enum_by_key = {e.key: e for e in template_enums}
-                enum_keys = sorted({getattr(dp, "enum_key", None) for dp in datapoints if getattr(dp, "enum_key", None)})
-                enum_lines: List[str] = []
+                enum_keys = sorted(
+                    {
+                        getattr(dp, "enum_key", None)
+                        for dp in datapoints
+                        if getattr(dp, "enum_key", None)
+                    }
+                )
+                enum_lines: list[str] = []
                 for ek in enum_keys:
                     enum_def = enum_by_key.get(ek)
                     if not enum_def:
@@ -269,12 +304,12 @@ class DatapointExtractor:
         )
 
         # Build extracted list from results (robust to missing/failed jobs)
-        extracted: List[ExtractedDatapoint] = []
+        extracted: list[ExtractedDatapoint] = []
         for res in results:
             if not isinstance(res, dict):
                 continue
             data_obj = res.get("data")
-            data: Dict[str, Optional[dict]] = data_obj if isinstance(data_obj, dict) else {}
+            data: dict[str, dict | None] = data_obj if isinstance(data_obj, dict) else {}
             datapoints = res.get("datapoints") or []
             evidence = res.get("evidence")
             for dp in datapoints:  # type: ignore[assignment]
@@ -301,11 +336,11 @@ class DatapointExtractor:
     async def _run_scope_extractions(
         self,
         *,
-        jobs: List[Dict[str, object]],
+        jobs: list[dict[str, object]],
         model_name: str,
         temperature: float,
         concurrency: int = 8,
-    ) -> List[Dict[str, object]]:
+    ) -> list[dict[str, object]]:
         """Run scope extractions concurrently and return raw model_dump data per job.
 
         Retries with exponential backoff are applied per job to handle transient rate limits.
@@ -317,6 +352,7 @@ class DatapointExtractor:
         # Load .env if available to populate OPENAI_API_KEY
         try:
             from dotenv import load_dotenv
+
             load_dotenv()
         except Exception:
             pass
@@ -325,7 +361,7 @@ class DatapointExtractor:
         llm = ChatOpenAI(model=model_name, temperature=temperature, api_key=api_key)
         sem = asyncio.Semaphore(concurrency)
 
-        async def run_one(job: Dict[str, object]) -> Dict[str, object]:
+        async def run_one(job: dict[str, object]) -> dict[str, object]:
             OutputModel = job["OutputModel"]  # type: ignore[index]
             prompt = job["prompt"]  # type: ignore[index]
             datapoints = job["datapoints"]  # type: ignore[index]
@@ -347,7 +383,7 @@ class DatapointExtractor:
             except Exception:
                 max_retries = 5
 
-            last_error: Optional[Exception] = None
+            last_error: Exception | None = None
             while attempt <= max_retries:
                 try:
                     async with sem:
@@ -365,10 +401,13 @@ class DatapointExtractor:
                     attempt += 1
 
             # Return an empty result for this job so the caller can proceed
-            logging.getLogger(__name__).error('Job failed after retries: %r', last_error)
-            return {"data": {}, "datapoints": datapoints, "evidence": evidence, "error": repr(last_error) if last_error else "unknown"}
+            logging.getLogger(__name__).error("Job failed after retries: %r", last_error)
+            return {
+                "data": {},
+                "datapoints": datapoints,
+                "evidence": evidence,
+                "error": repr(last_error) if last_error else "unknown",
+            }
 
         tasks = [asyncio.create_task(run_one(job)) for job in jobs]
         return await asyncio.gather(*tasks)
-
-
