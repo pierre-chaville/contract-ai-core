@@ -80,11 +80,13 @@ def find_initial_contract_path(stem: str) -> Path | None:
     candidates = list(docs_dir.glob(f"{stem}.md"))
     return candidates[0] if candidates else None
 
+
 def find_amendment_path(stem: str) -> Path | None:
     repo_root = get_repo_root()
     docs_dir = repo_root / "dataset" / "documents" / "amendments" / "amendment"
     candidates = list(docs_dir.glob(f"{stem}.md"))
     return candidates[0] if candidates else None
+
 
 def get_restated_path(stem: str, model_name: str) -> Path:
     repo_root = get_repo_root()
@@ -153,8 +155,7 @@ def build_table(instructions: list[dict]) -> str:
         conf_rev = ins.get("confidence_revision")
         rev_expl = html.escape(str(ins.get("revision_explanation", "")))
         revision_html = (
-            f"<div class='muted'>confidence_revision: {conf_rev}</div>"
-            f"<div>{rev_expl}</div>"
+            f"<div class='muted'>confidence_revision: {conf_rev}</div>" f"<div>{rev_expl}</div>"
         )
 
         row = (
@@ -167,7 +168,6 @@ def build_table(instructions: list[dict]) -> str:
             "</tr>"
         )
         rows.append(row)
-
 
     table_html = styles + "<table class='rev-table'>" + header + "".join(rows) + "</table>"
     return table_html
@@ -188,6 +188,7 @@ def estimate_height(instructions: list[dict]) -> int:
         return 80000
     return int(px)
 
+
 def main() -> None:
     st.set_page_config(page_title="Contract Reviser Viewer", layout="wide")
     st.title("Contract Reviser - Instructions Viewer")
@@ -198,7 +199,11 @@ def main() -> None:
     if "model_name" not in st.session_state and models:
         st.session_state.model_name = models[0]
     if models:
-        default_index = models.index(st.session_state.get("model_name", models[0])) if st.session_state.get("model_name") in models else 0
+        default_index = (
+            models.index(st.session_state.get("model_name", models[0]))
+            if st.session_state.get("model_name") in models
+            else 0
+        )
         selected_model = st.sidebar.selectbox("Model", models, index=default_index)
         if selected_model != st.session_state.get("model_name"):
             st.session_state.model_name = selected_model
@@ -218,7 +223,9 @@ def main() -> None:
     with col_a:
         current_idx = int(st.session_state.file_idx) % len(files)
         current_file = files[current_idx]
-        st.subheader(f"Model: {st.session_state.get('model_name', '')} — File {current_idx + 1} / {len(files)}: {current_file.name}")
+        st.subheader(
+            f"Model: {st.session_state.get('model_name', '')} — File {current_idx + 1} / {len(files)}: {current_file.name}"
+        )
     with col_b:
         if st.button("Next file ▶"):
             st.session_state.file_idx = (int(st.session_state.file_idx) + 1) % len(files)
@@ -229,7 +236,9 @@ def main() -> None:
         st.warning("Selected file contains no instructions or failed to parse JSON.")
         return
 
-    tab1, tab2, tab3, tab4 = st.tabs(["Instructions", "Amendment", "Initial document", "Revised document"])
+    tab1, tab2, tab3, tab4 = st.tabs(
+        ["Instructions", "Amendment", "Initial document", "Revised document"]
+    )
 
     # -------- Tab 1: Instructions (existing)
     with tab1:
@@ -270,19 +279,30 @@ def main() -> None:
                 }
             )
 
-        df = pd.DataFrame(table_rows, columns=[
-            "Amendment", "Target & explanation", "Initial paragraphs", "Revised paragraphs", "Revision"
-        ])
+        df = pd.DataFrame(
+            table_rows,
+            columns=[
+                "Amendment",
+                "Target & explanation",
+                "Initial paragraphs",
+                "Revised paragraphs",
+                "Revision",
+            ],
+        )
         # Style: top-align cells and set equal column widths; preserve line breaks
-        styler = (
-            df.style
-            .set_table_styles([
+        styler = df.style.set_table_styles(
+            [
                 {"selector": "table", "props": [("table-layout", "fixed"), ("width", "100%")]},
-                {"selector": "th, td", "props": [("vertical-align", "top"), ("text-align", "left")]},
-            ])
+                {
+                    "selector": "th, td",
+                    "props": [("vertical-align", "top"), ("text-align", "left")],
+                },
+            ]
         )
         for col in df.columns:
-            styler = styler.set_properties(subset=[col], **{"width": "20%", "white-space": "pre-wrap", "vertical-align": "top"})
+            styler = styler.set_properties(
+                subset=[col], **{"width": "20%", "white-space": "pre-wrap", "vertical-align": "top"}
+            )
         st.table(styler)
 
     # -------- Tab 2: Amendment
@@ -295,18 +315,19 @@ def main() -> None:
             # Load, split into paragraphs, display
             text = read_text_best_effort(init_path)
             paras = split_text_into_paragraphs(text)
-            init_rows = [
-                {"Index": p.index, "Text": p.text}
-                for p in paras
-            ]
+            init_rows = [{"Index": p.index, "Text": p.text} for p in paras]
             init_df = pd.DataFrame(init_rows, columns=["Text"])
-            init_styler = (
-                init_df.style
-                .set_table_styles([
+            init_styler = init_df.style.set_table_styles(
+                [
                     {"selector": "table", "props": [("table-layout", "fixed"), ("width", "100%")]},
-                    {"selector": "th, td", "props": [("vertical-align", "top"), ("text-align", "left")]},
-                ])
-                .set_properties(subset=["Text"], **{"width": "90%", "white-space": "pre-wrap", "vertical-align": "top"})
+                    {
+                        "selector": "th, td",
+                        "props": [("vertical-align", "top"), ("text-align", "left")],
+                    },
+                ]
+            ).set_properties(
+                subset=["Text"],
+                **{"width": "90%", "white-space": "pre-wrap", "vertical-align": "top"},
             )
             st.table(init_styler)
 
@@ -320,18 +341,19 @@ def main() -> None:
             # Load, split into paragraphs, display
             text = read_text_best_effort(init_path)
             paras = split_text_into_paragraphs(text)
-            init_rows = [
-                {"Index": p.index, "Text": p.text}
-                for p in paras
-            ]
+            init_rows = [{"Index": p.index, "Text": p.text} for p in paras]
             init_df = pd.DataFrame(init_rows, columns=["Text"])
-            init_styler = (
-                init_df.style
-                .set_table_styles([
+            init_styler = init_df.style.set_table_styles(
+                [
                     {"selector": "table", "props": [("table-layout", "fixed"), ("width", "100%")]},
-                    {"selector": "th, td", "props": [("vertical-align", "top"), ("text-align", "left")]},
-                ])
-                .set_properties(subset=["Text"], **{"width": "90%", "white-space": "pre-wrap", "vertical-align": "top"})
+                    {
+                        "selector": "th, td",
+                        "props": [("vertical-align", "top"), ("text-align", "left")],
+                    },
+                ]
+            ).set_properties(
+                subset=["Text"],
+                **{"width": "90%", "white-space": "pre-wrap", "vertical-align": "top"},
             )
             st.table(init_styler)
 
@@ -344,23 +366,25 @@ def main() -> None:
         else:
             text = read_text_best_effort(revised_path)
             # For revised, paragraphs were already produced; display as lines
-            lines = [x for x in text.replace("\r\n", "\n").replace("\r", "\n").split("\n\n") if x.strip()]
-            rev_rows = [
-                {"Index": i, "Text": t.strip()} for i, t in enumerate(lines)
+            lines = [
+                x for x in text.replace("\r\n", "\n").replace("\r", "\n").split("\n\n") if x.strip()
             ]
+            rev_rows = [{"Index": i, "Text": t.strip()} for i, t in enumerate(lines)]
             rev_df = pd.DataFrame(rev_rows, columns=["Text"])
-            rev_styler = (
-                rev_df.style
-                .set_table_styles([
+            rev_styler = rev_df.style.set_table_styles(
+                [
                     {"selector": "table", "props": [("table-layout", "fixed"), ("width", "100%")]},
-                    {"selector": "th, td", "props": [("vertical-align", "top"), ("text-align", "left")]},
-                ])
-                .set_properties(subset=["Text"], **{"width": "90%", "white-space": "pre-wrap", "vertical-align": "top"})
+                    {
+                        "selector": "th, td",
+                        "props": [("vertical-align", "top"), ("text-align", "left")],
+                    },
+                ]
+            ).set_properties(
+                subset=["Text"],
+                **{"width": "90%", "white-space": "pre-wrap", "vertical-align": "top"},
             )
             st.table(rev_styler)
 
 
 if __name__ == "__main__":
     main()
-
-

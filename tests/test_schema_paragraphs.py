@@ -19,5 +19,3 @@ def test_split_text_into_paragraphs_basic_merge_and_cleanup() -> None:
     assert any("Another line." in p.text for p in paras)
     # Ensure at least 3 paragraphs resulted
     assert len(paras) >= 3
-
-

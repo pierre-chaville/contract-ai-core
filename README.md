@@ -120,5 +120,3 @@ pytest -q
 - Caching and idempotency for repeated runs
 - Evaluation harness with golden datasets
 - Multi-provider LLM adapters
-
-

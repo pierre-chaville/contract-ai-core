@@ -398,7 +398,9 @@ def main() -> None:
 
     summary_pct = _map_to_pct(summary)
 
-    out_dir = repo_root / "dataset" / "metrics" / "results" / "extraction" / template_key / model_name
+    out_dir = (
+        repo_root / "dataset" / "metrics" / "results" / "extraction" / template_key / model_name
+    )
     out_dir.mkdir(parents=True, exist_ok=True)
     with (out_dir / "summary.yaml").open("w", encoding="utf-8") as f:
         yaml.safe_dump(summary, f, sort_keys=False, allow_unicode=True)

@@ -42,5 +42,3 @@ def test_field_models_value_types() -> None:
     assert template.datapoints[3].data_type == "float"
     assert template.datapoints[4].data_type == "date"
     assert template.datapoints[5].data_type == "enum"
-
-

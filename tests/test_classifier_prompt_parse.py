@@ -16,5 +16,3 @@ def test_parse_llm_output_with_confidence() -> None:
     parsed = cc._parse_llm_output(raw)
     assert parsed[1] == (3, 95)
     assert parsed[2] == (0, 5)
-
-

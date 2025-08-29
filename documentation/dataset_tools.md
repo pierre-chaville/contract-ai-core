@@ -42,5 +42,3 @@ Run the viewer:
 ```bash
 streamlit run dataset/view_reviser.py
 ```
-
-

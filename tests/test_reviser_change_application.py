@@ -22,6 +22,7 @@ def test_materialize_changes_bottom_up_ordering() -> None:
     contract = [Paragraph(index=i, text=f"P{i}") for i in range(5)]
     # Fake revised sections simulating two changes
     from contract_ai_core.schema import RevisedSection
+
     r1 = RevisedSection(
         amendment_start_line=0,
         amendment_end_line=0,
@@ -62,5 +63,3 @@ def test_materialize_changes_bottom_up_ordering() -> None:
     res = cr.generate_amended_and_restated(contract=contract, amendment=[], template=template)
     texts = [p.text for p in res.new_content]
     assert texts == ["P0", "A", "B", "C", "D"]
-
-

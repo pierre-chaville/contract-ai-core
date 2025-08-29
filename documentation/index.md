@@ -42,5 +42,3 @@ result = ext.extract(text, template, classified_clauses=classification)
 reviser = ContractReviser(ContractReviserConfig(model="gpt-4.1-mini"))
 revised = reviser.generate_amended_and_restated(contract=paragraphs, amendment=amend_paragraphs, template=template)
 ```
-
-

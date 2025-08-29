@@ -5,5 +5,3 @@ def test_can_import_package() -> None:
     assert hasattr(pkg, "ClauseClassifier")
     assert hasattr(pkg, "DatapointExtractor")
     assert hasattr(pkg, "ContractReviser")
-
-

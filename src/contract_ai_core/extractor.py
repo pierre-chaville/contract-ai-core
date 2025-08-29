@@ -319,7 +319,11 @@ class DatapointExtractor:
             else:
                 datapoints = []
             ev_obj = res.get("evidence")
-            evidence = cast(list[int] | None, ev_obj) if (isinstance(ev_obj, list) or ev_obj is None) else None
+            evidence = (
+                cast(list[int] | None, ev_obj)
+                if (isinstance(ev_obj, list) or ev_obj is None)
+                else None
+            )
             for dp in datapoints:  # type: ignore[assignment]
                 item = (data or {}).get(dp.key) or {}
                 value = item.get("value")
@@ -366,7 +370,7 @@ class DatapointExtractor:
             pass
 
         api_key = os.getenv("OPENAI_API_KEY")
-        llm = ChatOpenAI(model=model_name, temperature=temperature, api_key=api_key) # type: ignore[arg-type]
+        llm = ChatOpenAI(model=model_name, temperature=temperature, api_key=api_key)  # type: ignore[arg-type]
         sem = asyncio.Semaphore(concurrency)
 
         async def run_one(job: dict[str, object]) -> dict[str, object]:
@@ -382,7 +386,9 @@ class DatapointExtractor:
             # print('prompt', prompt)
             # print('--------------------------------')
 
-            structured_llm = llm.with_structured_output(OutputModel, temperature=temperature, max_tokens=8000)  # type: ignore[arg-type]
+            structured_llm = llm.with_structured_output(
+                OutputModel, temperature=temperature, max_tokens=8000
+            )  # type: ignore[arg-type]
 
             attempt = 1
             delay_seconds = 1.0

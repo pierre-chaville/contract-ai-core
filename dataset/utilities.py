@@ -48,7 +48,6 @@ def load_template(template_key: str) -> dict:
 
     enums = {}
     for _, row in df_enums.iterrows():
-
         enum_key = row.get("key")
         enum_title = row.get("title")
         if enum_key is None:

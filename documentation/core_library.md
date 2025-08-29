@@ -81,5 +81,3 @@ print(len(revised.new_content), "paragraphs in restated contract")
 for r in revised.applied_instructions:
     print(r.target_section, r.change_explanation)
 ```
-
-

@@ -24,5 +24,3 @@ The dataset is curated from public filings on EDGAR (U.S. SEC). It includes appr
 - 20 amendments
 
 These examples are intended for experimentation, benchmarking, and demos.
-
-

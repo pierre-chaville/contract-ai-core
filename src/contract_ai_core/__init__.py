@@ -38,5 +38,3 @@ __all__ = [
     "ContractReviser",
     "ContractReviserConfig",
 ]
-
-

@@ -8,7 +8,7 @@ specified_transaction,Specified transaction scope,enum,SPECIFIED_TRANSACTION_SCO
 cross_default,Cross default applicable parties,enum,PARTY_TYPES,FALSE,clause,cross_default,Cross default applicable parties
 specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,bool,,FALSE,clause,specified_indebtness,Specified indebtness includes borrowed_money? (NO if not mentioned)
 specified_indebtness_deposits,Specified indebtness excludes deposits,bool,,FALSE,clause,specified_indebtness,Specified indebtness excludes deposits? (NO if not mentioned)
-threshold_amount_A_amount,amount for Party A,float,,FALSE,clause,threshold_amount,amount for threshold amount for Party A 
+threshold_amount_A_amount,amount for Party A,float,,FALSE,clause,threshold_amount,amount for threshold amount for Party A
 threshold_amount_A_currency,currency for Party A ,str,,FALSE,clause,threshold_amount,"currency for threshold amount for Party A, ISO format (e.g. USD, EUR)"
 threshold_amount_A_percent,percentage for Party A ,float,,FALSE,clause,threshold_amount,"percentage for threshold amount for Party A  (in percentage, i.e. 3 for 3%)"
 threshold_amount_A_percent_reference,percentage reference for Party A ,enum,THRESHOLD_REFERENCE,FALSE,clause,threshold_amount,reference of the percentage for Party A (if percentage)
