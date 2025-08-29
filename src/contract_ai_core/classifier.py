@@ -178,7 +178,7 @@ class ClauseClassifier:
         """
         # Lazy import to avoid hard dependency at package import time
         try:
-            from dotenv import load_dotenv  # type: ignore
+            from dotenv import load_dotenv
         except Exception:  # pragma: no cover - optional dependency
             load_dotenv = None  # type: ignore
 
@@ -190,7 +190,7 @@ class ClauseClassifier:
 
         try:
             # Using OpenAI Python SDK v1
-            from openai import OpenAI  # type: ignore
+            from openai import OpenAI
         except Exception as exc:  # pragma: no cover - helpful error if not installed
             raise RuntimeError(
                 "The 'openai' package is required to use ClauseClassifier with provider 'openai'. "

@@ -19,7 +19,7 @@ from .schema import (
 from pydantic import BaseModel, Field, create_model
 
 try:
-    from langchain_openai import ChatOpenAI  # type: ignore
+    from langchain_openai import ChatOpenAI
     from langchain.globals import set_debug
     set_debug(False)
 except Exception as e:  # pragma: no cover
@@ -316,7 +316,7 @@ class DatapointExtractor:
             )
         # Load .env if available to populate OPENAI_API_KEY
         try:
-            from dotenv import load_dotenv  # type: ignore
+            from dotenv import load_dotenv
             load_dotenv()
         except Exception:
             pass

@@ -8,27 +8,27 @@ Public API:
 - ContractReviser.generate_amended_and_restated: end-to-end pipeline helper
 """
 
-from dataclasses import dataclass
-from typing import Optional, Sequence, List
 import asyncio
-import os
 import json
 import logging
+import os
+from dataclasses import dataclass
+from typing import List, Optional, Sequence
+
+from pydantic import BaseModel, Field
 
 from .schema import (
     ContractTypeTemplate,
     ExtractionResult,
-    RevisionInstruction,
-    RevisionInstructionTarget,
-    RevisedSection,
     Paragraph,
     RevisedContract,
+    RevisedSection,
+    RevisionInstruction,
+    RevisionInstructionTarget,
 )
 
-from pydantic import BaseModel, Field
-
 try:
-    from langchain_openai import ChatOpenAI  # type: ignore
+    from langchain_openai import ChatOpenAI
 except Exception:  # pragma: no cover
     ChatOpenAI = None  # type: ignore
 
@@ -82,7 +82,7 @@ class ContractReviser:
 
         # Load .env and API key
         try:
-            from dotenv import load_dotenv  # type: ignore
+            from dotenv import load_dotenv
             load_dotenv()
         except Exception:
             pass
@@ -156,7 +156,7 @@ class ContractReviser:
 
         # Load .env and API key
         try:
-            from dotenv import load_dotenv  # type: ignore
+            from dotenv import load_dotenv
             load_dotenv()
         except Exception:
             pass
@@ -278,7 +278,7 @@ class ContractReviser:
 
         # Load API key once
         try:
-            from dotenv import load_dotenv  # type: ignore
+            from dotenv import load_dotenv
             load_dotenv()
         except Exception:
             pass
