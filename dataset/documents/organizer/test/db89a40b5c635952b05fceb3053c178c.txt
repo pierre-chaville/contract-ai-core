@@ -1,0 +1,49 @@
+EX-10.1 3 dex101.htm FIRST AMENDMENT TO ISDA MASTER AGREEMENT
+Exhibit 10.1
+FIRST AMENDMENT TO ISDA MASTER AGREEMENT
+This FIRST AMENDMENT TO ISDA MASTER AGREEMENT (this "Amendment Agreement") is entered into as of February 23, 2009, and forms part of and is supplemental to that certain ISDA Master Agreement, dated as of July 19, 2007, between KEYBANK NATIONAL ASSOCIATION ("Party A") and JUPITERMEDIA CORPORATION , a Delaware corporation, to be known as WebMediaBrands Inc. ("Party B") including the Schedule thereto, dated as of July 19, 2007 (as the same may from time to time be amended, restated or otherwise modified or replaced, the "Master Agreement").
+WHEREAS , Party A and Party B entered into a Transaction (as defined in the Master Agreement) governed by the Master Agreement, that is evidenced by that certain Confirmation between Party A and Party B, dated as of July 19, 2007 (the "2007 Confirmation");
+WHEREAS , Party A and Party B desire to amend the Master Agreement and the 2007 Confirmation;
+WHEREAS , each capitalized term used herein and defined in the Master Agreement, but not otherwise defined herein, shall have the meaning given such term in the Master Agreement; and
+WHEREAS , unless otherwise specifically provided herein, the provisions of the Master Agreement and the 2007 Confirmation revised herein are amended effective as of the date of this Amendment Agreement;
+NOW, THEREFORE , in consideration of the premises and of the mutual covenants herein and for other valuable consideration, the parties agrees as follows:
+I. 	 Amendments to the Master Agreement
+(a) 	 Part 1(a) of the Schedule is hereby amended in its entirety to read as follows:
+(a) 	 "Specified Entity" means in relation to Party A for the purpose of:
+Section 5(a)(v): None Section 5(a)(vi): None Section 5(a)(vii): None Section 5(b)(ii): None
+and in relation to Party B for the purpose of:
+Section 5(a)(v): None Section 5(a)(vi): None Section 5(a)(vii): Party B, Mediabistro.com, Ellen L. Meckler and Alan M. Meckler Section 5(b)(ii): None
+(b) 	 Part 1(i) of the Schedule is hereby amended in its entirety to read as follows:
+(i) Additional Termination Event: For the purpose of Section 5(b)(iii) of this Agreement, it shall be an "Additional Termination Event" with Party B being the Affected Party if:
+(i) any Credit Support Document, in accordance with its terms, expires, terminates, or ceases to be in full force and effect for the purpose of this Agreement unless (i) this Agreement is expressly amended in writing to reflect that it is no longer a Credit Support Document hereunder or (ii) a replacement Credit Support Document is entered into the terms of which are satisfactory to Party A in its sole discretion; or
+(ii) on any date (assuming, for the purpose of such calculation, that such date is an Early Termination Date), the amount payable by Party B pursuant to Section 6(e) of the Master Agreement would be zero.
+(c) 	 Part 2(b) of the Schedule is hereby amended in its entirety to read as follows:
+(b) Quarterly and annual financial statements of Party B when reasonably requested by Party A and not otherwise provided to Party A under the Credit Support Documents.
+(d) 	 Part 3(c) of the Schedule is hereby amended in its entirety to read as follows:
+(c) Credit Support Document: In relation to Party A, means not applicable. In relation to Party B, means:
+(i) Each of the following documents, as each such document may from time to time be amended, restated or otherwise modified:
+(a) that certain Guaranty of Payment, dated as of February 23, 2009, from Alan M. Meckler to Party A;
+(b) that certain Security Agreement, dated as of February 23, 2009, from Party B to Party A;
+(c) that certain Security Agreement, dated as of July 30, 2007, delivered by Mediabistro.com to Party A, as amended by that certain First Amendment to Security Agreement, dated as of February 23, 2009;
+(d) that certain Intellectual Property Security Agreement, dated as of July 12, 2007, delivered by Party B to Party A, as amended by that certain First Amendment to Intellectual Property Security Agreement, dated as of February 23, 2009;
+(e) that certain Intellectual Property Security Agreement, dated as of July 30, 2007, delivered by Mediabistro.com to Party A, as amended by that certain First Amendment to Intellectual Property Security Agreement, dated as of February 23, 2009;
+(f) that certain Pledge Agreement, dated as of July 12, 2007, delivered by Party B to Party A, as amended by that certain First Amendment to Pledge Agreement, dated as of February 23, 2009; and
+(g) that certain Mortgage, Security Agreement, Assignment of Leases and Rents and Fixture Filing, dated as of February 23, 2009, from Ellen Meckler to Party A.
+(ii) any other guarantee, security agreement, or other document (not referenced in subpart (i) above) entered into on or after February 23, 2009, that, by its terms, guarantees, secures or otherwise supports the performance of Party B's obligations under this Agreement.
+(e) 	 Part 3(d) of the Schedule is hereby amended in its entirety to read as follows:
+(d) Credit Support Provider. In relation to Party A, means not applicable. In relation to Party B, means each party to any Credit Support Document of Party B, other than (i) Party A or Party B, (ii) any Affiliate of Party A, or (iii) any other secured party under such Credit Support Document.
+II. 	 Amendment to the 2007 Confirmation
+The 2007 Confirmation is hereby amended to delete the "Other Terms and Conditions" provision therefrom and to insert in place thereof the following:
+Other Term and Conditions:
+Party B agrees to deposit into a deposit account with Party A (the "Blocked Account"), commencing February 23, 2009, and continuing on each April 1, July 1, October 1, and January 1 thereafter, cash in amount equal to the Fixed Amount that would be payable for the current Calculation Period. Party B hereby grants to Party A a security interest in and an assignment of the Blocked Account, and pledges and assigns the Blocked Account to Party A, to secure the prompt and full payment and performance of the obligations of Party B hereunder. Party B hereby irrevocably authorizes Party A, at any time and from time to time, to cause any and all of the funds, credits and balances in the Blocked Account, to be applied to the payments due hereunder. Party A agrees to pay interest at a rate per annum equal to the overnight Federal Funds Rate for the funds deposited in the Blocked Account.
+III. 	 Representations and Warranties
+Each party makes the representations and warranties set forth in Section 3(a)(i), (ii), (iii), (iv), and (v), Section 3(b), Section 3(c), and Section 3(d) of the Master Agreement, as of the date hereof, except that all references in such Sections to "this Agreement" (or words or phrases of similar meaning) shall be deemed to be references to this Amendment Agreement and the Master Agreement as amended hereby.
+IV. 	 Miscellaneous
+(1) 	 Except as specifically amended hereby, the Master Agreement and the 2007 Confirmation shall continue in full force and effect in accordance with the provisions thereof, on the date hereof, and nothing herein contained shall be construed as a waiver or modification of the existing rights under the Master Agreement or the 2007 Confirmation, except as such rights are expressly modified hereby; and
+(2) 	 This Amendment Agreement constitutes the entire agreement and understanding of the parties with respect to the subject matter hereof. The Amendment Agreement shall be governed by and construed in accordance with the laws of the State of New York without reference to its choice of law doctrine, and may be executed in counterparts, each of which shall be deemed an original and all of which when taken together shall constitute one and the same instrument.
+[Remainder of page intentionally left blank.]
+JURY TRIAL WAIVER. PARTY A AND PARTY B, TO THE EXTENT PERMITTED BY LAW, EACH HEREBY WAIVES ANY RIGHT TO HAVE A JURY PARTICIPATE IN RESOLVING ANY DISPUTE, WHETHER SOUNDING IN CONTRACT, TORT OR OTHERWISE, BETWEEN PARTY A AND PARTY B, ARISING OUT OF, IN CONNECTION WITH, RELATED TO, OR INCIDENTAL TO THE RELATIONSHIP ESTABLISHED AMONG THEM IN CONNECTION WITH THIS AMENDMENT AGREEMENT OR ANY DOCUMENT OR AGREEMENT EXECUTED OR DELIVERED IN CONNECTION HEREWITH OR THE TRANSACTIONS RELATED THERETO.
+IN WITNESS WHEREOF , the parties have executed this document on the respective dates specified below with effect from the date specified on the first page of this document.
+KEYBANK NATIONAL ASSOCIATION By: 	   	  /s/    Jeff Kalinowsky Jeff Kalinowsky Senior Vice President JUPITERMEDIA CORPORATION By: 	   	  /s/    Alan M. Meckler Name: 	   	 Alan M. Meckler Title: 	   	 Chairman and Chief Executive Officer
+Signature Page to
+First Amendment to ISDA Master Agreement

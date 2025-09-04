@@ -1,0 +1,24 @@
+EX-99.4 5 a09-17273_1ex99d4.htm EX-99.4
+EXHIBIT 99.4
+THIRD AMENDMENT
+to
+THE ISDA ® MASTER AGREEMENT
+THIS THIRD AMENDMENT , dated as of June 30, 2009 (the "Amendment"), between BANK OF AMERICA, N.A. ("Party A") and PROSPECT MEDICAL HOLDINGS, INC.("Party B").
+WI T N E S S E T H
+WHEREAS, Party A and Party B have previously entered into a certain ISDA Master Agreement, dated as of May 16, 2007 (the "Master Agreement"), and the ISDA Schedule to the Master Agreement dated as of May 16, 2007 (the "Schedule") as amended on September 18, 2007 and May 15, 2008 (the Master Agreement and Schedule, collectively, the "Agreement"); and
+WHEREAS, upon execution of this Amendment, Party A and Party B now desire to further amend the Schedule, as hereinafter provided;
+(1) Amendment. The Schedule shall be amended as follows:
+(a) The definition of Credit Agreement in Part 1(c) of the Schedule is hereby deleted in its entirety and replaced with the following:
+" Credit Agreement" means the First Lien Credit Agreement dated as of August 8, 2007 by and among Party A, as Administrative Agent, Swingline Lender and L/C Issuer, the Lenders as defined therein, and Prospect Medical Holdings, Inc. and Prospect Medical Group, Inc. (as may be amended, extended, supplemented or otherwise modified in writing from time to time).
+(b) Part 1(g) of the Schedule is deleted in its entirety, and replaced by the following:
+" 'Additional Termination Event' will apply.
+It shall be an Additional Termination Event hereunder, with respect to which Party B shall be the sole Affected Party, if for any reason Party A ceases to be a party to the Credit Agreement, and simultaneously therewith, (i) Party A and Party B fail to enter into a replacement credit agreement satisfactory to Party A , in its sole discretion; or (ii) Party B fails to provide sufficient collateral, in form, substance and an amount acceptable to Party A as it may require from time to time in its sole discretion, to secure the obligations of Party B hereunder."
+(2) Representations. In order to induce each other to enter into this Amendment, each party hereto makes, as of the date hereof, the representations set forth in Section 3(a) and (b) of the Agreement; provided that the phrase "this Agreement," as used in Sections 3(a) and (b) shall mean (for the purpose of this paragraph 2 only) both this Amendment and the Agreement as previously amended, and as amended hereby.
+(3) Entire Agreement. This Amendment constitutes the entire agreement and understanding of the parties with respect to its subject matter and supersedes all oral communications or prior writings (except as otherwise provided herein) with respect thereto. Except as expressly amended herein, all of the provisions of the Master Agreement shall remain in full force and effect, and all references to the Agreement in the Agreement or any document related thereto shall for all purposes constitute
+references to the Agreement as amended hereby. This Amendment shall in no way operate as a novation, release, or discharge of any of the provisions of the Master Agreement (except as amended herein), or any indebtedness thereby evidenced.
+(4) Documents to be Delivered. Simultaneously with its delivery of this Amendment executed by it, each party hereto shall deliver to the other evidence of all authorizations, approvals and other actions necessary for that party to execute and deliver this Amendment and evidence of the specimen signatures, authority and incumbency of each person executing this Amendment on that party's behalf (unless such evidence has previously been supplied pursuant to the Agreement and remains correct and in effect).
+(5) Governing Law. This Amendment and any and all controversies arising out of or in relation to this Amendment shall be governed by and construed in accordance with the laws of the State of New York (without reference to its conflict of laws doctrine).
+(6) Counterparts. This Amendment may be executed in any number of counterparts, all of which taken together shall constitute one and the same instrument.
+IN WITNESS WHEREOF, the parties hereto have caused this Amendment to be executed by their respective officers thereunto duly authorized as of the day and year first above written.
+BANK OF AMERICA, N.A. 	    	  PROSPECT MEDICAL HOLDINGS, INC.
+By: 	  /s/ Roger H. Heintzelman 	    	  By: 	  /s/ Samuel S. Lee Name: Roger H. Heintzelman 	    	    	  Name: Samuel S. Lee Title: Principal 	    	    	  Title: Chief Executive Officer

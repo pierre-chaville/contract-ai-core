@@ -1,0 +1,51 @@
+EX-10.1 2 a09-36942_1ex10d1.htm EX-10.1
+Exhibit 10.1
+SECOND AMENDMENT
+DATED AS OF DECEMBER 21, 2009
+TO THE
+ISDA MASTER AGREEMENT
+DATED AS OF SEPTEMBER 22, 2009
+AMONG
+SEMPRA ENERGY TRADING LLC,
+MXENERGY INC.
+AND
+THE SPECIFIED ENTITIES PARTY THERETO
+SECOND AMENDMENT dated as of December 21, 2009 (this "Second Amendment ") to the ISDA MASTER AGREEMENT, dated as of September 22, 2009 (as amended, supplemented or otherwise modified as of the date hereof, the "_Gas Master ISDA Agreement "), among SEMPRA ENERGY TRADING LLC ("Party A_ "), MXENERGY INC. ("Party B ") and the Specified Entities party thereto.
+W I T N E S S E T H :
+WHEREAS, Party A and Party B, among others, are parties to that certain ISDA Master Agreement dated as of September 22, 2009 and to the Schedule dated as of September 22, 2009 to the Gas Master ISDA Agreement (as amended, the "_Gas Master ISDA Schedule_ "); and
+WHEREAS, Party A and Party B wish to amend the Gas Master ISDA Schedule on the terms and conditions provided for herein.
+NOW, THEREFORE, in consideration of the mutual covenants and conditions set forth herein, the sufficiency of which is hereby acknowledged, the parties hereto agree as follows:
+# ARTICLE I DEFINITIONS AND INTERPRETATION
+#
+## SECTION 1.1 Definitions and Interpretation.
+##
+### (a) All capitalized terms used herein which are not otherwise specifically defined herein shall have the respective meaning as ascribed thereto in the Gas Master ISDA Agreement.
+###
+### (b) Unless otherwise expressly indicated, all references contained herein to Sections or other subdivisions, Schedules, Annexes or Exhibits refer to the corresponding Sections and other subdivisions, Schedules, Annexes or Exhibits of the Gas Master ISDA Agreement.
+###
+### (c) The sections and the headings in the sections in this Second Amendment are for convenience only. Said sections and headings shall not be deemed to be part of this Second Amendment and in no way define, limit, extend or describe the scope or intent of its provisions.
+###
+# ARTICLE II AMENDMENTS
+#
+## SECTION  2. Amendment to Part 8(b)(ii)  . Part  8(b)(ii)  of the Gas Master ISDA Schedule is hereby amended by deleting words "no later than 90 days after the Closing Date," appearing in the second line and inserting in lieu thereof the following:
+##
+"no later than April 1, 2010,"
+#
+# ARTICLE III MISCELLANEOUS
+#
+## SECTION 3.1 Gas Master ISDA Agreement. Except as amended by this Second Amendment, the Gas Master ISDA Agreement shall remain in full force and effect in accordance with its terms. This Second Amendment shall be deemed to be part of the Gas Master ISDA Agreement.
+##
+## SECTION 3.2 References to Gas Master ISDA Schedule. Whenever in any certificate, letter, notice or other instrument reference is made to the Gas Master ISDA Schedule, such reference without more shall include reference to this Second Amendment.
+##
+## SECTION 3.3 Legal, Valid and Binding Obligation. Each party hereto hereby represents and warrants that this Second Amendment is a legal, valid and binding obligation of such party and is enforceable against such party in accordance with its terms.
+##
+## SECTION 3.4 Confirmation and Reaffirmation of ISDA Documents. Party B and each Specified Entity of Party B does hereby (a) consent and acknowledge and agree to the transactions described in this Second Amendment and (b) after giving effect to this Second Amendment, (i) ratify and confirm each ISDA Document to which it is a party and (ii) confirm and agree that each such ISDA Document is, and shall continue to be, in full force and effect; provided that each reference to the Gas Master ISDA Schedule therein and in each of the other ISDA Documents shall be deemed to be a reference to the Gas Master ISDA Schedule after giving effect to this Second Amendment.
+##
+## SECTION 3.5 Condition to Effectiveness. This Second Amendment shall become effective as of the date set forth above upon receipt by each of the parties hereto of counterparts of this Second Amendment executed by each other party hereto.
+##
+## SECTION 3.6 .No Other Amendments/Waivers. Except as expressly amended herein, the Gas Master ISDA Schedule and the other ISDA Documents shall be unmodified and shall continue to be in full force and effect in accordance with their terms. In addition, except as expressly set forth herein, this Second Amendment shall not be deemed a waiver of any term or condition of any ISDA Document and shall not be deemed to prejudice any right or rights which Party B may now have or may have in the future under or in connection with any ISDA Document or any of the instruments or agreements referred to therein, as the same may be amended from time to time.
+##
+## SECTION 3.7 Counterparts. This Second Amendment may be executed in any number of counterparts, each of which when so executed and delivered shall be deemed an original, but all such counterparts together shall constitute but one and the same instrument. Any executed counterpart delivered by facsimile or electronic transmission shall be effective as an original for all purposes hereof.
+##
+## SECTION 3.8 GOVERNING LAW. THIS SECOND AMENDMENT, AND THE RIGHTS AND OBLIGATIONS OF THE PARTIES HERETO, SHALL BE GOVERNED BY AND CONSTRUED IN ACCORDANCE WITH THE LAWS OF THE STATE OF NEW YORK WITHOUT REFERENCE TO CHOICE OF LAW DOCTRINE, OTHER THAN
+##

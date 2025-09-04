@@ -1,8 +1,10 @@
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import List
 
 import pandas as pd
+from contract_ai_core import LookupValue
 
 
 def load_template(template_key: str) -> dict:
@@ -207,3 +209,74 @@ def write_tokens_usage(
     except Exception as e:
         print(f"Error writing tokens usage: {e}")
         return
+
+
+def load_lookup_values(category: str) -> List[LookupValue]:
+    repo_root = Path(__file__).resolve().parents[1]
+    folder_path = repo_root / "dataset" / "contract_types"
+    df = pd.read_csv(folder_path / "lookup_values.csv", encoding="utf-8")
+
+    # Normalize columns (strip whitespace and BOM) and filter by category
+    df.columns = [str(c).strip().lstrip("\ufeff") for c in df.columns]
+    df = df[df["category"].astype(str).str.strip() == str(category).strip()]
+
+    records: list[dict] = []
+    for _, row in df.iterrows():
+        cat = (row.get("category") or "").strip()
+        key = (row.get("key") or "").strip()
+        label = (row.get("label") or "").strip()
+        description = row.get("description")
+        sort_order_raw = row.get("sort_order")
+        metadata_raw = row.get("metadata")
+
+        if not key or not label:
+            continue
+
+        # Coerce sort_order to int or None
+        sort_order: int | None
+        try:
+            if pd.isna(sort_order_raw) or str(sort_order_raw).strip() == "":
+                sort_order = None
+            else:
+                sort_order = int(float(str(sort_order_raw)))
+        except Exception:
+            sort_order = None
+
+        # Coerce metadata to dict or None
+        metadata: dict | None
+        if metadata_raw is None or (isinstance(metadata_raw, float) and pd.isna(metadata_raw)):
+            metadata = None
+        elif isinstance(metadata_raw, dict):
+            metadata = metadata_raw
+        else:
+            s = str(metadata_raw).strip()
+            if s == "" or s.lower() in ("nan", "null"):
+                metadata = None
+            else:
+                try:
+                    metadata = json.loads(s)
+                    if not isinstance(metadata, dict):
+                        metadata = None
+                except Exception:
+                    metadata = None
+
+        records.append(
+            {
+                "category": cat,
+                "key": key,
+                "label": label,
+                "description": None if pd.isna(description) else str(description),
+                "sort_order": sort_order,
+                "metadata": metadata,
+            }
+        )
+
+    # Optional: stable sort by sort_order then label
+    records.sort(
+        key=lambda r: (
+            r["sort_order"] is None,
+            r["sort_order"] if r["sort_order"] is not None else 0,
+            r["label"],
+        )
+    )
+    return [LookupValue(**v) for v in records]

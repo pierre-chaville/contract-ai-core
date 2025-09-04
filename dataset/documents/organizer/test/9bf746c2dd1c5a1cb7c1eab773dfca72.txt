@@ -1,0 +1,51 @@
+EX-10.38 4 dex1038.htm FORM OF INTERNATIONAL SWAPS AND DERIVATIVES ASSOCIATION MASTER AGREEMENT
+Exhibit 10.38
+(Multicurrency-Cross Border)
+ISDA ®
+International Swap Dealers Association, Inc.
+MASTER AGREEMENT
+dated as of 12  June 2009
+Newedge Group ( "Party A") and _Frontier Trading Company XIII, LLC ( "Party B")_
+have entered and/or anticipate entering into one or more transactions (each a "Transaction") that are or will be governed by this Master Agreement, which includes the schedule (the "Schedule"), and the documents and other confirming evidence (each a "Confirmation") exchanged between the parties confirming those Transactions.
+Accordingly, the parties agree as follows:-
+1. 	 Interpretation
+(a) Definitions. The terms defined in Section 14 and in the Schedule will have the meanings therein specified for the purpose of this Master Agreement.
+(b) Inconsistency. In the event of any inconsistency between the provisions of the Schedule and the other provisions of this Master Agreement, the Schedule will prevail. In the event of any inconsistency between the provisions of any Confirmation and this Master Agreement (including the Schedule), such Confirmation will prevail for the purpose of the relevant Transaction.
+(c) Single Agreement. All Transactions are entered into in reliance on the fact that this Master Agreement and all confirmations form a single agreement between the parties (collectively referred to as this "Agreement"), and the parties would not otherwise enter into any Transactions.
+2. 	 Obligations
+(a) 	 General Conditions.
+(i) Each party will make each payment or delivery specified in each Confirmation to be made by it, subject to the other provisions of this Agreement.
+(ii) Payments under this Agreement will be made on the due date for value on that date in the place of the account specified in the relevant Confirmation or otherwise pursuant to this Agreement, in freely transferable funds and in the manner customary for payments in the required currency. Where settlement is by delivery (that is, other than by payment), such delivery will be made for receipt on the due date in the manner customary for the relevant obligation unless otherwise specified in the relevant Confirmation or elsewhere in this Agreement.
+(iii) Each obligation of each party under Section 2(a)(i) is subject to (1) the condition precedent that no Event of Default or Potential Event of Default with respect to the other party has occurred and is continuing, (2) the condition precedent that no Early Termination Date in respect of the relevant Transaction has occurred or been effectively designated and (3) each other applicable condition precedent specified in the Agreement.
+Copyright (C) 1992 by International Swap Dealers Association, Inc.
+value of that which was (or would have been) required to be delivered as of the originally scheduled date for delivery, in each case together with (to the extent permitted under applicable law) interest, in the currency of such amounts, from (and including) the date such amounts or obligations were or would have been required to have been paid or performed to (but excluding) such Early Termination Date, at the Applicable Rate. Such amounts of interest will be calculated on the basis of daily compounding and the actual number of days elapsed. The fair market value of any obligation referred to in clause
+(b) above shall be reasonably determined by the party obliged to make the determination under Section 6(e) or, if each party is so obliged, it shall be the average of the Termination Currency Equivalents of the fair market values reasonably determined by both parties.
+IN WITNESS WHEREOF the parties have executed this document on the respective dates specified below with effect from the date specified on the first page of this document.
+Newedge Group ( "Party A") 	   	 Frontier Trading Company XIII, LLC ( "Party B") (Name of Party) 	   	 (Name of Party) By: 	   	    	   	 By:
+Name: 	   	  	   	 Name:
+Title: 	   	  	   	 Title:
+Date: 	   	  	   	 Date:
+By: 	   	    	   	 By:
+Name: 	   	  	   	 Name:
+Title: 	   	  	   	 Title:
+Date: 	   	  	   	 Date:
+18 	   	 ISDA ® 1992
+EXECUTION COPY
+SCHEDULE
+To the 1992 Master Agreement
+dated as of 12  June 2009
+between
+NEWEDGE GROUP ( "Party A")
+(organised under the laws of France and whose UK office is located at 10 Bishops Square, London E1 6EG)
+and
+Frontier Trading Company XIII, LLC, a limited liability company formed under the laws of Delaware, USA ( "Party B")
+Part 1
+Termination Provisions
+In this Agreement
+(a) 	 " Specified Entity": means in relation to Party A and Party B:
+Section 5(a)(v) 	    	 Not Applicable Section 5(a)(vi) 	    	 Not Applicable Section 5(a)(vii) 	    	 Not Applicable Section 5(b)(iv) 	    	 Not Applicable
+b) 	 Specified Transaction ": The definition of "Specified Transaction" shall be amended in its entirety to read as follows: "Specified Transaction" means (a) any transaction (including an agreement with respect to any such transaction) now existing or hereafter entered into between Party A (or any Credit Support Provider of such Party or any applicable Specified Entity of such party) and Party B (or any Credit Support Provider of such other Party or any applicable Specified Entity of such other party) which is not a Transaction under this Agreement but (i) which is a rate swap transaction, swap option, basis swap, forward rate transaction, commodity swap, commodity option, equity or equity index swap, equity or equity index option, bond option, interest rate option, foreign exchange transaction, cap transaction, floor transaction, collar transaction, currency swap transaction, cross-currency rate swap transaction, currency option, credit protection transaction, credit swap, credit default swap, credit default option, total return swap, variance swap, credit spread transaction, repurchase transaction, reverse repurchase transaction, buy/sell back transaction, securities lending transaction, weather index transaction or forward purchase or sale of a security, commodity or other financial instrument or interest (including any option with respect to any of these transactions) or (ii) which is a type of transaction that is similar to any transaction referred to in clause (i) above that is currently, or in the future becomes, recurrently entered into in the financial markets (including terms and conditions incorporated by reference in such agreement) and which is a forward, swap, future, option or other derivative on one or more rates, currencies, commodities, equity securities or other equity instruments, debt securities or other debt instruments, economic indices or measures of economic risk or value, or other benchmarks against which payments or deliveries are to be made, (b) any combination of these transactions and (c) any other transaction identified as a Specified Transaction in this Agreement or the relevant confirmation.
+(c) 	  The " Cross Default" provisions of Section 5(a)(vi) will apply to Party A and to Party B; provided that (i) the phrase "or becoming capable at such time of being declared" shall be
+EXECUTION COPY
+deleted from clause (1) of such Section 5(a)(vi); and (ii) the following language shall be added to the end thereof: "Notwithstanding the foregoing, a default under subsection (2) hereof shall not constitute an Event of Default if (i) the default was caused solely by error or omission of an administrative or operational nature; (ii) funds were available to enable the party to make the payment when due; and (iii) the payment is made within two Local Business Days of such party's receipt of written notice of its failure to pay.".
+" Threshold Amount" means USD $10,000,000 or the equivalent in any other currency for Party A, and for Party B the lesser of 2% of its NAV or USD $2,000,000.

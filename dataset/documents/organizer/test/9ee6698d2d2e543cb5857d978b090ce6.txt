@@ -1,0 +1,51 @@
+EX-10.44 6 dex1044.htm SCHEDULE TO INTERNATIONAL SWAP DEALERS ASSOCIATION AGREEMENT.
+Exhibit 10.44
+[LETTER HEAD APPEARS HERE]
+SCHEDULE
+to the
+ISDA MASTER AGREEMENT
+This is the Schedule to that certain ISDA Master Agreement dated as of July 8, 2004 between Banknorth, N.A. ("Party A") and Brookstone Company, Inc., a New Hampshire Corporation ("Party B").
+PART 1
+Termination Provisions
+In this Agreement:
+(A) "Specified Entity " means "affiliates" in relation to Party A and to Party B.
+(B) "Specified Transaction " will have the meaning specified in Section 12 of this Agreement.
+(C) The "Cross-Default " provisions of Section 5(a)(vi) of this Agreement will apply to Party A and to Party B.
+"Specified Indebtedness" means, with respect to Party B, any indebtedness owed by Party B to Party A under that Real Estate Promissory Note dated August 24, 2004 (as amended, supplemented or modified the "Note"); and with respect to Party A such term shall not include obligations in respect of deposits received in the ordinary course of Party A's banking business.
+"Threshold Amount" means with respect to Party A 3% of shareholders' equity and with respect to Party B any Specified Indebtedness; provided that with respect to obligations owed by Party B to Party A and its affiliates the Threshold Amount shall mean $0.
+"Shareholders' Equity" means, with respect to an entity, at any time, the sum (as shown in its most recent annual audited financial statements) of (i) its capital stock (including preferred stock outstanding, taken at par value, (ii) its capital surplus and (iii) its retained earnings, minus (iv) treasury stock, each to be determined in accordance with generally accepted accounting principles.
+(D) The "Credit Event Upon Merger " provisions of Section 5(b)(ii) of this Agreement will apply to Party A and to Party B.
+(E) The "Automatic Early Termination " provision of Section 6(a) of this Agreement will not apply to Party A or to Party B.
+(F) Payments on Early Termination. For the purpose of Section 6(e) of this Agreement: (i) Market Quotation will apply and (ii) Second Method will apply.
+(G) Additional Termination Event will apply. The following shall constitute an Additional Termination Event for which Party B shall be the sole Affected Party:
+(i) Party B has repaid all amounts owed to Party A under the Note and Party A has no further obligation to provide any additional credit extension to Party B under that Real Estate Loan Agreement by and between Party A and Party B dated August 24, 2004 (as amended, supplemented or modified, the "Loan Agreement").
+[LETTER HEAD APPEARS HERE]
+PART 2
+Agreement to Deliver Documents
+For the purposes of Section 4(a) of this Agreement, the parties agrees that the following documents will be delivered:
+Party  Required to Deliver Document
+Form/Document/Certificate
+Date by which to be delivered
+Covered by Section 3(d) Representation
+Party B 	    	 Resolution adopted by the Board of Directors, certified by the Secretary or an Assistant Secretary, authorizing the execution, delivery and performance of this Agreement and each Confirmation 	    	 Concurrent with the execution of this Agreement and upon request with respect to Confirmations 	    	 Yes Party B 	    	 Specimen signature certificate of the Secretary or an Assistant Secretary, setting out names and specimen signatures of each person or persons authorized on behalf of the party to execute and deliver this Agreement and each Confirmation 	    	 Concurrent with the execution of this Agreement and upon request with respect to Confirmations 	    	 Yes Party B 	    	 The Credit Support document(s), if any, listed in Part 3, Section (C) 	    	 Concurrent with the execution of this Agreement 	    	 Yes Party B 	    	 IRS Form W-9, or any successor form thereto 	    	 Concurrent with the execution of this Agreement, promptly upon reasonable demand by Party A and promptly upon learning that any such form previously provided by Party B has become obsolete or incorrect. 	    	 Yes Party B and Credit Support Provider of Party B 	    	 Such other documents as Party A may reasonably request in connection with each transaction. 	    	 Promptly upon request. 	    	 Yes
+PART 3
+Miscellaneous
+(A) Addresses for Notices. For the purpose of Section 10(a) of this Agreement:
+Address for notices or communications to Party B:
+Address: 	   	 Brookstone Company, Inc.
+One Innovation Way Merrimack, NH 03054 Fax No.: 603-577-8002 Phone No.: 603-577-8012 Attention: Thomas Moynihan
+[LETTER HEAD APPEARS HERE]
+Address for notices or communications to Party A:
+Address: 	   	 Banknorth, N.A.
+Two Portland Square P.O. Box 9540 Portland, ME 04112-9540 Fax No.: (207) 761-8686 Phone No.: (207) 756-6895 Attention: Swap Documentation Group
+Any notice, demand or other communication to be provided by Party A pursuant to this Agreement (including, without limitation, any notice, demand or communication pursuant to Section 6(a) or Section 6(b)(iii) of this Agreement) shall be sent to the address of Party B provided in this Part 3(A) notwithstanding the death of Party B, the adjudication of Party B as incompetent or the appointment of a guardian with respect to the affairs of Party B. Any failure by Party B or any guardian, conservator, executor, administrator or other similarly appointed person to receive any such notice, demand or communication shall in no way abrogate, invalidate or otherwise affect the validity or enforceability of the notice, demand or communication or the matters set forth therein, including, without limitation, the designation of an Event of Default, Termination Event, Early Termination Date or any other such matter.
+(B) Calculation Agent. The Calculation Agent is Party A. No failure by Party A to perform any duties of the Calculation Agent under this Agreement shall be construed as an Event of Default under this Agreement.
+(C) Credit Support Document. The following are Credit Support Document(s) with respect to Party B:
+(i) The Real Estate Loan Agreement between Party A and Party B dated August 24, 2004, as the same may be amended, supplemented, modified, renewed, replaced, consolidated, substituted or extended from time to time.
+(ii) The Real Estate Promissory Note between Party A and Party B dated August 24, 2004, as the same may be amended, supplemented, modified, renewed, replaced, consolidated, substituted or extended from time to time.
+(iii) The Mortgage and Security Agreement between Party A and Party B dated August 24, 2004, as the same may be amended, supplemented, modified, renewed, replaced, consolidated, substituted or extended from time to time.
+Party B agrees that the collateral securing the obligations of Party B to Party A described in the Credit Support Document(s) shall also secure the obligations of Party B to Party A under this Agreement. The obligations of Party B to Party A under this Agreement shall rank pari-passu with all other obligations described in the Credit Support Document(s).
+The Credit Support Document(s) (as amended from time to time) are incorporated herein and form a part of this Agreement to the extent that such Credit Support Document(s) relate to the Transactions governed by this Agreement.
+(D) Credit Support Provider.
+Credit Support Provider means in relation to Party A: None.
+Credit Support Provider means in relation to Party B: None.

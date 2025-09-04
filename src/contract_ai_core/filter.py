@@ -6,8 +6,7 @@ from typing import Optional
 
 from pydantic import BaseModel, Field
 
-from .schema import split_text_into_paragraphs
-from .utilities import get_langchain_chat_model
+from .utilities import get_langchain_chat_model, split_text_into_paragraphs
 
 
 @dataclass

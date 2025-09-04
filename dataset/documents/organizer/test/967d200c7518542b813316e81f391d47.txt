@@ -1,0 +1,51 @@
+EX-10.10 12 a11-4730_1ex10d10.htm EX-10.10
+EX-10.10
+(Multicurrency--Cross Border)
+ISDA Ò
+International Swaps and Derivatives Association, Inc.
+FIFTH AMENDMENT
+dated as of January 28, 2011
+to the 2002 Master Agreement and
+Schedule to the Master Agreement
+Bank of America, N.A. 	  and 	    TBS International Limited as "Party B Group Agent", Albemarle Maritime Corp., Arden Maritime Corp., Avon Maritime Corp., Birnam Maritime Corp., Bristol Maritime Corp., Chester Shipping Corp., Darby Navigation Corp., Dover Maritime Corp., Elrod Shipping Corp., Exeter Shipping Corp., Frankfort Maritime Corp., Glenwood Maritime Corp., Hansen Shipping Corp., Henley Maritime Corp., Hudson Maritime Corp., Montrose Maritime Corp., Oldcastle Shipping Corp., Rector Shipping Corp., Remsen Navigation Corp., Sheffield Maritime Corp., Sherman Maritime Corp., Sterling Shipping Corp., Stratford Shipping Corp., Vernon Maritime Corp., and Windsor Maritime Corp.
+("Party A") 	    	  (collectively "Party B")
+have previously entered into that certain ISDA Master Agreement dated as of June 28, 2005 and the subsequent Amendments to the ISDA Master Agreement (collectively called the "Agreement"), which Agreement includes the Schedule and all Confirmations exchanged between the parties confirming the Transactions (or Swap Transactions) thereunder. The parties have now agreed to amend the Agreement by this Fifth Amendment (this "Fifth Amendment").
+Accordingly, in consideration of the mutual agreements herein contained, the parties agree as follows:
+1. Amendment to Party B. The parties agree that the Agreement shall be amended such that each entity listed below individually will be a "Party B Group Member" and collectively "Party B":
+"TBS International plc as "Party B Group Agent", TBS International Limited, Albemarle Maritime Corp., Arden Maritime Corp., Avon Maritime Corp., Birnam Maritime Corp., Bristol Maritime Corp., Chester Shipping Corp., Cumberland Navigation Corp., Darby Navigation Corp., Dover Maritime Corp., Elrod Shipping Corp., Exeter Shipping Corp., Frankfort Maritime Corp., Glenwood Maritime Corp., Hansen Shipping Corp.,
+Hartley Navigation Corp., Henley Maritime Corp., Hudson Maritime Corp., Jessup Maritime Corp., Montrose Maritime Corp., Oldcastle Shipping Corp., Quentin Navigation Corp., Rector Shipping Corp., Remsen Navigation Corp., Sheffield Maritime Corp., Sherman Maritime Corp., Sterling Shipping Corp., Stratford Shipping Corp., Vedado Maritime Corp., Vernon Maritime Corp., and Windsor Maritime Corp."
+2. Credit Agreement. The parties agree that the definition of Credit Agreement in Part 1 (c) of the Schedule is hereby deleted in its entirety and replaced with the following:
+"" Credit Agreement" means the Second Amended and Restated Credit Agreement, dated as of January 28, 2011, among Albemarle Maritime Corp., Arden Maritime Corp., Avon Maritime Corp., Birnam Maritime Corp., Bristol Maritime Corp., Chester Shipping Corp., Cumberland Navigation Corp., Darby Navigation Corp., Dover Maritime Corp., Elrod Shipping Corp., Exeter Shipping Corp., Frankfort Maritime Corp., Glenwood Maritime Corp., Hansen Shipping Corp., Hartley Navigation Corp., Henley Maritime Corp., Hudson Maritime Corp., Jessup Maritime Corp., Montrose Maritime Corp., Oldcastle Shipping Corp., Quentin Navigation Corp., Rector Shipping Corp., Remsen Navigation Corp., Sheffield Maritime Corp., Sherman Maritime Corp., Sterling Shipping Corp., Stratford Shipping Corp., Vedado Maritime Corp., Vernon Maritime Corp., Windsor Maritime Corp., and each other Person that becomes a party thereto as a "Borrower" pursuant to Section 2.14 thereof, as the Borrowers, TBS International Limited and TBS International plc collectively, as Holdings, TBS Shipping Services Inc., as Administrative Borrower, Bank of America, N.A., as Administrative Agent, the Lenders party thereto, Citibank, N.A. and DVB Bank SE, as co- Syndication Agents, TD Bank, N.A., as Documentation Agent, and Merrill Lynch Pierce Fenner & Smith Inc., as Sole Lead Arranger and Sole Book Manager (as such Credit Agreement may be amended, modified or replaced from time to time)."
+3. Additional Representations and Warranties. Each party represents and warrants to the other party that all representations contained in the Agreement are true and accurate as of the date of this Fifth Amendment, and that all such representations are deemed to be given or repeated by each party, as the case may be, on the date of this Fifth Amendment. In addition, each party represents and warrants to the other party as follows:
+(a) It has full corporate power to execute and deliver this Fifth Amendment and to perform its obligations hereunder;
+(b)  Such actions have been duly authorized by all necessary corporate action and do not violate, and are not in conflict with, any provision of law (including any laws relating to exchange controls) or of the corporate charter and related documents of such party;
+(c) All authorizations of, exemptions by and filings with any governmental or other authority that are required to be obtained or made in connection with its execution, delivery, and performance of this Fifth Amendment (including any required exchange control licenses or exemptions) have been obtained or made and are valid and existing; and
+(d) This Fifth Amendment has been duly executed and delivered by it and constitutes the legal, valid, and binding obligation of such party enforceable in accordance with its terms (except as enforcement thereof may be limited by bankruptcy, reorganization, insolvency, moratorium or other laws affecting the enforcement of creditors' rights generally).
+4. This Fifth Amendment is limited as specified and shall not constitute a modification, acceptance or waiver of any other provisions of the Agreement.
+5. This Fifth Amendment may be executed in any number of counterparts and by the parties hereto on separate counterparts, each of which counterparts when executed and delivered shall be an original, but all of
+which shall together constitute one and the same instrument. A complete set of counterparts shall be lodged with Party A and Party B.
+6. Miscellaneous.
+(a) Entire Agreement. This Fifth Amendment constitutes the entire agreement and understanding of the parties with respect to its subject matter and supersedes all oral communications and prior writings with respect thereto.
+(b) Definitions. All capitalized terms in this Fifth Amendment and not otherwise defined herein shall have the same meaning ascribed to them in the Agreement.
+(c) Agreement Continuation. The Agreement, as modified herein, shall continue in full force and effect.
+(d) Headings. The headings used in this Fifth Amendment are for the convenience of reference only and are not to affect the construction of or to be taken into consideration in interpreting this Amendment.
+(e) Governing Law. This Agreement will be governed by and construed in accordance with the laws of the State of New York (without reference to choice of law doctrine).
+(f) Waiver of Specified Defaults. Reference is hereby made to that certain Forbearance Agreement, dated as of September 30, 2010 (as amended by that certain First Amendment to Forbearance Agreement, dated as of November 15, 2010 and that certain Second Amendment to Forbearance Agreement dated as of December 23, 2010, the "Forbearance Agreement ") by and among Borrowers, Bermuda Holdings and the Administrative Agent, whereby the Administrative Agent agreed subject to the conditions therein to forbear from exercising any of the rights or remedies arising from the "Specified Defaults" as provided therein. Subject to the satisfaction or waiver of the conditions precedent and the conditions subsequent set forth in Sections 4.01 of the Credit Agreement, and effective on the Closing Date, the Administrative Agent hereby waives each of the Specified Defaults as defined in the Forbearance Agreement, and the rights and remedies of the Administrative Agent arising therefrom.
+IN WITNESS WHEREOF , the parties have executed this Fifth Amendment as of the date specified on the first page hereof.
+BANK OF AMERICA, N.A. 	    	  TBS INTERNATIONAL PLC By: 	  /s/ Judith A. Huckins 	    	  By: 	  /s/ Tara DeMakes Name: 	  Judith A. Huckins 	    	  Name: 	  Tara DeMakes Title: 	  Vice President 	    	  Title: 	  Secretary TBS INTERNATIONAL LIMITED 	    	  ALBEMARLE MARITIME CORP.
+By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary
+ARDEN MARITIME CORP. 	    	  AVON MARITIME CORP.
+By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary
+BIRNAM MARITIME CORP. 	    	  BRISTOL MARITIME CORP.
+By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary
+CHESTER SHIPPING CORP. 	    	  CUMBERLAND NAVIGATION CORP.
+By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary
+DARBY NAVIGATION CORP. 	    	  DOVER MARITIME CORP.
+By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary
+ELROD SHIPPING CORP. 	    	  EXETER SHIPPING CORP.
+By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary
+FRANKFORT MARITIME CORP. 	    	  GLENWOOD MARITIME CORP.
+By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary
+HANSEN SHIPPING CORP. 	    	  HARTLEY NAVIGATION CORP.
+By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary
+HENLEY MARITIME CORP. 	    	  HUDSON MARITIME CORP.

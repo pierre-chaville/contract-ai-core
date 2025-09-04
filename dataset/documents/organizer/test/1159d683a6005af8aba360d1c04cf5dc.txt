@@ -1,0 +1,51 @@
+EX-10.2 3 a09-29594_1ex10d2.htm EX-10.2
+Exhibit  10.2
+FIRST AMENDMENT
+DATED AS OF SEPTEMBER 28, 2009
+TO THE
+ISDA MASTER AGREEMENT
+DATED AS OF SEPTEMBER 22, 2009
+AMONG
+SEMPRA ENERGY TRADING LLC,
+MXENERGY ELECTRIC INC.
+AND
+THE SPECIFIED ENTITIES PARTY THERETO
+FIRST AMENDMENT dated as of September 28, 2009 (this "First Amendment ") to the ISDA MASTER AGREEMENT, dated as of September 22, 2009 (as amended, supplemented or otherwise modified as of the date hereof, the "_Electric Master ISDA Agreement "), among SEMPRA ENERGY TRADING LLC ("Party A_ "), MXENERGY ELECTRIC INC. ("Party B ") and the Specified Entities party thereto.
+W I T N E S S E T H :
+WHEREAS, Party A and Party B, among others, are parties to that certain ISDA Master Agreement dated as of September 22, 2009 and to the Schedule dated as of September 22, 2009 to the Electric Master ISDA Agreement (the "_Electric Master ISDA Schedule_ "); and
+WHEREAS, Party A and Party B wish to amend the Electric Master ISDA Schedule on the terms and conditions provided for herein.
+NOW, THEREFORE, in consideration of the mutual covenants and conditions set forth herein, the sufficiency of which is hereby acknowledged, the parties hereto agree as follows:
+# ARTICLE I DEFINITIONS AND INTERPRETATION
+#
+## SECTION 1.1 Definitions and Interpretation.
+##
+### (a) All capitalized terms used herein which are not otherwise specifically defined herein shall have the respective meaning as ascribed thereto in the Electric Master ISDA Agreement.
+###
+### (b) Unless otherwise expressly indicated, all references contained herein to Sections or other subdivisions, Schedules, Annexes or Exhibits refer to the corresponding Sections and other subdivisions, Schedules, Annexes or Exhibits of the Electric Master ISDA Agreement.
+###
+### (c) The sections and the headings in the sections in this First Amendment are for convenience only. Said sections and headings shall not be deemed to be part of this First Amendment and in no way define, limit, extend or describe the scope or intent of its provisions.
+# ARTICLE II AMENDMENTS
+#
+## SECTION 2.1 Amendment to Part  12(a)(vi)(A). Part  12(a)(vi)(A) of the Electric Master ISDA Schedule is hereby amended by deleting the semicolon and inserting in lieu thereof the following:
+##
+"provided that for the fiscal year ended June 30, 2009, Party B will furnish the financial statements referred to in the foregoing clauses (A)(1) and (A)(2) to Party A on or before October 13, 2009;"
+## SECTION 2.2 Amendments to Part  14(a).
+##
+### (a) The definition of "Adjusted Consolidated Tangible Net Worth" set forth in Part  14(a) of the Electric Master ISDA Schedule is hereby amended by renumbering the existing clause (vi) thereof as clause (vii) and inserting the following new clause (vi) immediately following the word "application" in clause (v):
+###
+", (vi) non-cash charges associated with any deferred tax valuation allowances"
+### (b) The definition of "Permitted Indebtedness" set forth in Part  14(a) of the Electric Master ISDA Schedule is hereby amended by deleting the word "and" appearing at the end of clause (xii) thereof, replacing the period at the end of clause (xiii) thereof with a semicolon and inserting the word "and" immediately thereafter, and inserting the following new clause (xiv) therein:
+###
+"(xiv) Indebtedness consisting of Subordinated Intercompany Promissory Notes."
+### (c) The following new defined term is added to Part  14(a), in proper alphabetical sequence:
+###
+""Subordinated Intercompany Promissory Notes" means, collectively, (i) that certain $6,000,000 Subordinated Promissory Note, dated as of September 22, 2009, by MX Energy in favor of MX Holdings, (ii) that certain $54,200,800 Subordinated Promissory Note, dated as of September 22, 2009, by MX Energy in favor of MX Holdings, and (iii) that certain $13,550,200 Subordinated Promissory Note, dated as of September 22, 2009, by Party B in favor of MX Holdings."
+# ARTICLE III MISCELLANEOUS
+#
+## SECTION 3.1 Electric Master ISDA Agreement. Except as amended by this First Amendment, the Electric Master ISDA Agreement shall remain in full force and effect in accordance with its terms. This First Amendment shall be deemed to be part of the Electric Master ISDA Agreement.
+##
+## SECTION 3.2 References to Electric Master ISDA Schedule. Whenever in any certificate, letter, notice or other instrument reference is made to the Electric Master ISDA Schedule, such reference without more shall include reference to this First Amendment.
+##
+## SECTION 3.3 Legal, Valid and Binding Obligation. Each party hereto hereby represents and warrants that this First Amendment is a legal, valid and binding obligation of such party and is enforceable against such party in accordance with its terms.
+## SECTION 3.4 Confirmation and Reaffirmation of ISDA Documents. Party B and each Specified Entity of Party B does hereby (a) consent and acknowledge and agree to the transactions described in this First Amendment and (b) after giving effect to this First Amendment, (i) ratify and confirm each ISDA Document to which it is a party and (ii) confirm and agree that each such ISDA Document is, and shall continue to be, in full force and effect; provided that each reference to the Electric Master ISDA Schedule therein and in each of the other ISDA Documents shall be deemed to be a reference to the Electric Master ISDA Schedule after giving effect to this First Amendment.
+##

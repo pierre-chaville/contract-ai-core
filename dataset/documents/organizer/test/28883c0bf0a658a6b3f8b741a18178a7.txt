@@ -1,0 +1,20 @@
+EX-10.1 2 dex101.htm FIRST AMENDMENT TO ISDA MASTER AGREEMENT AMONG GMAC BANK AND GMAC MORTGAGE, LLC
+Exhibit 10.1
+FIRST AMENDMENT TO
+ISDA MASTER AGREEMENT
+This First Amendment (the "Amendment") to the ISDA Master Agreement dated as of June 12, 2007 (the "Master Agreement") is made as of the 6th day of April 2009 (the "Effective Date," by and between GMAC BANK, a Utah state bank, with its principal office at 6985 Union Park Center, Suite 435, Midvale, Utah 84047 ("Party B"), and GMAC MORTGAGE, LLC, a Delaware limited liability company with offices at 1100 Virginia Drive, Fort Washington, Pennsylvania 19044 ("Party A").
+Explanatory Statement
+A. 	 Party A and Party B are parties to the Master Agreement, as supplemented by certain Schedules.
+B. 	 Party A and Party B wish to amend the Schedule dated as of July 1, 2008 to the Master Agreement.
+C. 	 Party A and Party B intend that this Amendment comply with requirements of Sections 23A and 23B of the Federal Reserve Act (12 USC §221 et. seq.) and with implementing federal regulations.
+D. 	 All capitalized terms not defined herein shall have the meanings ascribed to them in the Agreement.
+NOW, THEREFORE, in consideration of the mutual covenants and promises expressed herein, the parties hereto, intending to be legally bound, hereby agree as follows.
+1\. Amendments to the Schedule. Party A and Party B hereby agree that the Schedule dated as of July 1, 2008 (the "Schedule") shall be amended, effective as of the Effective Date, as follows:
+Subsection 6(a)(xvi) of the Schedule shall be amended to read in its entirety as follows:
+" Subject Transaction" means a legally binding commitment by Party B to purchase for its "Held for Sale" (HFS) portfolio, any loan from certain loan products and programs, as mutually agreed to by Party A and Party B, for which "Pipeline Risk" is managed by the ResCap Capital Markets Group.
+2\. Agreement Remains in Effect. Except as otherwise specifically set forth in Section 1 above, the Agreement and the Schedule shall remain in full force and effect without modification or amendment.
+IN WITNESS WHEREOF, the parties have executed this Amendment in two counterparts by their duly authorized representatives the day first above written.
+WITNESS/ATTEST: 	   	  	   	 Purchaser:
+GMAC Mortgage, LLC By:  	   	 /s/ James N. Young James N. Young CFO WITNESS/ATTEST: 	   	  	   	 Seller:
+GMAC Bank, a Utah state bank /s/ Linda Heigh 	   	  	   	 By: 	   	 /s/ Al Celini Al Celini Senior Vice President
+\- 2 -

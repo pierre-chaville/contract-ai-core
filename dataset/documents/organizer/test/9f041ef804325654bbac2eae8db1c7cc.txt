@@ -1,0 +1,51 @@
+EX-4.1(II) 3 dex41ii.htm SCHEDULE TO WELLS FARGO BANK, N.A. ISDA MASTER AGREEMENT
+Exhibit 4.1 (ii)
+SCHEDULE
+to the
+ISDA MASTER AGREEMENT
+This is the Schedule to that certain ISDA Master Agreement dated as of March 6, 2008 between Wells Fargo Bank, N.A.("Party A") and Barnes Group Inc. , a Delaware corporation ("Party B").
+PART 1
+Termination Provisions
+In this Agreement:
+(A) "Specified Entity " means in relation to Party A for the purpose of:
+Section 5(a)(v) (Default under Specified Transaction) 	    	 None.; Section 5(a)(vi) (Cross Default), 	    	 None.; Section 5(a)(vii) (Bankruptcy), 	    	 None.; and Section 5(b)(iv) (Credit Event Upon Merger), 	    	 None.
+"Specified Entity " means in relation to Party B for the purpose of:
+Section 5(a)(v) (Default under Specified Transaction) 	    	 Subsidiaries, as defined in the Credit Agreement Section 5(a)(vi) (Cross Default), 	    	 Subsidiaries, as defined in the Credit Agreement Section 5(a)(vii) (Bankruptcy), 	    	 Significant Subsidiaries, as defined in the Credit Agreement; and Section 5(b)(iv) (Credit Event Upon Merger), 	    	 Subsidiaries, as defined in the Credit Agreement
+(B) "Specified Transaction " will have the meaning specified in Section 14 of this Agreement.
+(C) The "Cross-Default " provisions of Section 5(a)(vi) of this Agreement will apply to Party A and to Party B, provided, however , that the following provision shall be inserted at the end of Section 5(a)(vi):
+"provided, however , that an Event of Default shall not occur under either
+(1) or (2) above if the default, Event of Default or other similar event or condition referenced to in (1) or the failure to pay referred to in (2) is a failure to pay caused by an error or omission of an administrative or operational nature and funds were available to such party to enable it to make the relevant payment when due and such payment is in fact made on or before the second Local Business Day following receipt of written notice from the other party of such failure to pay."
+"Specified Indebtedness" will have the meaning specified in Section 14; provided, however, with respect to Party A such term shall not include deposits and obligations in respect of deposits received in the ordinary course of Party A's banking business.
+"Threshold Amount" means with respect to Party A, an amount equal to 3% of the Shareholders Equity (as hereinafter defined) of Party A and with respect to Party B, (i) $0 in respect of any Specified Indebtedness owing to Party A, and (ii) $20,000,000 in respect of any other Specified Indebtedness.
+For purposes of the foregoing, the term "Shareholders Equity" shall mean an amount equal to the greater of (x) zero and (y) an amount equal to such party's total assets minus its total liabilities, as reflected on such party's most recent audited financial statements, or if such party does not have audited financial statements, then its most recent financial statements.
+(D) The "Credit Event Upon Merger " provisions of Section 5(b)(iv) of this Agreement will apply to Party A and to Party B.
+(E) The "Automatic Early Termination " provision of Section 6(a) of this Agreement will not apply to Party A or to Party B.
+(F) Payments on Early Termination. For the purpose of Section 6(e) of this Agreement: (i) Market Quotation will apply, and (ii) Second Method will apply.
+(G) "Termination Currency " means United States Dollars.
+(H) Additional Termination Event will apply. Each of the following shall constitute an Additional Termination Event:
+(a) The Fourth Amended and Restated Revolving Credit Agreement made as of September 19, 2007 by and among Barnes Group Inc. and Barnes Group Switzerland GmbH, as Borrowers, Bank of America, N.A. and the other lending institutions from time to time party thereto, as Lenders, Banc of America Securities LLC, as Arranger, KeyBank National Association and JPMorgan Chase Bank, N.A., as Co-Syndication Agents, and The Bank of New York and The Governor and Company of The Bank of Ireland, as Co-Documentation Agents, as amended, modified, supplemented, renewed, extended or replaced from time to time (the " Credit Agreement"), or any promissory note, loan agreement, credit agreement, reimbursement agreement or other document or instrument evidencing a credit extension from Party A to Party B, is terminated, cancelled, voided, breached or amended in any manner which would affect Party B's ability to perform its obligations under this Agreement, determined by Party A in its sole discretion. Upon the occurrence of such event, Party B shall be deemed to be the sole Affected Party and all Transactions shall be deemed to be Affected Transactions;
+(b) If there shall exist a "Change of Control" as defined in the Credit Agreement. Upon the occurrence of such event, Party B shall be deemed to be the sole Affected Party and all Transactions shall be deemed to be Affected Transactions; or
+(c) During the term of this Agreement, Party B shall at any time (A) grant or cause to be granted to any person a lien upon or security interest in any property as security, or provide a letter of credit or other credit support, for the obligations of Party B under the Credit Agreement and (B) fail at the same time to provide Party A collateral, letter of credit or other credit support in amount, form, and substance satisfactory to Party A (in its sole discretion) to secure the obligations of Party B hereunder. Upon the occurrence of such event, Party B shall be deemed to be the sole Affected Party and all Transactions shall be deemed to be Affected Transactions.
+PART 2
+Tax Representations
+(A) Payer Representations. For the purpose of Section 3(e) of this Agreement, each party makes the following representation:
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 2(e), 6(d)(ii) or 6(e) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on (i) the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement, (ii) the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement and (iii) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement, provided that it shall not be a breach of this representation where reliance is placed on clause (ii) and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+(B) Payee Representations .
+(i) For the purpose of Section 3(f) of this Agreement, Party A represents that it is a national banking association organized under the laws of the United States.
+(ii) For the purpose of Section 3(f) of this Agreement, Party B represents that it is a corporation established under the laws of the State of Delaware.
+PART 3
+Agreement to Deliver Documents
+For the purposes of Section 4(a)(i) and (ii) of this Agreement, the parties agrees that the following documents will be delivered:
+Party  Required to Deliver Document 	    	  Form/Document/Certificate 	    	  Date  by which to  be delivered 	    	  Covered by Section 3(d) Representation Party A and Party B 	    	 Satisfactory evidence of its capacity and ability to enter into this Agreement and any Transaction hereunder 	    	 Upon execution of this Agreement and upon request 	    	 Yes Party A and Party B 	    	 Certified evidence of the authority, incumbency and specimen signature of each person executing any document on its behalf in connection with this Agreement 	    	 Upon execution of this Agreement and upon request 	    	 Yes Party A and Party B 	    	 The Credit Support Document(s), if any, listed in Part 4(f) of this Schedule 	    	 Upon execution of this Agreement 	    	 Yes
+Party  Required to Deliver Document 	    	  Form/Document/Certificate 	    	  Date  by which to  be delivered 	    	  Covered by Section 3(d) Representation Party A and Party B 	    	 Duly executed and completed U.S. Internal Revenue Service Form W-9 (or successor thereto). 	    	 Upon execution of this Agreement, promptly upon reasonable demand by Party A and promptly upon learning that any such form previously provided by Party B has become obsolete or incorrect 	    	 Yes Party A and Party B 	    	 Such other documents as Party A or Party B may reasonably request 	    	 Upon request 	    	 Yes
+PART 4
+Miscellaneous
+(A) Addresses for Notices. For the purpose of Section 12(a) of this Agreement:
+Address for notices or communications to Party B:
+Address: 	    	 Barnes Group Inc.
+123 Main Street P.O. Box 489 Bristol, Connecticut 06011 -0489 Facsimile: (860) 582-4008 Attention: Treasurer With a copy to:
+Barnes Group Inc.
+123 Main Street P.O. Box 489 Bristol, Connecticut 06011 -0489 Attention: General Counsel
+Address for all notices or communications to Party A:
+Address: 	    	 Wells Fargo Bank, N.A.
+550 California Street, Suite 1210 MAC A0112-121 San Francisco, California 94104 Telephone: (877) 240-0795 Facsimile: (415) 986-2604 Attention: Derivatives Documentation Manager

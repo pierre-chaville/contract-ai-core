@@ -1,0 +1,51 @@
+EX-99 13 exhibit9911.htm EXHIBIT 99.11
+(Multicurrency - Cross Border)
+ISDA a
+International Swaps and Derivatives Association, Inc.
+MASTER AGREEMENT
+dated as of September 30, 2005
+HSBC BANK USA, NATIONAL ASSOCIATION 	 and 	 SUPPLEMENTAL INTEREST TRUST, STRUCTURED ASSET INVESTMENT LOAN TRUST MORTGAGE PASS-THROUGH CERTIFICATES, SERIES 2005-8
+have entered and/or anticipate entering into one or more transactions (each a "Transaction") that are or will be governed by this Master Agreement, which includes the schedule (the "Schedule"), and the documents and other confirming evidence (each a "Confirmation") exchanged between the parties confirming those Transactions.
+Accordingly, the parties agree as follows:
+1.
+Interpretation
+(a)
+Definitions. The terms defined in Section 14 and in the Schedule will have the meanings therein specified for the purpose of this Master Agreement.
+(b)
+Inconsistency. In the event of any inconsistency between the provisions of the Schedule and the other provisions of this Master Agreement, the Schedule will prevail. In the event of any inconsistency between the provisions of any Confirmation and this Master Agreement (including the Schedule), such Confirmation will prevail for the purpose of the relevant Transaction.
+(c)
+Single Agreement. All Transactions are entered into in reliance on the fact that this Master Agreement and all Confirmations form a single agreement between the parties (collectively referred to as this "Agreement"), and the parties would not otherwise enter into any Transactions.
+2.
+Obligations
+(a)
+General Conditions.
+(i)
+Each party will make each payment or delivery specified in each Confirmation to be made by it, subject to the other provisions of this Agreement.
+(ii)
+Payments under this Agreement will be made on the due date for value on that date in the place of the account specified in the relevant Confirmation or otherwise pursuant to this Agreement, in freely transferable funds and in the manner customary for payments in the required currency. Where settlement is by delivery (that is, other than by payment), such delivery will be made for receipt on the due date in the manner customary for the relevant obligation unless otherwise specified in the relevant Confirmation or elsewhere in this Agreement.
+value of that which was (or would have been) required to be delivered as of the originally scheduled date for delivery, in each case together with (to the extent permitted under applicable law) interest, in the currency of such amounts, from (and including) the date such amounts or obligations were or would have been required to have been paid or performed to (but excluding) such Early Termination Date, at the Applicable Rate. Such amounts of interest will be calculated on the basis of daily compounding and the actual number of days elapsed. The fair market value of any obligation referred to in clause
+(b) above shall be reasonably determined by the party obliged to make the determination under Section 6(e) or, if each party is so obliged, it shall be the average of the Termination Currency Equivalents of the fair market values reasonably determined by both parties.
+IN WITNESS WHEREOF the parties have executed this document on the respective dates specified below with effect from the date specified on the first page of this document.
+HSBC BANK USA, NATIONAL ASSOCIATION 	  	 SUPPLEMENTAL INTEREST TRUST, STRUCTURED ASSET INVESTMENT LOAN TRUST MORTGAGE PASS-THROUGH CERTIFICATES, SERIES 2005-8 (Name of Party) 	  	 (Name of Party) By:  U.S. Bank National Association, not in its individual capacity, but solely as Trustee /s/  Shane Lovell                                             	  	      /s/  Diana J. Kenneally Name:  Shane Lovell 	  	 Name:  Diana J. Kenneally Title:     Senior Vice President 	  	 Title:     Assistant Vice President Date:     September 30, 2005 	  	 Date:     September 30, 2005
+Copyright (C) 1992 by International Swap Dealers Association, Inc.
+Execution version
+(Multicurrency - Cross Border)
+ISDA ®
+International Swaps and Derivatives Association, Inc.
+SCHEDULE
+to the
+Master Agreement
+dated as of September 30, 2005
+between
+HSBC BANK USA, NATIONAL ASSOCIATION
+and 	 SUPPLEMENTAL INTEREST TRUST, STRUCTURED ASSET INVESTMENT LOAN TRUST MORTGAGE PASS-THROUGH CERTIFICATES, SERIES 2005-8 ( "Party A") 	  	 ( "Party B";')
+Part 1.  Termination Provisions.
+(a)
+" Specified Entity" means in relation to Party A for the purpose of:
+Section 5(a)(v), not applicable
+Section 5(a)(vi), not applicable
+Section 5(a)(vii), not applicable
+Section 5(b)(iv), not applicable
+and in relation to Party B for the purpose of:
+Section 5(a)(v), not applicable
+Section 5(a)(vi), not applicable

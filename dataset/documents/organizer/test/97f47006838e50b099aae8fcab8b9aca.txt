@@ -1,0 +1,51 @@
+EX-10.2 3 exh10-2_1420488.htm SCHEDULE TO 2002 ISDA MASTER AGREEMENT
+EXHIBIT 10.2
+ISDA®
+International Swaps and Derivatives Association, Inc.
+SCHEDULE
+to the
+2002 Master Agreement
+dated as of June 7, 2010
+between
+NATIXIS a public limited company incorporated with a Board of Directors (societe anonyine a conseil d'administration) under the laws of the Republic of France ("Party A") 	  and 	  CINEDIGM DIGITAL FUNDING I, LLC a limited liability company formed under the laws of the State of Delaware ("Party B")
+Part 1
+Termination Provisions
+(a) "Specified Entity" means in relation to Party A for the purpose of:--
+Section 5(a)(v): Not applicable
+Section 5(a)(vi): Not applicable
+Section 5(a)(vii): Not applicable
+Section 5(b)(v): Not applicable
+and in relation to Party B for the purpose of:
+Section 5(a)(v): Not applicable
+Section 5(a)(vi): Not applicable
+Section 5(a)(vii): Not applicable
+Section 5(b)(v): Not applicable
+(b) 	  "Specified Transaction" will have the meaning specified in Section 14 of this Agreement.
+(c) 	  The "Cross-Default" provisions of Section 5(a)(vi) will apply to Party A and to Party B; provided, however, that the words ", or becoming capable at such time of being declared," shall be deleted from Section 5(a)(vi)(1) and that the following shall be added at the end of Section 5(a)(vi): "provided, however, that notwithstanding anything in this Section 5(a)(vi), an Event of
+Default shall not occur under (2) above if the failure to pay referred to in
+(2) is a failure to pay caused by an error or omission of an administrative or operational nature and funds were available to such party or any Credit Support Provider of such party to enable it to make the relevant payment when due and such payment is in fact made on or before the third Local Business Day following notice from the other party given to such party or any Credit Support Provider of such party of such failure to pay".
+"Specified Indebtedness" will have the meaning specified in Section 14 of this Agreement but shall exclude indebtedness in respect of deposits received in the ordinary course of business and with respect to Party B shall include, without limitation, reimbursement obligations in respect of letters of credit, bankers' acceptances with third parties and capital leases.
+"Threshold Amount" means with respect to Party A, an amount equal to 3% of shareholder's equity, and with respect to Party B, (a) USD 250,000, or the equivalent in any other currency with respect to any default under Section 5(a)(vi)(ii) and (b) zero (0) with respect to any default under Section 5(a)(vi)(i); provided, however, that the "Threshold Amount" shall mean zero
+(0) with respect to any Specified Indebtedness of Party B owed to Party A.
+(d) 	  The "Credit Event Upon Merger" provisions of Section 5(b)(v) will apply to Party A and Party B but if "X" is Party A, "materially weaker" shall mean that the successor, surviving or transferee entity is an entity whose long-term, unsecured, unsubordinated debt securities are rated "BBB+" or below by Standard & Poor's Corporation ("S&P") or "Baal " or below by Moody's Investors Service, Inc. ("Moody's").
+(e) 	  The "Automatic Early Termination" provision of Section 6(a) will not apply to Party A or Party B.
+(f) 	  "Termination Currency" means United States Dollars (USD).
+(g) 	  "Additional Termination Event" provision of Section 5(b) will not apply to Party A and will apply to Party B. The following shall constitute an Additional Termination Event in respect of which Party B shall be the sole Affected Party:
+(A) The credit agreement dated as of May 6, 2010, among Party B, as Borrower, Societe Generale, New York Branch, as Co-Administrative Agent and Paying Agent, General Electric Capital Corporation, as Co-Administrative Agent and Collateral Agent; and the Lenders party thereto, as amended, supplemented or modified from time to time (the "Credit Agreement") or any Credit Support Document (as hereinafter defined) (x) is prepaid or repaid, expires, ceases to be in full force and effect or terminates for any reason.
+(B) Party B shall fail to make one or more payments under the Credit Agreement on the due date for such payment(s) (after giving effect to any applicable notice requirement or grace period).
+(C) An "Event of Default" (however described) occurs under the Credit Agreement, resulting in an acceleration of the Obligations (as defined in the Credit Agreement) thereunder.
+(D) Loss of pari passu status/security\- unless otherwise agreed to by Party A, if at any time (a) the obligations of Party B under this Agreement are no longer ranked pan passu with all Obligations (as defined in the Credit Agreement) under the Credit Agreement and senior in right
+of payment and of collateral security to all other Specified Indebtedness or
+(b) if the obligations under this Agreement are no longer secured under the Credit Agreement.
+(E) Increase in Indebtedness \- Party B shall incur, maintain or otherwise suffer to exist any Lien (as such term is defined under the Credit Agreement) upon or with respect to any of its property, or incur or otherwise remain liable with respect to or responsible for, any Indebtedness (as such term is defined under the Credit Agreement) other than in accordance with the provisions of the Credit Agreement (without regard to any amendments thereto after the date of this Agreement).
+Part 2
+Tax Representations
+(a) Payer Representations. For the purpose of Section 3(e) of this Agreement:--
+(i) 	  Party A and Party B each make the following representation:--
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 9(h) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement, except that it will not be a breach of this representation where reliance is placed on the agreement contained in, or the accuracy or effectiveness of any document provided by the other party pursuant to, Section 4(a)(iii) of this Agreement and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+(b) 	  Payee Representations. For the purpose of Section 3(f) of this Agreement, Party A and Party B make the following representations:
+(i) 	  Party A makes the following representations:
+(1) 	  It is a "foreign person" as that term is used in United States Treasury Regulation section 1 .6041-4(a)(4) and, unless Party A otherwise provides written notice to Party B with respect to a particular Transaction, each payment made to Party B or received from Party B with respect to any Transaction under this Agreement will be effectively connected with its conduct of a trade or business in the United States of America; and .
+(2) 	  If Party A provides written notice to Party B that payments received or to be received by Party B with respect to a particular Transaction will not be effectively connected with Party A's conduct of a trade or business in the United States of America, Party A represents that it is a "foreign person" within the meaning of United States Treasury Regulation section 1.6041-4(a)(4) and a "non-US branch
+of a foreign person" within the meaning of United States Treasury Regulation section 1.1441-4(a)(3)(ii); it is fully eligible for the benefits of the "Business Profits" or "Industrial and Commercial Profits" provision (as the case may be), the "Interest" provision, or the "Other Income" (or similar) provision of the Specified Treaty with respect to any payment described in such provisions and received or to be received by it in connection with this Agreement; such payment is not effectively connected with Party A's conduct of a trade or business within the United States of America and such payment is not attributable to a trade or business carried on by Party A through a permanent establishment in the United States of America.
+"Specified Treaty" means the income Tax Treaty between the United States of America and France.

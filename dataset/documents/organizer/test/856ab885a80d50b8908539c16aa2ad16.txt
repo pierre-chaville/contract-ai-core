@@ -1,0 +1,51 @@
+EX-10.8 11 exh10-8_1429154.htm SCHEDULE TO THE 2002 ISDA MASTER AGREEMENT
+EXHIBIT 10.8
+ISDA®
+International Swaps and Derivatives Association, Inc.
+SCHEDULE
+to the
+2002 Master Agreement
+dated as of May 28, 2010
+between
+SOCIÉTÉ GÉNÉRALE a company incorporated under the laws of France ("Party A") 	  and 	  CINEDIGM DIGITAL FUNDING I, LLC a limited liability company formed under the laws of the State of Delaware ("Party B")
+Part 1
+Termination Provisions
+(a) 	  "Specified Entity" means in relation to Party A for the purpose of:
+Section 5(a)(v): Not applicable
+Section 5(a)(vi): Not applicable
+Section 5(a)(vii): Not applicable
+Section 5(b)(v): Not applicable
+and in relation to Party B for the purpose of:
+Section 5(a)(v): Not applicable
+Section 5(a)(vi): Not applicable
+Section 5(a)(vii): Not applicable
+Section 5(b)(v): Not applicable
+(b) 	  "Specified Transaction" will have the meaning specified in Section 14 of this Agreement.
+(c) 	  The "Cross-Default" provisions of Section 5(a)(vi) will apply to Party A and to Party B; provided, however, that the words ", or becoming capable at such time of being declared," shall be deleted from Section 5(a)(vi)(l) and that the following shall be added at the end of Section 5(a)(vi): "provided, however, that notwithstanding anything in this Section 5(a)(vi), an Event of Default shall not occur under (2) above if the failure to pay referred to in (2) is a failure to pay caused by an error or omission of an administrative or operational nature and funds were available to such party or any Credit Support Provider of such Party to enable it to make the relevant
+payment when due and such payment is in fact made on or before the third Local Business Day following notice from the other party given to such party or any Credit Support Provider of such party of such failure to pay".
+"Specified Indebtedness" will have the meaning specified in Section 14 of this Agreement but shall exclude indebtedness in respect of deposits received in the ordinary course of business and with respect to Party B shall include, without limitation, reimbursement obligations in respect of letters of credit, bankers' acceptances with third parties and capital leases.
+"Threshold Amount" means with respect to Party A, an amount equal to 3% of shareholder's equity, and with respect to Party B, (a) USD 250,000, or the equivalent in any other currency with respect to any default under Section 5(a)(vi)(ii) and (b) zero (0) with respect to any default under Section 5(a)(vi)(i); provided, however, that the "Threshold Amount" shall mean zero
+(0) with respect to any Specified Indebtedness of Party B owed to Party A.
+(d) 	  The "Credit Event Upon Merger" provisions of Section 5(b)(v) will apply to Party A and Party B but if "X" is Party A, "materially weaker" shall mean that the successor, surviving or transferee entity is an entity whose long-term, unsecured, unsubordinated debt securities are rated "BBB+" or below by Standard & Poor's Corporation ("S&P") or "Baal" or below by Moody's Investors Service, Inc. ("Moody's").
+(e) 	  The "Automatic Early Termination" provision of Section 6(a) will not apply to Party A or Party B.
+(f) 	  "Termination Currency" means United States Dollars (USD).
+(g) 	  "Additional Termination Event" provision of Section 5(b) will not apply to Party A and will apply to Party B. The following shall constitute an Additional Termination Event in respect of which Party B shall be the sole Affected Party:
+(A) The credit agreement dated as of May 6, 2010, among Party B, as Borrower, Societe Generale, New York Branch, as Co-Administrative Agent and Paying Agent, General Electric Capital Corporation, as Co-Administrative Agent and Collateral Agent and the Lenders Party thereto, as amended, supplemented or modified from time to time (the "Credit Agreement") or any Credit Support Document (as hereinafter defined) is prepaid or repaid, expires, ceases to be in full force and effect or terminates for any reason.
+(B) Party B shall fail to make one or more payments under the Credit Agreement on the due date for such payment(s) (after giving effect to any applicable notice requirement or grace period, if any, set forth in the Credit Agreement).
+(C) An "Event of Default" (however described) occurs under the Credit Agreement, resulting in an acceleration of the Obligations (as defined in the Credit Agreement) thereunder.
+(D) Loss of pari passu status/security: unless otherwise agreed to by Party A, at any time (a) the obligations of Party B under this Agreement are no longer ranked pari passu with all Obligations (as defined in the Credit Agreement) under the Credit Agreement and senior in right of payment and of collateral security to all other Specified Indebtedness or (b) the obligations under this Agreement are no longer secured under the Credit Agreement.
+(E) Increase in Indebtedness: Party B shall incur, maintain or otherwise suffer to exist any Lien (as such term is defined under the Credit Agreement), upon or with respect to any of its property, or incur or otherwise remain liable with respect to or responsible for any Indebtedness (as such term is defined under the Credit Agreement) other than in accordance with the provisions of the Credit Agreement (without regard to any amendments thereto after the date of this Agreement).
+Part 2
+Tax Representations
+(a) Payer Representations. For the purpose of Section 3(e) of this Agreement:
+(i) Party A and Party B each make the following representation:
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 9(h) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement, except that it will not be a breach of this representation where reliance is placed on the agreement contained in, or the accuracy or effectiveness of any document provided by the other Party pursuant to, Section 4(a)(iii) of this Agreement and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+(b) 	  Payee Representations. For the purpose of Section 3(t) of this Agreement, Party A and Party B do not make any representations.
+Part 3
+Agreement to Deliver Documents
+For the purpose of Sections 4(a)(i) and 4(a)(ii) of this Agreement, each party agrees to deliver the following documents, as applicable:
+(a) Tax forms, documents or certificates to be delivered are:
+Party required to deliver document 	  Form/Document/ Certificate 	  Date by which to be delivered Party A and Party B 	  A correct, complete and original executed United States Internal Revenue Service Form W-8BEN, W-SECI, W-SIMY or W-9, as applicable (or any successor form) that eliminates U.S. federal withholding and backup withholding payments under this Agreement. 	  (i) Before the first Payment Date on which any such payment is made, (ii) promptly upon reasonable demand, and (iii) promptly upon learning that any previously-provided form has become obsolete or incorrect.
+(b) Other documents to be delivered are:
+Party required to deliver document 	  Form/Document/ Certificate 	  Date by which to be delivered 	  Covered by Section 3(d) Representation Party A 	  A certificate of authority and specimen signature of the persons authorized to execute this Agreement and each Confirmation on behalf of Party A. 	  Upon execution of this Agreement and thereafter upon the reasonable request of Party B. 	  Yes Party B 	  A certificate of incumbency and a certified copy of the resolutions adopted by the Board of Directors of Party B, authorizing the execution and delivery of this Agreement and each Confirmation and the performance by Party B of its obligations hereunder and thereunder. 	  Upon execution of this Agreement and thereafter upon the reasonable request of Party A. 	  Yes
+Party A 	  A certificate of authority and A copy of its most recent annual report containing audited financial statements. 	  Upon execution of this Agreement and thereafter upon the reasonable request of the other party. 	  Yes Party B 	  A copy of its most recent annual report containing audited financial statements (if such report has been produced) and an audited financial statement. 	  Upon the reasonable request of the other party. 	  Yes

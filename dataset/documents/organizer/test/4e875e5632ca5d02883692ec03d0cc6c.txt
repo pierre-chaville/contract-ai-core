@@ -1,0 +1,51 @@
+EX-99.2 3 a10-11407_1ex99d2.htm EX-99.2
+Exhibit  99.2
+SECOND AMENDMENT
+DATED AS OF MAY 28, 2010
+TO THE
+ISDA MASTER AGREEMENT
+DATED AS OF SEPTEMBER 22, 2009
+AMONG
+SEMPRA ENERGY TRADING LLC,
+MXENERGY ELECTRIC INC.
+AND
+THE SPECIFIED ENTITIES PARTY THERETO
+SECOND AMENDMENT dated as of May 28, 2010 (this "Second Amendment ") to the ISDA MASTER AGREEMENT, dated as of September 22, 2009 (as amended by that certain First Amendment thereto, dated as of September 28, 2009, and as further amended, supplemented or otherwise modified as of the date hereof, the "Electric ISDA Master Agreement "), among SEMPRA ENERGY TRADING LLC ("_Party A "), MXENERGY ELECTRIC INC. ("Party B_ ") and the Specified Entities party thereto.
+W I T N E S S E T H :
+WHEREAS, Party A and Party B, among others, are parties to the Electric ISDA Master Agreement and to the Schedule dated as of September 22, 2009 to the Electric ISDA Master Agreement (as amended, the "_Electric ISDA Master Schedule_ "); and
+WHEREAS, Party A and Party B wish to amend the Electric ISDA Master Schedule on the terms and conditions provided for herein.
+NOW, THEREFORE, in consideration of the mutual covenants and conditions set forth herein, the sufficiency of which is hereby acknowledged, the parties hereto agree as follows:
+# ARTICLE I DEFINITIONS AND INTERPRETATION
+#
+## SECTION 1.1 Definitions and Interpretation.
+##
+### (a) All capitalized terms used herein which are not otherwise specifically defined herein shall have the respective meaning as ascribed thereto in the Electric ISDA Master Agreement.
+###
+### (b) Unless otherwise expressly indicated, all references contained herein to Sections or other subdivisions, Schedules, Annexes or Exhibits refer to the corresponding Sections and other subdivisions, Schedules, Annexes or Exhibits of the Electric ISDA Master Agreement.
+###
+### (c) The sections and the headings in the sections in this Second Amendment are for convenience only. Said sections and headings shall not be deemed to be part of this Second Amendment and in no way define, limit, extend or describe the scope or intent of its provisions.
+###
+# ARTICLE II AMENDMENTS
+#
+## SECTION 2.1 Amendment to Part  3(2). Part  3(2) of the Electric ISDA Master Schedule is hereby amended by inserting the following at the end thereof:
+"Party B 	    	  Citi Control Agreements 	    	  On the Second Amendment Effective Date 	    	  Yes"
+##
+## SECTION 2.2 Amendments to Part  4(a).
+##
+### (a) Part  4(a) of the Electric ISDA Master Schedule is hereby amended by deleting the reference to "600 Washington Blvd, Mail Code CS0930, Stamford, Connecticut 06901" contained in the third line thereof and inserting in lieu thereof "58 Commerce Road, Stamford, Connecticut 06902."
+###
+### (b) Part  4(a) of the Electric ISDA Master Schedule is hereby amended by deleting the reference to "600 Washington Blvd, Stamford, Connecticut 06901" contained in the eighteenth and nineteenth lines thereof and inserting in lieu thereof "58 Commerce Road, Stamford, Connecticut 06902."
+###
+## SECTION 2.3 Amendments to Part  11(b)(i). Part  11(b)(i) of the Electric ISDA Master Schedule is hereby amended to read in its entirety as follows:
+##
+### "(i) Party B represents and warrants that the following bank accounts are the sole bank accounts utilized by Party B to receive funds from EDCs and other payers (each a "Lockbox Account "):
+###
+#### "(A) Account Number: 2000008695525 in the name of: Party B; Institution:
+Wachovia
+####
+#### (B) Account Number: 20000030372683 in the name of: Party B; Institution:
+Wachovia
+####
+## (C) Account Number: 01892476728 in the name of: Party B; Institution:
+Huntington
+##

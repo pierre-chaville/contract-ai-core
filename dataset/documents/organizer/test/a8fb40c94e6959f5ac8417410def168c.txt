@@ -1,0 +1,51 @@
+EX-99.1 2 pplusjpm-8Kex991_0411.htm
+SWAP TRANSFER AND ASSIGNMENT AGREEMENT
+dated as of April 12, 2012
+(this "Transfer Agreement")
+between
+Merrill Lynch International ("MLI")
+and
+Merrill Lynch Capital Services, Inc. ("MLCS")
+MLCS and PPLUS Trust Series JPM-1 ("Counterparty") have entered into a Transaction (the "Transferred Transaction"), evidenced by a Confirmation (an "Transferred Confirmation"), subject to a 1992 ISDA Master Agreement including a Schedule thereto each dated August 3, 2004 (as may have been amended from time to time), a copy of which is attached to this agreement as Exhibit A (the "Transferred Master Agreement").
+With effect from and including the Transfer Date as defined below, MLCS wishes to transfer and assign to MLI, and MLI wishes to accept the transfer and assignment from MLCS of, all the rights, liabilities, duties and obligations of MLCS under and in respect of the Transferred Master Agreement (including without limitation the rights and obligations under the Transferred Transaction), as more particularly described below.
+NOW, THEREFORE, in consideration of the mutual agreements herein contained, the parties hereto hereby acknowledge and agree as follows:
+Section 1. Definitions. Capitalized terms used and not defined herein shall have the meanings given to them in the Transferred Master Agreement.
+Section 2. Conditions to Occurrence of the Transfer Date. The assignment and transfer contemplated hereby will become effective on the date that:
+(i) each of MLI and MLCS has delivered to the other an executed counterpart of this Transfer Agreement;
+(ii) Merrill Lynch & Co. Inc. has delivered to Counterparty the guarantee agreement in the form of Exhibit B; and
+(iii) MLCS has received the rating agency confirmation required by the last paragraph of Part 5(e) of the Schedule to the Transferred Master Agreement or any similar advice from the relevant rating agency pursuant to such rating agency's policies in effect as of the date of this Transfer Agreement.
+(such date that the conditions in (i), (ii) and (iii) above have been satisfied, the "Transfer Date").
+Section 3. Transfer, Assignment and Undertakings. With effect from and including the Transfer Date and in consideration of the mutual representations, warranties and covenants contained in this Transfer Agreement and other good and valuable consideration (the receipt and sufficiency of which are hereby acknowledged by each of the parties), MLCS hereby transfers and assigns to MLI all of MLCS's rights and obligation in respect of the Transferred Master Agreement, and MLI hereby accepts and assumes such rights and obligations, such that:
+(a) Pursuant to Part 5(e) of the Schedule to the Transferred Master Agreement, MLCS shall cease to have further rights against Counterparty, and is deemed released and discharged from further obligations to Counterparty, with respect to the Transferred Master Agreement, pursuant to the acceptance and assumption of such rights and obligations by MLI in accordance with (b) below;
+(b) Pursuant to Part 5(e) of the Schedule to the Transferred Master Agreement, MLI shall have all rights and obligations of MLCS in respect of the Transferred Master Agreement (including, without limitation, any obligation to act as Calculation Agent or Valuation Agent and, for the avoidance of doubt, as if MLI were MLCS and with Counterparty remaining Counterparty).
+Section 4. Representations and Warranties. On the date of this Transfer Agreement and on the Transfer Date:
+(a) Each of the parties makes to each of the other parties those representations and warranties set forth in Section 3(a) of the 1992 ISDA Master Agreement with references in such Section to "this Agreement" or "any Credit Support Document" being deemed references to this Transfer Agreement alone.
+(b) MLCS represents and warrants for the benefit of Counterparty and MLI that:
+(i) it has made no prior transfer of any interest or obligation in or under the Transferred Master Agreement;
+(ii) as of the Transfer Date, all obligations of MLCS and Counterparty under the Transferred Master Agreement required to be performed on or before the Transfer Date have been fulfilled; and
+(iii) the conditions precedent under Part 5(e) of the Schedule to the Transferred Master Agreement for the transfer or assignment of rights and obligations under the Transferred Master Agreement have been satisfied.
+(c) MLI represents and warrants for the benefit of Counterparty and MLCS that:
+(i) MLI will not be required to withhold or deduct on account of any Tax from any payments under the Transferred Master Agreement in excess of what would have been required to be withheld or deducted in the absence of the transfer and assignment effected hereby;
+(ii) no Termination Event or Event of Default will occur under the Transferred Master Agreement as a result of the transfer and assignment effected hereby;
+(iii) MLI is a dealer in notional principal contracts as that term is used in U.S. Treasury Regulations Section 1.1001-4(a); and
+(iv) no substitution assignment amount will be payable by Counterparty in connection with the transfer and assignment effected hereby.
+Section 5. Additional Provisions.
+(a) For the purpose of Section 3(f) of the Transferred Master Agreement, MLI will make the following representation:
+(A) Party A is a company duly organized and validly existing under the laws of England and Wales.
+(B) Party A is eligible for the "Business Profits", "Interest" and "other Income" provisions in the Convention between the Government of the United States of America and the Government of the United Kingdom of Great Britain and Northern Ireland for the Avoidance of Double Taxation and the Prevention of Fiscal Evasion with respect to Taxes on Income and on Capital Gains (signed on July 24, 2001) in respect of all payments received or to be received in connection with this Agreement and no such payment is attributable to a trade or business carried on by it through a permanent establishment in the U.S.
+(C) Party A is a hybrid entity that is treated as a pass-thru entity for U.S.
+federal income tax purposes and each partner or owner of Party A is a "non-U.S. branch of a foreign person" for purposes of section 1.1441-4(a)(3)(ii) of the United States Treasury Regulations and a "foreign person" for purposes of section 1.6041-4(a)(4) of the United States Treasury Regulations.
+(b) The documents to be delivered by MLI to Counterparty for the purposes of Section 4(a)(i) and 4(a)(ii) of the Transferred Master Agreement shall be as follows:
+"MLI 	  A correct and complete U.S. Internal Revenue Service Form W-8BEN or any successor thereto claiming the benefit of the U.S.-U.K. income tax treaty, signed in original. 	  	  (i) Promptly upon reasonable demand by the other party."
+(c) The address for notices and communications to MLI for the purposes of Section 12(a) of the Transferred Master Agreement shall be as follows:
+"Address for notices or communications to MLI:
+Merrill Lynch International Bank of America Merrill Lynch Financial Centre 2 King Edward Street London EC1A 1HQ United Kingdom Attention: Manager - Fixed Income Settlements Telephone No.: (44-20) 7995 7126 Facsimile No.: (44-20) 7995 0616 with a copy (in the case of notices regarding Sections 5, 6, and 7 of the Agreement and any changes to Party B's notice information) to: Merrill Lynch International Bank of America Merrill Lynch Financial Centre 2 King Edward Street London EC1A 1HQ United Kingdom Attention: Client Integration & Documentation Facsimile No.: (44-20) 7996 2995
+(d) Process Agent. For purposes of Section 13(c) of the Transferred Master Agreement, MLI appoints as its Process Agent: Merrill Lynch, Pierce, Fenner & Smith Incorporated, One Bryant Park, New York, NY 10036.
+Section 6. Limited Recourse; No Petition.
+Notwithstanding any provision herein to the contrary, MLI and MLCS each acknowledge that the obligations of the Counterparty under the Transferred Master Agreement are limited recourse obligations of the Counterparty, payable solely from the Trust Property and the proceeds thereof in accordance with the priority of payments and other terms of the series supplement dated August 3, 2004, between Merrill Lynch Depositor, Inc. and The Bank of New York Mellon (formerly known as "The Bank of New York") (the "Series Supplement"). In the event that such Trust Property and the proceeds thereof should be insufficient to satisfy all claims outstanding to MLI or MLCS hereunder and following realization of such Trust Property and the proceeds thereof, any claims against or obligations of the Counterparty under the Transferred Master Agreement shall be extinguished and thereafter not revive. This clause shall survive termination of this Transfer Agreement for any reason.
+Section 7. Entire Agreement. This Transfer Agreement constitutes the entire agreement and understanding of the parties with respect to its subject matter and supersedes all oral communication and prior writings with respect thereto.
+Section 8. Counterparts. This Transfer Agreement may be signed in any number of counterparts, each of which shall constitute an original, but all of which, taken together, shall constitute one and the same agreement. Delivery of an executed counterpart of this Transfer Agreement by facsimile or similar electronic means shall be effective as delivery of a manually executed counterpart of this Transfer Agreement.
+Section 9. Amendments. This Transfer Agreement may not be amended or modified in any manner except by a written agreement executed by all the parties hereto.
+Section 10. Governing Law. This Transfer Agreement shall be governed and construed in accordance with the governing law set out in Part 4(h) of the Schedule to the Transferred Master Agreement.
+IN WITNESS WHEREOF the parties have executed this document on the respective dates specified below.
+MERRILL LYNCH INTERNATIONAL By: 	 /s/ H. Dumper Name: H. Dumper Title: Director Date: April 10, 2012 MERRILL LYNCH CAPITAL SERVICES, INC.

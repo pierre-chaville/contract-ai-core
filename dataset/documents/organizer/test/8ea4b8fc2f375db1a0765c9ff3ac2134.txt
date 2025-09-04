@@ -1,0 +1,51 @@
+EX-10.3 7 file7.htm BASIS SWAP SCHEDULE & CONFIRMATION
+ISDA Schedule to the Master Agreement for Basis Swap
+CRUSADE MANAGEMENT LIMITED
+ST.GEORGE BANK LIMITED
+PERPETUAL TRUSTEES CONSOLIDATED LIMITED AS TRUSTEE OF CRUSADE GLOBAL TRUST NO. 1 OF 2007
+ALLENS ARTHUR ROBINSON Deutsche Bank Place Corner Hunter and Phillip Streets Sydney  NSW  2000 Tel  61 2 9230 4000 Fax  61 2 9230 5333 www.aar.com.au
+(C) Copyright Allens Arthur Robinson 2007
+ISDA Schedule to the Master Agreement for Basis Swap                                         [Allens Arthur Robinson LOGO]
+DATE 13 March 2007
+PARTIES
+1.   CRUSADE MANAGEMENT LIMITED (ABN 90 072 715 916) (PARTY A);
+2.   ST.GEORGE BANK LIMITED (ABN 92 055 513 070) (ST.GEORGE); and
+3.   PERPETUAL TRUSTEES CONSOLIDATED LIMITED (ABN 81 004 029 841) in its capacity as trustee of Crusade Global Trust No. 1 of 2007 (PARTY B).
+PART 1. TERMINATION PROVISIONS
+(a)  SPECIFIED ENTITY is not applicable in relation to Party A or Party B:
+(b)  Sections 5(a)(ii), (iii), (iv), (v), (vi), (viii), 5(b)(ii), (iii) and (iv) will not apply to Party A or Party B.
+(c)  The "BANKRUPTCY" provisions of Section 5(a)(vii) are replaced by "An Insolvency Event under the Master Trust Deed has occurred in respect of Party A, Party B or St.George (the party the subject of the Insolvency Event will be the Defaulting Party except that in the case of Party A, if there is an Insolvency Event in relation to St.George, Party A will be the Defaulting Party). The occurrence of an Insolvency Event under the Security Trust Deed in respect of Party B in its personal capacity will not constitute an Event of Default provided that within 30 Local Business Days of that occurrence, Party A, Party B and St.George are able to procure the novation of this Agreement and all Transactions to a third party in respect of which the Designated Rating Agencies confirm that the novation will not cause a reduction or withdrawal of the rating of the Notes, and Party A and Party B agree to execute such a novation agreement in standard International Swaps and Derivates Association, Inc. ("ISDA") form.
+(d)  Section 5(a)(i) is amended to replace THIRD with TENTH and the following sentence is added:
+"Even if St.George makes a payment under this Agreement, a failure by Party A to make that payment by the due date shall constitute an Event of Default."
+For the avoidance of doubt, but without limiting Section 17, Party B is not obliged to pay any amount attributable to any Break Payment which is due by, but not received from, an Obligor or any Loan Offset Interest Amount which is due by, but not received from, the Approved Seller, and the failure by Party B to pay that amount shall not be an Event of Default.
+Party B shall not be required to pay any termination amount arising from a termination of this Agreement by reason of a failure by Party A to make a payment under this Agreement.
+(e)  The AUTOMATIC EARLY TERMINATION provision of Section 6(a):
+(i)  will not apply to Party A
+(ii) will not apply to Party B
+ISDA Schedule to the Master Agreement for Basis Swap                                         [Allens Arthur Robinson LOGO]
+Any event which, upon its occurrence, constitutes an Event of Default, is deemed not to be an essential term of the Transaction so that the occurrence of any Event of Default shall not be implied to constitute a repudiation of this Agreement. This does not in any way restrict or limit the right of a Non-Defaulting Party under Section 6(a) to terminate following an Event of Default.
+(f)  PAYMENTS ON EARLY TERMINATION. For the purpose of Section 6(e) of this Agreement, neither Party A nor Party B is required to make any payment if this Agreement is terminated, other than amounts accrued due and payable, and Section 6(e) shall not apply.
+(g)  There is no Termination Currency.
+(h)  An ADDITIONAL TERMINATION EVENT set out in Section 15(d)(iv) or Section 16(g) of this Schedule, will apply.
+(i)  In the TRANSFER provision of Section 7, add a new paragraph (c):
+(c)   Party B may transfer to a Successor Trustee (as defined below) or to avoid an illegality as specified in Section 5(b)(i).
+(j)  Add a new paragraph to Section 7 immediately below paragraph (c):
+In the event that a trustee is appointed as a successor to Party B under the Trust Deed ("Successor Trustee"), each of Party A and St.George undertakes that it shall (unless, at the time the Successor Trustee is so appointed, Party A or St.George is entitled to terminate the Transaction under Section 6, in which case it may) novate to the Successor Trustee the Transaction on the same terms or on other terms to be agreed between Party A, Party B, St.George and the Successor Trustee, and give written notice to the Designated Rating Agencies of such novation.
+PART 2. TAX REPRESENTATIONS
+(a)  PAYER TAX REPRESENTATIONS.
+For the purpose of Section 3(e) of this Agreement each of Party A, St.George and Party B will make the following representation.
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 2(e) or 6(d)(ii) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on:
+(i)   the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement;
+(ii)  the satisfaction of the agreement of the other party contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement; and
+(iii) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement,
+provided that it shall not be a breach of this representation where reliance is placed on subclause (ii) above and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+ISDA Schedule to the Master Agreement for Basis Swap                                         [Allens Arthur Robinson LOGO]
+(b)  PAYEE TAX REPRESENTATIONS.
+For the purpose of Section 3(f) of this Agreement, each of Party A, St.George and Party B represents that it is an Australian resident and does not derive the payments under this Agreement in whole or in part in carrying on business in a country outside Australia at or through a permanent establishment of itself in that country.
+Party A, St.George and Party B also represent that Crusade Global Trust No.
+1 of 2007 is a non-U.S. branch of a foreign person for U.S. federal income tax purposes.
+(c)  DEDUCTION OR WITHHOLDING FOR TAX. Section 2(d) is replaced with the following Section:
+All payments under this Agreement will be made subject to deduction or withholding for or on account of any Tax. If a party is so required to deduct or withhold, then that party ("X") will:
+(i)   promptly notify the other party ("Y") of such requirement;
+(ii)  pay to the relevant authorities the full amount required to be deducted or withheld promptly upon the earlier of determining that such deduction or withholding is required or receiving notice that such amount has been assessed against Y;
+(iii) promptly forward to Y an official receipt (or a certified copy), or other documentation reasonably acceptable to Y, evidencing such payment to such authorities;

@@ -1,28 +1,32 @@
 from .classifier import ClauseClassifier, ClauseClassifierConfig
 from .extractor import DatapointExtractor, DatapointExtractorConfig
 from .filter import DocumentFilter, DocumentFilterConfig
+from .organizer import ContractOrganizer, ContractOrganizerConfig
 from .reviewer import GuidelineReviewer, GuidelineReviewerConfig
 from .reviser import ContractReviser, ContractReviserConfig
 from .schema import (
     ClassifiedParagraph,
     ClauseDefinition,
+    ContractMetadata,
     ContractTypeTemplate,
     DatapointDefinition,
     DocumentClassification,
     ExtractedDatapoint,
     ExtractionResult,
     GuidelineDefinition,
+    LookupValue,
     Paragraph,
     ReviewedGuideline,
     RevisedContract,
     RevisionInstruction,
-    split_text_into_paragraphs,
 )
+from .utilities import split_text_into_paragraphs
 
 __all__ = [
     # schema
     "ClauseDefinition",
     "DatapointDefinition",
+    "ContractMetadata",
     "GuidelineDefinition",
     "ContractTypeTemplate",
     "Paragraph",
@@ -33,6 +37,7 @@ __all__ = [
     "ReviewedGuideline",
     "RevisionInstruction",
     "RevisedContract",
+    "LookupValue",
     "split_text_into_paragraphs",
     # classifier
     "ClauseClassifier",
@@ -43,6 +48,9 @@ __all__ = [
     # reviewer
     "GuidelineReviewer",
     "GuidelineReviewerConfig",
+    # organizer
+    "ContractOrganizer",
+    "ContractOrganizerConfig",
     # reviser
     "ContractReviser",
     "ContractReviserConfig",

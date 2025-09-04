@@ -1,0 +1,51 @@
+EX-11.9 10 d213831dex119.htm EX-11.9
+Exhibit 11.9
+2016 Credit Support Annex for Variation Margin (VM)
+to the Schedule to the
+ISDA Master Agreement dated July 12, 2017
+between
+JPMORGAN CHASE BANK, N.A. 	   	 and 	   	 CMF GRAHAM CAPITAL MASTER FUND L.P.
+( "Party A") 	   	  	   	 ( "Party B")
+This Annex supplements, forms part of, and is subject to, the above-referenced ISDA Master Agreement (the "Agreement "), is part of its Schedule and is a Credit Support Document under this Agreement with respect to each party.
+Accordingly, the parties agree as follows:
+Paragraphs 1 - 12 of the ISDA 2016 Credit Support Annex for Variation Margin (VM) (ISDA Agreement Subject to New York Law) published by the International Swaps and Derivatives Association, Inc. are hereby incorporated by reference and made a part hereof.
+Paragraph 13. Elections and Variables
+Base Currency and Eligible Currency.
+"Base Currency " means United States Dollars (U.S. $).
+"Eligible Currency " means United States Dollars (U.S. $).
+Covered Transactions; Security Interest for Obligations; Exposure.
+The term " Covered Transactions" as used in this Annex includes all Transactions (other than Spot FX Transactions).
+"Spot FX Transaction" means any "FX Transaction" as defined in the ISDA 1998 FX and Currency Option Definitions (the "FX Definitions") with a Settlement Date (as defined in the FX Definitions which is on or before the second Local Business Day following the day on which the parties entered into such FX Transaction and which is not subject to a requirement to collect or post variation margin under applicable law.
+The term "Obligations " as used in this Annex includes the following additional obligations: None specified
+" Exposure" has the meaning specified in Paragraph 12.
+Credit Support Obligations.
+Delivery Amount (VM) and Return Amount (VM).
+"Delivery Amount (VM) " has the meaning specified in Paragraph 3(a).
+"Return Amount (VM) " has the meaning specified in Paragraph 3(b).
+Eligible Collateral (VM). The following items will qualify as "Eligible Collateral" provided that the non-cash items below (if any) shall only qualify as Eligible Collateral if they are, on the relevant Valuation Date, rated at least AA by Standard & Poor's, a division of The McGraw-Hill Companies, Inc.
+or at least Aa2 by Moody's Investors Service, Inc. (such requirement, the "Ratings Condition "), but only to the extent that such Ratings Condition requires a higher minimum rating than any minimum ratings requirement applicable to the Eligible Collateral identified below under applicable law.
+ISDA COLLATERAL ASSET DEFINITION (ICAD) CODE 	    	  REMAINING MATURITY 	    	 _VALUATION PERCENTAGE_ US-CASH 	    	 Not applicable 	    	   	 100 	 % US-TBILL / US-TNOTE / 	    	 Less than 1 year 	    	   	 99.5 	 % US-TBOND / US-TIPS 	    	 From 1 year, up to and including 5 years 	    	   	 98 	 % More than 5 years, up to and including 10 years 	    	   	 96 	 % More than 10 years, less than 30 years 	    	   	 96 	 % US-STRIP 	    	 All 	    	   	 92 	 %
+The definitions used in this table are taken from the ISDA publication "Collateral Asset Definitions" (First Edition - June 2003) and are hereby incorporated by reference.
+Notwithstanding anything contained herein to the contrary, in the event that no current market price from a generally recognized publicly available pricing source can be obtained for a security that otherwise constitutes Eligible Collateral, such security shall no longer constitute Eligible Collateral hereunder.
+If at any time the Valuation Percentage assigned to an item of Eligible Collateral with respect to a party (as the Pledgor) under this Annex is greater than the maximum permitted valuation percentage for such item of collateral under any law requiring the collection of variation margin applicable to the other party (as the Secured Party), then the Valuation Percentage with respect to such item of Eligible Collateral and such party will be such maximum permitted valuation percentage. Such maximum permitted valuation percentage will be the applicable Valuation Percentage for the affected items with effect from the fifth Local Business Day following the date of delivery of a written notice by a party (a "VP Adjustment Notice ") which: (a) specifies the relevant law requiring such maximum permitted valuation percentage; and (b) identifies the relevant affected items and, if applicable, describes the reason why such item falls within such law. To the extent relevant, such VP Adjustment Notice may break an item type into sub- categories and identify the related maximum permitted valuation percentages if lower than the assigned percentage.
+Legally Ineligible Credit Support (VM). The provisions of Paragraph 11(g) will apply to both parties:
+"Total Ineligibility Date " has the meaning specified in Paragraph 11(g) unless otherwise specified here: Not specified.
+"Transfer Ineligibility Date " has the meaning specified in Paragraph 11(g) unless otherwise specified here: Not specified.
+Credit Support Eligibility Conditions (VM). None applicable.
+"Valuation Percentage"; "FX Haircut Percentage"
+"Valuation Percentage ". The Valuation Percentage for either party (as the Pledgor) and any item of Eligible Collateral (VM) will be the valuation percentage for such item as set forth in Paragraph 13(c)(ii), _" Eligible Collateral (VM)"_.
+"FX Haircut Percentage ". The FX Haircut Percentage for either party (as the Pledgor) and any item of Eligible Collateral (VM) will be zero.
+Other Eligible Support (VM). The following items will qualify as "Other Eligible Support (VM) " for the party specified (as the Pledgor):
+None specified.
+Minimum Transfer Amount.
+"Minimum Transfer Amount " means with respect to Party A and Party B: US$250,000, provided , however , that if an Event of Default has occurred and is continuing with respect to a party, the Minimum Transfer Amount for such party shall be zero.
+Rounding.
+(1) the Delivery Amount (VM) will be rounded up to the nearest integral multiple of 10,000 units of the Base Currency; and
+(2) the Return Amount (VM) will be rounded down to the nearest integral multiple of 10,000 units of the Base Currency.
+Transfer Timing. "Regular Settlement Day " has the meaning specified in Paragraph 12, unless otherwise specified here: Not specified.
+Valuation and Timing.
+"Valuation Agent " means:
+for purposes of Paragraphs 3 and 5, the party making the demand under Paragraph 3 in respect of the applicable Valuation Date unless there has occurred and is continuing any Event of Default, Potential Event of Default or Additional Termination Event with respect to such party, in which case the other party shall be the Valuation Agent provided, however, that in the event that both parties are making a demand under Paragraph 3 in respect of any Valuation Date (t):
+(1) if on the immediately preceding Valuation Date (t-1) only one party made a demand under Paragraph 3 the Valuation Agent in respect of that Valuation Date
+(t) shall be the party which was the Valuation Agent on the immediately preceding Valuation Date (t-1);
+(2) if on the immediately preceding Valuation Date (t-1) both parties made a demand under Paragraph 3 the Valuation Agent in respect of that Valuation Date

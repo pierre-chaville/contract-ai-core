@@ -1,0 +1,51 @@
+EX-4.4.2 4 macrco442.htm SCHEDULE TO 2002 ISDA MASTER AGREEMENT
+EXHIBIT 4.4.2
+(Multicurrency -- Cross Border)
+SCHEDULE
+to the
+2002 ISDA Master Agreement
+dated as of June 29, 2009
+between
+MacroShares Major Metro Housing Up Trust ( "Party A")
+and
+MacroShares Major Metro Housing Down Trust ( "Party B")
+Part 1
+Termination Provisions
+(a)
+"Specified Entity " means: Not Applicable
+(b)
+"Specified Transaction " shall have the meaning specified in Section 14 of this Agreement.
+(c)
+Events of Default and Termination Events.  The following Events of Default and Termination Events shall apply to Party A and Party B  as set forth below:
+Event of Default/Termination Event 	 Applies to Party A 	 Applies to Party B Section 5(a)(i)  Payment Default 	 No 	 No Section 5(a)(ii)  Breach of Agreement 	 No 	 No Section 5(a)(iii)  Credit Support Default 	 No 	 No Section 5(a)(iv)  Misrepresentation 	 No 	 No Section 5(a)(v) Default Under Specified Transaction 	 Yes 	 Yes Section 5(a)(vi)  Cross Default 	 No 	 No Section 5(a)(vii)  Bankruptcy 	 Yes 	 Yes Section 5(a)(viii)  Merger Without Assumption 	 No 	 No Section 5(b)(i)  Illegality 	 Yes 	 Yes Section 5(b)(ii)  Tax Event 	 No 	 No Section 5(b)(iii)  Tax Event Upon Merger 	 No 	 No Section 5(b)(iv)  Credit Event Upon Merger 	 No 	 No Section 5(b)(v)  Additional Termination Events 	 No 	 No
+(d)
+The "Automatic Early Termination " provision of Section 6(a) will not apply to Party A and will not apply to Party B.
+(e)
+Payments on Early Termination.  Notwithstanding the provisions of Section 6 of the Master Agreement, no Event of Default or Termination Event shall entitle either party to designate an Early Termination Date under any Transaction hereunder, and all Transactions shall continue in accordance with their terms following any Event of Default or Termination Event.
+(f)
+"Termination Currency " means U.S. dollars.
+(g)
+Additional Termination Event.  No "Additional Termination Events" will apply for purposes of Section 5(b)(v).
+(h)
+Termination Payments.  Any payment or payments due upon the early termination of this Agreement or any Transaction hereunder shall be payable on the Early Termination Date.
+Part 2
+Tax Representations
+(a)
+Payer Tax Representations.  For the purposes of Section 3(e) of this Agreement, Party A and Party B will each make the following representations to the other:
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 2(e), 6(d)(ii) or 6(e) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, each party may rely on:
+(i)
+The accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement;
+(ii)
+The satisfaction of the agreement of the other party contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement, and
+(iii)
+The satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement,
+provided that it shall not be a breach of this representation where reliance is placed on clause (ii) and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+(b)
+Payee Tax Representations.
+(i)
+For the purposes of Section 3(f) of this Agreement, Party A makes the following representations to Party B.
+It is a partnership for U.S. tax purposes.
+(ii)
+For the purposes of Section 3(f) of this Agreement, Party B makes the following representations to Party A.
+It is a partnership for U.S. tax purposes.
+Part 3

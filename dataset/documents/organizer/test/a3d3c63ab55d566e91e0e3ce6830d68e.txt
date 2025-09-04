@@ -1,0 +1,38 @@
+EX-10.16 3 a2209575zex-10_16.htm EX-10.16
+Exhibit  10.16
+AMENDMENT AGREEMENT
+dated as of May 11, 2012
+Reference is made to the ISDA Master Agreement dated as of August 11, 2011, including the Schedule and Credit Support Annex thereto (collectively, the "Master Agreement ") between Citibank, N.A. ("Party A ") and EP Investments LLC ("Party B "), as the same may be amended, modified, supplemented or otherwise modified from time to time. The Master Agreement incorporates any Confirmation exchanged thereunder (each, a "Confirmation "). Capitalized terms used but not defined herein have the respective meanings given to such terms in the Master Agreement. For good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the parties have now agreed to amend the Master Agreement by this Amendment Agreement (this "Agreement ") and to enter into such other agreements set out herein.
+Accordingly, the parties agree as follows:
+1. Amendment of the Schedule.
+Upon execution and delivery of this Agreement by both parties, the Master Agreement is hereby amended as follows:
+(a) Part 4(f)(ii) of the Schedule is deleted in its entirety and replaced with the following:
+"(ii) In relation to Party B, (1) the Credit Support Annex dated as of the date hereof and attached hereto between the parties hereto and (2) the Deposit Account Control Agreement referred to in said Credit Support Annex."
+(b) Part 4(g)(ii) of the Schedule is deleted in its entirety and replaced with the following:
+"(ii) In relation to Party B, none."
+Except as herein provided, the Master Agreement shall remain unchanged and in full force and effect. In addition, each reference to the Schedule and words of similar import in the Master Agreement shall be a reference to the Schedule as amended hereby and as the same may be further amended, supplemented and otherwise modified and in effect from time to time.
+2. Representations.
+Each party represents to the other party that:
+(a) Status. It is duly organized and validly existing under the laws of the jurisdiction of its organization or incorporation and, if relevant under such laws, in good standing;
+(b) Powers. It has the power to execute this Agreement and to perform its obligations under this Agreement and has taken all necessary action to authorize such execution, delivery and performance;
+(c) No Violation or Conflict. Such execution, delivery and performance do not violate or conflict with any law applicable to it, any provision of its constitutional documents, any
+order or judgment of any court or other agency of government applicable to it or any of its assets or any contractual restriction binding on or affecting it or any of its assets;
+(d) Consents. All governmental and other consents that are required to have been obtained by it with respect to this Agreement have been obtained and are in full force and effect and all conditions of any such consents have been complied with; and
+(e) Obligations Binding. Each of this Agreement and the Master Agreement as amended hereby constitutes its legal, valid and binding obligations, enforceable in accordance with its terms (subject to applicable bankruptcy, reorganization, insolvency, moratorium or similar laws affecting creditors' rights generally and subject, as to enforceability, to equitable principles of general application (regardless of whether enforcement is sought in a proceeding in equity or at law)).
+3. Non-Reliance.
+Each party hereby further agrees as follows:
+(a) Non-Reliance. It is acting for its own account, and it has made its own independent decisions to enter into this Agreement and as to whether such Agreement and the Master Agreement as amended hereby is appropriate or proper for it based upon its own judgment and upon advice from such advisors as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into this Agreement; it being understood that information and explanations related to the terms and conditions of this Agreement and the Master Agreement as amended hereby shall not be considered investment advice or a recommendation to enter into this Agreement. It has not received from the other party any assurance or guarantee as to the expected results of entering into this Agreement;
+(b) Evaluation and Understanding. It is capable of evaluating and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of this Agreement and the Master Agreement as amended hereby. It is also capable of assuming, and assumes, the financial and other risks of this Agreement and the Master Agreement as amended hereby;
+(c) Status of Parties. The other party is not acting as a fiduciary or an advisor for it in respect of this Agreement; and
+(d) Reliance on its Own Advisors. Without limiting the generality of the foregoing, in making its decision to enter into this Agreement, it will not rely on any communication from the other party as, and it has not received any representation or other communication from the other party constituting, legal, accounting, business or tax advice, and it will consult its own legal, accounting, business and tax advisors concerning the consequences of this Agreement and the Master Agreement as amended hereby.
+(4) Evidence of Incumbency. Each party shall deliver to the other, at the time of its execution of this Agreement, certified evidence of the specimen signature and incumbency of each person who is executing this Agreement on the party's behalf, unless such evidence has previously been supplied in connection with the Agreement and remains true and in effect.
+5. Miscellaneous.
+(a) Entire Agreement. This Agreement constitutes the entire agreement and understanding of the parties with respect to its subject matter and supersedes all oral communication and prior writings (except as otherwise provided herein) with respect thereto.
+(b) Amendments. No amendment, modification or waiver in respect of this Agreement will be effective unless in writing (including a writing evidenced by a facsimile transmission) and executed by each of the parties.
+(c) Counterparts. This Agreement may be executed and delivered in counterparts (including by facsimile transmission), each of which will be deemed an original.
+(d) Headings. The headings used in this Agreement are for convenience of reference only and are not to affect the construction of or to be taken into consideration in interpreting this Agreement.
+(e) Governing Law. This Agreement will be governed by and construed in accordance with the law of the State of New York (without reference to choice of law doctrine that would result in the application of the laws of any other jurisdiction).
+[Signature page follows]
+IN WITNESS WHEREOF the parties have executed this Agreement with effect from the date specified on the first page of this Agreement.
+CITIBANK, N.A.
+By: 	  /s/ Linda Cook Name: Linda Cook Title: Vice President EP INVESTMENTS LLC By: 	  /s/ Gerald F. Stahlecker Name: Gerald F. Stahlecker Title: Executive Vice President

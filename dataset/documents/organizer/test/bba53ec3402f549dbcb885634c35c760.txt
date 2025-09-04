@@ -1,0 +1,51 @@
+EX-10.5 7 exh10-5_1429116.htm SCHEDULE TO 2002 ISDA MASTER AGREEMENT
+Exhibit 10.5
+SCHEDULE
+to the
+Master Agreement
+dated as of July 20, 2010
+between
+HSBC BANK USA, NATIONAL ASSOCIATION ("Party A")
+and
+CINEDIGM DIGITAL FUNDING I LLC ("Party B")
+Part 1
+Termination Provisions
+In this Agreement:
+(a) 	  "Specified Entity" means in relation to Party A for the purpose of:
+Section 5(a)(v), 	  None Specified
+Section 5(a)(vi), 	  None Specified
+Section 5(a)(vii), 	  None Specified
+Section 5(b)(v), 	  None Specified
+and in relation to Party B for the purpose of:
+Section 5(a)(v), 	  None Specified
+Section 5(a)(vi), 	  None Specified
+Section 5(a)(vii), 	  None Specified
+Section 5(b)(v), 	  None Specified
+(b) 	  "Specified Transaction" will have the meaning specified in Section 14 of this Agreement.
+(c) 	  The "Cross Default" provisions of Section 5(a)(vi) will not apply to Party A and will not apply to Party B.
+(d) 	  The "Credit Event Upon Merger" provisions of Section 5(b)(v) will not apply to Party A and will not apply to Party B.
+(e) 	  The "Automatic Early Termination" provision of Section 6(a) will not apply to Party A and will apply to Party B.
+(f) 	  "Termination Currency" means United States Dollars.
+(g) 	  Additional Termination Events. Each of the following will constitute an Additional Termination Event:
+(i) 	  Either (x) Party A has assigned its obligations hereunder to General Electric Capital Corporation ("GE Capital"), or (y) Party A receives a written request from GE Capital to assign its rights and obligations hereunder to GE Capital (and such Additional Termination Event will not be discharged by assignment by Party A). For the purposes of the foregoing Additional Termination Events the Affected Party will be Party B.
+(ii) 	  At any time prior to an assignment to GE Capital, the rating issued by Standard & Poor's Rating Services, a division of The McGraw Hill Companies, Inc. ("S&P") or Moody's Investors Service, Inc. ("Moody's") with respect to the long-term unsecured, unsubordinated debt securities and the short-term unsecured debt securities (together "Debt Securities") of Party A, or, with respect to Party B, GE Capital (in which case the applicable party, as between Party A or Party B, will be the Affected Party) is below "A-" and "A-1," in the case of S&P, or is below "A3" and "P-1", in the case of Moody's, or ceases to be rated by Moody's or S&P (a "Ratings Event"), then Party B, where Party A is the Affected Party, or Party A, where the Party B is the Affected Party (such party, as the case may be, the Non-Affected Party), will have the right, (A) by written notice, to request that the Affected Party transfer all its rights and obligations under all Affected Transactions within 30 days after the date of effectiveness of such notice to a third party acceptable to the Non-Affected Party, the Debt Securities of which third party are rated "AA-" and "A-1" or above in the case of S&P and "Aa3" and "P-1" or above in the case of Moody's, (B) to give notice of an Early Termination Date in respect of all Affected Transactions or (C) to take neither of the actions specified in clauses (A) and (B) of this paragraph, in which case such failure or delay on the part of the Non-Affected Party in exercising any of such rights) shall not operate as a waiver thereof nor preclude any further exercise of such rights. The Affected Party will pay all reasonable costs (including all legal fees) incurred by the Non-Affected Party in connection with any transfer effected pursuant to Part 1(g)(ii)(A) above. In the event a transfer as requested by the Non-Affected Party pursuant to clause (A) of this paragraph has not been effected with respect to all Affected Transactions within 30 days after the date of effectiveness of the notice described therein, then the Non-Affected Party may, provided the Ratings Event is still continuing, designate a day not earlier than the day such notice is effective under this Agreement as an Early Termination Date in respect of all Affected Transactions.
+If one of the foregoing credit rating agencies ceases to be in the business of rating Debt Securities and such business is not continued by a successor or assign of such agency (the
+"Discontinued Agency"), Party A and Party B shall jointly (1) select a nationally-recognized credit rating agency in substitution thereof and (2) agree on the rating level issued by such substitute agency that is equivalent to the ratings specified herein of the Discontinued Agency, whereupon such substitute agency and equivalent rating shall replace the Discontinued Agency and the rating level thereof for the purposes of this Agreement. If at any time all of the agencies specified herein with respect to a party have become Discontinued Agencies and Party A and Party B have not previously agreed in good faith on at least one agency and equivalent rating in substitution for each Discontinued Agency and the applicable rating thereof, the Ratings Event provisions of this Part 1(g)(ii) shall cease to apply to the parties.
+Part 2
+Tax Representations
+(a) 	  Payer Tax Representations. For the purpose of Section 3(e) of this Agreement, Party A and Party B each make the following representation:
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 9(h)) to be made by it to the other party under this Agreement. In making this representation, it may rely on:
+(i) 	  the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement;
+(ii) 	  the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement; and
+(iii) 	  the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement,
+except that it will not be a breach of this representation where reliance is placed on clause (ii) above and the other party does not deliver a form or document under Section 4(a)(iii) of this Agreement by reason of material prejudice to its legal or commercial position.
+(b) 	  Payee Tax Representations. For the purpose of Section 3(f) of this Agreement, Party A and Party B each make the following representations, as applicable:
+(i) 	  Party A makes the following representations:
+It is a "U.S. person" (as that term is used in section 1.1441-4(a)(3)(ii) of United States Treasury Regulations) for United States federal income tax purposes and an "Exempt recipient" within the meaning of section 1.6049-4(c)(1)(ii) of United States Treasury Regulations.
+(ii) 	  Party B makes the following representation:
+It is a "U.S. person" (as that term is used in section 1.1441-4(a)(3)(ii) of United States Treasury Regulations) for United States federal income tax purposes.
+Part 3
+Agreement to Deliver Documents.
+For the purpose of Sections 4(a)(i) and (ii) of this Agreement, each party agrees to deliver the following documents, as applicable:
+(a) 	  Tax forms, documents or certificates to be delivered are:
+Party required to deliver documents 	  	  Form/Document/Certificate 	  	  Date by which to be delivered Party A 	  	  A correct, complete and duly executed United States Internal Revenue Service Form W-9 (or successor thereto); provided, that in the event Party A shall have assigned this Agreement and the Transaction(s) to GE Capital, GE Capital shall deliver Form W-9 (or successor thereto) 	  	  (i) Upon execution of the Agreement, (ii) promptly upon learning that any Form W-9(or any successor thereto) has become obsolete or incorrect and (iii) upon reasonable request of Party B Party B 	  	  A correct, complete and duly executed United States Internal Revenue Service Form W-9 (or successor thereto) 	  	  (i) Upon execution of the Agreement, (ii) promptly upon learning that any Form W-9 (or any successor thereto) has become obsolete or incorrect and (iii) upon reasonable request of Party A

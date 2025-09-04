@@ -1,0 +1,24 @@
+EX-10.2 3 y78640exv10w2.htm EX-10.2
+Exhibit  10.2
+AMENDMENT TO THE ISDA MASTER AGREEMENT AND SCHEDULE THERETO, EACH DATED AS OF JUNE 24, 2005
+This Amendment to the ISDA Master Agreement (this " Amendment") is made and entered into effective as of May 29, 2009 between J. ARON & COMPANY (" Aron") and COFFEYVILLE RESOURCES, LLC (" Coffeyville"), (individually, a " Party" and collectively, the " Parties");
+WITNESSETH
+WHEREAS, Aron and Coffeyville are parties to that certain ISDA Master Agreement dated as of June 24, 2005, including the Schedule and Confirmations incorporated therein by reference (collectively, the " Agreement");
+WHEREAS, in accordance with Section 9(b) of the Agreement, the Parties wish to amend certain provisions of such Agreement;
+NOW, THEREFORE, the Parties agree as follows:
+1. 	   	 Additional Termination Event
+Part 1(i)(ii) of the Schedule to the Agreement is amended by deleting the amount of "US$150,000,000" in the third line thereof and replacing it with "US$60,000,000".
+2. 	   	 Representations.
+Each Party represents to the other Party that all of the representations made in the Agreement by such Party are true and correct as of the date of this Amendment and that such representations are deemed to be given or repeated by such Party, as the case may be, as of the date of this Amendment.
+3. 	   	 Miscellaneous.
+(a) 	   	 Definitions. Capitalized terms used in this Amendment and not otherwise defined herein shall have the meanings specified for such terms in the Agreement.
+(b) 	   	 Entire Agreement. This Amendment constitutes the entire agreement and understanding of the Parties with respect to its subject matter and supersedes all oral communications and prior writings (except as otherwise provided herein) with respect thereto.
+#####
+(c) 	   	 Counterparts. This Amendment may be executed and delivered in counterparts (including by facsimile or electronic transmission), each of which will be deemed an original.
+(d) 	   	 Survival. Except as specifically and explicitly amended hereby in this Amendment, the Agreement shall continue in full force and effect in accordance with the provisions thereof on the date hereof and nothing herein contained shall be construed as a waiver or modification of existing rights under the Agreement, except as such rights are expressly modified hereby.
+(e) 	   	 Headings. The headings used in this Amendment are for convenience of reference only and are not to affect the construction of or to be taken into consideration in interpreting this Amendment.
+(f) 	   	 Governing Law. This Amendment will be governed by, and construed and enforced in accordance with, the laws of the State of New York without reference to its choice of law doctrine.
+[ signature page follows]
+#####
+IN WITNESS WHEREOF , the Parties have caused this Amendment to be executed and delivered by their respective authorized officers as of the date appearing in the first paragraph of this Amendment.
+J. ARON & COMPANY 	   	   	   	 COFFEYVILLE RESOURCES, LLC By:  	   	 /s/ Susan Rudov  	   	   	   	 By:  	   	 /s/ Edward Morgan Name:  	   	   Susan Rudov  	   	   	   	 Name:  	   	   Edward Morgan Title:  	   	 Attorney in Fact  	   	   	   	 Title:  	   	 CFO Date:  	   	 5/29/09  	   	   	   	 Date:  	   	 5/29/09

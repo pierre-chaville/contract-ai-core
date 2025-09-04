@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import re
 from collections.abc import Sequence
 from enum import Enum
 from typing import Any, Optional
@@ -169,6 +168,106 @@ class ContractTypeTemplate(FrozenBaseModel):
     )
 
 
+class ContractMetadata(FrozenBaseModel):
+    """Descriptive and operational metadata for a legal contract record."""
+
+    # Core Identification
+    contract_id: str = Field(..., description="Unique identifier (primary key).")
+    contract_number: str | None = Field(
+        default=None, description="Business/legal reference number."
+    )
+    title: str | None = Field(default=None, description="Contract title or name.")
+    contract_type: str | None = Field(
+        default=None, description="Category (e.g., employment, vendor, lease, NDA)."
+    )
+
+    # Parties & Relationships
+    primary_party: str | None = Field(
+        default=None, description="Your organization's legal entity name."
+    )
+    counterparty_name: str | None = Field(default=None, description="Counterparty legal name.")
+    counterparty_type: str | None = Field(
+        default=None, description="Counterparty type (individual, corporation, LLC, etc.)."
+    )
+    relationship_type: str | None = Field(
+        default=None, description="Client, vendor, partner, employee, etc."
+    )
+
+    # Key Dates (ISO-8601 strings preferred)
+    execution_date: str | None = Field(default=None, description="Date signed (YYYY-MM-DD).")
+    effective_date: str | None = Field(default=None, description="When terms begin (YYYY-MM-DD).")
+    expiration_date: str | None = Field(
+        default=None, description="When contract ends (YYYY-MM-DD)."
+    )
+    notice_period: int | None = Field(
+        default=None, description="Required notice for termination, in days."
+    )
+    renewal_date: str | None = Field(
+        default=None, description="Next renewal opportunity (YYYY-MM-DD)."
+    )
+
+    # Financial Information
+    contract_value: float | None = Field(
+        default=None, description="Total monetary value of the contract."
+    )
+    currency: str | None = Field(default=None, description="Currency code (e.g., USD, EUR).")
+    payment_terms: str | None = Field(
+        default=None, description="Payment terms (e.g., Net 30, monthly, annual)."
+    )
+    billing_frequency: str | None = Field(default=None, description="How often payments occur.")
+
+    # Legal & Compliance
+    governing_law: str | None = Field(default=None, description="Jurisdiction (state/country).")
+    status: str | None = Field(
+        default=None, description="Draft, active, expired, terminated, renewed."
+    )
+    approval_status: str | None = Field(default=None, description="Pending, approved, rejected.")
+    confidentiality_level: str | None = Field(
+        default=None, description="Public, internal, confidential, restricted."
+    )
+
+    # Document Management
+    file_path: str | None = Field(default=None, description="Location of contract document.")
+    version_number: str | None = Field(default=None, description="Revision/version number.")
+    document_format: str | None = Field(default=None, description="PDF, DOCX, etc.")
+    digital_signature_status: str | None = Field(
+        default=None, description="Signed, pending, not required."
+    )
+
+    # Business Context
+    department: str | None = Field(default=None, description="Owning business unit.")
+    contract_owner: str | None = Field(default=None, description="Responsible employee.")
+    business_purpose: str | None = Field(
+        default=None, description="Brief description of contract purpose."
+    )
+    tags: Sequence[str] | None = Field(default=None, description="Searchable keywords/labels.")
+
+    # Tracking & Alerts
+    created_date: str | None = Field(default=None, description="Record creation timestamp.")
+    last_modified: str | None = Field(default=None, description="Last update timestamp.")
+    alert_days_before_expiry: int | None = Field(
+        default=None, description="Notification lead time (days) before expiry."
+    )
+    auto_renewal: bool | None = Field(default=None, description="Auto-renewal flag.")
+
+
+class LookupValue(FrozenBaseModel):
+    """A generic lookup value record (for enums, statuses, vocabularies)."""
+
+    category: str = Field(..., description="Lookup category/group (e.g., 'status', 'law_codes').")
+    key: str = Field(..., description="Stable key or code for this value.")
+    label: str = Field(..., description="Human-readable display label.")
+    description: str | None = Field(
+        default=None, description="Optional longer description/tooltip."
+    )
+    sort_order: int | None = Field(
+        default=None, description="Optional ordering hint (lower sorts first)."
+    )
+    metadata: dict[str, Any] | None = Field(
+        default=None, description="Arbitrary extra attributes for this value."
+    )
+
+
 class Paragraph(FrozenBaseModel):
     """A paragraph of the contract with an index for stable referencing."""
 
@@ -309,126 +408,3 @@ class RevisedContract(FrozenBaseModel):
     applied_instructions: Sequence[RevisedSection] = Field(
         ..., description="List of revised sections that were applied."
     )
-
-
-def split_text_into_paragraphs(text: str) -> list[Paragraph]:
-    """Split text into paragraphs with markdown cleanup and heuristic merging.
-
-    Cleanup rules:
-    - Collapse multiple consecutive empty lines into a single empty line
-    - If a line contains '|' but neither the previous nor next line contains '|',
-      replace '|' with a space (break stray table artifacts)
-    - If a line contains only '|' and '-' characters and neither neighbor line
-      contains '|', drop the line (remove markdown table separator rows)
-
-    Paragraph merge rules (merge current line into the previous paragraph only if):
-    - The previous line does not end with one of . : ! ?
-    - The current line does not start with a list/enumeration marker like
-      '-', '1)', '1.', 'a)', '(a)', '(1)', etc.
-    - Neither the previous line nor the current line contains a '|'
-    """
-
-    if not text:
-        return []
-
-    # Normalize newlines and split
-    raw_lines = text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
-
-    cleaned_lines: list[str] = []
-    n = len(raw_lines)
-    only_pipes_dashes_re = re.compile(r"^[\s\|\-]+$")
-    only_stars_re = re.compile(r"^[\s\*]+$")
-    star_rule_re = re.compile(r"^\*+(?:\s*\*+){2,}$")
-
-    def remove_md_emphasis(s: str) -> str:
-        # Remove strong/italic/strike emphasis markers: **text**, *text*, __text__, _text_, ~~text~~
-        s = re.sub(r"(\*\*|__)(.*?)\1", r"\2", s)
-        s = re.sub(r"(\*|_)(.*?)\1", r"\2", s)
-        s = re.sub(r"~~(.*?)~~", r"\1", s)
-        return s
-
-    i = 0
-    while i < n:
-        line = raw_lines[i]
-        stripped = line.strip()
-
-        # Remove markdown emphasis markers inline
-        line = remove_md_emphasis(line)
-
-        # Remove lines that are only stars (e.g., markdown separators) or star rules like * * *
-        if stripped and (only_stars_re.match(stripped) or star_rule_re.match(stripped)):
-            i += 1
-            continue
-
-        # Remove any line consisting solely of '|' and '-' (table separators), unconditionally
-        if stripped and only_pipes_dashes_re.match(stripped):
-            i += 1
-            continue
-
-        # Convert all pipes to tabs to normalize table-like content into columns
-        if "|" in line:
-            line = line.replace("|", "\t")
-
-        cleaned_lines.append(line)
-        i += 1
-
-    # Collapse multiple consecutive empty lines into a single empty line
-    collapsed_lines: list[str] = []
-    empty_streak = 0
-    for line in cleaned_lines:
-        if line.strip() == "":
-            empty_streak += 1
-            if empty_streak > 1:
-                continue
-        else:
-            empty_streak = 0
-        collapsed_lines.append(line)
-
-    # Merge lines into paragraphs using heuristics
-    paragraphs: list[str] = []
-    buffer = ""
-    prev_line_text: str | None = None
-
-    list_marker_re = re.compile(r"^\s*(?:-+|\d+\)|\d+\.|[A-Za-z]\)|\([A-Za-z]\)|\(\d+\))\s+")
-
-    for line in collapsed_lines:
-        stripped = line.strip()
-        if stripped == "":
-            if buffer:
-                paragraphs.append(buffer.strip())
-                buffer = ""
-                prev_line_text = None
-            continue
-
-        if not buffer:
-            buffer = stripped
-            prev_line_text = line
-            continue
-
-        # Decide merge vs start new paragraph
-        assert prev_line_text is not None
-        prev_last_char = buffer.rstrip()[-1] if buffer.rstrip() else ""
-        prev_ends_sentence = prev_last_char in ".:!?"
-        curr_starts_list = bool(list_marker_re.match(stripped))
-        prev_has_pipe_now = "|" in prev_line_text
-        curr_has_pipe_now = "|" in line
-
-        can_merge = (
-            (not prev_ends_sentence)
-            and (not curr_starts_list)
-            and (not prev_has_pipe_now)
-            and (not curr_has_pipe_now)
-        )
-
-        if can_merge:
-            buffer = f"{buffer.rstrip()} {stripped}"
-        else:
-            paragraphs.append(buffer.strip())
-            buffer = stripped
-
-        prev_line_text = line
-
-    if buffer:
-        paragraphs.append(buffer.strip())
-
-    return [Paragraph(index=i, text=block) for i, block in enumerate(paragraphs) if block]

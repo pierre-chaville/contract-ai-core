@@ -1,0 +1,51 @@
+EX-10.22 3 w97142exv10w22.htm EXHIBIT 10.22
+#####
+Exhibit  10.22
+![\(ISMA LOGO\)](w97142w9714207.gif)
+Public Securities Association  	   	 Rigistrasse 60, 40 Broad Street, New York, NY 1004-2373  	   	 P.O. Box 169, CH-8033 Zurich
+GLOBAL MASTER REPURCHASE AGREEMENT
+Dated as of February 19, 2004
+GROSS PAYING SECURITIES
+GLOBAL MASTER REPURCHASE AGREEMENT
+This agreement is to be used for repos or reverse repos and buy/sell backs of securities other than equities, U.S. Treasury instruments and Net Paying Securities
+BETWEEN: 	   	 < "PARTY A"> CITIGROUP GLOBAL MARKETS INC. AS AGENT FOR CITIGROUP GLOBAL MARKETS LIMITED AND 	   	 < "PARTY B"> CAPITALSOURCE FINANCE LLC
+1. 	   	 APPLICABILITY
+(a) 	   	 From time to time the parties hereto may enter into transactions in which one party, acting through a Designated Office, ("Seller") agrees to sell to the other, acting through a Designated Office, ("Buyer") securities and financial instruments ("Securities") (other than equities, U.S. Treasury instruments and Net Paying Securities) against the payment of the purchase price by Buyer to Seller, with a simultaneous agreement by Buyer to sell to Seller Securities equivalent to such Securities at a date certain or on demand against the payment of the purchase price by Seller to Buyer.
+(b) 	   	 Each such transaction (which may be a repurchase transaction ("Repurchase Transaction") or a buy and sell back transaction ("Buy/Sell Back Transaction")) shall be referred to herein as a "Transaction" and shall be governed by this Agreement, including any supplemental terms or conditions contained in Annex I hereto, unless otherwise agreed in writing. If this Agreement may be applied to Buy/Sell Back Transactions, this shall be specified in Annex I, and the provisions of Annex III shall apply to such Buy/Sell Back Transactions. If Transactions are to be effected under this Agreement by either party as an agent, this shall be specified in Annex I, and the provisions of Annex IV shall apply to such Agency Transactions.
+#####
+2. 	   	 DEFINITIONS
+(a) 	   	 "Act of Insolvency" shall occur with respect to any party hereto upon:
+(i) 	   	 its making a general assignment for the benefit of, or entering into a re-organisation, arrangement, or composition with creditors; or
+(ii) 	   	 its admitting in writing that it is unable to pay its debts as they become due; or
+(iii) 	   	 its seeking, consenting to or acquiescing in the appointment of any trustee, administrator, receiver or liquidator or analogous officer of it or any material part of its property; or
+(iv) 	   	 the presentation or filing of a petition in respect of it (other than by the counterparty to this Agreement in respect of any obligation under this Agreement) in any court or before any agency alleging or for the bankruptcy, winding-up or insolvency of such party (or any analogous proceeding) or seeking any reorganisation, arrangement, composition, re-adjustment, administration, liquidation, dissolution or similar relief under any present or future statute, law or regulation, such petition (except in the case of a petition for winding-up or any analogous proceeding, in respect of which no such 30 day period shall apply) not having been stayed or dismissed within 30 days of its filing; or
+(v) 	   	 the appointment of a receiver, administrator, liquidator or trustee or analogous officer of such party or over all or any material part of such party's property; or
+(vi) 	   	 the convening of any meeting of its creditors for the purposes of considering a voluntary arrangement as referred to in section 3 of the Insolvency Act 1986 (or any analogous proceeding);
+(b) "Agency Transaction", the meaning specified in paragraph 1 of Annex IV hereto;
+(c) "Base Currency", the currency indicated in Annex I hereto;
+(d) "Business Day":
+(i) 	   	 in relation to the settlement of any Transaction which is to be settled through Cedel or Euroclear, a day on which Cedel or, as the case may be, Euroclear is open to settle business in the currency in which the Purchase Price and the Repurchase Price are denominated;
+(ii) 	   	 in relation to the settlement of any Transaction which is to be settled through a settlement system other than Cedel or Euroclear, a day on which that settlement system is open to settle such Transaction;
+(iii) 	   	 in relation to any delivery of Securities not falling within (i) or (ii) above, a day on which banks are open for business in the place where delivery of the relevant Securities is to be effected; and
+(iv) 	   	 in relation to any obligation to make a payment not falling within (i) or (ii) above, a day other than a Saturday or a Sunday on which banks are open for business in the principal financial centre of the country of which the currency in which the payment is denominated is the official currency and, if different, in the place where any account designated by the parties for the making or receipt of the payment is situated (or, in the case of ECU, a day on which ECU clearing operates);
+(e) 	   	 "Cash Margin", a cash sum paid to Buyer or Seller in accordance with paragraph 4;
+(f) 	   	 "Cedel", Cedel Bank, societe anonyme;
+(g) 	   	 "Confirmation", the meaning specified in paragraph 3(b);
+(h) 	   	 "Contractual Currency", the meaning specified in paragraph 7(a);
+(i) 	   	 "Defaulting Party", the meaning specified in paragraph 10;
+(j) 	   	 "Default Market Value" with respect to any Securities on any date:
+#####
+(i) 	   	 in the case of Securities to be delivered to the Defaulting Party,
+(aa) 	   	 if the non-Defaulting Party has between the occurrence of the relevant Event of Default and the Default Valuation Time (as defined below) sold Securities forming part of the same issue and being of an identical type and description to those Securities and in substantially the same amount as those Securities, the net proceeds of sale (after deducting all reasonable costs, fees and expenses incurred in connection therewith) and
+(bb) 	   	 failing such sale before the Default Valuation Time, the Market Value of such Securities at the Default Valuation Time;
+(ii) 	   	 in the case of Securities to be delivered by the Defaulting Party,
+(aa) 	   	 if the non-Defaulting Party has between the occurrence of the relevant Event of Default and the Default Valuation Time purchased Securities forming part of the same issue and being of an identical type and description to those Securities and in substantially the same amount as those Securities, the cost of such purchase (including all reasonable costs, fees and expenses incurred in connection therewith) and
+(bb) 	   	 failing such purchase before the Default Valuation Time, the amount it would cost to buy such Securities at the Default Valuation Time at the best available offer price therefor (and where different offer prices are available for different delivery dates, such offer price in respect of the earliest available such delivery date) on the most appropriate market, together with all reasonable costs, fees and expenses that would be incurred in connection therewith (calculated on the assumption that the aggregate thereof is the least that could reasonably be expected to be paid in order to carry out the Transaction),
+in each case as determined by the non-Defaulting Party; and for this purpose the "Default Valuation Time" means, with respect to any Securities
+(A) 	   	 if the relevant Event of Default occurs during normal business hours on a day which is a dealing day in the most appropriate market for Securities of the relevant description (as determined by the non-Defaulting Party), the close of business in that market on the following dealing day;
+(B) 	   	 in any other case, the close of business on the second dealing day in that market after the day on which the relevant Event of Default occurs;
+Where the amount of any Securities sold or purchased as mentioned in (i)(aa) or (ii)(aa) above is not identical to that of the Securities to be valued for the purposes of this definition, the Default Market Value of those Securities shall be ascertained by dividing the net proceeds of sale or cost of purchase by the amount of the Securities sold or purchased so as to obtain a net unit price and multiplying that net unit price by the amount of the Securities to be valued;
+(k) 	   	 "Default Notice", a written notice served by the non-Defaulting Party on the Defaulting Party under paragraph 10 stating that an event shall be treated as an Event of Default for the purposes of this Agreement;
+(l) 	   	 "Designated Office", with respect to a party, a branch or office of that party which is specified as such in Annex I hereto or such other branch or office as may be agreed to by the Parties;
+(m) 	   	 "Distributions", the meaning specified in sub-paragraph (s) below;
+(n) 	   	 "Equivalent Margin Securities", Securities equivalent to Securities previously transferred as Margin Securities;

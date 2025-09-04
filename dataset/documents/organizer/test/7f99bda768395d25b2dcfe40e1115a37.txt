@@ -1,0 +1,51 @@
+EX-10.2 3 sume_ex10z2.htm EXHIBIT 10.2
+EXHIBIT 10.2
+AMENDMENT TO
+ISDA MASTER AGREEMENT
+dated as of June 19, 2019
+between
+EDF Trading North America, LLC
+("Party A")
+and
+Summer Energy, LLC, Summer Energy Northeast, LLC, and Summer Energy Midwest, LLC
+(jointly and severally, "Party B")
+Party A, Summer Energy, LLC and Summer Energy Northeast, LLC have previously entered into the ISDA Master Agreement, dated as of May 1, 2018, which agreement includes the Schedule, Credit Support Annex and Exhibits thereto (collectively, the "Agreement").  The parties have now agreed to amend the Agreement by this Amendment to ISDA Master Agreement (this "Amendment").
+`A.`Accordingly, for good and valuable consideration the receipt and adequacy of which are hereby acknowledged, the parties hereby agree that upon execution of this Amendment by the parties, the Agreement shall be and hereby is amended as follows:
+``(i) Summer Energy Midwest, LLC, an Ohio limited liability company, is hereby added as a "Party B" under the Agreement for all purposes, including for purposes of the Schedule and the Credit Support Annex;
+``(ii) each reference to "Party B" contained in the Agreement shall henceforth refer, jointly and severally, to Summer Energy, LLC, Summer Energy Northeast, LLC and Summer Energy Midwest, LLC;
+``(iii) for purposes of Part 2(b)(ii) of the Schedule to the Agreement Summer Energy Midwest, LLC makes the following representation: "Party B represents that it is a limited liability company organizes and existing under the laws of the State of Ohio and for federal tax purposes is a United States person within the meaning of Section 7701(a)(30) of the Internal Revenue Code of 1986, as amended.";
+``(iv) notices to Summer Energy Midwest, LLC may be delivered as set forth in Part 4(a)(ii) of the Schedule to the Agreement;
+DB1/ 103129414.6
+``(v) in Part 4(g) of the Schedule to the Agreement the words "to be and" shall be replaced with the words "and to be";
+``(vi) in Part 5(h)(iv) of the Schedule to the Agreement the words "the such" shall be replaced with the word "such";
+``(vii) in Part 5(s) of the Schedule to the Agreement Part 5(s)(i) to Part 5(s)(iv) shall be deleted and replaced with the following provisions:
+"Dodd Frank Requirements - Reporting.  The Dodd Frank Wall Street Reform and Consumer Protection Act (the "Dodd Frank Act ") and the implementing regulations of the Commodity Futures Trading Commission (the "CFTC ") set forth in Title 17 of the Code of Federal Regulations (the "_CFTC Regulations " and, together with the Dodd Frank Act, the "Dodd Frank Requirements_ ") impose a multitude of mandatory data reporting requirements with respect to Swap (as defined in the Dodd Frank Requirements) Transactions entered into and/or outstanding after the enactment of the Dodd Frank Act (each, a "Reportable Swap Transaction ").  Pursuant to Section 45.8 of the CFTC Regulations, when counterparties to a Reportable Swap Transaction have the same regulatory status under the Dodd-Frank Requirements, they must mutually agree on which party will be responsible for complying with the mandatory data reporting provisions applicable to the Reportable Swap Transaction (the agreed party, the "Reporting Counterparty ").  In light of the foregoing and in order to facilitate compliance with such mandatory data reporting requirements, Party A agrees (subject to Party B's compliance with the provisions of this Part 5(w)) to serve as the Reporting Counterparty as follows:
+`(i)`For all Reportable Swap Transactions (if any) between Party A and Party B, including Transactions that meet the requirements for a "trade option" as set forth in Section 32.3(a) of the CFTC Regulations, Party A shall be the Reporting Counterparty for all reporting required pursuant to Parts 43, 45 and 46 of the CFTC Regulations.
+`(ii)`Provided that Party B shall have complied with its obligations under Part 5(s)(iii)C below, for any Reportable Swap Transaction (if any) entered into between Party A and Party B for which Party B elects the exception to an applicable mandatory clearing requirement under Section 2(h)(7)(A) of the Commodity Exchange Act (7 U.S.C. § 2(h)(7)(A)) (an "_End-User Swap Transaction_ "), Party A shall be responsible for all reporting required pursuant to Section 50.50(b) of the CFTC Regulations.
+`(iii)`In connection with the agreement of Party A above and in order to permit Party A, as the Reporting Counterparty, to comply with the applicable mandatory data reporting obligations of Parts 43, 45 and 46 and Section 50.50(b) of the CFTC Regulations (the "Reporting Regulations "), Party B agrees that:
+`A.`It will timely provide to Party A all necessary information reasonably requested by Party A to allow it to comply with the Reporting Regulations.
+DB1/ 103129414.6
+`B.`Notwithstanding any confidentiality or other similar agreement, obligation, or requirement between the parties, Party A may disclose the information required by the Reporting Regulations to a swap data repository and waives, solely to the extent necessary to permit such disclosure, any obligation of confidentiality which would otherwise bar or restrict such disclosure.
+`C.`With respect to any End-User Swap Transaction:
+`i.`It is eligible to exercise an exception from any applicable mandatory clearing obligation and will provide such information (including a copy of any current End-User Information (as defined below) report filed by Party B) as may be reasonably requested by Party A for it to establish "a reasonable basis to believe that Party B meets the requirements for an exception to the clearing requirement" under Section 50.50 of the CFTC Regulations, as required under Section 50.50(b)(3) of the CFTC Regulations.
+`ii.`It may file with the CFTC an annual report of all information required to be reported under Section 50.50(b)(1)(iii) of the CFTC Regulations (the "End-User Information ") or, in the event that Party B has not filed such a report or any required amendment thereto during the three hundred sixty-five (365) day period immediately preceding the trade date for the End- User Swap Transaction with Party A, deliver to Party A the required End-User Information prior to entering into the End-User Swap Transaction such that it can be reported by Party A.
+`D.`As of the date of this Agreement, it is not registered as a Swap Dealer or Major Swap Participant and is not a Financial Entity that has been assigned reporting obligations pursuant to Section 45.8(c) of the CFTC Regulations (a "CFTC Reporting Entity ") and, in the event it becomes a CFTC Reporting Entity, it will promptly notify Party A in writing of such change in its status and this Part 5(s) shall be deemed deleted from this Agreement, with no further action required of either party.
+`(iv)`The failure of either party to comply with its respective obligations under this Part 5(s) shall not constitute an event of default or termination event (however defined or described) under, or otherwise constitute grounds on which the other
+DB1/ 103129414.6
+party may vitiate, cancel, or otherwise terminate a Reportable Swap Transaction or this Agreement governing the terms thereof (a "_Covered Agreement_ "), or any other agreement between the parties.";
+``(viii) at the end of Part 5(t) of the Schedule to the Agreement the following words shall be added: "Summer Energy Midwest, LLC:
+254900H6EMQW59EZOG22";
+``(ix) in part 6(j)(5) of the Schedule to the Agreement the following words shall be added:
+``"Summer Energy Midwest, LLC
+``Tariff: PJM Interconnection, LLC
+``Dated: November 17, 2016
+``Docket Number: ER17-367-000"; and
+``(x) in part 6(l) of the Schedule to the Agreement change the words "Summer Energy, LLC and Summer Energy Northeast, LLC" to "Summer Energy, LLC, Summer Energy Northeast, LLC and Summer Energy Midwest, LLC"  and replace the Wire Transfer information to read as follows:
+"Summer Energy, LLC
+Bank: Comerica Bank
+Account:
+Wire ABA:
+ACH ABA:
+Other Details: Not Applicable
+Summer Energy Northeast, LLC
+Bank: Comerica Bank

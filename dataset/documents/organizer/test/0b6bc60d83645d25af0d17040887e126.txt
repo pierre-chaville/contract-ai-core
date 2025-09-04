@@ -1,0 +1,28 @@
+EX-10.4 5 ex-10d4.htm EX-10.4
+Exhibit 10.4
+Execution Copy
+ISDA®
+International Swaps and Derivatives Association, Inc.
+SCHEDULE
+to the
+2002 Master Agreement
+dated as of April 7, 2020
+between
+CITIBANK, N.A.,
+a national banking association organized and existing
+under the laws of the United States of America
+("Party A"),
+and
+ADVANCED ENERGY INDUSTRIES, INC.,
+a corporation
+organized and existing under the laws of the State of Delaware
+("Party B")
+Part 1
+Termination Provisions
+(a)         "Specified Entity" means in relation to Party A for the purposes of Sections 5(a)(v), 5(a)(vi), 5(a)(vii) and 5(b)(v):
+None.
+"Specified Entity" means in relation to Party B for the purposes of Sections 5(a)(v), 5(a)(vi), 5(a)(vii) and 5(b)(v):
+None.
+(b)         "Specified Transaction" will have the meaning specified in Section 14\.  The "Default under Specified Transaction" provisions of Section 5(a)(v) of this Agreement will not apply with respect to Party A or Party B or any Credit Support Provider of Party B.
+(c)         The "Cross-Default"  provisions of Section 5(a)(vi) will apply to Party A and will apply to Party B; provided, that (i) the phrase ", or becoming capable at such time of being declared," is deleted from Section 5(a)(vi)(1);  (ii) the phrase "which has resulted in such Specified Indebtedness becoming due and payable under such agreements or instruments before it would otherwise have been due and payable" is inserted in Section 5(a)(vi)(2) immediately before the semi-colon; and (iii) an Event of Default shall not occur with respect to a party under Section 5(a)(vi) when the failure to pay or
+deliver, or the default, event of default or other similar condition or event, as the case may be, arises solely (A) out of a wire transfer problem or an operational or administrative error or omission (so long as the required funds or property required to make that payment or delivery were otherwise available to that party), or (B) from the general unavailability of the relevant currency due to exchange controls or other similar governmental action, but in either case only if the payment or delivery is made within three Local Business Days after the problem has been corrected, the error or omission has been discovered or the currency becomes generally available.

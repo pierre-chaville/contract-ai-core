@@ -1,0 +1,16 @@
+category,key,label,description,sort_order,metadata
+CONTRACT_TYPE,ISDA,ISDA Master Agreement,ISDA Master agreement (initial or amendment). Use this category if both schedule and CSA are mentioned),1,{}
+CONTRACT_TYPE,VSA,Credit Support Annex,ISDA Credit Support Annex,2,{}
+CONTRACT_TYPE,SWAP,Currency Swap Agreement,Currency Swap Agreement,3,{}
+CONTRACT_TYPE,GMRA,Global Master Repurchase Agreement,Global Master Repurchase Agreement,4,{}
+CONTRACT_TYPE,GUARANTEE,Guaranty,Guaranty agreement,5,{}
+CONTRACT_TYPE,IRS,Interest Rate Swap Agreement,Interest Rate Swap Agreement,6,{}
+CONTRACT_TYPE,LETTER,Letter Agreement,Letter Agreement,7,{}
+CONTRACT_TYPE,TERMINATION,Termination Acknowledgment,Termination Acknowledgment,8,{}
+CONTRACT_TYPE,POA,Power of Attorney,Power of Attorney,9,{}
+CONTRACT_TYPE,OTHER,OTHER,Any other type of document,10,{}
+VERSION_TYPE,INITIAL,initial contract,Initial contract,1,{}
+VERSION_TYPE,RESTATED,amended and restated,Version amended and restated of the contract,2,{}
+VERSION_TYPE,AMENDMENT,amendment,Amendment to contract (excluding amended and restated),3,{}
+STATUS,DRAFT,Draft,Draft version,1,{}
+STATUS,EXECUTED,Executed,Executed version,2,{}

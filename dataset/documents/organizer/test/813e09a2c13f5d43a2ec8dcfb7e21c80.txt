@@ -1,0 +1,19 @@
+EX-99.1 2 tiles8ka-20051ex991_0723.htm
+EXHIBIT 99.1
+VIA EMAIL
+From: Joshua.Schanzer@morganstanley.com
+To: thais.hayum@usbank.com, steven.orlandino@usbank.com
+Date: 07/16/2012 02:58 PM
+Subject: Tiles 2005-1 Trust Unwind (CUSIP 89465F206) / Interest Rate Swap Unwind (Reference: SQ9Y7)
+Statement Under Section 6(d)(i) of the ISDA Master Agreement
+We refer to the ISDA Master Agreement between Morgan Stanley Capital Services LLC ("MSCS") and Tiles Trust 2005-1 dated January 6, 2006 (the "ISDA Agreement") (attached hereto). In accordance with Section 1(f)(ii) of the Schedule to the ISDA Agreement, a redemption of the Underlying Securities has occurred that has resulted in an Additional Termination Event under the Interest Rate Swap (attached), in respect of which MSCS previously designated an Early Termination Date.
+In accordance with the terms of the ISDA Agreement, MSCS, as the Non-Affected Party has calculated the amount due to MSCS under Section 6(e) of the ISDA Agreement by obtaining Market Quotations from Reference Market Dealers.
+(i) MSCS attempted to obtain quotations from seven (7) Reference Market Dealers
+(ii) Three (3) Reference Market Dealers provided quotations, which were the following: (a) $6,603,000, (b) $6,700,000 and (c) $7,375,000
+(iii) In accordance with the Market Quotation provisions of the ISDA Agreement, when three (3) Reference Market Dealers provide quotations, the highest and the lowest quotations are discarded and the remaining quotation is used for the purposes of any calculation in relation to any Settlement Amount due.
+\- The Settlement Amount due to MSCS under Section 6(e) of the ISDA Agreement, based on the above Market Quotation mechanic will be $6,700,000 payable on 7/18/2012 which is the second local business day following receipt of this notice (T+2)
+\- Our understanding is that the Trust has received the final redemption payment on the Underlying Securities in an amount equal to $12,365,264.15 ($12,050,000 in principal and $315,264.15 in interest). As a result the residual amount left in the Trust once the Settlement Amount has been made to MSCS will be $5,665,264.15 which implies a redemption amount per $1,000 Trust Unit of $470.15 (47.015%).
+All terms used but not defined herein, shall have the meanings ascribed to them in the ISDA Agreement and Interest Rate Swap, as applicable.
+Please confirm receipt of this correspondence and please call us with any questions.
+Best regards,
+Joshua Schanzer, Executive Director

@@ -1,0 +1,17 @@
+EX-10.2 3 clmt-20231003xex10d2.htm EX-10.2
+![Graphic](clmt-20231003xex10d2001.jpg)
+Exhibit 10.2
+SCHEDULE
+to the
+ISDA 2002 MASTER AGREEMENT
+dated as of October 3, 2023 between
+WELLS FARGO COMMODITIES, LLC ("Party A ")
+and MONTANA RENEWABLES, LLC ("Party B ")
+Part 1.	 Termination Provisions
+(a)	 "Specified Entity " means, with respect to Party A and Party B for all purposes of this Agreement, none specified.
+(b)	 "Specified Transaction " has its meaning as defined in Section 14, provided that for purposes of Section 5(a)(v), "Specified Transaction" shall also mean any Physical Commodity Transaction; provided further that an Event of Default shall not occur under Section 5(a)(v) for any failure to make or take delivery of a commodity under a Physical Commodity Transaction if such failure results from force majeure or such commodity (or a means for making or taking delivery of such commodity) is unavailable to effect such delivery for a reason unrelated to the financial condition of the relevant party (or its Credit Support Provider or Specified Entity) acting in good faith, where:
+"Physical Commodity Transaction " means any transaction (including an agreement with respect thereto) now existing or hereafter entered into between one party to this Agreement (or any Credit Support Provider of such party or any applicable Specified Entity of such party) and the other party to this Agreement (or any Credit Support Provider of such party or any applicable Specified Entity of such party) which is a transaction for purchasing (or repurchasing), selling (or reselling) or delivering one or more commodities, whether on a spot basis or for future delivery, or for borrowing, lending, transporting or storing one or more commodities.
+(c)	 "Cross Default " shall apply to Party B and shall not apply to Party A.
+" Specified Indebtedness" has the meaning set forth in Section 14 and shall also include any obligation (whether present or future, contingent or otherwise, as principal or surety or otherwise) in respect of Financial Market Transactions. For the purposes hereof, "Financial Market Transactions " means any transaction of a type specified in the definition of Specified Transaction which is entered into between a party hereto and any other entity, and for the purposes of testing against the Threshold Amount, the "aggregate principal amount" thereof shall be deemed to be a reference to the mark-to- market value of that Financial Market Transaction (or, if any actual amount is due as a result of the termination or close-out of that Financial Market Transaction, that amount).
+"Threshold Amount " means with respect to Party B, an amount (including its equivalent in another currency) equal to $10,000,000, provided that for any Specified Indebtedness payable by Party B (or any Credit Support Provider of Party B) to Party A, Threshold Amount means any amount of such Specified Indebtedness.
+(d)	 "Credit Event Upon Merger " shall apply to Party B and shall not apply to Party A, provided that the provisions of Section 5(b)(v)(2) and 5(b)(v)(3) shall not apply, shall be deemed deleted, and shall be without

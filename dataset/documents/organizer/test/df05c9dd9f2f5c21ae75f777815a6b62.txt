@@ -1,0 +1,51 @@
+EX-10.11 12 b80637exv10w11.htm EX-10.11
+Exhibit  10.11
+(Bilateral Form) 	   	 (ISDA Agreements Subject to New York Law Only)
+ISDA ®
+International Swaps and Derivatives Association, Inc.
+CREDIT SUPPORT ANNEX
+to the Schedule to the
+ISDA MASTER AGREEMENT
+dated as of July 18, 2007 between
+WACHOVIA BANK, NATIONAL ASSOCIATION("Party A")
+and
+WRIGHT EXPRESS CORPORATION("Party B")
+This Annex supplements, forms part of, and is subject to, the ISDA Master Agreement referred to above (this "Agreement"), is part of its Schedule and is a Credit Support Document under this Agreement with respect to each party.
+Accordingly, the parties agree as follows: -
+Paragraphs 1 -- 12\. Incorporation
+Paragraphs 1 through 12 inclusive of the ISDA Credit Support Annex (Bilateral Form) (ISDA Agreements Subject to New York Law Only) published in 1994 by the International Swaps and Derivatives Association, Inc. are incorporated herein by reference and made a part hereof.
+Paragraph  13\. Elections and Variables
+(a) 	   	 Security Interest for "Obligations". The term " Obligations" as used in this Annex includes no additional obligations with respect to Party A and Party B.
+(b) 	   	 Credit Support Obligations.
+(i) 	   	 Delivery Amount, Return Amount and Credit Support Amount.
+#####
+(A) 	   	 " Delivery Amount" has the meaning specified in Paragraph 3(a).
+(B) 	   	 " Return Amount" has the meaning specified in Paragraph 3(b).
+(C) 	   	 " Credit Support Amount" has the meaning specified in Paragraph 3.
+(ii) 	   	 Eligible Collateral. The following items will qualify as " Eligible Collateral" for the party specified, provided that the Secured Party shall be entitled at any time, and from time to time, not to accept as Eligible Collateral any of the following which constitute Ineligible Securities as defined below:
+Valuation Party A 	   	 Party B 	   	 Percentage
+(A)  	   	 Cash: U.S. Dollars in depositary account form.  	   	 YES  	   	 NO  	   	   	 100 	 %
+(B)  	   	 Treasury Bills : negotiable debt obligations issued by the U.S. Treasury Department having an original maturity at issuance of not more than one year.  	   	 YES  	   	 NO  	   	   	 98 	 %
+(C)  	   	 Treasury Notes : negotiable debt obligations issued by the U.S. Treasury Department having an original maturity at issuance of more than one year but not more than 10 years.  	   	 YES  	   	 NO  	   	   	 98 	 %
+(D)  	   	 Treasury Bonds : negotiable debt obligations issued by the U.S. Treasury Department having an original maturity at issuance of more than 10 years but not more than 30 years.  	   	 YES  	   	 NO  	   	   	 98 	 %
+(E)  	   	 Agency Securities : negotiable debt obligations of the Federal National Mortgage Association (FNMA), Federal Home Loan Mortgage Corporation (FHLMC) having a remaining maturity of not more than 30 years.  	   	 YES  	   	 NO  	   	   	 92 	 %
+(F)  	   	 GNMA Certificates. Mortgage-backed pass-through certificates issued by private entities, evidencing undivided interests in pools of first lien mortgages or deeds of trust on single family residences, guaranteed by the Government National Mortgage Association (GNMA) with the full faith and credit of the United States, and having an original maturity at issuance of not more than 30 years.  	   	 YES  	   	 NO  	   	   	 92 	 %
+#####
+(iii) 	   	 Other Eligible Support. Applicable. Other Eligible Support. The following items will qualify as " Other Eligible Support" for Party B only:
+Valuation Party A 	   	 Party B 	   	 Percentage Letters of Credit  	   	 [  ] 	   	 [X] 	   	 100% unless either (i) a Letter of Credit Default shall apply with respect to such Letter of Credit or (ii) twenty (20) or fewer Local Business Days remain prior to the expiration of such Letter of Credit, in which case the Valuation Percentage shall be 0.
+(iv) 	   	 Thresholds.
+(A) 	   	 " Independent Amount" means for Party A: zero
+" Independent Amount" means for Party B: zero
+(B) 	   	 " Threshold" means, for Party A: on any date of determination, (a) the amount set forth below opposite the lower of Party A's Credit Rating on that date, or (b) zero if on that date Party A does not have a Credit Rating or an Event of Default exists with respect to Party A:
+Threshold 	   	 Credit Rating (S &P) 	   	 Credit Rating (Moody 's) $40,000,000  	   	 AAA  	   	 Aaa $30,000,000  	   	 AA-, AA and AA+ 	   	 Aa3, Aa2 and Aa1 $20,000,000  	   	 A and A+ 	   	 A2 and A1 $15,000,000  	   	 A-  	   	 A3 $10,000,000  	   	 BBB+ 	   	 Baa1 zero  	   	 BBB or lower-  	   	 Baa2 or lower
+" Threshold" means, for Party B: $9,000,000; provided that if an Event of Default exists with respect Party B, the Threshold shall be zero.
+(C) 	   	 " Minimum Transfer Amount" means, for a party on any date of determination, $100,000.
+(D) 	   	 Rounding: The Delivery Amount and the Return Amount will be rounded down to the nearest integral multiple of $100,000.
+(c) 	   	 Valuation and Timing.
+(i) 	   	 " Valuation Agent" means: Party A.
+(ii) 	   	 " Valuation Date" means any Local Business Day on which a demand is made before 5:00 p.m., New York time, pursuant to Paragraph 3.
+(iii) 	   	 " Valuation Time" means the close of business in New York City on the Local Business Day before the Valuation Date or date of calculation, as applicable; provided that the calculations of Value and Exposure will be made as of approximately the same time on the same date.
+#####
+(iv) 	   	 " Notification Time" means 1:00 p.m., New York time, on a Local Business Day.
+(d) 	   	 Conditions Precedent and Secured Party 's Rights and Remedies. The following Termination Event(s) will be a " Specified Condition" for the party specified (that party being the Affected Party if the Termination Event occurs with respect to that party):
+Party A 	   	 Party B Illegality 	   	 YES 	   	 YES

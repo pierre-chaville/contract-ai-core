@@ -1,0 +1,51 @@
+EX-10.4 10 file010.htm INTEREST RATE SWAP AGREEMENT
+[CLAYTON UTZ LOGO OMITTED]
+MEDALLION TRUST SERIES 2005-1G ISDA MASTER AGREEMENT (INTEREST RATE SWAP AGREEMENT)
+COMMONWEALTH BANK OF AUSTRALIA ABN 48 123 123 124
+PERPETUAL TRUSTEE COMPANY LIMITED ABN 42 000 001 007
+SECURITISATION ADVISORY SERVICES PTY. LIMITED ABN 88 064 133 946
+If you have any questions about the details of this document PLEASE CONTACT LOUISE MCCOACH ON + 61 2 9353 4679
+Clayton Utz Lawyers Levels 19-35  No. 1 O'Connell Street  Sydney  NSW  2000  Australia PO Box H3 Australia Square  Sydney  NSW  1215 T + 61 2 9353 4000  F + 61 2 8220 6700
+www.claytonutz.com
+Our reference  174/657/80019362
+i
+SCHEDULE
+TO THE
+MASTER AGREEMENT
+DATED AS OF 21 JANUARY 2005 BETWEEN
+SECURITISATION ADVISORY SERVICES PTY. LIMITED ABN 88 064 133 946 ("MANAGER")
+AND
+COMMONWEALTH BANK OF AUSTRALIA ABN 48 123 123 124 ("PARTY A")
+AND
+PERPETUAL TRUSTEE COMPANY LIMITED ABN 42 000 001 007 AS TRUSTEE OF THE MEDALLION TRUST SERIES 2005-1G ("PARTY B")
+PART 1. TERMINATION PROVISIONS
+(a)     "SPECIFIED ENTITY" in relation to
+(i)     Party A, is not applicable; and
+(ii)    Party B, is not applicable.
+(b)     "SPECIFIED TRANSACTION" means - not applicable.
+(c)     (i)     The following provisions of Section 5 will not apply to Party A:
+Section 5(a)(ii)    Section 5(a)(v)     Section 5(a)(viii)    Section 5(b)(iv) Section 5(a)(iii)   Section 5(a)(vi)    Section 5(b)(ii) Section 5(a)(iv)    Section 5(a)(vii)   Section 5(b)(iii)
+(ii)    The following provisions of Section 5 will not apply to Party B:
+Section 5(a)(ii)    Section 5(a)(v)     Section 5(a)(viii)    Section 5(b)(iv) Section 5(a)(iii)   Section 5(a)(vi)    Section 5(b)(ii) Section 5(a)(iv)    Section 5(a)(vii)   Section 5(b)(iii)
+(d)     The "AUTOMATIC EARLY TERMINATION" provisions of Section 6(a) will not apply.
+(e)     PAYMENTS ON EARLY TERMINATION. For the purpose of Section 6(e) of this Agreement:
+(i)     A.      in respect of each Basis Swap, Loss will apply; and
+B.      in respect of each Fixed Rate Swap and the Interest Rate Basis Cap (if any), Market Quotation will apply;
+(ii)    A.      in respect of each Basis Swap, neither the First Method nor the Second Method will apply; and
+B.      in respect of each Fixed Rate Swap and the Interest Rate Basis Cap (if any), the Second Method will apply; and
+(iii)   the definition of "Loss" is amended by adding the following sentence at the end of that definition:
+"However in relation to a Terminated Transaction that is a Basis Swap, each party's Loss is deemed to be zero.".
+(f)     "TERMINATION CURRENCY" means Australian dollars.
+(g)     ADDITIONAL TERMINATION EVENT. The following is an Additional Termination Event in relation to which Party B is the only Affected Party and the Basis Swaps are the only Affected Transactions:
+If, on any day on which the weighted average Mortgage Rate applicable to the Mortgage Loans forming part of the Assets of the Series Trust which are charged interest at a variable rate is equal to or greater than the then Threshold Rate, Party A notifies Party B and each Rating Agency of its intention to terminate the Basis Swaps.
+PART 2. TAX REPRESENTATIONS
+(a)     PAYER REPRESENTATIONS. For the purpose of Section 3(e) of this Agreement, Party A and Party B each make the following representation:
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 2(e), 6(d)(ii) or 6(e) of this Agreement) to be made by it to any other party under this Agreement. In making this representation, it may rely on:
+(i)     the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement;
+(ii)    the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement; and
+(iii)   the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement,
+provided that it shall not be a breach of this representation where reliance is placed on clause (ii) and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+(b)     PAYEE REPRESENTATIONS. For the purpose of Section 3(f) of this Agreement, Party A will and Party B will make the following representation:
+It is an Australian resident and does not derive the payments under this Agreement in part or whole in carrying on business in a country outside Australia at or through a permanent establishment of itself in that country.
+PART 3. AGREEMENT TO DELIVER DOCUMENTS
+For the purpose of Sections 4(a)(i) and (ii) of this Agreement, each party agrees to deliver to each other party the following documents, as applicable:

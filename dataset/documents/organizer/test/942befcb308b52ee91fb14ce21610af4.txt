@@ -1,0 +1,51 @@
+EX-10.2 3 d361130dex102.htm EX-10.2
+Exhibit 10.2
+ISDA®
+International Swaps and Derivatives Association, Inc.
+2002 MASTER AGREEMENT
+dated as of December 17, 2014
+JPMORGAN CHASE BANK, N.A. ("Party A") 	   	 and  	   	  BOOZ ALLEN HAMILTON INC. ("Party B")
+have entered and/or anticipate entering into one or more transactions (each a "Transaction") that are or will be governed by this 2002 Master Agreement, which includes the schedule (the "Schedule"), and the documents and other confirming evidence (each a "Confirmation") exchanged between the parties or otherwise effective for the purpose of confirming or evidencing those Transactions. This 2002 Master Agreement and the Schedule are together referred to as this "Master Agreement".
+Accordingly, the parties agree as follows:--
+1. 	 Interpretation
+(a) Definitions. The terms defined in Section 14 and elsewhere in this Master Agreement will have the meanings therein specified for the purpose of this Master Agreement.
+(b) Inconsistency. In the event of any inconsistency between the provisions of the Schedule and the other provisions of this Master Agreement, the Schedule will prevail. In the event of any inconsistency between the provisions of any Confirmation and this Master Agreement, such Confirmation will prevail for the purpose of the relevant Transaction.
+(c) Single Agreement. All Transactions are entered into in reliance on the fact that this Master Agreement and all Confirmations form a single agreement between the parties (collectively referred to as this "Agreement"), and the parties would not otherwise enter into any Transactions.
+2. 	 Obligations
+(a) General Conditions.
+(i) Each party will make each payment or delivery specified in each Confirmation to be made by it, subject to the other provisions of this Agreement.
+(ii) Payments under this Agreement will be made on the due date for value on that date in the place of the account specified in the relevant Confirmation or otherwise pursuant to this Agreement, in freely transferable funds and in the manner customary for payments in the required currency. Where settlement is by delivery (that is, other than by payment), such delivery will be made for receipt on the due date in the manner customary for the relevant obligation unless otherwise specified in the relevant Confirmation or elsewhere in this Agreement.
+compensation in respect of that obligation or deferred obligation, as the case may be, pursuant to Section 9(h)(ii)(1) or (2), as appropriate. The fair market value of any obligation referred to in clause (b) above will be determined as of the originally scheduled date for delivery, in good faith and using commercially reasonable procedures, by the party obliged to make the determination under Section 6(e) or, if each party is so obliged, it will be the average of the Termination Currency Equivalents of the fair market values so determined by both parties.
+"Waiting Period " means:--
+(a) in respect of an event or circumstance under Section 5(b)(i), other than in the case of Section 5(b)(i)(2) where the relevant payment, delivery or compliance is actually required on the relevant day (in which case no Waiting Period will apply), a period of three Local Business Days (or days that would have been Local Business Days but for the occurrence of that event or circumstance) following the occurrence of that event or circumstance; and
+(b) in respect of an event or circumstance under Section 5(b)(ii), other than in the case of Section 5(b)(ii)(2) where the relevant payment, delivery or compliance is actually required on the relevant day (in which case no Waiting Period will apply), a period of eight Local Business Days (or days that would have been Local Business Days but for the occurrence of that event or circumstance) following the occurrence of that event or circumstance.
+IN WITNESS WHEREOF the parties have executed this document on the respective dates specified below with effect from the date specified on the first page of this document.
+JPMORGAN CHASE BANK, N.A. 	   	  	   	 BOOZ ALLEN HAMILTON INC.
+By: 	   	  /s/ Eric W. Bonatz 	   	  	   	 By: 	   	  /s/ Kevin L. Cook Name: 	   	 Eric W. Bonatz 	   	  	   	  	   	 Name: 	   	 Kevin L. Cook Title: 	   	 Vice President 	   	  	   	  	   	 Title: 	   	 SVP & CFO Date: 	   	  	   	  	   	  	   	 Date: 	   	 12/29/14
+AMENDED AND RESTATED
+SCHEDULE
+dated as of February  8, 2017,
+to the
+2002 MASTER AGREEMENT
+dated as of December  17, 2014
+between
+JPMORGAN CHASE BANK, N.A.
+( "Party A")
+and
+BOOZ ALLEN HAMILTON INC.
+( "Party B")
+Party A and Party B have previously entered into that certain ISDA Master Agreement, dated as of December 17, 2014 (as amended from time to time, the "Prior ISDA"). The parties hereby amend and restate the Prior ISDA in its entirety with this Amended and Restated Schedule. Following the execution of this Amended and Restated Schedule, all references to the Agreement herein shall be to the ISDA 2002 Master Agreement, which is supplemented by this Amended and Restated Schedule, dated as of the even date.
+Part 1.     Termination Provisions.
+(a) 	 " Specified Entity" means, in relation to Party A for the purpose of:
+Section 5(a)(v): 	    	 Not Applicable Section 5(a)(vi): 	    	 Not Applicable Section 5(a)(vii): 	    	 Not Applicable Section 5(b)(v): 	    	 Not Applicable
+and in relation to Party B for the purpose of:
+Section 5(a)(v): 	    	 Not Applicable Section 5(a)(vi): 	    	 Not Applicable Section 5(a)(vii): 	    	 Not Applicable Section 5(b)(v): 	    	 Not Applicable
+(b) 	 " Specified Transaction" will have the meaning specified in Section 14\.
+(c) 	 The " Cross Default" provisions of Section 5(a)(vi) will apply to Party A and will apply to Party B; provided, that
+(i) 	 the phrase "or becoming capable at such time of being declared" shall be deleted from clause (1) of such Section 5(a)(vi); and
+(ii) 	 the following language shall be added to the end thereof: "provided, however, that an Event of Default shall not occur under (2) above if the failure to pay is caused not by the unavailability of funds but is caused solely due to a technical or administrative error which has been remedied within three Local Business Days after a notice of such failure is given to the party."
+" Specified Indebtedness" will have the meaning specified in Section 14 of the Agreement except that such term shall not include obligations in respect of deposits received in the ordinary course of a party's banking business.
+" Threshold Amount" means in relation to Party A, an amount equal to 3% of the shareholders' equity of Party A (on a consolidated basis) as determined in accordance with generally accepted accounting principles in Party A's jurisdiction of incorporation or organization by reference to Party A's most recently published audited financial statements (or its equivalent in another currency); and in relation to Party B, $50,000,000.
+(d) 	 The "Credit Event Upon Merger" provisions of Section 5(b)(v) of this Agreement will apply to Party A and will apply to Party B; provided, however, that if Party A has long term, unsecured and unsubordinated indebtedness or deposits which is or are publicly rated (such rating, a "Credit Rating") by Moody's Investor Services, Inc. ("Moody's"), Standard & Poor's Ratings Group ("S &P") or any other internationally recognized rating agency (a "Rating Agency"), then the words "materially weaker" in line 6 of Section 5(b)(v) shall mean that the Credit Rating of such party (or, if applicable, the Credit Support Provider of such party) shall be rated lower than Baa3 by Moody's, or lower than BBB- by S&P or, in the event that there is no Credit Rating by either Moody's or S&P applicable to such party (or, if applicable, the Credit Support Provider of such party) but such party's long-term indebtedness or deposits is or are rated by a Rating Agency, lower than a rating equivalent to the foregoing by such Rating Agency; provided, further, that Section 5(b)(v)(3) shall not apply to Party A or Party B. Under no circumstances shall any Designated Event that is not prohibited under the Credit Agreement give rise to a "Credit EventUponMerger" hereunder with respect to Party B.
+(e) 	 The " Automatic Early Termination" provision of Section 6(a) will not apply to Party A and will not apply to Party B.
+(f) 	 " Termination Currency" means United States Dollars.

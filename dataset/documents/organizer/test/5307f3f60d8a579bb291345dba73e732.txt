@@ -1,0 +1,51 @@
+EX-10.2 3 a102-contrailaviationsuppo.htm EX-10.2
+ISDA®
+International Swaps and Derivatives Association, Inc.
+SCHEDULE to the
+2002 Master Agreement
+dated as of December 28, 2021
+between
+OLD NATIONAL BANK  and  CONTRAIL AVIATION SUPPORT, LLC
+("Party A") & CONTRAIL AVIATION LEASING,
+LLC
+(Collectively "Party B")
+Part 1. Termination Provisions.
+(a)"Specified Entity" means in relation to Party A for the purpose of:
+Section 5(a)(v),  Not Applicable
+Section 5(a)(vi),  Not Applicable Section 5(a)(vii),  Not Applicable Section 5(b)(v),  Not Applicable and in relation to Party B for the purpose of:
+Section 5(a)(v),  Affiliates
+Section 5(a)(vi),  Affiliates
+Section 5(a)(vii),  Affiliates
+Section 5(b)(v),  Affiliates
+(b)"Specified Transaction" will have the meaning specified in Section 14 of this Agreement.
+(c)The "Cross Default" provisions of Section 5(a)(vi) will not apply to Party A and will apply to Party B. If such provision applies:
+(i)"Specified Indebtedness" will have the meaning specified in Section 14, provided that it will also include any obligation (whether present or future, contingent or otherwise, as principal or surety or otherwise) in respect of any Derivative Transaction and will not include (i) indebtedness in respect of deposits received or (ii) any payment not made because of an intervening change in law making such payment illegal, or a Force Majeure Event provided that the party had available sufficient funds to make such payment at the time of non-payment.
+(ii)"Threshold Amount" means in relation to Party B, $0.00.
+(d)The "Credit Event Upon Merger" provisions of Section 5(b)(v) will not apply to Party A and will apply to Party B.
+(e)The "Automatic Early Termination" provision of Section 6(a) will not apply to Party A and will not apply to Party B.
+Copyright (C) 2002 by International Swaps and Derivatives Association, Inc.
+VP/#51830672.1
+(f)"Termination Currency" means U.S. Dollars.
+(g)Additional Termination Event will apply. It shall constitute an Additional Termination Event in respect of which Party B shall be the sole Affected Party and all Transactions shall be Affected Transactions if:
+(i)a default or event of default (however described) occurs under the Credit Agreement or any other Loan Document (hereinafter defined);
+(ii)the Loans under the Credit Agreement shall be paid or prepaid in full, or the Credit Agreement shall expire, terminate or otherwise cease to be in full force and effect;
+(iii)Party A shall cease to be a party to, or have any commitments under, the Credit Agreement;
+(iv)Party B's obligations to Party A under this Agreement fail at any time to be secured by the collateral that secures, or guaranteed to the same extent as the guarantees that support, the Loans under the Credit Agreement from time to time on the same terms in all relevant respects and on a pari passu and pro rata basis with the principal of such Loans (being the most senior class of loans if there is more than one class) for any reason;
+(v)any notice or consent is given or any action is taken that would (A) cause the collateral, or the security interest in or lien on the collateral, to be released, realized upon, liquidated, sold, transferred, conveyed or otherwise disposed of for any reason, and irrespective of whether or not Party A or any of its Affiliates gives such notice or consent or takes such action, or (B) adversely alter or impair any of Party A's rights, interests or benefits in or pertaining to the collateral under the Credit Agreement, any Credit Support Document or any other document executed in connection therewith (whether such action is in the form of an amendment, modification, waiver, approval, consent or otherwise); or
+(vi)Party B shall prepay any principal amount of any Loan(s) under the Credit Agreement (other than a prepayment of all loans in full).
+For purposes of (vi) above, in the event of such prepayment, the Affected Transaction(s) shall be such proportion of each Transaction related to such Loan(s) as determined by Party A as being required to reduce the aggregate notional amount of such Transaction(s) to equal the aggregate outstanding principal amount of such Loan(s) and such Transaction(s) shall be deemed to be the sole Affected Transaction(s) for the purposes of this Additional Termination Event. In this context, following the occurrence of the Early Termination Date under this Part 1(g)(vi), Transaction(s) and/or portions of Transaction(s) which are not deemed to be Affected Transactions shall continue in accordance with the provisions of this Agreement and the notional amount of any Transaction terminated in part will be reduced to reflect such partial termination.
+Part 2. Tax Representations.
+(a)Payer Representation. For the purpose of Section 3(e) of this Agreement, neither Party A nor Party B makes any representations.
+(b)Payee Tax Representations. The following representation will apply to Party A and Party B:
+It is a US person duly incorporated, created or organized under the laws of the United States of America and is validly existing under those laws.
+2  ISDA® 2002
+Part 3. Agreement to Deliver Documents.
+For the purpose of Sections 4(a)(i) and (ii) of this Agreement, each party agrees to deliver the following documents, as applicable:
+(a)  Each party shall, as soon as practicable after demand, deliver to the other party any form or document reasonably requested by the other party, including without limitation, any form or document required to enable such other party to make payments hereunder without withholding for or on account of Taxes or with such withholding at a reduced rate. Without limiting the generality of the foregoing:
+Part 4. Miscellaneous.
+![image0.jpg](image0.jpg)
+(a)Addresses for Notices. For the purpose of Section 12(a) of this Agreement:
+Address(es) for notices or communications to Party A:
+Address:	 Old National Bank One Main Street Evansville, IN 47708
+Attention:	 Jim Schmidt Telephone No.:	 (812)461-9774 E-mail Address:	 jim.schmidt@oldnational.com
+3  ISDA® 2002

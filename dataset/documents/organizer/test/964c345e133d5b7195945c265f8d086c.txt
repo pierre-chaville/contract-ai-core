@@ -1,0 +1,51 @@
+EX-10.4 10 file010.htm CBA CURRENCY SWAP
+[CLAYTON UTZ LOGO]
+SECURITISATION ADVISORY SERVICES PTY. LIMITED ABN 88 064 133 946 Manager
+COMMONWEALTH BANK OF AUSTRALIA ABN 48 123 123 124 Party A
+PERPETUAL TRUSTEE COMPANY LIMITED ABN 42 000 001 007 Party B
+MEDALLION TRUST SERIES 2003-1G ISDA MASTER AGREEMENT (CURRENCY SWAP AGREEMENT)
+CLAYTON UTZ LAWYERS Levels 23-35 No 1 O'Connell Street Sydney NSW 2000 Australia PO Box H3 Australia Square Sydney NSW 1215 DX 370 Sydney www.claytonutz.com Tel + 61 2 9353 4000 Fax + 61 2 8220 6700 OUR REF - 801/784/21723929 CONTACT - BEN SANDSTAD
+SYDNEY O MELBOURNE O BRISBANE O PERTH O CANBERRA O DARWIN
+Liability limited by the Solicitors' Limitation of Liability Scheme approved under the Professional Standards Act 1994 (NSW)
+SCHEDULE
+TO THE
+MASTER AGREEMENT
+DATED AS OF 13 MARCH 2003 BETWEEN
+SECURITISATION ADVISORY SERVICES PTY. LIMITED ABN 88 064 133 946 ("MANAGER")
+AND
+COMMONWEALTH BANK OF AUSTRALIA ABN 48 123 123 124 ("PARTY A")
+AND
+PERPETUAL TRUSTEE COMPANY LIMITED ABN 42 000 001 007
+IN ITS SEVERAL CAPACITIES AS TRUSTEE OF VARIOUS SERIES TRUSTS FROM TIME TO TIME ESTABLISHED UNDER THE MASTER TRUST DEED AND VARIOUS SERIES SUPPLEMENTS ("PARTY B")
+PART 1.  TERMINATION PROVISIONS.
+In this Agreement:
+(a) "SPECIFIED ENTITY" does not apply in relation to Party A or Party B.
+(b) The definition of "SPECIFIED TRANSACTION" is not applicable.
+(c) (i)   The following provisions of Section 5 will not apply to Party A:
+Section 5(a)(ii)        Section 5(a)(v) Section 5(a)(iii)       Section 5(a)(vi) Section 5(a)(iv)        Section 5(b)(iv)
+(ii)  The following provisions of Section 5 will not apply to Party B:
+Section 5(a)(ii)        Section 5(a)(v)    Section 5(b)(iv) Section 5(a)(iii)       Section 5(a)(vi) Section 5(a)(iv)        Section 5(a)(viii)
+(iii) Section 5(b)(ii) will not apply to Party A as the Affected Party (subject to Part 5(6)(b) of this Schedule) and Section 5(b)(iii) will not apply to Party A as the Burdened Party.
+(d)      The "AUTOMATIC EARLY TERMINATION" provisions in Section 6(a) will not apply to Party A or Party B.
+(e) PAYMENTS ON EARLY TERMINATION. For the purposes of Section 6(e) of this Agreement:
+(i) Market Quotation will apply; and
+(ii) the Second Method will apply.
+(f)      "TERMINATION CURRENCY" means US$ provided that if an amount due in respect of an Early Termination Date will be payable by Party B to Party A the Termination Currency for the purpose of calculating and paying that amount is Australian Dollars.
+(g)      "ADDITIONAL TERMINATION EVENT" applies. The following is an Additional Termination Event in relation to which both Party A and Party B are Affected Parties:
+"An Event of Default (as defined in the Security Trust Deed) occurs and the Security Trustee has declared, in accordance with the Security Trust Deed, the Relevant Notes immediately due and payable."
+For the purposes of calculating a payment due under Sections 6(d) and
+(e) when an Early Termination Date is designated under Section 6(b) as a result of such Additional Termination Event, Party B will be the only Affected Party.
+PART 2.  TAX REPRESENTATIONS
+(a)      PAYER TAX REPRESENTATIONS. For the purpose of Section 3(e) of this Agreement, Party A and Party B each make the following representation:
+It is not required by any applicable law, as modified by the practice of any relevant government revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 2(e), 6(d)(ii) or 6(e) of this Agreement) to be made by it to any other party under this Agreement. In making this representation, it may rely on:
+(i)     the accuracy of any representation made by that other party pursuant to Section 3(f) of this Agreement;
+(ii)    the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by that other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement; and
+(iii)   the satisfaction of the agreement of that other party contained in Section 4(d) of this Agreement,
+PROVIDED THAT it shall not be a breach of this representation where reliance is placed on clause (ii) and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+(b)      PAYEE TAX REPRESENTATIONS. For the purpose of Section 3(f) of this Agreement, Party A and Party B each makes the following representation:
+It is an Australian resident and does not derive payments under this Agreement in part or whole in carrying on a business in a country outside Australia of or through a permanent establishment of itself in that country.
+PART 3.  AGREEMENT TO DELIVER DOCUMENTS
+For the purpose of Sections 4(a)(i) and (ii) of this Agreement, each party agrees to deliver to each other party the following documents, as applicable:
+(a) TAX FORMS, DOCUMENTS OR CERTIFICATES TO BE DELIVERED ARE:
+PARTY REQUIRED TO DELIVER       FORM/DOCUMENT/CERTIFICATE          DATE BY WHICH TO BE DELIVERED DOCUMENT
+Party A and Party B             Any document or certificate        On the earlier of (a) reasonably required or             learning that such reasonably requested by a          document or certificate party in connection with its       is required and (b) as obligations to make a              soon as reasonably payment under this Agreement       practicable following a which would enable that            request by a party.

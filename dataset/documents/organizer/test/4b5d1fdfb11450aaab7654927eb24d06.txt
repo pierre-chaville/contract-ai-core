@@ -1,0 +1,51 @@
+EX-10.2 3 exhibit102-scheduletotheis.htm EXHIBIT 10.2
+Execution Copy
+Ref. No. CB25-792
+SCHEDULE
+to the
+ISDA 2002 Master Agreement
+dated as of March 20, 2019
+between
+CITIBANK, N.A.,
+a national banking association organized under the laws of the United States,
+acting through its Office located in New York, London, Singapore, Sydney
+("Party A")
+and
+FARMER BROS. CO.,
+a corporation organized and existing
+under the laws of Delaware
+("Party B")
+Part 1
+Termination Provisions
+In this Agreement:
+(a) "Specified Entity" means for the purpose of Section 5(a)(v) of this Agreement, (i) in relation to Party A, Citigroup Global Markets Limited, Citigroup Global Markets Inc., Citigroup Global Markets Commercial Corp., Citicorp Securities Services, Inc., Citibank Europe PLC, Citigroup Global Markets Deutschland AG, Citigroup Energy Inc., Citibank Japan Ltd., Citibank Canada, Citigroup Energy Canada ULC, and Citigroup Financial Products Inc.
+(individually a "Section 5(a)(v) Affiliate"), and (ii) in relation to Party B, Not Applicable.
+(b) "Specified Transaction" will have the meaning specified in Section 14 of this Agreement. For purposes of clause (c) of such definition, Specified Transaction includes any securities options, margin loans, short sales, any agreement governing the purchase, sale, transfer, exchange or option of a commodity, or any other commodity trading transaction and any other similar transaction now existing or hereafter entered into between Party A (or any Section 5(a)(v) Affiliate) and Party B (or any Affiliate of Party B). For this purpose, "commodity" means any tangible or intangible commodity of any type or
+Execution Copy
+Ref. No. CB25-792
+description, including without limitation power, natural gas, petroleum (and the products and by-products thereof), emissions allowances, precious metals and coal.
+(c) The "Cross Default" provisions of Section 5(a)(vi) will apply to Party A and will apply to Party B., provided that Section 5(a)(vi) is hereby amended by deleting the words ", or becoming capable at such time of being declared" in the seventh line thereof,
+For purposes of Section 5(a)(vi), the following provisions apply:
+"Specified Indebtedness" shall have the meaning set forth in Section 14 of this Agreement, provided, however, that Specified Indebtedness shall not include deposits received in the course of a party's ordinary banking business.
+"Threshold Amount" means
+(i) with respect to Party A, 2% of the stockholders' equity of Party A; and
+(ii) with respect to Party B, USD 10,000,000
+including the U.S. Dollar equivalent, as determined by the Calculation Agent, on the date of any default, event of default or other similar condition or event of any obligation stated in any other currency.
+For purposes of the above, stockholders' equity shall be determined by reference to the relevant party's most recent consolidated (quarterly, in the case of a U.S. incorporated party) balance sheet and shall include, in the case of a U.S. incorporated party, legal capital, paid-in capital, retained earnings and cumulative translation adjustments. Such balance sheet shall be prepared in accordance with accounting principles that are generally accepted in such party's country of organization.
+(d) The "Credit Event Upon Merger" provisions of Section 5(b)(v) of this Agreement will apply to Party A and will apply to Party B.
+(e) The "Automatic Early Termination" provisions of Section 6(a) will not apply to Party A and will not apply to Party B; provided, however, that with respect to a party, where the Event of Default specified in Section 5(a)(vii)(1), (3), (4), (5), (6) or to the extent analogous thereto, (8) is governed by a system of law which does not permit termination to take place after the occurrence of the relevant Event of Default, then the Automatic Early Termination provisions of Section 6(a) will apply to such party.
+(f) "Termination Currency" will have the meaning specified in Section 14 of this Agreement.
+(g) "Additional Termination Event" will apply. It shall constitute an Additional Termination Event, Party B shall be the sole Affected Party and Party A shall be the party entitled to determine the Close-out Amount, if at any time:
+Execution Copy
+Ref. No. CB25-792
+(i)  the Credit Agreement (as defined below) shall for any reason, cease to be in full force and effect;
+(ii)  Party A or an Affiliate of Party A shall for any reason cease to be a party to the Credit Agreement;
+(iii) all or any portion of the Collateral (as defined in the Credit Support Documents) shall be released from the Lien(s) (as defined in the Credit Support Documents) of the Credit Support Documents, other than a release of collateral that is specifically permitted by the Credit Agreement or consented to by all Required Lenders or other necessary parties under the Credit Agreement;
+(iii) the obligations of Party B with respect to Transactions hereunder are no longer guaranteed pursuant to the Loan Guaranty (as such term is defined in the Credit Agreement); or
+(iv) the obligations of Party B under this Agreement shall for any reason not be secured or not be secured equally and ratably and on a pari passu basis with the Lenders (as defined in the Credit Agreement) under and pursuant to the Loan Guaranty and Collateral Documents each as defined in the Credit Agreement, other than in connection with a release of collateral that is specifically permitted by the Credit Agreement or consented to by all Required Lenders or other necessary parties under the Credit Agreement;
+in each case, other than (i) in connection with any assignment by Party A or any refinancing, amendment or restatement of the Credit Agreement or replacement with a new credit agreement in respect of which Party A or any Affiliate of Party A is a party, or (ii) Party A otherwise provides its written consent to an event that would otherwise constitue an Additional Termination Event or to any refinancing, amendment or restatement that effects or would result in any such event. As used herein and throughout this Agreement, "Credit Agreement" means that certain Amended and Restated Credit Agreement dated as of November 6, 2018 among FARMER BROS. CO., The other Loan Parties Party Thereto, The Lenders Party Thereto, CITIBANK, N.A. and PNC BANK, NATIONAL ASSOCIATION, as Co-Syndication Agents, BANK OF AMERICA, N.A., REGIONS BANK, and SUNTRUST BANK, as Co-Documentation Agents and JPMORGAN CHASE BANK, N.A., as Administrative Agent and Sole Bookrunner and Sole Lead Arranger, as may be amended, restated, supplemented, extended, refinanced or otherwise modified or replaced from time to time.
+(h) Amendments to Section 5(a). Section 5(a) of the Agreement is hereby modified as follows:
+(i) Section 5(a)(i) is hereby amended by replacing each occurrence of the word "first" with "third";
+(ii) Section 5(a)(v) is hereby amended by replacing the words "one Local Business Day" with "three Local Business Days" in clause (2) thereof; and
+(iii) Section 5(a)(vii) is hereby amended by (i) replacing each occurrence of the words "15 days" with the words "30 days."
+Execution Copy

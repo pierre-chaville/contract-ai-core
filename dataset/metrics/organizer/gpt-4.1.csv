@@ -1,0 +1,7 @@
+field,accuracy,support,precision,recall,f1
+contract_type,1.0,232,1.0,1.0,1.0
+contract_date,1.0,224,1.0,1.0,1.0
+amendment_date,1.0,43,1.0,1.0,1.0
+version_type,1.0,231,1.0,1.0,1.0
+status,1.0,206,1.0,1.0,1.0
+parties,1.0,229,1.0,1.0,1.0

@@ -1,0 +1,51 @@
+EX-4.2(I) 4 dex42i.htm SCHEDULE TO JP MORGAN CHASE BANK, N.A. ISDA MASTER AGREEMENT
+Exhibit 4.2(i)
+Execution Copy
+SCHEDULE
+to the
+2002 MASTER AGREEMENT
+dated as of 5  May, 2008
+between
+JPMORGAN CHASE BANK, N.A. ( "Party A") 	   	 and       	    	  BARNES GROUP INC. ( "Party B")
+PART 1
+Termination Provisions
+(1) 	 "Specified Entity " means, in relation to Party A, for the purpose of:
+Section  5(a)(v), any Affiliate of Party A;
+Section  5(a)(vi), none;
+Section  5(a)(vii), none; and
+Section  5(b)(v), none;
+and, in relation to Party B, for the purpose of:
+Section  5(a)(v), any Affiliate of Party B;
+Section  5(a)(vi), none;
+Section  5(a)(vii), none; and
+Section  5(b)(v), none.
+(2) 	 "Specified Transaction " will have the meaning specified in Section 14 of this Agreement.
+(3) 	 The "Cross-Default " provisions of Section 5(a)(vi) will apply to Party A and Party B, and for such purpose:
+(a) 	 "Specified Indebtedness " will have the meaning specified in Section 14 of this Agreement, except that such term shall not include obligations in respect of deposits received in the ordinary course of a party's banking business.
+(b) 	 "Threshold Amount " means, with respect to Party A, an amount equal to three percent of the shareholders' equity of Party A; and with respect to Party B, USD 20,000,000 or the equivalent thereof in any other currency or currencies.
+(c) 	 Section 5(a)(vi) of this Agreement will be deemed to be amended to include the following Clause "(3)":
+"or (3) a default, event of default, or other similar condition or event (however described) occurs and is continuing which entitles any person or entity to terminate its commitment under any agreement to lend or advance or make available funds to a party (or any applicable Specified Entity) in respect of an aggregate amount in excess of the Threshold Amount."
+(4) 	 The "Credit Event Upon Merger " provisions of Section 5(b)(v) will apply to Party A and Party B; provided, however, that if the applicable party has long term, unsecured and unsubordinated indebtedness or deposits which is or are publicly rated (such rating, a "Credit Rating") by Moody's Investor Services, Inc. ("Moody's"), Standard and Poors Ratings Group ("S&P") or any other internationally recognized rating agency (a "Rating Agency"), then the words "materially weaker" in line 6 of Section 5(b)(v) shall mean that the Credit Rating of such party (or, if applicable, the Credit Support Provider of such party) shall be rated lower than Baa3 by Moody's, or lower than BBB- by S&P or, in the event that there is no Credit Rating by either Moody's or S&P applicable to such party (or, if applicable, the Credit Support Provider of such party) but such party's long-term indebtedness or deposits is or are rated by a Rating Agency, lower than a rating equivalent to the foregoing by such Rating Agency.
+(5) 	 The "Automatic Early Termination " provision of Section 6(a) will not apply to Party A or Party B.
+(6) 	 "Termination Currency " will have the meaning set forth in Section 14 of this Agreement.
+(7) 	 Additional Termination Event will not apply.
+PART 2
+Tax Representations
+(A) 	 Tax  Representations. For the purpose of Section 3(f) of this Agreement:
+(i) 	 Party A and Party B each represent, respectively, that it is a United States Person for U.S. federal income tax purposes and either (a) is a financial institution or (b) is not acting as an agent for a person that is not a United States Person for U.S. federal income tax purposes.
+(ii) 	 Party B represents in respect of each Transaction where Party A's Office for the Transaction is not located in the United States of America:
+Party B is fully eligible for the benefits of the "Business Profits" or "Industrial and Commercial Profits" provision, as the case may be, the "Interest" provision and the "Other Income" provision (if any) of the income tax treaty (if any), in effect between the jurisdiction of Party A's Office for the Transaction and the United States of America with respect to any payment described in such provisions and received or to be received by it in connection with this Agreement and no such payment is attributable to a trade or business carried on by it through a permanent establishment in the jurisdiction through which Party A has entered the relevant Transaction.
+PART 3
+Agreement to Deliver Documents
+For the purpose of Sections 4(a)(i) and 4(a)(ii) of this Agreement, each party agrees to deliver the following documents:
+(a) 	 Tax forms, documents or certificates to be delivered are:
+Each party agrees to deliver to the other party a complete and accurate United States Internal Revenue Service Form W-9 (or any applicable successor form), in a manner reasonably satisfactory to the respective party, (I) upon execution of this Agreement; (II) promptly upon reasonable demand of the respective party, and (III) promptly upon learning that any such form previously provided by such party has become obsolete or incorrect (and each such form is hereby identified for purposes of Section 3(d) of this Agreement).
+(b) 	 Other documents to be delivered are:
+Party required to deliver document 	   	  Form/Document/ Certificate 	   	  Date  by which to  be delivered 	   	  Covered  by Section  3(d) Representation Party A and Party B 	   	 Audited annual financial statements of such entity (in the case of Party A, of JPMorgan Chase & Co.) for each fiscal year certified by independent certified public accountants and prepared in accordance with relevant generally accepted accounting principles 	   	 Upon request if unavailable on the SEC website or such entity's website and in any event, within 120 days following the fiscal year end. 	   	 Yes Party A and Party B 	   	 Unaudited financial statements of such entity (in the case of Party A, of JPMorgan Chase & Co.) for each quarter, in each case prepared in accordance with relevant generally accepted accounting principles 	   	 Upon request if unavailable on the SEC website or such entity's website and in any event, within 60 days following each quarter end 	   	 Yes Party A and Party B 	   	 Certified copies of all corporate authorizations and any other documents with respect to the execution, delivery and performance of this Agreement 	   	 Upon execution and delivery of this Agreement 	   	 Yes Party A and Party B 	   	 Certificate of authority and specimen signatures of individuals executing this Agreement, Confirmations and each Credit Support Document (as applicable) 	   	 Upon execution and delivery of this Agreement and thereafter upon request of the other party 	   	 Yes
+PART 4
+Miscellaneous
+(1) 	 Addresses for Notices. For the purpose of Section 12(a) of this Agreement:
+Address for notice or communications to Party A:
+Any notice relating to a particular Transaction shall be delivered to the address or facsimile number specified in the Confirmation of such Transaction.
+Any notice delivered for purposes of Sections 5 and 6 of this Agreement shall be delivered to the following address:
+JPMorgan Chase Bank, National Association

@@ -1,0 +1,51 @@
+EX-10.BJ 4 mpr8k2010tcexbj.htm ISDA SCHEDULE TO THE MASTER AGREEMENT
+Exhibit (10)(bj)
+ISDA
+Schedule to the Master Agreement
+dated as of October 12,2005 between Brown Brothers Harriman & Co (Party A)
+and Met - Pro Corporation ( Party B)
+Part I. Termination Provisions.
+(i) "Specified Entity" means In relation to Party A for the purpose of:
+Section 5(a)(v): None
+Section 5(a)(vi): None
+Section 5(a)(vii): None
+Section 5(b)(iv): None
+and in relation to Party B for the purpose of:
+Section 5(a)(v): None
+Section 5(a)(vi): None
+Section 5(a)(vii): None
+Section 5(b)(iv): None
+(b) "Specified Transaction" will have the meaning specified in Section 14 of this Agreement.
+I The "Cross Default" provisions of Section 5(a)(vi) will apply to Party A and to Party B.
+In connection therewith, Specified Indebtedness will not have the meaning specified in Section 14 and such definition shall be replaced by the following: "any obligation in respect of the payment of monies (whether present or future, contingent or otherwise, as principal or surety or otherwise), except that such term shall not include obligations in respect of deposits received in the ordinary course of a party's banking business".
+"Threshold Amount" means in relation to Party A, $10,000,000 or the equivalent thereof in any other currencies, and, in relation to Party B, $10,000,000 or the equivalent thereof in any
+other currency.
+(d) The "Credit Event Upon Merger" provisions of Section 5(b)(iv)
+will apply to Party A and will apply to Party B.
+The "Automatic Early Termination" provision of Section 6(a)
+will not apply to Party A
+will not apply to Party B
+(f) "Payments on Early Termination" For the purpose of Section 6(e)
+(ii) Market Quotation will apply.
+(iii) The Second Method will apply.
+(g) "Termination Currency" means U S Dollars
+(h) "Additional Termination Events" shall apply.
+Impossibility. The occurrence of Impossibility shall also be a Termination Event, as to which the Affected Party shall be the party subject to an Impossibility. For purposes of this Agreement, "Impossibility" shall mean the occurrence of a natural or man-made disaster, armed conflict, act of terrorism, riot, labor disruption. Act of state or force majeure or any other circumstance beyond its control which makes it impossible (other than as a result of its own misconduct) for such a party to perform any absolute or contingent obligation, to make a payment or delivery or to receive a payment or delivery in respect of such Transaction or to comply with any other material provision of this Agreement relating to such Transaction or whereby the convertibility, transferability or ability to hold any currency has been materially impaired between the date that the currency obligation has been entered into and the date that the currency is delivered
+Part 2
+Tax Representations
+(a) Payer Representations. For the purposes of Section 3(e) of this Agreement:
+Each party makes the following representation:
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction
+or withholding for or on account of any Tax from any payment (other than interest under Section 2 (e), 6(d)(ii) or 6(e) of this Agreement) to be made by it to the other party under this agreement. In making this representation, it may rely on (x) the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement, (y) the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement and (z) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement provided that it shall not be a breach of this representation where reliance is placed on clause (y) and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+(b) Payee Representations: For the purposes of Section 3(f) of this Agreement,
+Party A and Party B make no representation
+Part 3
+Agreement to Deliver Documents.
+For purposes of Section 4(a)(i) and (ii) of this Agreement, Party B agrees to deliver the following documents:
+(a) Tax forms documents or certificates to be delivered:
+None
+(iv) Other documents to be delivered:
+To be delivered by: 	  Form/Document/Certificate 	  	  Date by which to be 	  	 Covered by Section 3(d) delivered 	  	 Representation Party A&B 	  Certified copies of all corporate authorizations and any documents with respect to the execution, delivery and performance of this Agreement. 	  	  Upon execution of this Agreement 	  Yes Party A & B 	 Certificate of authority and specimen signatures of individuals executing this Agreement 	  	 Upon execution and delivery of this Agreement and thereafter upon request of the other party.
+Part 4\. Miscellaneous
+(a) Addresses for Notices For the purpose of Section 12(a) of this Agreement:
+Address for Notices or communications to Party A

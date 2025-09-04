@@ -1,0 +1,51 @@
+EX-99.5 10 dex995.htm SCHEDULE TO THE ISDA MASTER AGREEMENT, DATED AS OF JULY 30, 2008
+Exhibit 99.5
+EXECUTION COPY
+SCHEDULE
+to the
+1992 ISDA Master Agreement
+(Multicurrency-Cross Border)
+dated as of
+July 30, 2008
+between
+DEUTSCHE BANK AG, NEW YORK BRANCH,
+a corporation organized under the laws of Germany
+("Party A")
+and
+WORLD OMNI AUTO RECEIVABLES TRUST 2008-B,
+a Delaware statutory trust
+("Party B")
+Reference is made to that certain Indenture dated as of July 30, 2008 (as amended, modified or supplemented from time to time in accordance with its terms, the "Indenture ") between Party B as the Issuer thereunder and The Bank of New York as Indenture Trustee, and to that certain Sale and Servicing Agreement dated as of July 30, 2008 (as amended, modified or supplemented from time to time in accordance with its terms, the "Sale and Servicing Agreement ") among Party B, World Omni Auto Receivables LLC, as depositor, and World Omni Financial Corporation, as servicer.
+Part 1
+Termination Provisions
+In this Agreement:
+(a) 	 " Specified Entity" means in relation to Party A for the purpose of:
+Section 5(a)(v), 	    	 Not Applicable Section 5(a)(vi), 	    	 Not Applicable Section 5(a)(vii), 	    	 Not Applicable Section 5(b)(iv), 	    	 Not Applicable
+in relation to Party B for the purpose of:
+Section 5(a)(v), 	    	 Not Applicable Section 5(a)(vi), 	    	 Not Applicable Section 5(a)(vii), 	    	 Not Applicable Section 5(b)(iv), 	    	 Not Applicable
+(b) 	 " Specified Transaction" will have the meaning specified in Section 14 of this Agreement.
+(c) 	 Application of Events of Default. The provisions of Section 5(a) of this Agreement will apply to Party A and Party B as follows:
+Section 5(a) 	    	  Party A 	    	  Party B
+(i)     "Failure to Pay or Deliver" 	    	 Applicable (but only to the extent described below in Part 1(d)(i)). 	    	 Applicable.
+(ii)    "Breach of Agreement" 	    	 Applicable (but only to the extent described below in Part 1(d)(ii)). 	    	 Not Applicable.
+(iii)  "Credit Support Default" 	    	 Applicable (but only to the extent described below in Part 1(d)(iii)). 	    	 Applicable (but only to the extent described below in Part 1(d)(iii)).
+(iv)   "Misrepresentation" 	    	 Applicable. 	    	 Not Applicable.
+(v)    "Default Under Specified Transaction" 	    	 Not Applicable. 	    	 Not Applicable.
+(vi)   "Cross Default" 	    	 Applicable. 	    	 Not Applicable.
+(vii) "Bankruptcy" 	    	 Applicable. 	    	 Applicable (except as provided below in Part 1(d)(iv)).
+(viii)"Merger Without Assumption" 	    	 Applicable. 	    	 Applicable.
+(d) 	 (i) Section 5(a)(i) will apply to Party A; provided , however , that notwithstanding anything to the contrary in Section 5(a)(ii), any failure by Party A to comply with or perform any obligation to be complied with or performed by Party A under the Credit Support Annex shall not constitute an Event of Default under Section 5(a)(i) unless (A)(i) a Moody's Second Trigger Ratings Event has occurred and been continuing for 30 or more Local Business Days and (ii) such failure is not remedied on or before the third Local Business Day after notice of such failure is given to Party A, or (B)(i) an S&P Second Trigger Ratings Event has occurred and been continuing for 10 or more Local Business Days and (ii) such failure is not remedied on or before the third Local Business Day after notice of such failure is given to Party A.
+(ii) Section 5(a)(ii) will apply to Party A; provided, however, that notwithstanding anything to the contrary in Section 5(a)(ii), any failure by Party A to comply with or perform any obligation to be complied with or performed by Party A under the Credit Support Annex shall not constitute an Event of Default under Section 5(a)(ii) unless (A) (i) a Moody's Second Trigger Ratings Event has occurred and been continuing for 30 or more Local Business Days and (ii) such failure is not remedied on or before the third Local Business Day after notice of such failure is given to Party A, or (B)
+(i) an S&P Second Trigger Ratings Event has occurred and been continuing for 10 or more Local Business Days and (ii) such failure is not remedied on or before the third Local Business Day after notice of such failure is given to Party A.
+(iii) Section 5(a)(iii)(1) will apply solely in respect of Party B's obligations under Paragraph 3(b) of the Credit Support Annex between Party A and Party B in relation to this Agreement. Notwithstanding anything to the contrary in Section 5(a)(iii)(1), any failure by Party A to comply with or perform any obligation to be complied with or performed by Party A under the Credit Support Annex shall not constitute an Event of Default under Section 5(a)(iii) unless (A)(i) a Moody's Second Trigger Ratings Event has occurred and been continuing for 30 or more Local Business Days and (ii) such failure is not remedied on or before the third Local Business Day after notice of such failure is given to Party A, or (B)(i) an S&P Second Trigger Ratings Event has occurred and been continuing for 10 or more Local Business Days and (ii) such failure is not remedied on or before the third Local Business Day after notice of such failure is given to Party A.
+(iv) Section 5(a)(vi) will apply to Party A; provided that such provision shall be subject to amendment by adding at the end thereof the following words:
+"provided, however, that, notwithstanding the foregoing, an Event of Default shall not occur under either (1) or (2) above if (A) (I) the default, or other similar event or condition referred to in (1) or the failure to pay referred to in (2) is a failure to pay or deliver caused by an error or omission of an administrative or operational nature, and (II) funds or the asset to be delivered were available to such party to enable it to make the relevant payment or delivery when due and (III) such payment or delivery is made within three (3) Local Business Days following receipt of written notice from an interested party of such failure to pay, or (B) such party was precluded from paying, or was unable to pay, using reasonable means, through the office of the party through which it was acting for purposes of the relevant Specified Indebtedness, by reason of force majeure, act of State, illegality or impossibility."
+(v) Section 5(a)(vii) will apply to Party B; provided that clauses (2), (7) and (9) thereof shall not apply with respect to Party B, provided further that clause (4) shall not apply to Party B to the extent that it refers to proceedings or petitions instituted or presented by Party A or any of its Affiliates, and to the extent that it applies, clause (4) shall be amended by replacing "30 days" in clause (B) thereof with "60 days", provided further that clause (6) shall not apply to Party B to the extent that it refers to (i) any appointment that is effected by or pursuant to the Basic Documents or (ii) any appointment to which Party B has not become subject, and provided further that clause (8) shall apply to Party B to the extent that such clause
+(8) relates to clauses (1), (3), (4) as amended, (5) and (6) (except to the extent that such provisions are not applied to Party B).
+" Specified Indebtedness" will have the meaning specified in Section 14, provided that Specified Indebtedness shall not include deposits received in the course of a party's ordinary banking business.
+" Threshold Amount" means, with respect to Party A, 3% of its Shareholders' Equity.
+" Shareholders' Equity" means an amount determined by reference to the relevant party's most recent consolidated (quarterly, in the case of a U.S.
+incorporated party) balance sheet and shall include legal capital, paid-in capital, retained earnings and cumulative
+translation adjustments. Such balance sheet shall be prepared in accordance with accounting principles that are generally accepted in such party's country of organization.
+(e) 	 Application of Events of Termination Events. The provisions of Section 5(b) of this Agreement will apply to Party A and Party B as follows:
+Section 5(b) 	    	  Party A 	    	  Party B

@@ -1,4 +1,4 @@
-from contract_ai_core.schema import split_text_into_paragraphs
+from contract_ai_core.utilities import split_text_into_paragraphs
 
 
 def test_split_text_into_paragraphs_basic_merge_and_cleanup() -> None:
