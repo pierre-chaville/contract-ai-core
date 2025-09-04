@@ -1,0 +1,39 @@
+[
+  {
+    "amendment_start_line": 12,
+    "amendment_end_line": 13,
+    "amendment_span_text": "Part 4(g) of the Schedule is hereby amended in its entirety to read as follows:\n\n(g) Credit Support Provider. In relation to Party A, means not applicable. In relation to Party B, means each party to any Credit Support Document of Party B, other than (i) Party A or Party B, (ii) any Affiliate of Party A, or (iii) any other secured party under such Credit Support Document.",
+    "target_section": "Schedule Part 4(g)",
+    "confidence_target": 1.0,
+    "change_explanation": "Part 4(g) of the Schedule is replaced in its entirety to update the definition of 'Credit Support Provider' for both Party A and Party B, clarifying who qualifies as a Credit Support Provider in relation to Party B.",
+    "target_paragraph_indices": [
+      91,
+      92,
+      93
+    ],
+    "confidence_target_paragraph_indices": 0.98,
+    "target_paragraph_explanation": "Lines 91-93 are labeled as Part 4(g) and specifically define 'Credit Support Provider' for both Party A and Party B, matching the target section and its described content.",
+    "initial_paragraphs": [
+      {
+        "index": 91,
+        "text": "(g) \t Credit Support Provider."
+      },
+      {
+        "index": 92,
+        "text": "(i) Credit Support Provider means in relation to Party A: Not applicable."
+      },
+      {
+        "index": 93,
+        "text": "(ii) Credit Support Provider means in relation to Party B: Not applicable."
+      }
+    ],
+    "revised_paragraphs": [
+      {
+        "index": 91,
+        "text": "(g) Credit Support Provider. In relation to Party A, means not applicable. In relation to Party B, means each party to any Credit Support Document of Party B, other than (i) Party A or Party B, (ii) any Affiliate of Party A, or (iii) any other secured party under such Credit Support Document."
+      }
+    ],
+    "confidence_revision": 1.0,
+    "revision_explanation": "Replaced the entirety of Part 4(g) with the amended language as instructed, consolidating the previous subparagraphs into the new single paragraph format and updating the definitions as specified."
+  }
+]

@@ -5,13 +5,13 @@
     "amendment_span_text": "(a) \t Part 1(a) of the Schedule is hereby amended in its entirety to read as follows:\n\n(a) \t \"Specified Entity\" means in relation to Party A for the purpose of:\n\nSection 5(a)(v): None Section 5(a)(vi): None Section 5(a)(vii): None Section 5(b)(ii): None\n\nand in relation to Party B for the purpose of:\n\nSection 5(a)(v): None Section 5(a)(vi): None Section 5(a)(vii): Party B, Mediabistro.com, Ellen L. Meckler and Alan M. Meckler Section 5(b)(ii): None",
     "target_section": "Schedule Part 1(a)",
     "confidence_target": 0.98,
-    "change_explanation": "Replaces the definition of 'Specified Entity' for both Party A and Party B, specifying which entities are included for various sections.",
+    "change_explanation": "Replaces the definition of 'Specified Entity' for both Party A and Party B, specifying which entities are included for the purposes of various sections of the Master Agreement.",
     "target_paragraph_indices": [
       20,
       21
     ],
     "confidence_target_paragraph_indices": 0.98,
-    "target_paragraph_explanation": "Lines 20-21 provide the definition of 'Specified Entity' for both Party A and Party B, directly matching the target's description.",
+    "target_paragraph_explanation": "Lines 20-21 provide the definition of 'Specified Entity' for both Party A and Party B, directly corresponding to Schedule Part 1(a) as described in the target.",
     "initial_paragraphs": [
       {
         "index": 20,
@@ -25,11 +25,11 @@
     "revised_paragraphs": [
       {
         "index": 20,
-        "text": "(a) \"Specified Entity\" means in relation to Party A for the purpose of: Section 5(a)(v): None Section 5(a)(vi): None Section 5(a)(vii): None Section 5(b)(ii): None; and in relation to Party B for the purpose of: Section 5(a)(v): None Section 5(a)(vi): None Section 5(a)(vii): Party B, Mediabistro.com, Ellen L. Meckler and Alan M. Meckler Section 5(b)(ii): None."
+        "text": "(a) \"Specified Entity\" means in relation to Party A for the purpose of:\nSection 5(a)(v): None\nSection 5(a)(vi): None\nSection 5(a)(vii): None\nSection 5(b)(ii): None\nand in relation to Party B for the purpose of:\nSection 5(a)(v): None\nSection 5(a)(vi): None\nSection 5(a)(vii): Party B, Mediabistro.com, Ellen L. Meckler and Alan M. Meckler\nSection 5(b)(ii): None"
       }
     ],
     "confidence_revision": 1.0,
-    "revision_explanation": "Revised the definition of 'Specified Entity' to reflect the amendment instruction, specifying the relevant sections and entities for both Party A and Party B as instructed, and removed the previous list of affiliates."
+    "revision_explanation": "Replaced the previous definition of 'Specified Entity' in its entirety with the new language as instructed, preserving the structure and style."
   },
   {
     "amendment_start_line": 15,
@@ -37,7 +37,7 @@
     "amendment_span_text": "(b) \t Part 1(g) of the Schedule is hereby amended in its entirety to read as follows:\n\n(i) Additional Termination Event: For the purpose of Section 5(b)(iii) of this Agreement, it shall be an \"Additional Termination Event\" with Party B being the Affected Party if:\n\n(i) any Credit Support Document, in accordance with its terms, expires, terminates, or ceases to be in full force and effect for the purpose of this Agreement unless (i) this Agreement is expressly amended in writing to reflect that it is no longer a Credit Support Document hereunder or (ii) a replacement Credit Support Document is entered into the terms of which are satisfactory to Party A in its sole discretion; or\n\n(ii) on any date (assuming, for the purpose of such calculation, that such date is an Early Termination Date), the amount payable by Party B pursuant to Section 6(e) of the Master Agreement would be zero.",
     "target_section": "Schedule Part 1(g)",
     "confidence_target": 0.98,
-    "change_explanation": "Replaces the Additional Termination Event provision, specifying new triggers for Party B as Affected Party.",
+    "change_explanation": "Replaces the Additional Termination Event provision, specifying new conditions under which an Additional Termination Event occurs with respect to Party B.",
     "target_paragraph_indices": [
       37,
       38,
@@ -50,7 +50,7 @@
       45
     ],
     "confidence_target_paragraph_indices": 0.98,
-    "target_paragraph_explanation": "Lines 37-45 set out the 'Additional Termination Event' provision, specifying triggers for Party B as Affected Party, matching the target.",
+    "target_paragraph_explanation": "Lines 37-45 set out the Additional Termination Event provision, specifying new conditions under which an Additional Termination Event occurs with respect to Party B, matching the description for Schedule Part 1(g).",
     "initial_paragraphs": [
       {
         "index": 37,
@@ -92,11 +92,11 @@
     "revised_paragraphs": [
       {
         "index": 37,
-        "text": "(g) \"Additional Termination Event\" will apply. For the purpose of Section 5(b)(iii) of this Agreement, it shall constitute an Additional Termination Event, with Party B being the sole Affected Party and Party A being the party entitled to determine the Close-out Amount, if at any time:\n\n(i) any Credit Support Document, in accordance with its terms, expires, terminates, or ceases to be in full force and effect for the purpose of this Agreement unless (A) this Agreement is expressly amended in writing to reflect that it is no longer a Credit Support Document hereunder or (B) a replacement Credit Support Document is entered into, the terms of which are satisfactory to Party A in its sole discretion; or\n\n(ii) on any date (assuming, for the purpose of such calculation, that such date is an Early Termination Date), the amount payable by Party B pursuant to Section 6(e) of the Master Agreement would be zero.\n\nAs used herein and throughout this Agreement, \"Credit Agreement\" means that certain Amended and Restated Credit Agreement dated as of November 6, 2018 among FARMER BROS. CO., The other Loan Parties Party Thereto, The Lenders Party Thereto, CITIBANK, N.A. and PNC BANK, NATIONAL ASSOCIATION, as Co-Syndication Agents, BANK OF AMERICA, N.A., REGIONS BANK, and SUNTRUST BANK, as Co-Documentation Agents and JPMORGAN CHASE BANK, N.A., as Administrative Agent and Sole Bookrunner and Sole Lead Arranger, as may be amended, restated, supplemented, extended, refinanced or otherwise modified or replaced from time to time."
+        "text": "(g) Additional Termination Event: For the purpose of Section 5(b)(iii) of this Agreement, it shall be an \"Additional Termination Event\" with Party B being the Affected Party if:\n(i) any Credit Support Document, in accordance with its terms, expires, terminates, or ceases to be in full force and effect for the purpose of this Agreement unless (i) this Agreement is expressly amended in writing to reflect that it is no longer a Credit Support Document hereunder or (ii) a replacement Credit Support Document is entered into the terms of which are satisfactory to Party A in its sole discretion; or\n(ii) on any date (assuming, for the purpose of such calculation, that such date is an Early Termination Date), the amount payable by Party B pursuant to Section 6(e) of the Master Agreement would be zero."
       }
     ],
     "confidence_revision": 1.0,
-    "revision_explanation": "Revised the section to implement the new Additional Termination Event triggers as specified in the amendment instruction, replacing the previous triggers with the new ones and preserving the defined terms and style."
+    "revision_explanation": "Replaced the entirety of Part 1(g) as instructed, removing the previous detailed events and replacing them with the two new Additional Termination Events as specified in the amendment instruction."
   },
   {
     "amendment_start_line": 19,
@@ -104,31 +104,36 @@
     "amendment_span_text": "(c) \t Part 2(b) of the Schedule is hereby amended in its entirety to read as follows:\n\n(b) Quarterly and annual financial statements of Party B when reasonably requested by Party A and not otherwise provided to Party A under the Credit Support Documents.",
     "target_section": "Schedule Part 2(b)",
     "confidence_target": 0.98,
-    "change_explanation": "Replaces the reporting requirement for Party B to provide financial statements upon request.",
+    "change_explanation": "Replaces the provision regarding financial statements, specifying that Party B must provide quarterly and annual financial statements when reasonably requested by Party A and not otherwise provided under the Credit Support Documents.",
     "target_paragraph_indices": [
-      72,
-      73
+      76,
+      77,
+      78
     ],
-    "confidence_target_paragraph_indices": 0.95,
-    "target_paragraph_explanation": "Lines 72-73 specify Party A's reporting requirement to provide financial statements upon request. There is no equivalent for Party B in Part 2(b), but this is the closest match.",
+    "confidence_target_paragraph_indices": 0.85,
+    "target_paragraph_explanation": "Lines 76-78 require Party B to provide its Credit Support Provider's annual and unaudited quarterly financial statements, which is the closest match to the requirement for Party B to provide financial statements as described in Schedule Part 2(b).",
     "initial_paragraphs": [
       {
-        "index": 72,
-        "text": "(c) Party A\t The party's Consolidated Reports of Condition and Income for a Bank with Domestic and Foreign Offices - FFIEC 031.\t Upon request, provided, however, that such financials are \"deemed \" to be delivered hereunder on the date the same shall be posted on the website:"
+        "index": 76,
+        "text": "(d) Party B\t Party B's Credit Support Provider's annual report containing audited consolidated financial statements prepared in accordance with accounting principles that are generally accepted in Party B's country of organization and certified by independent certified public accountants for each fiscal year.\t If not publicly available on EDGAR or on Party B's website, as soon as available and in any event within 120 days (or as soon as practicable after becoming publicly available) after the end of each of its fiscal years (provided that such requirement shall be deemed to be satisfied if such annual report or substantially similar financial statements are publicly available or otherwise delivered to the Administrative Agent under and in accordance with the Credit Agreement).\t Yes"
       },
       {
-        "index": 73,
-        "text": "http://www.citigroup.com/citi/fin/reg.htm\t Yes"
+        "index": 77,
+        "text": "(e) Party B\t Party B's Credit Support Provider's unaudited consolidated financial statements, the consolidated balance sheet and related statements of income for each fiscal quarter prepared in accordance with accounting principles that are generally accepted in Party B's country of organization."
+      },
+      {
+        "index": 78,
+        "text": "If not publicly available on EDGAR or on Party B's website, as soon as available and in any event within 60 days (or as soon as practicable after becoming publicly available) after the end of each of its fiscal quarters (provided that such requirement shall be deemed to be satisfied if such documents or substantially similar documents are delivered to the Administrative Agent under and in accordance with the Credit Agreement).\t Yes"
       }
     ],
     "revised_paragraphs": [
       {
-        "index": 72,
-        "text": "(c) Party A\t The party's Consolidated Reports of Condition and Income for a Bank with Domestic and Foreign Offices - FFIEC 031.\t Upon request, provided, however, that such financials are \"deemed \" to be delivered hereunder on the date the same shall be posted on the website:\nhttp://www.citigroup.com/citi/fin/reg.htm\t Yes\n\n(b) Party B\t Quarterly and annual financial statements of Party B when reasonably requested by Party A and not otherwise provided to Party A under the Credit Support Documents.\t Upon request\t Yes"
+        "index": 76,
+        "text": "(b) Quarterly and annual financial statements of Party B when reasonably requested by Party A and not otherwise provided to Party A under the Credit Support Documents."
       }
     ],
-    "confidence_revision": 0.98,
-    "revision_explanation": "Added a new item (b) for Party B, specifying the requirement for quarterly and annual financial statements as described in the amendment instruction, and maintained the style and formatting of the existing entries."
+    "confidence_revision": 1.0,
+    "revision_explanation": "The amendment replaces Part 2(b) in its entirety with the provided language, superseding the previous requirements for annual and quarterly financial statements and their delivery timelines. The new text is concise and reflects the amendment instruction exactly."
   },
   {
     "amendment_start_line": 21,
@@ -136,12 +141,12 @@
     "amendment_span_text": "(d) \t Part 4(f) of the Schedule is hereby amended in its entirety to read as follows:\n\n(c) Credit Support Document: In relation to Party A, means not applicable. In relation to Party B, means:\n\n(i) Each of the following documents, as each such document may from time to time be amended, restated or otherwise modified:\n\n(a) that certain Guaranty of Payment, dated as of February 23, 2009, from Alan M. Meckler to Party A;\n\n(b) that certain Security Agreement, dated as of February 23, 2009, from Party B to Party A;\n\n(c) that certain Security Agreement, dated as of July 30, 2007, delivered by Mediabistro.com to Party A, as amended by that certain First Amendment to Security Agreement, dated as of February 23, 2009;\n\n(d) that certain Intellectual Property Security Agreement, dated as of July 12, 2007, delivered by Party B to Party A, as amended by that certain First Amendment to Intellectual Property Security Agreement, dated as of February 23, 2009;\n\n(e) that certain Intellectual Property Security Agreement, dated as of July 30, 2007, delivered by Mediabistro.com to Party A, as amended by that certain First Amendment to Intellectual Property Security Agreement, dated as of February 23, 2009;\n\n(f) that certain Pledge Agreement, dated as of July 12, 2007, delivered by Party B to Party A, as amended by that certain First Amendment to Pledge Agreement, dated as of February 23, 2009; and\n\n(g) that certain Mortgage, Security Agreement, Assignment of Leases and Rents and Fixture Filing, dated as of February 23, 2009, from Ellen Meckler to Party A.\n\n(ii) any other guarantee, security agreement, or other document (not referenced in subpart (i) above) entered into on or after February 23, 2009, that, by its terms, guarantees, secures or otherwise supports the performance of Party B's obligations under this Agreement.",
     "target_section": "Schedule Part 4(f)",
     "confidence_target": 0.98,
-    "change_explanation": "Replaces the definition of 'Credit Support Document' for both parties, listing specific documents and including a catch-all for future documents.",
+    "change_explanation": "Replaces the definition of 'Credit Support Document' for Party B, listing specific documents and including a catch-all for future documents that guarantee or secure Party B's obligations.",
     "target_paragraph_indices": [
       107
     ],
     "confidence_target_paragraph_indices": 0.98,
-    "target_paragraph_explanation": "Line 107 defines 'Credit Support Document' for both parties, listing specific documents and exceptions, matching the target.",
+    "target_paragraph_explanation": "Line 107 provides the definition of 'Credit Support Document' for Party B, listing specific documents and including conditions for future documents, matching the target for Schedule Part 4(f).",
     "initial_paragraphs": [
       {
         "index": 107,
@@ -151,11 +156,11 @@
     "revised_paragraphs": [
       {
         "index": 107,
-        "text": "(f) Credit Support Document. (i) In relation to Party A, Credit Support Document means not applicable.\n\n(ii) In relation to Party B, Credit Support Document means:\n\n(A) Each of the following documents, as each such document may from time to time be amended, restated or otherwise modified:\n    (1) that certain Guaranty of Payment, dated as of February 23, 2009, from Alan M. Meckler to Party A;\n    (2) that certain Security Agreement, dated as of February 23, 2009, from Party B to Party A;\n    (3) that certain Security Agreement, dated as of July 30, 2007, delivered by Mediabistro.com to Party A, as amended by that certain First Amendment to Security Agreement, dated as of February 23, 2009;\n    (4) that certain Intellectual Property Security Agreement, dated as of July 12, 2007, delivered by Party B to Party A, as amended by that certain First Amendment to Intellectual Property Security Agreement, dated as of February 23, 2009;\n    (5) that certain Intellectual Property Security Agreement, dated as of July 30, 2007, delivered by Mediabistro.com to Party A, as amended by that certain First Amendment to Intellectual Property Security Agreement, dated as of February 23, 2009;\n    (6) that certain Pledge Agreement, dated as of July 12, 2007, delivered by Party B to Party A, as amended by that certain First Amendment to Pledge Agreement, dated as of February 23, 2009; and\n    (7) that certain Mortgage, Security Agreement, Assignment of Leases and Rents and Fixture Filing, dated as of February 23, 2009, from Ellen Meckler to Party A.\n\n(B) Any other guarantee, security agreement, or other document (not referenced in subpart (A) above) entered into on or after February 23, 2009, that, by its terms, guarantees, secures or otherwise supports the performance of Party B's obligations under this Agreement."
+        "text": "(f) Credit Support Document. Credit Support Document: In relation to Party A, means not applicable. In relation to Party B, means:\n(i) Each of the following documents, as each such document may from time to time be amended, restated or otherwise modified:\n(a) that certain Guaranty of Payment, dated as of February 23, 2009, from Alan M. Meckler to Party A;\n(b) that certain Security Agreement, dated as of February 23, 2009, from Party B to Party A;\n(c) that certain Security Agreement, dated as of July 30, 2007, delivered by Mediabistro.com to Party A, as amended by that certain First Amendment to Security Agreement, dated as of February 23, 2009;\n(d) that certain Intellectual Property Security Agreement, dated as of July 12, 2007, delivered by Party B to Party A, as amended by that certain First Amendment to Intellectual Property Security Agreement, dated as of February 23, 2009;\n(e) that certain Intellectual Property Security Agreement, dated as of July 30, 2007, delivered by Mediabistro.com to Party A, as amended by that certain First Amendment to Intellectual Property Security Agreement, dated as of February 23, 2009;\n(f) that certain Pledge Agreement, dated as of July 12, 2007, delivered by Party B to Party A, as amended by that certain First Amendment to Pledge Agreement, dated as of February 23, 2009; and\n(g) that certain Mortgage, Security Agreement, Assignment of Leases and Rents and Fixture Filing, dated as of February 23, 2009, from Ellen Meckler to Party A.\n(ii) any other guarantee, security agreement, or other document (not referenced in subpart (i) above) entered into on or after February 23, 2009, that, by its terms, guarantees, secures or otherwise supports the performance of Party B's obligations under this Agreement."
       }
     ],
     "confidence_revision": 1.0,
-    "revision_explanation": "Revised the definition of Credit Support Document to specify that it is not applicable to Party A, and to enumerate the specific documents and catch-all provision applicable to Party B, as instructed by the amendment."
+    "revision_explanation": "Replaced the original definition of 'Credit Support Document' in Part 4(f) with the new, detailed definition as provided in the amendment instruction, specifying the documents for Party B and stating 'not applicable' for Party A."
   },
   {
     "amendment_start_line": 32,
@@ -163,12 +168,12 @@
     "amendment_span_text": "(e) \t Part 4(g) of the Schedule is hereby amended in its entirety to read as follows:\n\n(d) Credit Support Provider. In relation to Party A, means not applicable. In relation to Party B, means each party to any Credit Support Document of Party B, other than (i) Party A or Party B, (ii) any Affiliate of Party A, or (iii) any other secured party under such Credit Support Document.",
     "target_section": "Schedule Part 4(g)",
     "confidence_target": 0.98,
-    "change_explanation": "Replaces the definition of 'Credit Support Provider' for both parties, clarifying exclusions.",
+    "change_explanation": "Replaces the definition of 'Credit Support Provider' for Party B, specifying who qualifies as a Credit Support Provider and excluding certain parties.",
     "target_paragraph_indices": [
       108
     ],
     "confidence_target_paragraph_indices": 0.98,
-    "target_paragraph_explanation": "Line 108 defines 'Credit Support Provider' for both parties and clarifies exclusions, matching the target.",
+    "target_paragraph_explanation": "Line 108 defines 'Credit Support Provider' for Party B, specifying who qualifies and exclusions, directly corresponding to Schedule Part 4(g).",
     "initial_paragraphs": [
       {
         "index": 108,
@@ -178,251 +183,10 @@
     "revised_paragraphs": [
       {
         "index": 108,
-        "text": "(g) Credit Support Provider. The Credit Support Provider for Party A is not applicable. The Credit Support Provider for Party B means each party to any Credit Support Document of Party B, other than (i) Party A or Party B, (ii) any Affiliate of Party A, or (iii) any other secured party under such Credit Support Document."
+        "text": "(g) Credit Support Provider. In relation to Party A, means not applicable. In relation to Party B, means each party to any Credit Support Document of Party B, other than (i) Party A or Party B, (ii) any Affiliate of Party A, or (iii) any other secured party under such Credit Support Document."
       }
     ],
     "confidence_revision": 1.0,
-    "revision_explanation": "Revised the definition of Credit Support Provider for Party B to match the amendment instruction, specifying it as each party to any Credit Support Document of Party B, with the listed exclusions, and removed the prior language regarding Loan Guarantors and ECP Rules."
-  },
-  {
-    "amendment_start_line": 35,
-    "amendment_end_line": 37,
-    "amendment_span_text": "The 2007 Confirmation is hereby amended to delete the \"Other Terms and Conditions\" provision therefrom and to insert in place thereof the following:\n\nOther Term and Conditions:\n\nParty B agrees to deposit into a deposit account with Party A (the \"Blocked Account\"), commencing February 23, 2009, and continuing on each April 1, July 1, October 1, and January 1 thereafter, cash in amount equal to the Fixed Amount that would be payable for the current Calculation Period. Party B hereby grants to Party A a security interest in and an assignment of the Blocked Account, and pledges and assigns the Blocked Account to Party A, to secure the prompt and full payment and performance of the obligations of Party B hereunder. Party B hereby irrevocably authorizes Party A, at any time and from time to time, to cause any and all of the funds, credits and balances in the Blocked Account, to be applied to the payments due hereunder. Party A agrees to pay interest at a rate per annum equal to the overnight Federal Funds Rate for the funds deposited in the Blocked Account.",
-    "target_section": "2007 Confirmation 'Other Terms and Conditions'",
-    "confidence_target": 0.99,
-    "change_explanation": "Deletes the existing 'Other Terms and Conditions' in the 2007 Confirmation and replaces it with new provisions regarding a Blocked Account, security interest, and payment application.",
-    "target_paragraph_indices": [],
-    "confidence_target_paragraph_indices": 0.1,
-    "target_paragraph_explanation": "The contract text provided does not contain the 2007 Confirmation or an 'Other Terms and Conditions' section, so this cannot be located.",
-    "initial_paragraphs": [],
-    "revised_paragraphs": [],
-    "confidence_revision": 1.0,
-    "revision_explanation": "The original 'Other Terms and Conditions' provision is deleted and replaced in its entirety with the new language as specified in the amendment instruction, preserving defined terms and style."
-  },
-  {
-    "amendment_start_line": 39,
-    "amendment_end_line": 39,
-    "amendment_span_text": "Each party makes the representations and warranties set forth in Section 3(a)(i), (ii), (iii), (iv), and (v), Section 3(b), Section 3(c), and Section 3(d) of the Master Agreement, as of the date hereof, except that all references in such Sections to \"this Agreement\" (or words or phrases of similar meaning) shall be deemed to be references to this Amendment Agreement and the Master Agreement as amended hereby.",
-    "target_section": "Representations and Warranties",
-    "confidence_target": 0.95,
-    "change_explanation": "Clarifies that representations and warranties are made as of the date of the amendment, and references to 'this Agreement' include the amendment.",
-    "target_paragraph_indices": [
-      115,
-      116,
-      117,
-      118,
-      119,
-      120,
-      121,
-      122,
-      123
-    ],
-    "confidence_target_paragraph_indices": 0.85,
-    "target_paragraph_explanation": "Lines 115-123 contain additional representations and warranties, but there is no explicit statement about representations being made as of the amendment date or that 'this Agreement' includes the amendment. This is the closest relevant section.",
-    "initial_paragraphs": [
-      {
-        "index": 115,
-        "text": "(m)Additional Representation will apply. For the purpose of Section 3 of this Agreement, each of the following will constitute an Additional Representation of the relevant party specified below, and each such party will be deemed to represent to the other party on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction):"
-      },
-      {
-        "index": 116,
-        "text": "\"(h) Relationship Between Parties."
-      },
-      {
-        "index": 117,
-        "text": "Execution Copy"
-      },
-      {
-        "index": 118,
-        "text": "Ref. No. CB25-792"
-      },
-      {
-        "index": 119,
-        "text": "(1) No Reliance. It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisors as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction; it being understood that information and explanations related to the terms and conditions of a Transaction shall not be considered investment advice or a recommendation to enter into that Transaction. It has not received from the other party any assurance or guarantee as to the expected results of that Transaction."
-      },
-      {
-        "index": 120,
-        "text": "(2) Evaluation and Understanding. It is capable of evaluating and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction. It is also capable of assuming, and assumes, the financial and other risks of that Transaction."
-      },
-      {
-        "index": 121,
-        "text": "(3) Status of Parties. The other party is not acting as a fiduciary for or an advisor to it in respect of that Transaction."
-      },
-      {
-        "index": 122,
-        "text": "(i) Risk Management. Party B alone represents that this Agreement has been, and each Transaction hereunder has been or will be, as the case may be, entered into for the purpose of managing its borrowings or investments, hedging its underlying assets or liabilities or in connection with its line of business (including financial intermediation services) and not for the purpose of speculation."
-      },
-      {
-        "index": 123,
-        "text": "(k) ERISA. The assets that are used in connection with the execution, delivery and performance of this Agreement and the Transactions entered into pursuant hereto are not (i) the assets of an \"employee benefit plan\" (within the meaning of Section 3(3)) of the Employee Retirement Income Security Act of 1974, as amended (\"ERISA\") or other plan subject to Title I of ERISA, (ii) a plan described in Section 4975 of the Internal Revenue Code of 1986, as amended (the \"Code\"), (iii) an entity whose underlying assets include \"plan assets\" by reason of Department of Labor regulation section 2510.3-101 (as modified by Section 3(42) of ERISA), or (iv) a governmental plan that is subject to any federal, state, or local law that is substantially similar to the provisions of Section 406 of ERISA or Section 4975 of the Code.\""
-      }
-    ],
-    "revised_paragraphs": [
-      {
-        "index": 115,
-        "text": "(m) Additional Representation will apply. For the purpose of Section 3 of this Agreement, each of the following will constitute an Additional Representation of the relevant party specified below, and each such party will be deemed to represent to the other party on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction):\n\nIn addition, each party makes the representations and warranties set forth in Section 3(a)(i), (ii), (iii), (iv), and (v), Section 3(b), Section 3(c), and Section 3(d) of the Master Agreement, as of the date hereof, except that all references in such Sections to \"this Agreement\" (or words or phrases of similar meaning) shall be deemed to be references to this Amendment Agreement and the Master Agreement as amended hereby."
-      },
-      {
-        "index": 116,
-        "text": "\"(h) Relationship Between Parties."
-      },
-      {
-        "index": 117,
-        "text": "Execution Copy"
-      },
-      {
-        "index": 118,
-        "text": "Ref. No. CB25-792"
-      },
-      {
-        "index": 119,
-        "text": "(1) No Reliance. It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisors as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction; it being understood that information and explanations related to the terms and conditions of a Transaction shall not be considered investment advice or a recommendation to enter into that Transaction. It has not received from the other party any assurance or guarantee as to the expected results of that Transaction."
-      },
-      {
-        "index": 120,
-        "text": "(2) Evaluation and Understanding. It is capable of evaluating and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction. It is also capable of assuming, and assumes, the financial and other risks of that Transaction."
-      },
-      {
-        "index": 121,
-        "text": "(3) Status of Parties. The other party is not acting as a fiduciary for or an advisor to it in respect of that Transaction."
-      },
-      {
-        "index": 122,
-        "text": "(i) Risk Management. Party B alone represents that this Agreement has been, and each Transaction hereunder has been or will be, as the case may be, entered into for the purpose of managing its borrowings or investments, hedging its underlying assets or liabilities or in connection with its line of business (including financial intermediation services) and not for the purpose of speculation."
-      },
-      {
-        "index": 123,
-        "text": "(k) ERISA. The assets that are used in connection with the execution, delivery and performance of this Agreement and the Transactions entered into pursuant hereto are not (i) the assets of an \"employee benefit plan\" (within the meaning of Section 3(3)) of the Employee Retirement Income Security Act of 1974, as amended (\"ERISA\") or other plan subject to Title I of ERISA, (ii) a plan described in Section 4975 of the Internal Revenue Code of 1986, as amended (the \"Code\"), (iii) an entity whose underlying assets include \"plan assets\" by reason of Department of Labor regulation section 2510.3-101 (as modified by Section 3(42) of ERISA), or (iv) a governmental plan that is subject to any federal, state, or local law that is substantially similar to the provisions of Section 406 of ERISA or Section 4975 of the Code.\""
-      }
-    ],
-    "confidence_revision": 1.0,
-    "revision_explanation": "Inserted the required language at the beginning of paragraph (m) to implement the amendment, ensuring the specified representations and warranties are made as of the date hereof, with references to 'this Agreement' deemed to include the Amendment Agreement and the Master Agreement as amended. No unrelated changes were made."
-  },
-  {
-    "amendment_start_line": 41,
-    "amendment_end_line": 41,
-    "amendment_span_text": "(1) \t Except as specifically amended hereby, the Master Agreement and the 2007 Confirmation shall continue in full force and effect in accordance with the provisions thereof, on the date hereof, and nothing herein contained shall be construed as a waiver or modification of the existing rights under the Master Agreement or the 2007 Confirmation, except as such rights are expressly modified hereby; and",
-    "target_section": "Miscellaneous",
-    "confidence_target": 0.9,
-    "change_explanation": "States that except as amended, all other terms of the Master Agreement and 2007 Confirmation remain in effect.",
-    "target_paragraph_indices": [
-      109,
-      110,
-      111,
-      112
-    ],
-    "confidence_target_paragraph_indices": 0.85,
-    "target_paragraph_explanation": "Lines 109-112 cover governing law and other standard miscellaneous provisions, including entire agreement and execution, matching the target's description.",
-    "initial_paragraphs": [
-      {
-        "index": 109,
-        "text": "(h) Governing Law. This Agreement will be governed by and construed in accordance with the laws of the State of New York."
-      },
-      {
-        "index": 110,
-        "text": "(i) Jurisdiction. Section 13(b)(i) of the Agreement is hereby amended by deleting in line 2 of paragraph 2 the word \"non-\" and by deleting paragraph (iii) thereof. The following shall be added at the end of Section 13(b):"
-      },
-      {
-        "index": 111,
-        "text": "\"Nothing in this provision shall prohibit a party from bringing an action to enforce a money judgment in any other jurisdiction.\""
-      },
-      {
-        "index": 112,
-        "text": "(j)\"Affiliate\" will have the meaning specified in Section 14 of this Agreement."
-      }
-    ],
-    "revised_paragraphs": [
-      {
-        "index": 109,
-        "text": "(h) Governing Law. This Agreement will be governed by and construed in accordance with the laws of the State of New York.\n(i) Jurisdiction. Section 13(b)(i) of the Agreement is hereby amended by deleting in line 2 of paragraph 2 the word \"non-\" and by deleting paragraph (iii) thereof. The following shall be added at the end of Section 13(b):\n\"Nothing in this provision shall prohibit a party from bringing an action to enforce a money judgment in any other jurisdiction.\"\n(j) \"Affiliate\" will have the meaning specified in Section 14 of this Agreement.\n(k) Except as specifically amended hereby, the Master Agreement and the 2007 Confirmation shall continue in full force and effect in accordance with the provisions thereof, on the date hereof, and nothing herein contained shall be construed as a waiver or modification of the existing rights under the Master Agreement or the 2007 Confirmation, except as such rights are expressly modified hereby;"
-      }
-    ],
-    "confidence_revision": 1.0,
-    "revision_explanation": "Added a new paragraph (k) at the end of the target span to implement the amendment instruction, preserving style and numbering."
-  },
-  {
-    "amendment_start_line": 42,
-    "amendment_end_line": 42,
-    "amendment_span_text": "(2) \t This Amendment Agreement constitutes the entire agreement and understanding of the parties with respect to the subject matter hereof. The Amendment Agreement shall be governed by and construed in accordance with the laws of the State of New York without reference to its choice of law doctrine, and may be executed in counterparts, each of which shall be deemed an original and all of which when taken together shall constitute one and the same instrument.",
-    "target_section": "Miscellaneous",
-    "confidence_target": 0.9,
-    "change_explanation": "Establishes entire agreement, governing law, and execution in counterparts for the amendment.",
-    "target_paragraph_indices": [
-      109,
-      110,
-      111,
-      112
-    ],
-    "confidence_target_paragraph_indices": 0.85,
-    "target_paragraph_explanation": "Lines 109-112 cover governing law and other standard miscellaneous provisions, including entire agreement and execution, matching the target's description.",
-    "initial_paragraphs": [
-      {
-        "index": 109,
-        "text": "(h) Governing Law. This Agreement will be governed by and construed in accordance with the laws of the State of New York."
-      },
-      {
-        "index": 110,
-        "text": "(i) Jurisdiction. Section 13(b)(i) of the Agreement is hereby amended by deleting in line 2 of paragraph 2 the word \"non-\" and by deleting paragraph (iii) thereof. The following shall be added at the end of Section 13(b):"
-      },
-      {
-        "index": 111,
-        "text": "\"Nothing in this provision shall prohibit a party from bringing an action to enforce a money judgment in any other jurisdiction.\""
-      },
-      {
-        "index": 112,
-        "text": "(j)\"Affiliate\" will have the meaning specified in Section 14 of this Agreement."
-      }
-    ],
-    "revised_paragraphs": [
-      {
-        "index": 109,
-        "text": "(h) Governing Law. This Agreement will be governed by and construed in accordance with the laws of the State of New York without reference to its choice of law doctrine."
-      },
-      {
-        "index": 110,
-        "text": "(i) Jurisdiction. Section 13(b)(i) of the Agreement is hereby amended by deleting in line 2 of paragraph 2 the word \"non-\" and by deleting paragraph (iii) thereof. The following shall be added at the end of Section 13(b):"
-      },
-      {
-        "index": 111,
-        "text": "\"Nothing in this provision shall prohibit a party from bringing an action to enforce a money judgment in any other jurisdiction.\""
-      },
-      {
-        "index": 112,
-        "text": "(j) \"Affiliate\" will have the meaning specified in Section 14 of this Agreement."
-      },
-      {
-        "index": 113,
-        "text": "(k) Entire Agreement. This Amendment Agreement constitutes the entire agreement and understanding of the parties with respect to the subject matter hereof and may be executed in counterparts, each of which shall be deemed an original and all of which when taken together shall constitute one and the same instrument."
-      }
-    ],
-    "confidence_revision": 1.0,
-    "revision_explanation": "Added the required language regarding governing law without reference to choice of law doctrine to paragraph (h), and inserted a new paragraph (k) to reflect the entire agreement and execution in counterparts, as instructed."
-  },
-  {
-    "amendment_start_line": 44,
-    "amendment_end_line": 44,
-    "amendment_span_text": "JURY TRIAL WAIVER. PARTY A AND PARTY B, TO THE EXTENT PERMITTED BY LAW, EACH HEREBY WAIVES ANY RIGHT TO HAVE A JURY PARTICIPATE IN RESOLVING ANY DISPUTE, WHETHER SOUNDING IN CONTRACT, TORT OR OTHERWISE, BETWEEN PARTY A AND PARTY B, ARISING OUT OF, IN CONNECTION WITH, RELATED TO, OR INCIDENTAL TO THE RELATIONSHIP ESTABLISHED AMONG THEM IN CONNECTION WITH THIS AMENDMENT AGREEMENT OR ANY DOCUMENT OR AGREEMENT EXECUTED OR DELIVERED IN CONNECTION HEREWITH OR THE TRANSACTIONS RELATED THERETO.",
-    "target_section": "Jury Trial Waiver",
-    "confidence_target": 0.99,
-    "change_explanation": "Adds a mutual waiver of jury trial for disputes related to the amendment or related documents.",
-    "target_paragraph_indices": [
-      135
-    ],
-    "confidence_target_paragraph_indices": 0.99,
-    "target_paragraph_explanation": "Line 135 contains the mutual waiver of jury trial for disputes relating to the Agreement, matching the target exactly.",
-    "initial_paragraphs": [
-      {
-        "index": 135,
-        "text": "(a) Waiver of Right to Trial by Jury. Each party hereby irrevocably waives, to the fullest extent permitted by applicable law, any right it may have to a trial by jury in respect of any suit, action or proceeding relating to this Agreement."
-      }
-    ],
-    "revised_paragraphs": [
-      {
-        "index": 135,
-        "text": "(a) Jury Trial Waiver. Party A and Party B, to the extent permitted by law, each hereby waives any right to have a jury participate in resolving any dispute, whether sounding in contract, tort or otherwise, between Party A and Party B, arising out of, in connection with, related to, or incidental to the relationship established among them in connection with this Amendment Agreement or any document or agreement executed or delivered in connection herewith or the transactions related thereto."
-      }
-    ],
-    "confidence_revision": 1.0,
-    "revision_explanation": "Revised the paragraph to reflect the specific waiver language provided in the amendment instruction, ensuring that the waiver applies to Party A and Party B, covers disputes of any kind, and references the Amendment Agreement and related documents, as required."
+    "revision_explanation": "The paragraph was replaced in its entirety as instructed, using the exact amended language provided, and preserving the style and numbering."
   }
 ]

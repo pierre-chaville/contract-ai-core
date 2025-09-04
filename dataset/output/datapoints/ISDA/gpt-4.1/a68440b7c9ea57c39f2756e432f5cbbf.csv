@@ -2,34 +2,34 @@ key,title,confidence,value,evidence,explanation
 date,Date of the contract,100,2016-01-19,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","The text states 'ISDA 2002 Master Agreement dated as of January 19, 2016', which is the date of the contract."
 party_A,Party A,100,"CITIBANK, N.A.","[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","The text specifies 'CITIBANK, N.A., a national banking association organized under the laws of the United States (""Party A "")'."
 party_B,party_B,100,CHELTENHAM FUNDING LLC,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","The text specifies 'CHELTENHAM FUNDING LLC, a limited liability company formed under the laws of the State of Delaware (""Party B "")'."
-specified_entity_A,Specified entity Party A,,None,"[10, 11, 12, 13]",
-specified_entity_B,Specified entity Party B,,None,"[10, 11, 12, 13]",
-specified_transaction,Specified transaction scope,100,NONSTD,"[14, 15]","The text expands the definition of Specified Transaction beyond the standard Section 14 by explicitly including securities options, margin loans, short sales, and similar transactions, indicating a non-standard scope."
+specified_entity_A,Specified entity Party A,100,"Citigroup Global Markets Limited, Citigroup Global Markets Inc., Citigroup Global Markets Commercial Corp., Citicorp Securities Services, Inc., Citibank Europe PLC, Citigroup Financial Products Inc., Citigroup Global Markets Deutschland AG, Citigroup Energy Inc., Citibank Canada, Citigroup Energy Canada ULC, Citibank International Limited and Citibank Japan Ltd.","[10, 11, 12, 13]",The text explicitly lists these entities as the Specified Entity for Party A for the purpose of Section 5(a)(v).
+specified_entity_B,Specified entity Party B,100,"FS Investment Corporation IV, a Maryland corporation","[10, 11, 12, 13]",The text explicitly states that FS Investment Corporation IV is the Specified Entity for Party B for the relevant sections.
+specified_transaction,Specified transaction scope,100,NONSTD,"[14, 15]","The text explicitly expands the definition of Specified Transaction beyond the standard Section 14 by including additional types of transactions (securities options, margin loans, short sales, and similar transactions), indicating a non-standard scope."
 cross_default,Cross default applicable parties,100,AB,"[16, 17]","The text states that the Cross Default provisions will apply to Party A and will apply to Party B, indicating both parties are covered."
-specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,,None,"[18, 38]",
-specified_indebtness_deposits,Specified indebtness excludes deposits,,None,"[18, 38]",
-threshold_amount_A_amount,amount for Party A,100,None,"[19, 20, 21, 22, 23, 24, 25]",No fixed amount is specified for Party A; only a percentage is provided.
-threshold_amount_A_currency,currency for Party A ,100,None,"[19, 20, 21, 22, 23, 24, 25]",No specific currency is stated for Party A; the threshold is defined as a percentage of equity.
-threshold_amount_A_percent,percentage for Party A ,100,2.0,"[19, 20, 21, 22, 23, 24, 25]",The text states '2% of the stockholders' equity of Party A'.
-threshold_amount_A_percent_reference,percentage reference for Party A ,100,SHAREHOLDER,"[19, 20, 21, 22, 23, 24, 25]","The reference is 'stockholders' equity', which matches the SHAREHOLDER enum."
-threshold_amount_B_amount,amount for Party B,100,100000.0,"[19, 20, 21, 22, 23, 24, 25]","The text states 'with respect to Party B, USD100,000'."
-threshold_amount_B_currency,currency for Party B,100,USD,"[19, 20, 21, 22, 23, 24, 25]",The amount for Party B is specified in USD.
-threshold_amount_B_percent,percentage for Party B,100,None,"[19, 20, 21, 22, 23, 24, 25]",No percentage threshold is specified for Party B; only a fixed amount is given.
+specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,50,None,"[18, 38]","The text does not explicitly state whether 'borrowed money' is included in Specified Indebtedness. It only references the definition in Section 14 and specifically excludes deposits, but does not mention borrowed money."
+specified_indebtness_deposits,Specified indebtness excludes deposits,100,True,"[18, 38]",The text explicitly states that Specified Indebtedness shall not include deposits received in the course of a party's ordinary banking business.
+threshold_amount_A_amount,amount for Party A,100,None,"[19, 20, 21, 22, 23, 24, 25]","The threshold for Party A is defined as a percentage (2% of stockholders' equity), not a fixed amount."
+threshold_amount_A_currency,currency for Party A ,100,None,"[19, 20, 21, 22, 23, 24, 25]","No specific currency is stated for Party A's threshold amount, as it is a percentage of equity."
+threshold_amount_A_percent,percentage for Party A ,100,2.0,"[19, 20, 21, 22, 23, 24, 25]",The contract states '2% of the stockholders' equity of Party A'.
+threshold_amount_A_percent_reference,percentage reference for Party A ,100,SHAREHOLDER,"[19, 20, 21, 22, 23, 24, 25]","The percentage is referenced to 'stockholders' equity', which matches the enum SHAREHOLDER."
+threshold_amount_B_amount,amount for Party B,100,100000.0,"[19, 20, 21, 22, 23, 24, 25]","The contract states 'with respect to Party B, USD100,000'."
+threshold_amount_B_currency,currency for Party B,100,USD,"[19, 20, 21, 22, 23, 24, 25]","The contract specifies the amount as 'USD100,000' for Party B."
+threshold_amount_B_percent,percentage for Party B,100,None,"[19, 20, 21, 22, 23, 24, 25]","No percentage threshold is specified for Party B, only a fixed amount."
 threshold_amount_B_percent_reference,percentage reference for Party B,100,None,"[19, 20, 21, 22, 23, 24, 25]",No percentage threshold is specified for Party B.
-credit_event_upon_merger,Credit Event Upon Merger  applicable parties,100,AB,[26],"The text states that the 'Credit Event Upon Merger' provisions will apply to Party A and will apply to Party B, indicating both parties are included."
+credit_event_upon_merger,Credit Event Upon Merger  applicable parties,100,AB,[26],"The text states that the 'Credit Event Upon Merger' provisions will apply to Party A and will apply to Party B, indicating both parties are applicable."
 automatic_early_termination,Automatic Early Termination  applicable parties,100,NONE,[27],The text explicitly states that Automatic Early Termination will not apply to Party A and will not apply to Party B.
-termination_currency,Termination Currency,100,USD,[29],"The text explicitly states 'Termination Currency' means United States Dollars, which corresponds to the ISO code USD."
-notices_A,Email for notices for Party A,95,None,"[82, 83, 84, 85, 87, 88]","The notice section for Party A provides a physical address, attention line, and facsimile number, but does not list an email address."
-notices_B,Email for notices for Party B,100,jerry.stahlecker@franklinsquare.com,"[82, 83, 84, 85, 87, 88]",The notice section for Party B explicitly lists 'Email: jerry.stahlecker@franklinsquare.com' as the email for notices.
+termination_currency,Termination Currency,100,USD,[29],"The text explicitly states 'Termination Currency means United States Dollars', and the ISO code for United States Dollars is USD."
+notices_A,Email for notices for Party A,95,None,"[82, 83, 84, 85, 87, 88]",No email address is provided for Party A in the given text; only a physical address and facsimile number are listed.
+notices_B,Email for notices for Party B,100,jerry.stahlecker@franklinsquare.com,"[82, 83, 84, 85, 87, 88]",The text explicitly lists 'Email: jerry.stahlecker@franklinsquare.com' under the address for notices to Party B.
 process_agent_A,Process agent for party A,100,False,"[89, 90, 91]","The text states 'Party A appoints as its Process Agent: Not Applicable', indicating no process agent for Party A."
 process_agent_name_A,Name of process agent for party A,100,None,"[89, 90, 91]","Process agent is not applicable for Party A, so no name is provided."
 process_agent_address_A,Address of process agent for party A,100,None,"[89, 90, 91]","Process agent is not applicable for Party A, so no address is provided."
 process_agent_B,Process agent for party B,100,False,"[89, 90, 91]","The text states 'Party B appoints as its Process Agent: Not Applicable', indicating no process agent for Party B."
 process_agent_name_B,Name of process agent for party B,100,None,"[89, 90, 91]","Process agent is not applicable for Party B, so no name is provided."
 process_agent_address_B,Address of process agent for party B,100,None,"[89, 90, 91]","Process agent is not applicable for Party B, so no address is provided."
-multibranch_party_A,Party A is a Multibranch party,100,True,"[93, 94, 95]",The text states 'Party A is a Multibranch Party'.
-multibranch_party_A_offices,Party A offices,100,"New York, London, Singapore and Sydney","[93, 94, 95]","The text specifies Party A may enter into a Transaction through 'New York, London, Singapore and Sydney'."
-multibranch_party_B,Party B is a Multibranch party,100,False,"[93, 94, 95]",The text states 'Party B is not a Multibranch Party.'
+multibranch_party_A,Party A is a Multibranch party,100,True,"[93, 94, 95]",The text explicitly states 'Party A is a Multibranch Party'.
+multibranch_party_A_offices,Party A offices,100,"New York, London, Singapore and Sydney","[93, 94, 95]","The text lists the offices: 'New York, London, Singapore and Sydney'."
+multibranch_party_B,Party B is a Multibranch party,100,False,"[93, 94, 95]",The text explicitly states 'Party B is not a Multibranch Party'.
 multibranch_party_B_offices,Party B offices,100,None,"[93, 94, 95]","Party B is not a Multibranch Party, so no offices are listed."
 calculation_agent,Party for calculation agent,100,A,[96],"The text states 'The Calculation Agent will be Party A unless otherwise specified', so Party A is the default calculation agent."
 governing_law,Governing Law,100,NEW-YORK,[104],The text explicitly states that the agreement shall be governed by the law of the State of New York.

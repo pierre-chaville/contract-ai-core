@@ -2,5 +2,7 @@
     "key": "ISDA_2002",
     "name": "ISDA Master Agreement (92 or 2002 version)",
     "use_case": "Extraction of clauses, datapoints and management of amendments for ISDA master agreements",
-    "description": "Schedule of an ISDA Master Agreement (92 or 2002 version)"
+    "description": "Schedule of an ISDA Master Agreement (92 or 2002 version)",
+    "prompt_scope_filter": "Filter the schedule of the ISDA Master Agreement. Ignore any sections outside the schedule (standard pre-print, CSA annexes, etc.)",
+    "prompt_scope_amendment": "Identify and manage amendments within the schedule of the ISDA Master Agreement. Ignore any amendments outside the schedule (Credit Support Annex, etc.)."
 }

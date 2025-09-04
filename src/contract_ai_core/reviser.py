@@ -11,7 +11,6 @@ Public API:
 
 import asyncio
 import logging
-import os
 from collections.abc import Sequence
 from dataclasses import dataclass
 
@@ -25,11 +24,7 @@ from .schema import (
     RevisionInstruction,
     RevisionInstructionTarget,
 )
-
-try:
-    from langchain_openai import ChatOpenAI
-except Exception:  # pragma: no cover
-    ChatOpenAI = None  # type: ignore
+from .utilities import get_langchain_chat_model
 
 
 @dataclass
@@ -55,13 +50,8 @@ class ContractReviser:
 
         For example, replace this section ... with this text: ...
         """
-        if self.config.provider != "openai":
+        if self.config.provider not in ("openai", "azure", "anthropic"):
             raise NotImplementedError(f"Unsupported provider: {self.config.provider}")
-
-        if ChatOpenAI is None:
-            raise RuntimeError(
-                "langchain-openai is required. Install with: pip install langchain langchain-openai"
-            )
 
         # Build amendment lines block
         lines_block = "\n".join(f"{p.index}: {p.text}" for p in amendment_paragraphs)
@@ -73,7 +63,7 @@ class ContractReviser:
             amendment_end_line: int = Field(
                 ..., description="End line index (inclusive) in the amendment text"
             )
-            amendment_span_text: str = Field(..., description="Text of the amendment span")
+            # amendment_span_text: str = Field(..., description="Text of the amendment span")
             target_section: str = Field(
                 ..., description="Target section identifier in the base contract"
             )
@@ -83,19 +73,11 @@ class ContractReviser:
         class AmendmentsOutput(BaseModel):
             amendments: list[AmendmentItem]
 
-        # Load .env and API key
-        try:
-            from dotenv import load_dotenv
-
-            load_dotenv()
-        except Exception:
-            pass
-        api_key = os.getenv("OPENAI_API_KEY")
-
-        llm = ChatOpenAI(
-            model=self.config.model or "gpt-4.1-mini",
+        llm = get_langchain_chat_model(
+            self.config.provider,
+            self.config.model or "gpt-4.1-mini",
             temperature=float(self.config.temperature),
-            api_key=api_key,  # type: ignore[arg-type]
+            max_tokens=self.config.max_tokens,
         )
         structured_llm = llm.with_structured_output(AmendmentsOutput)  # type: ignore[arg-type]
 
@@ -104,18 +86,31 @@ class ContractReviser:
             "each elementary amendment. For every amendment, return: start line, end line (inclusive), "
             "target section identifier in the base contract as a numbering string (e.g., 'Part 1 (c) (ii)'), "
             "a confidence in [0,1], and a brief explanation. If multiple discrete changes appear, split them into "
-            "separate amendment items."
+            "separate amendment items.\n"
         )
-        prompt = instruction + "\n\nAmendment paragraphs (line_number: text):\n" + lines_block
-
+        prompt = (
+            instruction
+            + template.prompt_scope_amendment
+            + "\n\nAmendment paragraphs (line_number: text):\n"
+            + lines_block
+        )
+        print(template.prompt_scope_amendment)
         output: AmendmentsOutput = structured_llm.invoke(prompt)  # type: ignore[assignment]
         results: list[RevisionInstruction] = []
         for item in output.amendments:
+            span_text = "\n".join(
+                [
+                    x.text
+                    for x in amendment_paragraphs[
+                        item.amendment_start_line : item.amendment_end_line + 1
+                    ]
+                ]
+            )
             results.append(
                 RevisionInstruction(
                     amendment_start_line=item.amendment_start_line,
                     amendment_end_line=item.amendment_end_line,
-                    amendment_span_text=item.amendment_span_text,
+                    amendment_span_text=span_text,
                     target_section=item.target_section,
                     confidence_target=item.confidence_target,
                     change_explanation=item.change_explanation,
@@ -129,13 +124,8 @@ class ContractReviser:
         instructions: Sequence[RevisionInstruction],
     ) -> Sequence[RevisionInstructionTarget]:
         """for each revision instructions, find the relevant target paragraphs in the original text."""
-        if self.config.provider != "openai":
+        if self.config.provider not in ("openai", "azure", "anthropic"):
             raise NotImplementedError(f"Unsupported provider: {self.config.provider}")
-
-        if ChatOpenAI is None:
-            raise RuntimeError(
-                "langchain-openai is required. Install with: pip install langchain langchain-openai"
-            )
         # Build contract lines block
         contract_block = "\n".join(f"{p.index}: {p.text}" for p in contracts_paragraphs)
 
@@ -158,19 +148,11 @@ class ContractReviser:
         class TargetLocations(BaseModel):
             locations: list[TargetLocationItem]
 
-        # Load .env and API key
-        try:
-            from dotenv import load_dotenv
-
-            load_dotenv()
-        except Exception:
-            pass
-        api_key = os.getenv("OPENAI_API_KEY")
-
-        llm = ChatOpenAI(
-            model=self.config.model or "gpt-4.1-mini",
+        llm = get_langchain_chat_model(
+            self.config.provider,
+            self.config.model or "gpt-4.1-mini",
             temperature=float(self.config.temperature),
-            api_key=api_key,  # type: ignore[arg-type]
+            max_tokens=self.config.max_tokens,
         )
         structured_llm = llm.with_structured_output(TargetLocations)  # type: ignore[arg-type]
 
@@ -240,13 +222,8 @@ class ContractReviser:
         instructions: Sequence[RevisionInstructionTarget],
     ) -> Sequence[RevisedSection]:
         """Apply the revision instructions on the section to produce the revised section."""
-        if self.config.provider != "openai":
+        if self.config.provider not in ("openai", "azure", "anthropic"):
             raise NotImplementedError(f"Unsupported provider: {self.config.provider}")
-
-        if ChatOpenAI is None:
-            raise RuntimeError(
-                "langchain-openai is required. Install with: pip install langchain langchain-openai"
-            )
 
         # Prepare jobs per instruction
         logging.getLogger(__name__).info("Applying %d revision jobs", len(instructions))
@@ -284,21 +261,13 @@ class ContractReviser:
                 }
             )
 
-        # Load API key once
-        try:
-            from dotenv import load_dotenv
-
-            load_dotenv()
-        except Exception:
-            pass
-        api_key = os.getenv("OPENAI_API_KEY")
-
         async def run_job(job: dict) -> tuple[dict, BaseModel]:
             ApplyOutputModel = job["model"]
-            llm = ChatOpenAI(
-                model=self.config.model or "gpt-4.1-mini",
+            llm = get_langchain_chat_model(
+                self.config.provider,
+                self.config.model or "gpt-4.1-mini",
                 temperature=float(self.config.temperature),
-                api_key=api_key,  # type: ignore[arg-type]
+                max_tokens=self.config.max_tokens,
             )
             structured_llm = llm.with_structured_output(ApplyOutputModel)  # type: ignore[arg-type]
 

@@ -1,0 +1,3 @@
+{"timestamp": "2025-09-03T08:26:28.857072+00:00", "source_id": "025cb4065e6e551db1bfe44ef44eb83b.md", "provider": "openai", "model": "gpt-4.1", "num_paragraphs": 201, "usage": {}}
+{"timestamp": "2025-09-03T08:26:41.714292+00:00", "source_id": "0b4058ba0dcd589c94e0ef1969f2fe13.md", "provider": "openai", "model": "gpt-4.1", "num_paragraphs": 141, "usage": {}}
+{"timestamp": "2025-09-03T11:17:24.806522+00:00", "source_id": "1ac97046876756bb8bcc28581198bdeb.md", "provider": "openai", "model": "gpt-4.1", "num_paragraphs": 236, "usage": {}}

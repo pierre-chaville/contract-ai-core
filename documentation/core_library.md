@@ -55,7 +55,7 @@ Usage:
 from contract_ai_core.extractor import DatapointExtractor, DatapointExtractorConfig
 
 ext = DatapointExtractor(DatapointExtractorConfig(model="gpt-4.1-mini", concurrency=2, max_retries=5))
-result = ext.extract(text, template, classified_clauses=doc_cls)
+result = ext.extract(paragraphs, template, classified_clauses=doc_cls)
 
 for dp in result.datapoints:
     print(dp.key, dp.value, dp.confidence)

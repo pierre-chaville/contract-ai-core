@@ -56,10 +56,17 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Extract datapoints using gold classifications")
     parser.add_argument("--template", required=True, help="Template key (e.g., ISDA)")
     parser.add_argument("--model", required=True, help="Extractor model (e.g., gpt-4.1-mini)")
+    parser.add_argument(
+        "--provider",
+        default="openai",
+        choices=["openai", "azure", "anthropic"],
+        help="LLM provider (default: openai)",
+    )
     args = parser.parse_args()
 
     template_key = args.template
     model_name = args.model
+    provider = args.provider
 
     repo_root = Path(__file__).resolve().parents[1]
     docs_dir = repo_root / "dataset" / "documents" / template_key
@@ -73,9 +80,7 @@ def main() -> None:
     extractor_temperature = 1.0 if "gpt-5" in model_name else 0.2
     extractor = DatapointExtractor(
         DatapointExtractorConfig(
-            provider="openai",
-            model=model_name,
-            temperature=extractor_temperature,
+            provider=provider, model=model_name, temperature=extractor_temperature, max_tokens=8000
         )
     )
 
@@ -123,7 +128,7 @@ def main() -> None:
                     )
 
         extraction = extractor.extract(
-            text=text,
+            paragraphs=_paragraphs,
             template=template,
             classified_clauses=classification,
         )

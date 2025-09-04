@@ -1,0 +1,39 @@
+[
+  {
+    "amendment_start_line": 11,
+    "amendment_end_line": 13,
+    "amendment_span_text": "(a) \t Amendment of the Schedule to the Agreement\n\nPart 4(g) of the Schedule is hereby amended in its entirety to read as follows:\n\n(g) Credit Support Provider. In relation to Party A, means not applicable. In relation to Party B, means each party to any Credit Support Document of Party B, other than (i) Party A or Party B, (ii) any Affiliate of Party A, or (iii) any other secured party under such Credit Support Document.",
+    "target_section": "Schedule Part 4(g)",
+    "confidence_target": 1.0,
+    "change_explanation": "Amendment of Part 4(g) of the Schedule to redefine 'Credit Support Provider' for Party A and Party B.",
+    "target_paragraph_indices": [
+      91,
+      92,
+      93
+    ],
+    "confidence_target_paragraph_indices": 0.95,
+    "target_paragraph_explanation": "Lines 91-93 correspond to Part 4(g) of the Schedule, defining 'Credit Support Provider' for Party A and Party B as 'Not applicable.' This matches the target section 'Schedule Part 4(g)'.",
+    "initial_paragraphs": [
+      {
+        "index": 91,
+        "text": "(g) \t Credit Support Provider."
+      },
+      {
+        "index": 92,
+        "text": "(i) Credit Support Provider means in relation to Party A: Not applicable."
+      },
+      {
+        "index": 93,
+        "text": "(ii) Credit Support Provider means in relation to Party B: Not applicable."
+      }
+    ],
+    "revised_paragraphs": [
+      {
+        "index": 91,
+        "text": "(g) Credit Support Provider. In relation to Party A, means not applicable. In relation to Party B, means each party to any Credit Support Document of Party B, other than (i) Party A or Party B, (ii) any Affiliate of Party A, or (iii) any other secured party under such Credit Support Document."
+      }
+    ],
+    "confidence_revision": 1.0,
+    "revision_explanation": "Replaced the entire Part 4(g) text with the amended wording as instructed, consolidating the definitions for Party A and Party B into a single paragraph and incorporating the specified exclusions for Party B's Credit Support Provider."
+  }
+]

@@ -1,0 +1,161 @@
+index,clause_key,confidence,text
+0,,0,ISDA ®
+1,,0,"International Swaps and Derivatives Association, Inc."
+2,,0,SCHEDULE
+3,,0,to the
+4,,0,2002 Master Agreement
+5,,0,"dated as of March 22, 2011"
+6,,0,between
+7,,0,"BANK OF AMERICA, N.A.,"
+8,,0,a national banking association organized and existing
+9,,0,"under the laws of the United States of America,"
+10,,0,"(""Party A"")"
+11,,0,and
+12,,0,"LKQ CORPORATION,"
+13,,0,"a corporation organized and existing under the laws of Delaware,"
+14,,0,"(""Party B"")"
+15,,0,Part 1
+16,,0,Termination Provisions
+17,specified_entity,90,"(a) 	 ""Specified Entity "" means in relation to Party A for the purpose of Section 5(a)(v), any Affiliate of Party A, and for the purposes of Sections 5(a)(vi), 5(a)(vii) and 5(b)(v): none;"
+18,specified_entity,90,"""Specified Entity "" means in relation to Party B for the purpose of Section 5(a)(v), any Affiliate of Party B, and for the purposes of Sections 5(a)(vi), 5(a)(vii) and 5(b)(v): none."
+19,specified_transaction,90,"(b) 	 ""Specified Transaction "" will have the meaning specified in Section 14 but shall also include any transaction with respect to margin loans, cash loans and short sales of any financial instrument, and as amended by inserting the words, ""or any Affiliate of Party A"" immediately after ""Agreement"" in the second line thereof."
+20,cross_default,90,"(c) 	 The ""Cross-Default "" provisions of Section 5(a)(vi):"
+21,cross_default,90,will apply to Party A and
+22,cross_default,90,will apply to Party B.
+23,specified_indebtness,90,"In connection therewith, "" Specified Indebtedness"" will not have the meaning specified in Section 14, and such definition shall be replaced by the following: ""any obligation in respect of the payment or repayment of moneys (whether present or future, contingent or otherwise, as principal or surety or otherwise), including, but without limitation, any obligation in respect of borrowed money except that such term shall not include obligations in respect of deposits received in the ordinary course of a party's banking business."""
+24,threshold_amount,90,""" Threshold Amount"" means with respect to Party A an amount equal to three percent (3%) of the Shareholders' Equity of Bank of America Corporation and with respect to Party B, $50,000,000."
+25,credit_support_document,80,""" Credit Agreement"" means the Credit Agreement dated as of October 12, 2007, as amended by the First Amendment to Credit Agreement dated as of October 26, 2007 and as further amended by the Second Amendment, Waiver and Consent to Credit Agreement; and First Amendment to Guarantee and Collateral Agreement dated as of October 21, 2009 (the ""DB Credit Agreement"") among LKQ Corporation and LKQ Delaware LLP, as Borrowers, Lehman Commercial Paper Inc., as Existing Administrative Agent, Deutsche Bank AG New York Branch, as Successor Administrative Agent and the Lenders party thereto and Subsidiary Guarantors party thereto (and as defined therein), (as amended, extended, supplemented or otherwise modified in writing from time to time); and upon execution of the Credit Agreement dated on or about March/April      , 2011 (the ""JPMorgan Credit Agreement"") among LKQ Corporation and LKQ Delaware LLP, the Lenders party thereto from time to time, JPMorgan Chase Bank, N.A., as Administrative Agent, Bank of America, N.A., as Syndication Agent, and RBS Citizens, N.A. and Wells Fargo Bank, National Association, as Co-Documentation Agents, ""Credit Agreement"" shall mean to be JPMorgan Credit Agreement as amended, extended, supplemented or otherwise modified in writing from time to time."
+26,financial_statements,80,""" Shareholders' Equity"" means with respect to an entity, at any time, the sum (as shown in the most recent annual audited financial statements of such entity) of (i) its capital stock (including preferred stock) outstanding, taken at par value, (ii) its capital surplus and (iii) its retained earnings, minus (iv) treasury stock, each to be determined in accordance with generally accepted accounting principles."
+27,credit_event_upon_merger,90,"(d) 	 The ""Credit Event Upon Merger "" provisions of Section 5(b)(v):"
+28,credit_event_upon_merger,90,will apply to Party A
+29,credit_event_upon_merger,90,will apply to Party B
+30,automatic_early_termination,90,"(e) 	 The ""Automatic Early Termination "" provision of Section 6(a):"
+31,automatic_early_termination,90,will not apply to Party A
+32,automatic_early_termination,90,will not apply to Party B.
+33,termination_currency,90,"(f) 	 ""Termination Currency "" means United States Dollars."
+34,additional_termination_events,90,(g) 	 Additional Termination Event will apply.
+35,additional_termination_events,90,"It shall be an Additional Termination Event hereunder, with respect to which Party B shall be the sole Affected Party, if (1) an Event of Default (as defined in the Credit Agreement) occurs under the Credit Agreement, or if (2) the Credit Agreement shall be paid or prepaid in full, expire, terminate, or otherwise cease to be in full effect, provided, however, that the replacement of the DB Credit Agreement with the JPMorgan Credit Agreement shall not constitute an Additional Termination Event hereunder."
+36,,0,Part 2
+37,,0,Tax Representations
+38,payer_representations,90,"(a) 	 Payer Tax Representations. For the purpose of Section 3(e) of this Agreement, Party A and Party B will make the following representation:-"
+39,payer_representations,90,"It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 9(h) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on (i) the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement, (ii) the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement and (iii) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement, except that it will not be a breach of this representation where reliance is placed on clause (ii) above and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position."
+40,payee_representations,90,"(b) 	 Payee Tax Representations. For the purpose of Section 3(f) of this Agreement, Party A and Party B will make the following representations specified below, if any:-"
+41,payee_representations,90,(i) 	 The following representations will apply to Party A:
+42,payee_representations,90,Party A is a national banking association created or organized under the laws of the United States of America and the federal taxpayer identification number is 94-1687665.
+43,payee_representations,90,(ii) 	 The following representations will apply to Party B:
+44,payee_representations,90,Party B is a corporation created or organized under the laws of the State of Delaware and the federal taxpayer identification number is 36-4215970.
+45,,0,Part 3
+46,,0,Agreement to Deliver Documents
+47,other_documents,80,"For the purpose of Section 4(a)(i) and (ii) of this Agreement, each party agrees to deliver the following documents:"
+48,delivery_of_tax_forms,90,"(a) 	 Tax forms, documents or certificates to be delivered are:"
+49,delivery_of_tax_forms,90,Party required to deliver document 	    	 Document 	    	 Date by which to be delivered Party B 	    	 Internal Revenue Service Form W-9 	    	 Upon execution and delivery of this Agreement
+50,other_documents,80,(b) 	 Other documents to be delivered are:-
+51,corporate_documents,80,"Party required to deliver document 	    	 Form/Document/Certificate 	    	 Date by which to be delivered 	    	 Covered by Section 3(d) Representation Party A and Party B 	    	 Certified copies of all corporate, partnership or membership authorizations, as the case may be, and any other documents with respect to the execution, delivery and performance of this Agreement and any Credit Support Document 	    	 Upon execution and delivery of this Agreement 	    	 Yes Party A and Party B 	    	 Certificate of authority and specimen signatures of individuals executing this Agreement and any Credit Support Document 	    	 Upon execution and delivery of this Agreement and thereafter upon request of the other party 	    	 Yes Party A 	    	 Annual Report of Bank of America Corporation containing audited, consolidated financial statements certified by independent certified public accountants and prepared in accordance with generally accepted accounting principles in the country in which such party is organized 	    	 To be made available on www.bankofamerica.com/investor/ as soon as available and in any event within 90 days after the end of each fiscal year of Party A 	    	 Yes Party A 	    	 Quarterly Financial Statements of Bank of America Corporation containing unaudited, consolidated financial statements of such party's fiscal quarter prepared in accordance with generally accepted accounting principles in the country in which such party is organized 	    	 To be made available on www.bankofamerica.com/investor/ as soon as available and in any event within 45 days after the end of each fiscal quarter of Party A 	    	 Yes Party B 	    	 Annual Report of Party B and of any Credit Support Provider thereof containing audited, consolidated financial statements certified by independent certified public accountants and prepared in accordance with generally accepted accounting principles in the country in which such party and such Credit Support Provider is organized 	    	 To be made available on www.lkqcorp.com as soon as available and in any event within 90 days after the end of each fiscal year of Party B and of the Credit Support Provider 	    	 Yes"
+52,financial_statements,80,"Party required to deliver document 	    	 Form/Document/Certificate 	    	 Date by which to be delivered 	    	 Covered by Section 3(d) Representation Party B 	    	 Quarterly Financial Statements of Party B and any Credit Support Provider thereof containing unaudited, consolidated financial statements of such party's fiscal quarter prepared in accordance with generally accepted accounting principles in the country in which such party and such Credit Support Provider is organized 	    	 To be made available on www.lkqcorp.com as soon as available and in any event within 45 days after the end of each fiscal quarter of Party B and of the Credit Support Provider 	    	 Yes"
+53,,0,Part 4
+54,,0,Miscellaneous
+55,address_for_notices,90,(a) 	 Address for Notices. For the purpose of Section 12(a) of this Agreement:-
+56,address_for_notices,90,Address for notice or communications to Party A:
+57,address_for_notices,90,"Bank of America, N.A."
+58,address_for_notices,90,Willis Tower
+59,address_for_notices,90,"233 South Wacker Drive, Suite 2800"
+60,address_for_notices,90,"Chicago, IL 60606"
+61,address_for_notices,90,Attention: Swap Operations
+62,address_for_notices,90,Telephone No.: (312) 234 2732
+63,address_for_notices,90,Facsimile No.: (866) 255 1444
+64,address_for_notices,90,With a copy to:-
+65,address_for_notices,90,"Bank of America, N.A."
+66,address_for_notices,90,"50 Rockefeller Plaza, NY1-050-10-01"
+67,address_for_notices,90,"New York, New York 10020"
+68,address_for_notices,90,Attention: Client Integration and Documentation Group
+69,address_for_notices,90,Facsimile No.: (212) 548 8622
+70,address_for_notices,90,Address for financial statements to Party A:
+71,address_for_notices,90,"Bank of America, N.A."
+72,address_for_notices,90,135 South LaSalle Street
+73,address_for_notices,90,"Chicago, IL 60603"
+74,address_for_notices,90,"Attention: Megan Collins, Vice President"
+75,address_for_notices,90,Telephone No.: 312-992-6351
+76,address_for_notices,90,Address for notice or communications to Party B:
+77,address_for_notices,90,LKQ Corporation
+78,address_for_notices,90,"120 North LaSalle Street, Suite 3300"
+79,address_for_notices,90,"Chicago, IL 60602"
+80,address_for_notices,90,Attention: John Quinn
+81,address_for_notices,90,Telephone No.: 312-621-1950
+82,address_for_notices,90,Facsimile No.: 312-621-1969
+83,address_for_notices,90,Email Address: jsquinn@lkqcorp.com
+84,address_for_notices,90,With a copy to:
+85,address_for_notices,90,LKQ Corporation
+86,address_for_notices,90,"676 N. Michigan Avenue, Suite 4000"
+87,address_for_notices,90,"Chicago, IL 60611"
+88,address_for_notices,90,Attention: Victor Cusini
+89,address_for_notices,90,Telephone No.: 312-280-3708
+90,address_for_notices,90,Facsimile No.: 312-280-3730
+91,address_for_notices,90,Email Address: vmc@flynnenterprises.net
+92,process_agent,90,(b) 	 Process Agent. For the purpose of Section 13(c):
+93,process_agent,90,Party A appoints as its Process Agent: Not applicable.
+94,process_agent,90,Party B appoints as its Process Agent: Not applicable.
+95,offices,90,(c) 	 Offices. The provisions of Section 10(a) will apply to this Agreement.
+96,multibranch_party,90,(d) 	 Multibranch Party. For the purpose of Section 10(b) of this Agreement:-
+97,multibranch_party,90,"Party A is a Multibranch Party and may act through its Charlotte, North Carolina, Chicago, Illinois, San Francisco, California, New York, New York, Boston, Massachusetts or London, England Office, its Canada Branch, located in Toronto, Ontario or such other Office as may be agreed to by the parties in connection with a Transaction."
+98,multibranch_party,90,Party B is not a Multibranch Party.
+99,calculation_agent,90,(e) 	 Calculation Agent. The Calculation Agent is Party A.
+100,credit_support_document,90,(f) 	 Credit Support Document. Details of any Credit Support Document:-
+101,credit_support_document,90,"Each of the following, as amended, extended, supplemented or otherwise modified in writing from time to time, is a ""Credit Support Document"":"
+102,credit_support_document,90,"In relation to Party B,"
+103,credit_support_document,90,"the Credit Agreement, and the Security Documents, or the Collateral Documents, as the case may be, as defined in the Credit Agreement."
+104,credit_support_document,90,Party B agrees that the security interests in collateral granted to Party A under the foregoing Credit Support Documents shall secure the obligations of Party B to Party A under this Agreement.
+105,credit_support_provider,90,(g) 	 Credit Support Provider.
+106,credit_support_provider,90,Credit Support Provider means in relation to Party A: Not applicable.
+107,credit_support_provider,90,"Credit Support Provider means in relation to Party B: Subsidiary Guarantor, as defined in the Credit Agreement."
+108,governing_law,90,(h) 	 Governing Law. This Agreement and any and all controversies arising out of or in relation to this Agreement shall be governed by and construed in accordance with the laws of the State of New York (without reference to its conflict of laws doctrine).
+109,netting_of_payments,90,"(i) 	 Netting of Payments. Multiple Transaction Payment Netting shall apply with respect to the following groups of Transactions, but only within such groups, and each such group shall itself be treated separately for purposes of payment netting."
+110,netting_of_payments,90,"(a) 	 FX Transactions and Currency Option Transactions (each as defined in the 1998 FX and Currency Option Definitions, published by the International Swaps and Derivatives Association, Inc. (""ISDA ""), Emerging Markets Traders Association, and The Foreign Exchange Committee) (but excluding payments with respect to option premiums and cash settled options);"
+111,netting_of_payments,90,"(b) 	 Like Commodities Transactions (as defined in the 2005 ISDA Commodity Definitions, published by ISDA) (but excluding payments with respect to option premiums). For purposes of clarity, gas transactions will net only with other gas transactions; power transactions will net only with other power transactions; metals transactions will net only with other metal transactions, and so on;"
+112,netting_of_payments,90,"(c) 	 Credit Derivatives Transactions (as defined in the 2003 ISDA Credit Derivatives Definitions, published by ISDA); and"
+113,netting_of_payments,90,"(d) 	 Equity Swap Transactions, Option Transactions, Forward Transactions, Index Transactions, Share Transactions, Index Basket Transactions, Share Basket Transactions, Basket Option Transactions, Basket Forward Transactions and Basket Swap Transactions (as defined in the 2002 ISDA Equity Derivatives Definitions, published by ISDA)."
+114,affiliate,90,"(j) 	 "" Affiliate"" will have the meaning specified in Section 14 of this Agreement."
+115,absence_of_litigation,90,(k) 	 Absence of Litigation. For the purpose of Section 3(c):-
+116,specified_entity,90,"""Specified Entity"" means in relation to Party A, none;"
+117,specified_entity,90,"""Specified Entity"" means in relation to Party B, none."
+118,no_agency,90,(l) 	 No Agency. The provisions of Section 3(g) will apply to this Agreement.
+119,additional_representation,90,"(m) 	 Additional Representation will apply. For the purpose of Section 3 of this Agreement, each of the following will constitute an Additional Representation:-"
+120,additional_representation,90,(i) 	 Relationship Between Parties. Each party will be deemed to represent to the other party on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction):-
+121,additional_representation,90,"(1) 	 Non-Reliance. It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisors as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction, it being understood that information and explanations related to the terms and conditions of a Transaction shall not be considered investment advice or a recommendation to enter into that Transaction. No communication (written or oral) received from the other party will be deemed to be an assurance or guarantee as to the expected results of that Transaction."
+122,additional_representation,90,"(2) 	 Assessment and Understanding. It is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction. It is also capable of assuming, and assumes, the risks of that Transaction."
+123,additional_representation,90,(3) 	 Status of Parties. The other party is not acting as a fiduciary for or an advisor to it in respect of that Transaction.
+124,additional_representation,90,(ii) 	 Each party makes the representations below (which representations will be deemed to be repeated by each party on each date on which a Transaction is entered into):
+125,additional_representation,90,"(1) 	 Eligible Contract Participant. It is an ""eligible contract participant"" as defined in Section 1a(12) of the U.S. Commodity Exchange Act, 7 U.S.C. Section 1a(12); and"
+126,additional_representation,90,(2) 	 It has entered into this Agreement (including each Transaction evidenced hereby) in conjunction with its line of business (including financial intermediation services) or the financing of its business.
+127,recording_of_conversations,90,(n) 	 Recording of Conversations. Each party to this Agreement acknowledges and agrees to the recording of conversations between trading and marketing personnel of the parties to this Agreement whether by one or other or both of the parties or their agents.
+128,,0,Part 5
+129,,0,Other Provisions
+130,financial_statements,90,"(a) 	 Financial Statements. Section 3(d) is hereby amended by adding in the third line thereof after the word ""respect"" and before the period:"
+131,financial_statements,90,"""or, in the case of financial statements, a fair presentation of the financial condition of the relevant party."""
+132,2002_protocol,90,"(b) 	 2002 Master Agreement Protocol. Annexes 1 to 18 and Section 6 of the ISDA 2002 Master Agreement Protocol as published by the International Swaps and Derivatives Association, Inc. on July 15, 2003 are incorporated into and apply to this Agreement. References in those definitions and provisions to any ISDA Master Agreement will be deemed to be references to this Master Agreement."
+133,waiver_of_right,90,"(c) 	 WAIVER OF RIGHT TO TRIAL BY JURY. EACH PARTY HEREBY IRREVOCABLY WAIVES ANY AND ALL RIGHTS TO TRIAL BY JURY WITH RESPECT TO ANY LEGAL PROCEEDING ARISING OUT OF OR RELATING TO THIS AGREEMENT, ANY CREDIT SUPPORT DOCUMENT OR ANY TRANSACTION CONTEMPLATED HEREBY."
+134,,0,(d) 	 Method of Notice. Section 12(a)(ii) of the Master Agreement is deleted in its entirety.
+135,,0,(e) 	 Safe Harbors . Each party to this Agreement acknowledges that:
+136,,0,"(i) 	 This Agreement, including any Credit Support Document, is a ""master netting agreement"" as defined in the U.S. Bankruptcy Code (the ""Code ""), and a ""netting contract"" as defined in the netting provisions of the Federal Deposit Insurance Corporation Improvement Act of 1991 (""FDICIA ""), and this Agreement, including any Credit Support Document, and each Transaction hereunder is of a type set forth in Section 561(a)(1)-(5) of the Code;"
+137,,0,"(ii) 	 Party A is a ""master netting agreement participant,"" a ""financial institution,"" a ""financial participant,"" a ""forward contract merchant"" and a ""swap participant"" as defined in the Code, and a ""financial institution"" as defined in the netting provisions of FDICIA;"
+138,,0,"(iii) 	 The remedies provided herein, and in any Credit Support Document, are the remedies referred to in Section 561(a), Sections 362(b)(6), (7), (17) and (27), and Section 362(o) of the Code, and in Section 11(e)(8)(A) and (C) of the Federal Deposit Insurance Act;"
+139,,0,"(iv) 	 All transfers of cash, securities or other property under or in connection with this Agreement, any Credit Support Document or any Transaction hereunder are ""margin payments,"" ""settlement payments"" and ""transfers"" under Sections 546(e), (f), (g) or (j), and under Section 548(d)(2) of the Code; and"
+140,,0,"(v) 	 Each obligation under this Agreement, any Credit Support Document or any Transaction hereunder is an obligation to make a ""margin payment,"" ""settlement payment"" and ""payment"" within the meaning of Sections 362, 560 and 561 of the Code."
+141,,0,"(f) 	 Incorporation by Reference of Terms of Credit Agreement. Party B hereby agrees that, during the period commencing with the date of this Agreement through and including such date on which all of Party B's obligations under this Agreement are fully performed, Party B will (a) observe, perform, and fulfill each and every such covenant, term, and provision applicable to Party B, as such covenants, terms, and provisions, may be amended from time to time after the date of this Agreement."
+142,,0,"(g) 	 Restatement and Amendment of Prior Agreement. This Master Agreement restates and amends in its entirety the ISDA Master Agreement dated as of August 19, 2002 between LaSalle Bank National Association (predecessor to Party A) and Party B (the ""Prior Agreement""). Each confirmation to the Prior Agreement shall be deemed a Confirmation subject to this Agreement, and each transaction subject to such a confirmation shall be governed hereby."
+143,hedging_disruption,90,(h) 	 Hedge Agreement. Party B represents to Party A (which representation will be deemed to be repeated by Party B on each date on which a Transaction is entered into) that this Agreement is a Hedge Agreement as defined in the Credit Agreement.
+144,,0,Part 6
+145,fx_transactions,90,Additional Terms for Foreign Exchange and Foreign Exchange Option Transactions
+146,fx_transactions,90,"(a) 	 Incorporation of Definitions. The 1998 FX and Currency Option Definitions (the ""FX Definitions ""), published by the International Swaps and Derivatives Association, Inc., the Emerging Markets Traders Association and The Foreign Exchange Committee, are hereby incorporated by reference with respect to FX Transactions (as defined in the FX Definitions) and Currency Option Transactions (as defined in the FX Definitions). Terms defined in the FX Definitions shall have the same meanings in this Part 6."
+147,fx_transactions,90,"(b) 	 Scope. Unless otherwise agreed in writing by the parties, each FX Transaction and Currency Option Transaction entered into between the parties before, on or after the date of this Agreement shall be a Transaction under this Agreement and shall be part of, subject to and governed by this Agreement. FX Transactions and Currency Option Transactions shall be part of, subject to and governed by this Agreement even if the Confirmation in respect thereof does not state that such FX Transaction or Currency Option Transaction is subject to or governed by this Agreement or does not otherwise reference this Agreement."
+148,fx_transactions,90,"When an FX Transaction or a Currency Option is confirmed by means of exchange of electronic messages on an electronic messaging system or other document or other confirming evidence exchanged between the parties confirming such Transaction, such messages, document or evidence will constitute a Confirmation for the purposes of this Agreement even where not so specified therein."
+149,fx_transactions,90,"(c) 	  Premium Netting. If, on any date, and unless otherwise mutually agreed by the parties, Premiums would otherwise be payable hereunder in the same Currency between the same respective offices of the parties, then, on such date, each party's obligation to make payment of such Premiums will be automatically satisfied and discharged and, if the aggregate Premiums that would otherwise have been payable by such office of one party exceeds the aggregate Premiums that would otherwise have been payable by such office of the other party, replaced by an obligation upon the party by whom the larger aggregate"
+150,fx_transactions,90,"Premiums would have been payable to pay the other party the excess of the larger aggregate Premiums over the smaller aggregate Premiums, and if the aggregate Premiums are equal, no payment shall be made."
+151,fx_transactions,90,"(d) 	 Payment Netting of FX Transactions and Currency Option Transactions. Multiple Transaction Payment Netting shall not apply to FX Transactions or Currency Option Transactions. Unless otherwise mutually agreed by the parties, if on any date more than one delivery of a particular Currency is to be made between a pair of offices with respect to settlement of FX Transactions or Currency Option Transactions (but excluding payments with respect to option premiums and cash settled options), then each party shall aggregate the amounts of such Currency deliverable by it and only the difference between these aggregate amounts shall be delivered by the party owing the larger aggregate amount to the other party, and, if the aggregate amounts are equal, no delivery of the Currency shall be made."
+152,fx_transactions,90,"(e) 	 Potential Event of Default. Subject to Section 2(a)(iii) of the Agreement, if an Event of Default or Potential Event of Default has occurred and is continuing, and an Early Termination Date has not been designated by the Non-defaulting Party, the Non-defaulting Party may, by written notice, specify that any or all Currency Options being settled while such Event of Default or Potential Event of Default is continuing shall be settled in accordance with Article 3, Section 3.7 of the FX Definitions and upon such notice becoming effective, the Parties shall be deemed to have elected to have the specified Currency Options settle at the In-the-Money Amount unless and until the Event of Default or Potential Event of Default is no longer continuing."
+153,fx_transactions,90,(f) 	 Payment Instructions. All payments to be made hereunder in respect of FX and Currency Option Transactions shall be made in accordance with standing payment instructions provided by the parties from time to time in writing (or as otherwise specified in a Confirmation).
+154,fx_transactions,90,"(g) 	 Notice of Exercise. Article 3, Section 3.5(g) of the FX Definitions is amended by the deletion of the word ""facsimile,"" in the fourth line thereof."
+155,fx_transactions,90,"(h) 	 Automatic Exercise. Article 3, Section 3.6(c)(i), line six of the FX Definitions which currently reads ""one percent of the Strike Price"" shall be amended to read ""0.5% of the Strike Price."""
+156,fx_transactions,90,"(i) 	 Terms Relating to Premium. Article 3, Section 3.4 of the FX Definitions is hereby amended by the addition of the following as a new paragraph (c) of the FX Definitions."
+157,fx_transactions,90,"""(c) Premium: Failure to Pay on Premium Payment Date. If any Premium is not received on the Premium Payment Date, the Seller may elect: (i) to accept a late payment of such Premium; (ii) to give written notice of such non- payment and, if such payment shall not be received within two (2) Local Business Days of such notice, treat the related Currency Option as void; or (iii) to give written notice of such non-payment and, if such payment shall not be received within two (2) Local Business Days of such notice, treat such non-payment as an Event of Default under Section 5(a)(i). If the Seller elects to act under either clause (i) or (ii) of the preceding sentence, the Buyer shall pay all out-of-pocket costs and actual damages incurred in connection with such unpaid or late Premium or void Currency Option, including, without limitation, interest on such Premium in the same currency as such Premium at the then prevailing market rate and any other costs or expenses incurred by the Seller in covering its obligations (including, without limitation, a delta hedge) with respect to such Currency Option."""
+158,,0,"IN WITNESS WHEREOF , the parties have executed this Schedule by their duly authorized officers as of the date hereof."
+159,,0,"BANK OF AMERICA, N.A. 	   	  	   	 LKQ CORPORATION By: 	   	  /s/ Roger H. Heintzelman 	   	  	   	 By: 	   	  /s/ John S. Quinn Name: 	   	 Roger H. Heintzelman 	   	  	   	 Name: 	   	 John S. Quinn Title: 	   	 Director 	   	  	   	 Title: 	   	 Executive Vice President and CFO Date: 	   	  	   	  	   	 Date: 	   	 3-24-11"

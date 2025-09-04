@@ -17,7 +17,7 @@ import yaml  # type: ignore[import-untyped]
 from utilities import load_template
 
 
-def load_pred_datapoints(path: Path) -> dict[str, tuple[str, float]]:
+def load_pred_datapoints(path: Path) -> dict[str, tuple[str, float, str]]:
     """Load predicted datapoints from CSV to a map: key -> (value, confidence_percent).
 
     Expects columns: key, title, confidence, value
@@ -31,11 +31,12 @@ def load_pred_datapoints(path: Path) -> dict[str, tuple[str, float]]:
                 continue
             value = (row.get("value") or "").strip()
             conf_raw = (row.get("confidence") or "").strip()
+            explanation = (row.get("explanation") or "").strip()
             try:
                 conf = float(conf_raw)
             except Exception:
                 conf = float("nan")
-            data[key] = (value, conf)
+            data[key] = (value, conf, explanation)
     return data
 
 
@@ -232,9 +233,7 @@ def main() -> None:
 
     gold_dir = repo_root / "dataset" / "gold" / "datapoints" / template_key
     pred_dir = repo_root / "dataset" / "output" / "datapoints" / template_key / model_name
-    out_dir = (
-        repo_root / "dataset" / "metrics" / "results" / "extraction" / template_key / model_name
-    )
+    out_dir = repo_root / "dataset" / "metrics" / "extraction" / template_key / model_name
     out_dir.mkdir(parents=True, exist_ok=True)
 
     # Load template for types and required flags
@@ -275,7 +274,7 @@ def main() -> None:
     completion_fractions: list[float] = []
 
     # Collect mismatches for a consolidated CSV: file, key, gold_value, pred_value
-    mismatches: list[tuple[str, str, str, str]] = []
+    mismatches: list[tuple[str, str, str, str, str]] = []
 
     # Selective extraction at 90% confidence
     hc_threshold = 90.0
@@ -290,7 +289,7 @@ def main() -> None:
         # Relaxed accuracy and type-specific
         for key, gold_val in gold_map.items():
             dtype = key_to_type.get(key, "string")
-            pred_val, pred_conf = pred_map.get(key, ("", float("nan")))
+            pred_val, pred_conf, explanation = pred_map.get(key, ("", float("nan"), ""))
             if gold_val.strip() != "":
                 total_gold_present += 1
                 # High-confidence tracking denominator
@@ -305,7 +304,7 @@ def main() -> None:
                         hc_selected += 1
                         hc_correct += 1
                 else:
-                    mismatches.append((stem, key, gold_val, pred_val))
+                    mismatches.append((stem, key, gold_val, pred_val, explanation))
                     if not np.isnan(pred_conf) and pred_conf >= hc_threshold:
                         hc_selected += 1
 
@@ -338,12 +337,21 @@ def main() -> None:
                         per_key_fp[key] = per_key_fp.get(key, 0) + 1
                         per_key_fn[key] = per_key_fn.get(key, 0) + 1
 
-        # Document completion score: fraction of required keys with any predicted value
+        # Document completion score
+        # Primary: fraction of required keys with any predicted value
+        # Fallback: if no required keys are defined in the template,
+        #           use the set of keys that have a gold value in this document.
         if required_keys:
+            denom_keys = required_keys
+        else:
+            denom_keys = {k for k, v in gold_map.items() if (v or "").strip() != ""}
+        if denom_keys:
             num_present = sum(
-                1 for k in required_keys if pred_map.get(k, ("", float("nan")))[0].strip() != ""
+                1
+                for k in denom_keys
+                if (pred_map.get(k, ("", float("nan"), ""))[0] or "").strip() != ""
             )
-            completion_fractions.append(num_present / len(required_keys))
+            completion_fractions.append(num_present / len(denom_keys))
 
     # Compute overall metrics
     relaxed_accuracy = (total_relaxed_correct / total_gold_present) if total_gold_present else 0.0
@@ -398,9 +406,7 @@ def main() -> None:
 
     summary_pct = _map_to_pct(summary)
 
-    out_dir = (
-        repo_root / "dataset" / "metrics" / "results" / "extraction" / template_key / model_name
-    )
+    out_dir = repo_root / "dataset" / "metrics" / "extraction" / template_key / model_name
     out_dir.mkdir(parents=True, exist_ok=True)
     with (out_dir / "summary.yaml").open("w", encoding="utf-8") as f:
         yaml.safe_dump(summary, f, sort_keys=False, allow_unicode=True)
@@ -420,14 +426,12 @@ def main() -> None:
             writer.writerow([k, per_key_accuracy.get(k, float("nan")), per_key_present[k]])
 
     logging.info("\n%s", yaml.safe_dump(summary_pct, sort_keys=False, allow_unicode=True))
-    # print('--------------------------------')
-    # if mismatches:
-    #     with (out_dir / "mismatches.csv").open("w", encoding="utf-8", newline="") as f:
-    #         writer = csv.writer(f)
-    #         writer.writerow(["file", "key", "gold_value", "pred_value"])
-    #         for row in sorted(mismatches):
-    #             print('mismatch', list(row))
-    #             writer.writerow(list(row))
+    if mismatches:
+        with (out_dir / "mismatches.csv").open("w", encoding="utf-8", newline="") as f:
+            writer = csv.writer(f)
+            writer.writerow(["file", "key", "gold_value", "pred_value", "explanation"])
+            for row in sorted(mismatches):
+                writer.writerow(list(row))
 
 
 if __name__ == "__main__":

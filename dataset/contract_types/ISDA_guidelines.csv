@@ -1,0 +1,14 @@
+id,scope,clause_keys,priority,guideline,fallback
+,beginning,,high,The contract should be a 2002 ISDA master agreement (92 not allowed),
+,beginning,,medium,The name of party A should be clearly defined,
+,beginning,,medium,The name of party B should be clearly defined,
+,clause,specified_entity,medium,Specified entity for party Party A should be none (not applicable),
+,clause,specified_transaction,medium,Specified transaction scope should be standard,
+,clause,cross_default,medium,Cross default should be standard,
+,clause,specified_indebtness,medium,Specified indebtness for party A should include borrowed_money,
+,clause,specified_indebtness,medium,Specified indebtness for party A should include deposits,
+,clause,threshold_amount,medium,threshold amount should be 3% of shareholder's equity for party A,
+,clause,automatic_early_termination,medium,Automatic Early Termination should be applicable at least to party A,
+,clause,termination_currency,medium,Termination Currency should be EUR,"Termination currency can be USD, EUR, GBP, JPY"
+,clause,multibranch_party,medium,Party A should be a multibrach party with offices in New-York and London,
+,clause,governing_law,high,Governing Law should be English law or New-York law,

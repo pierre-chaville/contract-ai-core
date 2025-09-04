@@ -8,12 +8,13 @@ Public API:
 """
 
 import logging
-import os
+import random
 import re
+import time
 from collections.abc import Sequence
 from dataclasses import dataclass
 
-from openai import OpenAI
+from langchain_core.messages import HumanMessage, SystemMessage
 
 from .schema import (
     ClassifiedParagraph,
@@ -21,6 +22,7 @@ from .schema import (
     DocumentClassification,
     Paragraph,
 )
+from .utilities import get_langchain_chat_model
 
 
 @dataclass
@@ -31,6 +33,10 @@ class ClauseClassifierConfig:
     model: str | None = None
     temperature: float = 0.0
     max_tokens: int | None = 10000
+    # Retry policy for transient rate/limit errors
+    max_retries: int = 5
+    initial_backoff_seconds: float = 1.0
+    max_backoff_seconds: float = 30.0
 
 
 class ClauseClassifier:
@@ -81,7 +87,7 @@ class ClauseClassifier:
         paragraphs_block = self._build_paragraphs_block(paragraphs)
         prompt = self._build_prompt(template, clauses_block, paragraphs_block)
 
-        raw_output, usage = self._call_openai(prompt)
+        raw_output, usage = self._call_llm(prompt)
         parsed = self._parse_llm_output(raw_output)
 
         classified: list[ClassifiedParagraph] = []
@@ -176,62 +182,98 @@ class ClauseClassifier:
     # ------------------------
     # LLM backend
     # ------------------------
-    def _call_openai(self, prompt: str) -> tuple[str, dict[str, int | None]]:
-        """Call OpenAI Chat Completions with a deterministic configuration.
+    def _call_llm(self, prompt: str) -> tuple[str, dict[str, int | None]]:
+        """Call an LLM via LangChain with deterministic configuration.
 
         Returns (content, usage) where usage has keys prompt_tokens, completion_tokens, total_tokens.
         """
-        # Lazy import to avoid hard dependency at package import time
-        try:
-            from dotenv import load_dotenv
-        except Exception:  # pragma: no cover - optional dependency
-            load_dotenv = None  # type: ignore
-
-        if load_dotenv is not None:
-            try:
-                load_dotenv()
-            except Exception:  # pragma: no cover
-                pass
-
-        api_key = os.getenv("OPENAI_API_KEY")
-        if not api_key:
-            # The SDK will also read env var, but we validate early for clearer errors
-            raise RuntimeError("OPENAI_API_KEY environment variable is not set.")
-
-        client = OpenAI(api_key=api_key)
-
         model_name = self.config.model or "gpt-4.1"
         temperature = float(self.config.temperature)
         max_tokens = self.config.max_tokens
 
-        logging.getLogger(__name__).debug(
-            "Calling OpenAI model=%s temperature=%s", model_name, temperature
-        )
-        response = client.chat.completions.create(
-            model=model_name,
-            messages=[
-                {"role": "system", "content": "You are a precise output-only model."},
-                {"role": "user", "content": prompt},
-            ],
+        # Build the model once; reuse across retries
+        llm = get_langchain_chat_model(
+            self.config.provider,
+            model_name,
             temperature=temperature,
-            max_completion_tokens=max_tokens,
+            max_tokens=max_tokens,
         )
-        content = response.choices[0].message.content or ""
-        usage = getattr(response, "usage", None)
+
         logging.getLogger(__name__).debug(
-            "OpenAI usage prompt=%s completion=%s total=%s",
-            getattr(usage, "prompt_tokens", None) if usage is not None else None,
-            getattr(usage, "completion_tokens", None) if usage is not None else None,
-            getattr(usage, "total_tokens", None) if usage is not None else None,
+            "Calling LLM provider=%s model=%s temperature=%s",
+            self.config.provider,
+            model_name,
+            temperature,
         )
-        usage_dict: dict[str, int | None] = {
-            "prompt_tokens": getattr(usage, "prompt_tokens", None) if usage is not None else None,
-            "completion_tokens": (
-                getattr(usage, "completion_tokens", None) if usage is not None else None
-            ),
-            "total_tokens": getattr(usage, "total_tokens", None) if usage is not None else None,
-        }
-        return content.strip(), usage_dict
+
+        attempt = 1
+        delay_seconds = max(0.0, float(self.config.initial_backoff_seconds))
+        max_retries = max(1, int(self.config.max_retries))
+        max_backoff = max(1.0, float(self.config.max_backoff_seconds))
+        last_error: Exception | None = None
+
+        while attempt <= max_retries:
+            try:
+                ai_msg = llm.invoke(
+                    [
+                        SystemMessage(content="You are a precise output-only model."),
+                        HumanMessage(content=prompt),
+                    ]
+                )
+                content = getattr(ai_msg, "content", "") or ""
+
+                # Best-effort usage extraction across providers
+                usage_dict: dict[str, int | None] = {
+                    "prompt_tokens": None,
+                    "completion_tokens": None,
+                    "total_tokens": None,
+                }
+                try:
+                    usage_md = getattr(ai_msg, "usage_metadata", None)
+                    if isinstance(usage_md, dict):
+                        usage_dict["prompt_tokens"] = usage_md.get("input_tokens")  # type: ignore[arg-type]
+                        usage_dict["completion_tokens"] = usage_md.get("output_tokens")  # type: ignore[arg-type]
+                        usage_dict["total_tokens"] = usage_md.get("total_tokens")  # type: ignore[arg-type]
+                    else:
+                        resp_md = getattr(ai_msg, "response_metadata", None)
+                        if isinstance(resp_md, dict):
+                            token_usage = resp_md.get("token_usage") or resp_md.get("usage") or {}
+                            if isinstance(token_usage, dict):
+                                usage_dict["prompt_tokens"] = token_usage.get("prompt_tokens")  # type: ignore[arg-type]
+                                usage_dict["completion_tokens"] = token_usage.get(
+                                    "completion_tokens"
+                                )  # type: ignore[arg-type]
+                                usage_dict["total_tokens"] = token_usage.get("total_tokens")  # type: ignore[arg-type]
+                except Exception:
+                    pass
+
+                return content.strip(), usage_dict
+            except Exception as e:
+                last_error = e
+                msg = str(e).lower()
+                transient = any(
+                    kw in msg
+                    for kw in (
+                        "rate limit",
+                        "too many requests",
+                        "overload",
+                        "temporar",
+                        "tpm",
+                        "rpm",
+                        "quota",
+                        "retry",
+                    )
+                )
+                if (attempt >= max_retries) or not transient:
+                    raise
+                jitter = random.uniform(0.0, delay_seconds * 0.25)
+                time.sleep(delay_seconds + jitter)
+                delay_seconds = min(delay_seconds * 2.0, max_backoff)
+                attempt += 1
+
+        if last_error is not None:
+            raise last_error
+        return "", {"prompt_tokens": None, "completion_tokens": None, "total_tokens": None}
 
     # ------------------------
     # Output parsing

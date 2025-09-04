@@ -8,6 +8,8 @@ def _template_with_types() -> ContractTypeTemplate:
         name="T",
         use_case="extraction",
         description="Test",
+        prompt_scope_filter="",
+        prompt_scope_amendment="",
         clauses=[ClauseDefinition(key="a", title="A")],
         datapoints=[
             DatapointDefinition(key="s", title="S", data_type="str"),
@@ -17,6 +19,7 @@ def _template_with_types() -> ContractTypeTemplate:
             DatapointDefinition(key="d", title="D", data_type="date"),
             DatapointDefinition(key="e", title="E", data_type="enum"),
         ],
+        guidelines=[],
         enums=[],
     )
 

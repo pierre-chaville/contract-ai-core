@@ -10,11 +10,14 @@ def test_classify_paragraphs_with_usage_basic(monkeypatch: pytest.MonkeyPatch) -
         name="NDA",
         use_case="classification",
         description="Non-Disclosure Agreement",
+        prompt_scope_filter="",
+        prompt_scope_amendment="",
         clauses=[
             ClauseDefinition(key="termination", title="Termination"),
             ClauseDefinition(key="confidentiality", title="Confidentiality"),
         ],
         datapoints=[],
+        guidelines=[],
         enums=None,
     )
 
@@ -30,7 +33,7 @@ def test_classify_paragraphs_with_usage_basic(monkeypatch: pytest.MonkeyPatch) -
     usage = {"prompt_tokens": 12, "completion_tokens": 8, "total_tokens": 20}
 
     # Patch the backend call to avoid real network
-    monkeypatch.setattr(ClauseClassifier, "_call_openai", lambda self, prompt: (raw_output, usage))
+    monkeypatch.setattr(ClauseClassifier, "_call_llm", lambda self, prompt: (raw_output, usage))
 
     cc = ClauseClassifier()
     doc, got_usage = cc.classify_paragraphs_with_usage(paragraphs, template)

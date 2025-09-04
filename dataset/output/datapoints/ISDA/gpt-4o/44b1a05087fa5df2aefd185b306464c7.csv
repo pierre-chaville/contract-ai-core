@@ -1,0 +1,35 @@
+key,title,confidence,value,evidence,explanation
+date,Date of the contract,95,2005-09-30,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","The date is explicitly mentioned in the text as 'dated as of September 30, 2005'."
+party_A,Party A,90,"HSBC BANK USA, NATIONAL ASSOCIATION","[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","Party A is identified as 'HSBC BANK USA, NATIONAL ASSOCIATION' in the text."
+party_B,party_B,90,"SUPPLEMENTAL INTEREST TRUST, STRUCTURED ASSET INVESTMENT LOAN TRUST MORTGAGE PASS-THROUGH CERTIFICATES, SERIES 2005-8","[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","Party B is identified as 'SUPPLEMENTAL INTEREST TRUST, STRUCTURED ASSET INVESTMENT LOAN TRUST MORTGAGE PASS-THROUGH CERTIFICATES, SERIES 2005-8' in the text."
+specified_entity_A,Specified entity Party A,95,None,"[9, 10, 11, 12, 13, 14, 15, 16, 17, 18]",The text explicitly states 'not applicable' for all sections related to Party A.
+specified_entity_B,Specified entity Party B,95,None,"[9, 10, 11, 12, 13, 14, 15, 16, 17, 18]",The text explicitly states 'not applicable' for all sections related to Party B.
+specified_transaction,Specified transaction scope,95,STD,[20],"The text states that 'Specified Transaction' will have the meaning specified in Section 14, which aligns with the standard definition."
+cross_default,Cross default applicable parties,95,NONE,[28],"The text explicitly states that Cross Default will not apply to Party A or Party B, indicating that no party is subject to Cross Default."
+credit_event_upon_merger,Credit Event Upon Merger  applicable parties,100,NONE,"[29, 30, 36]",Section 5(b)(iv) explicitly states that Credit Event upon Merger will not apply to Party A or Party B.
+automatic_early_termination,Automatic Early Termination  applicable parties,95,NONE,[38],"The text explicitly states that the 'Automatic Early Termination' provision will not apply to either Party A or Party B, indicating that it is not applicable to any party."
+termination_currency,Termination Currency,95,USD,[46],"The text explicitly states 'Termination Currency' means United States Dollars, which corresponds to the ISO code 'USD'."
+notices_A,Email for notices for Party A,90,None,"[75, 77, 78, 79, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108]",The text does not mention an email address for notices to Party A.
+notices_B,Email for notices for Party B,90,None,"[75, 77, 78, 79, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108]",The text does not mention an email address for notices to Party B.
+process_agent_A,Process agent for party A,95,False,"[110, 111, 112]","The text explicitly states 'Party A appoints as its Process Agent, not applicable.'"
+process_agent_name_A,Name of process agent for party A,95,None,"[110, 111, 112]","Since process agent is not applicable for Party A, no name is provided."
+process_agent_address_A,Address of process agent for party A,95,None,"[110, 111, 112]","Since process agent is not applicable for Party A, no address is provided."
+process_agent_B,Process agent for party B,95,False,"[110, 111, 112]","The text explicitly states 'Party B appoints as its Process Agent, not applicable.'"
+process_agent_name_B,Name of process agent for party B,95,None,"[110, 111, 112]","Since process agent is not applicable for Party B, no name is provided."
+process_agent_address_B,Address of process agent for party B,95,None,"[110, 111, 112]","Since process agent is not applicable for Party B, no address is provided."
+multibranch_party_A,Party A is a Multibranch party,100,False,"[116, 117, 118]",The text explicitly states 'Party A is not a Multibranch Party.'
+multibranch_party_A_offices,Party A offices,100,None,"[116, 117, 118]","Since Party A is not a Multibranch Party, there are no offices to list."
+multibranch_party_B,Party B is a Multibranch party,100,False,"[116, 117, 118]",The text explicitly states 'Party B is not a Multibranch Party.'
+multibranch_party_B_offices,Party B offices,100,None,"[116, 117, 118]","Since Party B is not a Multibranch Party, there are no offices to list."
+calculation_agent,Party for calculation agent,95,A,[120],"The text explicitly states 'The Calculation Agent is Party A', indicating Party A is the calculation agent."
+governing_law,Governing Law,95,NEW-YORK,[130],The text explicitly states that the agreement is governed by the laws of the State of New York.
+specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,50,None,,The text does not explicitly mention borrowed money in relation to specified indebtedness.
+specified_indebtness_deposits,Specified indebtness excludes deposits,50,None,,The text does not explicitly mention deposits in relation to specified indebtedness.
+threshold_amount_A_amount,amount for Party A,50,None,,The text does not provide a specific threshold amount for Party A.
+threshold_amount_A_currency,currency for Party A ,50,None,,The text does not specify a currency for a threshold amount for Party A.
+threshold_amount_A_percent,percentage for Party A ,50,None,,The text does not specify a percentage for a threshold amount for Party A.
+threshold_amount_A_percent_reference,percentage reference for Party A ,50,None,,The text does not specify a reference for a percentage for Party A.
+threshold_amount_B_amount,amount for Party B,50,None,,The text does not provide a specific threshold amount for Party B.
+threshold_amount_B_currency,currency for Party B,50,None,,The text does not specify a currency for a threshold amount for Party B.
+threshold_amount_B_percent,percentage for Party B,50,None,,The text does not specify a percentage for a threshold amount for Party B.
+threshold_amount_B_percent_reference,percentage reference for Party B,50,None,,The text does not specify a reference for a percentage for Party B.

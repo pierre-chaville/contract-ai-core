@@ -17,6 +17,8 @@ def test_extract_with_mocked_backend(monkeypatch: pytest.MonkeyPatch) -> None:
         name="NDA",
         use_case="extraction",
         description="Non-Disclosure Agreement",
+        prompt_scope_filter="",
+        prompt_scope_amendment="",
         clauses=[
             ClauseDefinition(key="termination", title="Termination"),
         ],
@@ -32,14 +34,16 @@ def test_extract_with_mocked_backend(monkeypatch: pytest.MonkeyPatch) -> None:
                 key="governing_law", title="Governing Law", data_type="enum", enum_key="law_codes"
             ),
         ],
+        guidelines=[],
         enums=None,
     )
 
-    text = (
-        "This agreement is made on January 2, 2020.\n\n"
-        "Either party may terminate upon breach.\n\n"
-        "All information shall remain confidential.\n"
-    )
+    paragraphs = [
+        # index is position in list
+        type("P", (), {"index": 0, "text": "This agreement is made on January 2, 2020."})(),
+        type("P", (), {"index": 1, "text": "Either party may terminate upon breach."})(),
+        type("P", (), {"index": 2, "text": "All information shall remain confidential."})(),
+    ]
 
     # Classified clauses map the 'termination' clause to paragraph index 1
     classified = DocumentClassification(paragraphs=[], clause_to_paragraphs={"termination": [1]})
@@ -74,7 +78,7 @@ def test_extract_with_mocked_backend(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setattr(DatapointExtractor, "_run_scope_extractions", fake_run_scope_extractions)
 
     extractor = DatapointExtractor(DatapointExtractorConfig(beginning_paragraphs=2))
-    result = extractor.extract(text, template, classified_clauses=classified)
+    result = extractor.extract(paragraphs, template, classified_clauses=classified)
 
     # Validate we received values and confidences mapped per datapoint
     by_key = {dp.key: dp for dp in result.datapoints}

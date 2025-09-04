@@ -1,0 +1,84 @@
+index,clause_key,confidence,text
+0,,50,Schedule to the Master Agreement
+1,,50,"dated as of October 12,2005 between Brown Brothers Harriman & Co (Party A)"
+2,,50,and Met - Pro Corporation ( Party B)
+3,,50,Part I. Termination Provisions.
+4,specified_entity,90,"(i) ""Specified Entity"" means In relation to Party A for the purpose of:"
+5,specified_entity,90,Section 5(a)(v): None
+6,specified_entity,90,Section 5(a)(vi): None
+7,specified_entity,90,Section 5(a)(vii): None
+8,specified_entity,90,Section 5(b)(iv): None
+9,specified_entity,90,and in relation to Party B for the purpose of:
+10,specified_entity,90,Section 5(a)(v): None
+11,specified_entity,90,Section 5(a)(vi): None
+12,specified_entity,90,Section 5(a)(vii): None
+13,specified_entity,90,Section 5(b)(iv): None
+14,specified_transaction,90,"(b) ""Specified Transaction"" will have the meaning specified in Section 14 of this Agreement."
+15,cross_default,95,"I The ""Cross Default"" provisions of Section 5(a)(vi) will apply to Party A and to Party B."
+16,specified_indebtness,95,"In connection therewith, Specified Indebtedness will not have the meaning specified in Section 14 and such definition shall be replaced by the following: ""any obligation in respect of the payment of monies (whether present or future, contingent or otherwise, as principal or surety or otherwise), except that such term shall not include obligations in respect of deposits received in the ordinary course of a party's banking business""."
+17,threshold_amount,95,"""Threshold Amount"" means in relation to Party A, $10,000,000 or the equivalent thereof in any other currencies, and, in relation to Party B, $10,000,000 or the equivalent thereof in any"
+18,threshold_amount,95,other currency.
+19,credit_event_upon_merger,95,"(d) The ""Credit Event Upon Merger"" provisions of Section 5(b)(iv)"
+20,credit_event_upon_merger,95,will apply to Party A and will apply to Party B.
+21,automatic_early_termination,95,"The ""Automatic Early Termination"" provision of Section 6(a)"
+22,automatic_early_termination,95,will not apply to Party A
+23,automatic_early_termination,95,will not apply to Party B
+24,payments_early_termination,95,"(f) ""Payments on Early Termination"" For the purpose of Section 6(e)"
+25,payments_early_termination,95,(ii) Market Quotation will apply.
+26,payments_early_termination,95,(iii) The Second Method will apply.
+27,termination_currency,95,"(g) ""Termination Currency"" means U S Dollars"
+28,additional_termination_events,95,"(h) ""Additional Termination Events"" shall apply."
+29,force_majeure,95,"Impossibility. The occurrence of Impossibility shall also be a Termination Event, as to which the Affected Party shall be the party subject to an Impossibility. For purposes of this Agreement, ""Impossibility"" shall mean the occurrence of a natural or man-made disaster, armed conflict, act of terrorism, riot, labor disruption. Act of state or force majeure or any other circumstance beyond its control which makes it impossible (other than as a result of its own misconduct) for such a party to perform any absolute or contingent obligation, to make a payment or delivery or to receive a payment or delivery in respect of such Transaction or to comply with any other material provision of this Agreement relating to such Transaction or whereby the convertibility, transferability or ability to hold any currency has been materially impaired between the date that the currency obligation has been entered into and the date that the currency is delivered"
+30,,50,Part 2
+31,,50,Tax Representations
+32,payer_representations,95,(a) Payer Representations. For the purposes of Section 3(e) of this Agreement:
+33,payer_representations,95,Each party makes the following representation:
+34,payer_representations,95,"It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction"
+35,payer_representations,95,"or withholding for or on account of any Tax from any payment (other than interest under Section 2 (e), 6(d)(ii) or 6(e) of this Agreement) to be made by it to the other party under this agreement. In making this representation, it may rely on (x) the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement, (y) the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement and (z) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement provided that it shall not be a breach of this representation where reliance is placed on clause (y) and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position."
+36,payee_representations,95,"(b) Payee Representations: For the purposes of Section 3(f) of this Agreement,"
+37,payee_representations,95,Party A and Party B make no representation
+38,,50,Part 3
+39,,50,Agreement to Deliver Documents.
+40,other_documents,90,"For purposes of Section 4(a)(i) and (ii) of this Agreement, Party B agrees to deliver the following documents:"
+41,delivery_of_tax_forms,95,(a) Tax forms documents or certificates to be delivered:
+42,delivery_of_tax_forms,95,None
+43,other_documents,90,(iv) Other documents to be delivered:
+44,corporate_documents,95,"To be delivered by: 	  Form/Document/Certificate 	  	  Date by which to be 	  	 Covered by Section 3(d) delivered 	  	 Representation Party A&B 	  Certified copies of all corporate authorizations and any documents with respect to the execution, delivery and performance of this Agreement. 	  	  Upon execution of this Agreement 	  Yes Party A & B 	 Certificate of authority and specimen signatures of individuals executing this Agreement 	  	 Upon execution and delivery of this Agreement and thereafter upon request of the other party."
+45,,50,Part 4\. Miscellaneous
+46,address_for_notices,95,(a) Addresses for Notices For the purpose of Section 12(a) of this Agreement:
+47,address_for_notices,95,Address for Notices or communications to Party A
+48,address_for_notices,95,Brown Brothers Harriman & Co. Foreign Exchange Risk Management 140 Broadway
+49,address_for_notices,95,"New York, NY 10005"
+50,address_for_notices,95,Attn: Chief Credit Officer
+51,address_for_notices,95,Telephone No. 212 493 7885 Facsimile No. 212 493 8065
+52,address_for_notices,95,SWIFT Address: BBHCUS33
+53,address_for_notices,95,Address for Notices or Communications to Party B
+54,address_for_notices,95,"Met-Pro, Attn: Gary J. Morgan, 160 Cassell Road, PO Box 144, Harleysville, PA 19438"
+55,process_agent,95,(b) Process Agent. For the purpose of Section l3(c) of this Agreement:
+56,process_agent,95,Party A None
+57,process_agent,95,Party B
+58,process_agent,95,"Met-Pro, Attn: Gary J. Morgan, 160 Cassell Road, PO Box 144, Harleysville, PA 19438"
+59,offices,95,(c) Offices The provisions of Section 10(a) will apply to this Agreement.
+60,multibranch_party,95,(d) Multibranch Party. For the purpose of Section 10I of this Agreement:
+61,multibranch_party,95,Party A is not a multibranch Party and will act only through its New York office.
+62,multibranch_party,95,Party B is not a multibranch Party.
+63,calculation_agent,95,(e) The calculation agent will be Party A.
+64,credit_support_document,95,(f) Credit Support Document N/A
+65,credit_support_provider,95,(g) Credit Support Provider None in relation to either Party
+66,governing_law,95,(h) Governing Law THIS AGREEMENT WILL BE GOVERNED BY AND CONSTRUED IN ACCORDANCE WITH THE LAWS OF THE STATE OF NEW YORK (WITHOUT REFERENCE TO CONFLICT OF LAW DOCTRINE)
+67,netting_of_payments,95,(I) Netting of Payments. Subparagraph (ii) of Section 2I of this Agreement will not apply to all Transactions under this Agreement with effect from the date of this Agreement.
+68,affiliate,95,(v) Affiliate will have the meaning specified in section 14 of this Agreement.
+69,affiliate,95,Each party and its affiliates may share with each other any credit or other information concerning the other party and its affiliates.
+70,,50,Part 5 Other Provisions
+71,set-off,95,"(a) Right of Set-off In addition to any rights of set-off a [party may have as a matter of law or otherwise, upon the occurrence of an Event of Default with respect to a party (""Party X"") or an Illegality or Credit Event Upon Merger where Party X is the only Affected Party, the other party (""Party Y"") will have the right (but not the obligation) without prior notice to Party X or any other person to set-off any obligation of Party X owing to Party Y or any of its Affiliates, branches or offices (whether or not arising under this Agreement, whether or not matured, whether or not contingent and regardless of the currency, place of payment or booking office of the obligation) against any obligation of Party Y or any of its Affiliates, branches or offices owing to Party X (whether or not arising under this Agreement, whether or not matured, whether or not contingent and regardless of the currency, place of payment or booking office of the obligation). In order to enable Party Y to exercise its rights of set-off, (I) Party Y may in good faith convert any obligation to another currency at a market rate determined by Party Y and set- off in respect of that converted amount and/or (ii) if an obligation is unascertained, Party Y may in good faith estimate that obligation and set-off in respect of the estimate, subject to the relevant party accounting to the other when the obligation is ascertained. Nothing in this paragraph will be deemed to constitute or create a charge or other security interest. For purposes of this Agreement, other registered investment companies advised or sub-advised by Party B's investment adviser or sub-adviser are not considered ""Affiliates"" of Party B."
+72,waiver_of_right,95,(b) Waiver of Right to Trial by Jury. Each of the parties hereby irrevocably waives any and all right to a trial by jury with respect to any legal proceeding or counterclaim arising out of or relating to this Agreement or any transaction.
+73,,50,"I Inconsistency, In the event of any inconsistency between any of the following documents, the relevant document first listed shall govern; (i) A confirmation (ii) this schedule, (iii) the definitions incorporated by reference in a Confirmation or in this Agreement, and (iv) the printed form of ISDA Agreement."
+74,recording_of_conversations,95,"(d) Consent to Recording Each party (i) consents to the monitoring or recording of all dealing conversations for all transactions covered by this Agreement, (ii) waives further notice of such recording, and (iii) agrees to notify its employees and officers, where required by law to do so, with respect to such recording. Any such recording may be submitted to any court or any Proceeding for the purpose of establishing any matters pertinent to this Agreement or any Transaction."
+75,no_agency,95,(e) Relationship between the Parties. Each party will be deemed to represent to the other party on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction)
+76,no_agency,95,"(vi) Non-reliance It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based ion its own judgment and upon advice from such advisers it has deemed necessary. It is not relying in any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction, it being understood that information and explanations related to the terms and conditions of as Transaction shall not be considered investment advice or as a recommendation to enter into that Transaction. It has not received from the other party any assurance or guarantee as to the expected results of that Transaction."
+77,no_agency,95,"(vii) Evaluation and Understanding. It has the capacity to evaluate and understand (on its own behalf or through independent professional advice), and understands and accepts the terms, conditions, and risks of that Transaction."
+78,no_agency,95,"It is also capable of assuming, and assumes, the financial and d other risks of that Transaction."
+79,no_agency,95,(viii) Status of Parties. The other party is not acting as a fiduciary or an adviser for it in respect of that Transaction.
+80,,50,"(f)  Confirmations. Each Transaction Party A and Party B agree to enter into under this Agreement, will be positively confirmed within twenty-four hours of execution, either over a taped telephone line or through an acceptable electronic confirmation service."
+81,,50,In witness whereof the parties have executed this document on the respective dates specified below with effect from the date specified on the first page of this document
+82,,50,Brown Brothers Harriman & Co. 	 Met-Pro Corporation By: /s/Thomas J. Saunder 	 By: /s/ Gary J. Morgan Name: Thomas J. Saunder 	 Name: Gary J. Morgan Title: SVP 	 Title: V/P Finance Date: 10-12-05 	 Date: 10/12/2005

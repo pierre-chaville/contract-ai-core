@@ -31,5 +31,5 @@ multibranch_party_A,Party A is a Multibranch party,100,TRUE,"[91, 92, 93]",The t
 multibranch_party_A_offices,Party A offices,100,"BNP Paribas Head Office, London and New York","[91, 92, 93]","The text specifies 'may act through the following Offices: BNP Paribas Head Office, London and New York.'"
 multibranch_party_B,Party B is a Multibranch party,100,FALSE,"[91, 92, 93]",The text states 'Party B is not a Multibranch Party.'
 multibranch_party_B_offices,Party B offices,100,None,"[91, 92, 93]","Party B is not a Multibranch Party, so no offices are listed."
-calculation_agent,Party for calculation agent,95,AB,[94],"The text states 'The Calculation Agent shall be Party A, unless ...', indicating Party A is the default calculation agent except in specified circumstances."
+calculation_agent,Party for calculation agent,95,A,[94],"The text states 'The Calculation Agent shall be Party A, unless ...', indicating Party A is the default calculation agent in business as usual situations."
 governing_law,Governing Law,100,NEW-YORK,[100],The text explicitly states that the Agreement will be governed by the laws of the State of New York.

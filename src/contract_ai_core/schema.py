@@ -107,6 +107,33 @@ class DatapointDefinition(FrozenBaseModel):
     )
 
 
+class GuidelineDefinition(FrozenBaseModel):
+    """Definition of a guideline for a contract type."""
+
+    key: str = Field(
+        ..., description="Stable key identifier for the guideline (e.g., 'guideline_1')."
+    )
+    guideline: str = Field(
+        ..., description="Human-readable guideline description (e.g., 'Guideline 1 description')."
+    )
+    fallback_guideline: str | None = Field(
+        default=None,
+        description="Fallback guideline to use if the primary guideline is not applicable.",
+    )
+    priority: str = Field(
+        default="medium",
+        description="Priority of the guideline. Higher priority guidelines are preferred when multiple are applicable.",
+    )
+    scope: ExtractionScope = Field(
+        default=ExtractionScope.CLAUSE,
+        description="Where in the document the guideline is typically located.",
+    )
+    clause_keys: Sequence[str] | None = Field(
+        default=None,
+        description="Clause key(s) where this guideline is typically located.",
+    )
+
+
 class ContractTypeTemplate(FrozenBaseModel):
     """Template describing expected clauses and datapoints for a contract type."""
 
@@ -125,9 +152,20 @@ class ContractTypeTemplate(FrozenBaseModel):
     datapoints: Sequence[DatapointDefinition] = Field(
         ..., description="List of datapoint definitions to extract for this contract type."
     )
+    guidelines: Sequence[GuidelineDefinition] = Field(
+        ..., description="List of guideline definitions for this contract type."
+    )
     enums: Optional[Sequence[EnumDefinition]] = Field(
         default=None,
         description=("Rreusable enum definitions that datapoints can reference via 'enum_key'."),
+    )
+    prompt_scope_filter: str = Field(
+        ...,
+        description="This is the prompt scope filter for the contract type template.",
+    )
+    prompt_scope_amendment: str = Field(
+        ...,
+        description="This is the prompt scope filter for the amendment.",
     )
 
 
@@ -185,6 +223,32 @@ class ExtractedDatapoint(FrozenBaseModel):
     confidence: float | None = Field(
         default=None,
         description="Confidence score in [0,1] for the extraction, if available.",
+    )
+
+
+class ReviewedGuideline(FrozenBaseModel):
+    """Value reviewed for a guideline along with optional provenance info."""
+
+    key: str = Field(..., description="Guideline key (matches a definition in the template).")
+    guideline_matched: bool = Field(..., description="Whether the guideline was matched.")
+    confidence: float | None = Field(
+        default=None,
+        description="Confidence score in [0,1] for the guideline match, if available.",
+    )
+    fallback_guideline_matched: bool = Field(
+        ..., description="Whether the fallback guideline was matched."
+    )
+    confidence_fallback: float | None = Field(
+        default=None,
+        description="Confidence score in [0,1] for the fallback guideline match, if available.",
+    )
+    explanation: str | None = Field(
+        default=None,
+        description="Short explanation or rationale for the extracted guideline value.",
+    )
+    evidence_paragraph_indices: Sequence[int] | None = Field(
+        default=None,
+        description="Paragraph indices that provide evidence for this guideline review.",
     )
 
 

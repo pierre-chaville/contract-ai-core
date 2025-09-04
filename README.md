@@ -77,7 +77,7 @@ doc_cls = clf.classify_document(paragraphs, template)
 
 # Extract
 ext = DatapointExtractor(DatapointExtractorConfig(model="gpt-4.1-mini", concurrency=2))
-result = ext.extract(text, template, classified_clauses=doc_cls)
+result = ext.extract(paragraphs, template, classified_clauses=doc_cls)
 
 # Revise
 reviser = ContractReviser(ContractReviserConfig(model="gpt-4.1-mini"))

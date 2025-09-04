@@ -14,3 +14,5 @@ THRESHOLD_REFERENCE,Percentage Reference,OTHER,Other
 BOOLEAN,Boolean,YES,YES
 BOOLEAN,Boolean,NO,NO
 BOOLEAN,Boolean,UNKNOWN,UNKNOWN
+CALCUTAION_PARTY,Calculation agent Party,A,Party A
+CALCUTAION_PARTY,Calculation agent Party,B,Party B

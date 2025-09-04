@@ -1,0 +1,56 @@
+[
+  {
+    "amendment_start_line": 8,
+    "amendment_end_line": 9,
+    "amendment_span_text": "(a) Part 4(f)(ii) of the Schedule is deleted in its entirety and replaced with the following:\n\n\"(ii) In relation to Party B, (1) the Credit Support Annex dated as of the date hereof and attached hereto between the parties hereto and (2) the Deposit Account Control Agreement referred to in said Credit Support Annex.\"",
+    "target_section": "Part 4(f)(ii)",
+    "confidence_target": 0.98,
+    "change_explanation": "Part 4(f)(ii) of the Schedule is deleted and replaced with new language specifying, in relation to Party B, the Credit Support Annex dated as of the date hereof and the Deposit Account Control Agreement referred to in the Credit Support Annex.",
+    "target_paragraph_indices": [
+      90
+    ],
+    "confidence_target_paragraph_indices": 0.95,
+    "target_paragraph_explanation": "Line 90 contains 'Part 4(f)(ii)' in substance: '(ii) In relation to Party B: Not applicable.' This matches the structure and placement for Part 4(f)(ii) in the Schedule, though the new language to be inserted per the change explanation is not present in this version.",
+    "initial_paragraphs": [
+      {
+        "index": 90,
+        "text": "(ii) In relation to Party B: Not applicable."
+      }
+    ],
+    "revised_paragraphs": [
+      {
+        "index": 90,
+        "text": "(ii) In relation to Party B, (1) the Credit Support Annex dated as of the date hereof and attached hereto between the parties hereto and (2) the Deposit Account Control Agreement referred to in said Credit Support Annex."
+      }
+    ],
+    "confidence_revision": 1.0,
+    "revision_explanation": "Replaced the original text in Part 4(f)(ii) with the amendment language as instructed, ensuring the new provisions are accurately reflected."
+  },
+  {
+    "amendment_start_line": 10,
+    "amendment_end_line": 11,
+    "amendment_span_text": "(b) Part 4(g)(ii) of the Schedule is deleted in its entirety and replaced with the following:\n\n\"(ii) In relation to Party B, none.\"",
+    "target_section": "Part 4(g)(ii)",
+    "confidence_target": 0.98,
+    "change_explanation": "Part 4(g)(ii) of the Schedule is deleted and replaced with new language specifying, in relation to Party B, 'none.'",
+    "target_paragraph_indices": [
+      93
+    ],
+    "confidence_target_paragraph_indices": 0.95,
+    "target_paragraph_explanation": "Line 93 contains '(ii) Credit Support Provider means in relation to Party B: Not applicable.' This is the location for Part 4(g)(ii) in the Schedule, corresponding to Party B, though the new language ('none') to be inserted per the change explanation is not present in this version.",
+    "initial_paragraphs": [
+      {
+        "index": 93,
+        "text": "(ii) Credit Support Provider means in relation to Party B: Not applicable."
+      }
+    ],
+    "revised_paragraphs": [
+      {
+        "index": 93,
+        "text": "(ii) In relation to Party B, none."
+      }
+    ],
+    "confidence_revision": 1.0,
+    "revision_explanation": "The original text in Part 4(g)(ii) was deleted and replaced with the exact wording provided in the amendment instruction."
+  }
+]

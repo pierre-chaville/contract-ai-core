@@ -1,0 +1,35 @@
+key,title,confidence,value,evidence,explanation
+date,Date of the contract,95,2008-09-12,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","The date is explicitly mentioned in the text as 'dated as of September 12, 2008'."
+party_A,Party A,90,Barclays Bank PLC,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","Barclays Bank PLC is mentioned first in the list of parties, typically indicating it as Party A."
+party_B,party_B,90,World Financial Network Credit Card Master Note Trust,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",World Financial Network Credit Card Master Note Trust is explicitly labeled as 'Party B' in the text.
+specified_entity_A,Specified entity Party A,95,None,[8],The text explicitly states that 'Specified Entity' shall not apply to Party A.
+specified_entity_B,Specified entity Party B,95,None,[8],The text explicitly states that 'Specified Entity' shall not apply to Party B.
+specified_transaction,Specified transaction scope,90,NONSTD,[12],"The text indicates that the 'Default Under Specified Transaction' provisions do not apply, suggesting a non-standard modification to Section 14."
+cross_default,Cross default applicable parties,95,A,[13],The text explicitly states that the 'Cross Default' provisions apply to Party A and not to Party B.
+specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,,None,[14],The text does not mention borrowed money in relation to specified indebtedness.
+specified_indebtness_deposits,Specified indebtness excludes deposits,100,True,[14],The text explicitly states that specified indebtedness shall not include deposits received in the course of a party's ordinary banking business.
+threshold_amount_A_amount,amount for Party A,0,None,"[15, 18]",The text does not specify a fixed amount for Party A.
+threshold_amount_A_currency,currency for Party A ,0,None,"[15, 18]",The text does not specify a currency for Party A.
+threshold_amount_A_percent,percentage for Party A ,100,3.0,"[15, 18]",The text explicitly states '3% of its total shareholders equity' for Party A.
+threshold_amount_A_percent_reference,percentage reference for Party A ,100,SHAREHOLDER,"[15, 18]","The text references '3% of its total shareholders equity', indicating SHAREHOLDER as the reference."
+threshold_amount_B_amount,amount for Party B,0,None,"[15, 18]",The text does not mention any threshold amount for Party B.
+threshold_amount_B_currency,currency for Party B,0,None,"[15, 18]",The text does not mention any currency for Party B.
+threshold_amount_B_percent,percentage for Party B,0,None,"[15, 18]",The text does not mention any percentage for Party B.
+threshold_amount_B_percent_reference,percentage reference for Party B,0,None,"[15, 18]",The text does not mention any percentage reference for Party B.
+credit_event_upon_merger,Credit Event Upon Merger  applicable parties,95,NONE,"[19, 23]",The text explicitly states that the 'Credit Event Upon Merger' provisions will not apply to either Party A or Party B.
+automatic_early_termination,Automatic Early Termination  applicable parties,95,NONE,"[20, 24]",The text explicitly states that the 'Automatic Early Termination' provisions will not apply to either Party A or Party B.
+termination_currency,Termination Currency,95,USD,[25],"The text explicitly states 'Termination Currency means United States Dollars', which corresponds to the ISO currency code 'USD'."
+notices_A,Email for notices for Party A,70,None,"[90, 91, 92, 95, 96, 97, 98, 99]",The text does not explicitly mention an email address for notices to Party A.
+notices_B,Email for notices for Party B,70,None,"[90, 91, 92, 95, 96, 97, 98, 99]",The text does not explicitly mention an email address for notices to Party B.
+process_agent_A,Process agent for party A,100,True,"[114, 115, 116]",The text explicitly states that Party A appoints a Process Agent.
+process_agent_name_A,Name of process agent for party A,100,Barclays Capital,"[114, 115, 116]",The name 'Barclays Capital' is mentioned as the Process Agent for Party A.
+process_agent_address_A,Address of process agent for party A,100,"200 Park Avenue New York, NY 10166","[114, 115, 116]","The address '200 Park Avenue New York, NY 10166' is provided for Party A's Process Agent."
+process_agent_B,Process agent for party B,100,False,"[114, 115, 116]",The text states 'Not applicable' for Party B's Process Agent.
+process_agent_name_B,Name of process agent for party B,100,None,"[114, 115, 116]","Since Party B's Process Agent is 'Not applicable', there is no name."
+process_agent_address_B,Address of process agent for party B,100,None,"[114, 115, 116]","Since Party B's Process Agent is 'Not applicable', there is no address."
+multibranch_party_A,Party A is a Multibranch party,100,True,"[103, 104, 105]",The text explicitly states 'Party A is a Multibranch Party'.
+multibranch_party_A_offices,Party A offices,100,London and New York Offices,"[103, 104, 105]",The text specifies 'may act through its London and New York Offices' for Party A.
+multibranch_party_B,Party B is a Multibranch party,100,False,"[103, 104, 105]",The text explicitly states 'Party B is not a Multibranch Party'.
+multibranch_party_B_offices,Party B offices,100,None,"[103, 104, 105]","Since Party B is not a Multibranch Party, there are no offices listed."
+calculation_agent,Party for calculation agent,95,A,[106],The text explicitly states 'The Calculation Agent is Party A'.
+governing_law,Governing Law,95,NEW-YORK,[89],The text explicitly states that the agreement is governed by the laws of the State of New York.

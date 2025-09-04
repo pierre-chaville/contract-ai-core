@@ -12,11 +12,13 @@ def load_template(template_key: str) -> dict:
     csv_path_clauses = folder_path / f"{template_key}_clauses.csv"
     csv_path_enums = folder_path / f"{template_key}_enums.csv"
     csv_path_datapoints = folder_path / f"{template_key}_datapoints.csv"
+    csv_path_guidelines = folder_path / f"{template_key}_guidelines.csv"
 
     model = json.loads(open(json_path, encoding="utf-8").read())
     model["clauses"] = []
     model["enums"] = []
     model["datapoints"] = []
+    model["guidelines"] = []
 
     # Read CSV with tolerant decoding
     df = pd.read_csv(csv_path_clauses, encoding="utf-8")
@@ -106,6 +108,65 @@ def load_template(template_key: str) -> dict:
                     None
                     if pd.isna(datapoint_clause_keys)
                     else str(datapoint_clause_keys).split(",")
+                ),
+            }
+        )
+
+    # Read CSV with tolerant decoding
+    df_guidelines = pd.read_csv(csv_path_guidelines, encoding="utf-8")
+
+    # Normalize column names (strip whitespace and BOM artefacts)
+    df_guidelines.columns = [str(c).strip().lstrip("\ufeff") for c in df_guidelines.columns]
+
+    for idx, row in df_guidelines.iterrows():
+        raw_id = row.get("id")
+        guideline_text = row.get("guideline")
+        fallback_text = row.get("fallback")
+        raw_priority = row.get("priority")
+        raw_scope = row.get("scope")
+        raw_clause_keys = row.get("clause_keys")
+
+        # Skip if no primary guideline text
+        if guideline_text is None or (
+            isinstance(guideline_text, float) and pd.isna(guideline_text)
+        ):
+            continue
+
+        # Generate a stable key if missing/blank id
+        if (
+            raw_id is None
+            or (isinstance(raw_id, float) and pd.isna(raw_id))
+            or str(raw_id).strip() == ""
+        ):
+            guideline_key = f"guideline_{idx + 1}"
+        else:
+            guideline_key = str(raw_id)
+
+        # Defaults for priority and scope if missing
+        priority_value = (
+            "medium"
+            if raw_priority is None
+            or (isinstance(raw_priority, float) and pd.isna(raw_priority))
+            or str(raw_priority).strip() == ""
+            else str(raw_priority)
+        )
+        scope_value = (
+            "clause"
+            if raw_scope is None
+            or (isinstance(raw_scope, float) and pd.isna(raw_scope))
+            or str(raw_scope).strip() == ""
+            else str(raw_scope)
+        )
+
+        model["guidelines"].append(
+            {
+                "key": guideline_key,
+                "guideline": str(guideline_text),
+                "fallback_guideline": None if pd.isna(fallback_text) else str(fallback_text),
+                "priority": priority_value,
+                "scope": scope_value,
+                "clause_keys": (
+                    None if pd.isna(raw_clause_keys) else str(raw_clause_keys).split(",")
                 ),
             }
         )

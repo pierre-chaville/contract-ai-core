@@ -31,5 +31,5 @@ multibranch_party_A,Party A is a Multibranch party,bool,,FALSE,clause,multibranc
 multibranch_party_A_offices,Party A offices,str,,FALSE,clause,multibranch_party,offices for  Party A when a Multibranch party
 multibranch_party_B,Party B is a Multibranch party,bool,,FALSE,clause,multibranch_party,is Party B a Multibranch party ?
 multibranch_party_B_offices,Party B offices,str,,FALSE,clause,multibranch_party,offices for  Party B when a Multibranch party
-calculation_agent,Party for calculation agent,enum,PARTY_TYPES,FALSE,clause,calculation_agent,Party for calculation agent
+calculation_agent,Party for calculation agent,enum,CALCUTAION_PARTY,FALSE,clause,calculation_agent,Party for calculation agent in business as usual situations
 governing_law,Governing Law,enum,LAW,FALSE,clause,governing_law,Governing Law

@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import asyncio
 import logging
-import os
 import random
 from dataclasses import dataclass
 from typing import Any, Optional, cast
@@ -16,17 +15,16 @@ from .schema import (
     ExtractedDatapoint,
     ExtractionResult,
     Paragraph,
-    split_text_into_paragraphs,
 )
 
 try:
     from langchain.globals import set_debug
-    from langchain_openai import ChatOpenAI
 
     set_debug(False)
 except Exception as e:  # pragma: no cover
-    ChatOpenAI = None  # type: ignore
-    logging.getLogger(__name__).warning("ChatOpenAI unavailable: %r", e)
+    logging.getLogger(__name__).warning("LangChain globals unavailable: %r", e)
+
+from .utilities import get_langchain_chat_model
 
 ScopeId = str
 
@@ -61,7 +59,7 @@ class DatapointExtractor:
 
     def extract(
         self,
-        text: str,
+        paragraphs: list[Paragraph],
         template: ContractTypeTemplate,
         classified_clauses: DocumentClassification | None = None,
     ) -> ExtractionResult:
@@ -71,15 +69,9 @@ class DatapointExtractor:
         - Build scope text (selected clauses, beginning paragraphs, or whole document)
         - Use LangChain structured output to extract values for datapoints in each scope
         """
-        if self.config.provider != "openai":
+        if self.config.provider not in ("openai", "azure", "anthropic"):
             raise NotImplementedError(f"Unsupported provider: {self.config.provider}")
 
-        if ChatOpenAI is None:
-            raise RuntimeError(
-                "langchain-openai is required. Install with: pip install langchain langchain-openai"
-            )
-
-        paragraphs: list[Paragraph] = split_text_into_paragraphs(text)
         index_to_para: dict[int, Paragraph] = {p.index: p for p in paragraphs}
 
         scopes: dict[ScopeId, tuple[_ExtractionScope, list[int]]] = {}
@@ -170,7 +162,7 @@ class DatapointExtractor:
                 )
                 evidence = indices
             else:
-                scope_text = text
+                scope_text = "\n\n".join(p.text for p in paragraphs)
                 evidence = None
 
             # Structured output model for this scope: each field returns {value, confidence, explanation}
@@ -357,20 +349,17 @@ class DatapointExtractor:
 
         Retries with exponential backoff are applied per job to handle transient rate limits.
         """
-        if ChatOpenAI is None:
-            raise RuntimeError(
-                "langchain-openai is required. Install with: pip install langchain langchain-openai"
-            )
-        # Load .env if available to populate OPENAI_API_KEY
+        # Build LLM using common utility (supports openai/azure/anthropic)
         try:
-            from dotenv import load_dotenv
-
-            load_dotenv()
+            max_tokens = int(self.config.max_tokens) if self.config.max_tokens is not None else None
         except Exception:
-            pass
-
-        api_key = os.getenv("OPENAI_API_KEY")
-        llm = ChatOpenAI(model=model_name, temperature=temperature, api_key=api_key)  # type: ignore[arg-type]
+            max_tokens = None
+        llm = get_langchain_chat_model(
+            self.config.provider,
+            model_name,
+            temperature=temperature,
+            max_tokens=max_tokens,
+        )
         sem = asyncio.Semaphore(concurrency)
 
         async def run_one(job: dict[str, object]) -> dict[str, object]:

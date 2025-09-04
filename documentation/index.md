@@ -36,7 +36,7 @@ classification = clf.classify_document(paragraphs, template)
 
 # 2) Extract datapoints
 ext = DatapointExtractor()
-result = ext.extract(text, template, classified_clauses=classification)
+result = ext.extract(paragraphs, template, classified_clauses=classification)
 
 # 3) Apply an amendment
 reviser = ContractReviser(ContractReviserConfig(model="gpt-4.1-mini"))

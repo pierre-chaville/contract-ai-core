@@ -14,8 +14,11 @@ def test_materialize_changes_bottom_up_ordering() -> None:
         name="T",
         use_case="amendment",
         description="Test",
+        prompt_scope_filter="",
+        prompt_scope_amendment="",
         clauses=[ClauseDefinition(key="a", title="A")],
         datapoints=[DatapointDefinition(key="x", title="X")],
+        guidelines=[],
         enums=[],
     )
     # Base contract paragraphs

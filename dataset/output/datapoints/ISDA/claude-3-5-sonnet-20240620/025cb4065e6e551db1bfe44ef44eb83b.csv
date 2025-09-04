@@ -1,0 +1,35 @@
+key,title,confidence,value,evidence,explanation
+date,Date of the contract,100,2008-09-12,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","The date is explicitly stated as 'dated as of September 12, 2008'"
+party_A,Party A,100,Barclays Bank PLC,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",Explicitly stated as Party A in the text
+party_B,party_B,100,World Financial Network Credit Card Master Note Trust,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",Explicitly stated as Party B in the text
+specified_entity_A,Specified entity Party A,100,None,[8],The text explicitly states 'Specified Entity' shall not apply to Party A.
+specified_entity_B,Specified entity Party B,100,None,[8],The text explicitly states 'Specified Entity' shall not apply to Party B.
+cross_default,Cross default applicable parties,95,A,[13],The text explicitly states 'Cross Default provisions... will apply to Party A and will not apply to Party B.'
+specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,90,None,[14],The text does not explicitly mention borrowed money in relation to Specified Indebtedness.
+specified_indebtness_deposits,Specified indebtness excludes deposits,95,True,[14],The text explicitly states that Specified Indebtedness shall not include deposits received in the course of a party's ordinary banking business.
+threshold_amount_A_amount,amount for Party A,90,None,"[15, 17, 18]",No specific amount mentioned for Party A
+threshold_amount_A_currency,currency for Party A ,90,None,"[15, 17, 18]",No specific currency mentioned for Party A
+threshold_amount_A_percent,percentage for Party A ,95,3.0,"[15, 17, 18]",Text states '3% of its total shareholders equity' for Party A
+threshold_amount_A_percent_reference,percentage reference for Party A ,95,SHAREHOLDER,"[15, 17, 18]",Text mentions '3% of its total shareholders equity' for Party A
+threshold_amount_B_amount,amount for Party B,90,None,"[15, 17, 18]",No information provided for Party B
+threshold_amount_B_currency,currency for Party B,90,None,"[15, 17, 18]",No information provided for Party B
+threshold_amount_B_percent,percentage for Party B,90,None,"[15, 17, 18]",No information provided for Party B
+threshold_amount_B_percent_reference,percentage reference for Party B,90,None,"[15, 17, 18]",No information provided for Party B
+credit_event_upon_merger,Credit Event Upon Merger  applicable parties,100,NONE,[23],The text explicitly states that Credit Event Upon Merger provisions will not apply to Party A and will not apply to Party B.
+automatic_early_termination,Automatic Early Termination  applicable parties,95,NONE,[24],The text explicitly states that Automatic Early Termination provisions 'will not apply to Party A and will not apply to Party B'.
+termination_currency,Termination Currency,100,USD,[25],The contract explicitly states 'Termination Currency means United States Dollars.'
+notices_A,Email for notices for Party A,80,None,"[90, 91, 92, 95, 96, 97, 98, 99]","No email address provided for Party A, only physical address and fax number."
+notices_B,Email for notices for Party B,80,None,"[90, 91, 92, 95, 96, 97, 98, 99]","No email address provided for Party B, only physical addresses, phone numbers, and fax numbers."
+process_agent_A,Process agent for party A,95,True,"[114, 115, 116]",Party A explicitly appoints a Process Agent
+process_agent_name_A,Name of process agent for party A,90,Barclays Capital,"[114, 115, 116]",Explicitly stated as Process Agent for Party A
+process_agent_address_A,Address of process agent for party A,90,"200 Park Avenue New York, NY 10166","[114, 115, 116]",Address provided after Barclays Capital
+process_agent_B,Process agent for party B,95,False,"[114, 115, 116]",Explicitly stated as 'Not applicable' for Party B
+process_agent_name_B,Name of process agent for party B,95,None,"[114, 115, 116]",Process Agent for Party B is not applicable
+process_agent_address_B,Address of process agent for party B,95,None,"[114, 115, 116]",Process Agent for Party B is not applicable
+multibranch_party_A,Party A is a Multibranch party,100,True,"[103, 104, 105]",Text explicitly states 'Party A is a Multibranch Party'
+multibranch_party_A_offices,Party A offices,100,London and New York Offices,"[103, 104, 105]",Text specifies 'may act through its London and New York Offices'
+multibranch_party_B,Party B is a Multibranch party,100,False,"[103, 104, 105]",Text explicitly states 'Party B is not a Multibranch Party'
+multibranch_party_B_offices,Party B offices,100,None,"[103, 104, 105]","Party B is not a Multibranch Party, so no offices are specified"
+calculation_agent,Party for calculation agent,90,A,[106],"The text explicitly states 'The Calculation Agent is Party A', but there's a provision for change if Party A defaults."
+governing_law,Governing Law,100,NEW-YORK,[89],The text explicitly states 'This Agreement will be governed by and construed in accordance with the laws of the State of New York'
+specified_transaction,Specified transaction scope,90,NONSTD,,The contract specifies 'The only Transaction that will be governed by the terms of this Agreement will be the Class A Swap (as defined in the Indenture). References in the Agreement to 'Transactions' or 'Transaction' shall be deemed to be references to the Class A Swap.' This indicates a non-standard specified transaction scope.

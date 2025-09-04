@@ -1,0 +1,43 @@
+relaxed_match_accuracy: 0.9764705882352941
+type_specific_accuracy:
+  date: 1.0
+  money: .nan
+document_completion_score: 1.0
+selective_90pct_accuracy: 0.9887096774193549
+selective_90pct_coverage: 0.9117647058823529
+field_level_f1_macro: 0.9764705882352942
+per_key_accuracy:
+  date: 1.0
+  party_A: 0.95
+  party_B: 0.95
+  specified_entity_A: 1.0
+  specified_entity_B: 0.95
+  specified_transaction: 1.0
+  cross_default: 1.0
+  specified_indebtness_borrowed_money: 0.95
+  specified_indebtness_deposits: 0.9
+  threshold_amount_A_amount: 1.0
+  threshold_amount_A_currency: 1.0
+  threshold_amount_A_percent: 1.0
+  threshold_amount_A_percent_reference: 1.0
+  threshold_amount_B_amount: 0.95
+  threshold_amount_B_currency: 1.0
+  threshold_amount_B_percent: 1.0
+  threshold_amount_B_percent_reference: 1.0
+  credit_event_upon_merger: 0.95
+  automatic_early_termination: 0.95
+  termination_currency: 0.95
+  notices_A: 0.95
+  notices_B: 1.0
+  process_agent_A: 1.0
+  process_agent_name_A: 1.0
+  process_agent_address_A: 1.0
+  process_agent_B: 1.0
+  process_agent_name_B: 1.0
+  process_agent_address_B: 1.0
+  multibranch_party_A: 0.95
+  multibranch_party_A_offices: 0.9
+  multibranch_party_B: 1.0
+  multibranch_party_B_offices: 1.0
+  calculation_agent: 0.95
+  governing_law: 0.95

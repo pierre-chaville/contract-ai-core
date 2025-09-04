@@ -1,0 +1,35 @@
+key,title,confidence,value,evidence,explanation
+date,Date of the contract,100,2012-11-15,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","Explicitly stated as 'dated as of November 15, 2012'"
+party_A,Party A,100,THE BANK OF NOVA SCOTIA,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","Explicitly stated as 'THE BANK OF NOVA SCOTIA (""Party A"")'"
+party_B,party_B,100,Halifax Funding LLC,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]","Explicitly stated as 'Halifax Funding LLC (""Party B"")'"
+specified_entity_A,Specified entity Party A,100,None,"[11, 12]",The text explicitly states 'in relation to Party A: none'
+specified_entity_B,Specified entity Party B,100,KKR Asset Management LLC,"[11, 12]","The text specifies 'in relation to Party B for the purpose of Section 5(a)(v), (vi), and (vii): KKR Asset Management LLC (the ""KKR"").'"
+specified_transaction,Specified transaction scope,90,NONSTD,"[13, 14]","The definition of 'Specified Transaction' includes 'Market Transaction', which is extensively defined and goes beyond the standard Section 14 definition."
+cross_default,Cross default applicable parties,95,AB,[15],"The text states 'The ""Cross Default"" provisions of Section 5(a)(vi) will apply to Party A and will apply to Party B'"
+specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,,None,[17],
+specified_indebtness_deposits,Specified indebtness excludes deposits,,None,[17],
+threshold_amount_A_amount,amount for Party A,90,None,[18],"No specific amount mentioned for Party A, only a percentage."
+threshold_amount_A_currency,currency for Party A ,90,None,[18],No specific currency mentioned for Party A.
+threshold_amount_A_percent,percentage for Party A ,95,3.0,[18],Explicitly stated as '3% of the total shareholders' equity of Party A'
+threshold_amount_A_percent_reference,percentage reference for Party A ,95,SHAREHOLDER,[18],Referenced as 'total shareholders' equity of Party A'
+threshold_amount_B_amount,amount for Party B,90,None,[18],"No specific amount mentioned for Party B, only a percentage."
+threshold_amount_B_currency,currency for Party B,90,None,[18],No specific currency mentioned for Party B.
+threshold_amount_B_percent,percentage for Party B,95,3.0,[18],Explicitly stated as '3% of its Net Asset Value'
+threshold_amount_B_percent_reference,percentage reference for Party B,95,NAV,[18],Referenced as 'Net Asset Value'
+credit_event_upon_merger,Credit Event Upon Merger  applicable parties,100,AB,[19],The text explicitly states 'will apply to Party A and will apply to Party B'
+automatic_early_termination,Automatic Early Termination  applicable parties,90,NONE,[20],"The text states 'The ""Automatic Early Termination"" provision of Section 6(a) will not apply to Party A and will not apply to Party B', indicating it doesn't apply to either party by default."
+termination_currency,Termination Currency,100,USD,[22],"The text explicitly states 'Termination Currency' means United States Dollars, which is USD in ISO format."
+notices_A,Email for notices for Party A,,None,"[61, 62, 63, 64, 65, 66, 67, 68]",
+notices_B,Email for notices for Party B,,None,"[61, 62, 63, 64, 65, 66, 67, 68]",
+process_agent_A,Process agent for party A,95,False,"[69, 70, 71]",The text explicitly states 'Not applicable' for Party A's Process Agent.
+process_agent_name_A,Name of process agent for party A,95,None,"[69, 70, 71]",No name is provided as Process Agent is not applicable for Party A.
+process_agent_address_A,Address of process agent for party A,95,None,"[69, 70, 71]",No address is provided as Process Agent is not applicable for Party A.
+process_agent_B,Process agent for party B,95,True,"[69, 70, 71]",The text provides a specific Process Agent for Party B.
+process_agent_name_B,Name of process agent for party B,95,"National Registered Agents, Inc.","[69, 70, 71]",Explicitly stated as the Process Agent for Party B (Halifax Funding LLC).
+process_agent_address_B,Address of process agent for party B,95,"160 Greentree Drive, Suite 101, Dover, Delaware 19904","[69, 70, 71]",Address explicitly provided for Party B's Process Agent.
+multibranch_party_A,Party A is a Multibranch party,,None,"[73, 74, 75]",
+multibranch_party_A_offices,Party A offices,,None,"[73, 74, 75]",
+multibranch_party_B,Party B is a Multibranch party,,None,"[73, 74, 75]",
+multibranch_party_B_offices,Party B offices,,None,"[73, 74, 75]",
+calculation_agent,Party for calculation agent,,None,"[76, 77, 78, 79]",
+governing_law,Governing Law,,None,[86],

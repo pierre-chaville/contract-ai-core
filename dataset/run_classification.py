@@ -43,10 +43,17 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Classify contract clauses for a template")
     parser.add_argument("--template", required=True, help="Template key (e.g., ISDA)")
     parser.add_argument("--model", required=True, help="Model name (e.g., gpt-4.1)")
+    parser.add_argument(
+        "--provider",
+        default="openai",
+        choices=["openai", "azure", "anthropic"],
+        help="LLM provider (default: openai)",
+    )
     args = parser.parse_args()
 
     template_key = args.template
     model_name = args.model
+    provider = args.provider
 
     repo_root = Path(__file__).resolve().parents[1]
 
@@ -58,7 +65,9 @@ def main() -> None:
     temperature = 1.0 if "gpt-5" in model_name else 0.0
 
     classifier = ClauseClassifier(
-        ClauseClassifierConfig(provider="openai", model=model_name, temperature=temperature)
+        ClauseClassifierConfig(
+            provider=provider, model=model_name, temperature=temperature, max_tokens=8000
+        )
     )
     template = ContractTypeTemplate.model_validate(load_template(template_key))
 
@@ -71,7 +80,7 @@ def main() -> None:
         if os.path.exists(output_dir / (md_path.stem + ".csv")):
             print(f"Skipping {md_path.name} because it already exists")
             continue
-        print(f"Classifying {md_path.name} ...")
+        print(f"Classifying {md_path.name} using {provider}:{model_name} ...")
         result = classify_file(classifier, template, md_path, model_name, repo_root)
 
         out_path = output_dir / (md_path.stem + ".csv")

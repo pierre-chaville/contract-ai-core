@@ -102,9 +102,7 @@ def main() -> None:
 
     gold_dir = repo_root / "dataset" / "gold" / "clauses" / template_key
     pred_dir = repo_root / "dataset" / "output" / "clauses" / template_key / model_name
-    out_dir = (
-        repo_root / "dataset" / "metrics" / "results" / "classification" / template_key / model_name
-    )
+    out_dir = repo_root / "dataset" / "metrics" / "classification" / template_key / model_name
     out_dir.mkdir(parents=True, exist_ok=True)
 
     gold_files = {p.stem: p for p in gold_dir.glob("*.csv")}
