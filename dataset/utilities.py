@@ -120,8 +120,8 @@ def load_template(template_key: str) -> dict:
 
     for idx, row in df_guidelines.iterrows():
         raw_id = row.get("id")
+        fallback_from_key = row.get("fallback_from_key")
         guideline_text = row.get("guideline")
-        fallback_text = row.get("fallback")
         raw_priority = row.get("priority")
         raw_scope = row.get("scope")
         raw_clause_keys = row.get("clause_keys")
@@ -142,6 +142,14 @@ def load_template(template_key: str) -> dict:
         else:
             guideline_key = str(raw_id)
 
+        if (
+            fallback_from_key is None
+            or (isinstance(fallback_from_key, float) and pd.isna(fallback_from_key))
+            or str(fallback_from_key).strip() == ""
+            or str(fallback_from_key).strip().lower() == "nan"
+        ):
+            fallback_from_key = None
+
         # Defaults for priority and scope if missing
         priority_value = (
             "medium"
@@ -161,8 +169,8 @@ def load_template(template_key: str) -> dict:
         model["guidelines"].append(
             {
                 "key": guideline_key,
+                "fallback_from_key": fallback_from_key,
                 "guideline": str(guideline_text),
-                "fallback_guideline": None if pd.isna(fallback_text) else str(fallback_text),
                 "priority": priority_value,
                 "scope": scope_value,
                 "clause_keys": (

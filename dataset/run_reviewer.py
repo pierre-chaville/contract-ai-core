@@ -143,13 +143,11 @@ def main() -> None:
             writer.writerow(
                 [
                     "key",
+                    "fallback_from_key",
                     "priority",
                     "guideline",
-                    "fallback_guideline",
                     "guideline_matched",
                     "confidence",
-                    "fallback_guideline_matched",
-                    "confidence_fallback",
                     "evidence",
                     "explanation",
                 ]
@@ -159,15 +157,9 @@ def main() -> None:
             for r in reviewed:
                 g = tmpl_by_key.get(r.key)
                 guideline_text = g.guideline if g else ""
-                fallback_text = g.fallback_guideline if g else ""
                 priority = g.priority if g else ""
                 conf_pct = (
                     round(r.confidence * 100) if isinstance(r.confidence, (int, float)) else ""
-                )
-                conf_fb_pct = (
-                    round(r.confidence_fallback * 100)
-                    if isinstance(r.confidence_fallback, (int, float))
-                    else ""
                 )
                 evidence = (
                     r.evidence_paragraph_indices
@@ -177,13 +169,11 @@ def main() -> None:
                 writer.writerow(
                     [
                         r.key,
+                        g.fallback_from_key or "",
                         priority,
                         guideline_text,
-                        fallback_text or "",
                         r.guideline_matched,
                         conf_pct,
-                        r.fallback_guideline_matched,
-                        conf_fb_pct,
                         evidence,
                         r.explanation or "",
                     ]

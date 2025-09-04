@@ -113,12 +113,12 @@ class GuidelineDefinition(FrozenBaseModel):
     key: str = Field(
         ..., description="Stable key identifier for the guideline (e.g., 'guideline_1')."
     )
+    fallback_from_key: Optional[str] = Field(
+        default=None,
+        description="If not empty, this guideline is a fallback from the given key.",
+    )
     guideline: str = Field(
         ..., description="Human-readable guideline description (e.g., 'Guideline 1 description')."
-    )
-    fallback_guideline: str | None = Field(
-        default=None,
-        description="Fallback guideline to use if the primary guideline is not applicable.",
     )
     priority: str = Field(
         default="medium",
@@ -234,13 +234,6 @@ class ReviewedGuideline(FrozenBaseModel):
     confidence: float | None = Field(
         default=None,
         description="Confidence score in [0,1] for the guideline match, if available.",
-    )
-    fallback_guideline_matched: bool = Field(
-        ..., description="Whether the fallback guideline was matched."
-    )
-    confidence_fallback: float | None = Field(
-        default=None,
-        description="Confidence score in [0,1] for the fallback guideline match, if available.",
     )
     explanation: str | None = Field(
         default=None,

@@ -162,14 +162,12 @@ class GuidelineReviewer:
                 evidence = None
 
             # Structured output model for this scope: each field returns
-            # {guideline_matched, confidence, fallback_guideline_matched, confidence_fallback, explanation}
+            # {guideline_matched, confidence, evidence, explanation}
             fields: dict[str, tuple[type[Any], Any]] = {}
             for g in gls:
                 desc_lines: list[str] = [
                     f"Primary guideline: {g.guideline}",
                 ]
-                if g.fallback_guideline:
-                    desc_lines.append(f"Fallback guideline: {g.fallback_guideline}")
                 if g.priority:
                     desc_lines.append(f"Priority: {g.priority}")
                 field_desc = "\n".join(desc_lines)
@@ -187,22 +185,6 @@ class GuidelineReviewer:
                         Field(
                             default=None,
                             description="Confidence in [0,1] for the primary guideline decision.",
-                            ge=0.0,
-                            le=1.0,
-                        ),
-                    ),
-                    fallback_guideline_matched=(
-                        Optional[bool],
-                        Field(
-                            default=None,
-                            description="True if primary is not satisfied but fallback is satisfied.",
-                        ),
-                    ),
-                    confidence_fallback=(
-                        Optional[float],
-                        Field(
-                            default=None,
-                            description="Confidence in [0,1] for the fallback guideline decision.",
                             ge=0.0,
                             le=1.0,
                         ),
@@ -226,9 +208,6 @@ class GuidelineReviewer:
                 "For each item:\n"
                 "- guideline_matched: true/false/null for the PRIMARY guideline.\n"
                 "- confidence: float 0..1 or null.\n"
-                "- If primary is not satisfied, check the fallback (if provided):\n"
-                "  - fallback_guideline_matched: true/false/null.\n"
-                "  - confidence_fallback: float 0..1 or null.\n"
                 "- explanation: brief justification referring to the text.\n"
                 "Only use the provided text. Return STRICTLY the JSON for the schema.\n"
             )
@@ -294,21 +273,14 @@ class GuidelineReviewer:
                 item = (data or {}).get(g.key) or {}
                 primary = item.get("guideline_matched")
                 conf = item.get("confidence")
-                fallback = item.get("fallback_guideline_matched")
-                conf_fb = item.get("confidence_fallback")
                 expl = item.get("explanation")
 
                 # Normalize types
                 primary_b = bool(primary) if isinstance(primary, bool) else None
-                fallback_b = bool(fallback) if isinstance(fallback, bool) else None
                 if isinstance(conf, (int, float)):
                     conf_f = max(0.0, min(1.0, float(conf)))
                 else:
                     conf_f = None
-                if isinstance(conf_fb, (int, float)):
-                    conf_fb_f = max(0.0, min(1.0, float(conf_fb)))
-                else:
-                    conf_fb_f = None
                 explanation = expl if isinstance(expl, str) and expl.strip() else None
 
                 reviewed.append(
@@ -316,8 +288,6 @@ class GuidelineReviewer:
                         key=g.key,
                         guideline_matched=primary_b if primary_b is not None else False,
                         confidence=conf_f,
-                        fallback_guideline_matched=fallback_b if fallback_b is not None else False,
-                        confidence_fallback=conf_fb_f,
                         explanation=explanation,
                         evidence_paragraph_indices=evidence,
                     )
