@@ -20,6 +20,10 @@ class ClauseDefinition(FrozenBaseModel):
         default=None,
         description="Optional explanation of the clause's scope and intent.",
     )
+    sort_order: int | None = Field(
+        default=None,
+        description="Optional ordering hint for display; lower sorts first.",
+    )
     # required: bool = Field(
     #     default=True,
     #     description="Whether this clause is required for this contract type.",
@@ -104,6 +108,10 @@ class DatapointDefinition(FrozenBaseModel):
         default=None,
         description="Clause key(s) where this datapoint is typically located.",
     )
+    sort_order: int | None = Field(
+        default=None,
+        description="Optional ordering hint for display; lower sorts first.",
+    )
 
 
 class GuidelineDefinition(FrozenBaseModel):
@@ -130,6 +138,10 @@ class GuidelineDefinition(FrozenBaseModel):
     clause_keys: Sequence[str] | None = Field(
         default=None,
         description="Clause key(s) where this guideline is typically located.",
+    )
+    sort_order: int | None = Field(
+        default=None,
+        description="Optional ordering hint for display; lower sorts first.",
     )
 
 

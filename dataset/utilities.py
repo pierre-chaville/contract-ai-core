@@ -32,15 +32,29 @@ def load_template(template_key: str) -> dict:
         clause_key = row.get("key")
         clause_title = row.get("title")
         clause_description = row.get("description")
+        clause_sort_order = row.get("sort_order")
 
         if clause_key is None or clause_title is None:
             continue
+
+        # Coerce sort_order
+        try:
+            sort_order_val = (
+                None
+                if clause_sort_order is None
+                or (isinstance(clause_sort_order, float) and pd.isna(clause_sort_order))
+                or str(clause_sort_order).strip() == ""
+                else int(float(str(clause_sort_order)))
+            )
+        except Exception:
+            sort_order_val = None
 
         model["clauses"].append(
             {
                 "key": str(clause_key),
                 "title": str(clause_title),
                 "description": None if pd.isna(clause_description) else str(clause_description),
+                "sort_order": sort_order_val,
             }
         )
 
@@ -91,9 +105,21 @@ def load_template(template_key: str) -> dict:
         datapoint_enum_multi_select = row.get("enum_multi_select")
         datapoint_scope = row.get("scope")
         datapoint_clause_keys = row.get("clause_keys")
+        datapoint_sort_order = row.get("sort_order")
 
         if datapoint_key is None or datapoint_title is None:
             continue
+
+        try:
+            dp_sort_order_val = (
+                None
+                if datapoint_sort_order is None
+                or (isinstance(datapoint_sort_order, float) and pd.isna(datapoint_sort_order))
+                or str(datapoint_sort_order).strip() == ""
+                else int(float(str(datapoint_sort_order)))
+            )
+        except Exception:
+            dp_sort_order_val = None
 
         model["datapoints"].append(
             {
@@ -111,6 +137,7 @@ def load_template(template_key: str) -> dict:
                     if pd.isna(datapoint_clause_keys)
                     else str(datapoint_clause_keys).split(",")
                 ),
+                "sort_order": dp_sort_order_val,
             }
         )
 
@@ -127,6 +154,7 @@ def load_template(template_key: str) -> dict:
         raw_priority = row.get("priority")
         raw_scope = row.get("scope")
         raw_clause_keys = row.get("clause_keys")
+        raw_sort_order = row.get("sort_order")
 
         # Skip if no primary guideline text
         if guideline_text is None or (
@@ -168,6 +196,17 @@ def load_template(template_key: str) -> dict:
             else str(raw_scope)
         )
 
+        try:
+            gl_sort_order_val = (
+                None
+                if raw_sort_order is None
+                or (isinstance(raw_sort_order, float) and pd.isna(raw_sort_order))
+                or str(raw_sort_order).strip() == ""
+                else int(float(str(raw_sort_order)))
+            )
+        except Exception:
+            gl_sort_order_val = None
+
         model["guidelines"].append(
             {
                 "key": guideline_key,
@@ -178,6 +217,7 @@ def load_template(template_key: str) -> dict:
                 "clause_keys": (
                     None if pd.isna(raw_clause_keys) else str(raw_clause_keys).split(",")
                 ),
+                "sort_order": gl_sort_order_val,
             }
         )
 

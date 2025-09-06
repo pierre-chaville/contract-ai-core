@@ -13,8 +13,8 @@ def test_classify_paragraphs_with_usage_basic(monkeypatch: pytest.MonkeyPatch) -
         prompt_scope_filter="",
         prompt_scope_amendment="",
         clauses=[
-            ClauseDefinition(key="termination", title="Termination"),
-            ClauseDefinition(key="confidentiality", title="Confidentiality"),
+            ClauseDefinition(key="termination", title="Termination", sort_order=0),
+            ClauseDefinition(key="confidentiality", title="Confidentiality", sort_order=1),
         ],
         datapoints=[],
         guidelines=[],

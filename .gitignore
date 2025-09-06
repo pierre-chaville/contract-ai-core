@@ -40,3 +40,7 @@ dist/
 
 # Local Python version files
 .python-version
+
+# Dataset
+dataset/output/
+dataset/metrics/

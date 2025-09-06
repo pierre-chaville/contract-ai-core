@@ -1,15 +1,15 @@
-id,fallback_from_key,scope,clause_keys,priority,guideline
-G01,,beginning,,high,The contract should be a 2002 ISDA master agreement (92 not allowed)
-G02,,beginning,,medium,The name of party A should be clearly defined
-G03,,beginning,,medium,The name of party B should be clearly defined
-G04,,clause,specified_entity,medium,Specified entity for party Party A should be none (not applicable)
-G05,,clause,specified_transaction,medium,Specified transaction scope should be standard
-G06,,clause,cross_default,medium,Cross default should be standard
-G07,,clause,specified_indebtness,medium,Specified indebtness for party A should include borrowed_money
-G08,,clause,specified_indebtness,medium,Specified indebtness for party A should include deposits
-G09,,clause,threshold_amount,medium,threshold amount should be 3% of shareholder's equity for party A
-G10,,clause,automatic_early_termination,medium,Automatic Early Termination should be applicable at least to party A
-G11,,clause,termination_currency,medium,Termination Currency should be EUR
-G12,G11,clause,termination_currency,medium,"Termination currency can be USD, EUR, GBP, JPY"
-G13,,clause,multibranch_party,medium,Party A should be a multibrach party with offices in New-York and London
-G14,,clause,governing_law,high,Governing Law should be English law or New-York law
+id,sort_order,fallback_from_key,scope,clause_keys,priority,guideline
+G01,1,,beginning,,high,The contract should be a 2002 ISDA master agreement (92 not allowed)
+G02,2,,beginning,,medium,The name of party A should be clearly defined
+G03,3,,beginning,,medium,The name of party B should be clearly defined
+G04,4,,clause,specified_entity,medium,Specified entity for party Party A should be none (not applicable)
+G05,5,,clause,specified_transaction,medium,Specified transaction scope should be standard
+G06,6,,clause,cross_default,medium,Cross default should be standard
+G07,7,,clause,specified_indebtness,medium,Specified indebtness for party A should include borrowed_money
+G08,8,,clause,specified_indebtness,medium,Specified indebtness for party A should include deposits
+G09,9,,clause,threshold_amount,medium,threshold amount should be 3% of shareholder's equity for party A
+G10,10,,clause,automatic_early_termination,medium,Automatic Early Termination should be applicable at least to party A
+G11,11,,clause,termination_currency,medium,Termination Currency should be EUR
+G12,12,G11,clause,termination_currency,medium,"Termination currency can be USD, EUR, GBP, JPY"
+G13,13,,clause,multibranch_party,medium,Party A should be a multibrach party with offices in New-York and London
+G14,14,,clause,governing_law,high,Governing Law should be English law or New-York law
