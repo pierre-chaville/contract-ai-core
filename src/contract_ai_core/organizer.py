@@ -29,25 +29,8 @@ class ContractOrganizerConfig:
     lookup_statuses: Optional[Sequence[LookupValue]] = None
 
 
-class PartyRole(BaseModel):
-    name: str = Field(..., description="Party legal name")
-    role: str | None = Field(default=None, description="Role or capacity (e.g., Seller, Buyer)")
-
-
 class FieldResultString(BaseModel):
     value: Optional[str] = Field(default=None, description="Extracted value or null if unknown")
-    confidence: Optional[float] = Field(
-        default=None, ge=0.0, le=1.0, description="Confidence score in [0,1]"
-    )
-    explanation: Optional[str] = Field(
-        default=None, description="Short rationale referencing supporting text"
-    )
-
-
-class FieldResultParties(BaseModel):
-    value: Optional[Sequence[PartyRole]] = Field(
-        default=None, description="List of parties with roles"
-    )
     confidence: Optional[float] = Field(
         default=None, ge=0.0, le=1.0, description="Confidence score in [0,1]"
     )
@@ -61,9 +44,9 @@ class OrganizedDocumentMetadata(BaseModel):
     contract_type: FieldResultString
     contract_date: FieldResultString
     amendment_date: FieldResultString
+    amendment_number: FieldResultString
     version_type: FieldResultString
     status: FieldResultString
-    parties: FieldResultParties
 
 
 class ContractOrganizer:
@@ -82,38 +65,15 @@ class ContractOrganizer:
         - contract_type
         - contract_date in the format YYYY-MM-DD
         - amendment_date (only if it is an amendment, else null) in the format YYYY-MM-DD
-        - parties (name and role)
         - version_type (initial contract, amended and restated, amendment)
         - status (draft, executed, signed)
         """
         jobs: list[dict[str, object]] = []
 
         # Build a single OutputModel for all jobs
-        PartyRoleModel: type[BaseModel] = create_model(
-            "PartyRoleModel",
-            name=(str, Field(..., description="Party legal name")),
-            role=(Optional[str], Field(default=None, description="Role or capacity")),
-        )
-
         FieldResultStringModel: type[BaseModel] = create_model(
             "FieldResultStringModel",
             value=(Optional[str], Field(default=None, description="Extracted value or null")),
-            confidence=(
-                Optional[float],
-                Field(default=None, ge=0.0, le=1.0, description="Confidence in [0,1]"),
-            ),
-            explanation=(
-                Optional[str],
-                Field(default=None, description="Short rationale referencing supporting text"),
-            ),
-        )
-
-        FieldResultPartiesModel: type[BaseModel] = create_model(
-            "FieldResultPartiesModel",
-            value=(
-                Optional[list[PartyRoleModel]],
-                Field(default=None, description="List of parties with roles"),
-            ),
             confidence=(
                 Optional[float],
                 Field(default=None, ge=0.0, le=1.0, description="Confidence in [0,1]"),
@@ -132,9 +92,9 @@ class ContractOrganizer:
                 FieldResultStringModel,
                 Field(..., description="Amendment date if applicable, else null"),
             ),
-            parties=(
-                FieldResultPartiesModel,
-                Field(..., description="List of party names with roles"),
+            amendment_number=(
+                FieldResultStringModel,
+                Field(..., description="Amendment number if applicable, else null"),
             ),
             version_type=(
                 FieldResultStringModel,
@@ -177,24 +137,21 @@ class ContractOrganizer:
                 lines: list[str] = []
                 if self.config.lookup_contract_types:
                     lines.append("ALLOWED CONTRACT_TYPE codes (return the code exactly):")
+                    lines.append("code | label | description")
                     for lv in self.config.lookup_contract_types:
-                        desc = f" - {lv.description}" if lv.description else ""
-                        label = f" ({lv.label})" if lv.label else ""
-                        lines.append(f"- {lv.key}{label}{desc}")
+                        lines.append(f"{lv.key} | {lv.label} | {lv.description}")
                     lines.append("")
                 if self.config.lookup_version_types:
                     lines.append("ALLOWED VERSION_TYPE codes (return the code exactly):")
+                    lines.append("code | label | description")
                     for lv in self.config.lookup_version_types:
-                        desc = f" - {lv.description}" if lv.description else ""
-                        label = f" ({lv.label})" if lv.label else ""
-                        lines.append(f"- {lv.key}{label}{desc}")
+                        lines.append(f"{lv.key} | {lv.label} | {lv.description}")
                     lines.append("")
                 if self.config.lookup_statuses:
                     lines.append("ALLOWED STATUS codes (return the code exactly):")
+                    lines.append("code | label | description")
                     for lv in self.config.lookup_statuses:
-                        desc = f" - {lv.description}" if lv.description else ""
-                        label = f" ({lv.label})" if lv.label else ""
-                        lines.append(f"- {lv.key}{label}{desc}")
+                        lines.append(f"{lv.key} | {lv.label} | {lv.description}")
                     lines.append("")
                 return "\n".join(lines)
 
@@ -205,13 +162,13 @@ class ContractOrganizer:
                 "Return STRICTLY a JSON object matching the provided schema.\n"
                 "For each field, include value, confidence in [0,1], and a short explanation.\n"
                 "- contract_type: the category (e.g., NDA, employment, lease).\n"
-                "- contract_date: the main date associated to the contract (usually the effective or execution date) in the format YYYY-MM-DD.\n"
+                "- contract_date: the main date associated to the contract (usually the effective or execution date) in the format YYYY-MM-DD. When the document is an amendment, the contract date is the date of the initial contract (or the last amended and restated contract)\n"
                 "- amendment_date: only if the document is an amendment, else null in the format YYYY-MM-DD.\n"
-                "- parties: list of party names with their roles (e.g., Seller/Buyer, Lender/Borrower).\n"
+                "- amendment_number: only if the document is an amendment and if mentioned in the document, else null.\n"
                 "- version_type: one of [initial contract, amended and restated, amendment].\n"
                 "- status: one of [draft, executed, signed].\n"
                 + (
-                    "\nWhen ALLOWED codes are provided below, you MUST choose one of those codes and return it exactly as the 'value'.\n"
+                    "\nUse the ALLOWED codes provided below, you MUST choose one of those codes and return it exactly as the 'value' or 'role' for the parties.\n"
                     "Do NOT invent new values.\n\n" + allowed_section
                     if allowed_section
                     else ""
@@ -264,39 +221,15 @@ class ContractOrganizer:
                     explanation=expl if isinstance(expl, str) and expl.strip() else None,
                 )
 
-            def _normalize_parties_field(source: dict | None = data) -> FieldResultParties:
-                item = (source or {}).get("parties") or {}
-                val = item.get("value")
-                conf = item.get("confidence")
-                expl = item.get("explanation")
-                parties: list[PartyRole] = []
-                if isinstance(val, list):
-                    for it in val:
-                        name = (it or {}).get("name") if isinstance(it, dict) else None
-                        role = (it or {}).get("role") if isinstance(it, dict) else None
-                        if isinstance(name, str) and name.strip():
-                            parties.append(
-                                PartyRole(name=name, role=role if isinstance(role, str) else None)
-                            )
-                if isinstance(conf, (int, float)):
-                    conf_f = max(0.0, min(1.0, float(conf)))
-                else:
-                    conf_f = None
-                return FieldResultParties(
-                    value=parties or None,
-                    confidence=conf_f,
-                    explanation=expl if isinstance(expl, str) and expl.strip() else None,
-                )
-
             organized.append(
                 OrganizedDocumentMetadata(
                     filename=filename,
                     contract_type=_normalize_str_field("contract_type"),
                     contract_date=_normalize_str_field("contract_date"),
                     amendment_date=_normalize_str_field("amendment_date"),
+                    amendment_number=_normalize_str_field("amendment_number"),
                     version_type=_normalize_str_field("version_type"),
                     status=_normalize_str_field("status"),
-                    parties=_normalize_parties_field(),
                 )
             )
 

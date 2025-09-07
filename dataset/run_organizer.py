@@ -3,7 +3,6 @@ from __future__ import annotations
 import argparse
 import csv
 from pathlib import Path
-from typing import Sequence
 
 from contract_ai_core import (
     ContractOrganizer,
@@ -11,24 +10,6 @@ from contract_ai_core import (
     Paragraph,
 )
 from utilities import load_lookup_values
-
-
-def _format_parties(parties: Sequence[dict] | None) -> str:
-    if not parties:
-        return ""
-    items: list[str] = []
-    for p in parties:
-        if not isinstance(p, dict):
-            continue
-        name = (p.get("name") or "").strip()
-        role = (p.get("role") or "").strip()
-        if not name:
-            continue
-        if role:
-            items.append(f"{name} | {role}")
-        else:
-            items.append(name)
-    return "; ".join(items)
 
 
 def main() -> None:
@@ -62,11 +43,14 @@ def main() -> None:
         print(f"No text files found in {docs_dir}")
         return
 
+    # temperature for gpt-5 is different from other models
+    temperature = 1.0 if "gpt-5" in model_name else 0.2
+
     organizer = ContractOrganizer(
         ContractOrganizerConfig(
             provider=provider,
             model=model_name,
-            temperature=0.2,
+            temperature=temperature,
             max_tokens=8000,
             lookup_contract_types=load_lookup_values("CONTRACT_TYPE"),
             lookup_version_types=load_lookup_values("VERSION_TYPE"),
@@ -88,15 +72,15 @@ def main() -> None:
         "amendment_date",
         "amendment_date_confidence",
         "amendment_date_explanation",
+        "amendment_number",
+        "amendment_number_confidence",
+        "amendment_number_explanation",
         "version_type",
         "version_type_confidence",
         "version_type_explanation",
         "status",
         "status_confidence",
         "status_explanation",
-        "parties",
-        "parties_confidence",
-        "parties_explanation",
     ]
 
     if out_path.exists():
@@ -146,17 +130,15 @@ def main() -> None:
                 "amendment_date": res.amendment_date.value or "",
                 "amendment_date_confidence": pct(res.amendment_date.confidence),
                 "amendment_date_explanation": res.amendment_date.explanation or "",
+                "amendment_number": res.amendment_number.value or "",
+                "amendment_number_confidence": pct(res.amendment_number.confidence),
+                "amendment_number_explanation": res.amendment_number.explanation or "",
                 "version_type": res.version_type.value or "",
                 "version_type_confidence": pct(res.version_type.confidence),
                 "version_type_explanation": res.version_type.explanation or "",
                 "status": res.status.value or "",
                 "status_confidence": pct(res.status.confidence),
                 "status_explanation": res.status.explanation or "",
-                "parties": _format_parties(
-                    [{"name": p.name, "role": p.role} for p in (res.parties.value or [])]
-                ),
-                "parties_confidence": pct(res.parties.confidence),
-                "parties_explanation": res.parties.explanation or "",
             }
 
     # Write back the full CSV

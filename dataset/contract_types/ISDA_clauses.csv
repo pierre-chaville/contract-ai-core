@@ -22,6 +22,7 @@ nav_trigger,20,NAV Trigger (for Funds),Termination event if a fund's Net Asset V
 asset_floor,21,AUM/Asset Floor,Termination event if assets under management fall below an agreed level.
 investor_redemptions,22,Investor Redemptions,"Termination event if redemptions exceed a set percentage (e.g., 25, 30% of NAV in a quarter)."
 key_person,23,Key Person Event,"Termination event if a named portfolio manager (or team) departs, termination can be triggered."
+change_investment_manager,23,Change of investment manager,Termination event if there is a change of investment manager
 breach_investment_guidelines,24,Breach of Investment Guidelines,"Termination event if Material breach of agreed trading restrictions (e.g., leverage caps, concentration limits)."
 fund_termination,25,Fund Termination / Liquidation,Termination event if the fund itself winds up or enters liquidation.
 portfolio_trigger,26,Portfolio/Asset Trigger,"Termination event linked to performance or impairment of a specified pool of assets, often in structured finance swaps."
@@ -33,10 +34,12 @@ sanctions_event,31,Sanctions Event,"Termination event occurs if a party becomes 
 non_posting_of_collateral,32,Non-Posting of Collateral,Termination event If a party fails to post collateral as agreed (sometimes treated as a Termination Event instead of Event of Default).
 other_termination_events,33,Other Termination events,Termination event not listed above
 failure_to_pay,34,Failure to pay or deliver,Failure to pay or deliver
+tax_representations,35,Tax representations,Part 2. Tax representations
 payer_representations,35,Payer Representations,Party representations about eligibility for tax exemptions.
 payee_representations,36,Payee Representations,Party representations about eligibility for tax exemptions.
 delivery_of_tax_forms,37,Delivery of Tax Forms,"Obligations to deliver forms such as IRS W-8, W-9, etc."
 tax_provisions,38,Tax Provisions,Elections on tax gross-up obligations and exemptions.
+documents,39,Documents,Part 3. Documents
 corporate_documents,39,Corporate Documents,"Charter documents, certificates of incumbency, and authorizations."
 financial_statements,40,Financial Statements,Agreement to provide audited or unaudited financials periodically.
 legal_opinions,41,Legal Opinions,Opinions from counsel regarding enforceability or capacity.

@@ -187,21 +187,6 @@ def main() -> None:
         )
         show_field("Status", "status", "status_confidence", "status_explanation")
 
-        parties = str(current_row.get("parties", "") or "")
-        p_conf = current_row.get("parties_confidence", None)
-        if pd.isna(p_conf):
-            p_conf = None
-        try:
-            p_conf_pct = format_pct(float(p_conf) / 100.0) if p_conf is not None else ""
-        except Exception:
-            p_conf_pct = ""
-        p_expl = current_row.get("parties_explanation", "")
-        st.markdown("**Parties:**")
-        st.text(parties)
-        st.caption(
-            (f"confidence: {p_conf_pct}" if p_conf_pct else "") + (f" — {p_expl}" if p_expl else "")
-        )
-
 
 if __name__ == "__main__":
     main()

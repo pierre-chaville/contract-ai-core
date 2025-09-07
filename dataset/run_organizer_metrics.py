@@ -63,27 +63,10 @@ def normalize_date(value: str) -> str:
     return normalize_relaxed(v)
 
 
-def normalize_parties(value: str) -> str:
-    if value is None:
-        return ""
-    # Expect format: "name | role; name2 | role2"; be tolerant
-    items = []
-    for chunk in str(value).split(";"):
-        s = chunk.strip()
-        if not s:
-            continue
-        items.append(normalize_relaxed(s))
-    # Sort to reduce ordering differences
-    items.sort()
-    return ";".join(items)
-
-
 def relaxed_equal(field: str, gold: str, pred: str) -> bool:
     f = field.strip().lower()
     if f in ("contract_date", "amendment_date"):
         return normalize_date(gold) == normalize_date(pred)
-    if f == "parties":
-        return normalize_parties(gold) == normalize_parties(pred)
     # default relaxed compare
     return normalize_relaxed(gold) == normalize_relaxed(pred)
 
@@ -133,9 +116,9 @@ def main() -> None:
         "contract_type",
         "contract_date",
         "amendment_date",
+        "amendment_number",
         "version_type",
         "status",
-        "parties",
     ]
 
     # Aggregates per field
