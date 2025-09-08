@@ -3,6 +3,7 @@ from __future__ import annotations
 import asyncio
 import logging
 import random
+import re
 from dataclasses import dataclass
 from typing import Any, Optional, cast
 
@@ -76,6 +77,16 @@ class DatapointExtractor:
 
         scopes: dict[ScopeId, tuple[_ExtractionScope, list[int]]] = {}
         scope_to_datapoints: dict[ScopeId, list[int]] = {}
+
+        # Build lookup for structures by key for complex object datapoints
+        structures_by_key: dict[str, Any] = {}
+        try:
+            for s in getattr(template, "structures", []) or []:
+                key = getattr(s, "structure_key", None)
+                if isinstance(key, str) and key:
+                    structures_by_key[key] = s
+        except Exception:
+            structures_by_key = {}
 
         # Assign datapoints to scopes
         for dp_idx, dp in enumerate(template.datapoints):
@@ -168,49 +179,173 @@ class DatapointExtractor:
             # Structured output model for this scope: each field returns {value, confidence, explanation}
             def _map_data_type_to_py_type(dt: Any | None) -> Any:
                 dt_norm = (dt or "").strip().lower()
-                if dt_norm in ("str", "string", "text"):
+                if dt_norm == "str":
                     return str
-                if dt_norm in ("bool", "boolean"):
+                if dt_norm == "bool":
                     return bool
-                if dt_norm in ("int", "integer"):
+                if dt_norm == "int":
                     return int
-                if dt_norm in ("float", "number", "double"):
+                if dt_norm == "float":
                     return float
-                if dt_norm in ("date", "datetime"):
+                if dt_norm == "date":
                     # Dates are returned as ISO strings (YYYY-MM-DD)
                     return str
                 if dt_norm == "enum":
                     # enums should return their code as a string
                     return str
+                if dt_norm == "list[str]":
+                    return list[str]
+                if dt_norm == "list[bool]":
+                    return list[bool]
+                if dt_norm == "list[int]":
+                    return list[int]
+                if dt_norm == "list[float]":
+                    return list[float]
+                if dt_norm == "list[date]":
+                    # Dates are returned as ISO strings (YYYY-MM-DD)
+                    return list[str]
+                if dt_norm == "list[enum]":
+                    # enums should return their code as a string
+                    return list[str]
                 return str
+
+            def _parse_structure_type(dt: Any | None) -> tuple[str, str | None]:
+                """Return (kind, structure_key) where kind in {simple, object, list_object}. Tolerates spaces and optional brackets."""
+                raw = (dt or "").strip().lower()
+                # list[object:struct]
+                m = re.match(r"^list\[\s*object\s*:\s*\[?([a-z0-9_\-]+)\]?\s*\]$", raw)
+                if m:
+                    return "list_object", m.group(1)
+                # object:struct
+                m = re.match(r"^object\s*:\s*\[?([a-z0-9_\-]+)\]?$", raw)
+                if m:
+                    return "object", m.group(1)
+                return "simple", None
+
+            def _map_element_type(el_type: str | None) -> Any:
+                et = (el_type or "").strip().lower()
+                # Reuse the scalar/list mapping above
+                return _map_data_type_to_py_type(et)
 
             # Store dynamic field definitions for create_model; Field(...) returns FieldInfo at runtime
             # Use Any for the tuple elements to satisfy mypy
             fields: dict[str, tuple[Any, Any]] = {}
             for dp in datapoints:
                 desc = dp.description or f"Extract value for '{dp.title}'."
-                py_type = _map_data_type_to_py_type(getattr(dp, "data_type", None))
-                # Create a typed FieldResult model per datapoint so `value` matches expected type
-                FieldResultModel: type[BaseModel] = create_model(
-                    f"FieldResult_{dp.key}",
-                    value=(
-                        Optional[py_type],
-                        Field(default=None, description="Extracted value or null if not found."),
-                    ),
-                    confidence=(
-                        Optional[float],
-                        Field(
-                            default=None,
-                            description="Model confidence in [0,1]; null if not available.",
-                            ge=0.0,
-                            le=1.0,
+                raw_dt = getattr(dp, "data_type", None)
+                kind, struct_key = _parse_structure_type(raw_dt)
+
+                if (
+                    kind in ("object", "list_object")
+                    and struct_key
+                    and (struct_key in structures_by_key)
+                ):
+                    # Build nested result model per element
+                    struct_def = structures_by_key[struct_key]
+                    # Create per-element result models
+                    element_fields: dict[str, tuple[type[Any], Any]] = {}
+                    for el in getattr(struct_def, "elements", []) or []:
+                        el_desc = (
+                            getattr(el, "description", None)
+                            or f"Extract '{getattr(el, 'title', getattr(el, 'key', ''))}'."
+                        )
+                        el_py_type = _map_element_type(getattr(el, "data_type", None))
+                        ElementResultModel: type[BaseModel] = create_model(
+                            f"FieldResult_{dp.key}_{getattr(el, 'key', 'element')}",
+                            value=(
+                                Optional[el_py_type],
+                                Field(
+                                    default=None,
+                                    description="Extracted value or null if not found.",
+                                ),
+                            ),
+                            confidence=(
+                                Optional[float],
+                                Field(
+                                    default=None,
+                                    description="Model confidence in [0,1]; null if not available.",
+                                    ge=0.0,
+                                    le=1.0,
+                                ),
+                            ),
+                            explanation=(
+                                Optional[str],
+                                Field(
+                                    default=None,
+                                    description="Short rationale for the extracted value.",
+                                ),
+                            ),
+                        )
+                        element_fields[getattr(el, "key", "element")] = (
+                            ElementResultModel,
+                            Field(..., description=el_desc),
+                        )
+
+                    # Object model aggregating element results
+                    ObjectModel: type[BaseModel] = create_model(
+                        f"Object_{dp.key}_{struct_key}",
+                        **element_fields,  # type: ignore[arg-type]
+                    )
+
+                    # FieldResult model for datapoint: value is object or list[object]
+                    if kind == "list_object":
+                        value_type: Any = list[ObjectModel]  # type: ignore[valid-type]
+                    else:
+                        value_type = ObjectModel
+
+                    FieldResultModel: type[BaseModel] = create_model(
+                        f"FieldResult_{dp.key}",
+                        value=(
+                            Optional[value_type],
+                            Field(
+                                default=None,
+                                description="Extracted object(s) or null if not found.",
+                            ),
                         ),
-                    ),
-                    explanation=(
-                        Optional[str],
-                        Field(default=None, description="Short rationale for the extracted value."),
-                    ),
-                )
+                        confidence=(
+                            Optional[float],
+                            Field(
+                                default=None,
+                                description="Model confidence in [0,1]; null if not available.",
+                                ge=0.0,
+                                le=1.0,
+                            ),
+                        ),
+                        explanation=(
+                            Optional[str],
+                            Field(
+                                default=None, description="Short rationale for the extracted value."
+                            ),
+                        ),
+                    )
+                else:
+                    # Simple/enum/list scalar types
+                    py_type = _map_data_type_to_py_type(raw_dt)
+                    FieldResultModel = create_model(
+                        f"FieldResult_{dp.key}",
+                        value=(
+                            Optional[py_type],
+                            Field(
+                                default=None, description="Extracted value or null if not found."
+                            ),
+                        ),
+                        confidence=(
+                            Optional[float],
+                            Field(
+                                default=None,
+                                description="Model confidence in [0,1]; null if not available.",
+                                ge=0.0,
+                                le=1.0,
+                            ),
+                        ),
+                        explanation=(
+                            Optional[str],
+                            Field(
+                                default=None, description="Short rationale for the extracted value."
+                            ),
+                        ),
+                    )
+
                 fields[dp.key] = (FieldResultModel, Field(..., description=desc))
 
             _field_defs = cast(dict[str, tuple[type[Any], Any]], fields)
@@ -233,24 +368,42 @@ class DatapointExtractor:
                 title = dp.title or dp.key
                 desc = dp.description or ""
                 data_type = dp.data_type or ""
-                if dp.data_type == "enum":
+                kind, struct_key = _parse_structure_type(data_type)
+                if (dp.data_type or "") == "enum":
                     data_type = f"enum: {dp.enum_key}"
+                else:
+                    # Preserve original string for specs in case of structure
+                    if kind == "object" and struct_key:
+                        data_type = f"object:{struct_key}"
+                    elif kind == "list_object" and struct_key:
+                        data_type = f"list[object:{struct_key}]"
                 field_specs.append(
                     f"- {dp.key}"
                     + (f" [{data_type}]" if data_type else "")
                     + (f": {desc}" if desc else "")
                 )
 
-            # ENUMS section: include any enum lists referenced by datapoints in this scope
+            # ENUMS section: include any enum lists referenced by datapoints (and structure elements) in this scope
             enums_text = ""
             template_enums = getattr(template, "enums", None)
             if template_enums:
                 enum_by_key = {e.key: e for e in template_enums}
                 enum_keys_set: set[str] = set()
                 for dp in datapoints:
+                    # direct enum on datapoint
                     ek = getattr(dp, "enum_key", None)
                     if isinstance(ek, str) and ek:
                         enum_keys_set.add(ek)
+                    # if structure type, include enum keys from its elements
+                    knd, skey = _parse_structure_type(getattr(dp, "data_type", None))
+                    if skey and skey in structures_by_key:
+                        try:
+                            for el in getattr(structures_by_key[skey], "elements", []) or []:
+                                el_ek = getattr(el, "enum_key", None)
+                                if isinstance(el_ek, str) and el_ek:
+                                    enum_keys_set.add(el_ek)
+                        except Exception:
+                            pass
                 enum_keys = sorted(enum_keys_set)
                 enum_lines: list[str] = []
                 for ek in enum_keys:
@@ -367,13 +520,6 @@ class DatapointExtractor:
             prompt = job["prompt"]  # type: ignore[index]
             datapoints = job["datapoints"]  # type: ignore[index]
             evidence = job["evidence"]  # type: ignore[index]
-
-            # print('--------------------------------')
-            # print('OutputModel', OutputModel.model_json_schema())
-            # print('datapoints', [dp.key for dp in datapoints])
-            # print('evidence', evidence)
-            # print('prompt', prompt)
-            # print('--------------------------------')
 
             structured_llm = llm.with_structured_output(
                 OutputModel, temperature=temperature, max_tokens=8000

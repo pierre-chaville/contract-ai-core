@@ -1,0 +1,10 @@
+structure_key,key,sort_order,title,data_type,enum_key,description
+rating_trigger,party,1,Party,enum,PARTY,Date of the contract
+rating_trigger,agency,2,Rating agency,str,,Name of party A
+rating_trigger,debt_type,3,Debt type,str,,Name of party B
+rating_trigger,debt_maturity,4,Debt maturity,str,,Specified entity Party A (null if none or not applicable)
+rating_trigger,threshold,5,Threshold,str,,Specified entity Party B (null if none or not applicable)
+nav_decline,party,1,Party,enum,PARTY,Party
+nav_decline,period_from,7,Period from,str,,Period from
+nav_decline,period_to,8,Period to,str,,Period to
+nav_decline,decline,9,Decline percentage,float,,Decline percentage

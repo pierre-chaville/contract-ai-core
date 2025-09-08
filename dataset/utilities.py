@@ -15,12 +15,15 @@ def load_template(template_key: str) -> dict:
     csv_path_enums = folder_path / f"{template_key}_enums.csv"
     csv_path_datapoints = folder_path / f"{template_key}_datapoints.csv"
     csv_path_guidelines = folder_path / f"{template_key}_guidelines.csv"
+    csv_path_structures = folder_path / f"{template_key}_structures.csv"
+    csv_path_structure_elements = folder_path / f"{template_key}_structure_elements.csv"
 
     model = json.loads(open(json_path, encoding="utf-8").read())
     model["clauses"] = []
     model["enums"] = []
     model["datapoints"] = []
     model["guidelines"] = []
+    model["structures"] = []
 
     # Read CSV with tolerant decoding
     df = pd.read_csv(csv_path_clauses, encoding="utf-8")
@@ -100,9 +103,9 @@ def load_template(template_key: str) -> dict:
         datapoint_key = row.get("key")
         datapoint_title = row.get("title")
         datapoint_description = row.get("description")
+        datapoint_required = row.get("required")
         datapoint_data_type = row.get("data_type")
         datapoint_enum_key = row.get("enum_key")
-        datapoint_enum_multi_select = row.get("enum_multi_select")
         datapoint_scope = row.get("scope")
         datapoint_clause_keys = row.get("clause_keys")
         datapoint_sort_order = row.get("sort_order")
@@ -128,9 +131,9 @@ def load_template(template_key: str) -> dict:
                 "description": (
                     None if pd.isna(datapoint_description) else str(datapoint_description)
                 ),
+                "required": bool(datapoint_required),
                 "data_type": str(datapoint_data_type),
                 "enum_key": str(datapoint_enum_key),
-                "enum_multi_select": bool(datapoint_enum_multi_select),
                 "scope": str(datapoint_scope),
                 "clause_keys": (
                     None
@@ -220,6 +223,98 @@ def load_template(template_key: str) -> dict:
                 "sort_order": gl_sort_order_val,
             }
         )
+
+    # Load structures and structure elements if present
+    try:
+        if csv_path_structures.exists():
+            df_structs = pd.read_csv(csv_path_structures, encoding="utf-8")
+            df_structs.columns = [str(c).strip().lstrip("\ufeff") for c in df_structs.columns]
+        else:
+            df_structs = pd.DataFrame(columns=["structure_key", "title", "description"])
+    except Exception:
+        print("error loading structures")
+        df_structs = pd.DataFrame(columns=["structure_key", "title", "description"])
+
+    try:
+        if csv_path_structure_elements.exists():
+            df_elems = pd.read_csv(csv_path_structure_elements, encoding="utf-8")
+            df_elems.columns = [str(c).strip().lstrip("\ufeff") for c in df_elems.columns]
+        else:
+            df_elems = pd.DataFrame(
+                columns=[
+                    "structure_key",
+                    "key",
+                    "title",
+                    "description",
+                    "data_type",
+                    "required",
+                    "enum_key",
+                    "sort_order",
+                ]
+            )
+    except Exception:
+        print("error loading structure elements")
+        df_elems = pd.DataFrame(
+            columns=[
+                "structure_key",
+                "key",
+                "title",
+                "description",
+                "data_type",
+                "required",
+                "enum_key",
+                "sort_order",
+            ]
+        )
+
+    if not df_structs.empty:
+        # Group elements by structure_key
+        elems_by_struct: dict[str, list[dict]] = {}
+        for _, erow in df_elems.iterrows():
+            s_key = (erow.get("structure_key") or "").strip()
+            if not s_key:
+                continue
+            # Coerce types
+            e_sort = erow.get("sort_order")
+            try:
+                e_sort_val = (
+                    None
+                    if pd.isna(e_sort) or str(e_sort).strip() == ""
+                    else int(float(str(e_sort)))
+                )
+            except Exception:
+                e_sort_val = None
+            elems_by_struct.setdefault(s_key, []).append(
+                {
+                    "structure_key": s_key,
+                    "key": (erow.get("key") or "").strip(),
+                    "title": (erow.get("title") or "").strip(),
+                    "description": None
+                    if pd.isna(erow.get("description"))
+                    else str(erow.get("description")),
+                    "data_type": (erow.get("data_type") or "string").strip(),
+                    "required": bool(erow.get("required"))
+                    if not pd.isna(erow.get("required"))
+                    else False,
+                    "enum_key": (str(erow.get("enum_key")) or None),
+                    "sort_order": e_sort_val,
+                }
+            )
+
+        for _, srow in df_structs.iterrows():
+            s_key = (srow.get("structure_key") or "").strip()
+            if not s_key:
+                continue
+            model["structures"].append(
+                {
+                    "structure_key": s_key,
+                    "title": (srow.get("title") or "").strip(),
+                    "description": None
+                    if pd.isna(srow.get("description"))
+                    else str(srow.get("description")),
+                    "elements": elems_by_struct.get(s_key, []),
+                }
+            )
 
     return model
 

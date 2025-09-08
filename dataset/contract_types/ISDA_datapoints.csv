@@ -1,5 +1,5 @@
-key,sort_order,title,data_type,enum_key,enum_muti_select,scope,clause_keys,description
-date,1,Date of the contract,date,,,beginning,,Date of the contract
+key,sort_order,title,data_type,enum_key,required,scope,clause_keys,description
+date,1,Date of the contract,date,,FALSE,beginning,,Date of the contract
 party_A,2,Party A,str,,FALSE,beginning,,Name of party A
 party_B,3,party_B,str,,FALSE,beginning,,Name of party B
 specified_entity_A,4,Specified entity Party A,str,,FALSE,clause,specified_entity,Specified entity Party A (null if none or not applicable)
@@ -28,8 +28,10 @@ process_agent_B,26,Process agent for party B,bool,,FALSE,clause,process_agent,Is
 process_agent_name_B,27,Name of process agent for party B,str,,FALSE,clause,process_agent,Name of process agent for Party B if applicable
 process_agent_address_B,28,Address of process agent for party B,str,,FALSE,clause,process_agent,Address of process agent for Party B if applicable
 multibranch_party_A,29,Party A is a Multibranch party,bool,,FALSE,clause,multibranch_party,is Party A a Multibranch party?
-multibranch_party_A_offices,30,Party A offices,str,,FALSE,clause,multibranch_party,offices for  Party A when a Multibranch party
+multibranch_party_A_offices,30,Party A offices,list[str],,FALSE,clause,multibranch_party,list of offices for  Party A when a Multibranch party
 multibranch_party_B,31,Party B is a Multibranch party,bool,,FALSE,clause,multibranch_party,is Party B a Multibranch party ?
-multibranch_party_B_offices,32,Party B offices,str,,FALSE,clause,multibranch_party,offices for  Party B when a Multibranch party
-calculation_agent,33,Party for calculation agent,enum,CALCUTAION_PARTY,FALSE,clause,calculation_agent,Party for calculation agent in business as usual situations
+multibranch_party_B_offices,32,Party B offices,list[str],,FALSE,clause,multibranch_party,list of offices for  Party B when a Multibranch party
+calculation_agent,33,Party for calculation agent,enum,PARTY,FALSE,clause,calculation_agent,Party for calculation agent in business as usual situations
 governing_law,34,Governing Law,enum,LAW,FALSE,clause,governing_law,Governing Law
+rating_triggers,35,Rating triggers,list[object:rating_triggers],,FALSE,clause,credit_rating_downgrade,Rating downgrade triggers
+nav_declines,36,Net asset value declines,list[object:nav_decline],,FALSE,clause,nav_trigger,NAV triggers

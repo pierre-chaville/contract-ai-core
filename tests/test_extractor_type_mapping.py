@@ -20,6 +20,7 @@ def _template_with_types() -> ContractTypeTemplate:
             DatapointDefinition(key="e", title="E", data_type="enum", sort_order=5),
         ],
         guidelines=[],
+        structures=[],
         enums=[],
     )
 

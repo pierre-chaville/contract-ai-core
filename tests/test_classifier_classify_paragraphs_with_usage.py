@@ -18,6 +18,7 @@ def test_classify_paragraphs_with_usage_basic(monkeypatch: pytest.MonkeyPatch) -
         ],
         datapoints=[],
         guidelines=[],
+        structures=[],
         enums=None,
     )
 

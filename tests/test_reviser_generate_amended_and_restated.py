@@ -20,6 +20,7 @@ def test_generate_amended_and_restated_applies_valid_changes_and_skips_invalid()
         clauses=[ClauseDefinition(key="a", title="A")],
         datapoints=[DatapointDefinition(key="x", title="X")],
         guidelines=[],
+        structures=[],
         enums=[],
     )
 

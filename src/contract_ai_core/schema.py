@@ -84,10 +84,10 @@ class DatapointDefinition(FrozenBaseModel):
         default="string",
         description="Logical data type: e.g., 'string', 'number', 'date', 'party', 'money'.",
     )
-    # required: bool = Field(
-    #     default=False,
-    #     description="Whether this datapoint is required for this contract type.",
-    # )
+    required: bool = Field(
+        default=False,
+        description="Whether this datapoint is required for this contract type.",
+    )
     scope: ExtractionScope = Field(
         default=ExtractionScope.CLAUSE,
         description="Where in the document the datapoint was extracted from.",
@@ -100,13 +100,61 @@ class DatapointDefinition(FrozenBaseModel):
             "one of the enum option codes."
         ),
     )
-    enum_multi_select: bool = Field(
-        default=False,
-        description="Whether multiple enum codes can be selected for this datapoint.",
-    )
     clause_keys: Sequence[str] | None = Field(
         default=None,
         description="Clause key(s) where this datapoint is typically located.",
+    )
+    sort_order: int | None = Field(
+        default=None,
+        description="Optional ordering hint for display; lower sorts first.",
+    )
+
+
+class StructureDefinition(FrozenBaseModel):
+    """Definition of a structure used to extract a datapoint from a contract."""
+
+    structure_key: str = Field(
+        ..., description="Stable key identifier for the structure (e.g., 'rating_trigger')."
+    )
+    title: str = Field(..., description="Human-readable structure name (e.g., 'Effective Date').")
+    description: str | None = Field(
+        default=None,
+        description="Optional guidance on how to interpret or extract this structure.",
+    )
+    elements: Sequence[StructureElementDefinition] = Field(
+        ..., description="List of elements of the structure."
+    )
+
+
+class StructureElementDefinition(FrozenBaseModel):
+    """Definition of an element of a structure used to extract a datapoint from a contract."""
+
+    structure_key: str = Field(
+        ..., description="Stable key identifier for the structure (e.g., 'rating_trigger')."
+    )
+    key: str = Field(
+        ..., description="Stable key identifier for the element (e.g., 'effective_date')."
+    )
+    title: str = Field(..., description="Human-readable element name (e.g., 'Effective Date').")
+    description: str | None = Field(
+        default=None,
+        description="Optional guidance on how to interpret or extract this element.",
+    )
+    data_type: str = Field(
+        default="string",
+        description="Logical data type: e.g., 'str', 'int', 'date', 'float', 'enum', 'list[str]', 'list[int]', 'list[date]', 'list[float]', 'list[enum]'.",
+    )
+    required: bool = Field(
+        default=False,
+        description="Whether this element is required for this contract type.",
+    )
+    # Optional enum constraints for structured outputs
+    enum_key: str | None = Field(
+        default=None,
+        description=(
+            "If set, references a named enum in template.enums. When present, outputs should use "
+            "one of the enum option codes."
+        ),
     )
     sort_order: int | None = Field(
         default=None,
@@ -162,6 +210,9 @@ class ContractTypeTemplate(FrozenBaseModel):
     )
     datapoints: Sequence[DatapointDefinition] = Field(
         ..., description="List of datapoint definitions to extract for this contract type."
+    )
+    structures: Sequence[StructureDefinition] = Field(
+        ..., description="List of structure definitions to extract for this contract type."
     )
     guidelines: Sequence[GuidelineDefinition] = Field(
         ..., description="List of guideline definitions for this contract type."

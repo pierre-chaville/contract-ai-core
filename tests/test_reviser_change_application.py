@@ -19,6 +19,7 @@ def test_materialize_changes_bottom_up_ordering() -> None:
         clauses=[ClauseDefinition(key="a", title="A")],
         datapoints=[DatapointDefinition(key="x", title="X")],
         guidelines=[],
+        structures=[],
         enums=[],
     )
     # Base contract paragraphs

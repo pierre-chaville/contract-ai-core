@@ -35,6 +35,7 @@ def test_extract_with_mocked_backend(monkeypatch: pytest.MonkeyPatch) -> None:
             ),
         ],
         guidelines=[],
+        structures=[],
         enums=None,
     )
 
