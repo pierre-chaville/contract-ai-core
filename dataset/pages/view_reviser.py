@@ -12,11 +12,18 @@ from pathlib import Path
 
 import pandas as pd
 import streamlit as st
-from contract_ai_core.schema import split_text_into_paragraphs  # type: ignore
+from contract_ai_core.utilities import split_text_into_paragraphs  # type: ignore
 
 
 def get_repo_root() -> Path:
-    return Path(__file__).resolve().parents[1]
+    # Find the 'dataset' directory in parents, then return its parent
+    here = Path(__file__).resolve()
+    dataset_dir = None
+    for p in here.parents:
+        if p.name == "dataset":
+            dataset_dir = p
+            break
+    return dataset_dir.parent if dataset_dir else here.parents[2]
 
 
 def get_instruction_models() -> list[str]:

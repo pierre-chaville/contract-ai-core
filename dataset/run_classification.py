@@ -57,7 +57,7 @@ def main() -> None:
 
     repo_root = Path(__file__).resolve().parents[1]
 
-    input_dir = repo_root / "dataset" / "documents" / template_key
+    input_dir = repo_root / "dataset" / "documents" / "contracts" / template_key
     output_dir = repo_root / "dataset" / "output" / "clauses" / template_key / model_name
     output_dir.mkdir(parents=True, exist_ok=True)
 

@@ -26,7 +26,7 @@ def load_template(template_key: str) -> dict:
     model["structures"] = []
 
     # Read CSV with tolerant decoding
-    df = pd.read_csv(csv_path_clauses, encoding="utf-8")
+    df = pd.read_csv(csv_path_clauses, encoding="utf-8").fillna("")
 
     # Normalize column names (strip whitespace and BOM artefacts)
     df.columns = [str(c).strip().lstrip("\ufeff") for c in df.columns]
@@ -62,7 +62,7 @@ def load_template(template_key: str) -> dict:
         )
 
     # Read CSV with tolerant decoding
-    df_enums = pd.read_csv(csv_path_enums, encoding="utf-8")
+    df_enums = pd.read_csv(csv_path_enums, encoding="utf-8").fillna("")
 
     # Normalize column names (strip whitespace and BOM artefacts)
     df_enums.columns = [str(c).strip().lstrip("\ufeff") for c in df_enums.columns]
@@ -94,7 +94,7 @@ def load_template(template_key: str) -> dict:
         )
 
     # Read CSV with tolerant decoding
-    df = pd.read_csv(csv_path_datapoints, encoding="utf-8")
+    df = pd.read_csv(csv_path_datapoints, encoding="utf-8").fillna("")
 
     # Normalize column names (strip whitespace and BOM artefacts)
     df.columns = [str(c).strip().lstrip("\ufeff") for c in df.columns]
@@ -227,7 +227,7 @@ def load_template(template_key: str) -> dict:
     # Load structures and structure elements if present
     try:
         if csv_path_structures.exists():
-            df_structs = pd.read_csv(csv_path_structures, encoding="utf-8")
+            df_structs = pd.read_csv(csv_path_structures, encoding="utf-8").fillna("")
             df_structs.columns = [str(c).strip().lstrip("\ufeff") for c in df_structs.columns]
         else:
             df_structs = pd.DataFrame(columns=["structure_key", "title", "description"])
@@ -237,7 +237,7 @@ def load_template(template_key: str) -> dict:
 
     try:
         if csv_path_structure_elements.exists():
-            df_elems = pd.read_csv(csv_path_structure_elements, encoding="utf-8")
+            df_elems = pd.read_csv(csv_path_structure_elements, encoding="utf-8").fillna("")
             df_elems.columns = [str(c).strip().lstrip("\ufeff") for c in df_elems.columns]
         else:
             df_elems = pd.DataFrame(

@@ -1,9 +1,9 @@
 from __future__ import annotations
 
-"""Streamlit viewer for organizer results.
+"""Streamlit viewer for organizer results (moved under pages/).
 
 Browse results.csv by model, inspect original text and extracted metadata.
-Run: streamlit run dataset/view_organizer.py
+Appears in the Streamlit sidebar when running: streamlit run dataset/app.py
 """
 
 from pathlib import Path
@@ -14,7 +14,14 @@ import streamlit as st
 
 
 def get_repo_root() -> Path:
-    return Path(__file__).resolve().parents[1]
+    # Find the 'dataset' directory in parents, then return its parent
+    here = Path(__file__).resolve()
+    dataset_dir = None
+    for p in here.parents:
+        if p.name == "dataset":
+            dataset_dir = p
+            break
+    return dataset_dir.parent if dataset_dir else here.parents[2]
 
 
 def get_organizer_models() -> list[str]:

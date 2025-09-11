@@ -69,7 +69,7 @@ def main() -> None:
     provider = args.provider
 
     repo_root = Path(__file__).resolve().parents[1]
-    docs_dir = repo_root / "dataset" / "documents" / template_key
+    docs_dir = repo_root / "dataset" / "documents" / "contracts" / template_key
     cls_dir = repo_root / "dataset" / "output" / "clauses" / template_key / model_name
     cls_dir.mkdir(parents=True, exist_ok=True)
     output_dir = repo_root / "dataset" / "output" / "guidelines" / template_key / model_name

@@ -205,6 +205,14 @@ class ContractTypeTemplate(FrozenBaseModel):
     description: str | None = Field(
         ..., description="Optional description of the contract type template."
     )
+    prompt_scope_filter: str = Field(
+        ...,
+        description="This is the prompt scope filter for the contract type template.",
+    )
+    prompt_scope_amendment: str = Field(
+        ...,
+        description="This is the prompt scope filter for the amendment.",
+    )
     clauses: Sequence[ClauseDefinition] = Field(
         ..., description="List of clause definitions expected in this contract type."
     )
@@ -220,14 +228,6 @@ class ContractTypeTemplate(FrozenBaseModel):
     enums: Optional[Sequence[EnumDefinition]] = Field(
         default=None,
         description=("Rreusable enum definitions that datapoints can reference via 'enum_key'."),
-    )
-    prompt_scope_filter: str = Field(
-        ...,
-        description="This is the prompt scope filter for the contract type template.",
-    )
-    prompt_scope_amendment: str = Field(
-        ...,
-        description="This is the prompt scope filter for the amendment.",
     )
 
 
