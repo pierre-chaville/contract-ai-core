@@ -1,3 +1,4 @@
 structure_key,title,description
 rating_trigger,Rating trigger,"A rating trigger (party, agency, debt, threshold, ...)"
 nav_decline,Net asset value decline condition,"A net asset value decline condition (threshold, period, party, ...)"
+threshold_conditions,Threshold conditions,Threshold amount conditions

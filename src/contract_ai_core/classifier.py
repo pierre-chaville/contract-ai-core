@@ -168,6 +168,10 @@ class ClauseClassifier:
             "- <clause_id> is the numeric id of the clause from the provided list; use 0 if none/other.\n"
             "- <confidence> is an integer from 0 to 100 representing your confidence.\n"
             "- Do not include explanations or extra text. Only the lines in the specified format.\n"
+            "Rate your confidence from 0.0 to 1.0, where:\n"
+            "- 0.0 = No confidence, likely incorrect\n"
+            "- 0.5 = Moderate confidence, uncertain\n"
+            "- 1.0 = Very high confidence, almost certainly correct\n"
         )
 
         clauses_header = "CLAUSES (id: | title | description):\n" + clauses_block

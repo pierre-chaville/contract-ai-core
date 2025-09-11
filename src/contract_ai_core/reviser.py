@@ -87,6 +87,10 @@ class ContractReviser:
             "target section identifier in the base contract as a numbering string (e.g., 'Part 1 (c) (ii)'), "
             "a confidence in [0,1], and a brief explanation. If multiple discrete changes appear, split them into "
             "separate amendment items.\n"
+            "Rate your confidence from 0.0 to 1.0, where:\n"
+            "- 0.0 = No confidence, likely incorrect\n"
+            "- 0.5 = Moderate confidence, uncertain\n"
+            "- 1.0 = Very high confidence, almost certainly correct\n"
         )
         prompt = (
             instruction

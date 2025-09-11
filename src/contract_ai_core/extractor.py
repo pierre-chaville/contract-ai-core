@@ -360,6 +360,12 @@ class DatapointExtractor:
                 "- confidence: a float between 0 and 1, or null if you cannot judge.\n"
                 "- explanation: short rationale or source cue for the value.\n"
                 "For fields of type date, return the date in the format YYYY-MM-DD\n"
+                "Consider these guidelines for confidence level:\n"
+                "- 0.9-1.0: Information explicitly stated in source\n"
+                "- 0.7-0.8: Strong inference from available evidence  \n"
+                "- 0.5-0.6: Reasonable guess with some uncertainty\n"
+                "- 0.3-0.4: Low confidence, significant ambiguity\n"
+                "- 0.0-0.2: Very uncertain or likely incorrect\n"
             )
 
             # Provide a concise list of fields to extract (only essential info)

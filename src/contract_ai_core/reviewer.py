@@ -209,6 +209,10 @@ class GuidelineReviewer:
                 "- guideline_matched: true/false/null for the PRIMARY guideline.\n"
                 "- confidence: float 0..1 or null.\n"
                 "- explanation: brief justification referring to the text.\n"
+                "Rate your confidence from 0.0 to 1.0, where:\n"
+                "- 0.0 = No confidence, likely incorrect\n"
+                "- 0.5 = Moderate confidence, uncertain\n"
+                "- 1.0 = Very high confidence, almost certainly correct\n"
                 "Only use the provided text. Return STRICTLY the JSON for the schema.\n"
             )
 

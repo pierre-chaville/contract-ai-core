@@ -167,6 +167,12 @@ class ContractOrganizer:
                 "- amendment_number: only if the document is an amendment and if mentioned in the document, else null.\n"
                 "- version_type: one of [initial contract, amended and restated, amendment].\n"
                 "- status: one of [draft, executed, signed].\n"
+                "Rate your confidence from 0.0 to 1.0, where:\n"
+                "- 0.9-1.0: Information explicitly stated in source\n"
+                "- 0.7-0.8: Strong inference from available evidence  \n"
+                "- 0.5-0.6: Reasonable guess with some uncertainty\n"
+                "- 0.3-0.4: Low confidence, significant ambiguity\n"
+                "- 0.0-0.2: Very uncertain or likely incorrect\n"
                 + (
                     "\nUse the ALLOWED codes provided below, you MUST choose one of those codes and return it exactly as the 'value' or 'role' for the parties.\n"
                     "Do NOT invent new values.\n\n" + allowed_section

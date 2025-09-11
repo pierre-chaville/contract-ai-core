@@ -8,3 +8,7 @@ nav_decline,party,1,Party,enum,PARTY,Party
 nav_decline,period_from,7,Period from,str,,Period from
 nav_decline,period_to,8,Period to,str,,Period to
 nav_decline,decline,9,Decline percentage,float,,Decline percentage
+threshold_conditions,amount,10,amount,float,,amount for threshold amount
+threshold_conditions,currency,11,currency,str,,currency for threshold amount
+threshold_conditions,percent,12,percentage,float,,"percentage for threshold amount (in percentage, i.e. 3 for 3%)"
+threshold_conditions,percent_reference,13,percentage reference,enum,THRESHOLD_REFERENCE,reference of the percentage (if percentage)
