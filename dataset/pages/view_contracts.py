@@ -77,6 +77,27 @@ def load_template_dict(template_key: str) -> dict[str, Any]:
     return load_template(template_key)
 
 
+def split_text_with_core_util(text: str) -> list[str]:
+    # Prefer the core splitter from contract_ai_core.utilities for consistent paragraph indices
+    # Ensure repo src/ is on sys.path to import the package when running Streamlit directly
+    repo_root = get_repo_root()
+    src_dir = repo_root / "src"
+    if str(src_dir) not in sys.path:
+        sys.path.insert(0, str(src_dir))
+    try:
+        from contract_ai_core.utilities import split_text_into_paragraphs  # type: ignore
+
+        paras = split_text_into_paragraphs(text)
+        try:
+            # Paragraph objects have .text
+            return [getattr(p, "text", str(p)) for p in paras]
+        except Exception:
+            return [str(p) for p in paras]
+    except Exception:
+        # Fallback to simple split if core util import fails
+        return simple_split_paragraphs(text)
+
+
 def read_text_best_effort(path: Path) -> str:
     encodings = [
         "utf-8",
@@ -119,6 +140,20 @@ def load_datapoints_csv(template_key: str, model_name: str, stem: str) -> Option
     repo_root = get_repo_root()
     path = (
         repo_root / "dataset" / "output" / "datapoints" / template_key / model_name / f"{stem}.csv"
+    )
+    if not path.exists():
+        return None
+    try:
+        df = pd.read_csv(path).fillna("")
+        return df
+    except Exception:
+        return None
+
+
+def load_guidelines_csv(template_key: str, model_name: str, stem: str) -> Optional[pd.DataFrame]:
+    repo_root = get_repo_root()
+    path = (
+        repo_root / "dataset" / "output" / "guidelines" / template_key / model_name / f"{stem}.csv"
     )
     if not path.exists():
         return None
@@ -186,9 +221,47 @@ def main() -> None:
             st.rerun()
 
     # Tabs
-    tab_clauses, tab_datapoints = st.tabs(["Clauses", "Datapoints"])
+    tab_processing, tab_review, tab_datapoints = st.tabs(["Processing", "Review", "Datapoints"])
 
-    with tab_clauses:
+    with tab_datapoints:
+        if not model_name:
+            st.info("Select a model to view datapoints.")
+        else:
+            df_dp_tab = load_datapoints_csv(template_key, model_name, current_path.stem)
+            if df_dp_tab is None or df_dp_tab.empty:
+                st.info("No datapoints results found for this contract.")
+            else:
+                dfv = df_dp_tab.copy()
+
+                def _format_expl(row: pd.Series) -> str:
+                    conf = row.get("confidence", "")
+                    conf_str = ""
+                    try:
+                        if pd.notna(conf) and str(conf).strip() != "":
+                            conf_num = float(conf)
+                            if 0.0 <= conf_num <= 1.0:
+                                conf_num *= 100.0
+                            conf_str = f"{int(round(conf_num))}%"
+                    except Exception:
+                        s = str(conf).strip()
+                        conf_str = f"{s}%" if s and not s.endswith("%") else s
+                    expl = str(row.get("explanation", "")).strip()
+                    if conf_str and expl:
+                        return f"{conf_str} - {expl}"
+                    return conf_str or expl
+
+                out = pd.DataFrame(
+                    {
+                        "datapoint": dfv.get("title", pd.Series(dtype=str)),
+                        "value": dfv.get("value", pd.Series(dtype=object)),
+                        "explanation": dfv.apply(_format_expl, axis=1)
+                        if not dfv.empty
+                        else pd.Series(dtype=str),
+                    }
+                )
+                st.dataframe(out, use_container_width=True)
+
+    with tab_processing:
         if not model_name:
             st.info("Select a model to view clause classification results.")
         else:
@@ -249,10 +322,206 @@ def main() -> None:
                     for tpl, txt in zip(text_cells, safe_text.tolist(), strict=False)
                 ]
 
+                # Build datapoints column aligned by first evidence paragraph index
+                n_rows = len(text_cells)
+                dp_cells: list[str] = [""] * n_rows
+                df_dp_for_clauses = load_datapoints_csv(template_key, model_name, current_path.stem)
+                if df_dp_for_clauses is not None and not df_dp_for_clauses.empty:
+                    try:
+                        tmpl = load_template_dict(template_key)
+                    except Exception:
+                        tmpl = {}
+                    dp_defs = (tmpl.get("datapoints") or []) if isinstance(tmpl, dict) else []
+                    struct_defs = (tmpl.get("structures") or []) if isinstance(tmpl, dict) else []
+
+                    def parse_structure_type(data_type: Any | None) -> tuple[str, str | None]:
+                        s = str(data_type or "").strip().lower()
+                        if s.startswith("list[") and "object:" in s:
+                            inside = s[s.find("[") + 1 : s.rfind("]")]
+                            if inside.startswith("object:"):
+                                key = inside.split(":", 1)[1].strip().strip("[]")
+                                return "list_object", key
+                        if s.startswith("object:"):
+                            return "object", s.split(":", 1)[1].strip().strip("[]")
+                        return "simple", None
+
+                    dp_key_to_struct: dict[str, tuple[str, str]] = {}
+                    struct_key_to_el_title: dict[str, dict[str, str]] = {}
+                    try:
+                        for sd in struct_defs:
+                            skey = str(sd.get("structure_key", "")).strip()
+                            el_map: dict[str, str] = {}
+                            for el in sd.get("elements") or []:
+                                el_key = str(el.get("key", "")).strip()
+                                el_title = str(el.get("title", el_key)).strip()
+                                if el_key:
+                                    el_map[el_key] = el_title
+                            if skey:
+                                struct_key_to_el_title[skey] = el_map
+                    except Exception:
+                        struct_key_to_el_title = {}
+                    try:
+                        for dp in dp_defs:
+                            key = str(dp.get("key", "")).strip()
+                            kind, skey = parse_structure_type(dp.get("data_type"))
+                            if key and skey and kind in ("object", "list_object"):
+                                dp_key_to_struct[key] = (kind, skey)
+                    except Exception:
+                        dp_key_to_struct = {}
+
+                    def try_parse_json(value: Any) -> Any:
+                        s = str(value).strip()
+                        if not s:
+                            return None
+                        if not (
+                            s.startswith("{")
+                            or s.startswith("[")
+                            or s.startswith('"{')
+                            or s.startswith('"[')
+                        ):
+                            return None
+                        try:
+                            import json
+
+                            return json.loads(s)
+                        except Exception:
+                            try:
+                                import ast
+
+                                return ast.literal_eval(s)
+                            except Exception:
+                                return None
+
+                    def parse_evidence_field(value: Any) -> list[int]:
+                        try:
+                            import ast
+                        except Exception:
+                            ast = None  # type: ignore
+                        if value is None or (isinstance(value, float) and pd.isna(value)):
+                            return []
+                        s = str(value).strip()
+                        if s == "":
+                            return []
+                        try:
+                            if "ast" in locals() and ast is not None:
+                                parsed = ast.literal_eval(s)
+                                if isinstance(parsed, (list, tuple)):
+                                    out: list[int] = []
+                                    for x in parsed:
+                                        try:
+                                            out.append(int(x))
+                                        except Exception:
+                                            continue
+                                    return out
+                                if isinstance(parsed, (int, float)):
+                                    return [int(parsed)]
+                        except Exception:
+                            pass
+                        tokens = s.replace("[", "").replace("]", "").split(",")
+                        out: list[int] = []
+                        for tok in tokens:
+                            tok = tok.strip()
+                            if not tok:
+                                continue
+                            try:
+                                out.append(int(float(tok)))
+                            except Exception:
+                                continue
+                        return out
+
+                    for _, r in df_dp_for_clauses.iterrows():
+                        dp_key = str(r.get("key", "")).strip()
+                        title = str(r.get("title", "")).strip()
+                        value_str = str(r.get("value", "")).strip()
+                        conf_val = r.get("confidence", "")
+                        conf_str = ""
+                        try:
+                            if pd.notna(conf_val) and str(conf_val).strip() != "":
+                                conf_str = f"{int(conf_val)}%"
+                        except Exception:
+                            conf_str = str(conf_val).strip()
+                        explanation = str(r.get("explanation", "")).strip()
+
+                        struct_info = dp_key_to_struct.get(dp_key)
+                        if struct_info:
+                            kind, skey = struct_info
+                            header_line = f"{title}: {conf_str} {explanation}".strip()
+                            parts: list[str] = [header_line]
+                            parsed = try_parse_json(r.get("value", ""))
+                            el_titles = struct_key_to_el_title.get(skey, {})
+
+                            def render_one_object(
+                                obj: Any, el_titles: dict[str, str] = el_titles
+                            ) -> list[str]:
+                                lines: list[str] = []
+                                if isinstance(obj, dict):
+                                    keys_in_order = list(el_titles.keys()) or list(obj.keys())
+                                    for el_key in keys_in_order:
+                                        data = obj.get(el_key)
+                                        if not isinstance(data, dict):
+                                            val = str(data)
+                                            ttl = el_titles.get(el_key, el_key)
+                                            sub = f"{ttl}: {val}".strip()
+                                            lines.append(sub)
+                                            continue
+                                        val = data.get("value")
+                                        c = str(data.get("confidence", "")).strip()
+                                        if c and not c.endswith("%"):
+                                            try:
+                                                c = f"{int(float(c)*100) if float(c) <= 1.0 else int(float(c))}%"
+                                            except Exception:
+                                                pass
+                                        expl = data.get("explanation")
+                                        ttl = el_titles.get(el_key, el_key)
+                                        first = f"{ttl}: {val}".strip()
+                                        second = f"{c} {expl}".strip()
+                                        lines.append(first)
+                                        if second:
+                                            lines.append(second)
+                                return lines
+
+                            if kind == "list_object" and isinstance(parsed, list):
+                                items_blocks: list[str] = []
+                                for obj in parsed:
+                                    block_lines = render_one_object(obj)
+                                    if block_lines:
+                                        items_blocks.append("<br/>".join(block_lines))
+                                if items_blocks:
+                                    parts.append("<br/><br/>".join(items_blocks))
+                            else:
+                                block_lines = render_one_object(
+                                    parsed if isinstance(parsed, dict) else {}
+                                )
+                                if block_lines:
+                                    parts.append("<br/>".join(block_lines))
+                            content_html = "<br/>".join(parts)
+                        else:
+                            content_lines = [f"{title}: {value_str}"]
+                            trail = f"{conf_str} {explanation}".strip()
+                            if trail:
+                                content_lines.append(trail)
+                            content_html = "<br/>".join(content_lines)
+
+                        ev = parse_evidence_field(r.get("evidence", ""))
+                        idx = 0
+                        if ev:
+                            try:
+                                idx = min(int(i) for i in ev)
+                            except Exception:
+                                idx = 0
+                        if n_rows > 0:
+                            idx = max(0, min(idx, n_rows - 1))
+                        dp_cells[idx] = (
+                            (dp_cells[idx] + f'<div class="dp-item">{content_html}</div>')
+                            if dp_cells[idx]
+                            else f'<div class="dp-item">{content_html}</div>'
+                        )
+
                 df_view = pd.DataFrame(
                     {
                         "text": pd.Series(text_cells),
                         "clause": clause_cells,
+                        "datapoints": pd.Series(dp_cells),
                     }
                 )
                 # Render a single HTML table with fixed column widths and no borders; repeated rows show a right border on the text column
@@ -265,32 +534,183 @@ def main() -> None:
                         ".wrapped-table th,.wrapped-table td{border:none;padding:0.5rem;vertical-align:top;word-wrap:break-word;white-space:normal;}"
                         ".wrapped-table td .text-repeat-cell{border-right:4px solid #888;padding-right:0.5rem;}"
                         ".wrapped-table col.text-col{width:50%;}"
-                        ".wrapped-table col.clause-col{width:50%;}"
+                        ".wrapped-table col.clause-col{width:25%;}"
+                        ".wrapped-table col.dp-col{width:25%;}"
+                        ".wrapped-table .dp-item{margin-bottom:0.5rem;padding-bottom:0.25rem;border-bottom:1px solid #eee;}"
                         "</style>"
                         '<table class="wrapped-table">'
                         "<colgroup>"
                         '<col class="text-col"/>'
                         '<col class="clause-col"/>'
+                        '<col class="dp-col"/>'
                         "</colgroup>"
                     ),
                 )
                 st.markdown(html, unsafe_allow_html=True)
 
-    with tab_datapoints:
+    with tab_review:
         if not model_name:
-            st.info("Select a model to view datapoint extraction results.")
+            st.info("Select a model to review guidelines.")
         else:
-            df_dp = load_datapoints_csv(template_key, model_name, current_path.stem)
-            if df_dp is None or df_dp.empty:
-                st.info("No datapoints results found for this contract.")
+            # Load classification for clause labels
+            df_cls = load_classification_csv(template_key, model_name, current_path.stem)
+            # Load guidelines
+            df_gl = load_guidelines_csv(template_key, model_name, current_path.stem)
+            if df_cls is None or df_cls.empty:
+                st.info("No clause results found for this contract.")
+            elif df_gl is None or df_gl.empty:
+                st.info("No guidelines results found for this contract.")
             else:
-                # Expect columns: key, title, confidence (percent), value, evidence, explanation
-                df_view = df_dp.copy()
-                if "confidence" in df_view.columns:
-                    df_view["confidence"] = df_view["confidence"].map(
-                        lambda v: f"{int(v)}%" if pd.notna(v) and str(v).strip() != "" else ""
+                # Prepare clause and text columns (same as Clauses tab)
+                text_series = df_cls.get("text", pd.Series(dtype=str))
+                clause_series = df_cls.get("clause_key", pd.Series(dtype=str))
+                try:
+                    tmpl = load_template_dict(template_key)
+                    clauses = tmpl.get("clauses", []) or []
+                    key_to_title = {
+                        str(c.get("key")): c.get("title") or str(c.get("key")) for c in clauses
+                    }
+                except Exception:
+                    key_to_title = {}
+                clause_title_series = clause_series.map(lambda k: key_to_title.get(str(k), str(k)))
+                conf_series = df_cls.get("confidence", pd.Series(dtype=object)).map(
+                    lambda v: f"{int(v)}%" if pd.notna(v) and str(v).strip() != "" else ""
+                )
+                keys_list = clause_series.tolist()
+                titles_list = clause_title_series.tolist()
+                conf_list = conf_series.tolist()
+                repeat_flags: list[bool] = []
+                prev_key: str | None = None
+                for k in keys_list:
+                    k_str = str(k).strip() if k is not None else ""
+                    is_repeat = prev_key is not None and k_str != "" and k_str == prev_key
+                    repeat_flags.append(bool(is_repeat))
+                    if k_str != "":
+                        prev_key = k_str
+                clause_cells: list[str] = []
+                text_cells: list[str] = []
+                for is_rep, title, conf in zip(repeat_flags, titles_list, conf_list, strict=False):
+                    conf_str = str(conf).strip()
+                    if is_rep:
+                        content = f"({conf_str})" if conf_str else ""
+                        clause_cells.append(f'<div class="repeat-cell">{content}</div>')
+                        text_cells.append('<div class="text-repeat-cell">{}</div>')
+                    else:
+                        title_str = str(title).strip()
+                        content = f"{title_str} ({conf_str})" if conf_str else title_str
+                        clause_cells.append(f'<div class="normal-cell">{content}</div>')
+                        text_cells.append('<div class="text-normal-cell">{}</div>')
+                safe_text = (
+                    text_series.astype(str).str.replace("<", "&lt;").str.replace(">", "&gt;")
+                )
+                text_cells = [
+                    tpl.format(txt)
+                    for tpl, txt in zip(text_cells, safe_text.tolist(), strict=False)
+                ]
+
+                # Build guidelines column aligned by first evidence paragraph index
+                n_rows = len(text_cells)
+                gl_cells: list[str] = [""] * n_rows
+
+                def parse_evidence_field(value: Any) -> list[int]:
+                    try:
+                        import ast
+                    except Exception:
+                        ast = None  # type: ignore
+                    if value is None or (isinstance(value, float) and pd.isna(value)):
+                        return []
+                    s = str(value).strip()
+                    if s == "":
+                        return []
+                    try:
+                        if "ast" in locals() and ast is not None:
+                            parsed = ast.literal_eval(s)
+                            if isinstance(parsed, (list, tuple)):
+                                out: list[int] = []
+                                for x in parsed:
+                                    try:
+                                        out.append(int(x))
+                                    except Exception:
+                                        continue
+                                return out
+                            if isinstance(parsed, (int, float)):
+                                return [int(parsed)]
+                    except Exception:
+                        pass
+                    tokens = s.replace("[", "").replace("]", "").split(",")
+                    out: list[int] = []
+                    for tok in tokens:
+                        tok = tok.strip()
+                        if not tok:
+                            continue
+                        try:
+                            out.append(int(float(tok)))
+                        except Exception:
+                            continue
+                    return out
+
+                for _, r in df_gl.iterrows():
+                    guideline_text = str(r.get("guideline", "")).strip()
+                    matched = str(r.get("guideline_matched", "")).strip()
+                    conf_val = r.get("confidence", "")
+                    try:
+                        conf_str = (
+                            f"{int(conf_val)}%"
+                            if pd.notna(conf_val) and str(conf_val).strip() != ""
+                            else ""
+                        )
+                    except Exception:
+                        conf_str = str(conf_val).strip()
+                    explanation = str(r.get("explanation", "")).strip()
+                    header = guideline_text
+                    status = f"Matched: {matched}" if matched != "" else ""
+                    trail = " ".join([p for p in [status, conf_str, explanation] if p]).strip()
+                    content_html = header if not trail else f"{header}<br/>{trail}"
+
+                    ev = parse_evidence_field(r.get("evidence", ""))
+                    idx = 0
+                    if ev:
+                        try:
+                            idx = min(int(i) for i in ev)
+                        except Exception:
+                            idx = 0
+                    if n_rows > 0:
+                        idx = max(0, min(idx, n_rows - 1))
+                    gl_cells[idx] = (
+                        (gl_cells[idx] + f'<div class="dp-item">{content_html}</div>')
+                        if gl_cells[idx]
+                        else f'<div class="dp-item">{content_html}</div>'
                     )
-                st.dataframe(df_view, use_container_width=True)
+
+                df_view = pd.DataFrame(
+                    {
+                        "text": pd.Series(text_cells),
+                        "clause": clause_cells,
+                        "guidelines": pd.Series(gl_cells),
+                    }
+                )
+                html = df_view.to_html(index=False, escape=False)
+                html = html.replace(
+                    '<table border="1" class="dataframe">',
+                    (
+                        "<style>"
+                        ".wrapped-table{width:100%;table-layout:fixed;border-collapse:collapse;}"
+                        ".wrapped-table th,.wrapped-table td{border:none;padding:0.5rem;vertical-align:top;word-wrap:break-word;white-space:normal;}"
+                        ".wrapped-table td .text-repeat-cell{border-right:4px solid #888;padding-right:0.5rem;}"
+                        ".wrapped-table col.text-col{width:50%;}"
+                        ".wrapped-table col.clause-col{width:25%;}"
+                        ".wrapped-table col.dp-col{width:25%;}"
+                        ".wrapped-table .dp-item{margin-bottom:0.5rem;padding-bottom:0.25rem;border-bottom:1px solid #eee;}"
+                        "</style>"
+                        '<table class="wrapped-table">'
+                        "<colgroup>"
+                        '<col class="text-col"/>'
+                        '<col class="clause-col"/>'
+                        '<col class="dp-col"/>'
+                        "</colgroup>"
+                    ),
+                )
+                st.markdown(html, unsafe_allow_html=True)
 
 
 if __name__ == "__main__":

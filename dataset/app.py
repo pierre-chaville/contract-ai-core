@@ -11,6 +11,7 @@ Pages are discovered automatically from the dataset/pages/ directory.
 from pathlib import Path
 
 import streamlit as st
+from streamlit_mermaid import st_mermaid
 
 
 def main() -> None:
@@ -25,6 +26,28 @@ def main() -> None:
         "- Organizer Results Viewer (browse organizer results and document text)\n"
         "- Reviser Instructions Viewer (inspect amendment instructions and restated output)"
     )
+    diagram = """
+        graph TD
+            subgraph "Analytics"
+            Y(Database loading) --> Z(User query)
+        end
+            subgraph "Processing"
+            G([Contract]) --> P(Contract filtered)
+            P(Contract filtered) --> H(Clauses) --> I(Datapoints)
+            J([Amendment]) --> K(Restated) --> H(Clauses)
+            P(Contract filtered) --> K(Restated)
+            I(Datapoints) --> Y(Database loading)
+        end
+            subgraph "Migration"
+                X(Organizer) --> G([Contract])
+                X(Organizer) --> J([Amendment])
+        end
+            subgraph "Negociation"
+            A(Templating) --> B(Guidelines Review)
+        end
+        """
+
+    st_mermaid(diagram)
 
 
 if __name__ == "__main__":
