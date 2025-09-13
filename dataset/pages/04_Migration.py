@@ -1,11 +1,8 @@
 from __future__ import annotations
 
-"""Streamlit viewer for organizer results (moved under pages/).
-
-Browse results.csv by model, inspect original text and extracted metadata.
-Appears in the Streamlit sidebar when running: streamlit run dataset/app.py
-"""
-
+# Streamlit viewer for organizer results (moved under pages/).
+# Browse results.csv by model, inspect original text and extracted metadata.
+# Appears in the Streamlit sidebar when running: streamlit run dataset/app.py
 from pathlib import Path
 from typing import Optional
 
@@ -83,11 +80,11 @@ def format_pct(conf: float | None) -> str:
 
 
 def main() -> None:
-    st.set_page_config(page_title="Contract Organizer Viewer", layout="wide")
-    st.title("Contract Organizer - Results Viewer")
+    st.set_page_config(page_title="Contract Organizer", layout="wide")
+    st.title("Contract Organizer")
 
     # Sidebar: model selector
-    st.sidebar.header("Model")
+    st.sidebar.header("Selection")
     models = get_organizer_models()
     if "model_name" not in st.session_state and models:
         st.session_state.model_name = models[0]

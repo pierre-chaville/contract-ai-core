@@ -132,28 +132,17 @@ class DatapointExtractor:
                 # document: use full text later
                 pass
 
-        # Merge all empty-clauses scopes into a single document-scope job
+        # Drop empty clause scopes (skip extraction for datapoints tied to missing clauses)
         empty_clause_scope_ids: list[str] = [
             sid for sid, (scp, idxs) in scopes.items() if scp.kind == "clauses" and not idxs
         ]
         if empty_clause_scope_ids:
             logging.getLogger(__name__).debug(
-                "Merging %d empty clause scopes into document scope", len(empty_clause_scope_ids)
+                "Skipping %d clause scopes with no matched paragraphs", len(empty_clause_scope_ids)
             )
-            merged_dp_indices: list[int] = []
-            for sid in empty_clause_scope_ids:
-                merged_dp_indices.extend(scope_to_datapoints.get(sid, []))
-            merged_dp_indices = sorted(set(merged_dp_indices))
-            # Remove empty clause scopes
             for sid in empty_clause_scope_ids:
                 scopes.pop(sid, None)
                 scope_to_datapoints.pop(sid, None)
-            # Create or extend a single document scope holder
-            doc_scope_id = "document"
-            if doc_scope_id not in scopes:
-                scopes[doc_scope_id] = (_ExtractionScope(kind="document"), [])
-                scope_to_datapoints[doc_scope_id] = []
-            scope_to_datapoints[doc_scope_id].extend(merged_dp_indices)
 
         # Build jobs for parallel execution
         jobs: list[dict[str, object]] = []

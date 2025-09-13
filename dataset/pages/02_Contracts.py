@@ -185,17 +185,15 @@ def main() -> None:
 
     col_a, col_b = st.columns([6, 1])
     with col_a:
-        st.subheader(
-            f"Template: {template_key} — File {idx + 1} / {len(files)}: {current_path.name}"
-        )
+        st.subheader(f"{template_key} — File {idx + 1} / {len(files)}: {current_path.name}")
     with col_b:
         if st.button("Next contract ▶"):
             st.session_state.contract_idx = (int(st.session_state.contract_idx) + 1) % len(files)
             st.rerun()
 
     # Tabs
-    tab_processing, tab_review, tab_datapoints, tab_clauses = st.tabs(
-        ["Processing", "Review", "Datapoints", "Clauses"]
+    tab_processing, tab_review, tab_datapoints, tab_clauses, tab_guidelines = st.tabs(
+        ["Processing", "Review", "Datapoints", "Clauses", "Guidelines"]
     )
 
     with tab_datapoints:
@@ -252,6 +250,31 @@ def main() -> None:
                 except Exception:
                     dp_key_to_struct = {}
 
+                # Build clause grouping helpers (group by clause_keys from template)
+                clause_key_to_title: dict[str, str] = {}
+                try:
+                    tmpl2 = load_template_dict(template_key)
+                    clause_defs = (tmpl2.get("clauses") or []) if isinstance(tmpl2, dict) else []
+                    for c in clause_defs:
+                        ck = str(c.get("key", "")).strip()
+                        if ck:
+                            clause_key_to_title[ck] = str(c.get("title", ck)).strip()
+                except Exception:
+                    clause_key_to_title = {}
+                dp_key_to_clause_keys: dict[str, tuple[str, ...]] = {}
+                try:
+                    for dp in dp_defs:
+                        k = str(dp.get("key", "")).strip()
+                        cks = dp.get("clause_keys") or []
+                        if isinstance(cks, (list, tuple)):
+                            keys = tuple(str(x).strip() for x in cks if str(x).strip())
+                        else:
+                            keys = tuple()
+                        if k:
+                            dp_key_to_clause_keys[k] = keys
+                except Exception:
+                    dp_key_to_clause_keys = {}
+
                 def try_parse_json(value: Any) -> Any:
                     s = str(value).strip()
                     if not s:
@@ -291,7 +314,26 @@ def main() -> None:
                         s = str(val).strip()
                         return f"{s}%" if s and not s.endswith("%") else s
 
+                # Group rows by clause_keys heading
+                try:
+                    from collections import OrderedDict
+                except Exception:
+                    OrderedDict = dict  # type: ignore
+
+                def group_label_for_dp_key(k: str) -> str:
+                    keys = dp_key_to_clause_keys.get(k) or tuple()
+                    if keys:
+                        titles = [clause_key_to_title.get(ck, ck) for ck in keys]
+                        return ", ".join(titles)
+                    return "Unscoped"
+
+                grouped_rows = OrderedDict()
                 for _, row in dfv.iterrows():
+                    k = str(row.get("key", "")).strip()
+                    label = group_label_for_dp_key(k)
+                    grouped_rows.setdefault(label, []).append(row)
+
+                def render_one_dp_row(row: pd.Series) -> None:
                     title = str(row.get("title", "")).strip() or str(row.get("key", "")).strip()
                     dp_key = str(row.get("key", "")).strip()
                     value_cell = row.get("value", "")
@@ -337,6 +379,11 @@ def main() -> None:
                         )
                         # st.markdown("")
 
+                for heading, rows in grouped_rows.items():
+                    st.markdown(f"### {heading}")
+                    for row in rows:
+                        render_one_dp_row(row)
+
     with tab_processing:
         if not model_name:
             st.info("Select a model to view clause classification results.")
@@ -379,13 +426,17 @@ def main() -> None:
                 for is_rep, title, conf in zip(repeat_flags, titles_list, conf_list, strict=False):
                     conf_str = str(conf).strip()
                     if is_rep:
-                        content = f"({conf_str})" if conf_str else ""
+                        content = f'<span class="dp-conf">{conf_str}</span>' if conf_str else ""
                         clause_cells.append(f'<div class="repeat-cell">{content}</div>')
                         # Mark text cell as repeated to draw right border
                         text_cells.append('<div class="text-repeat-cell">{}</div>')
                     else:
                         title_str = str(title).strip()
-                        content = f"{title_str} ({conf_str})" if conf_str else title_str
+                        content = (
+                            f'{title_str} <span class="dp-conf">{conf_str}</span>'
+                            if conf_str
+                            else title_str
+                        )
                         clause_cells.append(f'<div class="normal-cell">{content}</div>')
                         text_cells.append('<div class="text-normal-cell">{}</div>')
 
@@ -524,8 +575,17 @@ def main() -> None:
                         struct_info = dp_key_to_struct.get(dp_key)
                         if struct_info:
                             kind, skey = struct_info
-                            header_line = f"{title}: {conf_str} {explanation}".strip()
+                            header_line = f"{title}:"
                             parts: list[str] = [header_line]
+                            meta_conf = str(conf_str).strip()
+                            meta_expl = str(explanation).strip()
+                            meta_parts: list[str] = []
+                            if meta_conf:
+                                meta_parts.append(f'<span class="dp-conf">{meta_conf}</span>')
+                            if meta_expl:
+                                meta_parts.append(f'<span class="dp-meta">{meta_expl}</span>')
+                            if meta_parts:
+                                parts.append(" ".join(meta_parts))
                             parsed = try_parse_json(r.get("value", ""))
                             el_titles = struct_key_to_el_title.get(skey, {})
 
@@ -553,7 +613,18 @@ def main() -> None:
                                         expl = data.get("explanation")
                                         ttl = el_titles.get(el_key, el_key)
                                         first = f"{ttl}: {val}".strip()
-                                        second = f"{c} {expl}".strip()
+                                        second_parts: list[str] = []
+                                        c_str = str(c).strip()
+                                        expl_str = str(expl or "").strip()
+                                        if c_str:
+                                            second_parts.append(
+                                                f'<span class="dp-conf">{c_str}</span>'
+                                            )
+                                        if expl_str:
+                                            second_parts.append(
+                                                f'<span class="dp-meta">{expl_str}</span>'
+                                            )
+                                        second = " ".join(second_parts)
                                         lines.append(first)
                                         if second:
                                             lines.append(second)
@@ -576,9 +647,15 @@ def main() -> None:
                             content_html = "<br/>".join(parts)
                         else:
                             content_lines = [f"{title}: {value_str}"]
-                            trail = f"{conf_str} {explanation}".strip()
-                            if trail:
-                                content_lines.append(trail)
+                            meta_conf = str(conf_str).strip()
+                            meta_expl = str(explanation).strip()
+                            meta_parts: list[str] = []
+                            if meta_conf:
+                                meta_parts.append(f'<span class="dp-conf">{meta_conf}</span>')
+                            if meta_expl:
+                                meta_parts.append(f'<span class="dp-meta">{meta_expl}</span>')
+                            if meta_parts:
+                                content_lines.append(" ".join(meta_parts))
                             content_html = "<br/>".join(content_lines)
 
                         ev = parse_evidence_field(r.get("evidence", ""))
@@ -616,6 +693,8 @@ def main() -> None:
                         ".wrapped-table col.clause-col{width:25%;}"
                         ".wrapped-table col.dp-col{width:25%;}"
                         ".wrapped-table .dp-item{margin-bottom:0.5rem;padding-bottom:0.25rem;border-bottom:1px solid #eee;}"
+                        ".wrapped-table .dp-conf{color:#2e7d32;font-weight:600;}"
+                        ".wrapped-table .dp-meta{color:#666;}"
                         "</style>"
                         '<table class="wrapped-table">'
                         "<colgroup>"
@@ -831,6 +910,109 @@ def main() -> None:
                         st.markdown(f"### {title}")
                         for p in para_list:
                             st.markdown(f"- {p}")
+
+    with tab_guidelines:
+        if not model_name:
+            st.info("Select a model to view guidelines.")
+        else:
+            df_gl = load_guidelines_csv(template_key, model_name, current_path.stem)
+            if df_gl is None or df_gl.empty:
+                st.info("No guidelines results found for this contract.")
+            else:
+                # Build clause title lookup and guideline->clause_keys mapping from template
+                clause_key_to_title: dict[str, str] = {}
+                gl_key_to_clause_keys: dict[str, tuple[str, ...]] = {}
+                try:
+                    tmpl2 = load_template_dict(template_key)
+                    clause_defs = (tmpl2.get("clauses") or []) if isinstance(tmpl2, dict) else []
+                    for c in clause_defs:
+                        ck = str(c.get("key", "")).strip()
+                        if ck:
+                            clause_key_to_title[ck] = str(c.get("title", ck)).strip()
+                    guideline_defs = (
+                        (tmpl2.get("guidelines") or []) if isinstance(tmpl2, dict) else []
+                    )
+                    for g in guideline_defs:
+                        gk = str(g.get("key", "")).strip()
+                        cks = g.get("clause_keys") or []
+                        if isinstance(cks, (list, tuple)):
+                            keys = tuple(str(x).strip() for x in cks if str(x).strip())
+                        else:
+                            keys = tuple()
+                        if gk:
+                            gl_key_to_clause_keys[gk] = keys
+                except Exception:
+                    clause_key_to_title = {}
+                    gl_key_to_clause_keys = {}
+                try:
+                    from collections import OrderedDict
+                except Exception:
+                    OrderedDict = dict  # type: ignore
+                grouped_gl = OrderedDict()
+                for _, row in df_gl.iterrows():
+                    # Primary: map guideline key to clause_keys via template
+                    gk = str(row.get("key", "")).strip()
+                    keys_tuple = gl_key_to_clause_keys.get(gk)
+                    keys: list[str]
+                    if keys_tuple:
+                        keys = list(keys_tuple)
+                    else:
+                        # Fallback: try to parse clause_keys column if present in CSV
+                        cks_raw = row.get("clause_keys")
+                        if isinstance(cks_raw, str) and cks_raw:
+                            try:
+                                import ast
+
+                                parsed = ast.literal_eval(cks_raw)
+                                if isinstance(parsed, (list, tuple)):
+                                    keys = [str(x).strip() for x in parsed if str(x).strip()]
+                                else:
+                                    keys = []
+                            except Exception:
+                                keys = [s.strip() for s in cks_raw.split(",") if s.strip()]
+                        else:
+                            keys = []
+                    heading = (
+                        ", ".join([clause_key_to_title.get(k, k) for k in keys])
+                        if keys
+                        else "Unscoped"
+                    )
+                    grouped_gl.setdefault(heading, []).append(row)
+
+                def _format_conf(val: Any) -> str:
+                    try:
+                        if val is None or (isinstance(val, float) and pd.isna(val)):
+                            return ""
+                        num = float(val)
+                        if 0.0 <= num <= 1.0:
+                            num *= 100.0
+                        if num < 0:
+                            num = 0.0
+                        if num > 100:
+                            num = 100.0
+                        return f"{int(round(num))}%"
+                    except Exception:
+                        s = str(val).strip()
+                        return f"{s}%" if s and not s.endswith("%") else s
+
+                for heading, rows in grouped_gl.items():
+                    st.markdown(f"### {heading}")
+                    for r in rows:
+                        guideline_text = str(r.get("guideline", "")).strip()
+                        matched = str(r.get("guideline_matched", "")).strip()
+                        conf_str = _format_conf(r.get("confidence", ""))
+                        explanation = str(r.get("explanation", "")).strip()
+
+                        st.markdown(f"**{guideline_text}**")
+                        parts = []
+                        if matched != "":
+                            parts.append(f"Matched: {matched}")
+                        if conf_str:
+                            parts.append(conf_str)
+                        if explanation:
+                            parts.append(explanation)
+                        if parts:
+                            st.markdown("`" + " ".join(parts) + "`")
 
 
 if __name__ == "__main__":

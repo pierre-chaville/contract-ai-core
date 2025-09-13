@@ -49,7 +49,7 @@ def main() -> None:
     st.set_page_config(page_title="Contract Type Viewer", layout="wide")
 
     # Sidebar: select template key
-    st.sidebar.header("Template")
+    st.sidebar.header("Selection")
     keys = list_templates()
     if not keys:
         st.warning("No template JSON files found under dataset/contract_types/")
@@ -65,7 +65,8 @@ def main() -> None:
 
     # Load template model (dict)
     model = load_template_dict(selected)
-    st.title(f"Contract type: {model.get('name') or selected}")
+    st.title("Contract types")
+    st.subheader(f"{model.get('name') or selected}")
 
     tab_overview, tab_clauses, tab_datapoints, tab_guidelines, tab_enums, tab_structures = st.tabs(
         [

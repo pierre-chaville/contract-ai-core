@@ -19,47 +19,26 @@ def load_template(template_key: str) -> dict:
     csv_path_structure_elements = folder_path / f"{template_key}_structure_elements.csv"
 
     model = json.loads(open(json_path, encoding="utf-8").read())
-    model["clauses"] = []
     model["enums"] = []
     model["datapoints"] = []
     model["guidelines"] = []
     model["structures"] = []
+    model["clauses"] = []
 
-    # Read CSV with tolerant decoding
-    df = pd.read_csv(csv_path_clauses, encoding="utf-8").fillna("")
+    model = _load_clauses(template_key, csv_path_clauses, model)
+    model = _load_enums(template_key, csv_path_enums, model)
+    model = _load_datapoints(template_key, csv_path_datapoints, model)
+    model = _load_guidelines(template_key, csv_path_guidelines, model)
+    model = _load_structures(template_key, csv_path_structures, csv_path_structure_elements, model)
 
-    # Normalize column names (strip whitespace and BOM artefacts)
-    df.columns = [str(c).strip().lstrip("\ufeff") for c in df.columns]
+    return model
 
-    for _, row in df.iterrows():
-        clause_key = row.get("key")
-        clause_title = row.get("title")
-        clause_description = row.get("description")
-        clause_sort_order = row.get("sort_order")
 
-        if clause_key is None or clause_title is None:
-            continue
+def _load_enums(template_key: str, csv_path_enums: Path, model: dict) -> dict:
+    model["enums"] = []
 
-        # Coerce sort_order
-        try:
-            sort_order_val = (
-                None
-                if clause_sort_order is None
-                or (isinstance(clause_sort_order, float) and pd.isna(clause_sort_order))
-                or str(clause_sort_order).strip() == ""
-                else int(float(str(clause_sort_order)))
-            )
-        except Exception:
-            sort_order_val = None
-
-        model["clauses"].append(
-            {
-                "key": str(clause_key),
-                "title": str(clause_title),
-                "description": None if pd.isna(clause_description) else str(clause_description),
-                "sort_order": sort_order_val,
-            }
-        )
+    if not csv_path_enums.exists():
+        return model
 
     # Read CSV with tolerant decoding
     df_enums = pd.read_csv(csv_path_enums, encoding="utf-8").fillna("")
@@ -92,6 +71,15 @@ def load_template(template_key: str) -> dict:
         model["enums"].append(
             {"key": str(enum_key), "title": str(enum["title"]), "options": enum["options"]}
         )
+
+    return model
+
+
+def _load_datapoints(template_key: str, csv_path_datapoints: Path, model: dict) -> dict:
+    model["datapoints"] = []
+
+    if not csv_path_datapoints.exists():
+        return model
 
     # Read CSV with tolerant decoding
     df = pd.read_csv(csv_path_datapoints, encoding="utf-8").fillna("")
@@ -143,6 +131,14 @@ def load_template(template_key: str) -> dict:
                 "sort_order": dp_sort_order_val,
             }
         )
+    return model
+
+
+def _load_guidelines(template_key: str, csv_path_guidelines: Path, model: dict) -> dict:
+    model["guidelines"] = []
+
+    if not csv_path_guidelines.exists():
+        return model
 
     # Read CSV with tolerant decoding
     df_guidelines = pd.read_csv(csv_path_guidelines, encoding="utf-8")
@@ -223,6 +219,16 @@ def load_template(template_key: str) -> dict:
                 "sort_order": gl_sort_order_val,
             }
         )
+    return model
+
+
+def _load_structures(
+    template_key: str, csv_path_structures: Path, csv_path_structure_elements: Path, model: dict
+) -> dict:
+    model["structures"] = []
+
+    if not csv_path_structures.exists():
+        return model
 
     # Load structures and structure elements if present
     try:
@@ -315,6 +321,51 @@ def load_template(template_key: str) -> dict:
                     "elements": elems_by_struct.get(s_key, []),
                 }
             )
+
+    return model
+
+
+def _load_clauses(template_key: str, csv_path_clauses: Path, model: dict) -> dict:
+    model["clauses"] = []
+
+    if not csv_path_clauses.exists():
+        return model
+
+    # Read CSV with tolerant decoding
+    df = pd.read_csv(csv_path_clauses, encoding="utf-8").fillna("")
+
+    # Normalize column names (strip whitespace and BOM artefacts)
+    df.columns = [str(c).strip().lstrip("\ufeff") for c in df.columns]
+
+    for _, row in df.iterrows():
+        clause_key = row.get("key")
+        clause_title = row.get("title")
+        clause_description = row.get("description")
+        clause_sort_order = row.get("sort_order")
+
+        if clause_key is None or clause_title is None:
+            continue
+
+        # Coerce sort_order
+        try:
+            sort_order_val = (
+                None
+                if clause_sort_order is None
+                or (isinstance(clause_sort_order, float) and pd.isna(clause_sort_order))
+                or str(clause_sort_order).strip() == ""
+                else int(float(str(clause_sort_order)))
+            )
+        except Exception:
+            sort_order_val = None
+
+        model["clauses"].append(
+            {
+                "key": str(clause_key),
+                "title": str(clause_title),
+                "description": None if pd.isna(clause_description) else str(clause_description),
+                "sort_order": sort_order_val,
+            }
+        )
 
     return model
 

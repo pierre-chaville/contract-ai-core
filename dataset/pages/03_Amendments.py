@@ -1,11 +1,8 @@
 from __future__ import annotations
 
-"""Streamlit viewer for amendment instructions and restated documents.
-
-Browse instruction JSONs by model, inspect original/amendment/restated content.
-Run: streamlit run dataset/view_reviser.py
-"""
-
+# Streamlit viewer for amendment instructions and restated documents.
+# Browse instruction JSONs by model, inspect original/amendment/restated content.
+# Run: streamlit run dataset/view_reviser.py
 import html
 import json
 from pathlib import Path
@@ -197,11 +194,11 @@ def estimate_height(instructions: list[dict]) -> int:
 
 
 def main() -> None:
-    st.set_page_config(page_title="Contract Reviser Viewer", layout="wide")
-    st.title("Contract Reviser - Instructions Viewer")
+    st.set_page_config(page_title="Amendments", layout="wide")
+    st.title("Amendments")
 
     # Sidebar filters
-    st.sidebar.header("Filters")
+    st.sidebar.header("Selection")
     models = get_instruction_models()
     if "model_name" not in st.session_state and models:
         st.session_state.model_name = models[0]
@@ -231,7 +228,7 @@ def main() -> None:
         current_idx = int(st.session_state.file_idx) % len(files)
         current_file = files[current_idx]
         st.subheader(
-            f"Model: {st.session_state.get('model_name', '')} — File {current_idx + 1} / {len(files)}: {current_file.name}"
+            f"{st.session_state.get('model_name', '')} — File {current_idx + 1} / {len(files)}: {current_file.name}"
         )
     with col_b:
         if st.button("Next file ▶"):

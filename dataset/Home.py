@@ -1,13 +1,9 @@
 from __future__ import annotations
 
-"""Streamlit multi-page app entrypoint.
-
-Run:
-  streamlit run dataset/app.py
-
-Pages are discovered automatically from the dataset/pages/ directory.
-"""
-
+# Streamlit multi-page app entrypoint.
+# Run:
+#   streamlit run dataset/app.py
+# Pages are discovered automatically from the dataset/pages/ directory.
 from pathlib import Path
 
 import streamlit as st
@@ -16,7 +12,7 @@ from streamlit_mermaid import st_mermaid
 
 def main() -> None:
     st.set_page_config(page_title="Contract AI - Tools", layout="wide")
-    st.title("Contract AI - Dataset Tools")
+    st.title("Contract AI - Tools")
 
     st.write("Use the left sidebar to navigate to a specific tool page.")
 
