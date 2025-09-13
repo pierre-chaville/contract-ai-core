@@ -478,6 +478,13 @@ class DatapointExtractor:
             for dp in datapoints:  # type: ignore[assignment]
                 item = (data or {}).get(dp.key) or {}
                 value = item.get("value")
+                # Normalize accidental leading ':' for structured string values (e.g., ':[{...}]')
+                if isinstance(value, str):
+                    v_strip = value.lstrip()
+                    if v_strip.startswith(":"):
+                        v_after = v_strip[1:].lstrip()
+                        if v_after.startswith("[") or v_after.startswith("{"):
+                            value = v_after
                 conf = item.get("confidence")
                 expl = item.get("explanation")
                 if isinstance(conf, (int, float)):

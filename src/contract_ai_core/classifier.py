@@ -163,6 +163,7 @@ class ClauseClassifier:
             "classify each paragraph to the single most likely clause category.\n\n"
             "Important rules:\n"
             "- Output exactly one line per paragraph provided.\n"
+            "- Please take into account the description of the clause when classifying the paragraph.\n"
             "- Format for each line: '<line_number>: <clause_id> | <confidence>%'.\n"
             "- <line_number> is the number shown for the paragraph.\n"
             "- <clause_id> is the numeric id of the clause from the provided list; use 0 if none/other.\n"
@@ -175,6 +176,7 @@ class ClauseClassifier:
         )
 
         clauses_header = "CLAUSES (id: | title | description):\n" + clauses_block
+        # print(clauses_header)
         paragraphs_header = "PARAGRAPHS (line_number: text):\n" + paragraphs_block
         response_header = (
             "RESPONSE FORMAT (one per paragraph, no extra prose):\n"

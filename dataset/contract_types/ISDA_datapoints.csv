@@ -8,8 +8,8 @@ specified_transaction,6,Specified transaction scope,enum,SPECIFIED_TRANSACTION_S
 cross_default,7,Cross default applicable parties,enum,PARTY_TYPES,FALSE,clause,cross_default,Cross default applicable parties
 specified_indebtness_borrowed_money,8,Specified indebtness includes borrowed_money,bool,,FALSE,clause,specified_indebtness,Specified indebtness includes borrowed_money? (NO if not mentioned)
 specified_indebtness_deposits,9,Specified indebtness excludes deposits,bool,,FALSE,clause,specified_indebtness,Specified indebtness excludes deposits? (NO if not mentioned)
-threshold_A,10,Party A,object:threshold_conditions,,FALSE,clause,threshold_amount,Threshold amount conditions for Party A
-threshold_B,11,Party B,object:threshold_conditions,,FALSE,clause,threshold_amount,Threshold amount conditions for Party B
+threshold_A,10,Threshold amount for Party A,object:threshold_conditions,,FALSE,clause,threshold_amount,Threshold amount conditions for Party A
+threshold_B,11,Threshold amount for Party B,object:threshold_conditions,,FALSE,clause,threshold_amount,Threshold amount conditions for Party B
 credit_event_upon_merger,18,Credit Event Upon Merger  applicable parties,enum,PARTY_TYPES,FALSE,clause,credit_event_upon_merger,Credit Event Upon Merger  applicable parties
 automatic_early_termination,19,Automatic Early Termination  applicable parties,enum,PARTY_TYPES,FALSE,clause,automatic_early_termination,Automatic Early Termination  applicable parties
 termination_currency,20,Termination Currency,str,,FALSE,clause,termination_currency,"Termination Currency in ISO format (e.g. USD, EUR, ...)"

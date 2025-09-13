@@ -1,5 +1,5 @@
 key,sort_order,title,description
-specified_entity,1,Specified Entity,"In part 1. only, defines which affiliates are considered when assessing Termination Events or Events of Default."
+specified_entity,1,Specified Entity,"In part 1. only, defines which affiliates are considered when assessing Termination Events or Events of Default. NB: it excludes specified entity mentioned in the clause Absence of litigation"
 specified_transaction,2,Specified Transaction,Defines what types of transactions qualify for cross-default or other provisions.
 cross_default,3,Cross Default,Election of whether cross default applies and threshold amounts.
 specified_indebtness,4,Specified Indebtness,This defines the type of indebtedness that counts for purposes of the Cross-Default provision

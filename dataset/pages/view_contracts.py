@@ -77,27 +77,6 @@ def load_template_dict(template_key: str) -> dict[str, Any]:
     return load_template(template_key)
 
 
-def split_text_with_core_util(text: str) -> list[str]:
-    # Prefer the core splitter from contract_ai_core.utilities for consistent paragraph indices
-    # Ensure repo src/ is on sys.path to import the package when running Streamlit directly
-    repo_root = get_repo_root()
-    src_dir = repo_root / "src"
-    if str(src_dir) not in sys.path:
-        sys.path.insert(0, str(src_dir))
-    try:
-        from contract_ai_core.utilities import split_text_into_paragraphs  # type: ignore
-
-        paras = split_text_into_paragraphs(text)
-        try:
-            # Paragraph objects have .text
-            return [getattr(p, "text", str(p)) for p in paras]
-        except Exception:
-            return [str(p) for p in paras]
-    except Exception:
-        # Fallback to simple split if core util import fails
-        return simple_split_paragraphs(text)
-
-
 def read_text_best_effort(path: Path) -> str:
     encodings = [
         "utf-8",
@@ -114,12 +93,6 @@ def read_text_best_effort(path: Path) -> str:
         except UnicodeDecodeError:
             continue
     return path.read_text(encoding="utf-8", errors="replace")
-
-
-def simple_split_paragraphs(text: str) -> list[str]:
-    # Split on blank lines; strip trailing spaces
-    parts = [p.strip() for p in text.replace("\r\n", "\n").split("\n\n")]
-    return [p for p in parts if p]
 
 
 def load_classification_csv(
@@ -221,7 +194,9 @@ def main() -> None:
             st.rerun()
 
     # Tabs
-    tab_processing, tab_review, tab_datapoints = st.tabs(["Processing", "Review", "Datapoints"])
+    tab_processing, tab_review, tab_datapoints, tab_clauses = st.tabs(
+        ["Processing", "Review", "Datapoints", "Clauses"]
+    )
 
     with tab_datapoints:
         if not model_name:
@@ -231,35 +206,136 @@ def main() -> None:
             if df_dp_tab is None or df_dp_tab.empty:
                 st.info("No datapoints results found for this contract.")
             else:
+                # Render datapoints one by one using markdown
                 dfv = df_dp_tab.copy()
 
-                def _format_expl(row: pd.Series) -> str:
-                    conf = row.get("confidence", "")
-                    conf_str = ""
-                    try:
-                        if pd.notna(conf) and str(conf).strip() != "":
-                            conf_num = float(conf)
-                            if 0.0 <= conf_num <= 1.0:
-                                conf_num *= 100.0
-                            conf_str = f"{int(round(conf_num))}%"
-                    except Exception:
-                        s = str(conf).strip()
-                        conf_str = f"{s}%" if s and not s.endswith("%") else s
-                    expl = str(row.get("explanation", "")).strip()
-                    if conf_str and expl:
-                        return f"{conf_str} - {expl}"
-                    return conf_str or expl
+                # Load template to detect structure types and element titles
+                try:
+                    tmpl = load_template_dict(template_key)
+                except Exception:
+                    tmpl = {}
+                dp_defs = (tmpl.get("datapoints") or []) if isinstance(tmpl, dict) else []
+                struct_defs = (tmpl.get("structures") or []) if isinstance(tmpl, dict) else []
 
-                out = pd.DataFrame(
-                    {
-                        "datapoint": dfv.get("title", pd.Series(dtype=str)),
-                        "value": dfv.get("value", pd.Series(dtype=object)),
-                        "explanation": dfv.apply(_format_expl, axis=1)
-                        if not dfv.empty
-                        else pd.Series(dtype=str),
-                    }
-                )
-                st.dataframe(out, use_container_width=True)
+                def parse_structure_type(data_type: Any | None) -> tuple[str, str | None]:
+                    s = str(data_type or "").strip().lower()
+                    if s.startswith("list[") and "object:" in s:
+                        inside = s[s.find("[") + 1 : s.rfind("]")]
+                        if inside.startswith("object:"):
+                            key = inside.split(":", 1)[1].strip().strip("[]")
+                            return "list_object", key
+                    if s.startswith("object:"):
+                        return "object", s.split(":", 1)[1].strip().strip("[]")
+                    return "simple", None
+
+                dp_key_to_struct: dict[str, tuple[str, str]] = {}
+                struct_key_to_el_title: dict[str, dict[str, str]] = {}
+                try:
+                    for sd in struct_defs:
+                        skey = str(sd.get("structure_key", "")).strip()
+                        el_map: dict[str, str] = {}
+                        for el in sd.get("elements") or []:
+                            el_key = str(el.get("key", "")).strip()
+                            el_title = str(el.get("title", el_key)).strip()
+                            if el_key:
+                                el_map[el_key] = el_title
+                        if skey:
+                            struct_key_to_el_title[skey] = el_map
+                except Exception:
+                    struct_key_to_el_title = {}
+                try:
+                    for dp in dp_defs:
+                        key = str(dp.get("key", "")).strip()
+                        kind, skey = parse_structure_type(dp.get("data_type"))
+                        if key and skey and kind in ("object", "list_object"):
+                            dp_key_to_struct[key] = (kind, skey)
+                except Exception:
+                    dp_key_to_struct = {}
+
+                def try_parse_json(value: Any) -> Any:
+                    s = str(value).strip()
+                    if not s:
+                        return None
+                    if not (
+                        s.startswith("{")
+                        or s.startswith("[")
+                        or s.startswith('"{')
+                        or s.startswith('"[')
+                    ):
+                        return None
+                    try:
+                        import json
+
+                        return json.loads(s)
+                    except Exception:
+                        try:
+                            import ast
+
+                            return ast.literal_eval(s)
+                        except Exception:
+                            return None
+
+                def format_conf_percent(val: Any) -> str:
+                    try:
+                        if val is None or (isinstance(val, float) and pd.isna(val)):
+                            return ""
+                        num = float(val)
+                        if 0.0 <= num <= 1.0:
+                            num *= 100.0
+                        if num < 0:
+                            num = 0.0
+                        if num > 100:
+                            num = 100.0
+                        return f"{int(round(num))}%"
+                    except Exception:
+                        s = str(val).strip()
+                        return f"{s}%" if s and not s.endswith("%") else s
+
+                for _, row in dfv.iterrows():
+                    title = str(row.get("title", "")).strip() or str(row.get("key", "")).strip()
+                    dp_key = str(row.get("key", "")).strip()
+                    value_cell = row.get("value", "")
+                    conf_str = format_conf_percent(row.get("confidence", ""))
+                    explanation = str(row.get("explanation", "")).strip()
+
+                    struct_info = dp_key_to_struct.get(dp_key)
+                    if struct_info:
+                        kind, skey = struct_info
+                        # Heading for the datapoint
+                        st.markdown(f"**{title}:**\n\n `{conf_str} {explanation}`")
+
+                        el_titles = struct_key_to_el_title.get(skey, {})
+                        parsed = try_parse_json(value_cell)
+
+                        def render_one_object(
+                            obj: Any, el_titles: dict[str, str] = el_titles
+                        ) -> None:
+                            if not isinstance(obj, dict):
+                                return
+                            keys_in_order = list(el_titles.keys()) or list(obj.keys())
+                            for el_key in keys_in_order:
+                                data = obj.get(el_key)
+                                ttl = el_titles.get(el_key, el_key)
+                                if isinstance(data, dict):
+                                    val = data.get("value")
+                                    c = format_conf_percent(data.get("confidence"))
+                                    expl = str(data.get("explanation", "")).strip()
+                                    st.markdown(f"- **{ttl}:** {val}\n\n`{c} {expl}`".strip())
+                                else:
+                                    st.markdown(f"- **{ttl}:** {data}")
+
+                        if kind == "list_object" and isinstance(parsed, list):
+                            for obj in parsed:
+                                render_one_object(obj)
+                                st.markdown("")
+                        else:
+                            render_one_object(parsed if isinstance(parsed, dict) else {})
+                            st.markdown("")
+                    else:
+                        st.markdown(
+                            f"**{title}**: {value_cell}\n\n`{conf_str} {explanation}`".strip()
+                        )
+                        # st.markdown("")
 
     with tab_processing:
         if not model_name:
@@ -315,7 +391,10 @@ def main() -> None:
 
                 # Merge raw text into wrappers (avoid HTML breaking)
                 safe_text = (
-                    text_series.astype(str).str.replace("<", "&lt;").str.replace(">", "&gt;")
+                    text_series.astype(str)
+                    .str.replace("<", "&lt;")
+                    .str.replace(">", "&gt;")
+                    .str.replace("\t", "")
                 )
                 text_cells = [
                     tpl.format(txt)
@@ -601,7 +680,10 @@ def main() -> None:
                         clause_cells.append(f'<div class="normal-cell">{content}</div>')
                         text_cells.append('<div class="text-normal-cell">{}</div>')
                 safe_text = (
-                    text_series.astype(str).str.replace("<", "&lt;").str.replace(">", "&gt;")
+                    text_series.astype(str)
+                    .str.replace("<", "&lt;")
+                    .str.replace(">", "&gt;")
+                    .str.replace("\t", "")
                 )
                 text_cells = [
                     tpl.format(txt)
@@ -711,6 +793,44 @@ def main() -> None:
                     ),
                 )
                 st.markdown(html, unsafe_allow_html=True)
+
+    with tab_clauses:
+        if not model_name:
+            st.info("Select a model to view clauses.")
+        else:
+            df_cls = load_classification_csv(template_key, model_name, current_path.stem)
+            if df_cls is None or df_cls.empty:
+                st.info("No clause results found for this contract.")
+            else:
+                # Map clause keys to titles
+                try:
+                    tmpl = load_template_dict(template_key)
+                    clauses = tmpl.get("clauses", []) or []
+                    key_to_title = {
+                        str(c.get("key")): c.get("title") or str(c.get("key")) for c in clauses
+                    }
+                except Exception:
+                    key_to_title = {}
+
+                # Group paragraphs by clause_key in appearance order
+                grouped: dict[str, list[str]] = {}
+                for _, row in df_cls.iterrows():
+                    k = str(row.get("clause_key", "")).strip()
+                    if not k:
+                        continue
+                    txt = str(row.get("text", "")).strip()
+                    if not txt:
+                        continue
+                    grouped.setdefault(k, []).append(txt)
+
+                if not grouped:
+                    st.info("No classified clauses found in this document.")
+                else:
+                    for ck, para_list in grouped.items():
+                        title = key_to_title.get(ck, ck)
+                        st.markdown(f"### {title}")
+                        for p in para_list:
+                            st.markdown(f"- {p}")
 
 
 if __name__ == "__main__":
