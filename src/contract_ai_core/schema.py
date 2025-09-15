@@ -471,3 +471,30 @@ class RevisedContract(FrozenBaseModel):
     applied_instructions: Sequence[RevisedSection] = Field(
         ..., description="List of revised sections that were applied."
     )
+
+
+class DocumentAnalysis(FrozenBaseModel):
+    """Aggregate view of a processed contract document.
+
+    Combines high-level metadata with extracted artifacts produced by the pipeline:
+    - Classified clauses at the paragraph level
+    - Extracted datapoints (values + evidence)
+    - Reviewed guidelines (compliance checks)
+    """
+
+    metadata: ContractMetadata | None = Field(
+        default=None,
+        description="Descriptive metadata for the contract (id, title, parties, dates, etc.).",
+    )
+    classified_clauses: DocumentClassification | None = Field(
+        default=None,
+        description="Per-paragraph clause classifications and optional clause index.",
+    )
+    extracted_datapoints: ExtractionResult | None = Field(
+        default=None,
+        description="All datapoints extracted from the document, including evidence and confidence.",
+    )
+    reviewed_guidelines: Sequence[ReviewedGuideline] | None = Field(
+        default=None,
+        description="Results of guideline reviews with match status, evidence, and confidence.",
+    )

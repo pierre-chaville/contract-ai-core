@@ -1,6 +1,6 @@
-## Dataset Tools
+## Tools
 
-Location: `dataset/*.py`
+Location: `tools/*.py`
 
 ### Classification
 
@@ -8,7 +8,7 @@ Location: `dataset/*.py`
 
 Usage:
 ```bash
-python dataset/run_classification.py --template ISDA --model gpt-4.1
+python tools/run_classification.py --template ISDA --model gpt-4.1
 ```
 
 Metrics:
@@ -20,19 +20,19 @@ Metrics:
 
 Usage:
 ```bash
-python dataset/run_extraction.py --template ISDA --model gpt-4.1-mini
+python tools/run_extraction.py --template ISDA --model gpt-4.1-mini
 ```
 
 Metrics and reporting:
 - `run_extraction_metrics.py` – Computes relaxed accuracy, per-key accuracy and F1. Handles types: str, bool, int, float, date, enum, money.
 
-Outputs are written under `dataset/output/datapoints/<template>/<model>/`.
+Outputs are written under `tools/output/datapoints/<template>/<model>/`.
 
 ### Amendments (Reviser)
 
 - `run_reviser.py` – Generates amended-and-restated contracts from pairs of base contract and amendment documents.
-  - Writes restated contracts to `dataset/output/amendments/restated/<model>/*.md`.
-  - Writes applied instruction JSON to `dataset/output/amendments/instructions/<model>/*.json`.
+  - Writes restated contracts to `tools/output/amendments/restated/<model>/*.md`.
+  - Writes applied instruction JSON to `tools/output/amendments/instructions/<model>/*.json`.
   - Each instruction JSON row includes: amendment span text, target section, confidence, initial and revised paragraphs, and explanations.
 
 Viewer:
@@ -40,5 +40,5 @@ Viewer:
 
 Run the viewer:
 ```bash
-streamlit run dataset/view_reviser.py
+streamlit run tools/view_reviser.py
 ```

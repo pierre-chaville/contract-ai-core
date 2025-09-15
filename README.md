@@ -17,6 +17,7 @@ AI-driven legal contract processing. This repo includes a core Python library an
 ```
 contract-ai-core/
   documentation/
+  tools/
   dataset/
   src/contract_ai_core/
   tests/
@@ -58,7 +59,7 @@ See full docs under `documentation/`:
 - `[documentation/index.md](documentation/index.md)`
 - `[documentation/core_library.md](documentation/core_library.md)`
 - `[documentation/dataset.md](documentation/dataset.md)`
-- `[documentation/dataset_tools.md](documentation/dataset_tools.md)`
+- `[documentation/tools.md](documentation/tools.md)`
 
 ### Usage sketch
 

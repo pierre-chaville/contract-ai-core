@@ -192,8 +192,8 @@ def main() -> None:
             st.rerun()
 
     # Tabs
-    tab_processing, tab_review, tab_datapoints, tab_clauses, tab_guidelines = st.tabs(
-        ["Processing", "Review", "Datapoints", "Clauses", "Guidelines"]
+    tab_processing, tab_review, tab_datapoints, tab_clauses, tab_guidelines, tab_agent = st.tabs(
+        ["Processing", "Review", "Datapoints", "Clauses", "Guidelines", "Agent"]
     )
 
     with tab_datapoints:
@@ -1013,6 +1013,195 @@ def main() -> None:
                             parts.append(explanation)
                         if parts:
                             st.markdown("`" + " ".join(parts) + "`")
+
+    with tab_agent:
+        repo_root = get_repo_root()
+        src_dir = repo_root / "src"
+        if str(src_dir) not in sys.path:
+            sys.path.insert(0, str(src_dir))
+        try:
+            from contract_ai_core.contract_agent import Agent, AgentConfig
+            from contract_ai_core.schema import (
+                ClassifiedParagraph,
+                ContractTypeTemplate,
+                DocumentAnalysis,
+                DocumentClassification,
+                ExtractedDatapoint,
+                ExtractionResult,
+                Paragraph,
+                ReviewedGuideline,
+            )
+        except Exception as e:
+            st.error(f"Unable to load core library: {e}")
+        else:
+            # Load template
+            try:
+                tmpl_dict = load_template_dict(template_key)
+                contract_type = ContractTypeTemplate.model_validate(tmpl_dict)
+            except Exception as e:
+                contract_type = None
+                st.warning(f"Template load failed: {e}")
+
+            # Helpers
+            def _parse_conf_pct_to_unit(v: Any) -> float | None:
+                try:
+                    if v is None or (isinstance(v, float) and pd.isna(v)):
+                        return None
+                    s = str(v).strip()
+                    if s == "":
+                        return None
+                    num = float(s)
+                    if num > 1.0:
+                        num = num / 100.0
+                    return max(0.0, min(1.0, num))
+                except Exception:
+                    return None
+
+            def _parse_evidence_list(s: Any) -> list[int] | None:
+                if s is None:
+                    return None
+                try:
+                    txt = str(s).strip()
+                    if not txt:
+                        return None
+                    import ast
+
+                    parsed = ast.literal_eval(txt)
+                    if isinstance(parsed, (list, tuple)):
+                        out: list[int] = []
+                        for x in parsed:
+                            try:
+                                out.append(int(x))
+                            except Exception:
+                                continue
+                        return out
+                    if isinstance(parsed, (int, float)):
+                        return [int(parsed)]
+                except Exception:
+                    pass
+                return None
+
+            # Build artifacts from CSVs
+            df_cls = (
+                load_classification_csv(template_key, model_name, current_path.stem)
+                if model_name
+                else None
+            )
+            if df_cls is not None and not df_cls.empty:
+                cls_pars: list[ClassifiedParagraph] = []
+                clause_to_pars: dict[str, list[int]] = {}
+                for _, row in df_cls.iterrows():
+                    try:
+                        idx = int(str(row.get("index", "")).strip())
+                    except Exception:
+                        continue
+                    text_i = str(row.get("text", "")).strip()
+                    ck = str(row.get("clause_key", "")).strip() or None
+                    conf_unit = _parse_conf_pct_to_unit(row.get("confidence", ""))
+                    cp = ClassifiedParagraph(
+                        paragraph=Paragraph(index=idx, text=text_i),
+                        clause_key=ck,
+                        confidence=conf_unit,
+                    )
+                    cls_pars.append(cp)
+                    if ck:
+                        clause_to_pars.setdefault(ck, []).append(idx)
+                classification = DocumentClassification(
+                    paragraphs=cls_pars, clause_to_paragraphs=clause_to_pars or None
+                )
+            else:
+                classification = None
+
+            df_dp = (
+                load_datapoints_csv(template_key, model_name, current_path.stem)
+                if model_name
+                else None
+            )
+            if df_dp is not None and not df_dp.empty:
+                dps: list[ExtractedDatapoint] = []
+                for _, r in df_dp.iterrows():
+                    key = str(r.get("key", "")).strip()
+                    value = r.get("value", None)
+                    expl = str(r.get("explanation", "")).strip() or None
+                    ev = _parse_evidence_list(r.get("evidence", None))
+                    conf = _parse_conf_pct_to_unit(r.get("confidence", ""))
+                    dps.append(
+                        ExtractedDatapoint(
+                            key=key,
+                            value=value,
+                            explanation=expl,
+                            evidence_paragraph_indices=ev,
+                            confidence=conf,
+                        )
+                    )
+                extraction = ExtractionResult(datapoints=dps)
+            else:
+                extraction = None
+
+            df_gl = (
+                load_guidelines_csv(template_key, model_name, current_path.stem)
+                if model_name
+                else None
+            )
+            if df_gl is not None and not df_gl.empty:
+                gls: list[ReviewedGuideline] = []
+                for _, r in df_gl.iterrows():
+                    key = str(r.get("key", "")).strip()
+                    matched_raw = str(r.get("guideline_matched", "")).strip().lower()
+                    matched = True if matched_raw in ("true", "1", "yes", "y") else False
+                    conf = _parse_conf_pct_to_unit(r.get("confidence", ""))
+                    expl = str(r.get("explanation", "")).strip() or None
+                    ev = _parse_evidence_list(r.get("evidence", None))
+                    gls.append(
+                        ReviewedGuideline(
+                            key=key,
+                            guideline_matched=matched,
+                            confidence=conf,
+                            explanation=expl,
+                            evidence_paragraph_indices=ev,
+                        )
+                    )
+            else:
+                gls = []
+
+            analysis = DocumentAnalysis(
+                metadata=None,
+                classified_clauses=classification,
+                extracted_datapoints=extraction,
+                reviewed_guidelines=gls or None,
+            )
+
+            agent_key = f"agent::{template_key}::{model_name}::{current_path.name}"
+            if agent_key not in st.session_state:
+                st.session_state[agent_key] = Agent(
+                    contract_type=contract_type, analysis=analysis, config=AgentConfig()
+                )
+            agent: Agent = st.session_state[agent_key]
+
+            st.subheader("Ask a question about this contract")
+            q = st.text_input("Question", value=st.session_state.get("last_question", ""))
+            c1, c2 = st.columns([1, 1])
+            with c1:
+                go = st.button("Ask")
+            with c2:
+                reset = st.button("Reset conversation")
+            if reset:
+                agent.reset()
+                st.success("Conversation reset.")
+            if go and q.strip():
+                st.session_state["last_question"] = q
+                try:
+                    answer = agent.ask(q)
+                except Exception as e:
+                    st.error(f"Agent error: {e}")
+                else:
+                    st.markdown("### Answer")
+                    st.write(answer)
+                    if getattr(agent, "_history", None):
+                        st.markdown("### Conversation")
+                        for uq, aa in agent._history[-5:]:
+                            st.markdown(f"- You: {uq}")
+                            st.markdown(f"  \nAssistant: {aa}")
 
 
 if __name__ == "__main__":
