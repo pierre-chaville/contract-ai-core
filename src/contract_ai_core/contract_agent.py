@@ -3,6 +3,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Iterable, Optional
 
+from pydantic import BaseModel, Field
+
 from .schema import (
     ContractMetadata,
     ContractTypeTemplate,
@@ -122,35 +124,90 @@ class Agent:
         return {k: "\n\n".join(v) for k, v in grouped.items()}
 
     def _choose_context_categories(self, question: str) -> list[str]:
-        q = (question or "").lower()
-        categories: list[str] = []
+        """Use an LLM with structured output to choose relevant context categories.
 
-        mentions_guideline = any(x in q for x in ["guideline", "policy", "comply", "compliance"])
-        mentions_datapoint = any(
-            x in q for x in ["datapoint", "value", "extract", "what is", "who is", "when is"]
-        )
+        Returns a list subset of {"text", "clauses", "datapoints", "guidelines"}.
+        Falls back to a simple heuristic if the structured call fails.
+        """
 
-        # Try explicit clause hits via title or key
-        clause_hit = False
-        for ck, title in self._clause_key_to_title.items():
-            if ck.lower() in q or (title and title.lower() in q):
-                clause_hit = True
-                break
+        class CategorySelection(BaseModel):
+            text: bool = Field(
+                description="Look at raw document text when the query is broad or unspecific."
+            )
+            clauses: bool = Field(
+                description="Look at classified clauses if the question mentions a clause or policy section."
+            )
+            datapoints: bool = Field(
+                description="Use structured datapoint values when asking about entities, dates, enumerations, or metrics."
+            )
+            guidelines: bool = Field(
+                description="Use reviewed guidelines when the question is about compliance, policies, or requirements."
+            )
+            rationale: Optional[str] = Field(
+                default=None, description="Short explanation for the selection."
+            )
 
-        if clause_hit:
-            categories.append("clauses")
-        elif not mentions_datapoint and not mentions_guideline:
-            categories.append("text")
-
-        if mentions_datapoint or self._dp_key_to_item:
-            categories.append("datapoints")
-        if mentions_guideline or self._guidelines:
-            categories.append("guidelines")
-
-        # Fallback: ensure at least one category
-        if not categories:
-            categories = ["text", "datapoints", "guidelines"]
-        return categories
+        try:
+            available = {
+                "text": bool(
+                    self.analysis.classified_clauses and self.analysis.classified_clauses.paragraphs
+                ),
+                "clauses": bool(self._clause_key_to_text),
+                "datapoints": bool(self._dp_key_to_item),
+                "guidelines": bool(self._guidelines),
+            }
+            avail_lines = [f"- {k}: {'yes' if v else 'no'}" for k, v in available.items()]
+            prompt = (
+                "You are selecting which context sources to consult to answer a question about a contract.\n"
+                "Available sources (yes/no):\n" + "\n".join(avail_lines) + "\n\n"
+                "Choose True/False for each: text, clauses, datapoints, guidelines.\n"
+                "Prefer datapoints for direct values (dates, parties, enumerations), clauses for policy/section questions,\n"
+                "guidelines for compliance checks, and text for broad/unspecific queries.\n\n"
+                f"Question: {question.strip()}\n"
+            )
+            structured = self._llm.with_structured_output(
+                CategorySelection, temperature=0.0, max_tokens=300
+            )  # type: ignore[arg-type]
+            sel: CategorySelection = structured.invoke(prompt)  # type: ignore[assignment]
+            chosen = []
+            if sel.text:
+                chosen.append("text")
+            if sel.clauses:
+                chosen.append("clauses")
+            if sel.datapoints:
+                chosen.append("datapoints")
+            if sel.guidelines:
+                chosen.append("guidelines")
+            if not chosen:
+                chosen = ["text", "datapoints"]
+            print("prompt", prompt)
+            print("chosen", chosen)
+            return chosen
+        except Exception:
+            # Heuristic fallback
+            q = (question or "").lower()
+            categories: list[str] = []
+            mentions_guideline = any(
+                x in q for x in ["guideline", "policy", "comply", "compliance"]
+            )
+            mentions_datapoint = any(
+                x in q for x in ["datapoint", "value", "what is", "who is", "when is"]
+            )
+            clause_hit = any(
+                (ck.lower() in q) or (title and title.lower() in q)
+                for ck, title in self._clause_key_to_title.items()
+            )
+            if clause_hit:
+                categories.append("clauses")
+            elif not mentions_datapoint and not mentions_guideline:
+                categories.append("text")
+            if mentions_datapoint or self._dp_key_to_item:
+                categories.append("datapoints")
+            if mentions_guideline or self._guidelines:
+                categories.append("guidelines")
+            if not categories:
+                categories = ["text", "datapoints", "guidelines"]
+            return categories
 
     def _collect_context(self, question: str, categories: Iterable[str]) -> dict[str, str]:
         sections: dict[str, str] = {}

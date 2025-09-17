@@ -143,12 +143,22 @@ def main() -> None:
 
     # Sidebar selectors
     st.sidebar.header("Selection")
+    st.session_state.process = "Review"
+    process = st.sidebar.selectbox(
+        "Process",
+        ["Review", "Processing"],
+        index=["Review", "Processing"].index(st.session_state.get("process", "Review")),
+    )
+    if process != st.session_state.get("process"):
+        st.session_state.process = process
+        st.session_state.contract_idx = 0
+
     templates = list_templates()
     if not templates:
         st.info("No templates found.")
         return
     if "contracts_template" not in st.session_state:
-        st.session_state.contracts_template = templates[0]
+        st.session_state.contracts_template = templates[1]
     template_key = st.sidebar.selectbox(
         "Template",
         templates,
@@ -192,12 +202,24 @@ def main() -> None:
             st.rerun()
 
     # Tabs
-    tab_processing, tab_review, tab_datapoints, tab_clauses, tab_guidelines, tab_agent = st.tabs(
-        ["Processing", "Review", "Datapoints", "Clauses", "Guidelines", "Agent"]
-    )
+    if process == "Processing":
+        tab_processing, tab_datapoints, tab_clauses, tab_agent, tab_compare = st.tabs(
+            ["Processing", "Datapoints", "Clauses", "Ask a question", "Compare documents"]
+        )
+        tab_review = st.empty()
+        tab_guidelines = st.empty()
+    else:
+        tab_review, tab_clauses, tab_guidelines, tab_agent, tab_compare = st.tabs(
+            ["Review", "Clauses", "Guidelines", "Ask a question", "Compare documents"]
+        )
+        tab_datapoints = st.empty()
+        tab_processing = st.empty()
 
     with tab_datapoints:
-        if not model_name:
+        if process != "Processing":
+            # st.info("Switch to Processing to view datapoints.")
+            pass
+        elif not model_name:
             st.info("Select a model to view datapoints.")
         else:
             df_dp_tab = load_datapoints_csv(template_key, model_name, current_path.stem)
@@ -385,7 +407,10 @@ def main() -> None:
                         render_one_dp_row(row)
 
     with tab_processing:
-        if not model_name:
+        if process != "Processing":
+            # st.info("Switch to Processing to view classification.")
+            pass
+        elif not model_name:
             st.info("Select a model to view clause classification results.")
         else:
             df_cls = load_classification_csv(template_key, model_name, current_path.stem)
@@ -707,7 +732,10 @@ def main() -> None:
                 st.markdown(html, unsafe_allow_html=True)
 
     with tab_review:
-        if not model_name:
+        if process == "Processing":
+            # st.info("Switch to Review to view guidelines alongside clauses.")
+            pass
+        elif not model_name:
             st.info("Select a model to review guidelines.")
         else:
             # Load classification for clause labels
@@ -912,7 +940,10 @@ def main() -> None:
                             st.markdown(f"- {p}")
 
     with tab_guidelines:
-        if not model_name:
+        if process == "Processing":
+            # st.info("Switch to Review to view guidelines.")
+            pass
+        elif not model_name:
             st.info("Select a model to view guidelines.")
         else:
             df_gl = load_guidelines_csv(template_key, model_name, current_path.stem)
@@ -1178,30 +1209,250 @@ def main() -> None:
                 )
             agent: Agent = st.session_state[agent_key]
 
-            st.subheader("Ask a question about this contract")
-            q = st.text_input("Question", value=st.session_state.get("last_question", ""))
-            c1, c2 = st.columns([1, 1])
-            with c1:
-                go = st.button("Ask")
-            with c2:
-                reset = st.button("Reset conversation")
-            if reset:
-                agent.reset()
-                st.success("Conversation reset.")
-            if go and q.strip():
-                st.session_state["last_question"] = q
+            # Render chat history
+            if getattr(agent, "_history", None):
+                for uq, aa in agent._history:
+                    with st.chat_message("user"):
+                        st.markdown(uq)
+                    with st.chat_message("assistant"):
+                        st.markdown(aa)
+
+            # Chat input at bottom; on submit, process and rerun to keep input anchored
+            user_q = st.chat_input("Ask a question about this contract…")
+            if user_q and user_q.strip():
                 try:
-                    answer = agent.ask(q)
+                    with st.spinner("Thinking …"):
+                        agent.ask(user_q)
                 except Exception as e:
                     st.error(f"Agent error: {e}")
                 else:
-                    st.markdown("### Answer")
-                    st.write(answer)
-                    if getattr(agent, "_history", None):
-                        st.markdown("### Conversation")
-                        for uq, aa in agent._history[-5:]:
-                            st.markdown(f"- You: {uq}")
-                            st.markdown(f"  \nAssistant: {aa}")
+                    st.rerun()
+
+            # Reset button after the input
+            if st.button("Reset conversation"):
+                agent.reset()
+                st.success("Conversation reset.")
+                st.rerun()
+
+    with tab_compare:
+        # Compare current document to another from the same template folder
+        repo_root = get_repo_root()
+        src_dir = repo_root / "src"
+        if str(src_dir) not in sys.path:
+            sys.path.insert(0, str(src_dir))
+        # Imports
+        try:
+            from contract_ai_core.compare import DocumentCompare, DocumentCompareConfig
+            from contract_ai_core.schema import (
+                ClassifiedParagraph,
+                DocumentClassification,
+                Paragraph,
+            )
+            from contract_ai_core.utilities import split_text_into_paragraphs  # type: ignore
+        except Exception as e:
+            st.error(f"Unable to load compare module: {e}")
+        else:
+            # File picker for the second document
+            other_files = [p for p in files if p != current_path]
+            if not other_files:
+                st.info("No other files found to compare against.")
+            else:
+                other_names = [p.name for p in other_files]
+                state_key_target = (
+                    f"compare_target::{template_key}::{model_name}::{current_path.name}"
+                )
+                current_val = st.session_state.get(state_key_target, "")
+                picked = st.selectbox(
+                    "Compare current file with",
+                    [""] + other_names,
+                    index=([""] + other_names).index(current_val)
+                    if current_val in ([""] + other_names)
+                    else 0,
+                    help="Select another document to start comparison.",
+                )
+                if picked != current_val:
+                    # Clear any cached result for old selection
+                    for k in list(st.session_state.keys()):
+                        if k.startswith(
+                            f"compare::{template_key}::{model_name}::{current_path.name}::"
+                        ):
+                            st.session_state.pop(k, None)
+                st.session_state[state_key_target] = picked
+                if not picked:
+                    st.info("Select a document to compare.")
+                    st.stop()
+                target_path = next(p for p in other_files if p.name == picked)
+
+                # Read and split paragraphs
+                try:
+                    text1 = read_text_best_effort(current_path)
+                    text2 = read_text_best_effort(target_path)
+                    paras1 = [
+                        Paragraph(index=i, text=pp.text)
+                        for i, pp in enumerate(split_text_into_paragraphs(text1))
+                    ]
+                    paras2 = [
+                        Paragraph(index=i, text=pp.text)
+                        for i, pp in enumerate(split_text_into_paragraphs(text2))
+                    ]
+                except Exception as e:
+                    st.error(f"Failed to load documents: {e}")
+                    paras1, paras2 = [], []
+
+                # Build classification for doc1 (for clause labels)
+                df_cls = (
+                    load_classification_csv(template_key, model_name, current_path.stem)
+                    if model_name
+                    else None
+                )
+                classification: DocumentClassification | None
+                if df_cls is not None and not df_cls.empty:
+                    cls_pars: list[ClassifiedParagraph] = []
+                    clause_to_pars: dict[str, list[int]] = {}
+                    for _, row in df_cls.iterrows():
+                        try:
+                            idx_i = int(str(row.get("index", "")).strip())
+                        except Exception:
+                            continue
+                        txt = str(row.get("text", "")).strip()
+                        ck = str(row.get("clause_key", "")).strip() or None
+                        cp = ClassifiedParagraph(
+                            paragraph=Paragraph(index=idx_i, text=txt),
+                            clause_key=ck,
+                            confidence=None,
+                        )
+                        cls_pars.append(cp)
+                        if ck:
+                            clause_to_pars.setdefault(ck, []).append(idx_i)
+                    classification = DocumentClassification(
+                        paragraphs=cls_pars, clause_to_paragraphs=clause_to_pars or None
+                    )
+                else:
+                    classification = None
+
+                # Run compare only when we have a target and not yet computed for this pair
+                compare_cache_key = f"compare::{template_key}::{model_name}::{current_path.name}::{target_path.name}"
+                result = st.session_state.get(compare_cache_key)
+                if result is None and paras1 and paras2:
+                    try:
+                        comparer = DocumentCompare(
+                            paragraphs_doc1=paras1,
+                            paragraphs_doc2=paras2,
+                            classification_doc1=classification,
+                            config=DocumentCompareConfig(),
+                        )
+                        result = comparer.compare()
+                        st.session_state[compare_cache_key] = result
+                    except Exception as e:
+                        import traceback
+
+                        st.error(f"Compare failed: {e}" + "\n" + traceback.format_exc())
+                        result = None
+
+                if not result:
+                    st.info("No comparison result to display.")
+                else:
+                    # Build clause key to title mapping
+                    try:
+                        tmpl = load_template_dict(template_key)
+                        clauses = tmpl.get("clauses", []) or []
+                        clause_title_by_key = {
+                            str(c.get("key")): (c.get("title") or str(c.get("key")))
+                            for c in clauses
+                        }
+                    except Exception:
+                        clause_title_by_key = {}
+
+                    para_cells: list[str] = []
+                    clause_cells: list[str] = []
+                    expl_cells: list[str] = []
+                    prev_ck: str | None = None
+                    for it in result.items:
+                        ck = str(getattr(it, "clause_key_doc1", "") or "").strip()
+                        is_repeat = prev_ck is not None and ck != "" and ck == prev_ck
+                        if ck != "":
+                            prev_ck = ck
+
+                        # Clause cell (hide repeats)
+                        clause_title = clause_title_by_key.get(ck, ck)
+                        if is_repeat:
+                            clause_cells.append('<div class="repeat-cell"></div>')
+                        else:
+                            clause_cells.append(f'<div class="normal-cell">{clause_title}</div>')
+
+                        # Paragraph cell (add right border when repeat)
+                        paragraph_html = getattr(it, "text_markup", "") or ""
+                        if is_repeat:
+                            para_cells.append(
+                                f'<div class="text-repeat-cell">{paragraph_html}</div>'
+                            )
+                        else:
+                            para_cells.append(
+                                f'<div class="text-normal-cell">{paragraph_html}</div>'
+                            )
+
+                        # Explanation cell (severity + confidence + rationale)
+                        severity = getattr(it, "severity", "") or ""
+                        rationale = getattr(it, "rationale", "") or ""
+                        conf_val = getattr(it, "confidence", None)
+                        try:
+                            conf_str = (
+                                f"{int(round(float(conf_val) * 100))}%"
+                                if conf_val is not None
+                                else ""
+                            )
+                        except Exception:
+                            conf_str = ""
+                        parts = []
+                        if severity:
+                            parts.append(
+                                f'<span class="sev sev-{severity.lower()}">{severity}</span>'
+                            )
+                        if conf_str:
+                            parts.append(f'<span class="cmp-conf">{conf_str}</span>')
+                        if rationale:
+                            parts.append(rationale)
+                        expl_cells.append(" ".join(parts).strip())
+
+                    df_view = pd.DataFrame(
+                        {
+                            "paragraph": pd.Series(para_cells),
+                            "clause": pd.Series(clause_cells),
+                            "explanation": pd.Series(expl_cells),
+                        }
+                    )
+                    html = df_view.to_html(index=False, escape=False)
+                    html = html.replace(
+                        '<table border="1" class="dataframe">',
+                        (
+                            "<style>"
+                            ".cmp-table{width:100%;table-layout:fixed;border-collapse:collapse;}"
+                            ".cmp-table th,.cmp-table td{border:none;padding:0.5rem;vertical-align:top;word-wrap:break-word;white-space:normal;}"
+                            ".cmp-table col.diff-col{width:60%;}"
+                            ".cmp-table col.clause-col{width:15%;}"
+                            ".cmp-table col.expl-col{width:25%;}"
+                            ".cmp-table td .text-repeat-cell{border-right:4px solid #888;padding-right:0.5rem;}"
+                            ".diff-block{background:#f9f9f9;padding:0.5rem;border-radius:4px;}"
+                            ".h-add{color:#1b5e20;display:block;}"
+                            ".h-del{color:#b71c1c;display:block;}"
+                            ".h-eq{color:#555;display:block;}"
+                            ".h-meta{color:#888;display:block;font-style:italic;}"
+                            ".sev{padding:2px 6px;border-radius:10px;font-size:0.85em;color:#fff;}"
+                            ".cmp-conf{color:#2e7d32;font-weight:600;}"
+                            ".sev-material{background:#b71c1c;}"
+                            ".sev-important{background:#ef6c00;}"
+                            ".sev-minor{background:#616161;}"
+                            ".sev-none{background:#2e7d32;}"
+                            "</style>"
+                            '<table class="cmp-table">'
+                            "<colgroup>"
+                            '<col class="diff-col"/>'
+                            '<col class="clause-col"/>'
+                            '<col class="expl-col"/>'
+                            "</colgroup>"
+                        ),
+                    )
+                    st.markdown(html, unsafe_allow_html=True)
 
 
 if __name__ == "__main__":
