@@ -1,0 +1,63 @@
+{
+  "filename": "3aa24fc8e5e95724b53d37347cd28c50.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA 2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": "2017-07-12",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of July 12, 2017, which is clearly stated on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number; not applicable for initial contracts."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original 2002 Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and formatted as a final agreement, not a draft; no draft watermark or language."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as one of the parties on the first page."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as 'Party A' next to the name."
+  },
+  "party_name_2": {
+    "value": "CMF TT II, LLC",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as the other party on the first page."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as 'Party B' next to the name."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, clear, and free of typos or OCR errors."
+  }
+}

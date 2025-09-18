@@ -1,0 +1,63 @@
+{
+  "filename": "516786fe020d59eba1b3e7f65e727e38.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'SCHEDULE to the 2002 ISDA Master Agreement,' indicating it is an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text explicitly references the '2002 ISDA Master Agreement.'"
+  },
+  "contract_date": {
+    "value": "2017-07-12",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of July 12, 2017, as stated in the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is a schedule to the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number; this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "This is a schedule to the initial 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and lists both parties, which strongly suggests it is an executed agreement."
+  },
+  "party_name_1": {
+    "value": "JPMorgan Chase Bank, N.A.",
+    "confidence": 1.0,
+    "explanation": "Party A is explicitly named as 'JPMorgan Chase Bank, N.A.'"
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The document refers to JPMorgan Chase Bank, N.A. as 'Party A.'"
+  },
+  "party_name_2": {
+    "value": "CMF Graham Capital Master Fund L.P.",
+    "confidence": 1.0,
+    "explanation": "Party B is explicitly named as 'CMF Graham Capital Master Fund L.P.'"
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The document refers to CMF Graham Capital Master Fund L.P. as 'Party B.'"
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

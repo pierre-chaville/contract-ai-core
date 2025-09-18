@@ -1,0 +1,63 @@
+{
+  "filename": "f42531b34d1157e7a0ab60662d17bf4b.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA International Swaps and Derivatives Association, Inc. MASTER AGREEMENT' which explicitly identifies it as an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No explicit version year (e.g., 1992 or 2002) is mentioned in the visible text or image, so this field is null."
+  },
+  "contract_date": {
+    "value": "2018-05-01",
+    "confidence": 1.0,
+    "explanation": "The contract is dated as of May 1, 2018, which is clearly stated at the top of the agreement."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is an initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment mentioned, so this field is null."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is labeled 'Execution Version,' which strongly indicates it is an executed contract."
+  },
+  "party_name_1": {
+    "value": "EDF TRADING NORTH AMERICA, LLC",
+    "confidence": 1.0,
+    "explanation": "EDF TRADING NORTH AMERICA, LLC is clearly listed as one of the parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "EDF TRADING NORTH AMERICA, LLC is explicitly labeled as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "SUMMER ENERGY, LLC AND SUMMER ENERGY NORTHEAST, LLC",
+    "confidence": 1.0,
+    "explanation": "SUMMER ENERGY, LLC and SUMMER ENERGY NORTHEAST, LLC are jointly listed as the other party."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "SUMMER ENERGY, LLC and SUMMER ENERGY NORTHEAST, LLC are explicitly labeled as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of typos or OCR errors."
+  }
+}

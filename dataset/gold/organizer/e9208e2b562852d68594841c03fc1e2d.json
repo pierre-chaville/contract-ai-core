@@ -1,0 +1,63 @@
+{
+  "filename": "e9208e2b562852d68594841c03fc1e2d.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'FIRST AMENDMENT ... TO THE ISDA MASTER AGREEMENT' and repeatedly references the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No specific version year (e.g., 1992 or 2002) of the ISDA Master Agreement is mentioned in the text or image."
+  },
+  "contract_date": {
+    "value": "2009-09-22",
+    "confidence": 1.0,
+    "explanation": "The ISDA Master Agreement is stated as 'dated as of September 22, 2009' in both the heading and body."
+  },
+  "amendment_date": {
+    "value": "2009-09-28",
+    "confidence": 1.0,
+    "explanation": "The amendment is clearly dated as of September 28, 2009 in the heading and body."
+  },
+  "amendment_number": {
+    "value": "1",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'FIRST AMENDMENT', indicating this is amendment number 1."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'FIRST AMENDMENT', which is an amendment to the contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document uses formal executed language and is dated, with no indication it is a draft."
+  },
+  "party_name_1": {
+    "value": "SEMPRA ENERGY TRADING LLC",
+    "confidence": 1.0,
+    "explanation": "SEMPRA ENERGY TRADING LLC is listed as a party in both the heading and body, identified as Party A."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "SEMPRA ENERGY TRADING LLC is explicitly identified as 'Party A' in the body."
+  },
+  "party_name_2": {
+    "value": "MXENERGY INC.",
+    "confidence": 1.0,
+    "explanation": "MXENERGY INC. is listed as a party in both the heading and body, identified as Party B."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "MXENERGY INC. is explicitly identified as 'Party B' in the body."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of typos or OCR errors."
+  }
+}

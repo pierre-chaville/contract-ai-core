@@ -1,0 +1,63 @@
+{
+  "filename": "1d7c4032c83b5569a8e06ae1044acead.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc, which is the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states '2002 MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": "2017-07-12",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of July 12, 2017', which is clearly stated near the top of the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is an initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of any amendment number or amendment language."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is described as a '2002 MASTER AGREEMENT' with no reference to amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and formatted as a final agreement, not a draft. While signatures are not shown, the presence of a date and formal structure strongly indicate executed status."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "JPMORGAN CHASE BANK, N.A. is listed first and described as 'a national banking association organized under the laws of the United States of America (\"Party A\")'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The text explicitly assigns JPMORGAN CHASE BANK, N.A. as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "CAMBRIDGE MASTER FUND LP.",
+    "confidence": 1.0,
+    "explanation": "CAMBRIDGE MASTER FUND LP. is listed second and described as 'a limited partnership formed in the United States (\"Party B\")'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The text explicitly assigns CAMBRIDGE MASTER FUND LP. as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free from typos or OCR errors."
+  }
+}

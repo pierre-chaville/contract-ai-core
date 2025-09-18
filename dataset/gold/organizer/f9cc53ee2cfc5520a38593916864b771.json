@@ -1,0 +1,63 @@
+{
+  "filename": "f9cc53ee2cfc5520a38593916864b771.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc., which matches the ISDA Master Agreement code."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT' in the heading and body."
+  },
+  "contract_date": {
+    "value": "2017-07-12",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of July 12, 2017, which is clearly stated in the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft, indicating it is executed."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "JPMORGAN CHASE BANK, N.A. is explicitly listed as a party ('Party A')."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "JPMORGAN CHASE BANK, N.A. is labeled as 'Party A' in the document."
+  },
+  "party_name_2": {
+    "value": "CMF TT II, LLC",
+    "confidence": 1.0,
+    "explanation": "CMF TT II, LLC is explicitly listed as a party ('Party B')."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "CMF TT II, LLC is labeled as 'Party B' in the document."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

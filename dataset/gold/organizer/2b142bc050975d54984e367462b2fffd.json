@@ -1,0 +1,63 @@
+{
+  "filename": "2b142bc050975d54984e367462b2fffd.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The document is explicitly labeled as the '2002 MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": "2020-01-23",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of January 23, 2020, which is clearly stated on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft; no draft watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "Bank of America, N.A.",
+    "confidence": 1.0,
+    "explanation": "Bank of America, N.A. is listed as one of the parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled as 'Party A', Bank of America, N.A. is listed first, which is the standard convention."
+  },
+  "party_name_2": {
+    "value": "Verizon Owner Trust 2020-A",
+    "confidence": 1.0,
+    "explanation": "Verizon Owner Trust 2020-A is listed as the second party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled as 'Party B', Verizon Owner Trust 2020-A is listed second, which is the standard convention."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

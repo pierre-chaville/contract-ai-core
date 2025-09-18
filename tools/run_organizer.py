@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import argparse
-import csv
+import json
 from pathlib import Path
 
 from contract_ai_core import (
@@ -23,18 +23,14 @@ def main() -> None:
         choices=["openai", "azure", "anthropic"],
         help="LLM provider (default: openai)",
     )
-    parser.add_argument(
-        "--source_dir",
-        default="test",
-        help="Optional override for documents directory (defaults to dataset/documents/organizer)",
-    )
     args = parser.parse_args()
 
     model_name = args.model
     provider = args.provider
 
     repo_root = Path(__file__).resolve().parents[1]
-    docs_dir = repo_root / "dataset" / "documents" / "organizer" / args.source_dir
+    docs_dir = repo_root / "dataset" / "documents" / "organizer" / "files"
+    pngs_dir = repo_root / "dataset" / "documents" / "organizer" / "pngs"
     output_dir = repo_root / "dataset" / "output" / "organizer" / model_name
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -58,96 +54,76 @@ def main() -> None:
         )
     )
 
-    # Read existing results if present
-    out_path = output_dir / "results.csv"
-    existing_rows: dict[str, dict[str, str]] = {}
-    header = [
-        "filename",
-        "contract_type",
-        "contract_type_confidence",
-        "contract_type_explanation",
-        "contract_date",
-        "contract_date_confidence",
-        "contract_date_explanation",
-        "amendment_date",
-        "amendment_date_confidence",
-        "amendment_date_explanation",
-        "amendment_number",
-        "amendment_number_confidence",
-        "amendment_number_explanation",
-        "version_type",
-        "version_type_confidence",
-        "version_type_explanation",
-        "status",
-        "status_confidence",
-        "status_explanation",
-    ]
-
-    if out_path.exists():
-        try:
-            with out_path.open("r", encoding="utf-8", newline="") as f:
-                reader = csv.DictReader(f)
-                for row in reader:
-                    fn = (row.get("filename") or "").strip()
-                    if not fn:
-                        continue
-                    existing_rows[fn] = {k: (row.get(k) or "") for k in header}
-        except Exception:
-            existing_rows = {}
-
-    # Determine which files to process (missing or empty contract_type)
+    # Determine which files to process: those without a per-document JSON already present
     to_process: list[tuple[str, list[Paragraph]]] = []
+    images: list[bytes] = []
     for doc_path in txt_files:
         filename = doc_path.name
-        prev = existing_rows.get(filename)
-        if prev is None or (prev.get("contract_type", "").strip() == ""):
+        out_json = output_dir / f"{doc_path.stem}.json"
+        if not out_json.exists():
             text = doc_path.read_text(encoding="utf-8", errors="ignore")
             paragraphs = [Paragraph(text=p, index=i) for i, p in enumerate(text.split("\n"))]
             to_process.append((filename, paragraphs))
+            # Look for a matching PNG preview: prefer <stem>.png, also try <name>.png
+            png_candidates = [
+                pngs_dir / f"{doc_path.stem}.png",
+                pngs_dir / f"{doc_path.name}.png",
+            ]
+            png_bytes: bytes = b""
+            for cand in png_candidates:
+                if cand.exists():
+                    try:
+                        png_bytes = cand.read_bytes()
+                        break
+                    except Exception:
+                        png_bytes = b""
+                        break
+            images.append(png_bytes)
 
     if not to_process:
-        print("No pending files to process. Keeping existing results.")
+        print("No pending files to process. All documents already have JSON outputs.")
     else:
-        print("Processing", len(to_process), "files")
-        results = organizer.organize(to_process)
+        total = len(to_process)
+        print("Processing", total, "files in batches of 10")
+        for start in range(0, total, 10):
+            end = min(start + 10, total)
+            batch_docs = to_process[start:end]
+            batch_imgs = images[start:end]
+            print(f"  Batch {start + 1}-{end} of {total}")
+            # Pass aligned images list; empty bytes mean no image for that document
+            results = organizer.organize(batch_docs, images=batch_imgs)
+            # Write one JSON per document in this batch
+            for res in results:
+                try:
+                    data = res.model_dump()  # type: ignore[attr-defined]
+                except Exception:
+                    # Fallback manual dict if model_dump not available
+                    def pack(field):
+                        return {
+                            "value": getattr(field, "value", None),
+                            "confidence": getattr(field, "confidence", None),
+                            "explanation": getattr(field, "explanation", None),
+                        }
 
-        def pct(x: float | None) -> str:
-            try:
-                return str(int(round(float(x) * 100))) if x is not None else ""
-            except Exception:
-                return ""
-
-        # Merge new results into existing rows
-        for res in results:
-            existing_rows[res.filename] = {
-                "filename": res.filename,
-                "contract_type": res.contract_type.value or "",
-                "contract_type_confidence": pct(res.contract_type.confidence),
-                "contract_type_explanation": res.contract_type.explanation or "",
-                "contract_date": res.contract_date.value or "",
-                "contract_date_confidence": pct(res.contract_date.confidence),
-                "contract_date_explanation": res.contract_date.explanation or "",
-                "amendment_date": res.amendment_date.value or "",
-                "amendment_date_confidence": pct(res.amendment_date.confidence),
-                "amendment_date_explanation": res.amendment_date.explanation or "",
-                "amendment_number": res.amendment_number.value or "",
-                "amendment_number_confidence": pct(res.amendment_number.confidence),
-                "amendment_number_explanation": res.amendment_number.explanation or "",
-                "version_type": res.version_type.value or "",
-                "version_type_confidence": pct(res.version_type.confidence),
-                "version_type_explanation": res.version_type.explanation or "",
-                "status": res.status.value or "",
-                "status_confidence": pct(res.status.confidence),
-                "status_explanation": res.status.explanation or "",
-            }
-
-    # Write back the full CSV
-    with out_path.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=header)
-        writer.writeheader()
-        for fn in sorted(existing_rows.keys()):
-            writer.writerow(existing_rows[fn])
-    print(f"  -> wrote {out_path}")
+                    data = {
+                        "filename": res.filename,
+                        "contract_type": pack(res.contract_type),
+                        "contract_type_version": pack(getattr(res, "contract_type_version", None)),
+                        "contract_date": pack(res.contract_date),
+                        "amendment_date": pack(res.amendment_date),
+                        "amendment_number": pack(res.amendment_number),
+                        "version_type": pack(res.version_type),
+                        "status": pack(res.status),
+                        "party_name_1": pack(getattr(res, "party_name_1", None)),
+                        "party_role_1": pack(getattr(res, "party_role_1", None)),
+                        "party_name_2": pack(getattr(res, "party_name_2", None)),
+                        "party_role_2": pack(getattr(res, "party_role_2", None)),
+                        "document_quality": pack(getattr(res, "document_quality", None)),
+                    }
+                out_json = output_dir / f"{Path(res.filename).stem}.json"
+                with out_json.open("w", encoding="utf-8") as jf:
+                    json.dump(data, jf, ensure_ascii=False, indent=2)
+                print(f"    -> wrote {out_json}")
 
 
 if __name__ == "__main__":

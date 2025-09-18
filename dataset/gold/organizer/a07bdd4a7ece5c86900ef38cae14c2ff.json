@@ -1,0 +1,63 @@
+{
+  "filename": "a07bdd4a7ece5c86900ef38cae14c2ff.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.98,
+    "explanation": "The document is titled 'SCHEDULE to the 1992 ISDA MASTER AGREEMENT', indicating it is an ISDA Master Agreement Schedule."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states '1992 ISDA MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": "2021-04-26",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of April 26, 2021, as stated in the first paragraph."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is a schedule to the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "This is a schedule to the initial 1992 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and between named parties, indicating it is executed rather than a draft."
+  },
+  "party_name_1": {
+    "value": "WELLS FARGO BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "Party A is explicitly named as WELLS FARGO BANK, N.A."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The text refers to WELLS FARGO BANK, N.A. as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "FARMER BROS. CO.",
+    "confidence": 1.0,
+    "explanation": "Party B is explicitly named as FARMER BROS. CO."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The text refers to FARMER BROS. CO. as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

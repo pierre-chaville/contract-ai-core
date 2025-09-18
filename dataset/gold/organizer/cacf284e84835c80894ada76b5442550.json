@@ -1,0 +1,63 @@
+{
+  "filename": "cacf284e84835c80894ada76b5442550.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA Master Agreement' and references the International Swap Dealers Association, which matches the ISDA contract type."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 0.95,
+    "explanation": "Copyright notice at the bottom states 'Copyright (C)1992 by International Swap Dealers Association, Inc.', indicating the 1992 version."
+  },
+  "contract_date": {
+    "value": "2016-06-01",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly dated as of June 1, 2016, on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is a Master Agreement dated as of June 1, 2016, with no reference to amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and formatted as a final agreement, not a draft. No 'draft' watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "CITIZENS BANK, NATIONAL ASSOCIATION",
+    "confidence": 1.0,
+    "explanation": "The first party is clearly listed as 'CITIZENS BANK, NATIONAL ASSOCIATION'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The document explicitly labels CITIZENS BANK, NATIONAL ASSOCIATION as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "CPI AEROSTRUCTURES, INC.",
+    "confidence": 1.0,
+    "explanation": "The second party is clearly listed as 'CPI AEROSTRUCTURES, INC.'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The document explicitly labels CPI AEROSTRUCTURES, INC. as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

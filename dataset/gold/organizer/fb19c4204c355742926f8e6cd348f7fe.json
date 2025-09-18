@@ -1,0 +1,63 @@
+{
+  "filename": "fb19c4204c355742926f8e6cd348f7fe.txt",
+  "contract_type": {
+    "value": "GUARANTEE",
+    "confidence": 0.95,
+    "explanation": "The document is titled as a guarantee and repeatedly refers to 'this Guarantee' and the obligations of the Guarantor."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No versioning information is provided or applicable for a guarantee agreement."
+  },
+  "contract_date": {
+    "value": "2006-01-06",
+    "confidence": 0.9,
+    "explanation": "The ISDA Master Agreement date is explicitly stated as January 6, 2006, which is the underlying contract date for which this guarantee is issued."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "This is not an amendment document; it is an initial guarantee."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment is referenced, so amendment number is not applicable."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The document is an initial guarantee, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and addressed formally, indicating it is an executed version rather than a draft."
+  },
+  "party_name_1": {
+    "value": "TILES TRUST NO. 2005-1",
+    "confidence": 0.95,
+    "explanation": "TILES TRUST NO. 2005-1 is explicitly named as the Counterparty."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "TILES TRUST NO. 2005-1 is referred to as 'Counterparty,' which typically corresponds to Party A in such agreements."
+  },
+  "party_name_2": {
+    "value": "Morgan Stanley",
+    "confidence": 0.95,
+    "explanation": "Morgan Stanley is explicitly identified as the Guarantor."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "Morgan Stanley is the Guarantor, which typically corresponds to Party B in a guarantee context."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of OCR errors or typos."
+  }
+}

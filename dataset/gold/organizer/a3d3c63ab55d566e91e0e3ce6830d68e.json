@@ -1,0 +1,63 @@
+{
+  "filename": "a3d3c63ab55d566e91e0e3ce6830d68e.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.95,
+    "explanation": "The document is titled 'AMENDMENT AGREEMENT' and references the 'ISDA Master Agreement' dated August 11, 2011, including the Schedule and Credit Support Annex."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No specific ISDA version year (e.g., 1992 or 2002) is mentioned in the text or visible in the image."
+  },
+  "contract_date": {
+    "value": "2011-08-11",
+    "confidence": 0.95,
+    "explanation": "The referenced ISDA Master Agreement is dated as of August 11, 2011, which is the main contract date."
+  },
+  "amendment_date": {
+    "value": "2012-05-11",
+    "confidence": 1.0,
+    "explanation": "The amendment agreement is dated as of May 11, 2012, which is explicitly stated at the top of the document."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No amendment number is mentioned in the text or visible in the image."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'AMENDMENT AGREEMENT' and amends the original ISDA Master Agreement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The language ('upon execution and delivery of this Agreement by both parties') and formal structure indicate it is an executed amendment, not a draft."
+  },
+  "party_name_1": {
+    "value": "Citibank, N.A.",
+    "confidence": 1.0,
+    "explanation": "Citibank, N.A. is explicitly identified as 'Party A' in the reference section."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Citibank, N.A. is explicitly called 'Party A'."
+  },
+  "party_name_2": {
+    "value": "EP Investments LLC",
+    "confidence": 1.0,
+    "explanation": "EP Investments LLC is explicitly identified as 'Party B' in the reference section."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "EP Investments LLC is explicitly called 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-structured, and free of typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "b399d7afd978506b80bdce2edb3484bc.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'THIRTY-FIRST AMENDMENT TO FIRST LIEN ISDA 2002 MASTER AGREEMENT,' explicitly identifying it as an ISDA Master Agreement amendment."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The title and body repeatedly reference the 'ISDA 2002 Master Agreement,' making the version explicit."
+  },
+  "contract_date": {
+    "value": "2016-03-17",
+    "confidence": 0.9,
+    "explanation": "The recitals state the original First Lien ISDA 2002 Master Agreement was dated as of March 17, 2016. This is the main contract date for the initial agreement."
+  },
+  "amendment_date": {
+    "value": "2023-04-26",
+    "confidence": 1.0,
+    "explanation": "The amendment is stated to be 'entered into as of April 26, 2023' in the opening paragraph."
+  },
+  "amendment_number": {
+    "value": "31",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'THIRTY-FIRST AMENDMENT,' which clearly indicates this is the 31st amendment."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is an amendment, as stated in the title and opening paragraph."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.95,
+    "explanation": "The document is labeled 'Execution Version,' which typically indicates an executed contract."
+  },
+  "party_name_1": {
+    "value": "MERRILL LYNCH COMMODITIES, INC.",
+    "confidence": 1.0,
+    "explanation": "Identified as 'Party A' in the opening paragraph."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as 'Party A' in the opening paragraph."
+  },
+  "party_name_2": {
+    "value": "U.S. OIL & REFINING CO.",
+    "confidence": 1.0,
+    "explanation": "Identified as 'Party B' in the opening paragraph."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as 'Party B' in the opening paragraph."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

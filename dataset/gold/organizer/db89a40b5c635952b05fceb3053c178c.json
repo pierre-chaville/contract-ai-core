@@ -1,0 +1,63 @@
+{
+  "filename": "db89a40b5c635952b05fceb3053c178c.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'FIRST AMENDMENT TO ISDA MASTER AGREEMENT' and repeatedly references the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No specific version year (e.g., 1992 or 2002) is mentioned for the ISDA Master Agreement in the provided text."
+  },
+  "contract_date": {
+    "value": "2007-07-19",
+    "confidence": 1.0,
+    "explanation": "The original ISDA Master Agreement is stated as dated July 19, 2007, which is the contract date for the initial agreement."
+  },
+  "amendment_date": {
+    "value": "2009-02-23",
+    "confidence": 1.0,
+    "explanation": "The amendment is stated to be entered into as of February 23, 2009."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "The amendment is called 'FIRST AMENDMENT,' but no explicit amendment number is provided in a formal field."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'FIRST AMENDMENT TO ISDA MASTER AGREEMENT,' indicating it is an amendment."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The amendment is 'entered into as of February 23, 2009,' which typically indicates execution, not a draft."
+  },
+  "party_name_1": {
+    "value": "KEYBANK NATIONAL ASSOCIATION",
+    "confidence": 1.0,
+    "explanation": "KEYBANK NATIONAL ASSOCIATION is explicitly identified as 'Party A' in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "KEYBANK NATIONAL ASSOCIATION is referred to as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "JUPITERMEDIA CORPORATION",
+    "confidence": 1.0,
+    "explanation": "JUPITERMEDIA CORPORATION is explicitly identified as 'Party B' in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "JUPITERMEDIA CORPORATION is referred to as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-structured, and free of OCR errors or typos."
+  }
+}

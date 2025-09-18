@@ -1,0 +1,63 @@
+{
+  "filename": "ed444a50dbf551cdba9793d128d06693.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swap Dealers Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "Copyright notice at the bottom states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.'"
+  },
+  "contract_date": {
+    "value": "2008-09-12",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of September 12, 2008'."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft."
+  },
+  "party_name_1": {
+    "value": "Barclays Bank PLC",
+    "confidence": 1.0,
+    "explanation": "Barclays Bank PLC is explicitly listed as 'Party A'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Barclays Bank PLC is labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "World Financial Network Credit Card Master Note Trust",
+    "confidence": 1.0,
+    "explanation": "World Financial Network Credit Card Master Note Trust is explicitly listed as 'Party B'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "World Financial Network Credit Card Master Note Trust is labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

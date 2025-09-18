@@ -1,0 +1,63 @@
+{
+  "filename": "fa99d30bb3625bfa84995e303ef07610.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'AMENDMENT to THE ISDA MASTER AGREEMENT' and references the ISDA Master Agreement multiple times."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No specific ISDA version (e.g., 1992 or 2002) is mentioned in the text or visible in the image."
+  },
+  "contract_date": {
+    "value": "2010-12-30",
+    "confidence": 1.0,
+    "explanation": "The original ISDA Master Agreement and Schedule are both dated as of December 30, 2010, as stated in the 'WHEREAS' clause."
+  },
+  "amendment_date": {
+    "value": "2013-10-23",
+    "confidence": 1.0,
+    "explanation": "The amendment is explicitly dated as of October 23, 2013, in the opening paragraph."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No amendment number is mentioned in the text or image."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'AMENDMENT' and describes changes to the existing Schedule, making it an amendment."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and formatted as a final agreement, not a draft; no indications of 'draft' or 'unsigned' status."
+  },
+  "party_name_1": {
+    "value": "BANK OF AMERICA, N.A.",
+    "confidence": 1.0,
+    "explanation": "Explicitly identified as 'Party A' in the opening paragraph."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A' in the opening paragraph."
+  },
+  "party_name_2": {
+    "value": "HEARTLAND PAYMENT SYSTEMS, INC.",
+    "confidence": 1.0,
+    "explanation": "Explicitly identified as 'Party B' in the opening paragraph."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B' in the opening paragraph."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

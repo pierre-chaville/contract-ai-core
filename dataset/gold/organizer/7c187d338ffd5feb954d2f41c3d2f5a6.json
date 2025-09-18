@@ -1,0 +1,63 @@
+{
+  "filename": "7c187d338ffd5feb954d2f41c3d2f5a6.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'TWENTY-SIXTH AMENDMENT TO FIRST LIEN ISDA 2002 MASTER AGREEMENT', which clearly identifies it as an ISDA Master Agreement amendment."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The title and body both specify 'ISDA 2002 MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": "2016-03-17",
+    "confidence": 0.95,
+    "explanation": "The recitals state the original First Lien ISDA 2002 Master Agreement was dated as of March 17, 2016, which is the initial contract date."
+  },
+  "amendment_date": {
+    "value": "2022-08-11",
+    "confidence": 1.0,
+    "explanation": "The amendment is stated to be entered into as of August 11, 2022."
+  },
+  "amendment_number": {
+    "value": "26",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'TWENTY-SIXTH AMENDMENT', indicating this is the 26th amendment."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is an amendment, as stated in the title and body."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.95,
+    "explanation": "The document is labeled 'Execution Version', which typically indicates an executed contract."
+  },
+  "party_name_1": {
+    "value": "MERRILL LYNCH COMMODITIES, INC.",
+    "confidence": 1.0,
+    "explanation": "Identified as 'Party A' in the opening paragraph."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "U.S. OIL & REFINING CO.",
+    "confidence": 1.0,
+    "explanation": "Identified as 'Party B' in the opening paragraph."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, clear, and free of typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "e823b77ec78357da9461add4eae003c2.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document repeatedly refers to 'ISDA Master Agreement' and describes agreements that are substantially identical to Exhibit 4.14, confirming the contract type as ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.8,
+    "explanation": "No explicit version year (e.g., 1992 or 2002) is mentioned in the text or visible in the image."
+  },
+  "contract_date": {
+    "value": "2004-03-24",
+    "confidence": 1.0,
+    "explanation": "Both ISDA Master Agreements are stated as dated March 24, 2004."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "This is not an amendment; it describes initial agreements, so amendment date is null."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number; this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.9,
+    "explanation": "The agreements are described as 'separate ISDA Master Agreement' entered into on March 24, 2004, indicating initial contracts rather than amendments or restatements."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreements are described as 'entered into,' which strongly suggests they are executed."
+  },
+  "party_name_1": {
+    "value": "Morgan Stanley Capital Services, Inc.",
+    "confidence": 1.0,
+    "explanation": "Morgan Stanley Capital Services, Inc. is explicitly named as a party in both agreements."
+  },
+  "party_role_1": {
+    "value": "Above Cap Liquidity Facility Provider",
+    "confidence": 1.0,
+    "explanation": "Morgan Stanley Capital Services, Inc. is described as 'Above Cap Liquidity Facility Provider' in both agreements."
+  },
+  "party_name_2": {
+    "value": "Wilmington Trust Company",
+    "confidence": 1.0,
+    "explanation": "Wilmington Trust Company is explicitly named as the other party in both agreements."
+  },
+  "party_role_2": {
+    "value": "Subordination Agent",
+    "confidence": 1.0,
+    "explanation": "Wilmington Trust Company is described as 'Subordination Agent' for the relevant trusts."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "97489313abb85203830b614bda4c1da5.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'SCHEDULE TO THE ISDA MASTER AGREEMENT' and references the 1992 ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states '1992 ISDA MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": "2009-06-25",
+    "confidence": 1.0,
+    "explanation": "The schedule is dated as of June 25, 2009, which is the effective date of the contract."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is a schedule to the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "This is a schedule to the initial ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and lists both parties, which strongly indicates it is executed, though signatures are not shown in the provided text."
+  },
+  "party_name_1": {
+    "value": "GOLDMAN SACHS BANK USA",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as Party A in the document."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as 'Party A' in the document."
+  },
+  "party_name_2": {
+    "value": "NEWMARKET CORPORATION",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as Party B in the document."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as 'Party B' in the document."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "aafbb062cbae5c1797a48b64e207c7f6.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA International Swap Dealers Association Inc. MASTER AGREEMENT' and references the ISDA Master Agreement throughout."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "Copyright at the bottom states 'Copyright(C) 1992 by International Swap Dealers Association, Inc.', indicating the 1992 version."
+  },
+  "contract_date": {
+    "value": "2006-03-17",
+    "confidence": 1.0,
+    "explanation": "The text states 'MASTER AGREEMENT dated as of March 17, 2006', which is the original contract date."
+  },
+  "amendment_date": {
+    "value": "2008-01-03",
+    "confidence": 1.0,
+    "explanation": "The document states 'And Amended and Restated as of January 3, 2008', which is the amendment date."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No explicit amendment number is mentioned in the text."
+  },
+  "version_type": {
+    "value": "RESTATED",
+    "confidence": 1.0,
+    "explanation": "The document is described as 'Amended and Restated', which matches the 'amended and restated' version type."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document provides effective dates and is not marked as a draft, indicating it is executed."
+  },
+  "party_name_1": {
+    "value": "J. ARON & COMPANY",
+    "confidence": 1.0,
+    "explanation": "The first party is clearly named as 'J. ARON & COMPANY, a general partnership organized under the laws of the State of New York (\"Aron\")'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "J. ARON & COMPANY is listed first and typically would be Party A in ISDA agreements, though not explicitly labeled as such."
+  },
+  "party_name_2": {
+    "value": "CALUMET LUBRICANTS CO., LIMITED PARTNERSHIP",
+    "confidence": 1.0,
+    "explanation": "The second party is named as 'CALUMET LUBRICANTS CO., LIMITED PARTNERSHIP, a limited partnership organized under the laws of the State of Indiana (\"Counterparty\")'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "CALUMET LUBRICANTS CO., LIMITED PARTNERSHIP is listed second and typically would be Party B in ISDA agreements, though not explicitly labeled as such."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of significant typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "a10531d34dd151978068623d8c289641.txt",
+  "contract_type": {
+    "value": "VSA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2016 Credit Support Annex for Variation Margin (VM)', which is an ISDA Credit Support Annex."
+  },
+  "contract_type_version": {
+    "value": "2016",
+    "confidence": 1.0,
+    "explanation": "The document explicitly references the 'ISDA 2016 Credit Support Annex for Variation Margin (VM)'."
+  },
+  "contract_date": {
+    "value": "2017-07-12",
+    "confidence": 1.0,
+    "explanation": "The ISDA Master Agreement date is stated as July 12, 2017, which is the main contract date."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is an annex to the main agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.9,
+    "explanation": "This is an annex to the initial ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.8,
+    "explanation": "The annex supplements an executed ISDA Master Agreement; no draft language is present."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party ('Party A')."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "CMF GRAHAM CAPITAL MASTER FUND L.P.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party ('Party B')."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "4389f961999f510ab17c54b7cf352e8a.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'SCHEDULE TO 2002 ISDA MASTER AGREEMENT' and repeatedly references the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states '2002 ISDA Master Agreement'."
+  },
+  "contract_date": {
+    "value": "2009-06-29",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated as 'dated as of June 29, 2009'."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is a schedule to the master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number or that this is an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "This is a schedule to the initial 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft. No draft watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "MacroShares Major Metro Housing Up Trust",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party A' in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly stated in the agreement."
+  },
+  "party_name_2": {
+    "value": "MacroShares Major Metro Housing Down Trust",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party B' in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly stated in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of significant errors or typos."
+  }
+}

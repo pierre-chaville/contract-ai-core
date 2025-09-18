@@ -1,0 +1,63 @@
+{
+  "filename": "4f8a4483b2dc56f3a25523cda4634b43.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc. (ISDA), which matches the ISDA Master Agreement contract type."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly referred to as the '2002 MASTER AGREEMENT' in both the text and the image."
+  },
+  "contract_date": {
+    "value": "2021-12-28",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of December 28, 2021, which is clearly stated in both the text and the image."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft. While signatures are not visible, the formal language and presentation suggest execution."
+  },
+  "party_name_1": {
+    "value": "OLD NATIONAL BANK",
+    "confidence": 1.0,
+    "explanation": "OLD NATIONAL BANK is listed as one of the parties in both the text and the image."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "Standard ISDA agreements refer to the first listed party as Party A, but the document does not explicitly assign roles."
+  },
+  "party_name_2": {
+    "value": "CONTRAIL AVIATION SUPPORT, LLC & CONTRAIL AVIATION LEASING, LLC",
+    "confidence": 1.0,
+    "explanation": "Both CONTRAIL AVIATION SUPPORT, LLC and CONTRAIL AVIATION LEASING, LLC are listed together as the counterparty."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "Standard ISDA agreements refer to the second listed party as Party B, but the document does not explicitly assign roles."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of typos or OCR errors."
+  }
+}

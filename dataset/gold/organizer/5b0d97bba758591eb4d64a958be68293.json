@@ -1,0 +1,63 @@
+{
+  "filename": "5b0d97bba758591eb4d64a958be68293.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.95,
+    "explanation": "The document is titled 'ISDA Master Agreement' and references the International Swap Dealers Association, Inc. Master Agreement, which matches the ISDA code."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 0.95,
+    "explanation": "The copyright notice at the bottom states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.', indicating the 1992 version."
+  },
+  "contract_date": {
+    "value": "2013-05-07",
+    "confidence": 0.95,
+    "explanation": "The agreement is stated as 'dated as of 7 May 2013', which is the main contract date."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is an initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The document is an 'Execution Version' of the ISDA Master Agreement, indicating it is the initial contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.95,
+    "explanation": "The document is labeled 'EXECUTION VERSION', which typically means it is the executed version."
+  },
+  "party_name_1": {
+    "value": "Australia and New Zealand Banking Group Limited",
+    "confidence": 0.95,
+    "explanation": "Explicitly listed as 'Party A' in the agreement text."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.95,
+    "explanation": "Explicitly identified as 'Party A' in the agreement text."
+  },
+  "party_name_2": {
+    "value": "Perpetual Trustee Company Limited in its capacity as trustee of the SMART ABS Series 2013-2US Trust",
+    "confidence": 0.95,
+    "explanation": "Explicitly listed as 'Party B' in the agreement text."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.95,
+    "explanation": "Explicitly identified as 'Party B' in the agreement text."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of OCR errors or typos."
+  }
+}

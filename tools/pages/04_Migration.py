@@ -1,12 +1,13 @@
 from __future__ import annotations
 
+import json
+
 # Streamlit viewer for organizer results (moved under pages/).
 # Browse results.csv by model, inspect original text and extracted metadata.
 # Appears in the Streamlit sidebar when running: streamlit run dataset/app.py
 from pathlib import Path
 from typing import Optional
 
-import pandas as pd
 import streamlit as st
 
 
@@ -28,8 +29,10 @@ def get_organizer_models() -> list[str]:
     models: list[str] = []
     try:
         for p in base_dir.iterdir():
-            if p.is_dir() and (p / "results.csv").exists():
-                models.append(p.name)
+            if p.is_dir():
+                has_json = any(child.suffix.lower() == ".json" for child in p.iterdir())
+                if has_json:
+                    models.append(p.name)
     except Exception:
         pass
     return sorted(models)
@@ -107,35 +110,36 @@ def main() -> None:
         return
 
     repo_root = get_repo_root()
-    results_path = repo_root / "dataset" / "output" / "organizer" / model_name / "results.csv"
-    if not results_path.exists():
-        st.warning(f"results.csv not found for model '{model_name}'.")
-        return
-
-    try:
-        df = pd.read_csv(results_path)
-    except Exception as exc:
-        st.error(f"Failed to read results.csv: {exc}")
-        return
-
-    if df.empty:
-        st.info("No rows in results.csv.")
+    model_dir = repo_root / "dataset" / "output" / "organizer" / model_name
+    json_files = sorted(model_dir.glob("*.json"))
+    if not json_files:
+        st.info("No JSON outputs found for this model.")
         return
 
     # Navigation
     if "file_idx" not in st.session_state:
         st.session_state.file_idx = 0
 
-    num_files = len(df)
+    num_files = len(json_files)
     current_idx = int(st.session_state.file_idx) % num_files
-    current_row = df.iloc[current_idx]
-    filename = str(current_row.get("filename", ""))
+    current_json = json_files[current_idx]
+    try:
+        with current_json.open("r", encoding="utf-8") as jf:
+            data = json.load(jf)
+    except Exception as exc:
+        st.error(f"Failed to read {current_json.name}: {exc}")
+        return
+    filename = str(data.get("filename") or current_json.stem)
 
-    col_a, col_b = st.columns([6, 1])
-    with col_a:
+    col_title, col_prev, col_next = st.columns([8, 1, 1])
+    with col_title:
         st.subheader(f"Model: {model_name} — File {current_idx + 1} / {num_files}: {filename}")
-    with col_b:
-        if st.button("Next file ▶"):
+    with col_prev:
+        if st.button("◀ Previous"):
+            st.session_state.file_idx = (int(st.session_state.file_idx) - 1) % num_files
+            st.rerun()
+    with col_next:
+        if st.button("Next ▶"):
             st.session_state.file_idx = (int(st.session_state.file_idx) + 1) % num_files
             st.rerun()
 
@@ -143,6 +147,16 @@ def main() -> None:
     left, right = st.columns(2)
 
     with left:
+        # Optional image preview before text
+        pngs_dir = repo_root / "dataset" / "documents" / "organizer" / "pngs"
+        png_candidates = [
+            pngs_dir / f"{Path(filename).stem}.png",
+            pngs_dir / f"{filename}.png",
+        ]
+        for pc in png_candidates:
+            if pc.exists():
+                st.image(str(pc))
+                break
         src_path = find_source_file(filename)
         if not src_path:
             st.warning("Original file not found under dataset/documents/organizer.")
@@ -153,43 +167,32 @@ def main() -> None:
     with right:
         st.subheader("Extracted fields")
 
-        def show_field(title: str, value_key: str, conf_key: str, expl_key: str) -> None:
-            value = current_row.get(value_key, "")
-            conf = current_row.get(conf_key, None)
-            if pd.isna(conf):
-                conf = None
-            try:
-                conf_pct = format_pct(float(conf) / 100.0) if conf is not None else ""
-            except Exception:
-                conf_pct = ""
-            expl = current_row.get(expl_key, "")
+        def show_field(title: str, field_key: str) -> None:
+            node = data.get(field_key) or {}
+            if not isinstance(node, dict):
+                node = {}
+            value = node.get("value") or ""
+            conf = node.get("confidence")
+            conf_pct = format_pct(conf)
+            expl = node.get("explanation") or ""
             st.markdown(f"**{title}:** {value}")
             st.caption(
                 (f"confidence: {conf_pct}" if conf_pct else "") + (f" — {expl}" if expl else "")
             )
 
-        show_field(
-            "Contract type",
-            "contract_type",
-            "contract_type_confidence",
-            "contract_type_explanation",
-        )
-        show_field(
-            "Contract date",
-            "contract_date",
-            "contract_date_confidence",
-            "contract_date_explanation",
-        )
-        show_field(
-            "Amendment date",
-            "amendment_date",
-            "amendment_date_confidence",
-            "amendment_date_explanation",
-        )
-        show_field(
-            "Version type", "version_type", "version_type_confidence", "version_type_explanation"
-        )
-        show_field("Status", "status", "status_confidence", "status_explanation")
+        show_field("Version type", "version_type")
+        show_field("Contract type", "contract_type")
+        show_field("Contract type version", "contract_type_version")
+        show_field("Contract date", "contract_date")
+        if data["version_type"]["value"] == "AMENDMENT":
+            show_field("Amendment date", "amendment_date")
+            show_field("Amendment number", "amendment_number")
+        show_field("Status", "status")
+        show_field("Party name 1", "party_name_1")
+        show_field("Party role 1", "party_role_1")
+        show_field("Party name 2", "party_name_2")
+        show_field("Party role 2", "party_role_2")
+        show_field("Document quality", "document_quality")
 
 
 if __name__ == "__main__":

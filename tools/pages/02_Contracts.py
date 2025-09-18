@@ -158,7 +158,7 @@ def main() -> None:
         st.info("No templates found.")
         return
     if "contracts_template" not in st.session_state:
-        st.session_state.contracts_template = templates[1]
+        st.session_state.contracts_template = "ISDA"
     template_key = st.sidebar.selectbox(
         "Template",
         templates,

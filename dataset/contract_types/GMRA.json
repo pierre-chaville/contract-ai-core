@@ -1,8 +1,0 @@
-{
-    "key": "GMRA",
-    "name": "Global Master Repurchase Agreement (1995, 2000 or 2011 versions)",
-    "use_case": "Extraction of clauses, datapoints and management of amendments for GMRA master agreements",
-    "description": "Annex 1 of the Global Master Repurchase Agreement (1995, 2000 or 2011 versions)",
-    "prompt_scope_filter": "Filter the schedule of the ISDA Master Agreement. Ignore any sections outside the schedule (standard pre-print, CSA annexes, etc.)",
-    "prompt_scope_amendment": "Identify and manage amendments within the schedule of the ISDA Master Agreement. Ignore any amendments outside the schedule (Credit Support Annex, etc.)."
-}

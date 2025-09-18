@@ -1,0 +1,63 @@
+{
+  "filename": "1acc4999ab0950bd92e59bfa201013c7.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and repeatedly refers to the International Swap Dealers Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "Copyright notice at the bottom states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.'"
+  },
+  "contract_date": {
+    "value": "2008-09-12",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of September 12, 2008'."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number; not applicable for initial contracts."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is a Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and formatted as a final agreement, not a draft."
+  },
+  "party_name_1": {
+    "value": "Barclays Bank PLC",
+    "confidence": 1.0,
+    "explanation": "Barclays Bank PLC is listed first and is labeled as a party."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Barclays Bank PLC is explicitly labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "World Financial Network Credit Card Master Note Trust",
+    "confidence": 1.0,
+    "explanation": "World Financial Network Credit Card Master Note Trust is listed as the second party."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "World Financial Network Credit Card Master Note Trust is explicitly labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "dd1b3f5fe34b5a6c913dccb4a65393eb.txt",
+  "contract_type": {
+    "value": "SWAP",
+    "confidence": 0.95,
+    "explanation": "The document is titled 'CURRENCY SWAP AGREEMENT' and references a swap agreement multiple times."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 0.95,
+    "explanation": "The text states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.', indicating the 1992 ISDA version."
+  },
+  "contract_date": {
+    "value": "2015-10-15",
+    "confidence": 0.95,
+    "explanation": "The agreement is stated as 'dated as of 15 October 2015.'"
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it appears to be the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The document is the original agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is labeled 'EXECUTION VERSION', which typically means it is the executed version."
+  },
+  "party_name_1": {
+    "value": "Australia and New Zealand Banking Group Limited",
+    "confidence": 0.95,
+    "explanation": "Explicitly listed as a party and referred to as 'Party A' in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.95,
+    "explanation": "Explicitly referred to as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "Perpetual Trustee Company Limited",
+    "confidence": 0.95,
+    "explanation": "Explicitly listed as a party and referred to as 'Party B' in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.95,
+    "explanation": "Explicitly referred to as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of significant errors or typos."
+  }
+}

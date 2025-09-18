@@ -1,0 +1,63 @@
+{
+  "filename": "dc4b0b0f9b7251988f99f9175591eba3.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.95,
+    "explanation": "The document is titled as relating to an 'ISDA Master Agreement' and repeatedly references the ISDA Master Agreement and its Schedule."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No explicit version (such as 1992 or 2002) of the ISDA Master Agreement is mentioned in the text or visible in the image."
+  },
+  "contract_date": {
+    "value": "2008-11-12",
+    "confidence": 0.95,
+    "explanation": "The ISDA Master Agreement is dated as of November 12, 2008, which is the main contract date referenced."
+  },
+  "amendment_date": {
+    "value": "2010-04-14",
+    "confidence": 0.95,
+    "explanation": "The letter agreement is dated as of April 14, 2010, and it amends the prior ISDA Master Agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No explicit amendment number is mentioned in the document."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 0.95,
+    "explanation": "The document is an amendment to the ISDA Master Agreement to reflect a merger and change of parties."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The language and structure indicate this is a finalized, operative amendment, not a draft."
+  },
+  "party_name_1": {
+    "value": "Susquehanna Bank",
+    "confidence": 0.95,
+    "explanation": "Susquehanna Bank is referenced as 'Party A' in the ISDA Master Agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.95,
+    "explanation": "Susquehanna Bank is explicitly called 'Party A' in the referenced agreement."
+  },
+  "party_name_2": {
+    "value": "Pure Earth Recycling (NJ), Inc. and Rezultz, Incorporated",
+    "confidence": 0.95,
+    "explanation": "After the merger, Pure Earth Recycling (NJ), Inc. and Rezultz, Incorporated are collectively referred to as 'Party B'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.95,
+    "explanation": "The document states that Pure Earth Recycling (NJ), Inc. and Rezultz, Incorporated are 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of significant typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "bfd68f60558d5cb9a900ce355f4c9b1b.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'AMENDMENT TO THE ISDA MASTER AGREEMENT' and references the ISDA Master Agreement throughout."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No specific version year (e.g., 1992 or 2002) is mentioned for the ISDA Master Agreement in the provided text."
+  },
+  "contract_date": {
+    "value": "2017-07-12",
+    "confidence": 1.0,
+    "explanation": "The original ISDA Master Agreement is stated as dated July 12, 2017."
+  },
+  "amendment_date": {
+    "value": "2018-10-10",
+    "confidence": 1.0,
+    "explanation": "The amendment is dated as of October 10, 2018."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No amendment number is mentioned in the text."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is explicitly titled as an 'AMENDMENT' to the ISDA Master Agreement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The amendment is dated and written in finalized language, indicating execution, not a draft."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "Party A is explicitly named as JPMORGAN CHASE BANK, N.A."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "JPMORGAN CHASE BANK, N.A. is designated as 'Party A' in the text."
+  },
+  "party_name_2": {
+    "value": "CAMBRIDGE MASTER FUND L.P.",
+    "confidence": 1.0,
+    "explanation": "Party B is explicitly named as CAMBRIDGE MASTER FUND L.P."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "CAMBRIDGE MASTER FUND L.P. is designated as 'Party B' in the text."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of OCR errors or typos."
+  }
+}

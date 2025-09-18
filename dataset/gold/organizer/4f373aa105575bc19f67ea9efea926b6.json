@@ -1,0 +1,63 @@
+{
+  "filename": "4f373aa105575bc19f67ea9efea926b6.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc., which is the standard ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT' in the title and body."
+  },
+  "contract_date": {
+    "value": "2024-02-15",
+    "confidence": 1.0,
+    "explanation": "The document states 'dated as of February 15, 2024' as the effective date."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is the initial agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number or that this is an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract; there is no indication it is a draft."
+  },
+  "party_name_1": {
+    "value": "BNP PARIBAS",
+    "confidence": 1.0,
+    "explanation": "BNP PARIBAS is listed as one of the parties, specifically as 'Party A'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The document explicitly labels BNP PARIBAS as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "FSSL FINANCE BNPP TRS LLC",
+    "confidence": 1.0,
+    "explanation": "FSSL FINANCE BNPP TRS LLC is listed as the other party, specifically as 'Party B'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The document explicitly labels FSSL FINANCE BNPP TRS LLC as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

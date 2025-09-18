@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 import asyncio
+import base64
 import logging
 import random
 from dataclasses import dataclass
 from typing import Optional, Sequence, cast
 
+from langchain_core.messages import HumanMessage  # type: ignore
 from pydantic import BaseModel, Field, create_model
 
 from .schema import LookupValue, Paragraph
@@ -42,11 +44,17 @@ class FieldResultString(BaseModel):
 class OrganizedDocumentMetadata(BaseModel):
     filename: str
     contract_type: FieldResultString
+    contract_type_version: FieldResultString
     contract_date: FieldResultString
     amendment_date: FieldResultString
     amendment_number: FieldResultString
     version_type: FieldResultString
     status: FieldResultString
+    party_name_1: FieldResultString
+    party_role_1: FieldResultString
+    party_name_2: FieldResultString
+    party_role_2: FieldResultString
+    document_quality: FieldResultString
 
 
 class ContractOrganizer:
@@ -58,6 +66,7 @@ class ContractOrganizer:
     def organize(
         self,
         documents: Sequence[tuple[str, Sequence[Paragraph]]],
+        images: Optional[Sequence[bytes]] = None,
     ) -> list[OrganizedDocumentMetadata]:
         """Analyze a list of (filename, paragraphs) and return metadata for each.
 
@@ -87,6 +96,10 @@ class ContractOrganizer:
         OutputModel: type[BaseModel] = create_model(
             "OrganizeOutput",
             contract_type=(FieldResultStringModel, Field(..., description="Type of contract")),
+            contract_type_version=(
+                FieldResultStringModel,
+                Field(..., description="Version of contract type (e.g., 1992 or 2002 for ISDA)"),
+            ),
             contract_date=(FieldResultStringModel, Field(..., description="Primary contract date")),
             amendment_date=(
                 FieldResultStringModel,
@@ -109,9 +122,32 @@ class ContractOrganizer:
                 FieldResultStringModel,
                 Field(..., description="Status: draft, executed, or signed"),
             ),
+            party_name_1=(
+                FieldResultStringModel,
+                Field(..., description="Name of Party 1 (Party A)"),
+            ),
+            party_role_1=(
+                FieldResultStringModel,
+                Field(..., description="Role of Party 1 (e.g., Party A)"),
+            ),
+            party_name_2=(
+                FieldResultStringModel,
+                Field(..., description="Name of Party 2 (Party B)"),
+            ),
+            party_role_2=(
+                FieldResultStringModel,
+                Field(..., description="Role of Party 2 (e.g., Party B)"),
+            ),
+            document_quality=(
+                FieldResultStringModel,
+                Field(
+                    ...,
+                    description=("Quality of source text/image: one of [high, medium, low]"),
+                ),
+            ),
         )
 
-        for filename, paragraphs in documents:
+        for idx, (filename, paragraphs) in enumerate(documents):
             # Keep only the beginning paragraphs up to max_words
             try:
                 max_words = int(self.config.max_words)
@@ -162,17 +198,24 @@ class ContractOrganizer:
                 "Return STRICTLY a JSON object matching the provided schema.\n"
                 "For each field, include value, confidence in [0,1], and a short explanation.\n"
                 "- contract_type: the category (e.g., NDA, employment, lease).\n"
+                "- contract_type_version: version of the contract type when applicable (e.g., 1992 or 2002 for ISDA). If not applicable, null.\n"
                 "- contract_date: the main date associated to the contract (usually the effective or execution date) in the format YYYY-MM-DD. When the document is an amendment, the contract date is the date of the initial contract (or the last amended and restated contract)\n"
                 "- amendment_date: only if the document is an amendment, else null in the format YYYY-MM-DD.\n"
                 "- amendment_number: only if the document is an amendment and if mentioned in the document, else null.\n"
                 "- version_type: one of [initial contract, amended and restated, amendment].\n"
                 "- status: one of [draft, executed, signed].\n"
+                "- party_name_1: name of first party (Party A).\n"
+                "- party_role_1: role of first party (e.g., Party A).\n"
+                "- party_name_2: name of second party (Party B).\n"
+                "- party_role_2: role of second party (e.g., Party B).\n"
+                "- document_quality: one of [high, medium, low]; high if clean OCR/no typos, medium if readable with a few typos, low if hard to read.\n"
                 "Rate your confidence from 0.0 to 1.0, where:\n"
                 "- 0.9-1.0: Information explicitly stated in source\n"
                 "- 0.7-0.8: Strong inference from available evidence  \n"
                 "- 0.5-0.6: Reasonable guess with some uncertainty\n"
                 "- 0.3-0.4: Low confidence, significant ambiguity\n"
                 "- 0.0-0.2: Very uncertain or likely incorrect\n"
+                "If an image preview of the first page is provided, use it to help read dates and to better identify parties and contract type and version.\n"
                 + (
                     "\nUse the ALLOWED codes provided below, you MUST choose one of those codes and return it exactly as the 'value' or 'role' for the parties.\n"
                     "Do NOT invent new values.\n\n" + allowed_section
@@ -182,6 +225,10 @@ class ContractOrganizer:
             )
 
             prompt = instruction + f"FILENAME: {filename}\n\n" + "TEXT:\n" + text
+            # Optional paired image for this document
+            image_bytes: bytes | None = None
+            if images is not None and 0 <= idx < len(images):
+                image_bytes = images[idx]
             # print('--------------------------------')
             # print('prompt', prompt[:1000])
             jobs.append(
@@ -189,6 +236,7 @@ class ContractOrganizer:
                     "OutputModel": OutputModel,
                     "prompt": prompt,
                     "filename": filename,
+                    "image_bytes": image_bytes,
                 }
             )
 
@@ -231,11 +279,17 @@ class ContractOrganizer:
                 OrganizedDocumentMetadata(
                     filename=filename,
                     contract_type=_normalize_str_field("contract_type"),
+                    contract_type_version=_normalize_str_field("contract_type_version"),
                     contract_date=_normalize_str_field("contract_date"),
                     amendment_date=_normalize_str_field("amendment_date"),
                     amendment_number=_normalize_str_field("amendment_number"),
                     version_type=_normalize_str_field("version_type"),
                     status=_normalize_str_field("status"),
+                    party_name_1=_normalize_str_field("party_name_1"),
+                    party_role_1=_normalize_str_field("party_role_1"),
+                    party_name_2=_normalize_str_field("party_name_2"),
+                    party_role_2=_normalize_str_field("party_role_2"),
+                    document_quality=_normalize_str_field("document_quality"),
                 )
             )
 
@@ -265,6 +319,7 @@ class ContractOrganizer:
             OutputModel = job["OutputModel"]  # type: ignore[index]
             prompt = job["prompt"]  # type: ignore[index]
             filename = job.get("filename")  # type: ignore[index]
+            image_bytes = job.get("image_bytes")  # type: ignore[index]
 
             structured_llm = llm.with_structured_output(
                 OutputModel, temperature=temperature, max_tokens=8000
@@ -281,7 +336,28 @@ class ContractOrganizer:
             while attempt <= max_retries:
                 try:
                     async with sem:
-                        output: BaseModel = await structured_llm.ainvoke(prompt)  # type: ignore[assignment, arg-type]
+                        # Only attach images for OpenAI/Azure providers which support image_url
+                        if image_bytes and (self.config.provider or "").lower() in (
+                            "openai",
+                            "azure",
+                        ):
+                            img_b64 = base64.b64encode(cast(bytes, image_bytes)).decode("ascii")
+                            messages = [
+                                HumanMessage(
+                                    content=[
+                                        {"type": "text", "text": str(prompt)},
+                                        {
+                                            "type": "image_url",
+                                            "image_url": {
+                                                "url": f"data:image/png;base64,{img_b64}"
+                                            },
+                                        },
+                                    ]
+                                )
+                            ]
+                            output: BaseModel = await structured_llm.ainvoke(messages)  # type: ignore[assignment, arg-type]
+                        else:
+                            output: BaseModel = await structured_llm.ainvoke(prompt)  # type: ignore[assignment, arg-type]
                     data = output.model_dump()  # type: ignore[attr-defined]
                     return {"data": data, "filename": filename}
                 except Exception as e:  # pragma: no cover

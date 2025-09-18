@@ -1,0 +1,63 @@
+{
+  "filename": "5a5adf7517955ea6bd8fad0b01280b43.txt",
+  "contract_type": {
+    "value": "LETTER",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'LETTER AGREEMENT' and repeatedly refers to itself as a letter agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No versioning is applicable to a letter agreement."
+  },
+  "contract_date": {
+    "value": "2008-08-20",
+    "confidence": 0.8,
+    "explanation": "The referenced Forbearance Agreement and Amendment is dated August 20, 2008, and this letter appears to be executed in connection with that date. No other clear execution date is provided."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "This is not an amendment but a letter agreement referencing other agreements."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned; this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.9,
+    "explanation": "This is the initial letter agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is labeled 'Execution Version,' indicating it is executed."
+  },
+  "party_name_1": {
+    "value": "GOLDMAN SACHS CAPITAL MARKETS, L.P.",
+    "confidence": 1.0,
+    "explanation": "Goldman Sachs Capital Markets, L.P. is clearly listed as a party."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "Goldman is referred to as 'Goldman' and is the party to whom payment is owed, corresponding to Party A in the referenced ISDA."
+  },
+  "party_name_2": {
+    "value": "X-Rite, Incorporated",
+    "confidence": 1.0,
+    "explanation": "X-Rite, Incorporated is clearly listed as a party."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "X-Rite is referred to as 'the Company,' corresponding to Party B in the referenced ISDA."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of OCR errors or typos."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "41e4b0c97a085b0d8e8fd507f3073ecb.txt",
+  "contract_type": {
+    "value": "VSA",
+    "confidence": 0.98,
+    "explanation": "The document is titled '2016 Credit Support Annex for Variation Margin (VM)' and references the ISDA Master Agreement. This matches the 'Credit Support Annex' (VSA) contract type."
+  },
+  "contract_type_version": {
+    "value": "2016",
+    "confidence": 0.98,
+    "explanation": "The document is specifically called the '2016 Credit Support Annex for Variation Margin (VM)'."
+  },
+  "contract_date": {
+    "value": "2017-07-12",
+    "confidence": 0.98,
+    "explanation": "The ISDA Master Agreement date is explicitly stated as July 12, 2017, which is the relevant contract date for this annex."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is an annex to the original agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not described as an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "This is the initial Credit Support Annex for Variation Margin supplementing the ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.8,
+    "explanation": "The document references a specific agreement date and parties, suggesting it is executed, though no explicit signatures are visible on this page."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "Party A is explicitly named as JPMORGAN CHASE BANK, N.A."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "JPMORGAN CHASE BANK, N.A. is labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "CMF WINTON MASTER L.P.",
+    "confidence": 1.0,
+    "explanation": "Party B is explicitly named as CMF WINTON MASTER L.P."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "CMF WINTON MASTER L.P. is labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

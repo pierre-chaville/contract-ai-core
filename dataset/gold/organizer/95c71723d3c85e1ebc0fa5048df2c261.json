@@ -1,0 +1,63 @@
+{
+  "filename": "95c71723d3c85e1ebc0fa5048df2c261.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'SECOND AMENDMENT TO THE ISDA MASTER AGREEMENT' and repeatedly references the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No specific version year (e.g., 1992 or 2002) is mentioned in the text or image."
+  },
+  "contract_date": {
+    "value": "2009-09-22",
+    "confidence": 1.0,
+    "explanation": "The ISDA Master Agreement being amended is dated as of September 22, 2009, which is explicitly stated."
+  },
+  "amendment_date": {
+    "value": "2009-12-21",
+    "confidence": 1.0,
+    "explanation": "The amendment is dated as of December 21, 2009, as stated in the heading and body."
+  },
+  "amendment_number": {
+    "value": "2",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'SECOND AMENDMENT,' indicating this is amendment number 2."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is a 'SECOND AMENDMENT,' which matches the 'amendment' version type."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document uses formal language and is dated, indicating it is an executed amendment, not a draft."
+  },
+  "party_name_1": {
+    "value": "SEMPRA ENERGY TRADING LLC",
+    "confidence": 1.0,
+    "explanation": "SEMPRA ENERGY TRADING LLC is listed as a party to the agreement and identified as 'Party A.'"
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "SEMPRA ENERGY TRADING LLC is explicitly called 'Party A.'"
+  },
+  "party_name_2": {
+    "value": "MXENERGY INC.",
+    "confidence": 1.0,
+    "explanation": "MXENERGY INC. is listed as a party to the agreement and identified as 'Party B.'"
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "MXENERGY INC. is explicitly called 'Party B.'"
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of typos or OCR errors."
+  }
+}

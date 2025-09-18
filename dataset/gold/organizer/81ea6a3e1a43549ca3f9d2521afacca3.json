@@ -1,0 +1,63 @@
+{
+  "filename": "81ea6a3e1a43549ca3f9d2521afacca3.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swap Dealers Association, which matches the ISDA contract type."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The copyright at the bottom states 'Copyright (C)1992 by International Swap Dealers Association, Inc.', indicating the 1992 version."
+  },
+  "contract_date": {
+    "value": "2014-10-01",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated as 'dated as of October 1, 2014' at the top of the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original master agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final executed contract, not a draft."
+  },
+  "party_name_1": {
+    "value": "Wells Fargo Bank, N.A.",
+    "confidence": 1.0,
+    "explanation": "Wells Fargo Bank, N.A. is listed as one of the two parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "Standard ISDA agreements refer to the first listed party as Party A, though the specific assignment is not explicit here."
+  },
+  "party_name_2": {
+    "value": "Gentex Corporation",
+    "confidence": 1.0,
+    "explanation": "Gentex Corporation is listed as the other party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "Standard ISDA agreements refer to the second listed party as Party B, though the specific assignment is not explicit here."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

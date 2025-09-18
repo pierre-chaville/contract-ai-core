@@ -1,0 +1,63 @@
+{
+  "filename": "853c1b4d335b562da3bf244a9064f56e.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc., which is the standard ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT' in the heading and body."
+  },
+  "contract_date": {
+    "value": "2013-08-27",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of August 27, 2013' as stated in the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and formatted as a final agreement, not a draft. No explicit 'signed' language, but standard for executed agreements."
+  },
+  "party_name_1": {
+    "value": "Citibank, N.A.",
+    "confidence": 1.0,
+    "explanation": "Citibank, N.A. is listed as one of the two parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "Although not explicitly labeled as 'Party A', Citibank, N.A. is the first party listed, which is standard convention."
+  },
+  "party_name_2": {
+    "value": "Arbor Funding LLC",
+    "confidence": 1.0,
+    "explanation": "Arbor Funding LLC is listed as the second party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "Although not explicitly labeled as 'Party B', Arbor Funding LLC is the second party listed, which is standard convention."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is clean, clearly formatted, and free of typos or OCR errors."
+  }
+}

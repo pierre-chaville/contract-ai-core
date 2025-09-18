@@ -1,0 +1,63 @@
+{
+  "filename": "d795bd8578445a3c8c95c38f599e91c1.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association (ISDA), explicitly identifying it as an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is repeatedly referred to as the '2002 Master Agreement,' indicating the 2002 version."
+  },
+  "contract_date": {
+    "value": "2016-05-20",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated as 'dated as of May 20, 2016' on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and this is not an amendment document."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial execution of the 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 1.0,
+    "explanation": "The document is labeled 'Execution Version,' indicating it is the executed version."
+  },
+  "party_name_1": {
+    "value": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party A' on the first page."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A' next to the party name."
+  },
+  "party_name_2": {
+    "value": "EACH ENTITY LISTED IN EXHIBIT A OF THE SCHEDULE",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party B' on the first page."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B' next to the party name."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

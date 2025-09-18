@@ -1,0 +1,63 @@
+{
+  "filename": "953a642cf56f50c0addeaaaf122bd332.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA International Swaps and Derivatives Association, Inc. 2002 MASTER AGREEMENT', which matches the ISDA contract type."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": "2023-05-17",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of May 17, 2023, which is clearly stated at the top of the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, as this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is an initial master agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and presented as a finalized contract, not a draft. While signatures are not visible, the language and format indicate execution."
+  },
+  "party_name_1": {
+    "value": "ING Capital Markets LLC",
+    "confidence": 1.0,
+    "explanation": "ING Capital Markets LLC is listed as one of the parties ('Party A')."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "ING Capital Markets LLC is explicitly labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "CORE Alaska, LLC",
+    "confidence": 1.0,
+    "explanation": "CORE Alaska, LLC is listed as the other party ('Party B')."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "CORE Alaska, LLC is explicitly labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is clean, clearly formatted, and free of typos or OCR errors."
+  }
+}

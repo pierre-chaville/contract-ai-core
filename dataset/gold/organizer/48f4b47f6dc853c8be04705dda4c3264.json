@@ -1,0 +1,63 @@
+{
+  "filename": "48f4b47f6dc853c8be04705dda4c3264.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA International Swaps and Derivatives Association, Inc. MASTER AGREEMENT' and references the ISDA Master Agreement explicitly."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The copyright at the bottom states 'Copyright 1992 by International Swap Dealers Association, Inc.', indicating the 1992 version."
+  },
+  "contract_date": {
+    "value": "2010-03-05",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of March 5, 2010, which is clearly stated near the top of the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is a Master Agreement dated as of March 5, 2010, with no reference to amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is labeled 'EXECUTION COPY,' which typically indicates an executed version."
+  },
+  "party_name_1": {
+    "value": "MERRILL LYNCH CAPITAL SERVICES, INC.",
+    "confidence": 1.0,
+    "explanation": "Party names are clearly listed as 'between MERRILL LYNCH CAPITAL SERVICES, INC.' and 'CENTERLINE GUARANTEED HOLDINGS LLC.'"
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled, the first party listed is typically Party A in ISDA agreements."
+  },
+  "party_name_2": {
+    "value": "CENTERLINE GUARANTEED HOLDINGS LLC",
+    "confidence": 1.0,
+    "explanation": "Party names are clearly listed as 'between MERRILL LYNCH CAPITAL SERVICES, INC.' and 'CENTERLINE GUARANTEED HOLDINGS LLC.'"
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled, the second party listed is typically Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free from typos or OCR errors."
+  }
+}

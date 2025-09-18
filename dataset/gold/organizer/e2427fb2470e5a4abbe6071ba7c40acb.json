@@ -1,0 +1,63 @@
+{
+  "filename": "e2427fb2470e5a4abbe6071ba7c40acb.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA International Swap Dealers Association, Inc. MASTER AGREEMENT' which matches the ISDA Master Agreement contract type."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No explicit version year (e.g., 1992 or 2002) is mentioned in the visible text or image."
+  },
+  "contract_date": {
+    "value": "2009-09-22",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly dated as of September 22, 2009."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a finalized contract, not a draft. No 'draft' watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "SEMPRA ENERGY TRADING LLC",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party on the agreement, labeled as 'Party A'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A' next to the party name."
+  },
+  "party_name_2": {
+    "value": "MXENERGY INC.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party on the agreement, labeled as 'Party B'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B' next to the party name."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, with no typos or OCR errors; the document is easy to read."
+  }
+}

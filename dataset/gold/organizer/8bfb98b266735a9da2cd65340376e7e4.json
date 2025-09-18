@@ -1,0 +1,63 @@
+{
+  "filename": "8bfb98b266735a9da2cd65340376e7e4.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc., which matches the ISDA Master Agreement code."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT' in the heading and body."
+  },
+  "contract_date": {
+    "value": "2003-12-30",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of December 30, 2003, which is clearly stated in the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a finalized contract, not a draft. No explicit 'draft' watermark or language is present."
+  },
+  "party_name_1": {
+    "value": null,
+    "confidence": 0.6,
+    "explanation": "'[Name]' is used as a placeholder for Party A, so the actual name is not provided in the visible text."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The document explicitly refers to '[Name]' as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "HARRAH'S OPERATING COMPANY, INC.",
+    "confidence": 1.0,
+    "explanation": "The document clearly lists 'HARRAH'S OPERATING COMPANY, INC.' as Party B."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The document explicitly refers to 'HARRAH'S OPERATING COMPANY, INC.' as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of OCR errors or typos."
+  }
+}

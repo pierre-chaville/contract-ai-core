@@ -1,0 +1,63 @@
+{
+  "filename": "5de97e0b07f4548d8729195fea39d41d.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'SCHEDULE TO THE ISDA MASTER AGREEMENT' and references the 1992 ISDA Master Agreement explicitly."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The text states '1992 ISDA Master Agreement (Multicurrency-Cross Border)'."
+  },
+  "contract_date": {
+    "value": "2008-07-30",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated as 'dated as of July 30, 2008' in both the heading and body."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is a schedule to the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned; this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "This is a schedule to the initial 1992 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is labeled 'EXECUTION COPY', which typically indicates an executed contract."
+  },
+  "party_name_1": {
+    "value": "DEUTSCHE BANK AG, NEW YORK BRANCH",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party in the agreement and referred to as 'Party A'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The text assigns 'Party A' to Deutsche Bank AG, New York Branch."
+  },
+  "party_name_2": {
+    "value": "WORLD OMNI AUTO RECEIVABLES TRUST 2008-B",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party in the agreement and referred to as 'Party B'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The text assigns 'Party B' to World Omni Auto Receivables Trust 2008-B."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

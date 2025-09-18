@@ -1,0 +1,63 @@
+{
+  "filename": "7c015d324e4a515287d58dfcbbab8201.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA Master Agreement' and references the International Swaps and Derivatives Association, Inc."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.8,
+    "explanation": "No explicit version year (e.g., 1992 or 2002) is mentioned in the visible text or image."
+  },
+  "contract_date": {
+    "value": "2005-08-30",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated as 'dated as of August 30, 2005'."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a finalized contract, not a draft."
+  },
+  "party_name_1": {
+    "value": "SWISS RE FINANCIAL PRODUCTS CORPORATION",
+    "confidence": 1.0,
+    "explanation": "Party name is clearly listed on the left side of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "By convention and layout, the first listed party is typically Party A in ISDA agreements."
+  },
+  "party_name_2": {
+    "value": "SUPPLEMENTAL INTEREST TRUST, STRUCTURED ASSET INVESTMENT LOAN TRUST MORTGAGE PASS-THROUGH CERTIFICATES, SERIES 2005-HE3",
+    "confidence": 1.0,
+    "explanation": "Party name is clearly listed on the right side of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "By convention and layout, the second listed party is typically Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, with no typos or OCR errors."
+  }
+}

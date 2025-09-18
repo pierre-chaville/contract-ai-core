@@ -1,0 +1,63 @@
+{
+  "filename": "a3064e27e4ca56e4adbfede0b43ebe6d.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc., confirming it is an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly referred to as the '2002 MASTER AGREEMENT' in the header and body text."
+  },
+  "contract_date": {
+    "value": "2019-10-01",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of October 1, 2019, as stated under the title."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft; typical for executed agreements."
+  },
+  "party_name_1": {
+    "value": "Wells Fargo Bank, National Association",
+    "confidence": 1.0,
+    "explanation": "Wells Fargo Bank, National Association is listed as one of the parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "While the explicit label 'Party A' is not shown, the first party listed is typically Party A in ISDA agreements."
+  },
+  "party_name_2": {
+    "value": "Verizon Owner Trust 2019-C",
+    "confidence": 1.0,
+    "explanation": "Verizon Owner Trust 2019-C is listed as the second party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "While the explicit label 'Party B' is not shown, the second party listed is typically Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free from typos or OCR errors."
+  }
+}

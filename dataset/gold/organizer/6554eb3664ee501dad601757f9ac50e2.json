@@ -1,0 +1,63 @@
+{
+  "filename": "6554eb3664ee501dad601757f9ac50e2.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 ISDA MASTER AGREEMENT' and repeatedly references the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 ISDA Master Agreement' in the heading and body."
+  },
+  "contract_date": {
+    "value": "2010-05-28",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of May 28, 2010' as stated on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number; this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and formatted as a final agreement, not a draft; no 'draft' watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "SOCIÉTÉ GÉNÉRALE",
+    "confidence": 1.0,
+    "explanation": "SOCIÉTÉ GÉNÉRALE is listed as one of the two parties in the opening paragraph."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "Standard ISDA format lists the first named party as Party A, though not explicitly labeled here."
+  },
+  "party_name_2": {
+    "value": "CINEDIGM DIGITAL FUNDING I, LLC",
+    "confidence": 1.0,
+    "explanation": "CINEDIGM DIGITAL FUNDING I, LLC is listed as the second party in the opening paragraph."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "Standard ISDA format lists the second named party as Party B, though not explicitly labeled here."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, clearly formatted, and free of typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "44b1a05087fa5df2aefd185b306464c7.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA Master Agreement' and references the International Swaps and Derivatives Association, Inc."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.7,
+    "explanation": "No explicit version year (e.g., 1992 or 2002) is visible in the provided text or image."
+  },
+  "contract_date": {
+    "value": "2005-09-30",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated as 'dated as of September 30, 2005' on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is an initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned, and this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is a 'Master Agreement' and not described as amended, restated, or an amendment."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and formatted as a final agreement, not a draft."
+  },
+  "party_name_1": {
+    "value": "HSBC BANK USA, NATIONAL ASSOCIATION",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as one of the two parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "HSBC BANK USA, NATIONAL ASSOCIATION is listed first, typically corresponding to Party A in ISDA agreements."
+  },
+  "party_name_2": {
+    "value": "SUPPLEMENTAL INTEREST TRUST, STRUCTURED ASSET INVESTMENT LOAN TRUST MORTGAGE PASS-THROUGH CERTIFICATES, SERIES 2005-8",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as the second party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "The second listed party is typically Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, with no visible typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "5307f3f60d8a579bb291345dba73e732.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA' and references the '2002 Master Agreement', which is the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states '2002 Master Agreement'."
+  },
+  "contract_date": {
+    "value": "2021-12-28",
+    "confidence": 1.0,
+    "explanation": "The contract is dated as of December 28, 2021, as stated in the header."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is a schedule to the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is a schedule to the initial 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and lists both parties, which strongly suggests it is executed, though no explicit signatures are visible in the provided text."
+  },
+  "party_name_1": {
+    "value": "OLD NATIONAL BANK",
+    "confidence": 1.0,
+    "explanation": "OLD NATIONAL BANK is listed first and identified as a party."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "OLD NATIONAL BANK is explicitly labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "CONTRAIL AVIATION SUPPORT, LLC & CONTRAIL AVIATION LEASING, LLC",
+    "confidence": 1.0,
+    "explanation": "Both CONTRAIL AVIATION SUPPORT, LLC and CONTRAIL AVIATION LEASING, LLC are collectively referred to as 'Party B'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states these entities are collectively 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "af602451f9e05f1f814d5abfb53bef5f.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.98,
+    "explanation": "The document repeatedly refers to 'ISDA Master Agreement' and describes agreements substantially identical to a referenced ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.7,
+    "explanation": "No explicit version year (e.g., 1992 or 2002) is mentioned in the text or visible in the image."
+  },
+  "contract_date": {
+    "value": "2004-11-15",
+    "confidence": 0.98,
+    "explanation": "Both listed ISDA Master Agreements are dated as of November 15, 2004."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 0.95,
+    "explanation": "This is not an amendment; it describes initial or substantially identical agreements, not amendments."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The agreements are described as 'substantially identical' to a previously filed ISDA Master Agreement, indicating these are initial contracts for new parties/trusts."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreements are described as 'entered into,' which indicates execution."
+  },
+  "party_name_1": {
+    "value": "Citibank, N.A.",
+    "confidence": 0.98,
+    "explanation": "Citibank, N.A. is explicitly named as a party in both agreements."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "Citibank, N.A. is described as 'Above Cap Liquidity Facility Provider,' which is the primary role akin to Party A."
+  },
+  "party_name_2": {
+    "value": "Wilmington Trust Company",
+    "confidence": 0.98,
+    "explanation": "Wilmington Trust Company is explicitly named as the other party in both agreements."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "Wilmington Trust Company is described as 'Subordination Agent,' which is the primary role akin to Party B."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

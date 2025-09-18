@@ -1,0 +1,63 @@
+{
+  "filename": "e0b1265a47db5365b0a7d4e8f7099d33.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc., which matches the ISDA Master Agreement contract type."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT' in both the text and the image."
+  },
+  "contract_date": {
+    "value": "2024-10-31",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated to be 'dated as of October 31, 2024' on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft. No explicit 'draft' watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "NOMURA GLOBAL FINANCIAL PRODUCTS INC.",
+    "confidence": 1.0,
+    "explanation": "The first named party is 'NOMURA GLOBAL FINANCIAL PRODUCTS INC.' as shown on the first page."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "Standard ISDA format lists the first named party as Party A, though not explicitly labeled here."
+  },
+  "party_name_2": {
+    "value": "EACH OF THE ENTITIES LISTED ON EXHIBIT A TO THIS AGREEMENT, SEVERALLY AND NOT JOINTLY",
+    "confidence": 1.0,
+    "explanation": "The second party is described as 'EACH OF THE ENTITIES LISTED ON EXHIBIT A TO THIS AGREEMENT, SEVERALLY AND NOT JOINTLY'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "Standard ISDA format lists the second named party as Party B, though not explicitly labeled here."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of typos or OCR errors."
+  }
+}

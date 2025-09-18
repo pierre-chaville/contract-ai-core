@@ -1,0 +1,63 @@
+{
+  "filename": "c239f6f703cb5757a72b95d7460d49e1.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swap Dealers Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The copyright at the bottom states 'Copyright (C) 1992 by International Swap Dealers Association, Inc'."
+  },
+  "contract_date": {
+    "value": "2008-05-02",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of May 2, 2008'."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and appears to be a finalized, executed contract, not a draft."
+  },
+  "party_name_1": {
+    "value": "DNB NORBANK ASA",
+    "confidence": 1.0,
+    "explanation": "DNB NORBANK ASA is listed as one of the parties to the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "Standard ISDA format assigns one party as Party A; DNB NORBANK ASA is listed first, which is typical for Party A."
+  },
+  "party_name_2": {
+    "value": "GENERAL MARITIME CORPORATION",
+    "confidence": 1.0,
+    "explanation": "GENERAL MARITIME CORPORATION is listed as the other party to the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "Standard ISDA format assigns the second listed party as Party B; GENERAL MARITIME CORPORATION is listed second."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, with no typos or OCR errors."
+  }
+}

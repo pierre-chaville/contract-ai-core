@@ -1,0 +1,63 @@
+{
+  "filename": "2241af180696534ba7db80c610ae5aa4.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.95,
+    "explanation": "The document refers explicitly to the 'ISDA Master Agreement' and discusses provisions and calculations under this agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.8,
+    "explanation": "No specific ISDA version year (e.g., 1992 or 2002) is mentioned in the text or visible in the image."
+  },
+  "contract_date": {
+    "value": "2006-01-06",
+    "confidence": 0.95,
+    "explanation": "The ISDA Master Agreement is stated as being dated January 6, 2006."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "This is not an amendment to the ISDA but a notice under the existing agreement; no amendment date is present."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.9,
+    "explanation": "The document refers to the original ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The ISDA Master Agreement is referenced as an existing, effective agreement; this is a formal notice under an executed contract."
+  },
+  "party_name_1": {
+    "value": "Morgan Stanley Capital Services LLC",
+    "confidence": 0.95,
+    "explanation": "Morgan Stanley Capital Services LLC is explicitly named as a party to the ISDA Master Agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "Morgan Stanley Capital Services LLC is described as the Non-Affected Party, which typically corresponds to Party A in ISDA documentation."
+  },
+  "party_name_2": {
+    "value": "Tiles Trust 2005-1",
+    "confidence": 0.95,
+    "explanation": "Tiles Trust 2005-1 is explicitly named as the counterparty to the ISDA Master Agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "Tiles Trust 2005-1 is the other party to the ISDA, typically Party B."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "b7718aa1614e5c7abc0c45a559406cc7.txt",
+  "contract_type": {
+    "value": "VSA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2016 Credit Support Annex for Variation Margin (VM)', which is a Credit Support Annex under ISDA."
+  },
+  "contract_type_version": {
+    "value": "2016",
+    "confidence": 1.0,
+    "explanation": "The title specifies '2016 Credit Support Annex for Variation Margin (VM)'."
+  },
+  "contract_date": {
+    "value": "2017-07-12",
+    "confidence": 1.0,
+    "explanation": "The ISDA Master Agreement date is explicitly stated as July 12, 2017."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "This is not an amendment; it is a Credit Support Annex supplementing the ISDA Master Agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number; this is not an amendment document."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.9,
+    "explanation": "This is the initial Credit Support Annex for Variation Margin supplementing the referenced ISDA Master Agreement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document supplements an executed ISDA Master Agreement and is not marked as draft."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party A'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "CMF WILLOWBRIDGE MASTER FUND L.P.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party B'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of OCR errors or typos."
+  }
+}

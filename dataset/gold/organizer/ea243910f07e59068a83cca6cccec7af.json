@@ -1,0 +1,63 @@
+{
+  "filename": "ea243910f07e59068a83cca6cccec7af.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA Master Agreement' and references the International Swap Dealers Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "Copyright notice at the bottom states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.' indicating the 1992 version."
+  },
+  "contract_date": {
+    "value": "2019-05-16",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly dated as of May 16, 2019 on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is a Master Agreement dated as of May 16, 2019, with no reference to amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft. No 'draft' watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "FIFTH THIRD FINANCIAL RISK SOLUTIONS, a division of FIFTH THIRD BANK, an Ohio banking corporation",
+    "confidence": 1.0,
+    "explanation": "Party A is clearly named in the agreement header."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "BRIDGEPORT FUEL CELL, LLC, a Virginia limited liability company",
+    "confidence": 1.0,
+    "explanation": "Party B is clearly named in the agreement header."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of typos or OCR errors."
+  }
+}

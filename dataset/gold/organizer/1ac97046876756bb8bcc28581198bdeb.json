@@ -1,0 +1,63 @@
+{
+  "filename": "1ac97046876756bb8bcc28581198bdeb.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'SCHEDULE TO THE ISDA MASTER AGREEMENT' and references the International Swap Dealers Association, Inc., making it an ISDA Master Agreement Schedule."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.7,
+    "explanation": "No explicit reference to a version year (e.g., 1992 or 2002) for the ISDA Master Agreement is present in the provided text."
+  },
+  "contract_date": {
+    "value": "2006-02-13",
+    "confidence": 1.0,
+    "explanation": "The text states 'dated as of February 13, 2006,' which is the effective date of the contract."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is a schedule to the master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.9,
+    "explanation": "This is a schedule to the initial ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The presence of a specific date and named parties strongly suggests this is an executed agreement rather than a draft."
+  },
+  "party_name_1": {
+    "value": "HSBC Bank USA, N.A.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as one of the parties in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "HSBC Bank USA, N.A. is identified as Party A in the agreement."
+  },
+  "party_name_2": {
+    "value": "Volkswagen Auto Loan Enhanced Trust 2007-1",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as the other party in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Volkswagen Auto Loan Enhanced Trust 2007-1 is identified as Party B in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of OCR errors or typos."
+  }
+}

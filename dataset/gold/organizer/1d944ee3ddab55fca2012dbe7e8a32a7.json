@@ -1,0 +1,63 @@
+{
+  "filename": "1d944ee3ddab55fca2012dbe7e8a32a7.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.9,
+    "explanation": "The document lists a '2002 ISDA MASTER AGREEMENT (2008)' and '1992 ISDA MASTER AGREEMENT (2001)' as contract names/descriptions, indicating ISDA Master Agreements are present."
+  },
+  "contract_type_version": {
+    "value": "2002, 1992",
+    "confidence": 0.9,
+    "explanation": "Both '2002 ISDA MASTER AGREEMENT (2008)' and '1992 ISDA MASTER AGREEMENT (2001)' are explicitly mentioned."
+  },
+  "contract_date": {
+    "value": null,
+    "confidence": 0.3,
+    "explanation": "No explicit effective or execution date for the ISDA contracts is provided in the text or visible in the image."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "This is a schedule of contracts, not an amendment document."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is referenced; this is a list of contracts."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.8,
+    "explanation": "The contracts listed are described by name and version, with no indication they are amendments or restatements."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.8,
+    "explanation": "The schedule lists assumed and assigned executory contracts, which typically refers to executed agreements in bankruptcy or restructuring contexts."
+  },
+  "party_name_1": {
+    "value": "Dynegy Holdings, LLC",
+    "confidence": 0.9,
+    "explanation": "Dynegy Holdings, LLC is listed as the principal party for the first set of contracts."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.7,
+    "explanation": "As the listing entity, Dynegy Holdings, LLC is reasonably inferred to be Party A."
+  },
+  "party_name_2": {
+    "value": "CITIGROUP ENERGY INC.",
+    "confidence": 0.9,
+    "explanation": "CITIGROUP ENERGY INC. is listed as the counterparty for the 2002 ISDA Master Agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.7,
+    "explanation": "As the counterparty, CITIGROUP ENERGY INC. is reasonably inferred to be Party B."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of significant errors or OCR issues."
+  }
+}

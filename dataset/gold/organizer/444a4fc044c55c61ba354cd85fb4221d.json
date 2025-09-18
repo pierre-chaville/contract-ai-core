@@ -1,0 +1,63 @@
+{
+  "filename": "444a4fc044c55c61ba354cd85fb4221d.txt",
+  "contract_type": {
+    "value": "VSA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2016 Credit Support Annex for Variation Margin (VM)', which is a Credit Support Annex under the ISDA framework."
+  },
+  "contract_type_version": {
+    "value": "2016",
+    "confidence": 1.0,
+    "explanation": "The document explicitly references the '2016 Credit Support Annex for Variation Margin (VM)'."
+  },
+  "contract_date": {
+    "value": "2017-07-12",
+    "confidence": 1.0,
+    "explanation": "The ISDA Master Agreement date is stated as July 12, 2017, which is the relevant contract date for this annex."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is an initial annex to the ISDA Master Agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "This is a Credit Support Annex supplementing the initial ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.8,
+    "explanation": "The document appears to be a finalized annex to an executed ISDA Master Agreement, but there is no explicit signature page shown."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "Party A is explicitly named as JPMORGAN CHASE BANK, N.A."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "JPMORGAN CHASE BANK, N.A. is labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "CAMBRIDGE MASTER FUND L.P.",
+    "confidence": 1.0,
+    "explanation": "Party B is explicitly named as CAMBRIDGE MASTER FUND L.P."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "CAMBRIDGE MASTER FUND L.P. is labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document text is clear, well-formatted, and free of OCR errors or typos."
+  }
+}

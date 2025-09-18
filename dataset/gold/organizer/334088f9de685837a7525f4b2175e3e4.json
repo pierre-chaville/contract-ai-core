@@ -1,0 +1,63 @@
+{
+  "filename": "334088f9de685837a7525f4b2175e3e4.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA Master Agreement' and references the International Swaps and Derivatives Association, Inc."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.8,
+    "explanation": "No explicit version year (e.g., 1992 or 2002) is mentioned in the visible text."
+  },
+  "contract_date": {
+    "value": "2005-06-30",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated as 'dated as of June 30, 2005'."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it appears to be the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number; not applicable."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is a 'Master Agreement' dated as of June 30, 2005, indicating it is the initial contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and formatted as a final agreement, not a draft."
+  },
+  "party_name_1": {
+    "value": "SWISS RE FINANCIAL PRODUCTS CORPORATION",
+    "confidence": 1.0,
+    "explanation": "This name appears as one of the two parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "By convention and order, the first listed party is typically Party A, though not explicitly labeled here."
+  },
+  "party_name_2": {
+    "value": "SUPPLEMENTAL INTEREST TRUST, STRUCTURED ASSET SECURITIES CORPORATION MORTGAGE PASS-THROUGH CERTIFICATES, SERIES 2005-GEL3",
+    "confidence": 1.0,
+    "explanation": "This is the second named party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "By convention and order, the second listed party is typically Party B, though not explicitly labeled here."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

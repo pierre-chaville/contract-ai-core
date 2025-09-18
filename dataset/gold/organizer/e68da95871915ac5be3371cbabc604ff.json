@@ -1,0 +1,63 @@
+{
+  "filename": "e68da95871915ac5be3371cbabc604ff.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA 2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT' in the header and body."
+  },
+  "contract_date": {
+    "value": "2012-07-27",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of July 27, 2012, as stated below the title."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is an initial agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number, as this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is a '2002 MASTER AGREEMENT' and not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft."
+  },
+  "party_name_1": {
+    "value": "Bank of America, N.A.",
+    "confidence": 1.0,
+    "explanation": "Bank of America, N.A. is listed as one of the two parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "By convention and order, Bank of America, N.A. is likely Party A, though not explicitly labeled."
+  },
+  "party_name_2": {
+    "value": "FSP 50 South Tenth Street Corp.",
+    "confidence": 1.0,
+    "explanation": "FSP 50 South Tenth Street Corp. is listed as the other party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "By convention and order, FSP 50 South Tenth Street Corp. is likely Party B, though not explicitly labeled."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is clean, clearly formatted, and free of typos or OCR errors."
+  }
+}

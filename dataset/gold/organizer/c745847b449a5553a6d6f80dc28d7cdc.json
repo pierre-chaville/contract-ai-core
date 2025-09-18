@@ -1,0 +1,63 @@
+{
+  "filename": "c745847b449a5553a6d6f80dc28d7cdc.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'SCHEDULE to the ISDA 2002 MASTER AGREEMENT', which explicitly identifies it as an ISDA Master Agreement schedule."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text specifies 'ISDA 2002 MASTER AGREEMENT', indicating the 2002 version."
+  },
+  "contract_date": {
+    "value": "2023-10-03",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated as 'dated as of October 3, 2023', which is the effective date of the contract."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is a schedule to the master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "This is a schedule to the initial ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and formatted as a formal agreement between parties, indicating execution. No draft watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "WELLS FARGO COMMODITIES, LLC",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party A' in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "MONTANA RENEWABLES, LLC",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party B' in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is clean, clearly formatted, and contains no visible typos or OCR errors."
+  }
+}

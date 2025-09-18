@@ -1,0 +1,63 @@
+{
+  "filename": "1904d5968c2c5061b094ff389e501651.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc., which matches the ISDA Master Agreement code."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT' in both the header and body."
+  },
+  "contract_date": {
+    "value": "2012-05-25",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of May 25, 2012, which is clearly stated in the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft. While signatures are not visible, the formal language and presentation indicate execution."
+  },
+  "party_name_1": {
+    "value": "Rabobank, N.A.",
+    "confidence": 1.0,
+    "explanation": "Rabobank, N.A. is listed as one of the parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled as 'Party A', Rabobank, N.A. is listed first, which is the standard convention for Party A in ISDA agreements."
+  },
+  "party_name_2": {
+    "value": "QAD Ortega Hill, LLC, a Delaware limited liability company",
+    "confidence": 1.0,
+    "explanation": "QAD Ortega Hill, LLC is listed as the other party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled as 'Party B', QAD Ortega Hill, LLC is listed second, which is the standard convention for Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is clean, clearly formatted, and free of typos or OCR errors."
+  }
+}

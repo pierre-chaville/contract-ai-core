@@ -1,0 +1,63 @@
+{
+  "filename": "b01b15a1290b5517b5a492949e900ba0.txt",
+  "contract_type": {
+    "value": "VSA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2016 Credit Support Annex for Variation Margin (VM)' and references the ISDA Master Agreement, which matches the 'Credit Support Annex' (VSA) code."
+  },
+  "contract_type_version": {
+    "value": "2016",
+    "confidence": 1.0,
+    "explanation": "The document explicitly states '2016 Credit Support Annex for Variation Margin (VM)'."
+  },
+  "contract_date": {
+    "value": "2017-07-12",
+    "confidence": 1.0,
+    "explanation": "The ISDA Master Agreement date is stated as July 12, 2017, which is the main contract date for the underlying agreement."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is a standalone annex to the ISDA Master Agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned, and the document does not appear to be an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.9,
+    "explanation": "This is an initial Credit Support Annex supplementing the ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.8,
+    "explanation": "The document is presented as a finalized annex to an executed ISDA Master Agreement, not a draft."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party A' in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A' next to JPMORGAN CHASE BANK, N.A."
+  },
+  "party_name_2": {
+    "value": "CMF WILLOWBRIDGE MASTER FUND L.P.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party B' in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B' next to CMF WILLOWBRIDGE MASTER FUND L.P."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

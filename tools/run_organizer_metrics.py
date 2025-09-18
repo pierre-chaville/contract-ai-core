@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 from pathlib import Path
 
 
@@ -71,15 +72,47 @@ def relaxed_equal(field: str, gold: str, pred: str) -> bool:
     return normalize_relaxed(gold) == normalize_relaxed(pred)
 
 
-def load_csv_map(path: Path, key_field: str = "filename") -> dict[str, dict[str, str]]:
+def load_json_map(dir_path: Path) -> dict[str, dict[str, str]]:
+    """Load per-document JSON files into a flat map keyed by original filename.
+
+    Returns a dict where values have simple string fields for comparison, and
+    also include "<field>_explanation" entries if present in the JSON.
+    """
     data: dict[str, dict[str, str]] = {}
-    with path.open("r", encoding="utf-8", newline="") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            fn = (row.get(key_field) or "").strip()
-            if not fn:
-                continue
-            data[fn] = {k: (v or "") for k, v in row.items()}
+    if not dir_path.exists():
+        return data
+    for p in dir_path.glob("*.json"):
+        try:
+            with p.open("r", encoding="utf-8") as jf:
+                obj = json.load(jf)
+        except Exception:
+            continue
+        filename = str(obj.get("filename") or p.stem)
+        rec: dict[str, str] = {"filename": filename}
+        for field in (
+            "contract_type",
+            "contract_type_version",
+            "contract_date",
+            "amendment_date",
+            "amendment_number",
+            "version_type",
+            "status",
+            "party_name_1",
+            "party_role_1",
+            "party_name_2",
+            "party_role_2",
+            "document_quality",
+        ):
+            node = obj.get(field) or {}
+            if isinstance(node, dict):
+                val = node.get("value")
+                expl = node.get("explanation")
+            else:
+                val = None
+                expl = None
+            rec[field] = "" if val is None else str(val)
+            rec[f"{field}_explanation"] = "" if expl is None else str(expl)
+        data[filename] = rec
     return data
 
 
@@ -91,21 +124,21 @@ def main() -> None:
     model_name = args.model
     repo_root = Path(__file__).resolve().parents[1]
 
-    pred_path = repo_root / "dataset" / "output" / "organizer" / model_name / "results.csv"
-    gold_path = repo_root / "dataset" / "gold" / "organizer" / "results.csv"
-    out_dir = repo_root / "dataset" / "metrics" / "organizer"
+    pred_dir = repo_root / "dataset" / "output" / "organizer" / model_name
+    gold_dir = repo_root / "dataset" / "gold" / "organizer"
+    out_dir = repo_root / "dataset" / "metrics" / "organizer" / model_name
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / f"{model_name}.csv"
+    out_path = out_dir / "summary.csv"
 
-    if not pred_path.exists():
-        print(f"Predictions not found: {pred_path}")
+    if not pred_dir.exists():
+        print(f"Predictions not found: {pred_dir}")
         return
-    if not gold_path.exists():
-        print(f"Gold not found: {gold_path}")
+    if not gold_dir.exists():
+        print(f"Gold not found: {gold_dir}")
         return
 
-    pred_map = load_csv_map(pred_path)
-    gold_map = load_csv_map(gold_path)
+    pred_map = load_json_map(pred_dir)
+    gold_map = load_json_map(gold_dir)
 
     common = sorted(set(pred_map.keys()) & set(gold_map.keys()))
     if not common:
@@ -114,11 +147,17 @@ def main() -> None:
 
     fields = [
         "contract_type",
+        "contract_type_version",
         "contract_date",
         "amendment_date",
         "amendment_number",
         "version_type",
         "status",
+        "party_name_1",
+        "party_role_1",
+        "party_name_2",
+        "party_role_2",
+        "document_quality",
     ]
 
     # Aggregates per field
@@ -190,11 +229,14 @@ def main() -> None:
                     to_pct(f1),
                 ]
             )
+            print(
+                f"  {field}: {to_pct(accuracy)} {present} {to_pct(precision)} {to_pct(recall)} {to_pct(f1)}"
+            )
 
     print(f"Wrote metrics to {out_path}")
 
     # Write mismatches CSV
-    mismatch_path = out_dir / f"{model_name}_mismatch.csv"
+    mismatch_path = out_dir / "mismatch.csv"
     with mismatch_path.open("w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["filename", "field", "gold_value", "pred_value", "gold_explanation"])

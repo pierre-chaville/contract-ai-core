@@ -1,0 +1,63 @@
+{
+  "filename": "0a0acc69e9325b0e94a7611d0ce572d0.txt",
+  "contract_type": {
+    "value": "SWAP",
+    "confidence": 0.95,
+    "explanation": "The document is titled 'SWAP TRANSFER AND ASSIGNMENT AGREEMENT' and refers to the transfer of rights and obligations under a swap transaction."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.95,
+    "explanation": "No specific versioning for swap transfer agreements is mentioned; the referenced ISDA Master Agreement is 1992 version, but this document is not itself an ISDA."
+  },
+  "contract_date": {
+    "value": "2012-04-12",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly dated as of April 12, 2012, at the top of the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "This is a transfer and assignment agreement, not an amendment to the original contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number; this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.9,
+    "explanation": "This is the initial transfer and assignment agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.8,
+    "explanation": "The agreement refers to the execution of counterparts and mutual agreement, suggesting it is executed, though no explicit 'executed' stamp is visible."
+  },
+  "party_name_1": {
+    "value": "Merrill Lynch International",
+    "confidence": 1.0,
+    "explanation": "Merrill Lynch International (MLI) is clearly listed as a party to the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "MLI is the transferee in the agreement, functionally acting as Party A in the transfer context."
+  },
+  "party_name_2": {
+    "value": "Merrill Lynch Capital Services, Inc.",
+    "confidence": 1.0,
+    "explanation": "Merrill Lynch Capital Services, Inc. (MLCS) is clearly listed as a party to the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "MLCS is the transferor in the agreement, functionally acting as Party B in the transfer context."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of OCR errors or typos."
+  }
+}

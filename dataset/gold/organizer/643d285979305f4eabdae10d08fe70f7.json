@@ -1,0 +1,63 @@
+{
+  "filename": "643d285979305f4eabdae10d08fe70f7.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA Master Agreement' and references the International Swap Dealers Association, Inc. Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The copyright notice at the bottom states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.' indicating the 1992 version."
+  },
+  "contract_date": {
+    "value": "2005-09-22",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of September 22, 2005, which is explicitly stated in the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is an initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of any amendment number or indication that this is an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is described as a 'Master Agreement' and not as an amendment or amended and restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is labeled 'Execution Copy,' which typically indicates an executed version."
+  },
+  "party_name_1": {
+    "value": "WACHOVIA BANK, NATIONAL ASSOCIATION",
+    "confidence": 1.0,
+    "explanation": "Wachovia Bank, National Association is listed as one of the parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Wachovia Bank, National Association is explicitly labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "NOVASTAR MORTGAGE SUPPLEMENTAL INTEREST TRUST, SERIES 2005-3, a New York common law trust",
+    "confidence": 1.0,
+    "explanation": "Novastar Mortgage Supplemental Interest Trust, Series 2005-3 is listed as the other party."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Novastar Mortgage Supplemental Interest Trust, Series 2005-3 is explicitly labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

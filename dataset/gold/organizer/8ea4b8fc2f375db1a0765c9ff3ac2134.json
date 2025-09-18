@@ -1,0 +1,63 @@
+{
+  "filename": "8ea4b8fc2f375db1a0765c9ff3ac2134.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.95,
+    "explanation": "The document is titled 'ISDA Schedule to the Master Agreement for Basis Swap' and references the ISDA Master Agreement throughout."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.7,
+    "explanation": "No explicit version year (e.g., 1992 or 2002) is mentioned in the visible text."
+  },
+  "contract_date": {
+    "value": "2007-03-13",
+    "confidence": 1.0,
+    "explanation": "The date '13 March 2007' is clearly labeled as the contract date."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 0.95,
+    "explanation": "There is no indication that this document is an amendment; it appears to be an initial schedule."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned, and the document does not appear to be an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The document is an ISDA Schedule to the Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The presence of a specific date and absence of draft markings suggest this is an executed contract."
+  },
+  "party_name_1": {
+    "value": "CRUSADE MANAGEMENT LIMITED",
+    "confidence": 1.0,
+    "explanation": "Listed as Party A in the parties section."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as Party A in the parties section."
+  },
+  "party_name_2": {
+    "value": "PERPETUAL TRUSTEES CONSOLIDATED LIMITED AS TRUSTEE OF CRUSADE GLOBAL TRUST NO. 1 OF 2007",
+    "confidence": 1.0,
+    "explanation": "Listed as Party B in the parties section."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as Party B in the parties section."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

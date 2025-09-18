@@ -1,0 +1,63 @@
+{
+  "filename": "74a043b2a2c75aeca43e1782601f332a.txt",
+  "contract_type": {
+    "value": "VSA",
+    "confidence": 0.98,
+    "explanation": "The document is titled 'CREDIT SUPPORT ANNEX' to the ISDA Master Agreement, which is the standard name for a Credit Support Annex (CSA) under ISDA documentation."
+  },
+  "contract_type_version": {
+    "value": "1994",
+    "confidence": 0.95,
+    "explanation": "Copyright notice at the bottom states 'Copyright (C) 1994 by International Swaps and Derivatives Association, Inc.', indicating the 1994 version of the CSA."
+  },
+  "contract_date": {
+    "value": "2018-02-21",
+    "confidence": 1.0,
+    "explanation": "The document states 'dated as of February 21, 2018' directly under the title section."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is an initial annex to the ISDA Master Agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document does not appear to be an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.98,
+    "explanation": "The document is a Credit Support Annex supplementing the original ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and formatted as a finalized agreement, not a draft. There is no 'draft' watermark or language."
+  },
+  "party_name_1": {
+    "value": "EDF Energy Services, LLC",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as Party A in the agreement header."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A' next to the party name."
+  },
+  "party_name_2": {
+    "value": "Summer Energy Northeast, LLC (formerly: REP Energy, LLC)",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as Party B in the agreement header."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B' next to the party name."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free from OCR errors or typos."
+  }
+}

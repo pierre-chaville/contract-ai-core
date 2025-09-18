@@ -1,0 +1,63 @@
+{
+  "filename": "b6d1228204165092a66aecc7f9052d3b.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'SCHEDULE to the ISDA MASTER AGREEMENT', indicating it is related to an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No explicit reference to a version year (e.g., 1992 or 2002) is present in the visible text or image."
+  },
+  "contract_date": {
+    "value": "2012-11-19",
+    "confidence": 1.0,
+    "explanation": "The text states 'ISDA MASTER AGREEMENT dated as of November 19, 2012', clearly indicating the contract date."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is a schedule to the initial agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of any amendment number in the text."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The document is a schedule to the ISDA Master Agreement and does not reference amendment or restatement, indicating it is part of the initial contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document provides specific parties and a contract date, which typically indicates an executed agreement rather than a draft."
+  },
+  "party_name_1": {
+    "value": "WELLS FARGO BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party A' in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "FARMER BROS. CO.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party B' in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

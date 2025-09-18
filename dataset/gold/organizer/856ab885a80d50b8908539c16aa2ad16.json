@@ -1,0 +1,63 @@
+{
+  "filename": "856ab885a80d50b8908539c16aa2ad16.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'SCHEDULE TO THE 2002 ISDA MASTER AGREEMENT' and references the ISDA Master Agreement throughout."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states '2002 Master Agreement'."
+  },
+  "contract_date": {
+    "value": "2010-05-28",
+    "confidence": 1.0,
+    "explanation": "The contract is 'dated as of May 28, 2010' as shown on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is a schedule to the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned, and this is not an amendment document."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "This is a schedule to the initial 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and formatted as a finalized agreement, not a draft."
+  },
+  "party_name_1": {
+    "value": "SOCIÉTÉ GÉNÉRALE",
+    "confidence": 1.0,
+    "explanation": "Party A is named as 'SOCIÉTÉ GÉNÉRALE' in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The text explicitly refers to 'Party A' as SOCIÉTÉ GÉNÉRALE."
+  },
+  "party_name_2": {
+    "value": "CINEDIGM DIGITAL FUNDING I, LLC",
+    "confidence": 1.0,
+    "explanation": "Party B is named as 'CINEDIGM DIGITAL FUNDING I, LLC' in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The text explicitly refers to 'Party B' as CINEDIGM DIGITAL FUNDING I, LLC."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, with no typos or OCR errors."
+  }
+}

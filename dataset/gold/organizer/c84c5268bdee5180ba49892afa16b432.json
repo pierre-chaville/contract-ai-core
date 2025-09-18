@@ -1,0 +1,63 @@
+{
+  "filename": "c84c5268bdee5180ba49892afa16b432.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'THIRD AMENDMENT TO THE ISDA MASTER AGREEMENT' and repeatedly references the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No explicit reference to a version year (e.g., 1992 or 2002) for the ISDA Master Agreement is provided in the text or image."
+  },
+  "contract_date": {
+    "value": "2009-09-22",
+    "confidence": 1.0,
+    "explanation": "The ISDA Master Agreement is stated as 'dated as of September 22, 2009', which is the date of the initial contract."
+  },
+  "amendment_date": {
+    "value": "2010-05-28",
+    "confidence": 1.0,
+    "explanation": "The amendment is titled 'THIRD AMENDMENT DATED AS OF MAY 28, 2010', which is explicitly stated as the amendment date."
+  },
+  "amendment_number": {
+    "value": "3",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'THIRD AMENDMENT', indicating this is the third amendment."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'THIRD AMENDMENT', which is an amendment to the original contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The amendment is dated and formatted as a final agreement, not a draft. No indication of it being a draft."
+  },
+  "party_name_1": {
+    "value": "SEMPRA ENERGY TRADING LLC",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party to the agreement and identified as 'Party A'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "SEMPRA ENERGY TRADING LLC is referred to as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "MXENERGY INC.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party to the agreement and identified as 'Party B'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "MXENERGY INC. is referred to as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of typos or OCR errors."
+  }
+}

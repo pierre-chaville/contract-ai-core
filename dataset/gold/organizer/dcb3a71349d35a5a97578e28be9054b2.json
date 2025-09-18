@@ -1,0 +1,63 @@
+{
+  "filename": "dcb3a71349d35a5a97578e28be9054b2.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA 2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": "2014-12-11",
+    "confidence": 1.0,
+    "explanation": "The date 'dated as of December 11, 2014' is clearly stated near the top of the agreement."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number or amendment language."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and formatted as a finalized agreement, not a draft."
+  },
+  "party_name_1": {
+    "value": "BARCLAYS BANK PLC",
+    "confidence": 1.0,
+    "explanation": "'BARCLAYS BANK PLC' is listed as one of the parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "'BARCLAYS BANK PLC' is explicitly labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "BOOZ ALLEN HAMILTON INC.",
+    "confidence": 1.0,
+    "explanation": "'BOOZ ALLEN HAMILTON INC.' is listed as the other party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "'BOOZ ALLEN HAMILTON INC.' is explicitly labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

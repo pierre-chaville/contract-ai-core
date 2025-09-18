@@ -1,0 +1,63 @@
+{
+  "filename": "b9243433ab1055ae905f9b76b581a0b3.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc. (ISDA), explicitly identifying it as an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and repeatedly refers to the 2002 version."
+  },
+  "contract_date": {
+    "value": "2012-12-17",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated to be 'dated as of December 17, 2012' near the top of the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number or that this is an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and presented in final form, indicating it is executed, though signatures are not visible on this page."
+  },
+  "party_name_1": {
+    "value": "CITIBANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "CITIBANK, N.A. is listed as one of the two parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "While the document does not explicitly assign Party A/B, conventionally the first listed party (CITIBANK, N.A.) is Party A in ISDA agreements."
+  },
+  "party_name_2": {
+    "value": "FLATIRON FUNDING, LLC",
+    "confidence": 1.0,
+    "explanation": "FLATIRON FUNDING, LLC is listed as the second party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "While the document does not explicitly assign Party A/B, conventionally the second listed party (FLATIRON FUNDING, LLC) is Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

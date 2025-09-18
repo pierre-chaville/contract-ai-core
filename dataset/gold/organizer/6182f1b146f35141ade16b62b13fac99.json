@@ -1,0 +1,63 @@
+{
+  "filename": "6182f1b146f35141ade16b62b13fac99.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA 2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The document is explicitly called the '2002 MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": "2012-07-02",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of July 2, 2012'."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, as this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and presented as a finalized contract, not a draft."
+  },
+  "party_name_1": {
+    "value": "CITIBANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "CITIBANK, N.A. is listed as one of the parties to the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled, CITIBANK, N.A. is customarily Party A in such agreements and is listed first."
+  },
+  "party_name_2": {
+    "value": "IC-II INVESTMENTS LLC",
+    "confidence": 1.0,
+    "explanation": "IC-II INVESTMENTS LLC is listed as the other party to the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled, IC-II INVESTMENTS LLC is customarily Party B and is listed second."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

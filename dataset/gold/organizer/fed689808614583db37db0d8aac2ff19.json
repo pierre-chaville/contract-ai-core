@@ -1,0 +1,63 @@
+{
+  "filename": "fed689808614583db37db0d8aac2ff19.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc., which is the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 Master Agreement' in the title and body."
+  },
+  "contract_date": {
+    "value": "2016-01-04",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of January 4, 2016, which is clearly stated below the title."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number, as this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a finalized contract, not a draft. No draft watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "CITIBANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "CITIBANK, N.A. is listed as one of the parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "CITIBANK, N.A. is explicitly labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "MACK-CALI REALTY, L.P.",
+    "confidence": 1.0,
+    "explanation": "MACK-CALI REALTY, L.P. is listed as the other party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "MACK-CALI REALTY, L.P. is explicitly labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "81bd69c83e4c5232a081ec0540950c94.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc. (ISDA), explicitly indicating it is an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT' in the title and body."
+  },
+  "contract_date": {
+    "value": "2015-01-13",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of January 13, 2015', which is clearly stated near the top of the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of any amendment number or amendment language."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is titled as a '2002 MASTER AGREEMENT' with no reference to amendment or restatement, indicating it is the initial contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and lists both parties, which strongly suggests it is executed, though actual signatures are not visible on this page."
+  },
+  "party_name_1": {
+    "value": "The Bank of Tokyo-Mitsubishi UFJ, Ltd.",
+    "confidence": 1.0,
+    "explanation": "The first party is clearly listed as 'The Bank of Tokyo-Mitsubishi UFJ, Ltd.' in the agreement heading."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "Standard ISDA format assigns the first listed party as Party A, though not explicitly labeled on this page."
+  },
+  "party_name_2": {
+    "value": "Booz Allen Hamilton Inc.",
+    "confidence": 1.0,
+    "explanation": "The second party is clearly listed as 'Booz Allen Hamilton Inc.' in the agreement heading."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "Standard ISDA format assigns the second listed party as Party B, though not explicitly labeled on this page."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

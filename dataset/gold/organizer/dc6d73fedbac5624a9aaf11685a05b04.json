@@ -1,0 +1,63 @@
+{
+  "filename": "dc6d73fedbac5624a9aaf11685a05b04.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'EIGHTEENTH AMENDMENT TO FIRST LIEN ISDA 2002 MASTER AGREEMENT,' which explicitly identifies the contract type as ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The title and body repeatedly reference the 'ISDA 2002 Master Agreement,' indicating the 2002 version."
+  },
+  "contract_date": {
+    "value": "2016-03-17",
+    "confidence": 1.0,
+    "explanation": "The recitals specify the original First Lien ISDA 2002 Master Agreement was dated as of March 17, 2016, which is the main contract date."
+  },
+  "amendment_date": {
+    "value": "2021-12-17",
+    "confidence": 1.0,
+    "explanation": "The amendment is stated to be entered into as of December 17, 2021."
+  },
+  "amendment_number": {
+    "value": "18",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'EIGHTEENTH AMENDMENT,' which clearly indicates this is the 18th amendment."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is an amendment, as stated in the title and body."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is labeled 'Execution Version,' which strongly indicates it is an executed version."
+  },
+  "party_name_1": {
+    "value": "MERRILL LYNCH COMMODITIES, INC.",
+    "confidence": 1.0,
+    "explanation": "MERRILL LYNCH COMMODITIES, INC. is identified as Party A in the opening paragraph."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "MERRILL LYNCH COMMODITIES, INC. is explicitly referred to as 'Party A.'"
+  },
+  "party_name_2": {
+    "value": "U.S. OIL & REFINING CO.",
+    "confidence": 1.0,
+    "explanation": "U.S. OIL & REFINING CO. is identified as Party B in the opening paragraph."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "U.S. OIL & REFINING CO. is explicitly referred to as 'Party B.'"
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

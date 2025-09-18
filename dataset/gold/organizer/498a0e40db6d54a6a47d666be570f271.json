@@ -1,0 +1,63 @@
+{
+  "filename": "498a0e40db6d54a6a47d666be570f271.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc. (ISDA), which matches the ISDA Master Agreement contract type."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT' in both the header and body text."
+  },
+  "contract_date": {
+    "value": "2021-11-30",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated to be 'dated as of November 30, 2021' on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number or amendment language."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a finalized contract, not a draft, indicating it is executed."
+  },
+  "party_name_1": {
+    "value": "Macquarie Bank Limited",
+    "confidence": 1.0,
+    "explanation": "Macquarie Bank Limited is explicitly listed as a party ('Party A')."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Macquarie Bank Limited is designated as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "Each Party B specified on Appendix A to this Agreement",
+    "confidence": 1.0,
+    "explanation": "The agreement states 'Each Party B specified on Appendix A to this Agreement' as the counterparty."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The counterparty is referred to as 'Party B' throughout the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is clean, clearly formatted, and free of typos or OCR errors."
+  }
+}

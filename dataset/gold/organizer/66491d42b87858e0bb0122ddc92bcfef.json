@@ -1,0 +1,63 @@
+{
+  "filename": "66491d42b87858e0bb0122ddc92bcfef.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, which matches the ISDA Master Agreement contract type."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly referred to as the '2002 MASTER AGREEMENT' in the title and body."
+  },
+  "contract_date": {
+    "value": "2019-04-11",
+    "confidence": 1.0,
+    "explanation": "The contract is dated as of April 11, 2019, which is clearly stated below the title."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of any amendment number or amendment status in the document."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft. While signatures are not shown, the presence of a date and formal structure strongly indicate execution."
+  },
+  "party_name_1": {
+    "value": "TWIN DISC, INCORPORATED",
+    "confidence": 1.0,
+    "explanation": "TWIN DISC, INCORPORATED is listed as one of the parties to the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "TWIN DISC, INCORPORATED is explicitly labeled as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "BANK OF MONTREAL",
+    "confidence": 1.0,
+    "explanation": "BANK OF MONTREAL is listed as the other party to the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "BANK OF MONTREAL is explicitly labeled as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, clearly formatted, and free of typos or OCR errors."
+  }
+}

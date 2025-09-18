@@ -1,0 +1,63 @@
+{
+  "filename": "0b6bc60d83645d25af0d17040887e126.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA SCHEDULE to the 2002 Master Agreement', which clearly identifies it as an ISDA Master Agreement document."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states '2002 Master Agreement', indicating the version."
+  },
+  "contract_date": {
+    "value": "2020-04-07",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of April 7, 2020', which is the main contract date."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is a schedule to the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number; this is not an amendment document."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "This is the initial schedule to the 2002 Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is labeled 'Execution Copy', which typically means it is the executed version."
+  },
+  "party_name_1": {
+    "value": "CITIBANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "CITIBANK, N.A. is listed as one of the parties in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "CITIBANK, N.A. is explicitly referred to as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "ADVANCED ENERGY INDUSTRIES, INC.",
+    "confidence": 1.0,
+    "explanation": "ADVANCED ENERGY INDUSTRIES, INC. is listed as the other party in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "ADVANCED ENERGY INDUSTRIES, INC. is explicitly referred to as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

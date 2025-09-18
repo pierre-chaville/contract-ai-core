@@ -1,0 +1,63 @@
+{
+  "filename": "057d9f25d7635925b66afd94be03fa10.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA International Swap Dealers Association, Inc. MASTER AGREEMENT' which explicitly identifies it as an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 0.95,
+    "explanation": "The copyright notice at the bottom states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.', indicating the 1992 version."
+  },
+  "contract_date": {
+    "value": "2008-10-27",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated as 'dated as of October 27, 2008' near the top of the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is an initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of any amendment number, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is presented as the original master agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and formatted as a final agreement, not a draft. While signatures are not shown, the context and formality suggest execution."
+  },
+  "party_name_1": {
+    "value": "BRANCH BANKING AND TRUST COMPANY",
+    "confidence": 1.0,
+    "explanation": "Listed on the left side as a party to the agreement and labeled as 'Party A'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A' next to the first party's name."
+  },
+  "party_name_2": {
+    "value": "ROANOKE GAS COMPANY",
+    "confidence": 1.0,
+    "explanation": "Listed on the right side as a party to the agreement and labeled as 'Party B'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B' next to the second party's name."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of OCR errors or typos."
+  }
+}

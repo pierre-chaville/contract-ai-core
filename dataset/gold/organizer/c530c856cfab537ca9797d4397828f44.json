@@ -1,0 +1,63 @@
+{
+  "filename": "c530c856cfab537ca9797d4397828f44.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc., which matches the ISDA Master Agreement contract type."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly referred to as the '2002 MASTER AGREEMENT' in both the heading and body text."
+  },
+  "contract_date": {
+    "value": "2012-09-26",
+    "confidence": 1.0,
+    "explanation": "The contract is stated as 'dated as of September 26, 2012' on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original 2002 Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft; no draft watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "JPMORGAN CHASE BANK, N.A. is listed as one of the two parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "While the document does not explicitly assign 'Party A' or 'Party B', JPMorgan Chase Bank, N.A. is listed first and is typically Party A in such agreements."
+  },
+  "party_name_2": {
+    "value": "WELLS CORE OFFICE INCOME OPERATING PARTNERSHIP, L.P.",
+    "confidence": 1.0,
+    "explanation": "WELLS CORE OFFICE INCOME OPERATING PARTNERSHIP, L.P. is listed as the second party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled, the second party listed is typically Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, with no visible typos or OCR errors."
+  }
+}

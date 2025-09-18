@@ -1,0 +1,63 @@
+{
+  "filename": "97f47006838e50b099aae8fcab8b9aca.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is explicitly titled 'SCHEDULE TO 2002 ISDA MASTER AGREEMENT' and references the ISDA Master Agreement throughout."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text refers to the '2002 Master Agreement' and '2002 ISDA MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": "2010-06-07",
+    "confidence": 1.0,
+    "explanation": "The contract is stated as 'dated as of June 7, 2010' on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is a schedule to the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "This is a schedule to the initial 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and lists both parties, which strongly suggests execution, though signatures are not shown on this page."
+  },
+  "party_name_1": {
+    "value": "NATIXIS",
+    "confidence": 1.0,
+    "explanation": "Party A is explicitly named as 'NATIXIS'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "NATIXIS is referred to as 'Party A' in the document."
+  },
+  "party_name_2": {
+    "value": "CINEDIGM DIGITAL FUNDING I, LLC",
+    "confidence": 1.0,
+    "explanation": "Party B is explicitly named as 'CINEDIGM DIGITAL FUNDING I, LLC'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "CINEDIGM DIGITAL FUNDING I, LLC is referred to as 'Party B' in the document."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of typos or OCR errors."
+  }
+}

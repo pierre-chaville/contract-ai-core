@@ -1,0 +1,63 @@
+{
+  "filename": "3cc4c1e23c5d52adbbc6baae97fadd4a.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA International Swap Dealers Association Inc. MASTER AGREEMENT' and references the ISDA Master Agreement throughout."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 0.95,
+    "explanation": "Copyright (C)1992 by International Swap Dealers Association, Inc. is explicitly stated, indicating the 1992 version."
+  },
+  "contract_date": {
+    "value": "2021-04-26",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of April 26, 2021, which is explicitly stated in the text."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.95,
+    "explanation": "The file name and description include 'fully executed,' indicating the agreement has been executed."
+  },
+  "party_name_1": {
+    "value": "WELLS FARGO BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "WELLS FARGO BANK, N.A. is explicitly listed as one of the parties."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "Standard ISDA format lists the first named party as Party A, though the text does not explicitly assign roles."
+  },
+  "party_name_2": {
+    "value": "FARMER BROS. CO.",
+    "confidence": 1.0,
+    "explanation": "FARMER BROS. CO. is explicitly listed as the other party."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "Standard ISDA format lists the second named party as Party B, though the text does not explicitly assign roles."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

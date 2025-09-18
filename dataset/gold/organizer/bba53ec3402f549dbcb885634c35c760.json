@@ -1,0 +1,63 @@
+{
+  "filename": "bba53ec3402f549dbcb885634c35c760.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.95,
+    "explanation": "The document is a 'SCHEDULE TO 2002 ISDA MASTER AGREEMENT', which clearly identifies it as an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states '2002 ISDA MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": "2010-07-20",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of July 20, 2010', which is the main contract date."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is a schedule to the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned and this is not an amendment document."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The document is a schedule to the initial 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and formatted as a final agreement, not a draft."
+  },
+  "party_name_1": {
+    "value": "HSBC BANK USA, NATIONAL ASSOCIATION",
+    "confidence": 1.0,
+    "explanation": "Party A is explicitly named as 'HSBC BANK USA, NATIONAL ASSOCIATION'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Party A is explicitly labeled as such in the agreement."
+  },
+  "party_name_2": {
+    "value": "CINEDIGM DIGITAL FUNDING I LLC",
+    "confidence": 1.0,
+    "explanation": "Party B is explicitly named as 'CINEDIGM DIGITAL FUNDING I LLC'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Party B is explicitly labeled as such in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

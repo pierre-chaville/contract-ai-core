@@ -1,0 +1,63 @@
+{
+  "filename": "2357411a95215d8daa1c46f22f66d5d7.txt",
+  "contract_type": {
+    "value": "SWAP",
+    "confidence": 0.95,
+    "explanation": "The document is titled 'SWAP MODIFICATION AGREEMENT' and refers to modifications of swap transactions under an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No specific version (such as 1992 or 2002) of the ISDA or swap agreement is mentioned in the text."
+  },
+  "contract_date": {
+    "value": "2018-08-14",
+    "confidence": 0.95,
+    "explanation": "The ISDA Master Agreement, which is being amended, is dated August 14, 2018 as stated in the background section."
+  },
+  "amendment_date": {
+    "value": "2020-03-31",
+    "confidence": 0.95,
+    "explanation": "The effective date of this modification agreement is March 31, 2020, as stated in the opening paragraph."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No amendment number is mentioned in the text."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is a modification/amendment to an existing swap agreement, not an initial or restated contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement uses language such as 'is made on' and 'the parties agree as follows,' indicating it is executed, not a draft."
+  },
+  "party_name_1": {
+    "value": "Citizens Bank, N.A.",
+    "confidence": 1.0,
+    "explanation": "Citizens Bank, N.A. is explicitly named as Party A in the opening paragraph."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Citizens Bank, N.A. is referred to as Party A in the agreement."
+  },
+  "party_name_2": {
+    "value": "PHR TCI, LLC",
+    "confidence": 1.0,
+    "explanation": "PHR TCI, LLC is explicitly named as Party B in the opening paragraph."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "PHR TCI, LLC is referred to as Party B in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of OCR errors or typos."
+  }
+}

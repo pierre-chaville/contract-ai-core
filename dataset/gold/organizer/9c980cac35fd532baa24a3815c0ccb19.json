@@ -1,0 +1,63 @@
+{
+  "filename": "9c980cac35fd532baa24a3815c0ccb19.txt",
+  "contract_type": {
+    "value": "VSA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'CREDIT SUPPORT ANNEX' and references the ISDA Master Agreement, which matches the VSA (Credit Support Annex) code."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text specifies 'ISDA 2002 Master Agreement' as the version."
+  },
+  "contract_date": {
+    "value": "2023-10-03",
+    "confidence": 1.0,
+    "explanation": "The document is dated as of October 3, 2023, which is clearly stated on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it appears to be an initial annex."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document does not appear to be an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is a Credit Support Annex to the ISDA Master Agreement and not labeled as amended, restated, or an amendment."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and formatted as a finalized agreement, not a draft."
+  },
+  "party_name_1": {
+    "value": "Wells Fargo Commodities, LLC",
+    "confidence": 1.0,
+    "explanation": "Wells Fargo Commodities, LLC is explicitly listed as Party A."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The document explicitly labels Wells Fargo Commodities, LLC as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "Montana Renewables, LLC",
+    "confidence": 1.0,
+    "explanation": "Montana Renewables, LLC is explicitly listed as Party B."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The document explicitly labels Montana Renewables, LLC as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

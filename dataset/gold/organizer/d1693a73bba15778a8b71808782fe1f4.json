@@ -1,0 +1,63 @@
+{
+  "filename": "d1693a73bba15778a8b71808782fe1f4.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'AMENDMENT TO ISDA MASTER AGREEMENT' and repeatedly references the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No explicit version (e.g., 1992 or 2002) of the ISDA Master Agreement is mentioned in the text or image."
+  },
+  "contract_date": {
+    "value": "2009-03-18",
+    "confidence": 1.0,
+    "explanation": "The original ISDA Master Agreement is stated as 'dated as of March 18, 2009'."
+  },
+  "amendment_date": {
+    "value": "2009-06-01",
+    "confidence": 1.0,
+    "explanation": "The amendment is 'dated as of June 1, 2009', which is clearly stated at the top of the document."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "There is no mention of an amendment number in the provided text or image."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is explicitly titled 'AMENDMENT' and describes amendments to the original agreement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.95,
+    "explanation": "The document is labeled 'EXECUTION COPY', which strongly indicates it is an executed version."
+  },
+  "party_name_1": {
+    "value": "GMAC Investment Management LLC",
+    "confidence": 1.0,
+    "explanation": "GMAC Investment Management LLC is listed as a party to both the original and amended agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled as 'Party A', context and standard ISDA conventions suggest GMAC Investment Management LLC is Party A."
+  },
+  "party_name_2": {
+    "value": "GMAC Mortgage, LLC",
+    "confidence": 1.0,
+    "explanation": "GMAC Mortgage, LLC is listed as the other party to both the original and amended agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled as 'Party B', context and standard ISDA conventions suggest GMAC Mortgage, LLC is Party B."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of typos or OCR errors."
+  }
+}

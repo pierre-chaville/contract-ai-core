@@ -1,0 +1,63 @@
+{
+  "filename": "323d3c0abdc656b2a4e43b6b23966897.txt",
+  "contract_type": {
+    "value": "GMRA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'GLOBAL MASTER REPURCHASE AGREEMENT' and references TBMA/ISMA, which is the standard for GMRA."
+  },
+  "contract_type_version": {
+    "value": "2000",
+    "confidence": 1.0,
+    "explanation": "The document explicitly states '2000 VERSION' in the header."
+  },
+  "contract_date": {
+    "value": "2012-09-26",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'Dated as of September 26, 2012' as stated in the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "This is an amended and restated agreement, not a simple amendment, so amendment_date is not applicable."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned; the document is an amended and restated agreement, not a numbered amendment."
+  },
+  "version_type": {
+    "value": "RESTATED",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'AMENDED AND RESTATED GLOBAL MASTER REPURCHASE AGREEMENT,' indicating it is an amended and restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and lists both parties, which strongly suggests it is an executed contract."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A., LONDON BRANCH",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party A' in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "RACE STREET FUNDING LLC",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party B' in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "4ca1095bd9d454a88d3180594f07154d.txt",
+  "contract_type": {
+    "value": "GMRA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'GLOBAL MASTER REPURCHASE AGREEMENT' and references TBMA/ISMA, which is the GMRA."
+  },
+  "contract_type_version": {
+    "value": "2000",
+    "confidence": 1.0,
+    "explanation": "The document explicitly states '2000 VERSION' at the top."
+  },
+  "contract_date": {
+    "value": "2013-04-23",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'Dated as of April 23, 2013'."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "This is an amended and restated agreement, not a simple amendment, so amendment_date is not applicable."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned; this is an amended and restated agreement, not a numbered amendment."
+  },
+  "version_type": {
+    "value": "RESTATED",
+    "confidence": 1.0,
+    "explanation": "The document is labeled 'AMENDED AND RESTATED' at the top."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and lists both parties, which strongly suggests it is executed, though signatures are not shown on this page."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A., LONDON BRANCH",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party A' in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "COBBS CREEK LLC",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party B' in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

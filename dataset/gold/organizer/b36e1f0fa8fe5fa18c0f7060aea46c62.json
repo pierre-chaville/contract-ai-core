@@ -1,0 +1,63 @@
+{
+  "filename": "b36e1f0fa8fe5fa18c0f7060aea46c62.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA 1992 MASTER AGREEMENT' and references the International Swap Dealers Association, which matches the ISDA Master Agreement contract type."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The document explicitly states 'ISDA 1992 MASTER AGREEMENT' and 'Copyright(C) 1992 by International Swap Dealers Association, Inc.'"
+  },
+  "contract_date": {
+    "value": "2007-01-01",
+    "confidence": 0.7,
+    "explanation": "The agreement is 'Dated as of ______, 2007'. The exact day and month are blank, but the year is 2007. Using '2007-01-01' as a placeholder for the year."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it appears to be an initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number or that this is an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The document is titled as a 'MASTER AGREEMENT' with no reference to amendment or restatement, indicating it is the initial contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.8,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft. However, the signature/execution page is not shown, so confidence is slightly reduced."
+  },
+  "party_name_1": {
+    "value": "GMAC MORTGAGE, LLC",
+    "confidence": 1.0,
+    "explanation": "GMAC MORTGAGE, LLC is listed first and referred to as a party to the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "GMAC MORTGAGE, LLC is explicitly referred to as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "GMAC BANK",
+    "confidence": 1.0,
+    "explanation": "GMAC BANK is listed second and referred to as a party to the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "GMAC BANK is explicitly referred to as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of significant OCR errors or typos."
+  }
+}

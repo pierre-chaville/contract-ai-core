@@ -1,0 +1,63 @@
+{
+  "filename": "d63bb7aa4ec65a9ab3e04aa7059975ef.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is explicitly titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc. (ISDA), which matches the ISDA Master Agreement code."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the 2002 version multiple times."
+  },
+  "contract_date": {
+    "value": "2021-11-30",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated as 'dated as of November 30, 2021' at the top of the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft. No 'draft' watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "Macquarie Bank Limited",
+    "confidence": 1.0,
+    "explanation": "'Macquarie Bank Limited' is explicitly listed as one of the parties ('Party A')."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "'Macquarie Bank Limited' is designated as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "Each Party B specified on Appendix A to this Agreement",
+    "confidence": 1.0,
+    "explanation": "The second party is described as 'Each Party B specified on Appendix A to this Agreement, severally and not jointly.'"
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The document refers to the second party as 'Party B.'"
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

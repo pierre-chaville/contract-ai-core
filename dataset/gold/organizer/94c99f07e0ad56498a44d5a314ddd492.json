@@ -1,0 +1,63 @@
+{
+  "filename": "94c99f07e0ad56498a44d5a314ddd492.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references ISDA (International Swaps and Derivatives Association, Inc.) throughout."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT' in the title and body."
+  },
+  "contract_date": {
+    "value": "2024-08-05",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of August 5, 2024, as stated below the title."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final agreement, not a draft; no draft watermark or language."
+  },
+  "party_name_1": {
+    "value": "THE BANK OF NOVA SCOTIA",
+    "confidence": 1.0,
+    "explanation": "Explicitly named as one of the parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "THE BANK OF NOVA SCOTIA is listed first, and in ISDA agreements, the first listed party is typically Party A."
+  },
+  "party_name_2": {
+    "value": "EACH PARTY B SPECIFIED ON APPENDIX A TO THIS AGREEMENT",
+    "confidence": 1.0,
+    "explanation": "This is the exact language used for the second party in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "The second party is referred to as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

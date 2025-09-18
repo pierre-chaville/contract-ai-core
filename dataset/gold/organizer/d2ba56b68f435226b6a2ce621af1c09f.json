@@ -1,0 +1,63 @@
+{
+  "filename": "d2ba56b68f435226b6a2ce621af1c09f.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'SCHEDULE TO THE 2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc. (ISDA), indicating it is an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states '2002 Master Agreement' multiple times."
+  },
+  "contract_date": {
+    "value": "2010-01-29",
+    "confidence": 1.0,
+    "explanation": "The contract is stated as 'dated as of January 29, 2010' in both the header and the body."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is a schedule to the initial 2002 Master Agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is a schedule to the initial 2002 Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The presence of a specific date and the formal structure suggest this is an executed agreement, not a draft."
+  },
+  "party_name_1": {
+    "value": "PB CAPITAL CORPORATION",
+    "confidence": 1.0,
+    "explanation": "PB CAPITAL CORPORATION is listed as one of the parties."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "PB CAPITAL CORPORATION is explicitly labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "FOUNDRY PARK I, LLC",
+    "confidence": 1.0,
+    "explanation": "FOUNDRY PARK I, LLC is listed as the other party."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "FOUNDRY PARK I, LLC is explicitly labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

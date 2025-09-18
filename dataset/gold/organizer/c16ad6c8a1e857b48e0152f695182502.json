@@ -1,0 +1,63 @@
+{
+  "filename": "c16ad6c8a1e857b48e0152f695182502.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swap Dealers Association, Inc., which is the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly referred to as the '2002 MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": "2014-04-01",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of April 1, 2014, which is clearly stated on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft. No 'draft' watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "DTE Energy Trading, Inc.",
+    "confidence": 1.0,
+    "explanation": "Party A is explicitly named as 'DTE Energy Trading, Inc.'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The document explicitly assigns 'Party A' to DTE Energy Trading, Inc."
+  },
+  "party_name_2": {
+    "value": "Summer Energy, LLC",
+    "confidence": 1.0,
+    "explanation": "Party B is explicitly named as 'Summer Energy, LLC.'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The document explicitly assigns 'Party B' to Summer Energy, LLC."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

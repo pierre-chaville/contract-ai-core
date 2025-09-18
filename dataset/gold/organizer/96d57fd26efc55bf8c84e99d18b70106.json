@@ -1,0 +1,63 @@
+{
+  "filename": "96d57fd26efc55bf8c84e99d18b70106.txt",
+  "contract_type": {
+    "value": "TERMINATION",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'TERMINATION ACKNOWLEDGMENT' and repeatedly refers to the termination of agreements."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No specific versioning (e.g., year or edition) is mentioned for the termination acknowledgment."
+  },
+  "contract_date": {
+    "value": "2012-07-13",
+    "confidence": 0.95,
+    "explanation": "The ISDA Master Agreement and related agreements referenced as the subject of termination are dated July 13, 2012."
+  },
+  "amendment_date": {
+    "value": "2014-06-27",
+    "confidence": 0.95,
+    "explanation": "The termination acknowledgment is dated June 27, 2014, which is the effective date of the termination."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned; this is a termination acknowledgment, not a numbered amendment."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 0.95,
+    "explanation": "This document amends the status of the original contract by terminating it, fitting the 'amendment' category."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.95,
+    "explanation": "The document is not marked as draft and is written in the past tense, indicating execution."
+  },
+  "party_name_1": {
+    "value": "Citibank, N.A.",
+    "confidence": 1.0,
+    "explanation": "Citibank, N.A. is explicitly named as a party to the agreement."
+  },
+  "party_role_1": {
+    "value": "Secured Party",
+    "confidence": 0.9,
+    "explanation": "Citibank is referred to as 'Secured Party' and 'Bank' in the Account Control Agreement, but 'Secured Party' is the primary role in this context."
+  },
+  "party_name_2": {
+    "value": "BDCA-CB Funding, LLC",
+    "confidence": 1.0,
+    "explanation": "BDCA-CB Funding, LLC is explicitly named as the Counterparty."
+  },
+  "party_role_2": {
+    "value": "Pledgor",
+    "confidence": 0.9,
+    "explanation": "BDCA-CB Funding, LLC is referred to as 'Pledgor' in the Account Control Agreement and as 'Counterparty' in the ISDA context; 'Pledgor' is the primary role in this context."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

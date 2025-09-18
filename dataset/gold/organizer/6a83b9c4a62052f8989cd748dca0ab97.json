@@ -1,0 +1,63 @@
+{
+  "filename": "6a83b9c4a62052f8989cd748dca0ab97.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA International Swaps and Derivatives Association, Inc. SCHEDULE to the 2002 Master Agreement', which clearly identifies it as an ISDA Master Agreement Schedule."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The document explicitly states '2002 Master Agreement' on the cover page."
+  },
+  "contract_date": {
+    "value": "2020-04-02",
+    "confidence": 1.0,
+    "explanation": "The date 'dated as of April 2, 2020' is clearly stated on the cover page as the effective date of the agreement."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is a schedule to the initial or restated agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number or indication that this is an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The document is a schedule to the 2002 Master Agreement and does not reference being an amendment or amended and restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.95,
+    "explanation": "The document is labeled 'Execution Copy', which typically indicates an executed version."
+  },
+  "party_name_1": {
+    "value": "HSBC BANK USA, NATIONAL ASSOCIATION",
+    "confidence": 1.0,
+    "explanation": "The first party is clearly named as 'HSBC BANK USA, NATIONAL ASSOCIATION' on the cover page."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The document explicitly refers to HSBC BANK USA, NATIONAL ASSOCIATION as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "ADVANCED ENERGY INDUSTRIES, INC.",
+    "confidence": 1.0,
+    "explanation": "The second party is clearly named as 'ADVANCED ENERGY INDUSTRIES, INC.' on the cover page."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The document explicitly refers to ADVANCED ENERGY INDUSTRIES, INC. as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, clearly legible, and free from typos or OCR errors."
+  }
+}
