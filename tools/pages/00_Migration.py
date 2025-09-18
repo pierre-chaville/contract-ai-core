@@ -83,7 +83,7 @@ def format_pct(conf: float | None) -> str:
 
 
 def main() -> None:
-    st.set_page_config(page_title="Contract Organizer", layout="wide")
+    st.set_page_config(page_title="Migration", layout="wide")
     st.title("Contract Organizer")
 
     # Sidebar: model selector

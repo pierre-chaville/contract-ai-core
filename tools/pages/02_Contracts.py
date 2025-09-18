@@ -143,7 +143,8 @@ def main() -> None:
 
     # Sidebar selectors
     st.sidebar.header("Selection")
-    st.session_state.process = "Review"
+    if "process" not in st.session_state:
+        st.session_state.process = "Processing"
     process = st.sidebar.selectbox(
         "Process",
         ["Review", "Processing"],
@@ -193,27 +194,112 @@ def main() -> None:
     idx = int(st.session_state.contract_idx) % len(files)
     current_path = files[idx]
 
-    col_a, col_b = st.columns([6, 1])
-    with col_a:
+    col_title, col_prev, col_next = st.columns([8, 1, 1])
+    with col_title:
         st.subheader(f"{template_key} — File {idx + 1} / {len(files)}: {current_path.name}")
-    with col_b:
+    with col_prev:
+        if st.button("◀ Previous contract"):
+            st.session_state.contract_idx = (int(st.session_state.contract_idx) - 1) % len(files)
+            st.rerun()
+    with col_next:
         if st.button("Next contract ▶"):
             st.session_state.contract_idx = (int(st.session_state.contract_idx) + 1) % len(files)
             st.rerun()
 
-    # Tabs
+    # Tabs (prepend Contract tab)
     if process == "Processing":
-        tab_processing, tab_datapoints, tab_clauses, tab_agent, tab_compare = st.tabs(
-            ["Processing", "Datapoints", "Clauses", "Ask a question", "Compare documents"]
+        tab_contract, tab_processing, tab_datapoints, tab_clauses, tab_agent, tab_compare = st.tabs(
+            [
+                "Contract",
+                "Processing",
+                "Datapoints",
+                "Clauses",
+                "Ask a question",
+                "Compare documents",
+            ]
         )
         tab_review = st.empty()
         tab_guidelines = st.empty()
     else:
-        tab_review, tab_clauses, tab_guidelines, tab_agent, tab_compare = st.tabs(
-            ["Review", "Clauses", "Guidelines", "Ask a question", "Compare documents"]
+        tab_contract, tab_review, tab_clauses, tab_guidelines, tab_agent, tab_compare = st.tabs(
+            [
+                "Contract",
+                "Review",
+                "Clauses",
+                "Guidelines",
+                "Ask a question",
+                "Compare documents",
+            ]
         )
         tab_datapoints = st.empty()
         tab_processing = st.empty()
+
+    # Contract tab: show PNG preview and gold organizer metadata
+    with tab_contract:
+        repo_root = get_repo_root()
+        import json as _json
+
+        pngs_dir = repo_root / "dataset" / "documents" / "organizer" / "pngs"
+        gold_dir = repo_root / "dataset" / "gold" / "organizer"
+        stem = current_path.stem
+
+        col_left, col_right = st.columns([1, 1])
+        with col_left:
+            png_candidates = [
+                pngs_dir / f"{stem}.png",
+                pngs_dir / f"{current_path.name}.png",
+            ]
+            shown = False
+            for pc in png_candidates:
+                if pc.exists():
+                    st.image(str(pc))
+                    shown = True
+                    break
+            if not shown:
+                st.caption("No PNG preview found for this document.")
+
+        with col_right:
+            st.subheader("Metadata")
+            json_path = gold_dir / f"{stem}.json"
+            if not json_path.exists():
+                st.info("Gold organizer JSON not found for this document.")
+            else:
+                try:
+                    data = _json.loads(json_path.read_text(encoding="utf-8"))
+                except Exception as e:
+                    st.error(f"Failed to read gold JSON: {e}")
+                    data = {}
+
+                def _fmt_pct(val: float | None) -> str:
+                    try:
+                        return f"{int(round(float(val) * 100))}%" if val is not None else ""
+                    except Exception:
+                        return ""
+
+                def _show_field(title: str, key: str) -> None:
+                    node = data.get(key) or {}
+                    node = node if isinstance(node, dict) else {}
+                    value = node.get("value") or ""
+                    conf = node.get("confidence")
+                    expl = node.get("explanation") or ""
+                    st.markdown(f"**{title}:** {value}")
+                    meta = _fmt_pct(conf)
+                    st.caption(
+                        ((f"confidence: {meta}") if meta else "") + (f" — {expl}" if expl else "")
+                    )
+
+                _show_field("Contract type", "contract_type")
+                _show_field("Contract type version", "contract_type_version")
+                _show_field("Contract date", "contract_date")
+                _show_field("Amendment date", "amendment_date")
+                _show_field("Amendment number", "amendment_number")
+                _show_field("Version type", "version_type")
+                _show_field("Status", "status")
+                _show_field("Party name 1", "party_name_1")
+                _show_field("Party role 1", "party_role_1")
+                _show_field("Party name 2", "party_name_2")
+                _show_field("Party role 2", "party_role_2")
+                _show_field("Document quality", "document_quality")
 
     with tab_datapoints:
         if process != "Processing":
