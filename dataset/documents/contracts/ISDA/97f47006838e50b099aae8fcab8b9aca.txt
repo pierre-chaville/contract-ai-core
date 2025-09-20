@@ -1,0 +1,154 @@
+SCHEDULE
+to the
+2002 Master Agreement
+dated as of June 7, 2010
+between
+NATIXIS a public limited company incorporated with a Board of Directors (societe anonyine a conseil d'administration) under the laws of the Republic of France ("Party A") 	  and 	  CINEDIGM DIGITAL FUNDING I, LLC a limited liability company formed under the laws of the State of Delaware ("Party B")
+Part 1
+Termination Provisions
+(a) "Specified Entity" means in relation to Party A for the purpose of:--
+Section 5(a)(v): Not applicable
+Section 5(a)(vi): Not applicable
+Section 5(a)(vii): Not applicable
+Section 5(b)(v): Not applicable
+and in relation to Party B for the purpose of:
+Section 5(a)(v): Not applicable
+Section 5(a)(vi): Not applicable
+Section 5(a)(vii): Not applicable
+Section 5(b)(v): Not applicable
+(b) 	  "Specified Transaction" will have the meaning specified in Section 14 of this Agreement.
+(c) 	  The "Cross-Default" provisions of Section 5(a)(vi) will apply to Party A and to Party B; provided, however, that the words ", or becoming capable at such time of being declared," shall be deleted from Section 5(a)(vi)(1) and that the following shall be added at the end of Section 5(a)(vi): "provided, however, that notwithstanding anything in this Section 5(a)(vi), an Event of
+Default shall not occur under (2) above if the failure to pay referred to in
+(2) is a failure to pay caused by an error or omission of an administrative or operational nature and funds were available to such party or any Credit Support Provider of such party to enable it to make the relevant payment when due and such payment is in fact made on or before the third Local Business Day following notice from the other party given to such party or any Credit Support Provider of such party of such failure to pay".
+"Specified Indebtedness" will have the meaning specified in Section 14 of this Agreement but shall exclude indebtedness in respect of deposits received in the ordinary course of business and with respect to Party B shall include, without limitation, reimbursement obligations in respect of letters of credit, bankers' acceptances with third parties and capital leases.
+"Threshold Amount" means with respect to Party A, an amount equal to 3% of shareholder's equity, and with respect to Party B, (a) USD 250,000, or the equivalent in any other currency with respect to any default under Section 5(a)(vi)(ii) and (b) zero (0) with respect to any default under Section 5(a)(vi)(i); provided, however, that the "Threshold Amount" shall mean zero
+(0) with respect to any Specified Indebtedness of Party B owed to Party A.
+(d) 	  The "Credit Event Upon Merger" provisions of Section 5(b)(v) will apply to Party A and Party B but if "X" is Party A, "materially weaker" shall mean that the successor, surviving or transferee entity is an entity whose long-term, unsecured, unsubordinated debt securities are rated "BBB+" or below by Standard & Poor's Corporation ("S&P") or "Baal " or below by Moody's Investors Service, Inc. ("Moody's").
+(e) 	  The "Automatic Early Termination" provision of Section 6(a) will not apply to Party A or Party B.
+(f) 	  "Termination Currency" means United States Dollars (USD).
+(g) 	  "Additional Termination Event" provision of Section 5(b) will not apply to Party A and will apply to Party B. The following shall constitute an Additional Termination Event in respect of which Party B shall be the sole Affected Party:
+(A) The credit agreement dated as of May 6, 2010, among Party B, as Borrower, Societe Generale, New York Branch, as Co-Administrative Agent and Paying Agent, General Electric Capital Corporation, as Co-Administrative Agent and Collateral Agent; and the Lenders party thereto, as amended, supplemented or modified from time to time (the "Credit Agreement") or any Credit Support Document (as hereinafter defined) (x) is prepaid or repaid, expires, ceases to be in full force and effect or terminates for any reason.
+(B) Party B shall fail to make one or more payments under the Credit Agreement on the due date for such payment(s) (after giving effect to any applicable notice requirement or grace period).
+(C) An "Event of Default" (however described) occurs under the Credit Agreement, resulting in an acceleration of the Obligations (as defined in the Credit Agreement) thereunder.
+(D) Loss of pari passu status/security\- unless otherwise agreed to by Party A, if at any time (a) the obligations of Party B under this Agreement are no longer ranked pan passu with all Obligations (as defined in the Credit Agreement) under the Credit Agreement and senior in right
+of payment and of collateral security to all other Specified Indebtedness or
+(b) if the obligations under this Agreement are no longer secured under the Credit Agreement.
+(E) Increase in Indebtedness \- Party B shall incur, maintain or otherwise suffer to exist any Lien (as such term is defined under the Credit Agreement) upon or with respect to any of its property, or incur or otherwise remain liable with respect to or responsible for, any Indebtedness (as such term is defined under the Credit Agreement) other than in accordance with the provisions of the Credit Agreement (without regard to any amendments thereto after the date of this Agreement).
+Part 2
+Tax Representations
+(a) Payer Representations. For the purpose of Section 3(e) of this Agreement:--
+(i) 	  Party A and Party B each make the following representation:--
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 9(h) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement, except that it will not be a breach of this representation where reliance is placed on the agreement contained in, or the accuracy or effectiveness of any document provided by the other party pursuant to, Section 4(a)(iii) of this Agreement and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+(b) 	  Payee Representations. For the purpose of Section 3(f) of this Agreement, Party A and Party B make the following representations:
+(i) 	  Party A makes the following representations:
+(1) 	  It is a "foreign person" as that term is used in United States Treasury Regulation section 1 .6041-4(a)(4) and, unless Party A otherwise provides written notice to Party B with respect to a particular Transaction, each payment made to Party B or received from Party B with respect to any Transaction under this Agreement will be effectively connected with its conduct of a trade or business in the United States of America; and .
+(2) 	  If Party A provides written notice to Party B that payments received or to be received by Party B with respect to a particular Transaction will not be effectively connected with Party A's conduct of a trade or business in the United States of America, Party A represents that it is a "foreign person" within the meaning of United States Treasury Regulation section 1.6041-4(a)(4) and a "non-US branch
+of a foreign person" within the meaning of United States Treasury Regulation section 1.1441-4(a)(3)(ii); it is fully eligible for the benefits of the "Business Profits" or "Industrial and Commercial Profits" provision (as the case may be), the "Interest" provision, or the "Other Income" (or similar) provision of the Specified Treaty with respect to any payment described in such provisions and received or to be received by it in connection with this Agreement; such payment is not effectively connected with Party A's conduct of a trade or business within the United States of America and such payment is not attributable to a trade or business carried on by Party A through a permanent establishment in the United States of America.
+"Specified Treaty" means the income Tax Treaty between the United States of America and France.
+(3) 	  Party A makes no other Payee Tax Representations.
+(ii) 	  Party B makes the following representations:
+(1) 	  It is a corporation duly incorporated, organized or formed under the laws of the State of Delaware and is a United States resident for United States federal income tax purposes.
+(2) 	  Party B makes no other Payee Tax Representations.
+Part 3
+Agreement to Deliver Documents
+For the purpose of Sections 4(a)(i) and 4(a)(ii) of this Agreement, each party agrees to deliver the following documents, as applicable:--
+(a) Tax forms, documents or certificates to be delivered are:
+Party required to deliver document 	  Form/Document/ Certificate 	  Date by which to be delivered Party A and Party B 	  A correct, complete and executed original executed United States Internal revenue Service Form W-8BEN, W-8ECI, W-8IMY or W-9, as applicable (or any successor form) that eliminates U.S. federal withholding and backup withholding payments under this Agreement. 	  (i) Before the first payment Date on which any such payment is made, (ii) promptly upon reasonable demand, and (iii) promptly upon learning that any previously-provided form has become obsolete or incorrect.
+(b) Other documents to be delivered are:
+Party required to deliver document 	  Form/Document/ Certificate 	  Date by which to be delivered 	  Covered by Section 3(d) Representation Party A 	  A certificate of authority and specimen signature of the persons authorized to execute this Agreement and each Confirmation on behalf of Party A. 	  Upon execution of this Agreement and thereafter upon the reasonable request of Party B. 	  Yes Party B 	  A certificate of incumbency and a certified copy of the resolutions adopted by the Board of Directors of Party B, authorizing the execution and delivery of this Agreement and each Confirmation and the performance by Party B of its obligations hereunder and thereunder. 	  Upon execution of this Agreement and thereafter upon the reasonable request of Party A. 	  Yes
+Party A 	  A copy of its most recent annual report containing audited financial statement; provided that with respect to Party A, Party A's annual report and audited financial statements are publicly available and may be accessed by Party B at http://www.natixis.com and for so long as such annual reports and audited financial statements are publicly available, Party A shall not be independently required to deliver its annual reports or audited financial statements to Party B hereunder.s. 	  Upon execution of this Agreement and thereafter upon the reasonable request of the other party. 	  Yes Party B 	  A copy of its most recent annual report containing audited financial statements (if such report has been produced) and an audited financial statement. 	  Upon execution of this Agreement and thereafter upon the reasonable request of the other party. 	  Yes Party B 	  Opinion of independent counsel for Party B. 	  Upon execution and delivery of this Agreement 	  Yes Party B 	  Article of Association/By Laws 	  Upon execution and delivery of this Agreement. 	  Yes
+Part 4
+Miscellaneous
+(a) Addresses for Notices. For the purpose of Section 12(a) of this Agreement
+Address for notices or communications to Party A:--
+(i) With respect to notices pursuant to Section 5 (other than notices under Section 5(a)(i)) and Section 6 of the Agreement:
+Address: Natixis, New York Branch
+9 West 57th Street, 35th Floor
+. NewYork, NY 10019
+Attention: General Counsel
+Telephone No.: (212) 891-6100
+Facsimile No (212) 891-1922
+(ii) With respect to notices pursuant to Section 13(c) of the Agreement:
+Attention: NATIXES, Back-Office Derives FMP10
+Address: Immeuble Lumiere Sud
+40 avenue des Terroirs de France
+75012 Paris, France
+Telephone No.: (33) 01.58 55 21 60
+Facsimile No.: (33) 01.58 55 21 51
+E-mail: FOREX-BACKOFFICE@natixis.com
+(iii) With respect to all other notices or communications: as specified in the Confirmation of each Transaction.
+Address for notices or communications to Party B --
+Attention: NATIXIS, Back-Office Derives FMP10
+Address: Immeuble Lumiere Sud
+40 avenue des Terroirs de France
+75012 Paris, France
+Telephone No.: (33) 01.58 55 21 60
+Facsimile No.: (33) 01.58 55 21 51
+E-mail: LD-M-BOVALIDATIONFIC@natixis.com
+(b) Process Agent. For the purpose of Section 13(c) of this Agreement:--
+- Party A appoints as its Process Agent:
+Natixis, New York Branch
+9 West 57th Street, 35th Floor
+New York, NY 10019
+Attention: Legal Department
+- Party B appoints as its Process Agent: None
+(c) 	  Offices. The provisions of Section 10(a) will apply to this Agreement.
+(d) 	  Multibranch Party. For the purpose of Section 10(b) of this Agreement:--
+Party A is a Multibranch Party and may enter into a Transaction through its Head Office and any
+of its branch Offices worldwide.
+Party B is not a Multibranch Party.
+(e) 	  Calculation Agent. The Calculation Agent is Party A, unless otherwise specified in a Confirmation m relation to the relevant Transaction
+(f) 	  Credit Support Document. With respect to Party A: none. With respect to Party B: Loan Documents, as defined in the Credit Agreement, and any other credit support document which the
+lenders to the Credit Agreement are the beneficiaries of or may become the beneficiaries of at any time after the date hereof.
+(g) Credit Support Provider.
+Credit Support Provider means in relation to Party A, none.
+Credit Support Provider means in relation to Party B, Guarantor (as defined in the Credit Agreement) and each entity (other than Party B or any lender or agent) which is or hereafter becomes a party to a Credit Support Document.
+(h) 	  Governing Law; Jurisdiction. Sections 13(a) and (b) of the Agreement shall be deleted and replaced with the following:
+"(a) 	  Governing Law. This Agreement will be governed by and construed in accordance with the laws of the State of New York (without reference to choice of law doctrines).
+(b) 	  Jurisdiction. With respect to any suit, action, or proceedings relating to any dispute arising out of or connection with this Agreement ("Proceedings"), each party irrevocably:
+(i) 	  submits to the exclusive jurisdiction of the courts of the State of New York and the United States District Court located in the Borough of Manhattan in New York City; and
+(ii) 	  waives any objection to which it may have at any time to the laying of venue of any Proceedings brought in any such court, waives any claim that such Proceedings have been brought in an inconvenient forum and further waives the right to object, with respect to such Proceedings, that such court does not have any jurisdiction over such party.".
+(i) 	  Netting of Payments. Subparagraph (ii) of Section 2(c) of this Agreement will not apply to Transactions for the purposes of this Agreement.
+(j) 	  "Affiliate" will have the meaning specified in Section 14 of this Agreement.
+(k) 	  Absence of Litigation. For the purpose of Section 3(c):--
+"Specified Entity" means in relation to Party A, None
+"Specified Entity" means in relation to Party B, None
+(l) No Agency. The provisions of Section 3(g)
+will apply to this Agreement with respect to Party A.
+will apply to this Agreement with respect to Party B.
+(m) 	  Additional Representation will apply. For the purpose of Section 3 of this Agreement, the following will constitute an Additional Representation:--
+(i) Relationship Between Parties. Each party will be deemed to represent to the other party on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction):--
+(1) 	  Non-Reliance. It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisers as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction, it being understood that information and explanations related to the terms and conditions of a Transaction will not be considered investment advice or a recommendation to enter into that Transaction. No communication (written or oral) received from the other party will be deemed to be an assurance or guarantee as to the expected results of that Transaction.
+(2) 	  Assessment and Understanding. It is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction. It is also capable of assuming, and assumes, the risks of that Transaction.
+(3) 	  Status of Parties. The other party is not acting as a fiduciary for or an adviser to it in respect of that Transaction.
+(n) 	  Recording of Conversations. Each party (i) consents to the recording of telephone conversations between the trading, marketing and other relevant personnel of the parties in connection with this Agreement or any potential Transaction, (ii) agrees to obtain any necessary consent of, and give any necessary notice of such recording to, its relevant personnel and (iii) agrees, to the extent permitted by applicable law, that recordings may be submitted in evidence in any Proceedings.
+Part 5
+Other Provisions
+(a) 	  Section 3(a) - Basic Representations\- is amended to add the following new sub-section:
+(vi) 	  Eligible Contract Participant. It is an "eligible contract participant" defined in the Commodity Exchange Act, as amended.
+(vii) 	  Interest Rate Protection: With respect to Party B only:
+(viii) 	  ERISA. It is not (A) an employee benefit plan (an "ERISA Plan") as defined in Section 3(3) of the Employee Retirement Income Security Act of 1974, as amended ("ERISA"), subject to Title I of ERISA or Section 4975 of the Internal Revenue Code of 1986, as amended, (B) a person or entity acting on behalf of an ERISA Plan, or (C) a person or entity the assets of which constitute assets of an ERISA Plan.
+This Agreement constitutes a Secured Hedging Document as defined in the Credit Agreement. In addition, each Transaction entered into by Party B shall be in accordance with the provisions of the Credit Agreement relating to derivative transactions.
+(b) 	  Confirmations. Any Specified Transaction (other than a repurchase transaction, reverse repurchase transaction, buy/sell-back transaction, securities lending transaction and without regard to the phrase "which is not a Transaction under this Agreement but" in the definition of Specified Transaction) into which the parties have entered or may enter and in respect of which confirming evidence does not expressly exclude the application of this Agreement shall be governed by this Agreement Any such confirmation shall be a "Confirmation" and any such transaction shall be deemed to constitute a Transaction for the purpose of this Agreement. In particular, it is agreed that where in terms of standard industry practice confirmation is by electronic messaging system or SWIFT, such confirmation shall serve as a Confirmation irrespective of whether reference is made to this Agreement in such Confirmation.
+(c) 	  Waiver of Trial by Jury. Each of the parties hereby irrevocably waives any and all right to a trial by jury with respect to any Proceeding arising out of or relating to this Agreement or any Transaction.
+(d) 	  Incorporation of the ISDA 2002 Master Agreement Protocol. The parties agree that the definitions and provisions contained in Annexes 1 to 18 of the 2002 Master Agreement Protocol published by the International Swaps and Derivative Association, Inc. on July 15th 2003 are incorporated and apply to this Agreement.
+(e) 	  Change of Account. Each Party may change its account provided that if such new account is not in the same Tax jurisdiction as the original account, the party not changing its account shall not be obliged to pay any greater amounts and shall not receive less as a result of such change than would have been the case if such change had not taken place.
+(f) 	  Future Agreements.
+(i) Pari Passu. Party B represents that in the event Party B has pledged, or at any time hereafter does pledge, collateral as security for any of its obligations under the Credit Agreement, then Party B's obligations to Party A under any Transaction entered into hereunder shall be secured on a pari passu basis with such obligations under the Credit Agreement.
+(ii) Party B Covenant. Party B hereby covenants and agrees that Party B has not and will not enter into any other Secured Hedging Documents with any other counterparty, in which such agreement contains any terms that are materially more favorable to the terms herein, as reasonably determined by Party A.
+(iii) Additional Rights of Party A. Without limiting any term or provision in this Agreement, Party A and Party B hereby acknowledge and agree that (i) Party A is on the date hereof a Secured Hedging Counterparty and Secured Party (each as defined in the Credit Agreement), (ii) this Agreement and each Transaction entered into from time to time hereunder is and shall be a Secured Hedging Document (as defined in the Credit Agreement) and (iii) with respect to each Transaction entered into at a time when Party A is a Lender or an Affiliate (as defined in the Credit Agreement) of a Lender under the Credit Agreement, all duties, representations and
+warranties, covenants, obligations, liabilities and indebtedness of Party B to Party A under this Agreement and each such Transaction shall constitute Obligations and Secured Hedging Obligations (each as defined under the Credit Agreement).
+(iv) Each Transaction entered into from time to time hereunder by Party B shall be in accordance with the provisions of the Credit Agreement relating to Interest Rate Contracts (as defined in the Credit Agreement).
+(v) Party B hereby covenants and agrees that it shall not amend, restate, refinance, restructure, replace, modify or supplement the Credit Agreement, any other Credit Support Document (or permit any amendment, restatement, refinancing, restructuring, replacement, modification or supplement to occur) that would adversely affect (A) any rights or remedies of Party A under or with respect to any Credit Support Document or Credit Support Provider, or (B) any rights of Party A (or the priority of any rights of Party A) to receive payments under this Agreement or to receive proceeds of any Collateral (as defined in the Credit Agreement).
+(g) 	  Partial Early Termination. In the event that Party B pays prior to scheduled maturity (whether upon mandatory repayment, prepayment, acceleration or otherwise) a portion, but not all of the Term Loans (as defined in the Credit Agreement), either party shall have the right to partially terminate any Transaction under this Agreement (a "Partial Early Termination") so that, after giving effect to such Partial Early Termination hereunder, the Notional Amount of all Transactions under this Agreement (together with the Notional Amount of all other Interest Rate Contracts to which Party B is a party) does not exceed the amount required under Section 7. 12 of the Credit Agreement. In the event of any Partial Early Termination under this paragraph, Party B shall partially terminate all Interest Rate Contracts on a pro rata basis and otherwise consistent with Section 7.12 of the Credit Agreement.
+A Partial Early Termination shall have the same effect as though a Termination Event has occurred hereunder with Party B as sole Affected Party, and with only such terminated portion of any Transaction being treated for this purpose as an Affected Transaction. For the avoidance of doubt, the obligations of each party to make payments pursuant to this Agreement to the other party with respect to the terminated portion of any Transaction that would, but for such Partial Early Termination, occur after the date of such Partial Early Termination, will terminate.
+Each of Party A and Party B hereby acknowledges and agrees that a Partial Early Termination shall not constitute a Termination Event under this Agreement with respect to the non-terminated portion of the relevant Transaction, and the occurrence of a Partial Early Termination shall have no effect on the non-terminated portion of the relevant Transaction, which shall continue in full force and effect without regard to any such Partial Early Termination.
+(h) 	  Third Party Rights. A person who is not a party to this Agreement has no right under the Contracts (Third Party Rights) Act 1999 to enforce any term hereof.
+(i) 	  Printing of the ISDA Master Agreement. Sections 1 to 14 of this ISDA Master Agreement have been printed by Party A. It is the intention of Party A that the printed form provided should be on the same terms as the 2002 ISDA Master Agreement Copyright (C) 2002 by the International Swaps & Derivatives Association, Inc. In the event of any inconsistency between Sections 1 to 14 of the 2002 ISDA Master Agreement Copyright (C) 2002 by the International Swaps and Derivatives Association, Inc. and the printed document purporting to incorporate Sections 1 to 14
+of this Agreement, Sections 1 to 14 of the 2002 ISDA Master Agreement Copyright (C) 2002 by the International Swaps and Derivatives Association, Inc., shall apply.
+(j) 	  Bankruptcy Code. Without limiting the applicability of any other provision of Title 11 of the United States Code, 11 U.S.C. §§ 1 01 et. seq., as amended (the "Bankruptcy Code") (including, without limitation, Sections 362, 546, 553, 556, 560, 561 and 562 of the Bankruptcy Code and the applicable definitions in Section 101 of the Bankruptcy Code) or any other applicable law, the parties acknowledge and agree that all Transactions entered into hereunder are intended to constitute "swap agreements" as defined in Section 101 (53B) of the Bankruptcy Code, that the rights and remedies of the parties under Section 6 are intended to constitute contractual rights to terminate, accelerate and liquidate Transactions, and that the parties are entities entitled to the rights under, and protections afforded by, Sections 362, 546, 553, 556, 560, 561 and 562 of the Bankruptcy Code and the applicable definitions in Section 1 01 of the Bankruptcy Code, and any other applicable law.
+(k) 	  LIMITATION OF LIABILITY. NO PARTY SHALL BE REQUIRED TO PAY OR BE LIABLE FOR INCIDENTAL, CONSEQUENTIAL, EXEMPLARY, PUNITIVE, SPECIAL OR INDIRECT DAMAGES (REGARDLESS OF WHETHER ARISING FROM ITS OWN NEGLIGENCE AND EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES) TO ANY OTHER PARTY EXCEPT TO THE EXTENT THAT THE PAYMENTS REQUIRED TO BE MADE PURSUANT TO THIS AGREEMENT ARE DEEMED TO BE SUCH DAMAGES; PROVIDED, HOWEVER, THAT NOTHING IN THIS PROVISION SHALL AFFECT THE VALIDITY OR ENFORCEABILITY OF ANY TERM OR PROVISION IN SECTION 6(e) OF THIS AGREEMENT. IF AND TO THIS EXTENT ANY PAYMENT REQUIRED TO BE MADE PURSUANT TO THIS AGREEMENT IS DEEMED TO CONSTITUTE LIQUIDATED DAMAGES, THE PARTIES ACKNOWLEDGE AND AGREE THAT SUCH DAMAGES ARE DIFFICULT OR IMPOSSIBLE TO DETERMINE AND THAT SUCH PAYMENT IS INTENDED TO BE A REASONABLE APPROXIMATION OF THE AMOUNT OF SUCH DAMAGES AND NOT A PENALTY.
+(l) 	  Severability. If any term, provision, covenant, or condition of this Agreement, or the application thereof to any party or circumstance, shall be held to be invalid or unenforceable (in whole or in part) for any reason, the remaining terms, provisions, covenants, and conditions hereof shall continue in full force and effect as if this Agreement had been executed with the invalid or unenforceable portion eliminated, so long as this Agreement as so modified continues to express, without material change, the original intentions of the parties as to the subject matter of this Agreement and the deletion of such portion of this Agreement will not substantially impair the respective benefits or expectations of the parties to this Agreement and will preserve the economic value thereof; provided, however, that this severability provision shall not be applicable if any provision of Sections 1(c), 2, 5, 6 or 13 of this Agreement (or any definition or provision in Section 14 of this Agreement to the extent it relates to, or is used in or in connection with any such Section) shall be so held to be invalid or unenforceable.
+(m) 	  USA PATRIOT Act Notice. Party A hereby notifies Party B that pursuant to the requirements of the USA Patriot Act (Title III of Pub. L 107-56 (signed into law October 26, 2001)) (the "Act"), it is required to obtain, verify and record information that identifies Party B, which information includes the name and address of Party B, the Tax-Identification Number, and other information
+that will allow Party A to identify Party B in accordance with the Act.
+(n) 	  Statute of Frauds. The parties agree not to contest, or to enter or assert any defense or counterclaim concerning, the validity or enforceability of any Transaction on the grounds that the documentation for such Transaction fails to comply with the requirements of any jurisdiction's (of whatever country, province, or state) statute of frauds or any other statute, regulation or judicial decision that agreements be written or signed.

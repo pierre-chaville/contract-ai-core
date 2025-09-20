@@ -1,0 +1,176 @@
+SCHEDULE
+to the
+2002 Master Agreement
+dated as of May 17, 2023
+between
+ING Capital Markets LLC 	  and 	  CORE Alaska, LLC
+("Party A") ("Party B")
+established as a limited liability company under the laws of the State of Delaware 	  	  established as a company with limited liability with company number 5621201 under the laws of the State of Delaware
+The parties refer to the credit agreement among Party B as the borrower, certain Affiliates of Party B as guarantors, ING Capital LLC and Macquarie Bank Limited as Mandated Lead Arrangers, ING Capital LLC as Bookrunner, ING Capital LLC as Administrative Agent, Macquarie Bank Limited as Collateral Agent and certain lenders (including (including, without limitation, Party A), made on or about the date of this Agreement, as such agreement may be amended, restated or modified (the "Credit Agreement"). Capitalized terms used but not defined in this Agreement have the meanings given to them in the Credit Agreement.
+Part 1. Termination Provisions.
+(a) 	  "Specified Entity" means in relation to Party A for the purpose of:―
+Section 5(a)(v), Nil
+Section 5(a)(vi), Nil
+Section 5(a)(vii), Nil
+Section 5(b)(v), Nil
+and in relation to Party B for the purpose of:―
+Section 5(a)(v), Affiliates
+Section 5(a)(vi), Affiliates
+Section 5(a)(vii), Affiliates
+Section 5(b)(v), Affiliates
+Page 1 of 15
+(b) 	  "Specified Transaction" will have the meaning specified in Section 14 of this Agreement and is amended by inserting the words:
+(i) 	  ", freight transaction" after the words "weather index transaction" in the tenth line
+(ii) 	  ", emissions allowance, renewables certificate or other environmental product" after the word "commodity," in the eleventh line; and
+(iii) 	  "freight instruments, emissions allowances, renewables certificates or other environmental products" after the word "commodities" in the fifteenth line.
+(c) 	  The "Cross-Default" provisions of Section 5(a)(vi) will not apply to Party A and will apply to Party B.
+"Specified Indebtedness" means any obligation (whether present or future, contingent or otherwise, as principal or surety or otherwise) in respect of a repurchase transaction, money borrowed or raised, any finance lease, redeemable preference share, letter of credit, futures contract, guarantee, indemnity, or any Derivative Transaction.
+"Derivative Transaction" means any obligation in respect of any transaction in the nature of a transaction as described in (a)(i) and (ii), (b) and (c) of the definition of Specified Transaction as amended herein.
+For the purposes of Section 5(a)(vi)(1), any reference to the principal amount of Specified Indebtedness becoming, or becoming capable of being declared, due and payable shall, in the case of a Derivative Transaction, refer to the amount that becomes, or would become, due and payable as a result of the termination of such Derivative Transaction.
+For the purposes of Section 5(a)(vi)(2), any reference to making one or more payments on the due date shall, in the case of a Derivative Transaction, refer to any payments or deliveries required to be made, or any transfer of eligible credit support or collateral, when due, including as a result of the termination of such Derivative Transaction.
+"Threshold Amount" means, with respect to Party B, USD 1,000,000 (or its equivalent in another currency, being the amount of that other currency required to purchase such amount at the rate equal to the spot exchange rate of any foreign exchange agent selected in good faith by the party asserting that a Cross Default has occurred).
+(d) 	  The "Credit Event Upon Merger" provisions of Section 5(b)(v) will not apply to Party A and will apply to Party B.
+(e) 	  The "Automatic Early Termination" provision of Section 6(a) will not apply to Party A and will not apply to Party B.
+(f) 	  "Termination Currency" means United States Dollars.
+(g) 	  Additional Termination Event will apply. Each of the following will constitute an Additional Termination Event: ―
+Page 2 of 15
+(i) 	  Party B's obligations to Party A under this Agreement cease to be secured by or have the benefit of the Collateral Documents (as defined in the Credit Agreement);
+(ii) 	  Party B's obligations to Party A under this Agreement cease to be equally and ratably secured and ranking pari passu with Party B's obligations to pay the most senior tranche of principal under the Credit Agreement;
+(iii) 	  all, or substantially all, of the Collateral (as defined in the Credit Agreement) is released and not contemporaneously replaced, other than with the prior written consent of Party A (or the Lender that is an Affiliate of Party A);
+(iv) 	  the occurrence of an Event of Default (as defined in the Credit Agreement);
+(v) 	  the Credit Agreement is prepaid or repaid in full, refinanced, replaced or otherwise terminated for any reason, including without limitation the maturity or acceleration thereof;
+(vi) 	  Party A and all of its Affiliates (as applicable) involuntarily cease to be a Lender under the Credit Agreement and Party A does not, concurrent with such cessation, assign or novate its rights and obligations under this Agreement with respect to all Transactions outstanding at the time thereof.
+For the purpose of each of the foregoing Termination Events, the Affected Party will be Party B.
+Page 3 of 15
+Part 2. Tax Representations.
+(a) 	  Payer Representations. For the purpose of Section 3(e) of this Agreement, Party A and Party B each make the following representation:―
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 9(h) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on (i) the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement, (ii) the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement, and (iii) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement, except that it will not be a breach of this representation where reliance is placed on clause (ii) above and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+(b) 	  Payee Representations. For the purpose of Section 3(f) of this Agreement, each of Party A and Party B make the representations specified below, as applicable:―
+(1) Jurisdiction of residence for tax purposes.
+The following representations will apply to all Transactions:
+(i) 	  Party A represents that it is a "U.S. person" (as that term is used in Section 1.1441-4(a)(3)(ii) of U.S. Treasury Regulations) for U.S. federal income tax purposes.
+(ii) 	  Party B represents that it is a "U.S. person" (as that term is used in Section 1.1441-4(a)(3)(ii) of U.S. Treasury Regulations) for U.S. federal income tax purposes.
+(2) Other payments under the Agreement
+Solely for the purposes of the representations made under Section 3(f) of the Agreement, any payments made under the Agreement but not as part of a Transaction, including any payments made in accordance with Section 6(e), shall be deemed to be payments in relation to a Transaction.
+Page 4 of 15
+Part 3. Agreement to Deliver Documents.
+For the purpose of Sections 4(a)(i) and 4(a)(ii) of this Agreement, each party agrees to deliver the following documents, as applicable:―
+(a) 	  Tax forms, documents or certificates to be delivered are :―
+Party required to deliver document 	  Form/Document/ Certificate 	  Date by which to be delivered Party A and Party B 	  Any form or document requested by the other party under Section 4(a)(iii). 	  As soon as possible after request Party B 	  An executed United States Internal Revenue Service Form W-8ECI (or any successor thereto), Form W-8BEN (or any successor thereto), or W-9 (or any successor thereto), as applicable. 	  (i) Upon execution of this Agreement, (ii) promptly upon reasonable request by Party A, and (iii) promptly upon learning that any such form previously provided has become obsolete, incorrect, or ineffective.
+(b) 	  Other documents to be delivered are :―
+Party required to deliver document 	  Form/Document/ Certificate 	  Date by which to be delivered 	  Covered by Section 3(d) Representation Party A and Party B 	  A list of authorised signatories for the party (and, as applicable, any Credit Support Provider of such party) and evidence of the authority of the authorised signatories of such party to execute this Agreement (and, as applicable, any Credit Support Document). 	  At the execution of this Agreement 	  Yes Party A and Party B 	  Any Credit Support Document(s) specified in Part 4 of this Schedule. 	  Upon execution of this Agreement 	  Yes Party B 	  A copy of Party B's annual audited consolidated financial statements prepared in accordance with accounting principles that are generally accepted in such party's country of organisation and certified by independent certified public accountants for each financial year. 	  Within 120 days from party's financial year end. 	  No
+Page 5 of 15
+Party A and Party B 	  Copies of the party's standard settlement instructions. 	  At the execution of this Agreement and at any time there is a change to those standard settlement instructions. 	  Yes Party A and Party B 	  A list of authorised signatories for the party and evidence of the authority of the authorised signatories of the party to execute Confirmations on behalf of the party. 	  Upon execution of this Agreement and at any time there is a change to the list of those authorised to sign Confirmations. 	  Yes Party B 	  Contact details for settlement purposes, including telephone, facsimile (and email details if relevant), addresses and names of the relevant contacts. 	  At the execution of this Agreement and at any time there is a change to those contacts details. 	  Yes Party B 	  Evidence reasonably satisfactory to Party A of Party B's authority and capacity to enter into this Agreement and any Transaction hereunder 	  Upon execution of this Agreement 	  Yes Party B 	  Legal Opinion satisfactory to Party A regarding the validity and enforceability of this Agreement. 	  On execution of this Agreement. 	  Yes
+Page 6 of 15
+Part 4. Miscellaneous.
+(a) 	  Addresses for Notices. For the purpose of Section 12(a) of this Agreement:―
+Address for notices or communications to Party A:―
+Address: 1133 Avenue of the Americas
+New York, New York 10036
+Attention: Legal Department
+Telephone: (646) 424-6000
+Facsimile: (646) 424-6248
+Email: isdanotices@ing.com
+Address for notices or communications to Party B:―
+Address: 3700 Buffalo Speedway, Suite 925
+Houston, TX 77098
+Attention:Rick Van Nieuwenhuyse, Leah Gaines, Kim Lawson
+Telephone No.713-877-1311
+E-mail: rick.vannieuwenhuyse@contangoore.com leah.gaines@contangoore.com
+kim.lawson@contangoore.com
+(b) 	  Process Agent. For the purpose of Section 13(c) of this Agreement:―
+Party A appoints as its Process Agent: N/A
+Party B appoints as its Process Agent: N/A
+(c) 	  Offices. The provisions of Section 10(a) will apply to this Agreement.
+(d) 	  Multibranch Party. For the purpose of Section 10(b) of this Agreement:―
+Party A is not a Multibranch Party.
+Party B is not a Multibranch Party.
+(e) 	  Calculation Agent. The Calculation Agent is Party A, unless otherwise specified in a Confirmation in relation to the relevant Transaction.
+For the avoidance of doubt, if a party hereto is designated as the Calculation Agent, Section 5(a)(ii) shall not include any failure by that party to comply with its obligations as Calculation Agent.
+(f) 	  Credit Support Document. Details of any Credit Support Document:―
+In relation to Party A: None.
+Page 7 of 15
+In relation to Party B:
+(i) 	  the Credit Agreement;
+(ii) 	  each Collateral Document (as defined in the Credit Agreement); and
+(iii) 	  any other document that Party A and Party B agree at any time is a Credit Support Document for the purposes of this Agreement.
+(g) 	  Credit Support Provider.
+Credit Support Provider means in relation to Party A: None.
+Credit Support Provider means in relation to Party B:
+(i) 	  each Loan Party (as defined in the Credit Agreement); and
+(ii) 	  any other entity that Party A and Party B agree at any time is a Credit Support Provider in relation to Party B for the purposes of this Agreement.
+(h) 	  Governing Law. This Agreement will be governed by and construed in accordance with the laws of the State of New York (without reference to choice of law doctrine).
+(i) 	  Waiver of Jury Trial. Each party waives, to the fullest extent permitted by applicable law, any right it may have to a trial by jury in respect of any suit, action or proceeding relating to this Agreement or any Transaction. Each party:
+(i) 	  certifies that no representative, agent or attorney of the other party has represented, expressly or otherwise, that such other party would not seek to enforce the foregoing waiver in the event of any such suit, action or proceeding; and
+(ii) 	  acknowledges that it and the other party have entered into this Agreement, in reliance on, among other things, the mutual waivers and certifications of this provision.
+(j) 	  Netting of Payments. "Multiple Transaction Payment Netting" will apply for the purpose of Section 2(c) of this Agreement to any Transactions of the same product type (in each case starting from the date of this Agreement).
+(k) 	  "Affiliate" will have the meaning specified in Section 14 of this Agreement.
+(l) 	  Absence of Litigation. For the purpose of Section 3(c):―
+"Specified Entity" means in relation to Party A, not applicable.
+"Specified Entity" means in relation to Party B, not applicable.
+(m) 	  No Agency. The provisions of Section 3(g) will apply to this Agreement.
+(n) 	  Additional Representation will apply. For the purpose of Section 3 of this Agreement, the following will constitute an Additional Representation:―
+Page 8 of 15
+(i) 	  Relationship Between Parties. Each party will be deemed to represent to the other party on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction):―
+(A) 	  Non-Reliance. It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisers as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction, it being understood that information and explanations related to the terms and conditions of a Transaction will not be considered investment advice or a recommendation to enter into that Transaction. No communication (written or oral) received from the other party will be deemed to be an assurance or guarantee as to the expected results of that Transaction.
+(B) 	  Assessment and Understanding. It is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction. It is also capable of assuming, and assumes, the risks of that Transaction.
+(C) 	  Status of Parties. The other party is not acting as a fiduciary for or an adviser to it in respect of that Transaction.
+(ii) 	  Eligible Contract Participant. Each party shall be deemed to represent and warrant to the other party on the date on which it enters into this Agreement and any Transaction that it is an "eligible contract participant" within the meaning of the Commodity Exchange Act, as amended (the "Act") 7 U.S.C. § 1(a)(18).
+(iii) 	  Financial End User. Party B shall be deemed to represent and warrant to the other party on the date on which it enters into this Agreement and any Transaction that it is not a "Financial End User" as such term is defined in CFTC Regulation 23.151.
+(iv) 	  Changes to IBORs. In respect of a Transaction that references one or more IBORs:
+(A) 	  each party acknowledges that:
+(I) 	  the relevant reference may become subject to amendment or replacement during the term of that Transaction as a result of changes in market conventions or a requirement or request of a market regulator;
+(II) 	  it enters into the Transaction having first satisfied itself of any amendment or replacement that may be required to be made to such reference and any terms related thereto, including the possibility that a spread may be added to or subtracted from, or other adjustments applied to, the terms of the Transaction;
+Page 9 of 15
+(III) 	  neither party is responsible for the event or circumstance giving rise to the amendment or replacement referred to in paragraphs (i) and (ii) above nor liable to the other party for any loss or damage arising as a result of or in connection with that event or circumstance; and
+(B) 	  upon request of either party, the other party agrees to act in good faith to facilitate any required amendment of the relevant terms of the Transaction to accommodate the changes or requirement or request referred to in this Part 4(o)(iii).
+"IBOR" refers generally to any reference rate or benchmark rate that is an "interbank offered rate" intended to reflect, measure or estimate the average cost to certain banks of borrowing or obtaining unsecured short-term funds in the interbank market in the relevant currency and maturity, based on quotations or other information submitted by such banks to a recognized sponsor or administrator that publishes such reference rate or, as the case may be, as may be provided by one or more reference banks to a calculation agent or determining party pursuant to interest rate setting or fallback provisions or otherwise. It includes any of the Sterling London Interbank Offered Rate, the Swiss Franc London Interbank Offered Rate, the US Dollar London Interbank Offered Rate, the Euro London Interbank Offered Rate, the Japanese Yen London Interbank Offered Rate, the Euro Interbank Offered Rate, the Japanese Yen Tokyo Interbank Offered Rate, the Euroyen Tokyo Interbank Offered Rate, the Bank Bill Swap Rate, the Canadian Dollar Offered Rate and the Hong Kong Interbank Offered Rate, in each case, howsoever defined or described in the relevant Transaction.
+(o) 	  Recording of Conversations. Each party:
+(i) 	  consents to the recording of telephone conversations between the trading, marketing and other relevant personnel of the parties in connection with this Agreement or any potential Transaction;
+(ii) 	  agrees to obtain any necessary consent of, and give any necessary notice of such recording to, its relevant personnel; and
+(iii) 	  agrees, to the extent permitted by applicable law, that recordings may be submitted in evidence in any Proceedings.
+Page 10 of 15
+Part 5. Other Provisions.
+(a) 	  Definitions. Unless otherwise specified in a Confirmation, this Agreement and each Transaction between the parties are subject to the latest set of any published ISDA Definitions in existence from time to time which are specifically relevant to the Transaction (the "Definitions") each as published by either the International Swaps & Derivatives Association, Inc., or the International Swap Dealers Association, Inc., as the case may be. Any amendment to such Definitions subsequent to their initial publication, or any new Definitions published, will only be effective as to Transactions entered into on or after the date of amendment or publication.
+(b) 	  Change of Accounts. For the purposes of Section 2(b) of this Agreement both parties agree that such new account so designated shall be in the same tax jurisdiction as the original account.
+(c) 	  Tax Events. Section 5(b)(iii) is amended by deleting the words ", or there is a substantial likelihood that it will," where they appear in that clause.
+(d) 	  Procedures for Confirming Transactions. Section 9(e) of this Agreement is amended by the addition of the following terms:
+"(iii) 	  With respect to each Transaction entered into pursuant to this Agreement and for the purposes of Section 9(e)(ii), Party A shall, on or promptly after the relevant Trade Date, send Party B a Confirmation confirming that Transaction and Party B shall promptly then confirm the accuracy of or request the correction of such Confirmation. In the absence of manifest error, where Party B fails to confirm the accuracy of or request the correction of a Confirmation within two Local Business Days after it was sent, the terms of a Confirmation will be binding on and conclusive against Party B.
+Delivery of a Confirmation is effected whether a party uses facsimile, email or an electronic messaging system, and irrespective of the form of delivery used by the other party to confirm the terms of the relevant Transaction. The requirement of this Agreement that the parties exchange Confirmations shall for all purposes be satisfied by following the procedure set out in this paragraph.
+Where a Transaction is confirmed by means of a facsimile, email or an electronic messaging system, such message will constitute a Confirmation even where not so specified in that Confirmation."
+(e) 	  Notices. Section 12 of the Agreement is amended by deleting the following words where they appear on lines 2 and 3 of Section 12(a):
+"(except that a notice or other communication under Section 5 or 6 may not be given by electronic messaging system or email)."
+and replacing it with:
+"(except that a notice or other communication under Section 5 or 6 may not be given by electronic messaging system)."
+Page 11 of 15
+(f) 	  2002 Master Agreement Protocol. The parties agree that, with effect from the date of this Agreement, the terms of each Annex to the 2002 Master Agreement Protocol published by the International Swaps and Derivatives Association Inc., (the "Protocol") shall apply to this Agreement as if the parties had adhered to the Protocol without amendment.
+(g) 	  Miscellaneous. With effect from and including the date of this Agreement the parties agree that every transaction between them is a Transaction governed by this Agreement (whether or not the parties refer to this Agreement when entering into or confirming the transaction) unless the terms of this Agreement have been expressly excluded or any confirmation of such transaction is expressed to be governed by another agreement.
+For the purpose of this clause 'transaction' means a transaction between the parties, whether entered into before, on or after the commencement of this Agreement, of the nature of a Specified Transaction.
+(h) 	  Payment of Premium Unless otherwise agreed in writing by the parties, with respect to any premium related to a Transaction that is an option, if any such premium is not paid on the date such premium is due to be paid under the terms of the Transaction, the seller of such Transaction may elect:
+(i) 	  to accept a late payment of such premium;
+(ii) 	  to give written notice of such non‑payment and, if such payment shall not be received within one Local Business Day of such notice, treat the related Transaction as void; or
+(iii) 	  to give written notice of such non‑payment and, if such payment shall not be received within one Local Business Day of such notice, treat such non‑payment as an Event of Default under Section 5(a)(i) of this Agreement.
+If the seller of such option Transaction elects to act under either (i) or (ii) above, the buyer of such Transaction shall pay all out‑of‑pocket costs and actual damages incurred in connection with such unpaid or late premium or void Transaction, including, without limitation, interest on such premium in the same currency as such premium at the then prevailing market rate and any other costs or expenses incurred by the seller of the Transaction in covering its obligations (including, without limitation, a delta hedge) with respect to such Transaction.
+(i) 	  Withholding Tax imposed on payments to non-US counterparties under the United States Foreign Account Tax Compliance Act. "Tax" as used in Part 2(a) of this Schedule (Payer Tax Representation) and "Indemnifiable Tax" as defined in Section 14 of this Agreement shall not include any U.S. federal withholding tax imposed or collected pursuant to Sections 1471 through 1474 of the U.S. Internal Revenue Code of 1986, as amended (the "Code"), any current or future regulations or official interpretations thereof, any agreement entered into pursuant to Section 1471(b) of the Code, or any fiscal or regulatory legislation, rules or practices adopted pursuant to any intergovernmental agreement entered into in connection with the implementation of such Sections of the Code (a "FATCA Withholding Tax"). For the avoidance of doubt, a FATCA Withholding Tax is a Tax the deduction or withholding of which is required by applicable law for the purposes of Section 2(d) of this Agreement.
+(j) 	  Secured Settlement. If on any date a payment or delivery obligation is due by Party A to Party B and Party B to Party A, Party A will not be required to make any payment or delivery to Party B until such time as Party A has received confirmation that the corresponding payment or delivery to be made by Party B to Party A has been received into Party A's account or has been received by Party A in accordance with such other instructions agreed between the parties prior to the relevant settlement date.
+Page 12 of 15
+(k) 	  ISDA 2013 Reporting Protocol Notwithstanding anything to the contrary in this Agreement or in any non-disclosure, confidentiality or other agreement between the parties, each party hereby consents to the disclosure of information:
+(i) 	  to the extent required or permitted by any applicable law, rule or regulation which mandates reporting and/or retention of transaction and similar information or to the extent required by any order or directive regarding reporting and/or retention of transaction and similar information issued by any authority or body or agency in accordance with which the other party is required or accustomed to act ("Reporting Requirements"); or
+(ii) 	  to and between the other party's head office, branches or affiliates, or any persons or entities who provide services to such other party or its head office, branches or affiliates, in each case, in connection with such Reporting Requirements.
+Each party acknowledges that pursuant to global regulatory reform initiatives, regulators require reporting of trade data to increase market transparency and enable regulators to monitor systemic risk to ensure safeguards are implemented globally.
+Each party further acknowledges that disclosures made pursuant hereto may include, without limitation, the disclosure of trade information including a party's identity (by name, address, corporate affiliation, identifier or otherwise) to any swap or trade data repository or one or more systems or services operated by any trade repository ("TR") and any relevant regulators (including without limitation, the U.S. Commodity Futures Trading Commission or other U.S. regulators in the case of trade reporting under applicable U.S.
+laws, and the European Securities and Markets Authority and national regulators in the E.U. under the E.U. Regulation No. 648/2012 on OTC derivatives, central counterparties and trade repositories in the case of trade reporting under applicable E.U. laws) and that such disclosures could result in certain anonymous swap transaction and pricing data becoming available to the public. Each party further acknowledges that, for purposes of complying with regulatory reporting obligations, a party may use a third party service provider to transfer trade information into a TR and that a TR may engage the services of a global trade repository regulated by one or more governmental regulators. Each party also acknowledges that disclosures made pursuant hereto may be made to recipients in a jurisdiction other than that of the disclosing party or a jurisdiction that may not necessarily provide an equivalent or adequate level of protection for personal data as the counterparty's home jurisdiction. For the avoidance of doubt, (i) to the extent that applicable non-disclosure, confidentiality, bank secrecy, data privacy or other law imposes non-disclosure requirements on transaction and similar information required or permitted to be disclosed as contemplated herein but permits a party to waive such requirements by consent, the consent and acknowledgements provided herein shall be a consent by each party for purposes of such law; (ii) any agreement between the parties to maintain confidentiality of information contained in this Agreement or in any non- disclosure, confidentiality or other agreement shall continue to apply to the extent that such agreement is not inconsistent with the disclosure of information in connection with the Reporting Requirements as set out herein; and (iii) nothing herein is intended to limit the scope of any other consent to disclosure separately given by each party to the other party.
+Page 13 of 15
+(l) 	  ISDA Benchmarks Supplement. The parties agree that the terms of the ISDA Benchmarks Supplement, as published by the International Swaps and Derivatives Association, Inc. on September 19, 2018 (the "Supplement") are incorporated into and apply to this Agreement and any Transaction hereunder, as applicable and conditional upon the parties continuing to be parties to any such Transaction. References in the Supplement to any 'ISDA Master Agreement' will be deemed to be references to this Agreement. If there is any inconsistency between this provision and a Confirmation, this provision shall prevail unless such Confirmation expressly overrides the provisions of the relevant annex to the Supplement.
+(m) 	  2010 Short Form HIRE Act Protocol. The parties agree that the terms of the attachment found on pages 12-15 of the 2010 Short Form HIRE Act Protocol (the "HIRE Act Attachment") as published by the International Swaps and Derivatives Association, Inc. on November 30, 2010, shall be incorporated herein and form part of this ISDA Master Agreement. The terms "each Covered Master Agreement" and "each 2002 ISDA Master Agreement" in the HIRE Act Attachment shall be deemed as references to this Agreement.
+(n) 	  Risk Participant Disclosure. Notwithstanding anything to the contrary in this Agreement or in any non-disclosure, confidentiality or other agreement between the parties, Party B hereby consents to Party A disclosing information in relation to Party B, this Agreement and the Transactions hereunder, to any actual or prospective risk participant, co-investor, insurer, re-insurer, insurance broker, funding source, assignee or transferee provided that the recipient is under a duty of confidentiality in relation to that information.
+(o) 	  Swap disclosures. Party A hereby provides Party B with the disclosures contained in the General Disclosure Statement and annexes thereto (together, the "ISDA DF Disclosure") at  www.ingcapitalmarkets.com, and Party B agrees to such disclosures. The ISDA DF Disclosure will apply to all standard Transactions (as defined in the ISDA DF Disclosure) between the parties. Where the ISDA DF Disclosure is not sufficient to address all material risks and characteristics related to Transactions between the parties, Party A may provide Party B with alternative (or supplementary) disclosures suitable for such Transactions.
+(p) 	  ISDA August 2012 DF Supplement. The parties agree that the ISDA August 2012 DF Supplement Schedules 1 and 2 ("August 2012 DF Supplement") as published by the International Swaps and Derivatives Association, Inc. ("ISDA"), are incorporated into this Agreement, and shall apply to and form part of this Agreement. The parties have exchanged, or agree to exchange, completed questionnaires in the form of the ISDA August 2012 DF Protocol Questionnaire, including any Addenda thereto, and each party agrees that (i) all information and representations provided by it will constitute DF Supplement Information for the purposes of the August 2012 DF Supplement; and (ii) the Master Agreement shall be deemed to be an agreement covered thereby and a "Covered Agreement" as defined in the August 2012 DF Supplement.
+(q) 	  ISDA March 2013 DF Supplement. The parties agree that the ISDA March 2013 DF Supplement Schedules 1 and 2 ("March 2013 DF Supplement") as published by ISDA, are incorporated into this Agreement, and shall apply to and form part of this Agreement. The parties have exchanged, or agree to exchange, a completed questionnaire in the form of the ISDA March 2013 DF Protocol Questionnaire, and each party agrees that (i) all information and representations provided by it will constitute DF Supplement Information for the purposes of the March 2013 DF Supplement; and (ii) the Master Agreement shall be deemed to be an agreement covered thereby and a "Covered Agreement" as defined in the March 2013 DF Supplement.
+Page 14 of 15
+(r) 	  ERISA. Party B represents and warrants to Party A (which representations and warranties will be deemed to be repeated on each date on which a Transaction is entered into and at all times until the termination of the Agreement) that it is not (i) an "employee benefit plan" within the meaning of Section 3(3) of ERISA or other plan subject to Title I of ERISA; (ii) a plan described in Section 4975 of the U.S. Internal Revenue Code of 1986, as amended (the "Code") to which Section 4975 of the Code applies; (iii) an entity the underlying assets of which constitute assets of employee benefit plans or plans which are subject to Title I of ERISA or Section 4975 of the Code as a result of investments by such plans in the entity pursuant to Section 3(42) of ERISA; or (iv) a governmental plan that is subject to any federal, state or local law that is substantially similar to the provisions of Section 406 of ERISA or Section 4975 of the Code, or an entity the underlying assets of which are deemed to be the assets of such governmental plan under applicable law.
+Page 15 of 15
+IN WITNESS WHEREOF the parties have executed this document on the respective dates specified below with effect from the date specified on the first page of this Agreement.
+ING Capital Markets LLC 	  CORE Alaska, LLC
+By: 	  /s/ Jesse Freeman 	  	  By: 	  /s/ Rick Van Nieuwenhuyse Name: Jesse Freeman 	  	  	  Name: Rick Van Nieuwenhuyse Title: Director 	  	  	  Title: President and Chief Executive Officer Date: 5-17-2023 	  	  	  Date: 5-17-2023 By: 	  /s/ Paola Corradetti Name: Paola Corradetti Title: Director Date: 5-17-2023
+[Signature Page to Schedule to 2002 ISDA Master Agreement (ING)]

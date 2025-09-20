@@ -20,7 +20,7 @@ from .schema import (
     RevisedContract,
     RevisionInstruction,
 )
-from .utilities import split_text_into_paragraphs
+from .utilities import split_text_into_paragraphs, text_to_paragraphs
 
 __all__ = [
     # schema
@@ -39,6 +39,7 @@ __all__ = [
     "RevisedContract",
     "LookupValue",
     "split_text_into_paragraphs",
+    "text_to_paragraphs",
     # classifier
     "ClauseClassifier",
     "ClauseClassifierConfig",

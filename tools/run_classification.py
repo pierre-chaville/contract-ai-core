@@ -10,7 +10,7 @@ from contract_ai_core import (
     ClauseClassifierConfig,
     ContractTypeTemplate,
     Paragraph,
-    split_text_into_paragraphs,
+    text_to_paragraphs,
 )
 from utilities import load_template, write_tokens_usage
 
@@ -18,16 +18,16 @@ from utilities import load_template, write_tokens_usage
 def classify_file(
     classifier: ClauseClassifier,
     template: ContractTypeTemplate,
-    md_path: Path,
+    txt_path: Path,
     model_name: str,
     repo_root: Path,
 ) -> dict:
-    text = md_path.read_text(encoding="utf-8")
-    paragraphs: list[Paragraph] = split_text_into_paragraphs(text)
+    text = txt_path.read_text(encoding="utf-8")
+    paragraphs: list[Paragraph] = text_to_paragraphs(text)
     classification, usage = classifier.classify_paragraphs_with_usage(
-        paragraphs, template, source_id=md_path.name
+        paragraphs, template, source_id=txt_path.name
     )
-    write_tokens_usage("clauses", md_path.name, model_name, usage, len(paragraphs), repo_root)
+    write_tokens_usage("clauses", txt_path.name, model_name, usage, len(paragraphs), repo_root)
 
     rows = []
     for cp in classification.paragraphs:
@@ -71,19 +71,19 @@ def main() -> None:
     )
     template = ContractTypeTemplate.model_validate(load_template(template_key))
 
-    md_files = sorted(input_dir.glob("*.md"))
-    if not md_files:
-        print(f"No markdown files found in {input_dir}")
+    txt_files = sorted(input_dir.glob("*.txt"))
+    if not txt_files:
+        print(f"No text files found in {input_dir}")
         return
 
-    for md_path in md_files:
-        if os.path.exists(output_dir / (md_path.stem + ".csv")):
-            print(f"Skipping {md_path.name} because it already exists")
+    for txt_path in txt_files:
+        if os.path.exists(output_dir / (txt_path.stem + ".csv")):
+            print(f"Skipping {txt_path.name} because it already exists")
             continue
-        print(f"Classifying {md_path.name} using {provider}:{model_name} ...")
-        result = classify_file(classifier, template, md_path, model_name, repo_root)
+        print(f"Classifying {txt_path.name} using {provider}:{model_name} ...")
+        result = classify_file(classifier, template, txt_path, model_name, repo_root)
 
-        out_path = output_dir / (md_path.stem + ".csv")
+        out_path = output_dir / (txt_path.stem + ".csv")
         with out_path.open("w", encoding="utf-8", newline="") as f:
             writer = csv.writer(f)
             writer.writerow(["index", "clause_key", "confidence", "text"])

@@ -208,9 +208,18 @@ def main() -> None:
 
     # Tabs (prepend Contract tab)
     if process == "Processing":
-        tab_contract, tab_processing, tab_datapoints, tab_clauses, tab_agent, tab_compare = st.tabs(
+        (
+            tab_contract,
+            tab_text,
+            tab_processing,
+            tab_datapoints,
+            tab_clauses,
+            tab_agent,
+            tab_compare,
+        ) = st.tabs(
             [
                 "Contract",
+                "Text",
                 "Processing",
                 "Datapoints",
                 "Clauses",
@@ -221,15 +230,18 @@ def main() -> None:
         tab_review = st.empty()
         tab_guidelines = st.empty()
     else:
-        tab_contract, tab_review, tab_clauses, tab_guidelines, tab_agent, tab_compare = st.tabs(
-            [
-                "Contract",
-                "Review",
-                "Clauses",
-                "Guidelines",
-                "Ask a question",
-                "Compare documents",
-            ]
+        tab_contract, tab_text, tab_review, tab_clauses, tab_guidelines, tab_agent, tab_compare = (
+            st.tabs(
+                [
+                    "Contract",
+                    "Text",
+                    "Review",
+                    "Clauses",
+                    "Guidelines",
+                    "Ask a question",
+                    "Compare documents",
+                ]
+            )
         )
         tab_datapoints = st.empty()
         tab_processing = st.empty()
@@ -300,6 +312,26 @@ def main() -> None:
                 _show_field("Party name 2", "party_name_2")
                 _show_field("Party role 2", "party_role_2")
                 _show_field("Document quality", "document_quality")
+
+    # Text tab: display full contract text from dataset/documents/contracts/<template_key>/<stem>.txt
+    with tab_text:
+        repo_root = get_repo_root()
+        contracts_dir = repo_root / "dataset" / "documents" / "contracts" / template_key
+        txt_path = contracts_dir / f"{current_path.stem}.txt"
+        fallback_path = current_path
+        if txt_path.exists():
+            try:
+                text = read_text_best_effort(txt_path)
+            except Exception as e:
+                st.error(f"Failed to read {txt_path.name}: {e}")
+                text = ""
+        else:
+            try:
+                text = read_text_best_effort(fallback_path)
+            except Exception as e:
+                st.error(f"Failed to read {fallback_path.name}: {e}")
+                text = ""
+        st.text_area("Full text", value=text, height=700)
 
     with tab_datapoints:
         if process != "Processing":
@@ -1334,7 +1366,7 @@ def main() -> None:
                 DocumentClassification,
                 Paragraph,
             )
-            from contract_ai_core.utilities import split_text_into_paragraphs  # type: ignore
+            from contract_ai_core.utilities import text_to_paragraphs  # type: ignore
         except Exception as e:
             st.error(f"Unable to load compare module: {e}")
         else:
@@ -1375,11 +1407,11 @@ def main() -> None:
                     text2 = read_text_best_effort(target_path)
                     paras1 = [
                         Paragraph(index=i, text=pp.text)
-                        for i, pp in enumerate(split_text_into_paragraphs(text1))
+                        for i, pp in enumerate(text_to_paragraphs(text1))
                     ]
                     paras2 = [
                         Paragraph(index=i, text=pp.text)
-                        for i, pp in enumerate(split_text_into_paragraphs(text2))
+                        for i, pp in enumerate(text_to_paragraphs(text2))
                     ]
                 except Exception as e:
                     st.error(f"Failed to load documents: {e}")

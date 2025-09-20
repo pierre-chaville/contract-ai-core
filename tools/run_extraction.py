@@ -14,7 +14,7 @@ from contract_ai_core import (
     DatapointExtractorConfig,
     DocumentClassification,
     Paragraph,
-    split_text_into_paragraphs,
+    text_to_paragraphs,
 )
 from utilities import load_template, write_tokens_usage
 
@@ -86,15 +86,15 @@ def main() -> None:
 
     template = ContractTypeTemplate.model_validate(load_template(template_key))
 
-    md_files = sorted(docs_dir.glob("*.md"))
-    if not md_files:
-        print(f"No markdown files found in {docs_dir}")
+    txt_files = sorted(docs_dir.glob("*.txt"))
+    if not txt_files:
+        print(f"No text files found in {docs_dir}")
         return
 
     # Map datapoint key -> title for CSV output
     key_to_title = {dp.key: dp.title for dp in template.datapoints}
 
-    for doc_path in md_files:
+    for doc_path in txt_files:
         cls_path = cls_dir / (doc_path.stem + ".csv")
         if os.path.exists(output_dir / (doc_path.stem + ".csv")):
             print(f"Skipping {doc_path.name} because it already exists")
@@ -102,7 +102,7 @@ def main() -> None:
         print(f"Extracting datapoints from {doc_path.name} ...")
 
         text = doc_path.read_text(encoding="utf-8")
-        _paragraphs: list[Paragraph] = split_text_into_paragraphs(text)
+        _paragraphs: list[Paragraph] = text_to_paragraphs(text)
         if cls_path.exists():
             print(f"  -> using existing classification {cls_path.name}")
             classification = build_classification_from_csv(cls_path)

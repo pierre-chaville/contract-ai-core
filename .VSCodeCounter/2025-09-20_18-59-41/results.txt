@@ -1,0 +1,37 @@
+Date : 2025-09-20 18:59:41
+Directory : t:\apps\contract-ai-core\src
+Total : 12 files,  3243 codes, 416 comments, 495 blanks, all 4154 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Python   |         12 |      3,243 |        416 |        495 |      4,154 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                            | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                               |         12 |      3,243 |        416 |        495 |      4,154 |
+| contract_ai_core                                                |         12 |      3,243 |        416 |        495 |      4,154 |
++-----------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                        | language | code       | comment    | blank      | total      |
++-----------------------------------------------------------------+----------+------------+------------+------------+------------+
+| t:\apps\contract-ai-core\src\contract_ai_core\__init__.py       | Python   |         52 |          7 |          2 |         61 |
+| t:\apps\contract-ai-core\src\contract_ai_core\authoring.py      | Python   |        119 |         32 |         25 |        176 |
+| t:\apps\contract-ai-core\src\contract_ai_core\classifier.py     | Python   |        231 |         49 |         39 |        319 |
+| t:\apps\contract-ai-core\src\contract_ai_core\compare.py        | Python   |        406 |         37 |         48 |        491 |
+| t:\apps\contract-ai-core\src\contract_ai_core\contract_agent.py | Python   |        305 |         19 |         44 |        368 |
+| t:\apps\contract-ai-core\src\contract_ai_core\extractor.py      | Python   |        464 |         50 |         51 |        565 |
+| t:\apps\contract-ai-core\src\contract_ai_core\filter.py         | Python   |        198 |         34 |         39 |        271 |
+| t:\apps\contract-ai-core\src\contract_ai_core\organizer.py      | Python   |        325 |         22 |         34 |        381 |
+| t:\apps\contract-ai-core\src\contract_ai_core\reviewer.py       | Python   |        302 |         26 |         42 |        370 |
+| t:\apps\contract-ai-core\src\contract_ai_core\reviser.py        | Python   |        303 |         39 |         51 |        393 |
+| t:\apps\contract-ai-core\src\contract_ai_core\schema.py         | Python   |        382 |         54 |         81 |        517 |
+| t:\apps\contract-ai-core\src\contract_ai_core\utilities.py      | Python   |        156 |         47 |         39 |        242 |
+| Total                                                           |          |      3,243 |        416 |        495 |      4,154 |
++-----------------------------------------------------------------+----------+------------+------------+------------+------------+
