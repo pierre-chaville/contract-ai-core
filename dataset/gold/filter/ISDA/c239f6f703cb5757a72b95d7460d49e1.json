@@ -1,0 +1,13 @@
+{
+  "filename": "c239f6f703cb5757a72b95d7460d49e1.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 268,
+      "end_line": 450,
+      "confidence": 0.99,
+      "explanation": "Lines 268-450 contain the full text of the Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE to the MASTER AGREEMENT' and including all the parts (Termination Provisions, Tax Representations, Documents to be Delivered, Miscellaneous, Other Provisions, FX Transactions and Currency Options) and ending with the execution block for the Schedule. This span excludes the standard pre-printed Master Agreement and any annexes such as the CSA, focusing solely on the Schedule as requested."
+    }
+  ]
+}

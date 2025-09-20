@@ -1,0 +1,13 @@
+{
+  "filename": "26229cc9defb5f40a1666c9aaaaaa02d.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": -1,
+      "end_line": -1,
+      "confidence": 0.1,
+      "explanation": "The provided text is the main body of the 2002 ISDA Master Agreement, not the Schedule. The Schedule to the ISDA Master Agreement is a separate document or section that customizes the standard terms for the parties. There is no distinct Schedule section or its contents in the provided lines; only references to the Schedule appear. Therefore, no suitable span matching the query is present."
+    }
+  ]
+}

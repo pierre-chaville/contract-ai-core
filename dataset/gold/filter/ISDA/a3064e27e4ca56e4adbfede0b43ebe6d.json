@@ -1,0 +1,13 @@
+{
+  "filename": "a3064e27e4ca56e4adbfede0b43ebe6d.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 338,
+      "end_line": 563,
+      "confidence": 1.0,
+      "explanation": "Lines 338-563 contain the full Schedule to the 2002 ISDA Master Agreement, including all 'Part' sections (Termination Provisions, Representations, Agreement to Deliver Documents, Miscellaneous, Other Provisions, etc.), and the signature block. This is the standard format and content of an ISDA Schedule. The lines before 338 are the main body of the Master Agreement, and lines after 563 are Schedule I (list of affiliates) and the Credit Support Annex, which are not part of the main Schedule. Therefore, lines 338-563 are the correct contiguous span for the Schedule."
+    }
+  ]
+}

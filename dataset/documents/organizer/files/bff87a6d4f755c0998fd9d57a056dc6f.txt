@@ -49,3 +49,38 @@ To be delivered by: 	  Form/Document/Certificate 	  	  Date by which to be 	  	 
 Part 4\. Miscellaneous
 (a) Addresses for Notices For the purpose of Section 12(a) of this Agreement:
 Address for Notices or communications to Party A
+Brown Brothers Harriman & Co. Foreign Exchange Risk Management 140 Broadway
+New York, NY 10005
+Attn: Chief Credit Officer
+Telephone No. 212 493 7885 Facsimile No. 212 493 8065
+SWIFT Address: BBHCUS33
+Address for Notices or Communications to Party B
+Met-Pro, Attn: Gary J. Morgan, 160 Cassell Road, PO Box 144, Harleysville, PA 19438
+(b) Process Agent. For the purpose of Section l3(c) of this Agreement:
+Party A None
+Party B
+Met-Pro, Attn: Gary J. Morgan, 160 Cassell Road, PO Box 144, Harleysville, PA 19438
+(c) Offices The provisions of Section 10(a) will apply to this Agreement.
+(d) Multibranch Party. For the purpose of Section 10I of this Agreement:
+Party A is not a multibranch Party and will act only through its New York office.
+Party B is not a multibranch Party.
+(e) The calculation agent will be Party A.
+(f) Credit Support Document N/A
+(g) Credit Support Provider None in relation to either Party
+(h) Governing Law THIS AGREEMENT WILL BE GOVERNED BY AND CONSTRUED IN ACCORDANCE WITH THE LAWS OF THE STATE OF NEW YORK (WITHOUT REFERENCE TO CONFLICT OF LAW DOCTRINE)
+(I) Netting of Payments. Subparagraph (ii) of Section 2I of this Agreement will not apply to all Transactions under this Agreement with effect from the date of this Agreement.
+(v) Affiliate will have the meaning specified in section 14 of this Agreement.
+Each party and its affiliates may share with each other any credit or other information concerning the other party and its affiliates.
+Part 5 Other Provisions
+(a) Right of Set-off In addition to any rights of set-off a [party may have as a matter of law or otherwise, upon the occurrence of an Event of Default with respect to a party ("Party X") or an Illegality or Credit Event Upon Merger where Party X is the only Affected Party, the other party ("Party Y") will have the right (but not the obligation) without prior notice to Party X or any other person to set-off any obligation of Party X owing to Party Y or any of its Affiliates, branches or offices (whether or not arising under this Agreement, whether or not matured, whether or not contingent and regardless of the currency, place of payment or booking office of the obligation) against any obligation of Party Y or any of its Affiliates, branches or offices owing to Party X (whether or not arising under this Agreement, whether or not matured, whether or not contingent and regardless of the currency, place of payment or booking office of the obligation). In order to enable Party Y to exercise its rights of set-off, (I) Party Y may in good faith convert any obligation to another currency at a market rate determined by Party Y and set- off in respect of that converted amount and/or (ii) if an obligation is unascertained, Party Y may in good faith estimate that obligation and set-off in respect of the estimate, subject to the relevant party accounting to the other when the obligation is ascertained. Nothing in this paragraph will be deemed to constitute or create a charge or other security interest. For purposes of this Agreement, other registered investment companies advised or sub-advised by Party B's investment adviser or sub-adviser are not considered "Affiliates" of Party B.
+(b) Waiver of Right to Trial by Jury. Each of the parties hereby irrevocably waives any and all right to a trial by jury with respect to any legal proceeding or counterclaim arising out of or relating to this Agreement or any transaction.
+I Inconsistency, In the event of any inconsistency between any of the following documents, the relevant document first listed shall govern; (i) A confirmation (ii) this schedule, (iii) the definitions incorporated by reference in a Confirmation or in this Agreement, and (iv) the printed form of ISDA Agreement.
+(d) Consent to Recording Each party (i) consents to the monitoring or recording of all dealing conversations for all transactions covered by this Agreement, (ii) waives further notice of such recording, and (iii) agrees to notify its employees and officers, where required by law to do so, with respect to such recording. Any such recording may be submitted to any court or any Proceeding for the purpose of establishing any matters pertinent to this Agreement or any Transaction.
+(e) Relationship between the Parties. Each party will be deemed to represent to the other party on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction)
+(vi) Non-reliance It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based ion its own judgment and upon advice from such advisers it has deemed necessary. It is not relying in any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction, it being understood that information and explanations related to the terms and conditions of as Transaction shall not be considered investment advice or as a recommendation to enter into that Transaction. It has not received from the other party any assurance or guarantee as to the expected results of that Transaction.
+(vii) Evaluation and Understanding. It has the capacity to evaluate and understand (on its own behalf or through independent professional advice), and understands and accepts the terms, conditions, and risks of that Transaction.
+It is also capable of assuming, and assumes, the financial and d other risks of that Transaction.
+(viii) Status of Parties. The other party is not acting as a fiduciary or an adviser for it in respect of that Transaction.
+(f)  Confirmations. Each Transaction Party A and Party B agree to enter into under this Agreement, will be positively confirmed within twenty-four hours of execution, either over a taped telephone line or through an acceptable electronic confirmation service.
+In witness whereof the parties have executed this document on the respective dates specified below with effect from the date specified on the first page of this document
+Brown Brothers Harriman & Co. 	 Met-Pro Corporation By: /s/Thomas J. Saunder 	 By: /s/ Gary J. Morgan Name: Thomas J. Saunder 	 Name: Gary J. Morgan Title: SVP 	 Title: V/P Finance Date: 10-12-05 	 Date: 10/12/2005

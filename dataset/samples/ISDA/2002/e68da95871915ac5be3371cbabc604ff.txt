@@ -1,0 +1,152 @@
+SCHEDULE
+to the
+2002 Master Agreement
+dated as of July 27, 2012
+between
+BANK OF AMERICA, N.A.,
+a national banking association organized and existing under the laws of the United States of America,
+("Party A")
+and
+FSP 50 SOUTH TENTH STREET CORP. ,
+a corporation organized and existing under the laws of Delaware,
+("Party B")
+Part 1
+Termination Provisions
+(a)     "Specified Entity " means in relation to Party A for the purpose of Sections 5(a)(v), 5(a)(vi), 5(a)(vii) and 5(b)(v): none;
+"Specified Entity " means in relation to Party B for the purpose of Sections 5(a)(v), 5(a)(vi), 5(a)(vii) and 5(b)(v): none.
+(b)     "Specified Transaction " will have the meaning specified in Section 14 but shall also include any transaction with respect to margin loans, cash loans and short sales of any financial instrument.
+(c)     The "Cross-Default " provisions of Section 5(a)(vi):
+will apply to Party A and
+will apply to Party B; provided that (i) the phrase "or becoming capable at such time of being declared" shall be deleted from clause (1) of such Section 5(a)(vi); and (ii) the following language shall be added to the end thereof:
+"Notwithstanding the foregoing, a default under subsection (2) hereof shall not constitute an Event of Default if (i) the default was caused solely by an error or omission of an administrative or operational nature; (ii) funds were available to enable the party to make the payment when due; and (iii) the payment is made within three Local Business Days of such party's receipt of written notice of its failure to pay."
+29
+In connection therewith, " Specified Indebtedness" will have the meaning specified in Section 14 except that such term shall not include obligations in respect of deposits received in the ordinary course of a party's banking business.
+" Threshold Amount" means with respect to Party A an amount equal to three percent (3%) of the Shareholders' Equity of Bank of America Corporation and with respect to Party B, $2,500,000.
+With respect to Party B, an Event of Default as defined in the Credit Agreement shall be an Event of Default under this Agreement.
+" Credit Agreement" means the Loan Agreement dated as of July 27, 2012 by and among FSP 50 South Tenth Street Corp., as Borrower, each of the Lenders party thereto (and as defined therein), and Bank of America, N.A., as Administrative Agent (as amended, extended, supplemented or otherwise modified in writing from time to time).
+" Shareholders' Equity" means with respect to an entity, at any time, the sum (as shown in the most recent annual audited financial statements of such entity) of (i) its capital stock (including preferred stock) outstanding, taken at par value, (ii) its capital surplus and (iii) its retained earnings, minus (iv) treasury stock, each to be determined in accordance with generally accepted accounting principles.
+(d)     The "Credit Event Upon Merger " provisions of Section 5(b)(v):
+will apply to Party A
+will apply to Party B
+(e)     The "Automatic Early Termination " provision of Section 6(a):
+will not apply to Party A
+will not apply to Party B.
+(f)     "Termination Currency " means United States Dollars.
+(g)     Additional Termination Event will apply.
+It shall be an Additional Termination Event hereunder, with respect to which Party B shall be the sole Affected Party, if for any reason (other than Party A unilaterally electing to exit the Credit Agreement) either Party A's obligation to lend under the Credit Agreement is terminated or Party A ceases to be a party to the Credit Agreement.
+It shall be an Additional Termination Event hereunder, with respect to which Party B shall be the sole Affected Party, if (1) Party A ceases to be a secured party under the Credit Agreement, or if (2) all or substantially all of the collateral under the Credit Agreement and related loan documents are released without the prior written consent of Party A, or if (3) the obligations and liabilities of Party B hereunder fail to be senior secured, pari passu and equal in right and priority of payment with the Loans under the Credit Agreement.
+30
+Notwithstanding the foregoing, Party A shall not declare an Additional Termination Event in the event Party A ceases to be a party to the Credit Agreement, or a secured party under the Credit Agreement, as given above, (each a "Collateral Event") if either,
+Party B executes and delivers to Party A an ISDA Credit Support Annex, in form and substance satisfactory to Party A in Party A's sole discretion, and posts collateral to secure the obligations of Party B hereunder so long as (1) Party B requests the commencement of such negotiations within one (1) Business Day of the occurrence of such Collateral Event, (2) on such date Party B is not prohibited, by the covenants in any Indebtedness to which Party B is a party, from posting collateral to secure Party B's obligations to Party A and (3) such ISDA Credit Support Annex is executed and delivered within five (5) Business Days of the occurrence of such Collateral Event; or
+Party B has effected an Acceptable Transfer simultaneously with any such Collateral Event. " Acceptable Transfer" means Party B has arranged for the transfer of all of Party A's rights and obligations under this Agreement to and each Transaction hereunder to Franklin Street Properties Corp. (the "Transferee") provided that:
+the Transferee has executed an ISDA Master Agreement with Party A in form and substance satisfactory to Party A;
+such transfer will not result in the violation of any law, regulation, rule, guideline, principal, judgment, order or other legal limitation or restriction applicable to Party A;
+The payment to be received by or paid by Party A relating to the transfer shall be acceptable to Party A.
+Party A shall agree to such transfer upon receipt of evidence satisfactory to Party A of Transferee's assumption of all such obligations, including all payments and documents requested by Party A in connection therewith.
+Part 2
+Tax Representations
+(a)     Payer Tax Representations. For the purpose of Section 3(e) of this Agreement, Party A and Party B will make the following representation:-
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 9(h) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on (i) the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement, (ii) the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement and (iii) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement, except that it will not be a breach of this representation where reliance is placed on clause (ii) above and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+31
+(b)     Payee Tax Representations. For the purpose of Section 3(f) of this Agreement, Party A and Party B will make the following representations specified below, if any:-
+(i)     The following representations will apply to Party A:
+Party A is a national banking association created or organized under the laws of the United States of America and the federal taxpayer identification number is 94-1687665.
+(ii)     The following representations will apply to Party B:
+Party B is a corporation created or organized under the laws of the State of Delaware and the federal taxpayer identification number is 20-5530367.
+Part 3
+Agreement to Deliver Documents
+For the purpose of Section 4(a)(i) and (ii) of this Agreement, each party agrees to deliver the following documents:
+(a)     Tax forms, documents or certificates to be delivered are:
+Party required to deliver document  	 Document 	 Date by which to be delivered Party B 	 Internal Revenue Service Form W-9 	 Upon execution and delivery of this Agreement
+(b)     Other documents to be delivered are:-
+Party required to deliver document 	 Form/Document/Certificate 	 Date by which to be delivered 	 Covered by Section 3(d) Representation Party A and Party B 	 Credit Support Document, if any, specified in Part 4 of the Schedule, such Credit Support Document being duly executed if required 	 Upon execution and delivery of this Agreement 	 No
+32
+Party required to deliver document 	   	 Form/Document/Certificate 	   	 Date by which to be delivered 	   	 Covered by Section 3(d) Representation Party A and Party B 	   	 Certificate of authority and specimen signatures of individuals executing this Agreement and any Credit Support Document 	   	  Upon execution and delivery of this Agreement and thereafter upon request of the other party   	   	 Yes Party A 	   	 Annual Report of Bank of America Corporation containing audited, consolidated financial statements certified by independent certified public accountants and prepared in accordance with generally accepted accounting principles in the country in which such party is organized 	   	  To be made available on www.bankofamerica.com/investor/ as soon as available and in any event within 90 days after the end of each fiscal year of Party A   	   	 Yes Party A 	   	 Quarterly Financial Statements of Bank of America Corporation containing unaudited, consolidated financial statements of such party's fiscal quarter prepared in accordance with generally accepted accounting principles in the country in which such party is organized 	   	  To be made available on www.bankofamerica.com/investor/ as soon as available and in any event within 45 days after the end of each fiscal quarter of Party A   	   	 Yes Party B 	   	  Such information, documents and reports of Party B and/or the Credit Support Provider required to be provided or delivered to Party A pursuant to the terms of the Credit Agreement   	   	 At the times required to be  provided or delivered under the terms of the Credit Agreement 	   	 Yes
+Part 4
+Miscellaneous
+(a)     Address for Notices. For the purpose of Section 12(a) of this Agreement:-
+Address for notice or communications to Party A :
+Bank of America, N.A. 200 N. College Street NC1-004-03-43 Charlotte, NC 28255-0001 Attention: Swap Operations Telephone No.: (312) 234 2732 Facsimile No.: (866) 255 1444
+With a copy to:-
+33
+Bank of America, N.A. 50 Rockefeller Plaza, NY1-050-10-01 New York, New York 10020 Attention: Client Integration and Documentation Group Facsimile No.:
+(212) 548 8622
+Address for financial statements to Party A:
+Bank of America, N.A.
+225 Franklin Street
+Boston, MA 02110
+Attention: Oltiana Pappas, Senior Vice President
+Telephone No.: 617-346-0460
+Address for notice or communications to Party B:
+FSP 50 South Tenth Street Corp. 401 Edgewater Place, Suite 200 Wakefield, MA 01880 Attention: John G. Demeritt, Chief Financial Officer Telephone No.:
+781-557-1341 Facsimile No.: 781-557-1335 Email Address:
+jdemeritt@franklinstreetproperties.com
+(b)     Process Agent. For the purpose of Section 13(c):
+Party A appoints as its Process Agent: Not applicable.
+Party B appoints as its Process Agent: Not applicable.
+(c)      Offices. The provisions of Section 10(a) will apply to this Agreement.
+(d)     Multibranch Party. For the purpose of Section 10(b) of this Agreement:-
+Party A is a Multibranch Party and may act through its Charlotte, North Carolina, Chicago, Illinois, San Francisco, California, New York, New York, Boston, Massachusetts or London, England Office, its Canada Branch, located in Toronto, Ontario or such other Office as may be agreed to by the parties in connection with a Transaction.
+Party B is not a Multibranch Party.
+(e)     Calculation Agent. The Calculation Agent is Party A, provided that if an Event of Default occurs and is continuing with respect to Party A, Party B may appoint a dealer selected by Party B and approved by Party A (such approval not to be unreasonably withheld) to act as alternate Calculation Agent for so long as such Event of Default continues. Following any such designation of an alternate Calculation Agent, if no Event of Default in respect of Party A is then continuing, the Calculation Agent shall again be Party A.
+(f)     Credit Support Document. Details of any Credit Support Document:-
+34
+Each of the following, as amended, extended, supplemented or otherwise modified in writing from time to time, is a "Credit Support Document":
+In relation to Party B,
+the Mortgage, as defined in the Credit Agreement.
+(g)     Credit Support Provider.
+Credit Support Provider means in relation to Party A: Not applicable.
+Credit Support Provider means in relation to Party B: Not applicable.
+(h)     Governing Law. This Agreement and any and all controversies arising out of or in relation to this Agreement shall be governed by and construed in accordance with the laws of the State of New York (without reference to its conflict of laws doctrine).
+Section 13 is amended by (i) deleting in Section 13(b)(i)(2) the word "non- exclusive" and replacing it with "exclusive" and (ii) deleting Section 13(b)(iii) in its entirety.
+(i)     Netting of Payments. Unless the parties otherwise so agree, "Multiple Transaction Payment Netting" will apply for the purpose of Section 2(c) of this Agreement to all Transactions, starting as of the date of this Agreement.
+(j)     " Affiliate" will have the meaning specified in Section 14 of this Agreement.
+(k)     Absence of Litigation. For the purpose of Section 3(c):-
+"Specified Entity" means in relation to Party A, none;
+"Specified Entity" means in relation to Party B, none.
+(l)     No Agency. The provisions of Section 3(g) will apply to this Agreement.
+(m)     Additional Representation will apply. For the purpose of Section 3 of this Agreement, each of the following will constitute an Additional Representation, which will be made by the party indicated below at the times specified below:-
+Mutual Representations. Each party makes the following representations to the other party (which representations will be deemed to be repeated by each party on each date on which a Transaction is entered into):
+(A)      Relationship Between Parties. Each party will be deemed to represent to the other party on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction):-
+35
+(1)     Non-Reliance. It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisors as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction, it being understood that information and explanations related to the terms and conditions of a Transaction shall not be considered investment advice or a recommendation to enter into that Transaction. No communication (written or oral) received from the other party will be deemed to be an assurance or guarantee as to the expected results of that Transaction.
+(2)     Assessment and Understanding. It is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction. It is also capable of assuming, and assumes, the risks of that Transaction.
+(3)     Status of Parties. The other party is not acting as a fiduciary for or an advisor to it in respect of that Transaction.
+(B)     Eligible Contract Participant. It is an "eligible contract participant" as defined in Section 1 of the U.S. Commodity Exchange Act, 7 U.S.C.
+(n)     Recording of Conversations. Each party to this Agreement acknowledges and agrees to the recording of conversations between trading and marketing personnel of the parties to this Agreement whether by one or other or both of the parties or their agents.
+Part 5
+Other Provisions
+(a)     Financial Statements. Section 3(d) is hereby amended by adding in the third line thereof after the word "respect" and before the period:
+"or, in the case of financial statements, a fair presentation of the financial condition of the relevant party."
+(b)     2002 Master Agreement Protocol. Annexes 1 to 18 and Section 6 of the ISDA 2002 Master Agreement Protocol as published by the International Swaps and Derivatives Association, Inc. on July 15, 2003 are incorporated into and apply to this Agreement. References in those definitions and provisions to any ISDA Master Agreement will be deemed to be references to this Master Agreement.
+(c)     Consent to Disclosure.
+(i) Party B consents to Party A effecting such disclosure as Party A may deem appropriate to enable Party A to transfer Party B's records and information to process and execute Party B's instructions, or in pursuance of Party A's or Party B's commercial interest, to any of its Affiliates. For the avoidance of doubt, Party B's consent to disclosure includes the right on the part of Party A to allow access to any intended recipient of Party B's information, to the records of Party A by any means.
+36
+(ii) Party B further consents to Party A delivering this ISDA Master Agreement, any Credit Support Document and any Confirmations to one or more third party financial institutions for the purposes of Party A entering into an agreement with such institution for the purposes of managing Party A's risk to Party B in any of the obligations of Party B to Party A under this Agreement, provided however, that any such agreement will not result in the modification of Party A's obligations under this Agreement.
+(d)     Transfer. Section 7 of this Agreement shall be amended by inserting the following phrase "which consent shall not be unreasonably withheld" in the third line thereof after the word "party" and before the word "except".
+(e)     Set-off. Section  6(f) is hereby amended as follows: the words "or any affiliates of the Payee in circumstances where the Payee is the non- Defaulting or non-Affected Party" shall be inserted in the sixth line following the words "payable by the Payee".
+(f)     WAIVER OF RIGHT TO TRIAL BY JURY. EACH PARTY HEREBY IRREVOCABLY WAIVES ANY AND ALL RIGHTS TO TRIAL BY JURY WITH RESPECT TO ANY LEGAL PROCEEDING ARISING OUT OF OR RELATING TO THIS AGREEMENT, ANY CREDIT SUPPORT DOCUMENT OR ANY TRANSACTION CONTEMPLATED HEREBY.
+(g)     Method of Notice. Section 12(a)(ii) of the Master Agreement is deleted in its entirety.
+(h)      Safe Harbors . Each party to this Agreement acknowledges that:
+(i)     This Agreement, including any Credit Support Document, is a "master netting agreement" as defined in the U.S. Bankruptcy Code (the "Code "), and a "netting contract" as defined in the netting provisions of the Federal Deposit Insurance Corporation Improvement Act of 1991 ("FDICIA "), and this Agreement, including any Credit Support Document, and each Transaction hereunder is of a type set forth in Section 561(a)(1)-(5) of the Code;
+(ii)     Party A is a "master netting agreement participant," a "financial institution," a "financial participant," a "forward contract merchant" and a "swap participant" as defined in the Code, and a "financial institution" as defined in the netting provisions of FDICIA;
+(iii)     The remedies provided herein, and in any Credit Support Document, are the remedies referred to in Section 561(a), Sections 362(b)(6), (7), (17) and (27), and Section 362(o) of the Code, and in Section 11(e)(8)(A) and (C) of the Federal Deposit Insurance Act;
+(iv)     All transfers of cash, securities or other property under or in connection with this Agreement, any Credit Support Document or any Transaction hereunder are "margin payments," "settlement payments" and "transfers" under Sections 546(e), (f), (g) or (j), and under Section 548(d)(2) of the Code; and
+(v)     Each obligation under this Agreement, any Credit Support Document or any Transaction hereunder is an obligation to make a "margin payment," "settlement payment" and "payment" within the meaning of Sections 362, 560 and 561 of the Code.
+37
+(i)     Foreign Account Tax Compliance Act. (a) For purposes of any Payer Tax Representation, the words "any Tax from any payment" shall not include any tax imposed under Sections 1471 and 1472 of the Internal Revenue Code of 1986, as amended (or the United States Treasury regulations or other guidance issued or any agreements entered into thereunder) ("FATCA Withholding Tax"); (b) for the avoidance of doubt the parties agree that for the purposes of Section 2(d) of this Agreement the deduction or withholding of FATCA Withholding Tax is required by applicable law; and (c) the definition of "Indemnifiable Tax" shall not include any FATCA Withholding Tax.
+(j)     Swap Contract. Party B represents to Party A (which representation will be deemed to be repeated by Party B on each date on which a Transaction is entered into) that this Agreement is a Swap Contract as defined in the Credit Agreement.
+Part 6
+Additional Terms for Foreign Exchange and Foreign Exchange Option Transactions
+(a)     Incorporation of Definitions. The 1998 FX and Currency Option Definitions (the "FX Definitions "), published by the International Swaps and Derivatives Association, Inc., the Emerging Markets Traders Association and The Foreign Exchange Committee, are hereby incorporated by reference with respect to FX Transactions (as defined in the FX Definitions) and Currency Option Transactions (as defined in the FX Definitions). Terms defined in the FX Definitions shall have the same meanings in this Part 6.
+(b)     Scope. Unless otherwise agreed in writing by the parties, each FX Transaction and Currency Option Transaction entered into between the parties before, on or after the date of this Agreement shall be a Transaction under this Agreement and shall be part of, subject to and governed by this Agreement. FX Transactions and Currency Option Transactions shall be part of, subject to and governed by this Agreement even if the Confirmation in respect thereof does not state that such FX Transaction or Currency Option Transaction is subject to or governed by this Agreement or does not otherwise reference this Agreement.
+When an FX Transaction or a Currency Option is confirmed by means of exchange of electronic messages on an electronic messaging system or other document or other confirming evidence exchanged between the parties confirming such Transaction, such messages, document or evidence will constitute a Confirmation for the purposes of this Agreement even where not so specified therein.
+(c)     Premium Netting. If, on any date, and unless otherwise mutually agreed by the parties, Premiums would otherwise be payable hereunder in the same Currency between the same respective offices of the parties, then, on such date, each party's obligation to make payment of such Premiums will be automatically satisfied and discharged and, if the aggregate Premiums that would otherwise have been payable by such office of one party exceeds the aggregate Premiums that would otherwise have been payable by such office of the other party, replaced by an obligation upon the party by whom the larger aggregate Premiums would have been payable to pay the other party the excess of the larger aggregate Premiums over the smaller aggregate Premiums, and if the aggregate Premiums are equal, no payment shall be made.
+38
+(d)     _Payment Netting of FX Transactions and Currency Option Transactions._ Multiple Transaction Payment Netting shall not apply to FX Transactions or Currency Option Transactions. Unless otherwise mutually agreed by the parties, if on any date more than one delivery of a particular Currency is to be made between a pair of offices with respect to settlement of FX Transactions or Currency Option Transactions (but excluding payments with respect to option premiums and cash settled options), then each party shall aggregate the amounts of such Currency deliverable by it and only the difference between these aggregate amounts shall be delivered by the party owing the larger aggregate amount to the other party, and, if the aggregate amounts are equal, no delivery of the Currency shall be made.
+(e)     Potential Event of Default. Subject to Section 2(a)(iii) of the Agreement, if an Event of Default or Potential Event of Default has occurred and is continuing, and an Early Termination Date has not been designated by the Non-defaulting Party, the Non-defaulting Party may, by written notice, specify that any or all Currency Options being settled while such Event of Default or Potential Event of Default is continuing shall be settled in accordance with Article 3, Section 3.7 of the FX Definitions and upon such notice becoming effective, the Parties shall be deemed to have elected to have the specified Currency Options settle at the In-the-Money Amount unless and until the Event of Default or Potential Event of Default is no longer continuing.
+(f)     Payment Instructions. All payments to be made hereunder in respect of FX and Currency Option Transactions shall be made in accordance with standing payment instructions provided by the parties from time to time in writing (or as otherwise specified in a Confirmation).
+(g)     Notice of Exercise. Article 3, Section 3.5(g) of the FX Definitions is amended by the deletion of the word "facsimile," in the fourth line thereof.
+(h)     Automatic Exercise. Article 3, Section 3.6(c)(i), line six of the FX Definitions which currently reads "one percent of the Strike Price" shall be amended to read "0.5% of the Strike Price."
+(i)     Terms Relating to Premium. Article 3, Section 3.4 of the FX Definitions is hereby amended by the addition of the following as a new paragraph (c) of the FX Definitions.
+"(c)     Premium: Failure to Pay on Premium Payment Date. If any Premium is not received on the Premium Payment Date, the Seller may elect: (i) to accept a late payment of such Premium; (ii) to give written notice of such non- payment and, if such payment shall not be received within one (1) Local Business Day of such notice, treat the related Currency Option as void; or (iii) to give written notice of such non-payment and, if such payment shall not be received within one (1) Local Business Day of such notice, treat such non-payment as an Event of Default under Section 5(a)(i). If the Seller elects to act under either clause (i) or (ii) of the preceding sentence, the Buyer shall pay all out-of-pocket costs and actual damages incurred in connection with such unpaid or late Premium or void Currency Option, including, without limitation, interest on such Premium in the same currency as such Premium at the then prevailing market rate and any other costs or expenses incurred by the Seller in covering its obligations (including, without limitation, a delta hedge) with respect to such Currency Option."

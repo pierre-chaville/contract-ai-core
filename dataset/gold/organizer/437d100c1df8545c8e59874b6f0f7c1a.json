@@ -1,7 +1,7 @@
 {
   "filename": "437d100c1df8545c8e59874b6f0f7c1a.txt",
   "contract_type": {
-    "value": "ISDA",
+    "value": "OTHER",
     "confidence": 0.95,
     "explanation": "The document is described as 'Amendment No. 1 to ISDA Master Agreement' in both the text and the exhibit index."
   },

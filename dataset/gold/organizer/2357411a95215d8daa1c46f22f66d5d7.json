@@ -1,7 +1,7 @@
 {
   "filename": "2357411a95215d8daa1c46f22f66d5d7.txt",
   "contract_type": {
-    "value": "SWAP",
+    "value": "ISDA",
     "confidence": 0.95,
     "explanation": "The document is titled 'SWAP MODIFICATION AGREEMENT' and refers to modifications of swap transactions under an ISDA Master Agreement."
   },

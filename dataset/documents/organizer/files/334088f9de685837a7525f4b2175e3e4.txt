@@ -1,7 +1,7 @@
 EX-99 7 exhibit995.htm EXHIBIT 99.5
 (Multicurrency - Cross Border)
 [SWAP TRANSACTION]
-ISDA ®
+ISDA Â®
 International Swaps and Derivatives Association, Inc.
 MASTER AGREEMENT
 dated as of June 30, 2005
@@ -32,7 +32,7 @@ SWISS RE FINANCIAL PRODUCTS   CORPORATION 	 SUPPLEMENTAL INTEREST TRUST, STRUCTU
 (Name of Party) 	 (Name of Party) By:      /s/ Robert Spuler                       	 By:        /s/ /Diana J. Kenneally Name: Robert Spuler Title:  Senior Vice President 	 Name:  Diana J. Kenneally Title:    Assistant Vice President
 (Multicurrency - Cross Border)
 [SWAP TRANSACTION]
-ISDA ®
+ISDA Â®
 International Swaps and Derivatives Association, Inc.
 SCHEDULE
 to the
@@ -49,3 +49,277 @@ Termination Provisions.
 Section 5(a)(v),
 Not Applicable
 Section 5(a)(vi),
+Not Applicable
+Section 5(a)(vii),
+Not Applicable
+Section 5(b)(iv),
+Not Applicable
+and in relation to Party B for the purpose of:
+Section 5(a)(v),
+Not Applicable
+Section 5(a)(vi),
+Not Applicable
+Section 5(a)(vii),
+Not Applicable
+Section 5(b)(iv),
+Not Applicable
+(b)
+" Specified Transaction" will have the meaning specified in Section 14 of this Agreement.
+(c)
+Certain Events of Default.  The following Events of Default will apply to the parties as specified below, and the definition of "Event of Default" in Section 14 is deemed to be modified accordingly:
+Section 5(a)(i) (Failure to Pay or Deliver) will apply to Party A and Party B.
+Section 5(a)(ii) (Breach of Agreement) will not apply to Party A or Party B.
+Section 5(a)(iii) (Credit Support Default) will not apply to Party A or Party B.
+Section 5(a)(iv) (Misrepresentation) will not apply to Party A or Party B.
+Section 5(a)(v) (Default under Specified Transaction) will not apply to Party A or Party B.
+Section 5(a)(vi) (Cross Default) will not apply to Party A or Party B.
+Section 5(a)(vii) (Bankruptcy) will apply to Party A and Party B; provided that clause (2) thereof shall not apply to Party B.
+Section 5(a)(viii) (Merger without Assumption) will apply to Party A and will not apply to Party B.
+(d)
+Termination Events.  The following Termination Events will apply to the parties as specified below:
+Section 5(b)(i) (Illegality) will apply to Party A and Party B.
+Section 5(b)(ii) (Tax Event) will apply to Party A and Party B.
+Section 5(b)(iii) (Tax Event upon Merger) will apply to Party A and will not apply to Party B.
+Section 5(b)(iv) (Credit Event upon Merger) will not apply to Party A or Party B.
+(e)
+The " Automatic Early Termination" provision of Section 6(a) of this Agreement will not apply to Party A and will not apply to Party B.
+(f)
+Payments on Early Termination. For the purpose of Section 6(e) of this Agreement:
+(i)
+Market Quotation will apply.
+(ii)
+The Second Method will apply.
+(g)
+" Termination Currency" means United States Dollars.
+(h)
+Additional Termination Events.  The following Additional Termination Events will apply, in each case with respect to Party B as the sole Affected Party (unless otherwise provided below):
+(i)
+Party A fails to comply with the Downgrade Provisions as set forth in Part 5(b).  For all purposes of this Agreement, Party A shall be the sole Affected Party with respect to the occurrence of a Termination Event described in this Part 1(h)(i).
+(ii)
+Party B or the Trust Fund (as defined in the Trust Agreement, dated as of June 1, 2005, among U.S. Bank National Association, Structured Asset Securities Corporation and Aurora Loan Services LLC (the Trust Agreement)) is terminated pursuant to the Trust Agreement.
+(iii)
+The Trust Agreement is amended or modified without the prior written consent of Party A, where such consent is required under the terms of the Trust Agreement.
+(iv)
+Notice of the Master Servicer's or, the NIMS Insurer's intention to exercise its option to purchase the Mortgage Loans pursuant to Section 7.01 of the Trust Agreement is given by the Trustee to Certificateholders pursuant to Section 7.01 of the Trust Agreement, provided that the Early Termination Date may not be designated until the Certificates are redeemed pursuant to Section 7.02 of the Trust Agreement.
+Part 2
+Tax Representations.
+(a)
+Payer Representations. For the purpose of Section 3(e) of this Agreement, Party A will make the following representation and Party B will make the following representation:
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 2(e), 6(d)(ii) or 6(e) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on (i) the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement, (ii) the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement and (iii) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement, provided that it shall not be a breach of this representation where reliance is placed on clause (ii) and the other party does not deliver a form or document under Section 4(a)(iii) of this Agreement by reason of material prejudice to its legal or commercial position.
+(b)
+Payee Representations. For the purpose of Section 3(f) of this Agreement, Party A and Party B make the representations specified below, if any:
+(i)
+Party A represents that is a corporation organized under the laws of the State of Delaware.
+(ii)
+Party B represents that it is a trust created under an agreement governed by New York law.
+Part 3
+Agreement to Deliver Documents.
+For the purpose of Sections 4(a)(i) and (ii) of this Agreement, each party agrees to deliver the following documents, as applicable:
+(a)
+Tax forms, documents or certificates to be delivered are:--
+Party required to deliver document 	 Form/Document/Certificate 	 Date by which to be delivered Party A and Party B 	 Subject to Section 4(a)(iii), any document required or reasonably requested to allow the other party to make payments under this Agreement without any deduction or withholding on account of any Tax. 	 (i) promptly upon reasonable demand by Party B, and (ii) promptly upon learning that any such Form previously provided by Party A has become obsolete or incorrect.
+(b) Other documents to be delivered are:--
+Party required to deliver document 	 Form/Document/Certificate 	 Date by which to be delivered 	 Covered by Section  3(d) Representation Party A and Party B 	 Certified copy of the Board of Directors resolution (or equivalent authorizing documentation) which sets forth the authority of each signatory to this Agreement and each Credit Support Document (if any) signing on its behalf and the authority of such party to enter into Transactions contemplated and performance of its obligations hereunder. 	 Concurrently with the execution and delivery of this Agreement. 	 Yes Party A and Party B 	 Incumbency Certificate (or, if available the current authorized signature book or equivalent authorizing documentation) specifying the names, titles, authority and specimen signatures of the persons authorized to execute this Agreement which sets forth the specimen signatures of each signatory to this Agreement, each Confirmation and each Credit Support Document (if any) signing on its behalf. 	 Concurrently with the execution and delivery of this Agreement unless previously delivered and still in full force and effect. 	 Yes Party A and B 	 An opinion of counsel to such party reasonably satisfactory in form and substance to the other party. 	 Concurrently with the execution and delivery of the Confirmation unless previously delivered and still in full force and effect. 	 No Party B 	 An executed copy of the Trust Agreement. 	 Within 30 days after the date of this Agreement. 	 No
+Part 4.
+Miscellaneous.
+(a)
+Addresses for Notices. For the purposes of Section 12(a) of this Agreement:
+Party A:
+(1)
+Address for notices or communications to Party A (other than by facsimile):-
+Address:
+55 East 52nd Street
+Attention:
+(1)
+Head of Operations;
+New York, New York
+(2)
+Legal Department
+(2)
+For the purpose of facsimile notices or communications under this Agreement (other than a notice or communication under Section 5 or 6):-
+Facsimile No.:
+(212) 317-5335
+Attention:
+Operations
+with a copy to:
+Facsimile No.:
+(212) 317-5474
+Attention:
+Legal Department
+Telephone number for oral confirmation of receipt of facsimile in legible form:  (212) 317-5161
+Party B:
+U.S. Bank National Association.
+One Federal Street 3rd Floor
+Boston, MA 02110
+Attn: U.S. Bank Corporate Trust Services Group SASCO 2005-GEL3
+Telephone No.:  (617) 603-6406
+Facsimile No.:   (503) 258-5962
+With a copy to:
+Aurora Loan Services LLC, as Master Servicer
+2530 South Parker Road, Suite 601
+Aurora, CO 80014
+Attention: Todd Whittemore
+Telephone No.: (720) 945-3422
+Facsimile No.:  (302) 632-3123
+(b)
+Process Agent. For the purposes of Section 13(c) of this Agreement:
+Party A appoints as its Process Agent: Not Applicable.
+Party B appoints as its Process Agent:  Not Applicable.
+(c)
+Offices. The provisions of Section 10(a) will not apply to this Agreement.
+(d)
+Multibranch Party. For the purpose of Section 10(c) of this Agreement:
+Party A is not a Multibranch Party.
+Party B is not a Multibranch Party.
+(e)
+Calculation Agent. The Calculation Agent is Party A.
+(f)
+Credit Support Document. Credit Support Document means
+With respect to Party A:  The Guaranty of Swiss Reinsurance Company, dated on or about the date of this Agreement..
+With respect to Party B:  The Trust Agreement.
+(g)
+Credit Support Provider.
+Credit Support Provider means in relation to Party A: Swiss Reinsurance Company.
+Credit Support Provider means in relation to Party B: Not Applicable.
+(h)
+Governing Law. This Agreement will be governed by and construed in accordance with the laws of the State of New York (without reference to choice of law doctrine other than Sections 5-1401 and 5-1402 of the New York General Obligations Law).
+(i)
+Netting of Payments. Subparagraph (ii) of Section 2(c) of this Agreement will apply to all Transactions (in each case starting from the date of this Agreement).
+(j)
+" Affiliate" will have the meaning specified in Section 14 of this Agreement, provided that Party B shall be deemed to have no Affiliates.
+(k)
+Jurisdiction. Section 13(b) is hereby amended by: (i) deleting in the second line of subparagraph (i) thereof the word "non-": and (ii) deleting the final paragraph thereof.
+(l)
+Waiver of Jury Trial. Each party waives, to the fullest extent permitted by applicable law, any right it may have to a trial by jury in respect of any suit, action or proceeding relating to this Agreement or any Credit Support Document. Each party certifies (i) that no representative, agent or attorney of the other party or any Credit Support Provider has represented, expressly or otherwise, that such other party would not, in the event of such a suit, action or proceeding, seek to enforce the foregoing waiver and (ii) acknowledges that it and the other party have been induced to enter into this Agreement and provide for any Credit Support Document, as applicable, by, among other things, the mutual waivers and certifications in this Section.
+(m)
+Consent to Recording. Each party (i) consents to the recording of the telephone conversations of trading and marketing personnel of the parties and their Affiliates in connection with this Agreement or any potential transaction and (ii) if applicable, agrees to obtain any necessary consent of, and give notice of such recording to, such personnel of it and its Affiliates.
+(n)
+Severability.  If any term, provision, covenant, or condition of this Agreement, or the application thereof to any party or circumstance, shall be held to be illegal, invalid or unenforceable (in whole or in part) for any reason, the remaining terms, provisions, covenants and conditions hereof shall continue in full force and effect as if this Agreement had been executed with the illegal, invalid or unenforceable portion eliminated, so long as this Agreement as so modified continues to express, without material change, the original intentions of the parties as to the subject matter of this Agreement and the deletion of such portion of this Agreement will not substantially impair the respective benefits or expectations of the parties to this Agreement.
+Part 5.
+Other Provisions.
+(a)
+Definitions.
+This Agreement, including each Confirmation and each Swap Transaction, is subject to the 2000 ISDA Definitions, as amended, supplemented, updated, and superseded from time to time (the "Definitions"), as published by the International Swaps and Derivatives Association, Inc. ("ISDA") and will be governed in all respects by the Definitions (except that references to "Swap Transactions" shall be deemed to be references to "Transactions"). The Definitions are incorporated by reference in, and made part of, this Agreement and each Confirmation as if set forth in full in this Agreement and such Confirmations. In the event of any inconsistency between the provisions of this Agreement and the Definitions, this Agreement will prevail (and, in the event of any inconsistency between any Confirmation and the Definitions, the Confirmation will control). Any reference in a Confirmation to any Definitions which are amended or supplemented in this Schedule shall be deemed to be a reference to such Definitions as so amended or supplemented, unless the Confirmation states, by specific reference to any such amendment or supplement, that such amendment or supplement will not apply in respect of the Transaction to which such Confirmation relates. Any capitalized terms used but not otherwise defined in this Agreement shall have the meanings assigned to them (or incorporated by reference) in the Trust Agreement.
+(b)
+Downgrade Provisions.
+(1)
+It shall be a collateralization event (Collateralization Event) if (A) either (i) the unsecured, long-term senior debt obligations of Party A (or its Credit Support Provider) are rated below "A1" by Moody's Investors Service, Inc. (Moody's) or are rated "A1" by Moody's and such rating is on watch for possible downgrade (but only for so long as it is on watch for possible downgrade) or (ii) the unsecured, short-term debt obligations of Party A (or its Credit Support Provider) are rated below "P-1" by Moody's or are rated "P-1" by Moody's and such rating is on watch for possible downgrade (but only for so long as it is on watch for possible downgrade), (B) no short-term rating is available from Moody's and the unsecured, long-term senior debt obligations of Party A (or its Credit Support Provider) are rated below "Aa3" by Moody's or are rated "Aa3" by Moody's and such rating is on watch for possible downgrade (but only for so long as it is on watch for possible downgrade), (C) or either (i) the unsecured, short-term debt obligations of Party A (or its Credit Support Provider) are rated below "A-1" by Standard & Poor's Rating Services, a division of The McGraw-Hill Companies, Inc. (S &P) or (ii) if Party A (or its Credit Support Provider) does not have a short-term rating from S&P, the unsecured, long-term senior debt obligations of Party A (or its Credit Support Provider) are rated below "A+" by S&P, or
+(D) the unsecured, long-term senior debt obligations or financial strength ratings of Party A (or its Credit Support Provider) are rated below "A+" by Fitch, Inc. (Fitch , which together with Moody's and S&P, the Rating Agencies). For the avoidance of doubt, the parties hereby acknowledge and agree that notwithstanding the occurrence of a Collateralization Event, this Agreement and each Transaction hereunder shall continue to qualify as a Swap Agreement for purposes of the distribution priorities in Sections 5.02 of the Trust Agreement.  Within 30 days from the date a Collateralization Event has occurred and so long as such Collateralization Event is continuing, Party A shall either (i) post collateral according to the terms of an ISDA 1994 New York Law Credit Support Annex, which shall receive prior written confirmation from each of the Rating Agencies that their then-current ratings of the Class A Certificates, the Class M1 Certificates, the Class M2 Certificates, the Class M3 Certificates, the Class M4 Certificates, the Class M5 Certificates or the Class M6 Certificates will not be downgraded or withdrawn by such Rating Agency (the Rating Agency Condition), or (ii) obtain a substitute counterparty that (a) is reasonably acceptable to Party B and satisfies the Rating Agency Condition, (b) satisfies the Hedge Counterparty Ratings Requirement (as defined herein) and (c) assumes the obligations of Party A under this Agreement (through an assignment and assumption agreement in form and substance reasonably satisfactory to Party B) or replaces the outstanding Transactions hereunder with transactions on identical terms, except that Party A shall be replaced as counterparty, provided that such substitute counterparty, as of the date of such assumption or replacement, will not, as a result thereof, be required to withhold or deduct on account of tax under the Agreement or the new transactions, as applicable, and such assumption or replacement will not lead to a termination event or event of default occurring under the Agreement or new transactions, as applicable.   To the extent that Party A elects or is required to post collateral pursuant to this Part 5(b)(1), Party A shall request its legal counsel to deliver to each applicable Rating Agency within thirty (30) calendar days of the occurrence of such Collateralization Event an opinion as to the enforceability of the ISDA Credit Support Annex.
+(2)
+It shall be a ratings event (Ratings Event) if at any time after the date hereof Party A shall fail to satisfy the Hedge Counterparty Ratings Threshold.
+Hedge Counterparty Ratings Threshold shall mean (A) the unsecured, long-term senior debt obligations of Party A (or its Credit Support Provider) are rated at least "BBB-" by S&P, (B) either (i) the unsecured, long-term senior debt obligations of Party A (or its Credit Support Provider) are rated at least "A2" by Moody's (and such rating is not on watch for possible downgrade) and the unsecured, short-term debt obligations of Party A (or its Credit Support Provider) are rated at least "P-1" by Moody's (and such rating is not on watch for possible downgrade) or (ii) if Party A (or its Credit Support Provider) does not have a short-term rating from Moody's, the unsecured, long-term senior debt obligations of Party A (or its Credit Support Provider) are rated at least "A1" by Moody's, and (C) either (i) the unsecured, senior debt obligations or financial strength ratings of Party A (or its Credit Support Provider) are rated at least "A+" by Fitch, Inc.
+(Fitch) or (ii) the unsecured, short-term debt obligations (if any) of Party A (or its Credit Support Provider) are rated at least "F1" by Fitch.
+For the avoidance of all doubts, the parties hereby acknowledge and agree that notwithstanding the occurrence of a Ratings Event, this Agreement and each Transaction hereunder shall continue to qualify as a Hedge Agreement for purposes of the Priority of Payments (as defined below).
+(3)
+Following a Ratings Event, Party A shall take the following actions:
+(a)
+Party A, at its sole expense, shall (i) commence actively to seek to obtain a substitute counterparty that (A) satisfies the Rating Agency Condition, (B) satisfies the Hedge Counterparty Ratings Requirement (as defined below) and
+(C) assumes the obligations of Party A under this Agreement (through an assignment and assumption agreement in form and substance reasonably satisfactory to Party B) or replaces the outstanding Transactions hereunder with transactions on identical terms, except that Party A shall be replaced as counterparty, provided that such substitute counterparty, as of the date of such assumption or replacement, will not, as a result thereof, be required to withhold or deduct on account of tax under the Agreement or the new transactions, as applicable, and such assumption or replacement will not lead to a termination event or event of default occurring under the Agreement or new transactions, as applicable, and (ii) be required to post collateral as set forth in (b) below;
+(b)
+If Party A has not obtained a substitute counterparty as set forth in (3)(a) above within 30 days (or, in the case of a failure to meet the requirements of subparagraph (A) of the definition of "Hedge Counterparty Ratings Threshold", within 15 Business Days) of the Ratings Event, then Party A shall continue to seek a substitute counterparty and, on or prior to the expiration of such period, post collateral according to the terms of an ISDA 1994 New York Law Credit Support Annex.  Notwithstanding anything contained herein to the contrary, if Party A is required to transfer its rights and obligations under this Agreement pursuant to this Part 5(b)(3) as a result of a rating issued by S&P, Party A shall, at all times prior to such transfer, be required to post collateral in accordance with (i) the terms of an ISDA 1994 New York Law Credit Support Annex or (ii) an agreement with Party B providing for the posting of collateral, which agreement shall satisfy the Rating Condition and require Party A to post the required collateral.
+Hedge Counterparty Ratings Requirement shall mean (a) either (i) the unsecured, short-term debt obligations of the substitute counterparty (or its Credit Support Provider) are rated at least "A-1" by S&P or (ii) if the substitute counterparty does not have a short-term rating from S&P, the unsecured, long-term senior debt obligations of the substitute counterparty (or its Credit Support Provider) are rated at least "A+" by S&P, (b) either
+(i) the unsecured, long-term senior debt obligations of such substitute counterparty (or its Credit Support Provider) are rated at least "A1" by Moody's (and if rated "A1" by Moody's, such rating is not on watch for possible downgrade) and the unsecured, short-term debt obligations of such substitute counterparty (or its Credit Support Provider) are rated at least "P-1" by Moody's (and if rated "P-1" by Moody's, such rating is not on watch for possible downgrade and remaining on watch for possible downgrade), or (ii) if such substitute counterparty (or its Credit Support Provider) does not have a short-term debt rating from Moody's, the unsecured, long-term senior debt obligations of such substitute counterparty (or its Credit Support Provider) are rated at least "Aa3" by Moody's (and if rated "Aa3" by Moody's, such rating is not on watch for possible downgrade), and (c) either (i) the unsecured, long-term senior debt obligations of such substitute counterparty (or its Credit Support Provider) are rated at least "A+" by Fitch or (ii) the unsecured, short-term debt obligations of such substitute counterparty (or its Credit Support Provider) are rated at least "F1" by Fitch. For the purpose of this definition, no direct or indirect recourse against one or more shareholders of the substitute counterparty (or against any Person in control of, or controlled by, or under common control with, any such shareholder) shall be deemed to constitute a guarantee, security or support of the obligations of the substitute counterparty.
+(c)
+Section 3(a) of this Agreement is hereby amended to include the following additional representations after paragraph 3(a)(v):
+(vi) Eligible Contract Participant. It is an "eligible contract participant" as defined in the U.S. Commodity Exchange Act.
+(vii) Individual Negotiation. This Agreement and each Transaction hereunder is subject to individual negotiation by the parties.
+(viii) Relationship between Party A and Party B. Each of Party A and Party B will be deemed to represent to the other on the date on which it enters into a Transaction or an amendment thereof that (absent a written agreement between Party A and Party B that expressly imposes affirmative obligations to the contrary for that Transaction):
+(1)
+Principal. It is acting as principal and not as agent when entering into this Agreement and each Transaction.
+(2)
+Non-Reliance. It is acting for its own account and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisors as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction; it being understood that information and explanations related to the terms and conditions of a Transaction shall not be considered investment advice or a recommendation to enter into that Transaction. No communication (written or oral) received from the other party shall be deemed to be an assurance or guarantee as to the expected results of that Transaction.
+(3)
+Evaluation and Understanding. It is capable of evaluating and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of this Agreement and each Transaction hereunder. It is also capable of assuming, and assumes, all financial and other risks of this Agreement and each Transaction hereunder.
+(4)
+Status of Parties. The other party is not acting as a fiduciary or an advisor for it in respect of that Transaction.
+(d)
+Section 4 is hereby amended by adding the following new agreement:
+(f) Actions Affecting Representations. Party B agrees not to take any action during the term of this Agreement or any Transaction hereunder that renders or could render any of the representations and warranties in this Agreement untrue, incorrect, or incomplete, and if any event or condition occurs that renders or could render any such representation untrue, incorrect, or incomplete, Party B will immediately give written notice thereof to Party A.
+(e)
+Section 1(c).  For purposes of Section 1(c) of the Agreement, this Transaction shall be the sole Transaction under the Agreement.
+(f)
+Transfer.  Section 7 is hereby amended to read in its entirety as follows:
+Except as stated under Section 6(b)(ii), in this Section 7, and Part 5(e) of the Schedule, neither Party A nor Party B is permitted to assign, novate or transfer (whether by way of security or otherwise) as a whole or in part any of its rights, obligations or interests under this Agreement or any Transaction without the prior written consent of the other party; provided , however , that (i) Party A may make such a transfer of this Agreement pursuant to a consolidation or amalgamation with, or merger with or into, or transfer of substantially all of its assets to, another entity, or an incorporation, reincorporation or reconstitution, and (ii) Party A may transfer this Agreement to any Person, including, without limitation, another of Party A's offices, branches or affiliates (any such Person, office, branch or affiliate, a "Transferee") on at least five Business Days' prior written notice to Party B and the Trustee; provided that, with respect to clause (ii), (A) as of the date of such transfer the Transferee will not be required to withhold or deduct on account of a Tax from any payments under this Agreement unless the Transferee will be required to make payments of additional amounts pursuant to Section 2(d)(i)(4) of this Agreement in respect of such Tax (B) a Termination Event or Event of Default does not occur under this Agreement as a result of such transfer; (C) such notice is accompanied by a written instrument pursuant to which the Transferee acquires and assumes the rights and obligations of Party A so transferred; and (D) Party A will be responsible for any costs or expenses incurred in connection with such transfer.  Party B will execute such documentation as is reasonably deemed necessary by Party A for the effectuation of any such transfer.
+Notwithstanding the foregoing, no such transfer or assignment (including a transfer or assignment made pursuant to Section 6(b)(ii)) shall be made unless the transferring party obtains a written acknowledgment from each of the Rating Agencies that, notwithstanding such transfer or assignment, the then- current ratings of the Class A Certificates, the Class M1 Certificates, the Class M2 Certificates, the Class M3 Certificates, the Class M4 Certificates, the Class M5 Certificates or the Class M6 Certificates will not be reduced or withdrawn.
+Except as specified otherwise in the documentation evidencing a transfer, a transfer of all the obligations of Party A made in compliance with this Section 7 will constitute an acceptance and assumption of such obligations (and any related interests so transferred) by the Transferee, a novation of the transferee in place of Party A with respect to such obligations (and any related interests so transferred), and a release and discharge by Party B of Party A from, and an agreement by Party B not to make any claim for payment, liability, or otherwise against Party A with respect to, such obligations from and after the effective date of the transfer.
+(g)
+Trustee Capacity.  It is expressly understood and agreed by the parties hereto that (i) this Agreement is executed and delivered by U.S. Bank National Association not individually or personally but solely as trustee of Supplemental Interest Trust, Structured Asset Securities Corporation Mortgage Pass-Through Certificates, Series 2005-GEL3, in the exercise of the powers and authority conferred and vested in it, (ii) each of the representations, undertakings and agreements herein made on the part of Supplemental Interest Trust, Structured Asset Securities Corporation Mortgage Pass-Through Certificates, Series 2005-GEL3 is made and intended not as personal representations, undertakings and agreements by U.S. Bank National Association. but is made and intended for the purpose of binding only Supplemental Interest Trust, Structured Asset Securities Corporation Mortgage Pass-Through Certificates, Series 2005-GEL3, (iii) nothing herein contained shall be construed as creating any liability on the part of U.S. Bank National Association, individually or personally, to perform any covenant either expressed or implied contained herein, all such liability, if any, being expressly waived by the parties hereto and by any Person claiming by, through or under the parties hereto and (iv) under no circumstances shall U.S. Bank National Association. be personally liable for the payment of any indebtedness or expenses of the Trust or be liable for the breach or failure of any obligation, representation, warranty or covenant made or undertaken by Supplemental Interest Trust, Structured Asset Securities Corporation Mortgage Pass-Through Certificates, Series 2005-GEL3 under this Agreement or any other related documents.
+(h)
+Proceedings.  Without impairing any right afforded to it under the Trust Agreement as a third party beneficiary, Party A shall not institute against or cause any other person to institute against, or join any other person in instituting against Structured Asset Securities Corporation Mortgage Pass- Through Certificates, Series 2005-GEL3 any bankruptcy, reorganization, arrangement, insolvency or liquidation proceedings, or other proceedings under any federal or state bankruptcy, dissolution or similar law, for a period of one year and one day following indefeasible payment in full of the Certificates.  Nothing shall preclude, or be deemed to stop, Party A (i) from taking any action prior to the expiration of the aforementioned one year and one day period, or if longer the applicable preference period then in effect, in (A) any case or proceeding voluntarily filed or commenced by Party B or (B) any involuntary insolvency proceeding filed or commenced by a Person other than Party A, or (ii) from commencing against Party B or any of the Collateral any legal action which is not a bankruptcy, reorganization, arrangement, insolvency, moratorium, liquidation or similar proceeding.
+(i)
+Amendment to ISDA Form.  The "Failure to Pay or Deliver" provision in Section 5(a)(i) of the Agreement is hereby amended by deleting the word "third" in the third line thereof and inserting the word "first" in place thereof.
+(j)
+Change of Account.  Section 2(b) of this Agreement is hereby amended by the addition of the following after the word "delivery" in the first line thereof:-
+"to another account in the same legal and tax jurisdiction as the original account"
+(k)
+Trust Agreement.
+(1)
+Capitalized terms used in this Agreement that are not defined herein and are defined in the Trust Agreement shall have the respective meanings assigned to them in the Trust Agreement.
+(2)
+Party B will provide at least ten days' prior written notice to Party A of any proposed amendment or modification to the Trust Agreement.
+(l)
+Set-off.  Notwithstanding any provision of this Agreement or any other existing or future agreements, each of Party A and Party B irrevocably waives as to itself any and all contractual rights it may have to set off, net, recoup or otherwise withhold or suspend or condition its payment or performance of any obligation to the other party under this Agreement against any obligation of one party hereto to the other party hereto arising outside of this Agreement (which Agreement includes without limitation, the Master Agreement to which this Schedule is attached, this Schedule and the Confirmation).  Accordingly, the provisions for set-off in Section 6(e) of this Agreement shall not apply for purposes of this Transaction.
+(m)
+Notice of Certain Events or Circumstances.  Each party agrees, upon learning of the occurrence or existence of any event or condition that constitutes (or that with the giving of notice or passage of time or both would constitute) an Event of Default or Termination Event with respect to such party, promptly to give the other party  notice of such event or condition (or, in lieu of giving notice of such event or condition in the case of an event or condition that with the giving of notice or passage of time or both would constitute an Event of Default or Termination Event with respect to the party, to cause such event or condition to cease to exist before becoming an Event of Default or Termination Event); provided that failure to provide notice of such event or condition pursuant to this Part 5(n) shall not constitute an Event of Default or a Termination Event.
+(n)
+Regarding Party A.  Party B acknowledges and agrees that Party A has had and will have no involvement in and, accordingly Party A accepts no responsibility for:  (i) the establishment, structure, or choice of assets of Party B; (ii) the selection of any person performing services for or acting on behalf of Party B; (iii) the selection of Party A as the Counterparty; (iv) the terms of the Certificates; (v) the preparation of or passing on the disclosure and other information contained in any offering circular for the Certificates, the Trust Agreement, or any other agreements or documents used by Party B or any other party in connection with the marketing and sale of the Certificates; (vi) the ongoing operations and administration of Party B, including the furnishing of any information to Party B which is not specifically required under this Agreement; or (vii) any other aspect of Party B's existence.
+(o)  Regarding Party B.  The liability of Party B under this Agreement is limited in recourse to the assets of the Trust Fund and the Supplement Interest Trust (each term, as defined in the Trust Agreement), and to distributions of interest proceeds and principal proceeds thereon applied in accordance with the terms of the Trust Agreement.   Upon application of all of the assets of the Trust Fund and the Supplemental Interest Trust (and proceeds thereof) in accordance with the Trust Agreement, Party A shall not be entitled to take any further steps against Party B or recover any sums due but still unpaid hereunder or thereunder, all claims in respect of which shall be extinguished.
+(p)
+Rating Agency Condition.  This Agreement will not be amended unless Party B shall have satisfied the Rating Agency Condition.
+IN WITNESS WHEREOF , the parties have executed this document by their duly authorized officers with effect from the date so specified on the first page hereof.
+SWISS RE FINANCIAL PRODUCTS   CORPORATION 	 SUPPLEMENTAL INTEREST TRUST, STRUCTURED ASSET SECURITIES CORPORATION MORTGAGE PASS- THROUGH CERTIFICATES, SERIES 2005-GEL3
+("Party A") ("Party B") By: U.S. BANK NATIONAL ASSOCIATION, NOT IN ITS INDIVIDUAL CAPACITY BUT SOLELY AS TRUSTEE By:       /s/ Robert Spuler             Name: Robert Spuler Title:   Senior Vice President 	 By:       /s/ Diana J. Kenneally                                  Name: Diana J. Kenneally Title:    Assistant Vice President
+SWISS RE FINANCIAL PRODUCTS CORPORATION
+55 East 52nd Street
+New York, New York 10055
+Fax: (212) 317-5335/Phone: (212) 317-5161
+DATE:
+June 30, 2005
+TO:
+Supplemental Interest Trust,
+Structured Asset Securities Corporation
+Mortgage Pass-Through Certificates, Series 2005-GEL3 ("Party B")
+c/o U.S. Bank National Association
+One Federal Street
+3rd Floor
+Boston, MA 02110
+FROM:
+Swiss Re Financial Products Corporation ("Party A")
+RE:
+Swap Transaction
+Dear Sir or Madam:
+The purpose of this letter agreement (this "Confirmation") is to confirm the terms and conditions of the Transaction entered into between us on the Trade Date specified below (the "Transaction").
+The definitions and provisions contained in the 2000 ISDA Definitions as published by the International Swaps and Derivatives Association, Inc. are incorporated into this Confirmation.  In the event of any inconsistency between those definitions and provisions and this Confirmation, this Confirmation will govern.
+This Confirmation constitutes a "Confirmation" as referred to in, and supplements, forms part of and is subject to, the ISDA Master Agreement dated as of June 30 2005, as amended and supplemented from time to time (the "Agreement") between Party A and Party B.  All provisions contained in the Agreement govern this Confirmation except as expressly modified below.
+1.
+The Swap Transaction to which this Confirmation relates is a Rate Swap Transaction, the terms of which are as follow:
+General Terms Trade Date: 	 June 27, 2005 Effective Date:  	 July 25, 2005 Termination Date:  	 June 25, 2010, subject to adjustment in accordance with the Following Business Day Convention Notional Amount:  	 See Amortization Schedule, Schedule A Fixed Amounts:
+Fixed Rate Payer: 	 Party B Fixed Rate Payer Period End Dates: 	 The 25th day of each month of each year, subject to adjustment in accordance with the Following Business Day Convention.
+Fixed Rate Payer Payment Dates: 	 1 Business Day prior to the 25th day of each month of each year, commencing on August 24, 2005 to and including the Termination Date Fixed Rate 	 See Amortization Schedule, Schedule A Fixed Rate Day Count Fraction: 	 Actual/360 Floating Amounts:
+Floating Rate Payer: 	 Party A Floating Rate Payer Period End Dates: 	 The 25th day of each month of each year, subject to adjustment in accordance with the Following Business Day Convention.
+Floating Rate Payer Payment Dates: 	 1 Business Day prior to the 25th day of each month of each year, commencing on August 24, 2005 to and including the Termination Date Floating Rate Option: 	 USD-LIBOR-BBA Designated Maturity: 	 One month Spread: 	 None Floating Rate Day Count Fraction: 	 Actual/360 Floating Rate Payer Upfront Payment: 	 USD 816,000.  Party A shall pay to Lehman Brothers Holdings Inc. the Floating Rate Payer Upfront Payment on or prior to June 30, 2005.
+Reset Dates: 	 The first day of each Calculation Period.
+Compounding: 	 Inapplicable
+Business Days: 	 Any day other than (i) a Saturday or a Sunday, or (ii) a day on which banking institutions in (1) Minneapolis, MN or, if other than Minneapolis, the city in which the Corporate Trust Office of the Trustee is located, or (2) the States of Massachusetts, Colorado and New York are closed.
+2. 	 Procedural Terms:
+Calculation Agent: 	 Party A Offices: 	 The Office of Party A for the Swap Transaction is New York Account Details:
+Payments to Party A: 	 JPMorgan Chase Bank SWIFT: CHASUS33  For the Account of Swiss Re Financial Products Corporation Account No.: 066-911184  ABA# 021000021 Payments to Party B: 	 U.S. Bank, National Association ABA # 091-000-022 DDA # 173-103-321-118 Ref: SASCO 05-GEL3 Swap Payment Attn: D. Kenneally Trust Account #790045-100 Payments to Lehman Brothers Holdings Inc: 	 Citibank ABA: 021000089 Acct: 4061-5624 Acct Name: Lehman Brothers Inc. Ref: SASCO 2005-GEL3 Attn: Frank Affronti
+Please confirm that the foregoing correctly sets forth the terms and conditions of our agreement by executing this Confirmation and returning it to us by facsimile to:
+Swiss Re Financial Products Corporation
+Attention: Derivatives Documentation
+Fax: (212) 317-5335 Phone: (212) 317-5161
+SWISS RE FINANCIAL PRODUCTS CORPORATION
+By:   /s/ Robert Spuler
+Authorized Signatory
+Accepted and confirmed as of the Trade Date written above:
+SUPPLEMENTAL INTEREST TRUST,
+STRUCTURED ASSET SECURITIES CORPORATION
+MORTGAGE PASS-THROUGH CERTIFICATES, SERIES 2005-GEL3
+By: U.S. Bank, National Association not in its individual capacity, but solely as Trustee
+By:           /s/ Diana J. Kenneally
+Name: Diana J. Kenneally
+Title:   Assistant Vice President
+SCHEDULE A to the Confirmation dated as of June 30, 2005,
+Re: Reference Number 639299
+Amortization Schedule, subject to adjustment in accordance with the Following Business Day Convention
+From and including 	 To but excluding 	 Notional Amount (USD) 	 Fixed Rate July 25, 2005 	 August 25, 2005 	  216,101,342.42  	 3.603% August 25, 2005 	 September 25, 2005 	  208,481,206.23  	 3.771% September 25, 2005 	 October 25, 2005 	  201,129,770.24  	 3.884% October 25, 2005 	 November 25, 2005 	  194,037,559.60  	 3.992% November 25, 2005 	 December 25, 2005 	  187,195,433.52  	 4.022% December 25, 2005 	 January 25, 2006 	  180,594,573.56  	 4.031% January 25, 2006 	 February 25, 2006 	  174,226,472.23  	 4.068% February 25, 2006 	 March 25, 2006 	  168,082,922.03  	 4.093% March 25, 2006 	 April 25, 2006 	  162,156,004.86  	 4.118% April 25, 2006 	 May 25, 2006 	  156,438,081.83  	 4.144% May 25, 2006 	 June 25, 2006 	  148,835,331.69  	 4.157% June 25, 2006 	 July 25, 2006 	  141,602,068.37  	 4.177% July 25, 2006 	 August 25, 2006 	  134,720,335.15  	 4.197% August 25, 2006 	 September 25, 2006 	  128,173,047.98  	 4.218% September 25, 2006 	 October 25, 2006 	  121,943,953.07  	 4.240% October 25, 2006 	 November 25, 2006 	  116,017,586.58  	 4.260% November 25, 2006 	 December 25, 2006 	  109,506,019.79  	 4.325% December 25, 2006 	 January 25, 2007 	  103,359,919.17  	 4.279% January 25, 2007 	 February 25, 2007 	    97,558,772.66  	 4.285% February 25, 2007 	 March 25, 2007 	    92,083,219.49  	 4.275% March 25, 2007 	 April 25, 2007 	    86,914,985.51  	 4.281% April 25, 2007 	 May 25, 2007 	    82,036,822.21  	 4.289% May 25, 2007 	 June 25, 2007 	    74,205,415.36  	 4.314% June 25, 2007 	 July 25, 2007 	    67,121,611.00  	 4.319% July 25, 2007 	 August 25, 2007 	    60,714,041.45  	 4.323% August 25, 2007 	 September 25, 2007 	    54,918,151.91  	 4.327% September 25, 2007 	 October 25, 2007 	    49,675,550.11  	 4.333% October 25, 2007 	 November 25, 2007 	    44,933,418.07  	 4.339% November 25, 2007 	 December 25, 2007 	    42,411,499.10  	 4.345% December 25, 2007 	 January 25, 2008 	    40,031,124.56  	 4.351% January 25, 2008 	 February 25, 2008 	    37,784,350.18  	 4.357% February 25, 2008 	 March 25, 2008 	    35,663,677.56  	 4.363% March 25, 2008 	 April 25, 2008 	    33,662,029.14  	 4.369% April 25, 2008 	 May 25, 2008 	    31,772,724.62  	 4.375% May 25, 2008 	 June 25, 2008 	    29,989,458.61  	 4.380% June 25, 2008 	 July 25, 2008 	    28,306,279.63  	 4.385% July 25, 2008 	 August 25, 2008 	    26,717,570.23  	 4.391% August 25, 2008 	 September 25, 2008 	    25,218,028.24  	 4.397% September 25, 2008 	 October 25, 2008 	    23,802,649.07  	 4.403% October 25, 2008 	 November 25, 2008 	    22,466,709.03  	 4.410% November 25, 2008 	 December 25, 2008 	    21,205,749.55  	 4.418% December 25, 2008 	 January 25, 2009 	    20,015,562.28  	 4.426% January 25, 2009 	 February 25, 2009 	    18,892,175.09  	 4.435% February 25, 2009 	 March 25, 2009 	    17,831,838.78  	 4.444% March 25, 2009 	 April 25, 2009 	    16,831,014.57  	 4.454% April 25, 2009 	 May 25, 2009 	    15,886,362.31  	 4.464% From and including 	 To but excluding 	 Notional Amount (USD) 	 Fixed Rate May 25, 2009 	 June 25, 2009 	    14,994,729.31  	 4.475% June 25, 2009 	 July 25, 2009 	    14,153,139.82  	 4.487% July 25, 2009 	 August 25, 2009 	    13,358,785.12  	 4.497% August 25, 2009 	 September 25, 2009 	    12,609,014.12  	 4.507% September 25, 2009 	 October 25, 2009 	    11,901,324.54  	 4.516% October 25, 2009 	 November 25, 2009 	    11,233,354.52  	 4.524% November 25, 2009 	 December 25, 2009 	    10,602,874.77  	 4.531% December 25, 2009 	 January 25, 2010 	    10,007,781.14  	 4.538% January 25, 2010 	 February 25, 2010 	      9,446,087.54  	 4.544% February 25, 2010 	 March 25, 2010 	      8,915,919.39  	 4.548% March 25, 2010 	 April 25, 2010 	      8,415,507.29  	 4.553% April 25, 2010 	 May 25, 2010 	      7,943,181.15  	 4.556% May 25, 2010 	 June 25, 2010 	      7,497,364.65  	 4.559%

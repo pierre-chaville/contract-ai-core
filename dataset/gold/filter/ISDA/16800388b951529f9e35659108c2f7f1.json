@@ -1,0 +1,13 @@
+{
+  "filename": "16800388b951529f9e35659108c2f7f1.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 288,
+      "end_line": 401,
+      "confidence": 0.98,
+      "explanation": "Lines 288-401 contain the full text of the Schedule to the ISDA Master Agreement, including all its Parts (1-5), the elections, representations, notice details, and signature blocks. The Schedule begins at line 288 with the heading 'SCHEDULE TO THE MASTER AGREEMENT DATED AS OF JUNE 30, 2004' and ends at line 401 with the signature block. This span excludes the standard pre-printed Master Agreement, CSA annexes, and Confirmations, focusing solely on the Schedule as requested."
+    }
+  ]
+}

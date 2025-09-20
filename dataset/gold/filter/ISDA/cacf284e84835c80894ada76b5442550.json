@@ -1,0 +1,13 @@
+{
+  "filename": "cacf284e84835c80894ada76b5442550.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 240,
+      "end_line": 380,
+      "confidence": 0.98,
+      "explanation": "The ISDA Schedule begins at line 240 (\"SCHEDULE to the Master Agreement\") and continues through the signature blocks at line 380. This section contains the negotiated terms between the parties, including Termination Provisions, Tax Representations, Agreement to Deliver Documents, Miscellaneous, Other Provisions, and FX Transactions and Currency Options, which are all standard parts of the ISDA Schedule. The lines before 240 are the standard pre-printed Master Agreement, and there is no evidence of a CSA annex in this span."
+    }
+  ]
+}

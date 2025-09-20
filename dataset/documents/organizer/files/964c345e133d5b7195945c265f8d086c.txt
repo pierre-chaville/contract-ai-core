@@ -49,3 +49,480 @@ For the purpose of Sections 4(a)(i) and (ii) of this Agreement, each party agree
 (a) TAX FORMS, DOCUMENTS OR CERTIFICATES TO BE DELIVERED ARE:
 PARTY REQUIRED TO DELIVER       FORM/DOCUMENT/CERTIFICATE          DATE BY WHICH TO BE DELIVERED DOCUMENT
 Party A and Party B             Any document or certificate        On the earlier of (a) reasonably required or             learning that such reasonably requested by a          document or certificate party in connection with its       is required and (b) as obligations to make a              soon as reasonably payment under this Agreement       practicable following a which would enable that            request by a party.
+party to make the payment free from any deduction or withholding for or on account of Tax or which would reduce the rate at which deduction or withholding for or on account of Tax is applied to that payment (including, without limitation, any United States form W-8BEN or other relevant United States tax form).
+(b) OTHER DOCUMENTS TO BE DELIVERED ARE:
+PARTY REQUIRED TO DELIVER       FORM/DOCUMENT/CERTIFICATE          DATE BY WHICH TO BE DELIVERED DOCUMENT
+Party A, Party B and            A certificate specifying the       On the execution of this the Manager                     names, title and specimen          Agreement and each signatures of the persons          Confirmation unless that authorised to execute this         certificate has already been Agreement and each                 supplied and remains true and in Confirmation or other              effect and when the certificate communication in writing           updated.
+made pursuant to this  is Agreement on its behalf.
+Party A, Party B and            A legal opinion as to the          Prior to the Closing the Manager                     validity and enforceability        Date.
+of its obligations under this Agreement in form and substance (and issued by legal counsel) reasonably acceptable to each other party.
+Party B                         A certified copy to Party A        Not less than 5 Business of each Credit Support             Days (or such lesser Document specified in              period as Party A agrees respect of Party B and             to) before the Trade (without limiting any              Date of the first obligation Party B may have        occurring Transaction under the terms of that            and in the case of any Credit Support Document to         amending documents notify Party A of amendments       entered into subsequent thereto) a certified copy to       to that date, promptly Party A of any document that       after each amending amends in any way the terms        document (if any) has of that Credit Support             been entered into.
+Document.
+Other than the legal opinions, any Credit Support Document or any document amending a Credit Support Document (but including any certifications in relation to such documents), all documents delivered under
+this Part 3(b) are covered by the Section 3(d) representation. For the purposes of this Part 3(b), a copy of a document is taken to be certified if a director or secretary of the party providing the document, or a person authorised to execute this Agreement or a Confirmation on behalf of that party or a solicitor acting for that party (or in the case of the Credit Support Document in respect of Party B, a solicitor acting for the Manager) has certified it to be a true and complete copy of the document of which it purports to be a copy.
+PART 4.  MISCELLANEOUS
+(a) ADDRESSES FOR NOTICES. For the purpose of Section 12(a) of this Agreement:
+Address for notices or communications to PARTY A:
+Address:        Commonwealth Bank of Australia Level 1 48 Martin Place Sydney  NSW  2000 AUSTRALIA
+Attention:      Manager, Securitisation
+Facsimile No.:  612 9378 2481
+Address for notices or communications to PARTY B:
+Address:        Perpetual Trustee Company Limited Level 7 9 Castlereagh Street Sydney  NSW  2000 AUSTRALIA
+Attention:      Manager, Securitisation Services
+Facsimile No.:  612 9221 7870
+Additionally, a copy of all notices as well as any changes to counterparty's address, telephone number or facsimile number should be sent to:
+Address:        Securitisation Advisory Services Pty. Limited Level 6 48 Martin Place Sydney  NSW  2000 AUSTRALIA
+Attention:      Manager, Securitisation
+Facsimile No.:  612 9378 2481
+(b) PROCESS AGENT. For the purpose of Section 13(c) of this Agreement:
+Party A appoints as its Process Agent: Not applicable.
+Party B appoints as its Process Agent: Not applicable.
+(c) OFFICES. The provisions of Section 10(a) will not apply to this Agreement.
+(d) MULTIBRANCH PARTY. For the purpose of Section 10(c) of this Agreement:
+Party A is not a Multibranch Party.
+Party B is not a Multibranch Party.
+(e) CALCULATION AGENT.
+(i) The Calculation Agent is:
+(A)     in respect of all notices, determinations and calculations in respect of amounts denominated in US$, the Agent Bank; and
+(B)     in respect of all other notices, determinations and calculations, the Manager.
+(ii) All determinations and calculations by the Calculation Agent will:
+(A)     be made in good faith and in the exercise of its commercial reasonable judgment; and
+(B)     be determined, where applicable, on the basis of then prevailing market rates or prices.
+All such determinations and calculations will be binding on Party A and Party B in the absence of manifest error. The Manager (or, if the Manager fails to do so and Party A notifies Party B, Party B) covenants in favour of Party A to use reasonable endeavours (including, without limitation, taking such action as is reasonably necessary to promptly enforce the obligations of the Agent Bank under the Agency Agreement) to ensure that the Agent Bank performs its obligations as Calculation Agent under this Agreement.
+(f) CREDIT SUPPORT DOCUMENT. Details of any Credit Support Document:
+(i) In relation to Party A: Not applicable.
+(ii) In relation to Party B: The Security Trust Deed.
+(g) CREDIT SUPPORT PROVIDER.
+(i) In relation to Party A: None.
+(ii) In relation to Party B: None.
+(h)  GOVERNING LAW. This Agreement will be governed by and construed in accordance with the laws in force in the State of New South Wales, except the Credit Support Annex, which will be governed by and construed in accordance with the laws in force in the State of New York as provided in Paragraph 13(m)(iv) of the Credit Support Annex. Section 13(b)(i) is deleted and replaced by the following:
+"(i)    submits to the non-exclusive jurisdiction of the courts of the State of New South Wales and courts of appeal from them; and".
+(i)  NETTING OF PAYMENTS. Subparagraph (ii) of Section 2(c) of this Agreement will apply in respect of all Transactions.
+(j)  "AFFILIATE" will have the meaning specified in Section 14 of this Agreement. However, for the purposes of Section 3(c) Party A and Party B are deemed not to have any Affiliates.
+PART 5.  OTHER PROVISIONS
+(1) PAYMENTS: In Section 2:
+(a) In Section 2(a)(i) add the following sentence:
+"Each payment will be by way of exchange for the corresponding payment or payments payable by the other party (if any).".
+(b)     In Section 2(a)(ii) the first sentence is deleted and replaced with the following sentence:
+"Unless specified otherwise in this Agreement, payments under this Agreement by:
+(i) Party A, will be made by 10.00 am (New York time); and
+(ii) Party B, will be made by 4.00pm (Sydney time),
+on the due date for value on that date in the place of the account specified in the relevant Confirmation or otherwise pursuant to this Agreement, in freely transferable funds, free of any set-off, counterclaim, deduction or withholding (except as expressly provided in this Agreement) and in the manner customary for payment in the required currency.".
+(c)     Insert a new paragraph (iv) in Section 2(a) immediately after Section 2(a)(iii) as follows:
+"(iv)   The condition precedent in Section 2(a)(iii)(1) does not apply to a payment due to be made to a party if it has satisfied all its payment obligations under Section 2(a)(i) of this Agreement and has no future payment obligations, whether absolute or contingent under Section 2(a)(i).".
+(d)     Insert a new paragraph (v) in Section 2(a) immediately after Section 2(a)(iv) as follows:
+"(v)    Where payments are due pursuant to Section 2(a)(i) by Party A to Party B (the "PARTY A PAYMENT") and by Party B to Party A (the "PARTY B PAYMENT") on the same day, then Party A's obligation to make the Party A Payment will be subject to the condition precedent (which will be an "applicable condition precedent" for the purpose of Section 2(a)(iii)(3)) that Party A first receives either:
+(1)  the Party B Payment; or
+(2)  confirmation from Party B's bank that it holds irrevocable instructions to effect payment of the Party B Payment and that funds are available to make payment.".
+(e) Add the following new sentence to Section 2(b):
+"Each new account so designated shall be in the same tax jurisdiction as the original account.".
+(f) Delete Section 2(d)(i)(4) in its entirety.
+(g) In Section 2(d)(ii)(1) delete the following words where they appear:
+"in respect of which X would not be required to pay an additional amount to Y under Section 2(d)(i)(4)".
+(2)  PARTY B'S PAYMENT INSTRUCTIONS: Party B irrevocably authorises and instructs Party A to make payment of:
+(i)     the Initial Exchange Amount due from Party A to Party B in respect of the Initial Exchange Date by paying that amount direct to the account notified in writing by Party B to Party A for that purpose; and
+(ii)    any other amount due from Party A to Party B under this Agreement by paying that amount direct to the Principal Paying Agent to the account outside Australia notified in writing by the Principal Paying Agent to Party A for that purpose.
+(3)  PARTY A'S PAYMENT INSTRUCTIONS: Party A irrevocably authorises and instructs Party B to make payment of:
+(i)     any amount denominated in A$ due from Party B to the account in Sydney notified in writing by Party A to Party B from time to time; and (ii)    any amount denominated in US$ due from Party B to the account notified in writing by Party A to Party B from time to time.
+(4) REPRESENTATIONS: In Section 3:
+(a)     Section 3(a)(v) is amended by inserting immediately after the words "creditors' rights generally" the following:
+"(including in the case of a party being an ADI (as that term is defined in the Banking Act, 1959 (Cth)), section 86 of the Reserve Bank Act, 1959 (Cth) and section 13A(3) of the Banking Act, 1959 (Cth) or any other analogous provision under any law applicable to a party).".
+(b)     RELATIONSHIP BETWEEN PARTIES. Each party will be deemed to represent to the other parties on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction):
+(i)    NON-RELIANCE. It is acting for its own account (in the case of Party B, as trustee of the Series Trust), and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment (and in the case of Party B, also on the judgment of the Manager) and upon advice from such advisers as it has deemed necessary. It is not relying on any communication (written or oral) of any other party as investment advice or as a recommendation to enter into that Transaction; it being understood that information and explanations related to the terms and conditions of a Transaction will not be considered investment advice or a recommendation to enter into that Transaction. No communication (written or oral) received from any other party will be deemed to be an assurance or guarantee as to the expected results of that Transaction.
+(ii)   EVALUATION AND UNDERSTANDING. It is capable of evaluating and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction. It is also capable of assuming, and assumes, the risks of that Transaction.
+(iii)  STATUS OF PARTIES. No other party is acting as a fiduciary or an adviser to it in respect of that Transaction.
+(c)     Insert the following new paragraphs (g), (h) and (i) in Section 3 immediately after Section 3(f):
+"(g) SERIES TRUST. By Party B, in respect of Party B only:
+(i)     TRUST VALIDLY CREATED. The Series Trust has been validly created and is in existence at the Trade Date of the first occurring Transaction.
+(ii)    SOLE TRUSTEE. It has been validly appointed as trustee of the Series Trust and is presently the sole trustee of the Series Trust.
+(iii)   NO PROCEEDINGS TO REMOVE. No notice has been given to it and to its knowledge no resolution has been passed, or direction or notice has been given, removing it as trustee of the Series Trust.
+(iv)    POWER. It has power under the Master Trust Deed to:
+(A)     enter into and perform its obligations under this Agreement and each Credit Support Document in relation to Party B in its capacity as trustee of the Series Trust; and
+(B)     mortgage or charge the Assets of the Series Trust in the manner provided in the Credit Support Document in relation to Party B,
+and its entry into this Agreement and each Credit Support Document in relation to Party B is in the interests of the beneficiaries of the Series Trust and does not constitute a breach of trust.
+(v)     GOOD TITLE. It is the lawful owner of the Assets of the Series Trust and, subject only to the Credit Support Document in relation to Party B and any Security Interest permitted under the Credit Support Document in relation to Party B, those Assets are free of all other Security Interests (except for Party B's right of indemnity out of the Assets of the Series Trust).
+(vi)    ELIGIBLE CONTRACT PARTICIPANT. The Series Trust was not formed for the specific purpose of constituting an "eligible contract participant" under the Commodity Exchange Act.
+(vii)   TOTAL ASSETS. As at close of business on the Trade Date of the first occurring Transaction, following the issue of the Relevant Notes and provided that the aggregate Invested Amount of the Relevant Notes upon issue exceeds USD10,000,000, the Series Trust will have total assets exceeding USD10,000,000.
+(h)     NON-ASSIGNMENT. It has not assigned (whether absolutely, in equity, by way of security or otherwise), declared any trust over or given any charge over any of its rights under this Agreement or any Transaction except, in the case of Party B, for the Security Interests created under each Credit Support Document in relation to Party B.
+(i)     CONTRACTING AS PRINCIPAL. Each existing Transaction has been entered into by that party as principal and not otherwise.".
+(5) EVENT OF DEFAULT: In Section 5(a):
+(a)     FAILURE TO PAY OR DELIVER: delete paragraph (i) and replace it with the following:
+"(i)    FAILURE TO PAY OR DELIVER. Failure by the party to make, when due, any payment under this Agreement or delivery under Section 2(a)(i) or 2(e) required to be made by it if such failure is not remedied at or before:
+(1)     where the failure is by Party B, 10.00am on the tenth day after notice of such failure is given to Party B; and
+(2)     where the failure is by Party A, 10.00am on the tenth day after notice of such failure is given to Party A;";
+(b)     CONSEQUENTIAL AMENDMENTS:
+(i)     delete "or" at the end of Section 5(a)(vii); and
+(ii)    replace the full stop at the end of Section 5(a)(viii) with "; or"; and
+(c) DOWNGRADE OBLIGATIONS: insert the following new paragraph (ix):
+"(ix)   DOWNGRADE OBLIGATIONS. In respect of Party A only, Party A fails to comply with Part 5(22) of the Schedule if such failure is not remedied on or before the tenth Business Day (or such later day as Party B and the Manager may agree and which the Rating Agencies confirm in writing will not result in a reduction, qualification or withdrawal of the credit ratings then assigned by them to the Relevant Notes) after notice of such failure is given to Party A.".
+(6)  TERMINATION EVENTS:
+(a) ILLEGALITY: In respect of each Transaction, the parties agree that the imposition by any Governmental Agency of an Australian jurisdiction of any exchange controls, restrictions or prohibitions which would otherwise constitute an Illegality for the purposes of Sections 5(b)(i) or 5(c) will not be an event which constitutes an Illegality for the purposes of those Sections so that, following the occurrence of that event:
+(i)     neither Party A nor Party B will be entitled to designate an Early Termination Date in respect of that Transaction as a result of that event occurring;
+(ii)    payment by Party B in accordance with Part 5(3) of this Schedule will continue to constitute proper performance of its payment obligations in respect of that Transaction; and
+(iii)   Party A's obligations in respect of that Transaction or this Agreement will, to the extent permitted by law, be unaffected by the occurrence of that event.
+(b) PARTY A'S LIMITED RIGHTS IN RELATION TO TAX EVENT:
+(i)     Notwithstanding Part 1(c)(iii) of this Schedule, but subject to Section 6(b)(ii), Party A may designate an Early Termination Date if it is an Affected Party following a Tax Event but only if the Relevant Note Trustee has notified the parties in writing that it is satisfied that all amounts owing to the Relevant Noteholders will be paid in full on the date on which the Relevant Notes are to be redeemed.
+9
+(ii)    If a Tax Event occurs where Party A is the Affected Party and Party A is unable to transfer all its rights and obligations under this Agreement and each Transaction to an Affiliate pursuant to Section 6(b)(ii), Party A may, at its cost, transfer all its rights, powers and privileges and all its unperformed and future obligations under this Agreement and each Transaction to any person provided that:
+(A)     each Rating Agency has confirmed in writing that the transfer will not result in a reduction, qualification or withdrawal of the credit ratings then assigned by them to the Relevant Notes; and
+(B)     that person has a long term credit rating assigned by each Rating Agency of at least the long term credit rating assigned by that Rating Agency to Party A, as at the date of this Agreement.
+(7)  TERMINATION:
+(a)     TERMINATION BY TRUSTEE: Party B must not designate an Early Termination Date without the prior written consent of the Relevant Note Trustee.
+(b)     TERMINATION BY THE RELEVANT NOTE TRUSTEE: If following an Event of Default or Termination Event, Party B does not exercise its right to terminate a Transaction, then the Relevant Note Trustee may designate an Early Termination Date in relation to that Transaction as if it were a party to this Agreement.
+(c)     TERMINATION PAYMENTS BY PARTY B: Notwithstanding Section 6(d)(ii), any amount calculated as being due by Party B in respect of any Early Termination Date under Section 6(e) will be payable on the Distribution Date immediately following the date that such amount would otherwise be payable under Section 6(d)(ii) (or will be payable on that date if that date is a Distribution Date) except to the extent that such amount may be satisfied from an earlier distribution under the Security Trust Deed or the payment of an upfront premium in respect of a Replacement Currency Swap in accordance with Part 5(17)(b) of this Schedule.
+(d)     TRANSFERS TO AVOID TERMINATION: Section 6(b)(ii) is amended as follows:
+(i)    The following sentence is added at the end of the second paragraph:
+"However, if Party A is that other party it must, if so requested by the Manager, use reasonable efforts (which will not require Party A to incur a loss, excluding immaterial, incidental expenses) to make such a transfer to an Affiliate provided the Rating Agencies have given prior written confirmation to the Manager that such a transfer will not result in a reduction, qualification or withdrawal of the credit ratings then assigned by them to the Relevant Notes.".
+(ii)   The third paragraph is deleted and replaced with the following:
+"Any such transfer by a party under this Section 6(b)(ii) will be subject to and conditional upon the prior written consent of the other party, which consent will not be withheld:
+(1)     where the other party is Party A, if Party A's policies in effect at such time would permit it to enter into transactions with the transferee on the terms proposed; or
+(2)     where the other party is Party B, if the Rating Agencies have confirmed in writing that such transfer will not result in a reduction, qualification or withdrawal of the credit ratings then assigned by them to the Relevant Notes.".
+(e)     DETERMINATION OF MARKET QUOTATION BY PARTY B: If Party B is required to determine a Market Quotation in respect of a Terminated Transaction pursuant to Section 6(e), Party B must consult with Party A in relation to such determination prior to making the determination and must provide to each Reference Market-maker in relation to the Market Quotation such information in relation to the Terminated Transaction, provided by Party A to Party B, as Party A may reasonably request.
+(8)      NO SET-OFF: Section 6(e) is amended by deleting the last sentence of the first paragraph.
+(9)      TRANSFER: Section 7 is replaced with:
+"7.     ESSENTIAL TERM: TRANSFER
+(a)     Neither the interests nor the obligations of any party in or under this Agreement (including any Transaction) are capable of being assigned or transferred (whether at law, in equity or otherwise), charged or the subject of any trust (other than the Series Trust or the trusts created pursuant to the Credit Support Document in relation to Party B) or other fiduciary obligation. Any action by a party which purports to do any of these things is void.
+(b)     Nothing in this Section 7:
+(i)     restricts a transfer by a party after the other parties have agreed to the variation of this Agreement in accordance with Part 5(20) of the Schedule to the extent necessary to permit such transfer;
+(ii)    restricts a novation of the interests and obligations of a party in or under this Agreement (including any Transaction) for the purposes of giving effect to a transfer under Section 6(b)(ii);
+(iii)   restricts a transfer by a party of all or any part of its interest in any amount payable to it from a Defaulting Party under Section 6(e);
+(iv)    restricts a transfer by Party B or the Manager to a Substitute Trustee or Substitute Manager, respectively, in accordance with the Master Trust Deed;
+(v)     restricts Party B from granting security over a Transaction or this Agreement pursuant to any Credit Support Document in relation to Party B; or
+(vi)    limits Parts 5(6)(b)(ii) or 5(22) of the Schedule.
+(c)     Each party acknowledges that the other party enters into this Agreement and each Transaction on the basis that this Section 7 must be strictly observed and is essential to the terms of this Agreement (including each Transaction).".
+(10) FACSIMILE TRANSMISSION: In Section 12:
+(a) delete Section 12(a)(ii); and
+(b) replace Section 12(a)(iii) with:
+"(iii)  if sent by facsimile transmission, on the date a transmission report is produced by the machine from which the facsimile was sent which indicates that the facsimile was sent in its entirety to the facsimile number of the recipient notified for the purpose of this Section unless the recipient notifies the sender within one Business Day of the facsimile being sent that the facsimile was not received in its entirety in legible form;".
+(11)     DEFINITIONS
+In this Agreement, unless the contrary intention appears:
+(a)     MASTER TRUST DEED: subject to Part 5(11)(h) of this Schedule, unless defined in this Agreement words and phrases defined in the Master Trust Deed and the Series Supplement have the same meaning in this Agreement. Subject to Part 5(11)(h) of this Schedule, where there is any inconsistency in a definition between this Agreement (on the one hand) and the Master Trust Deed or the Series Supplement (on the other hand), this Agreement prevails. Where there is any inconsistency in a definition between the Master Trust Deed (on the one hand) and the Series Supplement (on the other hand), the Series Supplement prevails over the Master Trust Deed in respect of the Series Trust. Where words or phrases used but not defined in this Agreement are defined in the Master Trust Deed in relation to a Series Trust (as defined in the Master Trust Deed) such words or phrases are to be construed in this Agreement, where necessary, as being used only in relation to the Series Trust;
+(b)     TRUSTEE CAPACITY:
+(i)     a reference to Party B is a reference to Party B in its capacity as trustee of the relevant Series Trust only, and in no other capacity;
+(ii)    a reference to the undertaking, assets, business or money of Party B is a reference to the undertaking, assets, business or money of Party B in the capacity referred to in paragraph 11(b)(i) only; and
+(iii)   without limiting the foregoing, Section 5(a)(vii) will only apply to Party B in its capacity as trustee of the relevant Series Trust and:
+(A)     reference in Section 5(a)(vii)(1) to Party B being dissolved is to the relevant Series Trust being dissolved;
+(B)     Party B in its capacity as trustee of the relevant Series Trust is not insolvent or unable to pay its debts for the purposes of Section 5(a)(vii)(2) to the extent that its obligation to make any payment is limited by any provision in a Transaction Document in relation to the Series Trust; and
+(C)     the appointment of a Substitute Trustee in relation to the Series Trust in accordance with the Master Trust Deed is not, of itself, an event to which Section 5(a)(vii) applies in relation to Party B.
+(c) DEFINITIONS: in Section 14:
+(i)     replace the definitions of "AFFECTED TRANSACTIONS" and "LOCAL BUSINESS DAY" with the following:
+""AFFECTED TRANSACTIONS" means, with respect to a Termination Event, all Transactions."; and
+""LOCAL BUSINESS DAY" has the same meaning as "BUSINESS DAY"."; and
+(ii)    insert the following new definitions:
+""BBSW" or "AUD-BBR-BBSW" in relation to a Calculation Period means the rate appearing at approximately 10.00 am Sydney time on the Reset Date for that Calculation Period on the Reuters Screen page "BBSW" as being the average of the mean buying and selling rates appearing on that page for a bill of exchange having a tenor of three months . If:
+(a)     on that Reset Date fewer than 4 banks are quoted on the Reuters Screen page "BBSW"; or
+(b)     for any other reason the rate for that day cannot be determined in accordance with the foregoing procedures,
+then "BBSW" or "AUD-BBR-BBSW" means such rate as is specified by the Calculation Agent having regard to comparable indices then available.
+"CREDIT SUPPORT ANNEX" means the Credit Support Annex annexed to this Agreement.
+"DISTRIBUTION DATE" has the meaning given in Section 16.
+"MASTER TRUST DEED" means the Master Trust Deed dated 8 October 1997 between Party B and the Manager, as amended from time to time.
+"PRESCRIBED RATING PERIOD" means in relation to the credit ratings assigned by the Rating Agencies to Party A:
+(a)     a period of 30 Business Days from the date when a credit rating assigned by a Rating Agency to Party A is less than the relevant Prescribed Rating but greater than or equal to a short term credit rating of A-1 by S&P; or a long term credit rating of A- by S&P; and a long term credit rating of A3 by Moody's and a short term credit rating of P-2 by Moody's; and
+(b)     a period of 5 Business Days from the date when a credit rating assigned by a Rating Agency to Party A is less than a short term credit rating of A-1 by S&P; or a long term credit rating of A- by S&P; and a short term credit rating of P-2 by Moody's and a long term credit rating of A3 by Moody's.
+"PRESCRIBED RATINGS" means a short term credit rating of A-1+ by S&P; or a long term credit rating of AA- by S&P;, and a long term credit rating of A2 by Moody's and a short term credit rating of P-1 by Moody's.
+"RELEVANT CALCULATION AMOUNT" has the meaning given in Section 16.
+"RELEVANT NOTES" has the meaning given in Section 16.
+"RELEVANT NOTE TRUSTEE" has the meaning given in Section 16.
+"RELEVANT NOTEHOLDERS" has the meaning given in Section 16.
+"SCHEDULED MATURITY DATE" has the meaning given in Section 16.
+"SECURITY TRUST DEED" has the meaning given to it in Section 16.
+"SERIES SUPPLEMENT" has the meaning given in Section 16.
+"SERIES TRUST" has the meaning given in Section 16.
+(d)     INTERPRETATION:
+(i) references to time are references to Sydney time;
+(ii)    a reference to "WILFUL DEFAULT" in relation to Party B means, subject to Part 5(11)(d)(iii) of this Schedule, any wilful failure by Party B to comply with, or wilful breach by Party B of, any of its obligations under any Transaction Document, other than a failure or breach which:
+A.      (1) arises as a result of a breach of a Transaction Document by a person other than:
+(a)     Party B; or
+(b)     any other person referred to in Part 5(11)(d)(iii) of this Schedule; and
+(2) the performance of the action (the non-performance of which gave rise to such breach) is a precondition to Party B performing the said obligation;
+B.     is in accordance with a lawful court order or direction or required by law; or
+C.     is in accordance with any proper instruction or direction of the Investors given at a meeting convened under the Master Trust Deed;
+(iii)   a reference to the "FRAUD", "NEGLIGENCE" or "WILFUL DEFAULT" of Party B means the fraud, negligence or wilful default of Party B and of its officers, employees, agents and any other person where Party B is liable for the acts or omissions of such other person under the terms of any Transaction Document;
+(iv)    a reference to "NEITHER PARTY" will be construed as a reference to "NO PARTY"; and
+(v)     a reference to "OTHER PARTY" will be construed as a reference to "OTHER PARTIES".
+(e)     ISDA DEFINITIONS: The 2000 ISDA Definitions (as published by the International Swaps and Derivatives Association, Inc ("ISDA")) (the "2000 ISDA DEFINITIONS") as at the date of this Agreement are incorporated into this Agreement and each Confirmation.
+(f)     INCONSISTENCY: Subject to Part 5(11)(a) of this Schedule, unless specified otherwise, in the event of any inconsistency between any two or more of the following documents in respect of a Transaction they will take precedence over each other in the following order in respect of that Transaction:
+(i)     any Confirmation;
+(ii)    this Schedule and Section 13 ("Elections and Variables") of the Credit Support Annex (as applicable);
+(iii)   the 2000 ISDA Definitions; and
+(iv)    the printed form of the 1992 ISDA Master Agreement and the printed form of the ISDA Credit Support Annex which form part of this Agreement.
+(g) SWAP TRANSACTION: Any reference to a:
+(i)     "SWAP TRANSACTION" in the 2000 ISDA Definitions is deemed to be a reference to a "TRANSACTION" for the purpose of interpreting this Agreement or any Confirmation; and
+(ii)    "TRANSACTION" in this Agreement or any Confirmation is deemed to be a reference to a "SWAP TRANSACTION" for the purpose of interpreting the 2000 ISDA Definitions.
+(h) INCORPORATED DEFINITIONS AND OTHER TRANSACTION DOCUMENTS AND PROVISIONS: Where in this Agreement a word or expression is defined by reference to its meaning in another Transaction Document or there is a reference to another Transaction Document or to a provision of another Transaction Document, any amendment to the meaning of that word or expression or to that other Transaction Document or provision (as the case may be) will be of no effect for the purposes of this Agreement unless and until the amendment is consented to by the parties to this Agreement.
+(12) LIMITATION OF LIABILITY: Insert the following as Sections 15 and 16, after Section 14:
+"15.    PARTY B'S LIMITATION OF LIABILITY
+(a)  (LIMITATION ON PARTY B'S LIABILITY): Party B enters into this Agreement only in its capacity as trustee of the relevant Series Trust and in no other capacity. A liability incurred by Party B acting in its capacity as trustee of the relevant Series Trust arising under or in connection with this Agreement is limited to and can be enforced against Party B only to the extent to which it can be satisfied out of the Assets of that Series Trust out of which Party B is actually indemnified for the liability. This limitation of Party B's liability applies despite any other provision of this Agreement (other than Section 15(c)) and extends to all liabilities and obligations of Party B in any way connected with any representation, warranty, conduct, omission, agreement or transaction related to this Agreement.
+(b)  (CLAIMS AGAINST PARTY B): The parties other than Party B may not sue Party B in respect of liabilities incurred by Party B acting in its capacity as trustee of a Series Trust in any other capacity other than as trustee of that Series Trust, including seeking the appointment of a receiver (except in relation to Assets of that Series Trust), or a liquidator, or an administrator, or any similar person to Party B or prove in any liquidation, administration or similar arrangements of or affecting Party B (except in relation to the Assets of that Series Trust).
+(c)  (BREACH OF TRUST): The provisions of this Section 15 will not apply to any obligation or liability of Party B to the extent that it is not satisfied
+because under the Master Trust Deed, the corresponding Series Supplement or any other corresponding Transaction Document or by operation of law there is a reduction in the extent of Party B's indemnification out of the Assets of the relevant Series Trust, as a result of Party B's fraud, negligence or wilful default.
+(d)  (ACTS OR OMISSIONS): It is acknowledged that the Relevant Parties are responsible under the corresponding Transaction Documents for performing a variety of obligations relating to the relevant Series Trust. No act or omission of Party B (including any related failure to satisfy its obligations or any breach of representation or warranty under this Agreement) will be considered fraudulent, negligent or a wilful default of Party B for the purpose of paragraph (c) of this Section 15 to the extent to which the act or omission was caused or contributed to by any failure by any such Relevant Person or any other person appointed by Party B under such a Transaction Document (other than a person whose acts or omissions Party B is liable for in accordance with any such Transaction Document) to fulfil its obligations relating to the relevant Series Trust or by any other act or omission of the Manager or the Servicer or any other such person.
+(e)  (NO OBLIGATION): Party B is not obliged to enter into any commitment or obligation under this Agreement or any Transaction Document (including incur any further liability) unless Party B's liability is limited in a manner which is consistent with this Section 15 or otherwise in a manner satisfactory to Party B in its absolute discretion.
+16.  SEGREGATION
+Party B will enter into each Transaction as trustee of a Series Trust. Each Confirmation in relation to a Transaction must specify the name of the Series Trust to which the Transaction relates. Notwithstanding anything else in this Agreement, but without limiting the generality of Section 15, the provisions of this Agreement (including, without limitation, the Credit Support Annex) shall have effect severally in respect of each Series Trust and shall be enforceable by or against Party B in its capacity as trustee of the relevant Series Trust as though a separate Agreement applied between Party A, Party B (in its capacity as trustee of the Series Trust specified in the relevant Confirmation) and the Manager for each of Party B's said several capacities, to the intent that (inter alia):
+(a)  (REFERENCES TO PARTY B): unless the context indicates a contrary intention, each reference to "Party B" in this Agreement shall be construed as a several reference to Party B in its respective capacities as trustee of each Series Trust;
+(b)  (SEPARATE AGREEMENTS): this Master Agreement including, without limitation, this Schedule and the Credit Support Annex together with each Confirmation relating to a particular Series Trust will form a single separate agreement between Party A, the Manager and Party B in its capacity as trustee of that Series Trust and references to the respective obligations (including references to payment obligations generally and in the context of provisions for the netting of payments and the calculation of amounts due on early termination) of Party A, the Manager or Party B shall be construed accordingly as a several reference to each mutual set of obligations arising under each such separate agreement between Party A, the Manager and Party B in its several capacity as trustee of the relevant Series Trust;
+(c)  (REPRESENTATIONS): representations made and agreements entered by the parties under this Agreement are made and entered severally by Party B in its respective capacities as trustee of each Series Trust and in respect of the relevant Series Trust and may be enforced by Party B against Party A or the Manager severally in Party B's said several capacities (and by Party A or the Manager against Party B in Party B's said several capacities);
+(d)  (TERMINATION): rights of termination, and obligations and entitlements consequent upon termination, only accrue to Party A against Party B severally in Party B's respective capacities as trustee of each Series Trust, and only accrue to Party B against Party A severally in Party B's said several capacities;
+(e)  (EVENTS OF DEFAULT AND TERMINATION EVENTS): without limiting Section 15, the occurrence of an Event of Default or Termination Event in respect of one Series Trust shall not in itself constitute an Event of Default or Termination Event in respect of any other Series Trust; and
+(f)  (DEFINITIONS):
+(i) the term "SERIES TRUST":
+(A)     in this Section 16, means each Series Trust (as defined in the Master Trust Deed) specified or to be specified, as the context requires, as the relevant Series Trust in the Confirmation for a Transaction; and
+(B)     elsewhere in this Agreement, means each such Series Trust severally in accordance with the preceding provisions of this Section 16;
+(ii) the term "TRANSACTION":
+(A)     in this Section 16, means each Transaction governed by this Agreement; and
+(B)     elsewhere in this Agreement, means each such Transaction entered into by the trustee as Trustee of the relevant Series Trust;
+(iii) the term "AGREEMENT":
+(A)     in this Section 16, and elsewhere if so specified, means this Master Agreement, including, without limitation, this Schedule and the Credit Support Annex, and all Confirmations governed by this Master Agreement; and
+(B)     elsewhere, unless specified otherwise, means the separate agreement referred to in Section 16(b) in respect of each particular Series Trust;
+(iv)  the terms "DISTRIBUTION DATE", "RELEVANT CALCULATION AMOUNT", "RELEVANT NOTE TRUSTEE", "RELEVANT NOTES", "RELEVANT NOTEHOLDERS", "SCHEDULED MATURITY DATE", "SECURITY TRUST DEED" and "SERIES SUPPLEMENT" in this
+Agreement to the extent that it applies in relation to a Series Trust have the respective meanings given to them in the Confirmations for the Transactions of that Series Trust.".
+(13)     FURTHER ASSURANCES: Each party will, upon request by the other party (the "REQUESTING PARTY") at the expense of the requesting party, perform all such acts and execute all such agreements, assurances and other documents and instruments as the requesting party reasonably requires (and, in the case of Party B, are within the powers granted to Party B under the Master Trust Deed) to assure and confirm the rights and powers afforded, created or intended to be afforded or created, under or in relation to this Agreement and each Transaction or other dealing which occurs under or is contemplated by it.
+(14)     PROCEDURES FOR ENTERING INTO TRANSACTIONS
+(a)     With respect to each Transaction entered into pursuant to this Agreement and for the purposes of Section 9(e)(ii), Party A will, by or promptly after the relevant Trade Date, send Party B and the Manager a Confirmation substantially in the form set out in Annexure 1 (or in such other form as may be agreed between Party A, Party B and the Manager), and Party B and the Manager must promptly then confirm the accuracy of and sign and return, or request the correction of, such Confirmation; and
+(b)     Party B will enter into each Transaction in its capacity as trustee of the Series Trust.
+(15)     AUTHORISED OFFICER: Each party will be entitled to assume, in the absence of any knowledge to the contrary, that any Confirmation, notice or other written communication, which is issued in respect of this Agreement and which is purported to be signed on behalf of another party by a person specified in the certificate provided by that other party under Part 3(b) of this Schedule, is authorised by that other party.
+(16) RECORDED CONVERSATIONS: Each party:
+(a)     consents to the electronic recording of its telephone conversations with another party (or any of its associated persons) with or without the use of an automatic tone warning device;
+(b)     will provide transcripts of such recordings (if any) upon reasonable request by the other party (at the reasonable cost of the party requesting);
+(c)     acknowledges that such recordings and transcripts can be used as evidence by either party in any dispute between them; and
+(d)     acknowledges that no party is obligated to maintain copies of such recordings and transcripts for the benefit of the other party.
+(17)     REPLACEMENT CURRENCY SWAP AGREEMENT:
+(a)     If any Transaction under this Agreement is terminated prior to the day upon which the Relevant Notes are redeemed in full, Party B may, at the direction of the Manager, enter into one or more currency swaps which replace that Transaction (collectively a "REPLACEMENT CURRENCY SWAP") provided that:
+(i)     the Rating Agencies confirm in writing that the entry into the Replacement Currency Swap by Party B does not result in a reduction, qualification or withdrawal of the credit ratings then assigned by them to the Relevant Notes; and
+(ii)    the liability of Party B under the Replacement Currency Swap is limited to at least the same extent that its liability is limited under that Transaction.
+(b)    If Party B enters into a Replacement Currency Swap pursuant to paragraph (a) and a Settlement Amount is payable by Party B to Party A upon termination of the Transaction referred to in Part 5(17)(a) of this Schedule, Party B must, on the direction of the Manager, pay any upfront premium to enter into the Replacement Currency Swap received by Party B from the Replacement Currency Swap provider to Party A in satisfaction of and to the extent of Party B's obligation to pay the Settlement Amount to Party A, and to the extent such premium is not greater than or equal to the Settlement Amount, the balance may be satisfied by Party B as an Expense.
+(c)    If Party B enters into a Replacement Currency Swap pursuant to paragraph (a) and a Settlement Amount is payable by Party A to Party B upon termination of the Transaction referred to in Part 5(17)(a) of this Schedule, Party B may direct Party A to pay that amount to the Replacement Currency Swap provider in satisfaction of or towards and to the extent of Party B's obligation (if any) to pay an upfront premium to the Replacement Currency Swap provider to enter into the Replacement Currency Swap.
+(d)    The obligations of Party B (and the rights of Party A) under this Part 5(17) will survive the termination of this Agreement.
+(18)     KNOWLEDGE OR AWARENESS: Subject to Section 12(a), each party will only be considered to have knowledge or awareness of, or notice of, a thing or grounds to believe anything by virtue of the officers of that party or any Related Body Corporate of that party which have the day to day responsibility for the administration or management of that party's (or a Related Body Corporate of that party's) obligations in relation to the Series Trust or the Transactions entered into under this Agreement having actual knowledge, actual awareness or actual notice of that thing, or grounds or reason to believe that thing (and similar references will be interpreted in this way).
+(19)     RESTRICTIONS ON PARTY B'S RIGHTS: Party B must at all times act in accordance with the instructions of the Manager in relation to this Agreement.
+(20)     AMENDMENT TO THIS AGREEMENT: The parties to this Agreement may only amend this Agreement in accordance with clause 33.1(b) of the Series Supplement.
+(21)     APPOINTMENT OF MANAGER: Party B hereby exclusively appoints the Manager as its attorney to act on Party B's behalf and exercise all rights and powers of Party B with respect to this Agreement. Without limiting the generality of the foregoing, the Manager may issue and receive on behalf of Party B all notices, certificates and other communications to or by Party A under this Agreement until such time as Party B serves written notice on Party A of the revocation of the Manager's authority to act on behalf of Party B in accordance with this Part 5(21).
+(22)     RATINGS DOWNGRADE:
+(a)     (DOWNGRADE): If, as a result of the reduction or withdrawal of the credit rating of Party A, Party A is assigned a credit rating by a Rating Agency less than the relevant Prescribed Rating, Party A must by the expiry of the Prescribed Rating Period in relation to the credit ratings assigned by the Rating Agencies to Party A at that time (or such greater period as is agreed to in writing by each relevant Rating Agency), at its cost alone and at its election:
+(i)     provided that the short term credit rating by S&P; is greater than or equal to A-1 or the long term credit rating by S&P; is greater than or equal to A-, lodge collateral in accordance with the Credit Support Annex in an amount equal to the Collateral Amount as defined in Part 5(22)(b) of this Schedule;
+(ii)    enter into an agreement novating Party A's rights and obligations under this Agreement and each Transaction to a replacement counterparty acceptable to the Manager and which the Rating Agencies confirm in writing will not result in a reduction, qualification or withdrawal of the credit ratings then assigned by them to the Relevant Notes; or
+(iii)   enter into such other arrangements in respect of each Transaction which the Rating Agencies confirm in writing will not result in a reduction, qualification or withdrawal of the credit ratings then assigned by them to the Relevant Notes.
+Notwithstanding that Party A has elected to satisfy its obligations pursuant to this Part 5(22)(a) in a particular manner, it may subsequently and from time to time vary the manner in which it satisfies its obligations pursuant to this Part 5(22)(a) (but will not be entitled to any additional grace period in relation to such a variation).
+(b)     (COLLATERAL AMOUNT): For the purpose of this Part 5(22) the Collateral Amount will be an amount equal to the greater of the following:
+(i) zero;
+(ii)    if the credit rating of Party A is below the Prescribed Rating in relation to S&P;, CCR; and
+(iii)   if the credit rating of Party A is below the Prescribed Rating in relation to Moody's, an amount acceptable to Moody's and sufficient to maintain the credit rating assigned to the Relevant Notes by Moody's immediately prior to the review of the credit rating of Party A by Moody's.
+Where:
+CCR = CR x 1.030
+CR = MTM + VB
+MTM means the aggregate mark-to-market value (whether positive or negative) of each Transaction determined in accordance with Part 5(22)(c) of this Schedule no earlier than 3 Business Days prior to the date that the Collateral Amount is lodged.
+VB means the volatility buffer, being the value calculated by multiplying the Relevant Calculation Amount as at the most recent Distribution Date by the relevant percentage obtained from the following table:
+PARTY A'S   WHERE THE      WHERE THE        WHERE THE PERIOD LONG TERM   PERIOD         PERIOD BETWEEN   BETWEEN THE DATE CREDIT      BETWEEN THE    THE DATE OF      OF RECALCULATION RATING BY   DATE OF        RECALCULATION    AND THE SCHEDULED S&P;         RECALCULATION  AND THE          MATURITY DATE IS AND THE        SCHEDULED        GREATER THAN 10 SCHEDULED      MATURITY DATE    YEARS MATURITY       IS GREATER THAN DATE IS        5 YEARS AND LESS THAN      LESS THAN OR OR EQUAL TO    EQUAL TO 10 5 YEARS        YEARS A+          1.05           1.75             3.0 A           1.35           2.45             4.5 A-          1.5            3.15             6
+(c)     (MARK TO MARKET VALUE): If collateral has been lodged or is to be lodged under Part 5(22)(a)(i) of this Schedule and Part 5(22)(b)(ii) of this Schedule applies, Party A must calculate the mark-to-market value of each Transaction by obtaining 2 bids from counterparties with the Prescribed Ratings willing to provide each Transaction in the absence of Party A. The mark-to-market value may be a positive or a negative amount. A bid has a negative value if the payment to be made is from the counterparty to Party A and has a positive value if the payment to be made is from Party A to the counterparty. The mark-to-market value is the higher of the bids (on the basis that any bid of a positive value is higher than any bid of a negative value).
+(d)     (RECALCULATION): If collateral has been lodged under Part 5(22)(a)(i) of this Schedule then, unless collateral is no longer required to be lodged in accordance with Part 5(22)(a) of this Schedule, Party A must recalculate the Collateral Amount (including, if Part 5(22)(b)(ii) of this Schedule applies, the CCR and the mark-to-market value) on each Valuation Date. If:
+(i)     the Value on such Valuation Date of all Posted Credit Support held by the Secured Party is less than the recalculated Collateral Amount, the difference is the Delivery Amount in relation to that Valuation Date; or
+(ii)    the Value on such Valuation Date of all Posted Credit Support held by the Secured Party is greater than the recalculated Collateral Amount, the difference is the Return Amount in relation to that Valuation Date.
+(e)     (DEFINITIONS): For the purposes of this Part 5(22) "Delivery Amount", "Posted Credit Support", "Return Amount", "Secured Party", "Value" and "Valuation Date" have the same meaning as in the Credit Support Annex.
+(23)     NO AMENDMENT: Each of Party B and the Manager agrees that it will not consent to any amendment to any provision in any Transaction Document in relation to the Series Trust dealing with the ranking, priority or entitlement of Party A in respect of any security or moneys relating to the Series Trust without the prior written consent of Party A.
+ANNEXURE 1
+FORM OF CONFIRMATION [NAME OF SERIES TRUST]
+[LETTERHEAD OF PARTY A]
+[DATE]
+TO:  Perpetual Trustee Company Limited      Securitisation Advisory Services as trustee of the Series Trust         Pty. Limited
+Level 7                                Level 6 9 Castlereagh Street                   48 Martin Place Sydney  NSW  2000                      Sydney  NSW  2000 AUSTRALIA                              AUSTRALIA
+ATTENTION:  Manager, Securitisation    ATTENTION: Manager, Securitisation Services
+CONFIRMATION - [NAME OF TRANSACTION]
+The purpose of this letter is to confirm the terms and conditions of the Transaction entered into between us on the terms specified below (the "TRANSACTION"). This letter constitutes a "CONFIRMATION" as referred to in the Master Agreement specified below.
+This Confirmation is entered into by Perpetual Trustee Company Limited, ABN 42 000 001 007 as trustee of the Medallion Trust Series [       ] (the "SERIES TRUST").
+This Confirmation supplements, forms part of, and is subject to, the 1992 ISDA Master Agreement dated as of [     ], as amended, novated or supplemented from time to time (the "AGREEMENT"), between Commonwealth Bank of Australia ABN 48 123 123 124 ("PARTY A"), Perpetual Trustee Company Limited ABN 42 000 001 007 as trustee of, inter alia, the Series Trust ("PARTY B") and Securitisation Advisory Services Pty. Limited ABN 88 064 133 946 (the "MANAGER"). All provisions contained in the Agreement govern this Confirmation except as expressly modified below.
+This Confirmation incorporates the Definitions Schedule which forms part of, and is subject to, this Confirmation.
+The terms of the particular Transaction to which this Confirmation relates are specified below:
+1.      OUR REFERENCE:      [                 ]
+2.      TRADE DATE:         [                 ]
+3.      EFFECTIVE DATE:     Issue Date in respect of the Relevant Notes
+4.      TERMINATION DATE:   The earlier of:
+(a)    the date that the Relevant Notes have been redeemed in full in accordance with the Note Conditions; and
+(b)    the Scheduled Maturity Date.
+5.       FLOATING AMOUNTS
+5.1      FLOATING AMOUNTS PAYABLE BY PARTY A (SUBJECT TO PARAGRAPH 9 OF THIS CONFIRMATION):
+(A)      Floating Rate Payer:       Party A
+Calculation Amount:        For each Floating Rate Payer Payment Date, the aggregate Invested Amount of the Relevant Notes as at the first day of the Calculation Period ending on but excluding that Floating Rate Payer Payment Date.  The Calculation Amount for the initial Calculation Period will be USD1,000,000,000.  The Calculation Amount will not ever exceed USD1,000,000,000 for any Calculation Period.
+Floating Rate Payer        Each Distribution Date during the Payment Dates:             period commencing on and including [      ] and ending on and including the Termination Date, subject to adjustment in accordance with the Following Business Day Convention
+Floating Rate Option:      USD-LIBOR-BBA  except that:
+(a)   references to "London Banking Days" in section 7.1(a)(w)(xvii) and (xx) of the Annex (June 2000 version) to the 2000 ISDA Definitions will be replaced with references to "Banking Days" as that expression is defined in the Note Conditions:
+(b)   references to "Telerate Page 3750" in section 7.1(w)(xvii) of the Annex (June 2000 version) to the 2000 ISDA Definitions will be replaced with references to "Rate Page" as that expression is defined in the Note Conditions; and
+(c)   if USD-LIBOR-BBA cannot be determined in accordance with the 2000 ISDA Definitions as varied above (including endeavouring to determine a rate under the definition of "USD-LIBOR-Reference banks" in section 7.1(w)(xx)), it will remain as the most recently determined rate obtained from a Rate Page for a preceding Calculation Period.
+Designated Maturity:       [           ] months
+Spread:                    [                   ]
+Floating Rate Day Count    Actual/360 Fraction:
+Reset Dates:               The first day of each Calculation Period
+Compounding:               Inapplicable
+(B)      Class A-1 Unpaid Coupon    If on any Distribution Date there is an Amount: A$ Class A-1 Unpaid Interest Amount, then on the Floating Rate Payer Payment Date which falls on that Distribution Date, Party A will pay to Party B an amount calculated as follows:
+$US UC = $A UC x LIBOR x US$ BBSW Exchange Rate
+where:
+$US UC =   the amount to be paid by Party A;
+$A         UC = the A$ Class A-1 Unpaid Interest Payment in relation to that Distribution Date;
+LIBOR      = the Floating Rate Option under this paragraph 5.1 in respect of the Reset Date which is the same day as that Floating Rate Payer Payment Date;
+BBSW       = the Floating Rate Option under paragraph 5.2 in respect of the Reset Date which is the same day as that Floating Rate Payer Payment Date.
+5.2      FLOATING AMOUNTS PAYABLE BY PARTY B (SUBJECT TO PARAGRAPH 9 OF THIS CONFIRMATION):
+(A)      Floating Rate Payer:       Party B
+Calculation Amount:        For each Floating Rate Payer Payment Date, the A$ Equivalent of the aggregate Invested Amount of the Relevant Notes as at the first day of the Calculation Period ending on but excluding that Floating Rate Payer Payment Date
+Floating Rate Payer        Each Distribution Date during the Payment Dates:             period commencing on and including [      ] and ending on and including the Termination Date, subject to adjustment in accordance with the Following Business Day Convention
+Floating Rate Option:      AUD-BBR-BBSW
+Designated Maturity:       [            ] months
+Spread:                    [               ]
+Floating Rate Day Count    Actual/365 (Fixed) Fraction:
+Reset Dates                The first day of each Calculation Period
+Compounding:               Inapplicable
+(B)      A$ Class A-1 Unpaid        If on any Distribution Date there is an Interest Amount:           A$ Class A-1 Unpaid Interest Amount, then on the Floating Rate Payer Payment Date which falls on that Distribution Date Party B will pay to Party A the A$ Class A-1 Unpaid Interest Payment in relation to that Distribution Date.
+5.3      NO LIMIT TO RIGHTS:        Nothing in paragraphs 5.1(b) or 5.2(b) is to be construed as limiting Party A's or Party B's rights in relation to a failure by the other to pay the full amount of a Floating Amount calculated in accordance with paragraphs 5.1(a) or 5.2(a), as applicable, on a Floating Rate Payer Payment Date (including any right to designate an Early Termination Date in accordance with Section 6(a) of the Agreement).
+6.       EXCHANGES
+6.1      INITIAL EXCHANGE:
+Initial Exchange Date:     Closing Date
+Party A Initial Exchange   The A$ Equivalent of the Party B Amount:                    Initial Exchange Amount, being A$[                            ]
+Party B Initial Exchange   The Initial Invested Amount of the Amount:                    Relevant Notes on the Issue Date, being US$[             ]
+Notwithstanding Section 2(a)(ii) of the Agreement, Party A must pay the Party A Initial Exchange Amount to Party B by 4.00pm (Sydney time) on the Initial Exchange Date and Party B must pay Party A the Party B Initial Exchange Amount by 4.00pm (New York time) on the Initial Exchange Date. Section 2(a)(v) of the Agreement will not apply to the payments of the Initial Exchange Amounts.
+6.2      INTERIM EXCHANGE:
+Interim Exchange Date:     Each Distribution Date (other than the Final Exchange Date)
+Party A Interim Exchange   In respect of an Interim Exchange Date Amount:                    means the US$ Equivalent of the A$ Class A-1 Principal Amount in relation to the Distribution Date occurring on that Interim Exchange Date
+Party B Interim Exchange   In respect of an Interim Exchange Date means the
+Amount:                    A$ Class A-1 Principal Amount in relation to the Distribution Date occurring on that Interim Exchange Date
+6.3      FINAL EXCHANGE:
+Final Exchange Date:       Termination Date
+Party A Final Exchange    The US$ Equivalent of the A$ Class A-1 Amount:                   Principal Amount in relation to the Distribution Date which is the Final Exchange Date
+Party B Final Exchange    The A$ Class A-1 Principal Amount in Amount:                   relation to the Distribution Date which is the Final Exchange Date
+7.       EXCHANGE RATES:
+For the purpose of the definitions of "A$ EQUIVALENT" and "US$ EQUIVALENT":
+US$ Exchange Rate:        [                                       ]
+A$ Exchange Rate:         [                                       ]
+8.       ACCOUNT DETAILS:
+8.1      PAYMENTS TO PARTY A
+Account for payments in   The account notified in writing by US$                       Party  A to Party B in accordance with Part 5(3)(ii) of the Schedule to the Agreement
+Account for payments in   The account notified in writing by Party A$                        A to Party B in accordance with Part 5(3)(i) of the Schedule to the Agreement
+8.2      PAYMENTS TO PARTY B
+Account for payments in   The account notified in writing by the US$:                      Principal Paying Agent to Party A in accordance with Part 5(2)(ii) of the Schedule to the Agreement
+Account for payments in   The account notified in writing by Party A$:                       B to Party A in accordance with Part 5(2)(i) of the Schedule to the Agreement
+9.       NOTIFICATIONS TO PARTY A  On or before the Determination Time in respect of each Distribution Date the Manager must notify Party A in writing of:
+(a)  the A$ Class A-1 Principal Amount which the Manager has directed Party B to pay to Party A on that Distribution Date pursuant to clause 10.5(b)(i) of the Series Supplement;
+(b)  the A$ Class A-1 Interest Payment in
+relation to that Distribution Date;
+(c)  the amounts (if any) allocated to the Class A-1 Notes in respect of any Principal Charge-off or Principal Charge-off Reimbursement on the immediately preceding Determination Date in accordance with Conditions 7.9 and 7.10 of the Note Conditions; and
+(d)  the A$ Class A-1 Unpaid Interest Payment (if any) in relation to that Distribution Date.
+10.      OFFICES:                  The Office of Party A for each Transaction is Sydney.
+The Office of Party B for each Transaction is Sydney.
+Please confirm that the above correctly sets out the terms of our agreement in respect of each Transaction to which this Confirmation relates by signing and returning this Confirmation to us by facsimile today.
+Executed documents will follow by mail.
+Yours sincerely
+SIGNED for and on behalf of COMMONWEALTH BANK OF AUSTRALIA ABN 48 123 123 124
+By:
+(Authorised Officer)
+Name:
+Title:
+CONFIRMED AS AT THE DATE FIRST WRITTEN ABOVE:      CONFIRMED AS AT THE DATE FIRST WRITTEN ABOVE:
+SIGNED for and on behalf of                        SIGNED for and on behalf of PERPETUAL TRUSTEE                                  SECURITISATION ADVISORY SERVICES PTY.
+COMPANY LIMITED ABN 42 000 001 007                 LIMITED ABN 88  064 133 946 as trustee of the Medallion Trust Series [        ]
+By:                                                By:
+(Authorised Officer )                                           (Authorised Officer)
+Name:                                              Name:
+Title:                                             Title:
+DEFINITIONS SCHEDULE
+In this Confirmation and in the Agreement to the extent that it relates to the Series Trust, unless the context otherwise requires:
+"A$ CLASS A-1 UNPAID INTEREST PAYMENT" means in relation to a Distribution Date the amount available to be allocated towards payment to Party A in respect of A$ Class A-1 Unpaid Interest Amounts on that Distribution Date in accordance with clause 10.2(k)(i) of the Series Supplement determined on the basis that all amounts allocated towards payment of A$ Class A-1 Interest Amounts and A$ Class A-1 Unpaid Interest Amounts pursuant to clause 10.2(k)(i) of the Series Supplement are allocated first towards payment of A$ Class A-1 Interest Amounts and then, once the A$ Class A-1 Interest Amounts are paid in full, towards payment of A$ Class A-1 Unpaid Interest Amounts.
+"DETERMINATION TIME" in relation to a Distribution Date means on or about 11.00am Sydney time 1 Business Day prior to that Distribution Date.
+"DISTRIBUTION DATE" has the same meaning as in the Series Supplement.
+"NOTE CONDITIONS" means the terms and conditions of the Relevant Notes annexed to the Relevant Notes.
+"RELEVANT CALCULATION AMOUNT" means the Calculation Amount referred to in paragraph 5.1 of this Confirmation.
+"RELEVANT NOTES" means the Class A-1 Notes issued by the Trustee under the US Dollar Note Trust Deed.
+"RELEVANT NOTEHOLDERS" means the Class A-1 Noteholders as that term is defined in the US Dollar Note Trust Deed.
+"RELEVANT NOTE TRUSTEE" means The Bank of New York, New York Branch or, if The Bank of New York is removed or retires as the trustee for the Class A-1 Noteholders, any person appointed from time to time in its place in accordance with the US Dollar Note Trust Deed.
+"SCHEDULED MATURITY DATE" has the same meaning as in the Series Supplement.
+"SECURITY TRUST DEED" means the Security Trust Deed dated on or about the date of this Confirmation between Party B, the Manager, the Relevant Note Trustee and P.T. Limited ABN 67 004 454 666.
+"SERIES SUPPLEMENT" means the Series Supplement dated on or about the date of this Confirmation between Party A, Homepath Pty Limited ABN 35 081 986 530, Party B and the Manager.
+"US DOLLAR NOTE TRUST DEED" means the US Dollar Note Trust Deed dated on or about the date of this Confirmation between Party B, the Manager and the Relevant Note Trustee.
+Terms defined in the Note Conditions have the same meaning in this Confirmation unless otherwise defined in this Confirmation.
+PARAGRAPH 13 TO NEW YORK LAW CREDIT SUPPORT ANNEX
+(13)  ELECTIONS AND VARIABLES
+(a)   SECURITY INTEREST FOR "OBLIGATIONS"
+The term "Obligations" as used in this Annex includes the additional obligations referred to in Paragraph 13(m)(vii)(B).
+(b)   CREDIT SUPPORT OBLIGATIONS
+(i)   DELIVERY AMOUNT AND RETURN AMOUNT
+"DELIVERY AMOUNT" for a Valuation Date means the amount of collateral calculated in accordance with Part 5(22)(d)(i) of the Schedule to this Agreement for that Valuation Date.
+"RETURN AMOUNT" for a Valuation Date means the amount of collateral calculated in accordance with Part 5(22)(d)(ii) of the Schedule to this Agreement for that Valuation Date.
+(ii)  ELIGIBLE COLLATERAL. The following items will qualify as "Eligible Collateral" for Party A provided that the items specified in paragraphs (E), (F), (G) and (H) will only qualify as "Eligible Collateral" of Party A upon receipt by Party B of an opinion as to the perfection of the Secured Party's security interest in such items in form and substance (and issued by legal counsel) satisfactory to Party B:
+VALUATION Percentage
+(A)  negotiable debt obligations issued by                  98% the U.S. Treasury Department having a remaining maturity of not more than one year
+(B)  negotiable debt obligations issued by                  95% the U.S. Treasury Department having a remaining maturity of more than one year but not more than five years
+(C)  negotiable debt obligations issued by                  93% the U.S. Treasury Department having a remaining maturity of more than five years but not more than ten years
+(D)  negotiable debt obligations issued by                  90% the U.S. Treasury Department having a remaining maturity of more than ten years
+(E)  Agency Securities having a remaining                   97% maturity of not more than one year
+(F)  Agency Securities having a remaining                   94% maturity of more than one year but not more than five years
+(G)  Agency Securities having a remaining                   92% maturity of more than five years but not more than ten years
+(H)  Agency Securities having a remaining                   89% maturity of more than ten years
+(I)  Cash                                                  100%
+(J)  other Eligible Credit Support and Valuation Percentage agreed by the parties and acceptable to each Rating Agency
+Notwithstanding the foregoing to the contrary, the Valuation Percentage with respect to all Eligible Credit Support shall be deemed to be 100% with respect to a Valuation Date which is an Early Termination Date.
+"AGENCY SECURITIES" means negotiable debt obligations which are fully guaranteed as to both principal and interest by the Federal National Mortgage Association, the Government National Mortgage Corporation or the Federal Home Loan Mortgage Corporation and which have been assigned a short term credit rating of A-1+ by S&P;, but exclude: (i) interest only and principal only securities; and (ii) collateralized mortgage obligations, real estate mortgage investment conduits and similar derivative securities.
+(iii) OTHER ELIGIBLE SUPPORT
+Not applicable.
+(iv)  THRESHOLDS
+(A)    "MINIMUM TRANSFER AMOUNT" means with respect to both Party A and Party B: US$100,000.
+(B)    ROUNDING. The Delivery Amount and the Return Amount will be rounded to the nearest integral multiple of US$10,000.
+(c)   VALUATION AND TIMING
+(i)  "VALUATION AGENT" means Party A.
+(ii) "VALUATION DATE" means the last Business Day of each week and, at the option of Party A, any Business Day between Valuation Dates.
+(iii)"VALUATION TIME" means the close of business on the Business Day before the Valuation Date; provided that the calculations of Value and Exposure will be made as of approximately the same time on the same date.
+(iv) "NOTIFICATION TIME" means 11:00 am New York time on the second Business Day after the Valuation Date.
+(d)   CONDITIONS PRECEDENT AND SECURED PARTY'S RIGHTS AND REMEDIES
+There are no "SPECIFIED CONDITIONS" applicable to Party A. The following is a Specified Condition with respect to Party B:
+"If an Early Termination Date has been designated in respect of the each Transaction provided that if an amount is due by Party A to Party B in respect of that Early Termination Date pursuant to Section 6, that amount has been paid in full.".
+(e)   SUBSTITUTION
+(i) "SUBSTITUTION DATE" has the meaning specified in Paragraph 4(d)(ii).
+(ii) CONSENT. The Pledgor must obtain the Secured Party's consent for any substitution pursuant to Paragraph 4(d). However such consent is not to be unreasonably withheld and the parties agree that not wanting to accept a particular type of Substitute Credit Support is not in itself a reasonable basis for withholding consent if the Substitute Credit Support is Eligible Collateral. The consent may be provided in a manner described in Section 12 or otherwise, including orally.
+(f)   DISPUTE RESOLUTION
+(i)   "RESOLUTION TIME" means 11:00 am New York time.
+(ii)  "VALUE". Not applicable.
+(iii) "ALTERNATIVE". The provisions of Paragraph 5 will apply.
+(g)   HOLDING AND USING POSTED COLLATERAL
+(i)  ELIGIBILITY TO HOLD POSTED COLLATERAL; CUSTODIANS.
+Party A: Not Applicable.
+Party B is not entitled to hold Posted Collateral. It must appoint a Custodian to hold Posted Collateral on its behalf pursuant to paragraph 6(b). Party B may only appoint a Custodian to hold Posted Collateral on its behalf if the following conditions are satisfied:
+(A)   Party B is not a Defaulting Party;
+(B)   Party B's Custodian will always be the Principal Paying Agent, unless that party is Party A;
+(C)   if the Principal Paying Agent is Party A, then Party B must appoint a Custodian which is a Bank (as defined in the Federal Deposit Insurance Act, as amended) outside Australia, whose rating (with respect to its long term unsecured, unsubordinated indebtedness) is at all times at least Aa2 by Moody's and its short term debt rating is A-1+ by S&P;, and Party B must notify Party A in writing of this appointment and of the relevant account for Paragraph 13(l); and
+(D)   Posted Collateral may only be held in one or more accounts in the name of Party B in the United States and any account established by Party B's Custodian to hold Posted Collateral shall be established and maintained for the sole purpose of receiving deliveries of and holding Posted Collateral.
+(ii)   USE OF POSTED COLLATERAL. The provisions of paragraph 6(c) will not apply to Party B and its Custodian. Party B's Custodian will permit Party B to secure Party B's obligations under the Relevant Notes by granting to the Security Trustee the charge under the Security Trust Deed over Party B's rights in relation to the Posted Collateral, but subject to Paragraph 13(m)(vi) of this Annex.
+(h)   DISTRIBUTIONS AND INTEREST AMOUNT
+(i)    INTEREST RATE. The "Interest Rate", in respect of Posted Collateral which is denominated in US$, for any day means the Federal Funds Overnight Rate. For the purposes hereof, "Federal Funds Overnight Rate" means, for any day, an interest rate per annum equal to the rate published as the Federal Funds Effective Rate that appears on Telerate Page 118 for such day. The "Interest Rate" in respect of Posted Collateral denominated in any other Eligible Currency means the rate as agreed between the parties.
+(ii)   TRANSFER OF INTEREST AMOUNT. The Transfer of Interest Amount will be made monthly on the second Business Day of each calendar month.
+(iii)  ALTERNATIVE TO INTEREST AMOUNT. The provisions of Paragraph 6(d)(ii) will apply.
+(i)   ADDITIONAL REPRESENTATION(S)
+None.
+(j)   OTHER ELIGIBLE SUPPORT AND OTHER POSTED SUPPORT
+"VALUE" and "TRANSFER" with respect to Other Eligible Support and Other Posted Support means: not applicable.
+(k)   DEMANDS AND NOTICES
+All demands, specifications and notices under this Annex will be made pursuant to the Section 12 of this Agreement; provided, that any such demand, specification or notice may be made by telephone ("TELEPHONE NOTICE") between duly authorised employees of each party if such Telephone Notice is confirmed by a subsequent written instruction (which may be delivered via facsimile) by the close of business of the same day that such Telephone Notice is given.
+(l)   ADDRESSES FOR TRANSFERS
+Party A: Party A to specify account for returns of collateral.
+Party B: Party B must notify Party A of its Custodian's account.
+(m)   OTHER PROVISIONS
+(i) Paragraph 4(b) of the Annex is replaced by the following:
+"(b)   TRANSFER TIMING. Subject to Paragraph 4(a) and 5 and unless otherwise specified, if a demand for the Transfer of Eligible Credit Support or Posted Credit Support is made by the Notification Time, then the relevant Transfer will be made within three Business Days of receipt of the demand; if a demand is made after the Notification Time, then the relevant Transfer will be made within four Business Days of receipt of the demand.".
+(ii) EVENT OF DEFAULT
+Paragraph 7(i) of the Annex is amended, on line 3, by replacing "two Business Days" with "three Business Days".
+(iii) PARTY A'S EXPENSES
+Subject to Section 15 of the Agreement, Party B agrees to pay Party A's costs and expenses in relation to or caused by any breach by Party B of its obligations under this Annex. Party A acknowledges and agrees that its obligations under this Annex will not be affected by a failure by Party B to comply with its obligations under this paragraph (m)(iii).
+(iv)  GOVERNING LAW NOTWITHSTANDING
+Notwithstanding that the Agreement is expressed to be governed by the laws of the State of New South Wales, this Annex (but not any other provisions of the Agreement) shall be governed by and construed in accordance with the laws of the State of New York without giving effect to choice of law doctrine and parties hereto agree that proceedings relating to any dispute arising out of or in connection with this Annex shall be subject to the non-exclusive jurisdiction of the federal or state courts of competent jurisdiction in the Borough of Manhattan in New York City, State of New York.
+(v) NO TRIAL BY JURY
+Each party waives, to the fullest extent permitted by applicable law, any right it may have to a trial by jury in respect of any suit, action or proceeding relating to this Annex.
+(vi) NO POOLING OF COLLATERAL WITH OTHER SECURITY TRUST SECURITY
+Notwithstanding any provision in the Master Trust Deed, Series Supplement or Security Trust Deed, but without prejudice to Party B's rights under Paragraph 8(a) of this Annex, no party shall be entitled to deal with the Posted Collateral in any manner inconsistent with the rights of the Pledgor under Paragraphs 3(d), 4(b) or 8(b)(iii) of this Annex, and each party covenants to the other that it shall not permit any other person to gain any rights in relation to the Posted Collateral that are inconsistent with the rights of the Pledgor.
+(vii) PLEDGOR AND SECURED PARTY
+In this Annex:
+(a) "PLEDGOR" means only Party A; and
+(b) "SECURED PARTY" means only Party B.
+(viii)NON-AUSTRALIAN ASSETS
+Party A must only Transfer Posted Collateral to the Secured Party from its assets held outside Australia.
+(ix)  DISPUTE RESOLUTION
+Paragraph 5(i) is amended by:
+(A)    replacing the word "Exposure" with the words "the Delivery Amount or the Return Amount, as the case may be" in the first paragraph of Paragraph 5(i);
+(B)    adding the word "and" at the end of Paragraph 5(i)(A) and deleting Paragraph 5(i)(B).
+(x)    SPECIFIED CONDITION
+(A)    In Paragraph 4(a)(ii) the words "or Specified Condition" are deleted.
+(B)    In Paragraph 8(b) the words "or Specified Condition" are deleted and replaced with the following "with respect to the Secured Party or a Specified Condition has occurred".

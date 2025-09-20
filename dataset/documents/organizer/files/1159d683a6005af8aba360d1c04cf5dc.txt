@@ -49,3 +49,28 @@ NOW, THEREFORE, in consideration of the mutual covenants and conditions set fort
 ## SECTION 3.3 Legal, Valid and Binding Obligation. Each party hereto hereby represents and warrants that this First Amendment is a legal, valid and binding obligation of such party and is enforceable against such party in accordance with its terms.
 ## SECTION 3.4 Confirmation and Reaffirmation of ISDA Documents. Party B and each Specified Entity of Party B does hereby (a) consent and acknowledge and agree to the transactions described in this First Amendment and (b) after giving effect to this First Amendment, (i) ratify and confirm each ISDA Document to which it is a party and (ii) confirm and agree that each such ISDA Document is, and shall continue to be, in full force and effect; provided that each reference to the Electric Master ISDA Schedule therein and in each of the other ISDA Documents shall be deemed to be a reference to the Electric Master ISDA Schedule after giving effect to this First Amendment.
 ##
+## SECTION 3.5 Condition to Effectiveness. This First Amendment shall become effective as of the date set forth above upon receipt by each of the parties hereto of counterparts of this First Amendment executed by each other party hereto.
+##
+## SECTION 3.6 .No Other Amendments/Waivers. Except as expressly amended herein, the Electric Master ISDA Schedule and the other ISDA Documents shall be unmodified and shall continue to be in full force and effect in accordance with their terms. In addition, except as expressly set forth herein, this First Amendment shall not be deemed a waiver of any term or condition of any ISDA Document and shall not be deemed to prejudice any right or rights which Party B may now have or may have in the future under or in connection with any ISDA Document or any of the instruments or agreements referred to therein, as the same may be amended from time to time.
+##
+## SECTION 3.7 Counterparts. This First Amendment may be executed in any number of counterparts, each of which when so executed and delivered shall be deemed an original, but all such counterparts together shall constitute but one and the same instrument. Any executed counterpart delivered by facsimile or electronic transmission shall be effective as an original for all purposes hereof.
+##
+## SECTION 3.8 GOVERNING LAW. THIS FIRST AMENDMENT, AND THE RIGHTS AND OBLIGATIONS OF THE PARTIES HERETO, SHALL BE GOVERNED BY AND CONSTRUED IN ACCORDANCE WITH THE LAWS OF THE STATE OF NEW YORK WITHOUT REFERENCE TO CHOICE OF LAW DOCTRINE, OTHER THAN SECTION 5-1401 AND SECTION 5-1402 OF THE GENERAL OBLIGATIONS LAW OF THE STATE OF NEW YORK. THE UNITED NATIONS CONVENTION ON CONTRACTS FOR THE INTERNATIONAL SALE OF GOODS SHALL NOT IN ANY WAY APPLY TO, OR GOVERN, THIS FIRST AMENDMENT.
+[Remainder of Page Intentionally Left Blank]
+IN WITNESS WHEREOF, the parties hereto have caused this First Amendment to be executed and delivered by their duly authorized officers as of the date first written above.
+SEMPRA ENERGY TRADING LLC By: 	  /s/ Hugh Gleason Name: HUGH J. GLEASON Title: VP MARKETING MXENERGY ELECTRIC INC.
+By: 	  /s/ Chaitu Parikh Name: CHAITU PARIKH Title: CFO
+Acknowledged and Agreed:
+MXENERGY HOLDINGS INC.
+By: 	  /s/ Chaitu Parikh Name: CHAITU PARIKH Title: VP & CFO MXENERGY INC.
+By: 	  /s/ Chaitu Parikh Name: CHAITU PARIKH Title: VP- FINANCE, CFO & ASST. TREASURER MXENERGY (CANADA) LTD.
+By: 	  /s/ Chaitu Parikh Name: CHAITU PARIKH Title: VP & TREASURER
+ONLINECHOICE, INC.
+By: 	  /s/ Chaitu Parikh Name: CHAITU PARIKH Title: CFO MXENERGY GAS CAPITAL HOLDINGS CORP.
+By: 	  /s/ Chaitu Parikh Name: CHAITU PARIKH Title: CFO MXENERGY ELECTRIC CAPITAL HOLDINGS CORP.
+By: 	  /s/ Chaitu Parikh Name: CHAITU PARIKH Title: CFO MXENERGY GAS CAPITAL CORP.
+By: 	  /s/ Chaitu Parikh Name: CHAITU PARIKH Title: CFO MXENERGY ELECTRIC CAPITAL CORP.
+By: 	  /s/ Chaitu Parikh Name: CHAITU PARIKH Title: CFO
+MXENERGY CAPITAL HOLDINGS CORP.
+By: 	  /s/ Chaitu Parikh Name: CHAITU PARIKH Title: CFO INFOMETER.COM INC.
+By: 	  /s/ Chaitu Parikh Name: CHAITU PARIKH Title: CFO

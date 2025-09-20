@@ -193,6 +193,22 @@ class GuidelineDefinition(FrozenBaseModel):
     )
 
 
+class FilteringScope(FrozenBaseModel):
+    """A named filtering scope used to limit which parts of a contract are considered.
+
+    For example, for a CSA you might define scopes like 'preamble' for the
+    beginning with parties and date, and 'from_paragraph_11' for everything
+    from paragraph 11 to the end.
+    """
+
+    name: str = Field(
+        ..., description="Short, human-readable name of the scope (e.g., 'preamble')."
+    )
+    description: str = Field(
+        ..., description="Detailed description of what to include/exclude within this scope."
+    )
+
+
 class ContractTypeTemplate(FrozenBaseModel):
     """Template describing expected clauses and datapoints for a contract type."""
 
@@ -205,9 +221,9 @@ class ContractTypeTemplate(FrozenBaseModel):
     description: str | None = Field(
         ..., description="Optional description of the contract type template."
     )
-    prompt_scope_filter: str = Field(
+    filtering_scopes: Sequence[FilteringScope] = Field(
         ...,
-        description="This is the prompt scope filter for the contract type template.",
+        description="List of named filtering scopes (each with name and description).",
     )
     prompt_scope_amendment: str = Field(
         ...,

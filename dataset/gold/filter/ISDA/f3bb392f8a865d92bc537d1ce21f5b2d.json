@@ -1,0 +1,13 @@
+{
+  "filename": "f3bb392f8a865d92bc537d1ce21f5b2d.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 331,
+      "end_line": 439,
+      "confidence": 0.98,
+      "explanation": "Lines 331-439 contain the full text of the Schedule to the ISDA Master Agreement, including all negotiated terms, elections, and supplements between the parties. The Schedule begins at line 331 with the heading 'SCHEDULE' and continues through the signature block at line 439. This section is distinct from the standard pre-printed Master Agreement and any annexes or notifications that follow."
+    }
+  ]
+}

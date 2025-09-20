@@ -15,7 +15,7 @@ def test_generate_amended_and_restated_applies_valid_changes_and_skips_invalid()
         name="T",
         use_case="amendment",
         description="Test",
-        prompt_scope_filter="",
+        filtering_scopes=[],
         prompt_scope_amendment="",
         clauses=[ClauseDefinition(key="a", title="A")],
         datapoints=[DatapointDefinition(key="x", title="X")],

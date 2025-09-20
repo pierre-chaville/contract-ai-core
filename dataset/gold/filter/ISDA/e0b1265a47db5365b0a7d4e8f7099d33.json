@@ -1,0 +1,13 @@
+{
+  "filename": "e0b1265a47db5365b0a7d4e8f7099d33.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 47,
+      "end_line": 271,
+      "confidence": 0.99,
+      "explanation": "The ISDA Schedule begins at line 47 (\"SCHEDULE to the 2002 Master Agreement\") and continues through the signature blocks and up to the start of Exhibit A at line 271. This span contains all the bespoke Schedule terms, and excludes the standard pre-printed Master Agreement, CSA annex, and exhibits, as requested."
+    }
+  ]
+}

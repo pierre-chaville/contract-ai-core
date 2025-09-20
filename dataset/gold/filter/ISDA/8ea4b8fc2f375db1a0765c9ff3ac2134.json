@@ -1,0 +1,13 @@
+{
+  "filename": "8ea4b8fc2f375db1a0765c9ff3ac2134.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 7,
+      "end_line": 220,
+      "confidence": 0.98,
+      "explanation": "Lines 7-220 contain the full text of the ISDA Schedule to the Master Agreement, including all the negotiated terms, parties, and signatures. The content before line 7 is cover/title, and after line 220 is the Confirmation and not part of the Schedule. The Schedule typically ends with the execution/signature blocks, which are at lines 207-220. This span excludes the standard pre-print, CSA annexes, and the swap confirmation that follows."
+    }
+  ]
+}

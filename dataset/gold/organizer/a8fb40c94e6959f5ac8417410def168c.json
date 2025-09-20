@@ -1,7 +1,7 @@
 {
   "filename": "a8fb40c94e6959f5ac8417410def168c.txt",
   "contract_type": {
-    "value": "SWAP",
+    "value": "OTHER",
     "confidence": 0.95,
     "explanation": "The document is titled 'SWAP TRANSFER AND ASSIGNMENT AGREEMENT,' indicating it is a Currency Swap Agreement."
   },

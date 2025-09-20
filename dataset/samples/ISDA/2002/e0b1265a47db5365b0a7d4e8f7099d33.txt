@@ -1,0 +1,225 @@
+ISDA
+International Swaps and Derivatives Association, Inc.
+SCHEDULE
+to the
+2002 Master Agreement
+dated as of October 31, 2024, between
+Nomura Global Financial Products Inc.,
+a corporation organized under the laws of the State of Delaware ("Party A")
+and
+EACH OF THE ENTITIES LISTED ON EXHIBIT A TO THIS SCHEDULE, SEVERALLY AND NOT JOINTLY
+(each, a "Party B")
+Part 1. Termination Provisions
+(a)"Specified Entity" means in relation to Party A for the purpose of:-
+Section 5(a)(v), Nomura Europe Finance N.V., Nomura Securities (Bermuda) Ltd., Nomura Securities International, Inc., Nomura International (Hong Kong) Limited, Nomura Singapore Limited, Nomura Holding America Inc., Nomura International plc, and The Nomura Trust and Banking Co., Ltd.,
+Section 5(a)(vi), None, Section 5(a)(vii), None, Section 5(b)(v), None,
+and in relation to Party B for the purpose of:\- Section 5(a)(v), Affiliates,
+Section 5(a)(vi), Affiliates, Section 5(a)(vii), Affiliates, Section 5(b)(v), Affiliates.
+(b)"Specified Transaction" has the meaning specified in Section 14 of this Agreement.
+(c)The "Cross-Default" provisions of Section 5(a)(vi) will apply to Party A and will apply to Party B; provided, however, that Section 5(a)(vi) is hereby amended by:
+a.adding the words "after giving effect to any applicable notice requirement or grace period" after the words "(however described)" in Section 5(a)(vi)(1);
+b.deleting the phrase "or becoming capable at such time of being declared," in the seventh line of Section 5(a)(vi)(1);
+NYACTIVE-24178989.5
+c.adding the following words at the end of Section 5(a)(vi)(2):", if the effect of such payment default is to accelerate the maturity of such payment obligation"; and
+d.adding the following at the end thereof: "provided, however, that notwithstanding the foregoing, an Event of Default shall not occur under either (1) or (2) above if (a) the event or condition referred to in (1) or the failure to pay referred to in (2) is a failure to pay caused by an error or omission of an administrative or operational nature and the relevant agreement or instrument contains no grace period for such event, condition or failure to pay default; and (b) funds were available to such party to enable it to make the relevant payment when due; and (c) such relevant payment is made within one Local Business Day following receipt of written notice from an interested party under such Specified Indebtedness of such event or condition referred to in (1) or such failure to pay referred to in (2), as applicable."
+If such provisions apply:-
+"Specified Indebtedness" has the meaning specified in Section 14 of this Agreement.
+"Threshold Amount" will mean with respect to Party A, the lesser of (i) USD 50 million (or its equivalent in any other currency), and (ii) 2% of Party A's total shareholder's equity as of its most recent audited financial statement, and with respect to the Party B, the lesser of (i) USD 50 million (or its equivalent in any other currency), and (ii) 5% of Party B Account's total Net Asset Value, as reported on its most recent monthly NAV Statement.
+(d)The "Credit Event Upon Merger" provisions of Section 5(b)(v) will not apply to Party A and will not apply to Party B.
+(e)Reserved.
+(f)The "Automatic Early Termination" provisions of Section 6(a) of this Agreement will not apply to Party A and will not apply to Party B.
+(g)"Termination Currency" means United States Dollars ("USD").
+(h)Additional Termination Events will apply. Each of the following constitutes an Additional Termination Event:-
+(i)Reserved.
+(ii)Change in Investment Management. The Investment Manager (as defined below) or any of its Affiliates
+(A)has any of its registrations, authorizations, licenses or memberships with any federal or state governmental or regulatory authority revoked, suspended, terminated, limited or qualified; (B) unless pursuant to C immediately below, ceases to be the investment manager to Party B, or (C) (i) merges or consolidates with, or sells or otherwise transfers its advisory business or all or a material portion of its assets to, any individual or entity and (ii) the successor, surviving or transferee entity does not assume all of the obligations of the merging, consolidating, selling or transferring entity with respect to such portion of its assets that are subject to such consolidation, merger, sale, or transfer.
+"Investment Manager" means the entity designated as such in Exhibit A. For the purposes of the foregoing Additional Termination Event, Party B will be the Affected Party.
+(iii)Reserved.
+(iv)Reserved.
+(v)Decline in Net Asset Value. On any day during the term hereof, Party A determines that the Party B Account (A) has failed to maintain a Net Asset Value (determined without giving effect to any redemptions or withdrawals or subscriptions or added monies by any direct investors in Party B) in an amount at least
+equal to the greater of (x) NAV Floor specified in Appendix I and (y) 50 percent of Party B's highest historical month-end Net Asset Value as reflected in Party B's audited financial statements at any time after the execution date of this Agreement, or (B) has experienced a decline in its Net Asset Value (determined without giving effect to any redemptions or withdrawals or subscriptions or added monies by any direct investors in Party B) during any one-month period preceding such date, of 20 percent or more, or (C) has experienced a decline in its Net Asset Value determined without giving effect to any redemptions or withdrawals or subscriptions or added monies by any direct investors in Party B) during any three-month period preceding such date, of 30 percent or more, or (D) has experienced a decline in its Net Asset Value determined without giving effect to any redemptions or withdrawals or subscriptions or added monies by any direct investors in Party B) during any twelve-month period preceding such date, of 40 percent or more.
+For the avoidance of doubt, Party A shall only use the NAV Statement or any other financial performance or Net Asset Value information provided by Party B pursuant to Part 3(b) or Part 5(c)(iii) hereof in making a determination hereunder. "Net Asset Value" of Party B shall be equal to the gross assets of Party B less the aggregate amount of all liabilities of Party B (including all absolute and contingent liabilities of any kind) and shall be determined in accordance with generally accepted accounting principles in the country in which Party B is organized and on a basis consistent with prior periods. For the purpose of the foregoing Termination Event, Party B shall be the Affected Party. "NAV Statement" of Party B means the report of Party B's shareholder equity or fair market value of the gross assets of Party B less its aggregate liabilities, as applicable, in the most recent report or statement that Party B is required to deliver as specified on Exhibit A.
+Party B acknowledges and agrees that the Net Asset Value trigger in clause (A)(y) above may increase from time to time as a result of an increase in Party B's year-end Net Asset Value level but that such trigger amount shall not in any event decrease once reset.
+Notwithstanding the foregoing, any occurrence of an event or circumstance described in the first paragraph of this clause (v) shall not cause the Share Swap between Nomura Global Financial Products Inc. and FS Specialty Lending Fund (f/k/a FS Energy and Power Fund), evidenced by the Share Swap Confirmation dated September 20, 2023 (as may be amended, restated, supplemented or replaced, the "FSSL Share Swap Transaction"), to be an Affected Transaction and shall not, unless any Transactions in addition to the FSSL Share Swap Transaction are also then outstanding, cause Party B to be an Affected Party.
+(vi)Failure to Deliver Financial Statements. Party B fails to deliver or provide its audited annual financial statements, its NAV Statement within the timeframe specified in Part 3(b) hereof, or its verbal estimate of its Net Asset Value and performance pursuant to Part 5 hereof and such failure continues for two Local Business Days following written notice to Party B of such failure. For the purpose of the foregoing Termination Event, Party B shall be the Affected Party.
+(vii)Reserved.
+(viii)Plan Assets. The assets of Party B are subject to Title I of the Employee Retirement Income Security Act of 1974, as amended ("ERISA"), Section 4975 of the Internal Revenue Code of 1986, as amended (the "Code") or Similar Law. "Similar Law" means any law, regulation, rule, policy, procedure or provision that is materially similar to Section 406 of ERISA or Section 4975 of the Code, including, without limitation, by reason of the investment of one or more governmental plans (within the meaning of Section 3(32) of ERISA) in Party B.
+Part 2. Tax Representations
+(a)Payer Representations. For the purpose of Section 3(e) of this Agreement, each of Party A and Party B makes the following representation:
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 9(h) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on (i) the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement, (ii) the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement and
+(iii) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement, except that it will not be a breach of this representation where reliance is placed on clause (ii) above and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+(b)Payee Tax Representations.
+For the purpose of Section 3(f) of this Agreement, Party A represents that it is a corporation duly organized and validly existing under the laws of the State of Delaware and Party B represents that it is the type of entity specified in Exhibit A attached hereto and is duly organized under the laws of the jurisdiction specified in such Exhibit A , as such Exhibit A may be amended from time to time.
+.
+Part 3. Agreement to Deliver Documents
+For the purpose of Sections 4(a)(i) and (ii) of this Agreement, each party agrees to deliver the following documents, as applicable:
+(a)Party A and Party B will deliver forms and/or documents described in Section 4(a)(iii) of this Agreement upon reasonable demand by the other party.
+(b)Tax forms, documents or certificates to be delivered are:
+Party required to deliver document
+Form/Document/ Certificate
+Date by which to be Delivered
+Party A A duly completed and executed United States Internal Revenue Service Form W- 9 (or any successor form thereto)
+(i)Upon reasonable demand by the other party and (ii) promptly upon any such form (or any successor thereto) previously provided by such party becoming obsolete or incorrect
+Party B The applicable Tax Form as specified in Exhibit A attached hereto
+(i) Upon execution and delivery of this Agreement; (ii) promptly upon reasonable demand by Party A; and promptly upon any such form (or any successor thereto) previously provided by such party becoming obsolete or incorrect
+(c)Other documents to be delivered are:
+Party required to deliver
+document Form/Document/Certificate
+Date by which to be delivered
+Covered by Section 3(d) Representation
+Party A A copy of the audited annual financial statements of Nomura Holdings, Inc. containing the consolidated
+financial statements and prepared in accordance with the accounting principles that are generally accepted in the United States of America.
+To the extent not publicly available or on www.nomura.com, as soon as practicable after request.
+Yes
+Party B The applicable reports and/or statements specified in Exhibit A attached hereto.
+As specified in Exhibit A attached hereto.
+Notwithstanding anything to the contrary herein or in Exhibit A, Party B shall be deemed to have delivered any applicable document if it is publicly available via the SEC's EDGAR platform at the www.sec.gov website (or any official successor thereto "EDGAR").
+Yes
+Party A Evidence of (i) the authority of Party A and of Party A's Credit Support Provider, as applicable, to enter into this Agreement and supplemental Confirmations and any Credit Support Document specified in Part 4(f) of this Schedule, and (ii) the authority and signature specimens of persons authorised to sign on behalf of Party A and Party A's Credit Support Provider, as applicable, reasonably satisfactory to Party B.
+Upon execution of this Agreement or as soon as practicable after execution of this Agreement
+or execution of a Confirmation, as applicable.
+Yes
+Party B Evidence of (i) the authority of Party B and of Party B's Credit Support Provider, as applicable, to enter into this Agreement and Confirmations and any Credit Support Document specified in Part 4(f) of this Schedule, and (ii) the authority and signature specimens of persons authorised to sign on behalf of Party B and Party B's Credit Support Provider, as applicable, reasonably satisfactory to Party A.
+As soon as practicable after execution of a Confirmation, provided that this obligation shall be deemed to be satisfied with respect to the Confirmation dated as of September 20, 2023.
+Yes
+Party A and Party B
+As applicable, a duly executed copy of the Credit Support Document[s] specified in Part 4(f) of this Schedule to be delivered by Party A and Party B respectively.
+As soon as practicable after No execution of this Agreement
+or execution of a Confirmation, as applicable.
+Notwithstanding the foregoing, if any of the documents and/or information to be delivered by Party B as set out above is available:
+(i)or subsequent to the date hereof, made available, to the general public, including through filings with the SEC or other applicable regulator, Party B shall not be required to deliver to the other party that document or information which is so available and the relevant information or document as the case may be, shall be deemed delivered; or
+(ii)through electronic distribution, that document or information, as the case may be, will be deemed delivered if Party B notifies the other of the internet address where they may be obtained, and will be required to be delivered in physical form only by Party B, if unavailable through those electronic means.
+Part 4. Miscellaneous
+(a)Addresses for Notices. For the purpose of Section 12(a) of this Agreement:
+Address for notices or communications to Party A:
+Address: Nomura Global Financial Products Inc.
+Worldwide Plaza 309 West 49th Street
+New York, NY 10019-7316
+Attention: Legal Department
+Email: portfoliogovernance@fsinvestments.com and
+investmentops@fsinvestments.com
+Telephone No.: 212-667-2357
+Address for notices or communications to Party B:
+Address: 201 Rouse Boulevard Philadelphia, PA 19112
+Attention: Legal Department
+Telephone No.: 877 628-8575
+(b)Process Agent. For the purpose of Section 13(c) of this Agreement,
+Party A appoints as its Process Agent: None. Party B appoints as its Process Agent: None.
+(c)Offices. The provisions of Section 10(a) will apply to this Agreement.
+(d)Multibranch Party. For the purpose of Section 10(b) of this Agreement:
+Party A is not a Multibranch Party; and Party B is not a Multibranch Party.
+(e)Calculation Agent. The Calculation Agent shall be Party A, unless (a) the Calculation Agent is otherwise specified in a Confirmation in relation to the relevant Transaction, or (b) a Potential Event of Default or an Event of Default has occurred and is continuing with respect to Party A as the Defaulting Party or a Termination Event has occurred with respect to Party A as an Affected Party, in which case the Calculation Agent will be a leading
+dealer in the relevant market appointed by Party B from the Approved Dealer List until the earlier of (i) a designation under Section 6(c)(ii), or (ii) the discontinuance of such Event of Default, Potential Event of Default or Termination Event with respect to Party A as the Defaulting Party or Affected Party. The fees and expenses of such replacement calculation agent shall be borne equally by Party A and Party B.
+For purposes of this provision, the "Approved Dealer List" will include the principal affiliated dealer entities of each of Bank of America, Bank of Montreal, Barclays, BNP Paribas, Citigroup, Deutsche Bank, Goldman Sachs, HSBC, ING, Jefferies & Co., Mitsubishi UFJ Financial Group, Mizuho Financial Group, Morgan Stanley, Royal Bank of Canada, Sumitomo Mitsui Banking Corporation, Truist Financial, UBS and Wells Fargo & Company.
+(f)Credit Support Document. Details of any Credit Support Document:-
+In the case of Party A, the Credit Support Annex which supplements, forms part of, and is subject to this Agreement.
+In the case of Party B, the Credit Support Annex which supplements, forms part of, and is subject to this Agreement, and, if applicable, a guarantee from its Credit Support Provider.
+(g)Credit Support Provider.
+Credit Support Provider means, in relation to Party A: not applicable
+Credit Support Provider means, in relation to Party B: the Credit Support Provider, if any, specified on Annex I attached hereto with respect to the applicable Party B, otherwise, not applicable.
+(h)Governing Law. This Agreement will be governed by and construed in accordance with the laws of the State of New York.
+(i)Netting of Payments. "Multiple Transaction Payment Netting" does not apply for the purpose of Section 2(c) of this Agreement.
+(j)"Affiliate" has the meaning specified in Section 14 of this Agreement, provided, however, that for the purposes of this Agreement, Party B may have one or more wholly-owned subsidiaries but no other Affiliates.
+(k)Absence of Litigation. Section 3(c) is hereby amended by inserting the word, "materially" in the third line immediately before the word "affect". For the purpose of Section 3(c):-
+"Specified Entity" means in relation to Party A: None.
+"Specified Entity" means in relation to Party B: None.
+(l)No Agency. The provisions of Section 3(g) will apply to this Agreement, as amended by adding after "person or entity" the words "nor in any other capacity, fiduciary or otherwise".
+(m)Jurisdiction. Section 13(b) is hereby amended by: (i) deleting in the second line of subparagraph (i) thereof the word "non-"; and adding "and any court with competent appellate jurisdiction over those courts' decisions" at the end of subparagraph (i)(2); and (ii) deleting sub-paragraph (iii) thereof.
+Part 5. Other Provisions
+(a)Gross-Up. Section 2(d)(i)(4)(B) is hereby amended by inserting, "or 3(g)", after the words, "Section 3(f)", in the first line therein.
+(b)Additional Representations will apply. For the purposes of Section 3 of this Agreement, each of the following will constitute an Additional Representation: -
+(i)Relationship Between Parties. Each party will be deemed to represent to the other party on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction):-
+(A)Non-Reliance. It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisers as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction, it being understood that information and explanations related to the terms and conditions of a Transaction will not be considered investment advice or a recommendation to enter into that Transaction. No communication (written or oral) received from the other party will be deemed to be an assurance or guarantee as to the expected results of that Transaction.
+(B)Assessment and Understanding. It is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction. It is also capable of assuming, and assumes, the risks of that Transaction.
+(C)Status of Parties. The other party is not acting as a fiduciary for or an adviser to it in respect of that Transaction.
+(D)Eligible Contract Participant. It, and its Credit Support Provider, if applicable is an "eligible contract participant" within the meaning of Section 1a(18) of the Commodity Exchange Act.
+(c)Additional Representations of Party B. Party B represents to Party A in accordance with Section 3 of the Agreement (which representations will be deemed to be repeated by Party B at all times until termination of this Agreement and any Transaction outstanding hereunder) that:
+(i)Reserved.
+(ii)Compliance with Investment Restrictions. The Transactions entered into by Party B hereunder comply in all respects with any and all investment policies or restrictions, as amended, supplemented, updated or otherwise modified from time to time, set forth in: (A) Party B's prospectus, (B) its statement of additional information, and (C) any other rule, law, regulation, similar guideline or other document governing the investment by Party B of its assets.
+(iii)Authority of Investment Manager. Investment Manager is duly authorized to conduct the trading and investment activities of Party B (including, without limitation, the authority to enter into enter into this Agreement and each Transactions, execute Confirmations, exercise all rights of Party B in respect of Transactions, and make payments under this Agreement on behalf of Party B).
+(iv)Transactions. With respect to each Option Transaction, Party B represents to Party A that it:
+(1)understands that the Option Transactions have not been registered under the Securities Act of 1933, as amended (the "Securities Act") and are being offered and sold in reliance on the exemption to the registration requirements of the Securities Act provided under Section 4(a)(2) thereof:
+(2)understands and acknowledges that Party A has no obligation to register the Option Transactions under the Securities Act or any other United States federal or state securities law, and that the Option Transactions must be held indefinitely by the purchaser thereof unless subsequently registered under such securities laws or an exemption from such registration is available; and
+(3)agrees that in the event that at some future time it wishes to dispose of the Option Transactions in whole or in part (such disposition currently not being foreseen or contemplated), it will not transfer the same except in a transaction exempt from or not subject to the registration requirements of the Securities Act.
+(v)Financial End User. Party B represents to Party A that it is a "financial end user" as such term is defined by the Commodity Futures Trading Commission (17 CFR §23.151).
+(vi)Commercial End User. Party B represents to Party A that it is not a "commercial end user" as defined under section 3C(g)(1) of the Act (15 U.S.C.
+78c-3(g)(1)) and implementing regulations or satisfies the criteria in section 3C(g)(4) of the Act (15 U.S.C. 78c-3(g)(4)) and implementing regulations.
+(d)Outstanding Specified Transactions. Upon the effectiveness of this Agreement, unless otherwise agreed to in writing by the parties to this Agreement with respect to enumerated Specified Transactions, all Specified Transactions (other than a repurchase transaction, reverse repurchase transaction, buy/sell back transaction or securities lending transaction), then outstanding between the parties shall be subject to the terms hereof.
+(e)Covenants of Party B. Party B makes the following covenants in favor of Party A (so long as there are any obligations of Party B outstanding under this Agreement):
+(i)Obligations Relating to Representations. If any event or condition should occur that would render any representations and warranties made by Party B in this Agreement incorrect or misleading in any material respect, then Party B will promptly give written notice thereof to Party A.
+(ii)Notice of Certain Events. Party B shall provide Party A, promptly upon becoming aware of the same, with written notice of: (A) any action, change, or modification to any Operative Document or any other action to be voted on in respect of Party B, in each case, that will cause a Termination Event or Event of Default to occur, (B) any pending litigation, action, claim, or proceeding that will adversely affect the ability of Party B to perform its obligations under this Agreement or any Transaction, or (C) Investment Manager's impending resignation or termination as investment manager to Party B.
+(iii)Reserved.
+(iv)Reliance. Party B agrees that Party A shall not be concerned with, or need to make any inquiry with respect to, the powers or authority of Investment Manager to act on behalf of Party B, and that Party A is entitled to rely conclusively upon any request, order, instruction, certificate, opinion or other document or information furnished to Party A by any employee or agent of Investment Manager or a sub-adviser and reasonably believed by Party A to be genuine, as though such request, order, instruction, certificate, opinion or other document or information were given by Party B.
+(f)Reserved
+(g)Accuracy of Specified Information. Section 3(d) is hereby amended by adding in the third line thereof after the word "respect" and before the period the words "or, in the case of audited or unaudited financial statements or balance sheets, a fair presentation of the financial condition of the relevant person."
+(h)Set-Off. Section 6(f) of this Agreement shall be amended by inserting the words "and or its Affiliates" after the word "Payee" in the sixth line thereof and after the word "Payer" in the seventh line thereof.
+(i)Transfer. Section 7 is hereby amended by: (i) adding in the third line thereof after the word "party," the words "which consent will not be arbitrarily withheld or delayed and (ii) adding in the second line of
+subparagraph (a) thereof after the words "assets to," the words "or reorganization, incorporation, reincorporation or reconstitution into or as."
+(j)Notices. (i) The phrase "facsimile transmission," shall be inserted before the word "electronic" in the second line of Section 12(a) of this Agreement.
+(k)Severability. Any provision of this Agreement which is prohibited or unenforceable in any jurisdiction in respect of any Transaction shall, as to such Transaction, be ineffective to the extent of such prohibition or unenforceability but without invalidating the remaining provisions of this Agreement or affecting the validity or enforceability of such provision in any other jurisdiction or in respect of any other Transaction, unless such severance shall substantially impair the benefits of the remaining portions of this Agreement to, or changes the reciprocal obligations of, either of the parties. The parties hereto shall endeavor in good faith negotiations to replace the prohibited or unenforceable provision with a valid provision the economic effect of which comes as close as possible to that of the prohibited or unenforceable provision.
+(l)2002 Master Agreement Protocol. Upon entering into this Agreement, Party B shall be deemed to have adhered to the 2002 Master Agreement Protocol and all Annexes thereto as published by the International Swaps and Derivatives Association, Inc. and shall be bound by its terms and conditions.
+(m)Reserved.
+(n)Recording of Conversations. The parties agree that each may electronically record any telephone conversations between them.
+(p)WAIVER OF JURY TRIAL. EACH PARTY HEREBY IRREVOCABLY WAIVES ITS RIGHT TO JURY TRIAL WITH RESPECT TO ANY OBLIGATION ARISING UNDER, OR IN CONNECTION WITH, THIS AGREEMENT.
+(q)FATCA. Withholding Tax imposed on payments to non-US counterparties under the United States Foreign Account Tax Compliance Act. "Tax" as used in Part 2(a) of this Schedule (Payer Tax Representation) and "Indemnifiable Tax" as defined in Section 14 of this Agreement shall not include any
+U.S. federal withholding tax imposed or collected pursuant to Sections 1471 through 1474 of the U.S. Internal Revenue Code of 1986, as amended (the "Code"), any current or future regulations or official interpretations thereof, any agreement entered into pursuant to Section 1471(b) of the Code, or any fiscal or regulatory legislation, rules or practices adopted pursuant to any intergovernmental agreement entered into in connection with the implementation of such Sections of the Code (a "FATCA Withholding Tax"). For the avoidance of doubt, a FATCA Withholding Tax is a Tax the deduction or withholding of which is required by applicable law for the purposes of Section 2(d) of this Agreement.
+(r)2015 Section 871(m) Protocol. Party A is an adherent to the ISDA 2015 Section 871(m) Protocol published by the International Swaps and Derivatives Association, Inc. on November 2, 2015, as may be amended or modified from time to time (the "Section 871(m) Protocol"). In the event that Party B is not an adherent to the Section 871(m) Protocol, Party A and Party B hereby agree that the definitions and provisions contained in the Section 871(m) Protocol, including the Attachment thereto, will be deemed to be incorporated herein, mutatis mutandis, as though such definitions and provisions were set out in full herein, with such conforming changes as are necessary to deal with what would otherwise be inappropriate or incorrect cross- references. The parties further agree that the Implementation Date (as such term is defined in the Section 871(m) Protocol) shall be the date of execution of this Agreement.
+(s)ISDA August 2012 DF Protocol and ISDA March 2013 DF Protocol. Party A and Party B hereby agree that: Notwithstanding anything to the contrary in the August DF Protocol Agreement or the August DF Protocol Questionnaire (collectively, the "August DF Protocol Documents"), or in the March DF Protocol Agreement or the March DF Protocol Questionnaire (collectively, the "March DF Protocol Documents"), including anything therein that provides in substance that such agreements may only be adhered to with respect to existing Protocol Covered Agreements, the parties hereby agree that:
+(A)if each party delivers its completed August DF Protocol Questionnaire in accordance with paragraph 3 of the August DF Protocol Agreement (the later of such dates, the "August DF Protocol Matching Date"), then (i) upon the later of (x) the August DF Protocol Matching Date and (y) the date of this Agreement (or, if such dates are the same date, such date), for all purposes of the August DF Protocol Documents, such date will be the Implementation Date, this Agreement will be a Protocol Covered Agreement and a Matched PCA, and Party A and Party B will be Matched PCA Parties; and
+(B)if each party delivers its completed March DF Protocol Questionnaire in accordance with paragraph 3 of the March DF Protocol Agreement (the later of such dates, the "March DF Protocol Matching Date"), then (i) upon the later of
+(x) the March DF Protocol Matching Date and (y) the date of this Agreement (or, if such dates are the same date, such date), for all purposes of the March DF Protocol Documents, such date will be the Implementation Date, this Agreement will be a Protocol Covered Agreement and a Matched PCA, and Party A and Party B will be Matched PCA Parties.
+For purposes hereof, (i) the "August DF Protocol Agreement" means the ISDA August 2012 DF Protocol Agreement, published on August 13, 2012, by the International Swaps and Derivatives Association, Inc. ("ISDA") (ii) the "August DF Protocol Questionnaire" means the ISDA August 2012 DF Protocol Questionnaire, published on August 13, 2012 by ISDA, (iii) the "March DF Protocol Agreement" means the ISDA March 2013 DF Protocol Agreement, published on March 22, 2013, by ISDA and (iv) the "March DF Protocol Questionnaire" means the ISDA March 2013 DF Protocol Questionnaire, published on March 22, 2013 by ISDA.
+(t)ISDA 2021 SBS TOP-UP PROTOCOL FOR ADHERENTS OF BOTH DF1 AND DF2. Party A and
+Party B hereby agree that:
+Notwithstanding anything to the contrary in the ISDA 2021 SBS Top-Up Protocol published by the International Swaps and Derivatives Association, Inc. on May 3, 2021, (the "SBS Top-Up Protocol"), if each party has adhered to both the ISDA August 2012 DF Protocol and the ISDA March 2013 DF Protocol and previously delivered its completed ISDA August 2012 DF Protocol Questionnaire and ISDA March 2013 DF Protocol Questionnaire in accordance with paragraphs 3 of each of the ISDA August 2012 DF Protocol Agreement and the March 2013 DF Protocol Agreement (collectively, "Protocol Covered Agreements"), then as of the date of this Agreement, the Protocol Covered Agreements will be amended pursuant to the terms of Appendix 1 and Appendix 2 to the SBS Top-Up Protocol for all purposes of the SBS Top-Up Protocol, and such date will be the Amended Effective Date.
+(u)Reporting Consent. The parties agree that solely as between Party A and Party B, the definitions and provisions contained in the ISDA 2013 Reporting Protocol published by the International Swaps and Derivatives Association, Inc. on May 10 2013, including the Attachment thereto (the "Reporting Protocol"), will be deemed to be incorporated herein, mutatis mutandis, as though such definitions and provisions were set out in full herein, with such conforming changes as are necessary to deal with what would otherwise be inappropriate or incorrect cross references. The parties further agree that the Implementation Date (as such term is defined in the Reporting Protocol) shall be the date of execution of this Agreement.
+(v)Japanese Jurisdictional Module of the ISDA Resolution Stay Jurisdictional Modular Protocol. The terms of the Japanese Jurisdictional Module of the ISDA Resolution Stay Jurisdictional Modular Protocol (the "Japanese Module") are incorporated into and form part of this Agreement, and this Agreement shall be deemed to be a Covered Agreement for purposes of the Japanese Module. In the event of any inconsistencies between this Agreement and the Japanese Module, the Japanese Module will prevail. Party A has adhered to the Japanese Module as a Regulated Entity, and upon entering into this Agreement Party B shall be deemed to have adhered to the Japanese Module as a Module Adhering Party and identified Party A as a Regulated Entity Counterparty.
+(w)Limitation on Withholding.
+(1)If a party ("X") (A) exercises its rights in connection with Section 2(a)(iii) and elects not to make any payment or delivery specified in a Confirmation to be made by it for sixty (60) Local Business Days, and (B) if the underlying condition is an Event of Default (other than an Event of Default or Potential Event of Default under Section 5(a)(i)) where the other party to this Agreement ("Y") is the Defaulting Party and X does not designate an Early Termination Date in connection with such Event of Default by the end of such sixty (60) calendar day period following receipt by Y of written notice from X of such Event of Default (such end date, the "Condition End Date"), then, in no event shall X suspend payments or deliveries in reliance on Section 2(a)(iii)(1) in respect of any Event of Default or Potential Event of Default beyond the Condition End Date. For the avoidance of doubt, no such limitation shall apply with respect to any Event of Default or Potential Event of Default under Section 5(a)(i).
+(2)The condition precedent in Section 2(a)(iii)(1) does not apply to a payment or delivery owing by a party if the other party shall have satisfied in full all its payment and delivery obligations under Section 2(a)(i) of the Agreement and shall at the relevant time have no future payment or delivery obligations, whether absolute or contingent, under Section 2(a)(i).
+(y)Limitation on Designation of Early Termination Date. If a party ("X") that receives written notice from the other party ("Y") specifically stating that there has occurred (x) an Event of Default as to which Y is the Defaulting Party or (y) any Termination Event as to which Y is an Affected Party, then, notwithstanding anything in Section 9(f) of this Agreement to the contrary, X shall have no further right to designate an Early Termination Date by reason of the Event of Default or Termination Event specified in such notice after ninety
+(90) Local Business Days have elapsed following the date on which X receives such notice. Notice will be delivered to the addressee(s) for the other party as contained in Part 3 above.
+(z)Electronic Signatures. Each party acknowledges that electronic signatures, whether digital or encrypted, of a party may be included in this Agreement and if so, are intended to authenticate this writing and to have the same force and effect as a manual signatures. "Electronic signature" means any electronic sound, symbol, or process attached to or logically associated with a record and executed and adopted by a party with the intent to sign such record, including facsimile or email electronic signatures.
+(aa) Limited Recourse. Notwithstanding anything to the contrary contained in this Agreement or in any schedule, addendum, confirmation, or other document issued or delivered in connection with any Transaction entered into under this Agreement, any amounts owed or liabilities incurred by Party B in respect of any Transaction entered into under this Agreement may be satisfied solely from the assets of the Party B that are under the management of the Investment Manager (the "Party B Account"). Without limiting the generality of the foregoing, in no event shall Party A or any of its Affiliates have any recourse with respect to such amounts owed or liabilities incurred, whether by setoff or otherwise, against (a) any assets of Party B that are not in the Party B Account; (b) any assets of any person or entity other than the Party B Account (including, without limitation, any other person or entity whose account is under the management of the Investment Manager); (c) any assets of any Affiliates of Party B; or (d) absent gross negligence, willful misconduct or fraud, any assets of the Investment Manager or any assets of the Investment Manager's Affiliates.
+(bb) Inconsistency. Section 1(b) is hereby amended by adding the following at the end of the paragraph.
+"Furthermore, in the event of any inconsistency between the provisions of the Share Swap Confirmation dated September 20, 2023 and this Schedule, Credit Support Annex and Master Agreement, the September 20, 2023 Confirmation will prevail for the purpose of the relevant Transaction."
+(cc) Misrepresentation. Section 5(a)(iv) of the Agreement is hereby amended by inserting the words (i) "or, in the case of Party B, the Investment Manager" after the word "party" in the second line; and (ii) ", the IM Side Letter" after the word "Agreement" in the third line.
+IM Side Letter" means an agency letter from the Investment Manager in form and substance satisfactory to Party A and attached hereto as Exhibit B certifying the Investment Manager's authority and capacity to act on behalf of Party B.
+Part 6. FX Transactions and Currency Option Transactions
+(a)Application of this Agreement. This Agreement, as modified by this Part 6, shall apply to all FX Transactions and Currency Option Transactions (as defined in the 1998 FX and Currency Option Definitions, as amended or supplemented from time to time, published by the International Swaps and Derivatives Association, Inc., the Emerging Markets Traders Association and The Foreign Exchange Committee (the "FX Definitions")) entered into or outstanding (whether before or after this Agreement is entered into) between the Parties.
+(b)Confirmations. Any confirmation in respect of an FX Transaction or Currency Option Transaction between the parties, including but not limited to Confirmations sent by electronic means, that fails by its terms to expressly exclude the application of this Agreement shall (to the extent not otherwise provided for in this Agreement) (i) constitute a "Confirmation" as referred to in this Agreement even where not so specified in such confirmation; (ii) supplement, form a part of, and be subject to this Agreement, and all provisions in this Agreement will govern such Confirmation except as modified therein and (iii) shall incorporate the FX Definitions. In the event of any inconsistency between the FX Definitions and this Agreement, this Agreement will govern. In the event of any inconsistency between the provisions of any Confirmation and this Agreement or the FX Definitions, such Confirmation will prevail for the purposes of the relevant Transaction.
+(c)Discharge and Termination. Unless otherwise agreed, any Call or any Put written by a party will automatically be terminated and discharged, in whole or in part, as applicable, against a Call or a Put, respectively, written by the other party, such termination and discharge to occur automatically upon the payment in full of the last Premium payable in respect of such Currency Option Transactions; provided that such termination and discharge may only occur in respect of Currency Option Transactions:
+(1)each being with respect to the same Put Currency and the same Call Currency;
+(2)each having the same Expiration Date and Expiration Time;
+(3)each being of the same style, i.e. either both being American style Currency Option Transactions or both being European style Currency Option Transactions;
+(4)each having the same Strike Price;
+(5)neither of which shall have been exercised by delivery of a Notice of Exercise; and
+(6)each having been entered into by the same pair of Offices of the Buyer and the Seller
+and, upon the occurrence of such termination and discharge, neither party shall have any further obligation to the other party in respect of the relevant Currency Option Transactions or, as the case may be, parts thereof so terminated and discharged. In the case of a partial termination and discharge (i.e., where the relevant Currency Option Transactions are for different amounts of the Currency Pair), the remaining portion of the Currency Option Transaction which is partially discharged and terminated shall continue to be a Currency Option Transaction for all purposes of this Agreement, including this Part 6(c). Such termination and discharge shall be effective notwithstanding that either party (i) may fail to send out a Confirmation, (ii) may fail to record such termination and discharge in its books, or (iii) may send out a Confirmation that is inconsistent with such termination and discharge.
+IN WITNESS WHEREOF the parties have executed this Schedule on the respective dates specified below with effect from the date specified on the first page of this Agreement.
+NOMURA GLOBAL FINANCIAL PRODUCTS INC.
+EACH OF THE ENTITIES LISTED ON EXHIBIT A TO THIS AGREEMENT WHOSE INVESTMENT MANAGER IS FS/EIG ADVISOR, LLC, SEVERALLY AND NOT JOINTLY
+By: FS/EIG Advisor, LLC, not in its capacity but solely in its capacity as the investment adviser to each entity identified on Exhibit A
+(Party A) (Party B)
+![image0.jpg](image0.jpg)![image1.jpg](image1.jpg)By: By:
+Name:
+Matthew Ferreira
+Name: Stephen S. Sypherd
+Title:
+Managing Director
+Title: General Counsel and Secretary
+Date: 11/1/2024
+Date: 11/1/2024
+EACH OF THE ENTITIES LISTED ON EXHIBIT A TO THIS AGREEMENT WHOSE INVESTMENT MANAGER IS FS GLOBAL ADVISOR, LLC, SEVERALLY AND NOT JOINTLY
+By: FS Global Advisor, LLC, not in its capacity but solely in its capacity as the investment adviser to each entity identified on Exhibit A
+(Party B)
+![image3.jpg](image3.jpg)By:
+Name: Stephen S. Sypherd
+Title: Managing Director Date: 11/1/2024
+EACH OF THE ENTITIES LISTED ON EXHIBIT A TO THIS AGREEMENT WHOSE INVESTMENT MANAGER IS FS TACTICAL ADVISOR, LLC, SEVERALLY AND NOT JOINTLY
+By: FS Tactical Advisor, LLC, not in its capacity but solely in its capacity as the investment adviser to each entity identified on Exhibit A
+(Party B)
+![image3.jpg](image3.jpg)By: Name: Stephen S. Sypherd
+Title: Managing Director and General Counsel Date: 11/1/2024
+Docusign Envelope ID: DE2A5CCD-02E3-48BE-BC10-589571E7397B
+Exhibit A to the Schedule

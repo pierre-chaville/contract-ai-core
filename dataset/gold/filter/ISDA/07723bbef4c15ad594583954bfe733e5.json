@@ -1,0 +1,13 @@
+{
+  "filename": "07723bbef4c15ad594583954bfe733e5.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": -1,
+      "end_line": -1,
+      "confidence": 0.1,
+      "explanation": "The provided text contains only the standard printed form of the ISDA Master Agreement and not the Schedule. The Schedule is a separate, party-specific document that is not included in the given paragraphs. Therefore, there is no span matching the user's request for the Schedule of the ISDA Master Agreement."
+    }
+  ]
+}

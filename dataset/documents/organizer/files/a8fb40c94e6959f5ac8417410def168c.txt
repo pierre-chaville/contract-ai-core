@@ -49,3 +49,10 @@ Section 9. Amendments. This Transfer Agreement may not be amended or modified in
 Section 10. Governing Law. This Transfer Agreement shall be governed and construed in accordance with the governing law set out in Part 4(h) of the Schedule to the Transferred Master Agreement.
 IN WITNESS WHEREOF the parties have executed this document on the respective dates specified below.
 MERRILL LYNCH INTERNATIONAL By: 	 /s/ H. Dumper Name: H. Dumper Title: Director Date: April 10, 2012 MERRILL LYNCH CAPITAL SERVICES, INC.
+By: 	  /s/ Nicholas Van Dusen Name: Nicholas Van Dusen Title: Authorized Signatory Date: April 10, 2012
+JPM-1 Swap Transfer and Assignment Agreement
+EXHIBIT A
+[Copy of relevant Transferred Master Agreement
+(including the full text of the ISDA Master and Schedule)]
+EXHIBIT B
+[Form of Guarantee]

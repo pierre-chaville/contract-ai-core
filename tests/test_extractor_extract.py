@@ -17,7 +17,7 @@ def test_extract_with_mocked_backend(monkeypatch: pytest.MonkeyPatch) -> None:
         name="NDA",
         use_case="extraction",
         description="Non-Disclosure Agreement",
-        prompt_scope_filter="",
+        filtering_scopes=[],
         prompt_scope_amendment="",
         clauses=[
             ClauseDefinition(key="termination", title="Termination"),

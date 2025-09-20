@@ -21,7 +21,7 @@ DB1/ 103129414.6
 ``(vii) in Part 5(s) of the Schedule to the Agreement Part 5(s)(i) to Part 5(s)(iv) shall be deleted and replaced with the following provisions:
 "Dodd Frank Requirements - Reporting.  The Dodd Frank Wall Street Reform and Consumer Protection Act (the "Dodd Frank Act ") and the implementing regulations of the Commodity Futures Trading Commission (the "CFTC ") set forth in Title 17 of the Code of Federal Regulations (the "_CFTC Regulations " and, together with the Dodd Frank Act, the "Dodd Frank Requirements_ ") impose a multitude of mandatory data reporting requirements with respect to Swap (as defined in the Dodd Frank Requirements) Transactions entered into and/or outstanding after the enactment of the Dodd Frank Act (each, a "Reportable Swap Transaction ").  Pursuant to Section 45.8 of the CFTC Regulations, when counterparties to a Reportable Swap Transaction have the same regulatory status under the Dodd-Frank Requirements, they must mutually agree on which party will be responsible for complying with the mandatory data reporting provisions applicable to the Reportable Swap Transaction (the agreed party, the "Reporting Counterparty ").  In light of the foregoing and in order to facilitate compliance with such mandatory data reporting requirements, Party A agrees (subject to Party B's compliance with the provisions of this Part 5(w)) to serve as the Reporting Counterparty as follows:
 `(i)`For all Reportable Swap Transactions (if any) between Party A and Party B, including Transactions that meet the requirements for a "trade option" as set forth in Section 32.3(a) of the CFTC Regulations, Party A shall be the Reporting Counterparty for all reporting required pursuant to Parts 43, 45 and 46 of the CFTC Regulations.
-`(ii)`Provided that Party B shall have complied with its obligations under Part 5(s)(iii)C below, for any Reportable Swap Transaction (if any) entered into between Party A and Party B for which Party B elects the exception to an applicable mandatory clearing requirement under Section 2(h)(7)(A) of the Commodity Exchange Act (7 U.S.C. ง 2(h)(7)(A)) (an "_End-User Swap Transaction_ "), Party A shall be responsible for all reporting required pursuant to Section 50.50(b) of the CFTC Regulations.
+`(ii)`Provided that Party B shall have complied with its obligations under Part 5(s)(iii)C below, for any Reportable Swap Transaction (if any) entered into between Party A and Party B for which Party B elects the exception to an applicable mandatory clearing requirement under Section 2(h)(7)(A) of the Commodity Exchange Act (7 U.S.C. ยง 2(h)(7)(A)) (an "_End-User Swap Transaction_ "), Party A shall be responsible for all reporting required pursuant to Section 50.50(b) of the CFTC Regulations.
 `(iii)`In connection with the agreement of Party A above and in order to permit Party A, as the Reporting Counterparty, to comply with the applicable mandatory data reporting obligations of Parts 43, 45 and 46 and Section 50.50(b) of the CFTC Regulations (the "Reporting Regulations "), Party B agrees that:
 `A.`It will timely provide to Party A all necessary information reasonably requested by Party A to allow it to comply with the Reporting Regulations.
 DB1/ 103129414.6
@@ -49,3 +49,25 @@ ACH ABA:
 Other Details: Not Applicable
 Summer Energy Northeast, LLC
 Bank: Comerica Bank
+Account:
+Wire ABA:
+ACH ABA:
+Other Details: Not Applicable
+Summer Energy Midwest, LLC
+Bank: Comerica Bank
+Account:
+Wire ABA:
+ACH ABA:
+Other Details: Not Applicable".
+`B.```Capitalized terms used and not otherwise defined herein have the meanings specified for such terms in the Agreement.
+`C.```Except as expressly provided herein in Section A of this Amendment, all provisions and terms of the Agreement remain in full force and effect.
+DB1/ 103129414.6
+`D.```This Amendment may be executed and delivered in counterparts (including by facsimile transmission), each of which will be deemed an original.
+`E.```This Amendment will be governed by the laws of the State of New York without reference to its choice of law doctrine.
+(Signature pages follow.)
+DB1/ 103129414.6
+IN WITNESS WHEREOF, the parties have executed this Amendment to ISDA Master Agreement by their duly authorized officers as of the date first above written.
+EDF TRADING NORTH AMERICA, LLC By: /s/ Jason Earnheart Name: Jason Earnheart Title: Chief Commercial Officer
+Signature page to Amendment to ISDA Master Agreement
+SUMMER ENERGY, LLC By: /s/ Neil Leibman Name: Neil Leibman Title: Manager SUMMER ENERGY NORTHEAST, LLC By: /s/ Neil Leibman Name: Neil Leibman Title: Manager SUMMER ENERGY MIDWEST, LLC By: /s/ Neil Leibman Name: Neil Leibman Title: Manager
+Signature page to Amendment to ISDA Master Agreement

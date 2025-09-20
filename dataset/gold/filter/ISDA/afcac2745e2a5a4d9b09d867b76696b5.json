@@ -1,0 +1,13 @@
+{
+  "filename": "afcac2745e2a5a4d9b09d867b76696b5.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 254,
+      "end_line": 380,
+      "confidence": 0.98,
+      "explanation": "Lines 254-380 contain the full text of the Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE TO THE MASTER AGREEMENT' and including all the negotiated terms between the parties. The lines before this are the standard pre-printed Master Agreement, and the lines after 380 are the Credit Support Annex (CSA) and its exhibits, which are not part of the Schedule itself. This span is the single contiguous section that constitutes the Schedule."
+    }
+  ]
+}

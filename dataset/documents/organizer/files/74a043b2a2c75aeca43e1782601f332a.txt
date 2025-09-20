@@ -1,6 +1,6 @@
 EX-10.3 4 sume_ex10z3.htm EXHIBIT 10.3
 `(Bilateral Form)``(ISDA Agreements Subject to New York Law Only)`
-ISDA �
+ISDA Ò
 International Swaps and Derivatives Association, Inc.
 CREDIT SUPPORT ANNEX
 to the Schedule to the
@@ -27,7 +27,7 @@ DB1/ 95864617.2
 `(B)```a security, the bid price obtained by the Valuation Agent multiplied by the applicable Valuation Percentage, if any;
 `(ii)```Posted Collateral that consists of items that are not specified as Eligible Collateral, zero; and
 `(iii)```Other Eligible Support and Other Posted Support, as specified in Paragraph 13.
-`10``ISDA � 1994`
+`10``ISDA ® 1994`
 DB1/ 95864617.2
 PARAGRAPH 13
 to the
@@ -49,3 +49,129 @@ Paragraph 13.  Elections and Variables
 `(B)`Return Amount has the meaning specified in Paragraph 3(b) of this Annex.
 `(C)`Credit Support Amount has the meaning specified in Paragraph 3 of this Annex.
 `(ii)`Eligible Collateral.  The following items qualify as "Eligible Collateral" for the party specified:
+Party A 	 Party B 	 Valuation Percentage Cash 	 [X] 	 [X] 	 100%
+`11``ISDA ® 1994`
+DB1/ 95864617.2
+`(iii)`Other Eligible Support.  The following items qualify as "Other Eligible Support" for the party specified:
+Party A 	 Party B 	 Valuation Percentage Letters of Credit (in accordance with Paragraph 13(j) of this Annex) 	 [X] 	 [X] 	 `100% unless: (i) a Letter of Credit Default ```has occurred with respect to such Letter of Credit; or (ii) thirty (30)  or fewer calendar days remain prior to the expiration date of such Letter of Credit, in either of which case the Valuation Percentage is 0%.
+Collateral consisting of Party B's right, title, and interest in, to and under the accounts receivable due from Party B's customers within 60-days (current plus 30-days aging accounts receivable) to Party B in the non-recourse POR market, during any period when the Security Agreement (as defined in the Schedule to the Agreement), Control Agreements (as defined in the Schedule to the Agreement) and other documents contemplated thereby are in effect with respect to Party B and Party A has a valid and perfected first priority lien on and security interest in such Collateral ("POR Collateral ").  	   	   [X] 	 80%
+`(iv)`Thresholds.
+`(A)`Independent Amount means with respect to Party A and Party B, for each Transaction at any time, zero, unless otherwise specified in the Confirmation.
+`12``ISDA ® 1994`
+DB1/ 95864617.2
+`(B)`" Threshold" means:
+With respect to Party A, $20,000,000; unless an Event of Default or a "Credit Event Upon Merger" Specified Condition has occurred and is continuing with respect to Party A, in which case Party A's Threshold is zero.
+With respect to Party B, zero dollars, $0.
+`(C)`" Minimum Transfer Amount" means, with respect to Party A:  $1.00, and with respect to Party B:  $1.00.
+`(D)`Rounding.  The Delivery Amount will be rounded up to the nearest integral amount of $50,000.  The Return Amount will be rounded down to the nearest integral amount of $50,000 unless the Secured Party's Exposure at the time of the demand made pursuant to Paragraph 3(b) is equal to or less than zero, in which case the Return Amount is not subject to rounding.
+`(c)`Valuation and Timing -
+`(i)`Valuation Agent means, except as otherwise provided in this clause (i), for purposes of Paragraphs 3 and 5 of this Annex, the party making the demand under Paragraph 3 of this Annex; for purposes of Paragraph 4(d) of this Annex, the Secured Party for purposes of calculating the Value of the Substitute Credit Support and Posted Credit Support involved in the substitution; and for purposes of Paragraph 6(d) of this Annex, the Secured Party receiving or deemed to receive the Distributions or the Interest Amount, as applicable  If an Event of Default or Potential Event of Default has occurred and is continuing with respect to the party designated as the Valuation Agent, then in such case and for so long as the Event of Default or Potential Event of Default continues the other party will be the Valuation Agent.
+`(ii)`Valuation Date means any Local Business Day.
+`(iii)`Valuation Time means the close of business on the Local Business Day before the Valuation Date or date of calculation, as applicable.
+Calculations of Value and Exposure will be made as of approximately the same time on the same date.
+`(iv)`Notification Time means 1:00 p.m. New York, New York time on a Local Business Day.
+`(v)`Transfer Timing has the meaning specified in Paragraph 4(b) of this Annex, except that the word "next" in the third line immediately preceding the words, "Local Business Day" is replaced with, "same" and the word, "second" in the fifth line immediately preceding the words, "Local Business Day" is replaced with, "next".
+`13``ISDA ® 1994`
+DB1/ 95864617.2
+`(d)`Conditions Precedent and Secured Party 's Rights and Remedies.  The following Termination Event(s) are a "Specified Condition" for the party specified (that party being the Affected Party if the Termination Event occurs with respect to that party):
+Party A 	 Party B Illegality 	 [ X ] 	 [ X ] Tax Event 	 [ X ] 	 [ X ] Tax Event Upon Merger 	 [ X ] 	 [ X ] Credit Event Upon Merger 	 [ X ] 	 [ X ] Additional Termination Event(s): 	 None 	 None
+`(e)`Substitution.
+`(i)`Substitution Date has the meaning specified in Paragraph 4(d)(ii) of this Annex.
+`(ii)`Consent.  The Pledgor is required to obtain the Secured Party's consent for any substitution pursuant to Paragraph 4(d) of this Annex.
+`(f)`Dispute Resolution.
+`(i)`Resolution Time means 1:00 p.m., New York, New York time, on the Local Business Day following the date on which the notice is given that gives rise to a dispute under Paragraph 5 of this Annex.
+`(ii)`Value.  For the purpose of Paragraph 5(i)(C) and 5(ii) of this Annex, the Value of Posted Credit Support will be calculated using the Valuation Percentages established in Paragraph 13(b)(ii) and 13(b)(iii) of this Annex.
+`(iii)`Alternative.  The provisions of Paragraph 5 of this Annex apply, except that, pending the resolution of a dispute, Transfer of the undisputed Value of Eligible Credit Support or Posted Credit Support involved in the relevant demand is, if the demand is made at or before the Notification Time, due as provided in Paragraph 5 of this Annex, and, if the demand is made after the Notification Time, due on the second (2nd) Local Business Day after the demand.
+`(g)`Holding and Using Posted Collateral.
+`(i)`Eligibility to Hold Posted Collateral; Custodians.
+Party A and its Custodian are entitled to hold Posted Collateral pursuant to Paragraph 6(b) of this Annex so long as the following conditions applicable to it are satisfied:
+`(1)`Party A is not a Defaulting Party.
+`14``ISDA ® 1994`
+DB1/ 95864617.2
+`(2)`Posted Collateral may be held only in the following jurisdictions:
+United States of America.
+Initially, the Custodian for Party A is:  Not Applicable.
+Party B and its Custodian are entitled to hold Posted Collateral pursuant to Paragraph 6(b) of this Annex so long as the following conditions applicable to it are satisfied:
+`(1)`Party B is not a Defaulting Party.
+`(2)`Posted Collateral may be held only in the following jurisdictions:
+United States of America.
+Initially, the Custodian for Party B is:  Not Applicable.
+Notwithstanding the foregoing, each party shall cause all Posted Collateral received from the other party to be entered in one or more accounts (each, a "Collateral Account ") with a Qualified Institution, each of which accounts may include property of other parties but will bear a title indicating the Pledgor's interest in said account and the Posted Collateral in such account.  In addition, the Secured Party may direct the Pledgor to transfer or deliver Eligible Collateral directly into the Secured Party's Collateral Account(s).  The Secured Party may move the Collateral Accounts from one Qualified Institution to another upon reasonable notice to the Pledgor.  The Secured Party shall cause statements concerning the Posted Collateral transferred or delivered by the Pledgor to be sent to the Pledgor on request, which may not be made more frequently than once in each calendar month.
+`(ii)`Use of Posted Collateral.  The provisions of Paragraph 6(c) of this Annex apply.
+`(h)`Distributions and Interest Amount.
+`(i)`Interest Rate.  The Interest Rate for each day is the Federal Funds (effective) rate for such day, as published by the Board of Governors of the Federal Reserve System in Statistical Release H.15.
+`(ii)`Transfer of Interest Amount.  The Secured Party shall Transfer the Interest Amount accrued in a given month on or before the third (3rd) Local Business Day immediately following the later of (x) the end of such calendar month and (y) Secured Party's receipt of Pledgor's invoice for payment of the Interest Amount.
+`(iii)`Alternative to Interest Amount.  The provisions of Paragraph 6(d)(ii) of this Annex will apply.
+`(i)`Additional Representation(s).  None.
+`(j)`Other Eligible Support and Other Posted Support.
+`15``ISDA ® 1994`
+DB1/ 95864617.2
+`(i)`" Value" means:
+`(A)` with respect to Other Eligible Support and Other Posted Support in the form of a Letter of Credit, an amount equal to the product of (x) the Valuation Percentage established in Paragraph 13(b)(iii) of this Annex and applicable to such Letter of Credit multiplied by (y) the amount available to be drawn by the Secured Party under such Letter of Credit; and
+`(B)`with respect to Other Eligible Support and Other Posted Support in the form of POR Collateral, an amount equal to the product of (x) the Valuation Percentage established in Paragraph 13(b)(iii) of this Annex multiplied by (y) the amount of the accounts receivable due from Party B's customers to Party B in the non-recourse POR market.
+`(ii)`" Transfer" means with respect to
+(1) Other Eligible Support and Other Posted Support in the form of a Letter of Credit
+`(A)`to be provided by the Pledgor to the Secured Party pursuant to Paragraph 3(a) or otherwise, the creation of an unconditional right of the Secured Party for whose benefit the Letter of Credit is established to draw upon that Letter of Credit, whether by delivery to the Secured Party of an original of such Letter of Credit, delivery to the Secured Party of an amendment to an outstanding Letter of Credit in a form reasonably acceptable to the Secured Party and executed by the Qualified Institution that issued such Letter of Credit increasing the amount available to be drawn thereunder, or through such other customary means as may be acceptable to the Secured Party.
+`(B)`to be returned by the Secured Party to the Pledgor pursuant to Paragraph 3(b), the return of such Letter of Credit by the Secured Party to the Pledgor or to the issuer of such Letter of Credit or by the reduction in the amount available to be drawn by Secured Party under such Letter of Credit.  If a Transfer is to be effected by a reduction in the amount of an outstanding Letter of Credit previously issued for the benefit of the Secured Party, the Secured Party may not unreasonably withhold its consent to a such reduction in the amount of such Letter of Credit and shall take such action as is reasonably necessary to effectuate such reduction.
+(2) Other Eligible Support and Other Posted Support in the form of POR Collateral
+`(A)`to be provided by the Pledgor to the Secured Party pursuant to Paragraph 3(a) or otherwise, the execution and delivery of the Security Agreement and the other documents contemplated therein, including without
+`16``ISDA ® 1994`
+DB1/ 95864617.2
+limitation, any and all Control Agreements and the conferring upon Secured Party of a valid and perfected first priority lien on and security interest in the POR Collateral.
+`(B)`to be returned by the Secured Party to the Pledgor pursuant to Paragraph 3(b), the release of the lien and security interest of Secured Party in the applicable POR Collateral.
+`(iii)`Letter of Credit Provisions.  Other Eligible Support and Other Posted Support in the form of a Letter of Credit is subject to the following provisions:
+`(A)`Unless otherwise agreed in writing by the parties, each Letter of Credit must be provided in accordance with the provisions of this Annex and maintained for the benefit of the Secured Party.  With respect to each Letter of Credit Transferred to the Secured Party, the Pledgor shall either (x) renew or cause the renewal of the Letter of Credit at least thirty (30) calendar days prior to the expiration date of such Letter of Credit or (y) within two
+(2) Local Business Days following its determination that it will not renew or cause the renewal of the outstanding Letter of Credit, notify the Secured Party of such determination.
+`(B)`In the event that the bank that issued an outstanding Letter of Credit indicates that it will not renew the Letter of Credit (or provide a substitute Letter of Credit) at least thirty (30) calendar days prior to the expiration of such Letter of Credit, the Pledgor shall within two (2) Local Business Days after obtaining knowledge of such intent provide notice thereof to the Secured Party.
+`(C)`Except in connection with a Letter of Credit Default, if a Delivery Amount in excess of the Pledgor's Minimum Transfer Amount would be created by the change in Value of an outstanding Letter of Credit that resulted from a reduction in the Valuation Percentage applicable to the Letter of Credit, the Pledgor shall at least thirty (30) calendar days prior to the expiration of such Letter of Credit Transfer to the Secured Party Eligible Credit Support in an amount at least equal to the Delivery Amount.
+`(D)`Upon the occurrence of a Letter of Credit Default, the Pledgor shall Transfer to the Secured Party a substitute Letter of Credit or other Eligible Credit Support in an amount at least equal to the greater of (x) the Value of the affected Letter(s) of Credit immediately prior to the occurrence of the Letter of Credit Default and (y) the Delivery Amount applicable following the change in Value of the affected Letter(s) of Credit resulting from the Letter of Credit Default.  The Pledgor shall make such Transfer on or before, (x) the first (1st) Business Day in the case of a Letter of Credit Default of the type described in clause (ii), (iii), (iv) or (v) of the definition thereof and (y) the third (3rd) Business Day in the case of a Letter of Credit Default of the type described in clause (i) thereof,
+`17``ISDA ® 1994`
+DB1/ 95864617.2
+following the earlier to occur of the Pledgor's discovery of such Letter of Credit Default and written demand by the Secured Party.
+`(E)`As one method of providing Eligible Credit Support, the Pledgor may increase the amount of an outstanding Letter of Credit or establish one or more additional Letters of Credit.
+`(F)`Each Letter of Credit must provide that the Secured Party may, and the Secured Party has the right to, in the following situations and upon presentation to the issuer of the Letter of Credit of the certificates or other documentation required by the terms of the Letter of Credit, draw upon the Letter of Credit in an amount up to the entire amount available to be drawn thereunder:
+`(1)`An Event of Default or Specified Condition has occurred and is continuing with respect to the Pledgor under this Agreement or an event of default (however defined or described) has occurred and is continuing with respect to the Pledgor under any other agreement between the Pledgor and the Secured Party.
+`(2)`An Early Termination Date has occurred or been designated as a result of a Termination Event or Event of Default and an early termination amount is or would be due and owing to the Secured Party on account of the termination of the applicable Transaction(s).
+`(3)`Thirty (30) or fewer calendar days remain until the expiration date of the Letter of Credit and the Pledgor has failed to renew, substitute, or sufficiently increase the amount of an outstanding Letter of Credit (as the case may be), establish one or more additional Letters of Credit, or otherwise Transfer sufficient Eligible Credit Support to the Secured Party and the Delivery Amount applicable to the Pledgor as a result of such failure equals or exceeds the Pledgor's Minimum Transfer Amount.
+`(G)`If a party's Credit Support Provider furnishes a Letter of Credit hereunder, the amount available to be drawn under the Letter of Credit may at the option of its Credit Support Provider be reduced by the Value of any Letter of Credit Transferred by the party.  In the event a party furnishes a Letter of Credit hereunder, the amount available to be drawn under the Letter of Credit may at the option of the party be reduced by the Value of any Letter of Credit Transferred by the party's Credit Support Provider.
+`(H)`Notwithstanding Paragraph 10 of this Annex, in all cases, the Pledgor shall bear the costs and expenses of establishing, renewing, substituting, canceling, increasing, and reducing the amount of (as the case may be) one or more Letters of Credit.
+`18``ISDA ® 1994`
+DB1/ 95864617.2
+`(I)`Upon the occurrence of a Letter of Credit Default of the type described in clauses (ii), (iii) or (v) of the definition thereof with respect to an issuer of a Letter of Credit, such issuer shall cease to be a Qualified Institution for purposes of the definition of the term "Letter of Credit" unless approved as such by the party for whose benefit a letter of credit is to be issued.
+`(k)`Demands and Notices - All demands, specifications, and notices regarding Eligible Credit Support under this Annex will be made to:
+To Party A:
+Attn:    Treasury
+Phone:  281-653-1058
+Email:  Collateral-NA@edftrading.com
+To Party B:
+Attn:  Chief Financial Officer
+Phone: 713-375-2793
+Email:  jgeorge@summerenergy.com
+`(l)`Addresses for Transfers - All transfers under this Annex will be sent to the address provided by the transferee.
+`(m)`Other Provisions.
+`(i)`Amendment to Paragraph 3.  The following is added as clause (c) to Paragraph 3 of this Annex:
+`"(c)```Credit Assurances.  If a party (the "Demanding Party ") has reasonable grounds to believe in good faith that the creditworthiness or performance of the other party (the "Impaired Party ") under this Agreement has become unsatisfactory, the Demanding Party may provide to the Impaired Party written notice demanding performance assurance in the form of Eligible Credit Support and in an amount determined by the Demanding Party in a commercially reasonable manner.  The Impaired Party shall provide such performance assurance within two (2) Local Business Days following its receipt of the Demanding Party's demand therefor.  Performance assurance provided in the form of Eligible Credit Support will be excluded from the calculation of the Return Amount until such time as the Demanding Party determines in its reasonable discretion that the creditworthiness or performance, as applicable, of the Impaired Party is no longer unsatisfactory."
+`(ii)`Amendment to Paragraph 7.  Paragraph 7(i) is amended by (A) deleting the phrase "Eligible Collateral, Posted Collateral" and replacing it with the phrase "Eligible Credit Support, Posted Credit Support" and (B) adding at the end thereof immediately prior to the semicolon the phrase "or fails to provide in
+`19``ISDA ® 1994`
+DB1/ 95864617.2
+accordance with Paragraph 3(c) any performance assurance demanded by the other party pursuant to Paragraph 3(c)".
+`(iii)`Amendment to Paragraph 12.
+The definition of "Cash" in Paragraph 12 is deleted in its entirety and replaced with the following:
+"" Cash" means United States Dollars, or such other currency that is acceptable to the Secured Party."
+`(iv)`Additions to Paragraph 12.  The following definitions are added to Paragraph 12 in appropriate alphabetical order:
+"" Credit Rating" means, with respect to a party (or its Credit Support Provider, as the case may be) or other entity on any date of determination, the respective rating then assigned to its senior unsecured long-term debt or deposit obligations (not supported by third party credit enhancement), or in the absence of such a rating, its then current corporate family rating or, if applicable, issuer rating, in either case by S&P, or Moody's. In the event of a split rating, the lowest of the available ratings applies."
+"" Letter of Credit" means an irrevocable and transferable standby letter of credit, issued by a Qualified Institution and in a form acceptable to the party in whose favor the Letter of Credit is issued."
+""Letter of Credit Default " means with respect to an outstanding Letter of Credit, the occurrence of any of the following events: (i) the issuer of such Letter of Credit fails to maintain a Credit Rating of a least "A-" by S&P and "A3" by Moody's, (ii) the issuer of the Letter of Credit fails to comply with or perform its obligations under such Letter of Credit if such failure is continuing after the lapse of any applicable grace period; (iii) the issuer of such Letter of Credit disaffirms, disclaims, repudiates or rejects, in whole or in part, or challenges the validity of, such Letter of Credit; (iv) such Letter of Credit expires or terminates, or fails or ceases to be in full force and effect at any time while required to be maintained pursuant to the terms of this Agreement; or (v) any event analogous to an event specified in Section 5(a)(vii) of this Agreement occurs with respect to the issuer of such Letter of Credit.  Notwithstanding the foregoing, no Letter of Credit Default will occur in any event with respect to a Letter of Credit after the time such Letter of Credit is required to be canceled or returned to the Pledgor in accordance with the terms of this Annex."
+"" Moody's" means Moody's Investors Service, Inc., or its successor."
+"" Qualified Institution" means, subject to Paragraph 13(j)(iii)(H), a U.S. commercial bank or trust company or the U.S. branch of a foreign bank (in either case, which is not an affiliate of either party) having assets of at least $10 billion and a Credit Rating of at least (i) A3 from Moody's and (ii) A- from S&P."
+`20``ISDA ® 1994`
+DB1/ 95864617.2
+"" S&P" means S&P Global Ratings, or its successor".
+[Signature Page Follows]
+`21``ISDA ® 1994`
+DB1/ 95864617.2
+The parties executing this Paragraph 13 to the Credit Support Annex to the ISDA Master Agreement have agreed as to the contents of this Paragraph 13 to the Credit Support Annex.
+EDF Energy Services, LLC 	 Summer Energy Northeast, LLC (formerly:  REP Energy, LLC) `By:```/s/ C. Alexis Keene   `Name:```C. Alexis Keene  `Title:```Senior Vice President & General Counsel    	 `By:```/s/ Neil Leibman   `Name:```Neil Leibman  `Title:```Manager
+[Signature Page to Paragraph 13]
+`22``ISDA ® 1994`
+DB1/ 95864617.2

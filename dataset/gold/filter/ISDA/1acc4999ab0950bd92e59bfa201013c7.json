@@ -1,0 +1,13 @@
+{
+  "filename": "1acc4999ab0950bd92e59bfa201013c7.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 270,
+      "end_line": 465,
+      "confidence": 0.98,
+      "explanation": "Lines 270-465 contain the full Schedule to the ISDA Master Agreement, including all the 'Parts' (Termination Provisions, Tax Representations, Agreement to Deliver Documents, Miscellaneous, Other Provisions) and the signature block. This is the standard format and content of the ISDA Schedule, and it is clearly demarcated from the main body of the Master Agreement and from the Credit Support Annex (which starts at line 470)."
+    }
+  ]
+}

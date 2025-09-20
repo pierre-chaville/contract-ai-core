@@ -1,0 +1,13 @@
+{
+  "filename": "cd3838f45dd45f72915f5dfee90990a3.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 11,
+      "end_line": 420,
+      "confidence": 0.99,
+      "explanation": "Lines 11-420 comprise the full Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE TO THE MASTER AGREEMENT' and including all the numbered Parts and provisions that are customarily included in the Schedule. The text after line 420 consists of annexures (forms of confirmations, payment notices, etc.), which are not part of the main Schedule. The lines before 11 are cover, title, and contact information, not part of the Schedule. Therefore, lines 11-420 are the correct span for the Schedule."
+    }
+  ]
+}

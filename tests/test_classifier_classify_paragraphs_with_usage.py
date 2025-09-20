@@ -10,7 +10,7 @@ def test_classify_paragraphs_with_usage_basic(monkeypatch: pytest.MonkeyPatch) -
         name="NDA",
         use_case="classification",
         description="Non-Disclosure Agreement",
-        prompt_scope_filter="",
+        filtering_scopes=[],
         prompt_scope_amendment="",
         clauses=[
             ClauseDefinition(key="termination", title="Termination", sort_order=0),

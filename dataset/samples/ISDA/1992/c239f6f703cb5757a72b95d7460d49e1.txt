@@ -1,0 +1,183 @@
+SCHEDULE
+to the
+MASTER AGREEMENT
+dated as May 2, 2008
+between
+DnB NOR Bank ASA ("Party A")
+Foretaksregisteret NO 984 851 006
+and
+General Maritime Corporation ("Party B")
+Part 1
+Termination Provisions
+In this Agreement:-
+(a) "Specified Entity" means in relation to Party A for the purpose of:
+Section 5(a)(v), Not Applicable
+Section 5(a)(vi), Not Applicable
+Section 5(a)(vii), Not Applicable
+Section 5(b)(iv), Not Applicable
+and in relation to Party B for the purpose of:-
+Section 5(a)(v), Not Applicable
+Section 5(a)(vi), Not Applicable
+Section 5(a)(vii), Not Applicable
+Section 5(b)(iv), Not Applicable
+(b) "Specified Transaction" will have the meaning specified in Section 14.
+(c) 	  The "Cross Default" provisions of Section 5(a)(vi) will apply to Party A and will apply to Party B, provided, however, that the following language shall be added at the end thereof: "notwithstanding the foregoing, an Event of Default shall not occur under either (1) or (2) above if, as demonstrated to the reasonable satisfaction of the other party, (a) the event or condition referred to in (1) or the failure to pay referred to in (2) is a failure to pay caused by an error or omission of an administrative or operational nature; and (b) funds were available to such party to enable it to make the relevant payment when due; and (c) such relevant payment is made within two Local Business Days following receipt of written notice from an interested party of such failure to pay.".
+If such provisions apply:-
+"Specified Indebtedness" will have the meaning specified in Section 14, except that indebtedness in respect of deposits received and not repaid due to government action or intervention shall not constitute Specified Indebtedness, provided that such government action or intervention is not due to the bankruptcy, insolvency, or decline in creditworthiness of the party affected by this government action or intervention.
+"Threshold Amount":-
+(i) 	  means in relation to Party A: USD 30,000,000 or its equivalent in any other currency or currency unit or any combination thereof; and
+(ii) 	  means in relation to Party B: USD 20,000,000 or its equivalent in any other currency or currency unit or any combination thereof.
+(d) The "Credit Event Upon Merger" provisions of Section 5(b)(iv) will apply to Party A and Party B.
+(e) The "Automatic Early Termination" provision of Section 6(a):
+(i) will not apply to Party A; and
+(ii) will not apply to Party B.
+(f) "Payments on Early Termination". For the purpose of Section 6(e) of this Agreement:
+(i) 	  Market Quotation will apply.
+(ii) 	  The Second Method will apply.
+(g) 	  "Termination Currency" means United States Dollars.
+(h) 	  Additional Termination Events. The following shall constitute Additional Termination Events pursuant to Section 5 (b) of this Agreement as a new Section 5 (b)(vi):-
+"Impossibility. Due to the occurrence of a natural or man-made disaster, armed conflict, act of terrorism, riot, labor disruption or any other circumstance beyond its control after the date on which a Transaction is entered into, it becomes impossible (other than as a result of its own misconduct) for such party (which will be the Affected Party):
+(i) 	  to perform any absolute or contingent obligation, to make a payment or delivery or to receive a payment or delivery in respect of such Transaction or to comply with any other material provision of this Agreement relating to such Transaction; or
+(ii) 	  to perform, or for any Credit Support Provider of such party to perform, any contingent or other obligation which the party (or such Credit Support Provider) has under any Credit Support Document relating to such Transaction."
+Part 2
+Tax Representations
+Representations of both Party A and Party B
+(a) 	  Payer Tax Representations.
+For the purpose of Section 3(e) of this Agreement, Party A and Party B shall each make the following representation:
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 2(e), 6(d)(ii) or 6(e) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on (i) the accuracy of any representations made by the other party
+pursuant to Section 3(f) of this Agreement, (ii) the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement and (iii) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement, provided that it shall not be a breach of this representation where reliance is placed on clause (ii) and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+(b) Payee Tax Representations. For the purpose of Section 3 (f):
+(i) Party A makes no Payee Tax Representations.
+(ii) Party B makes no Payee Tax Representations.
+Part 3
+Documents to be Delivered
+For the purpose of Section 4(a):-
+(a) Tax forms, documents or certificates to be delivered are:
+Each Party shall, as soon as practicable after demand, deliver to the other party any form or document reasonably requested by the other party which is required to enable such other party to make payments without any deductions or withholdings for or on account of Taxes, or subject to such withholding at a reduced rate provided the Party of whom such form or document is required is able to provide such form or document.
+(b) 	  For the purpose of Section 3(d) other documents to be delivered by each party concurrently with the execution and delivery of the Agreement are:-
+Party required to Form/Document/ Date by which to be Covered by Section
+deliver document Certificate delivered 3(d) Representation
+Party A Registration On signing of this Yes
+Certificate Agreement
+Party B Articles of On signing of this Yes
+Association Agreement
+Party A and Party B A Certificate of On signing of this Yes
+Incumbency that lists Agreement
+the persons
+authorized to execute
+this Agreement and
+each Confirmation.
+Party A and Party B The most recently Promptly upon reasonableNo
+published and audited request
+financial statements
+of Party A and Party B
+Part 4
+Miscellaneous
+(a) Address for Notices. For the purpose of Section 12(a):-
+Party A:
+Address specified in a Confirmation or otherwise by the acting Office sending the same. If not specified, addresses for notices or communications to Party A are set out below; any notice or communication sent to Party A in connection with any matter arising under Section 5 or 6 shall be copied to Party A's Oslo office.
+Oslo: Stranden 21, NO-0021 Oslo, Norway
+Telex: 78295 Answerback DNBFX N
+Telefax: 47 22 94 84 90
+Telephone: 47 9150300
+Swift: DNBA NO KX
+(only with respect to Transactions through that office)
+London: 20, St. Dunstan's Hill, London EC3R 8HY, England
+Telefax: 44 207 626 7400
+Telephone: 44 207 621 1111
+Swift: DNBA GB2L
+Attention: Foreign Exchange Operations
+(only with respect to Transactions through that office)
+Singapore: Robinson Road, P.O. Box 1769, Singapore 903519
+Telex: 21737 Answerback DNBSIN
+Telefax: 656 22 49743
+Telephone: 656 22 06144
+Swift: DNBA SGSG
+Attention: Foreign Exchange Operations
+(only with respect to Transactions through that office)
+New York: 200 Park Avenue, New York, NY 10166, United States
+Telefax: 1 212 681 3900
+Telephone: 1 212 681 3800
+Swift: DNBA US33
+Attention: Foreign Exchange Operations
+(only with respect to Transactions through that office)
+Shanghai: 901, Shanghai Central Plaza
+381 Huai Hai Zhong Lu,
+Shanghai 200020, P.R. China
+Telefax: 86 21 6132 2999
+Telephone: 86 21 6132 2888
+Swift: DNBA CNSH
+Attention: Foreign Exchange Operations
+(only with respect to Transactions through that office)
+Stockholm: Kungsgatan 18, PO Box 3042
+103 63 Stockholm, Sweden
+Telephone: 46 8 473 41 00
+Swift: DNBA SE SX XXX
+Attention: Foreign Exchange Operations
+(only with respect to Transactions through that office)
+Party B:
+General Maritime Corporation
+299 Park Avenue
+New York, New York
+10171 USA
+(b) Agent for Service of Process. For the purpose of Section 13(c):-
+Party A irrevocably designates DnB NOR Bank ASA, New York Branch with offices on the date hereof at 200 Park Avenue, New York, NY 10166, United States to receive for and on behalf of Party A Service of Process in New York.
+Party B irrevocably designates General Maritime Corporation, 299 Park Avenue, New York, New York 10171, USA to receive for and on behalf of Party B Service of Process in New York.
+(c) Offices. The provisions of Section 10 (a) will apply to this Agreement.
+(d) Multibranch Party. For the purpose of Section 10 (c):-
+Party A is a Multibranch Party and may act through its offices in Oslo, London, Singapore, Shanghai, New York and Stockholm.
+Party B is not a Multibranch Party.
+(e) 	  Calculation Agent. The Calculation Agent shall be Party A, unless otherwise specified in a Confirmation in relation to the relevant Transaction and unless an Event of Default has occurred and is continuing with respect to Party A, in which case Party B shall be the Calculation Agent for as long as such default continues; provided, however, where a party disputes any determination, calculation or estimate of the Calculation Amount, then (i) the relevant party shall immediately pay the amount, if any, that is not in dispute and (ii) the parties shall promptly appoint an independent third party that would qualify as a Reference Market-maker (a "Substitute Calculation Agent") to resolve the dispute the determination of which shall be final and binding absent manifest error. If the parties cannot agree on a Substitute Calculation Agent, each party shall elect and independent Reference Market-maker and such two Reference Market-makers jointly shall appoint a third Reference Market-maker which shall be deemed to be the Substitute Calculation Agent. The fees and expenses of such Substitute Calculation Agent shall be borne equally by the parties.
+(f) Credit Support Documents:
+With respect to Party A: None.
+With respect to Party B: None
+(g) Credit Support Provider:
+With respect to Party A: None.
+With respect to Party B: None
+(h) 	  Governing Law. This Agreement shall be governed by, and construed and enforced in accordance with, the laws of the State of New York (without reference to its choice of law doctrine).
+(i) Netting of Payments.
+Section 2(c)(ii) of this Agreement will apply to any Transactions from the date of this Agreement. Nevertheless, to reduce settlement risk and operational costs, the parties agree that they will endeavour to net across as many Transactions as practicable wherever the parties can administratively do so.
+(j) 	  "Affiliate" will have the meaning specified in section 14 of this Agreement provided however that the reference to Affiliates in section 3(c) of this Agreement shall be deleted.
+Part 5
+Other Provisions
+(a) 	  Scope of Agreement. Any transaction of the kind set forth under the definition of "Specified Transaction" in this Agreement, between Party A and Party B, which the parties have entered or may enter into, shall be governed by this Agreement, unless the relevant document or other confirming evidence expressly exclude the application of this Agreement.
+(b) Definitions.
+This Master Agreement, each Confirmation, and each Transaction are subject to the 2000 ISDA Definitions and the Annex to the 2000 ISDA Definitions (collectively, as amended, supplemented, replaced, updated, restated or modified from time to time, the "ISDA Definitions") and any other definitions specified in the relevant Confirmation for such Transaction (such other definitions, collectively with the ISDA, the "Definitions"), each as published by the International Swaps and Derivatives Association, Inc. ("ISDA"), and will be governed in all respects by the Definitions (except that references to "Swap Transactions" in the Definitions will be deemed to be references to "Transactions"). The Definitions, as so modified, are incorporated by reference in, and made part of, this Agreement and each Confirmation as if set forth in full in this Agreement and such Confirmation. In the event of any inconsistency between the provisions of this Master Agreement and the Definitions, this Master Agreement will prevail. In the event of any inconsistency between the provisions of any Confirmation and this Master Agreement or the Definitions, such Confirmation will prevail for the purpose of the relevant Transaction.
+(c) 	  Consent to Recording. Each party consents to the recording of the telephone conversations of the parties in connection with this Agreement or any potential or actual Transactions.
+(d) 	  Change of Account. Any change of account shall be to an account located in the same legal and tax jurisdiction.
+(e) 	  Illegality and Default. A new Section 5 (c) shall be inserted in the Agreement with the following wording in lieu of existing Section 5(c) :
+"Event of Default, Illegality and Impossibility. If an event or circumstance which would otherwise constitute or give rise to an Event of Default also constitutes an Illegality or as the case may be an Impossibility, it will be treated as an Illegality or as the case may be an Impossibility and will not constitute an Event of Default."
+(f) Set off. A new Section 6 (f) shall be inserted in this Agreement with the following wording:
+"Any amount (the "Early Termination Amount") payable to one party (the "Payee") by the other party (the "Payer") under Section 6 (e) of this Agreement, in circumstances where there is a Defaulting Party or one Affected Party in the case where a Termination Event under Section 5 (b) (iv) of this Agreement has occurred, will, at the option of the party ("X") other than the Defaulting Party or the Affected Party (and without prior notice to the Defaulting Party or the Affected Party), be reduced by its set-off against any amounts (the "Other Agreement Amount") payable (whether at such time or in the future or upon the occurrence of a contingency) by the Payee to the Payer (irrespective of the currency, place of payment or booking office of the obligation) under any other agreements between the Payee and the Payer or instruments or undertakings issued or executed by one party to, or in favour of, the other party (and the Other Agreement Amount will be discharged promptly and in all respects to the extent it is so set-off). X will give notice to the other party of any set-off effected under this Section 6 (f).
+For this purpose, either the Early Termination Amount or the Other Agreement Amount (or the relevant portion of such amounts) may be converted by X into the currency in which the other is denominated at the rate of exchange at which such party would be able, acting in a reasonable manner and in good faith, to purchase the relevant amount of such currency.
+If an obligation is unascertained, X may in good faith and in a commercially reasonable manner estimate that obligation and set-off in respect of the estimate, subject to the relevant party accounting to the other when the obligation is ascertained.
+Nothing in this Section 6 (f) shall be effective to create a charge or other security interest. This Section 6 (f) shall be without prejudice and in addition to any right of set-off, counterclaim, withholding of payments, combination of accounts, lien or other right to which any party is at any time otherwise entitled (whether by operation of law, contract or otherwise)."
+(g) 	  Escrow Payments. If (whether by reason of the time difference between the cities in which payments are to be made or otherwise) it is not possible for simultaneous payments to be made on any date on which both parties are required to make payments hereunder, either party may at its option and in its sole discretion notify the other party that payments on that date are to be made in escrow. In this case deposit of the payment due earlier on that date shall be made by 2.00 p.m. (local time at the place for the earlier payment) on that date with an escrow agent selected by the notifying party, but having at least an equal credit rating as the notifying party and reasonably acceptable to the other party, accompanied by irrevocable payment instructions (i) to release the deposited payment to the intended recipient upon receipt by the escrow agent of the required deposit of the corresponding payment from the other party on the same date accompanied by irrevocable payment instructions to the same effect or (ii) if the required deposit of the corresponding payment is not made on that same date, to return the payment deposited to the party that paid it into escrow. The party that elects to have payments made in escrow shall pay all costs in connection with escrow arrangements.
+(h) 	  Relationship Between Parties. A new Section 15 shall be inserted in this Agreement with the following wording:
+"Each party will be deemed to represent to the other party on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction):-
+(i) 	  Non-Reliance. It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisers as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction; it being understood that information and explanations related to the terms and conditions of a Transaction shall not be considered investment advice or a recommendation to enter into that Transaction. No communication (written or oral) received from the other party shall be deemed to be an assurance or guarantee as to the expected results of that Transaction.
+(ii) 	  Assessment and Understanding. It is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction. It is also capable of assuming, and assumes, the risks of that Transaction.
+(iii) 	  Status of Parties. The other party is not acting as a fiduciary for or an adviser to it in respect of that Transaction."
+(i) 	  Waiver of Jury Trial. Each party waives, to the fullest extent permitted by applicable law, any right it may have to trial by jury in respect of any suit, action or proceeding relating to this Agreement or any Credit Support Document. Each party (i) certifies that no representative, agent or attorney of the other party or any Credit Support Provider has represented, expressly or otherwise, that such other party would not, in the event of such a suit, action or proceeding, seek to enforce the foregoing waiver and (ii) acknowledges that it and the other party have been induced to enter into this Agreement and provide for any Credit Support Document, as applicable, by, among other things, the mutual waivers and certifications in this Section.
+Part 6
+FX Transactions and Currency Options
+(a) 	  Standard Terms and Conditions Applicable to FX Transactions and CurrencyOptions. Each FX Transaction or Currency Option outstanding at or entered into after the date hereof between the parties shall be governed by this Agreement, irrespective of any references in a Confirmation to any other master agreements (e.g., IFEMA, ICOM, any specified terms and conditions).
+(b) 	  Incorporation of ISDA FX and Currency Option Definitions. The 1998 FX and Currency Option Definitions (the "FX and Currency Option Definitions"), published by the International Swaps and Derivatives Association, Inc. ("ISDA"), are hereby incorporated by reference with respect to any "FX Transactions" and "Currency Options" as defined by the FX and Currency Option Definitions, except as otherwise specifically provided herein or in a Confirmation.
+(c) Terms Relating to Payment of Premium of Currency Options.
+If any Premium is not received on the Premium Payment Date, the Seller may elect;
+(i) 	  to accept a late payment of such Premium;
+(ii) 	  to give written notice of such non-payment and, if such payment shall not be received within two (2) Local Business Days of such notice, treat the related Currency Option Transaction as void; or
+(iii) 	  to give written notice of such non-payment and, if such payment shall not be received within two (2) Local Business Days of such notice, treat such non-payment as an Event of Default under Section 5(a)(i).
+If the Seller elects to act under either clause (i) or (ii) of the preceding sentence, the Buyer shall pay all out-of-pocket costs and actual damages incurred in connection with such unpaid or late Premium or void Currency Option Transaction, including, without limitation, interest on such Premium in the same currency as such Premium at the then prevailing market rate and any other costs or expenses incurred by the Seller in covering its obligations (including, without limitation, a delta hedge) with respect to such Currency Option transaction.
+(d) 	  Netting, Discharge and Termination of Currency Options.
+Unless otherwise agreed, any Call Option or any Put Option written by a party will automatically be terminated and discharged, in whole or in part, as applicable, against a Call Option or a Put Option, respectively, written by the other party, such termination and discharge to occur automatically upon the payment in full of the last Premium payable in respect of such Currency Option Transactions; provided that such termination and discharge may only occur in respect of Currency Option Transactions:
+(i) 	  each being with respect to the same Put Currency and the same Call Currency;
+(ii) 	  each having the same Expiration Date and Expiration Time;
+(iii) 	  each being of the same style, i.e. either both being American style Currency Option Transactions or both being European style Currency Option Transactions;
+(iv) 	  each having the same Strike Price; and
+(v) 	  neither of which shall have been exercised by delivery of a Notice of Exercise;
+(vi) 	  which are otherwise identical in terms that are material for the purposes of offset and discharge;
+(vii) 	  both of which are entered into by the same pair of Offices of the parties;
+and, upon the occurrence of such termination and discharge, neither party shall have any further obligation to the other party in respect of the relevant Currency Option Transactions or, as the case may be, parts thereof so terminated and discharged. In the case of a partial termination and discharge of a Currency Option Transaction (i.e. where the relevant Currency Option Transactions are for different amounts of the same Currency Pair), the remaining portion of such Currency Option Transaction shall continue to be a Currency Option Transaction for all purposes of this Agreement, including this provision.
+(e) 	  Electronic Confirmations. Where a Transaction is confirmed by means of an electronic messaging system that the parties have elected to use to confirm such Transaction: (i) such confirmation will constitute a "Confirmation" as referred to in this Agreement, (ii) such Confirmation will supplement, form part of, and be subject to this Agreement and all provisions in this Agreement will govern the Confirmation.
+IN WITNESS WHEREOF the parties have executed this document as of the date specified on the first page of this document.

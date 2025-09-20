@@ -1,0 +1,13 @@
+{
+  "filename": "6a83b9c4a62052f8989cd748dca0ab97.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 5,
+      "end_line": 168,
+      "confidence": 0.98,
+      "explanation": "Lines 5-168 comprise the full Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE' and including all the negotiated terms and elections (Parts 1-5) between the parties. The lines before line 5 are cover/exhibit information, and lines after 168 are signature blocks. There is no indication of CSA annexes or other documents within this span."
+    }
+  ]
+}

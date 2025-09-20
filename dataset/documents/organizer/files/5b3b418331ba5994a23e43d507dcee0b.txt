@@ -49,3 +49,320 @@ All payments under this Agreement will be made subject to deduction or withholdi
 (ii)  pay to the relevant authorities the full amount required to be deducted or withheld promptly upon the earlier of determining that such deduction or withholding is required or receiving notice that such amount has been assessed against Y;
 (iii) promptly forward to Y an official receipt (or a certified copy), or other documentation reasonably acceptable to Y, evidencing such payment to such authorities;
 (iv)  pay to Y the amount Y would have received had no deduction or withholding been required.
+Paragraph (iv) shall not apply to payments to be made by Party B.
+PART 3. AGREEMENT TO DELIVER DOCUMENTS
+For the purpose of Section 4(a)(i) and (ii) of this Agreement, each party agrees to deliver to the other as soon as reasonably practicable following a request by the other party, any document or certificate reasonably required by a party in connection with its obligations to make a payment under this Agreement which would enable that party to make the payment free from any deduction or withholding for or on account of Tax or as would reduce the rate at which the deduction or withholding for or on account of Tax is applied to that payment.
+PART 4. MISCELLANEOUS
+(a)  ADDRESSES FOR NOTICES. For the purpose of Section 12(a) of this Agreement:
+Address for notices or communications to Party A:
+Address:        Level 10, 55 Market Street, Sydney NSW 2000 Attention:      Securitisation Manager Facsimile No:   (02) 9320 5589  Telephone No: (02) 9320 5526
+Address for notices or communications to Party B:
+Address:        Level 12, 123 Pitt Street, Sydney  NSW  2000 Attention:      Manager, Securitisation Facsimile No:   (02) 9221 7870  Telephone No: (02) 9229 9000
+ISDA Schedule to the Master Agreement for Interest Rate Swap                                 [Allens Arthur Robinson LOGO]
+With a copy to the Manager:
+Address:        Level 10, 55 Market Street, Sydney NSW 2000 Attention:      Securitisation Manager Facsimile No:   (02) 9320 5589  Telephone No: (02) 9320 5526
+Address for notices or communications to St.George:
+Address:        Level 10, 55 Market Street, Sydney NSW 2000 Attention:      Securitisation Manager Facsimile No:   (02) 9320 5589  Telephone No: (02) 9320 5526
+(b)  PROCESS AGENT. For the purpose of Section 13(c) of this Agreement:
+Party A appoints as its Process Agent: None.
+Party B appoints as its Process Agent: None.
+(c)  OFFICES. The provisions of Section 10(a) will not apply to this Agreement.
+(d)  MULTIBRANCH PARTY. For the purpose of Section 10(c) of this Agreement:
+Party A is not a Multibranch Party.
+Party B is not a Multibranch Party.
+(e)  CALCULATION AGENT. The Calculation Agent is Party A.
+(f)  CREDIT SUPPORT DOCUMENT. Details of any Credit Support Document:
+In relation to Party A: Nil.
+In relation to Party B: Security Trust Deed
+(g)  CREDIT SUPPORT PROVIDER. Credit Support Provider means:
+In relation to Party A: St.George.
+In relation to Party B: Nil.
+(h)  GOVERNING LAW. This Agreement will be governed by and construed in accordance with the laws in force in New South Wales and Section 13(b)(i) is deleted and replaced with the following:
+each party submits to the non-exclusive jurisdiction of the courts of New South Wales and Court of Appeal from them.
+(i)  NETTING OF PAYMENTS. Sub-paragraph (ii) of Section 2(c) of this Agreement will apply to net Transactions in the same Confirmation and will not apply to net Transactions specified in different Confirmations.
+(j)  AFFILIATE will have the meaning specified in Section 14 of this Agreement.
+For the purpose of Section 3(c), each of Party A and Party B are deemed not to have any Affiliates.
+PART 5. OTHER PROVISIONS
+(a)  ISDA DEFINITIONS: This Agreement, each Confirmation and each Transaction are subject to the 2000 ISDA Definitions (published by the International Swaps and Derivatives Association, Inc.) as amended from time to time (the "ISDA DEFINITIONS"), and will be governed in all respects by any provisions set forth in the ISDA Definitions, without regard to any amendments to the ISDA
+ISDA Schedule to the Master Agreement for Interest Rate Swap                                 [Allens Arthur Robinson LOGO]
+Definitions made after the date of this Agreement. The ISDA Definitions are incorporated by reference in, and shall be deemed to be part of this Agreement and each Confirmation.
+(b)  In Section 2(a)(ii), after freely transferable funds add free of any set-off, counterclaim, deduction or withholding (except as expressly provided in this Agreement).
+(c)  A new Section 2(a)(iv) is inserted as follows:
+(iv) The condition precedent in Section 2(a)(iii)(1) does not apply to a payment due to be made to a party if it has satisfied all its payment obligations under Section 2(a)(i) of this Agreement and has no future payment obligations, whether absolute or contingent under Section 2(a)(i).
+(d)  For the purpose of Section 2(b) of this Agreement, CHANGE OF ACCOUNT, any new account so designated shall be in the same tax jurisdiction as the original account.
+(e)  ADDITIONAL REPRESENTATIONS: In Section 3 add the following immediately after paragraph (f):
+(g)  Non Assignment. It has not assigned (whether absolutely, in equity or otherwise) or declared any trust over any of its rights under any Transaction (other than, in respect of Party B, the trusts created pursuant to the Trust Deed) and has not given any charge over its assets, in the case of Party A, or the assets of the Trust (other than as provided in the Security Trust Deed), in the case of Party B.
+(f)  Party B also represents to Party A (which representations will be deemed to be repeated by Party B on each date on which a Transaction is entered into) that:
+(i)   TRUST VALIDLY CREATED. The Trust has been validly created and is in existence at the date of this Agreement.
+(ii)  SOLE TRUSTEE. Party B has been validly appointed as trustee of the Trust and is presently the sole trustee of the Trust.
+(iii) NO PROCEEDINGS TO REMOVE. No notice has been given to Party B and to Party B's knowledge no resolution has been passed, or direction or notice has been given, removing Party B as trustee of the Trust.
+(iv)  POWER. Party B has power under the Trust Deed to enter into this Agreement and the Security Trust Deed in its capacity as trustee of the Trust.
+(v)   GOOD TITLE. Party B is the lawful owner of the Assets of the Trust and has power under the Trust Deed to mortgage or charge them in the manner provided in the Security Trust Deed, and, subject only to the Trust Deed, the Security Trust Deed and any Security Interest (as defined in the Trust Deed) permitted under the Security Trust Deed, as far as Party B is aware, those assets are free from all other Security Interests (other than Party B's indemnity from the Assets of the Trust).
+(g)  In Section 3(c):
+(i)   delete the words AGENCY OR OFFICIAL; and
+(ii)  in the third line, insert "materially" before the word "affect".
+(h)  In Section 4 add a new paragraph as follows:
+ISDA Schedule to the Master Agreement for Interest Rate Swap                                 [Allens Arthur Robinson LOGO]
+(f)  CONTRACTING AS PRINCIPAL. Party A and St.George will enter into all Transactions as principal and not otherwise and Party B will enter into all Transactions in its capacity as trustee of the Trust and not otherwise.
+(i)  In Section 6(d)(i), in the last line, insert "in the absence of manifest error" after the word EVIDENCE.
+(J)  CONFIRMATIONS. Notwithstanding the provisions of Section 9(e)(ii), each Confirmation in respect of a Swap Transaction which is confirmed by electronic messaging system, an exchange of telexes or an exchange of facsimiles will be further evidenced by an original Confirmation signed by the parties, however any failure to sign an original Confirmation will not affect the validity or enforceability of any Swap Transaction.
+(k)  Section 12 is amended as follows:
+(i)  in Section 12(a), insert and settlement instructions requiring payment to an entity other than the original counterparty after Section 5 or 6 in line 2.
+(ii) Section 12(a)(iii) is replaced with:
+(iii) if sent by facsimile transmission, on the date a transmission report is produced by the machine from which the facsimile was sent which indicates that the facsimile was sent in its entirety to the facsimile number of the recipient notified for the purpose of this Section, unless the recipient notifies the sender within one Local Business Day of the facsimile being sent that the facsimile was not received in its entirety and in legible form.
+(l)  Any reference to a:
+(i)  SWAP TRANSACTION in the ISDA Definitions is deemed to be a reference to a TRANSACTION for the purpose of interpreting this Agreement or any Confirmation; and
+(ii) TRANSACTION in this Agreement or any Confirmation is deemed to be a reference to a SWAP TRANSACTION for the purpose of interpreting the ISDA Definitions.
+(m)  TRUST DEED means the Master Trust Deed dated 14 March 1998 as amended by the Crusade Global Trust No. 1 of 2007 Supplementary Terms Notice dated on or about the date of this Agreement between (among others) Party B, Party A and the Manager (the SUPPLEMENTARY TERMS NOTICE), and each of the following expressions shall have the meanings given to them in the Trust Deed and the Supplementary Terms Notice:
+APPROVED BANK APPROVED SELLER ASSETS BANK BREAK PAYMENT CLASS DESIGNATED RATING AGENCY FINAL MATURITY DATE FIXED RATE LOAN HOUSING LOAN PRINCIPAL INSOLVENCY EVENT
+ISDA Schedule to the Master Agreement for Interest Rate Swap                                 [Allens Arthur Robinson LOGO]
+LOAN OFFSET INTEREST AMOUNT MANAGER MASTER TRUST DEED MONTHLY INTEREST PERIOD MONTHLY PAYMENT DATE NOTE OBLIGOR PAYMENT DATE PURCHASED RECEIVABLE SECURITY TRUST DEED SERVICER SUPPORT FACILITY PROVIDER TRUST
+(n)  TRUST DEED: The Parties acknowledge and agree that for the purposes of the Trust Deed, this Agreement is a HEDGE AGREEMENT and each of Party A and St.George are SUPPORT FACILITY PROVIDERS.
+(o)  AGREEMENT by St.George to act as Standby Interest Rate Swap Provider:
+A new Section 15 is added as follows:
+15.  Standby Interest Rate Swap Provider
+(a)  St.George agrees with Party B that if:
+(i)  Party A is obliged to make a payment under a Confirmation on any day; and
+(ii) Party A does not make that payment by 2pm (Sydney time) on that day,
+then St.George must, as a principal obligation, pay that amount in full to Party B by no later than 4pm (Sydney time) on that date.
+(b)  St.George shall make each such payment in full, without any set off, counterclaim or exercise of any similar right or defence, other than any netting permitted under this Agreement.
+(c)  In consideration of St.George agreeing to act as Standby Interest Rate Swap Provider, Party B agrees to pay to St.George monthly in arrears a fee that accrues from day to day and is calculated at the rate of 0.03% per annum on the aggregate Housing Loan Principal of all Fixed Rate Loans on the first day of each Monthly Interest Period payable on each Monthly Payment Date.
+This fee is payable on each Monthly Payment Date, subject to the cashflow allocation methodology in the Supplementary Terms Notice.
+(d)  Subject to section 18, in consideration of St.George agreeing, at the request of Party A, to act as Standby Interest Rate Swap Provider, Party A agrees to indemnify St.George on demand against any loss, charge, liability or expense that St.George may sustain or incur as a direct or indirect consequence of Party A failing to comply with this obligations under this Agreement, or the Manager requiring St.George to make a payment under this Agreement.
+(e)  St.George's obligations under this Agreement shall survive:
+ISDA Schedule to the Master Agreement for Interest Rate Swap                                 [Allens Arthur Robinson LOGO]
+(i)  the termination of this Agreement;
+(ii) any payment by it under paragraph (a) in respect of any payment due from, but unpaid by, Party A; and
+(iii) any winding up or insolvency of Party A.
+(f)  A payment by St.George under paragraph (a) in respect of any payment due from, but unpaid by, Party A does not limit or waive any payment that Party A is required to make under a Confirmation.
+(g)  If for any reason Party A is wound up or otherwise is unable to perform its obligations under this Agreement as a matter of law, St.George shall undertake all the obligations of Party A under this Agreement as if named as Party A.
+(p)  A new Section 16 is added as follows:
+16. DOWNGRADE
+(a)  For the purpose of this Section 16 the following additional definitions apply:
+ACCEPTABLE ARRANGEMENT means an arrangement which each relevant Designated Rating Agency has confirmed in writing will result in the avoidance or reversal of any Note Downgrade.
+APPROVED BANK means a Bank which has a short term rating of at least A-1+ (S&P;), P-1 (short term) and A2 (long term) (Moody's) and F1 (short term) (Fitch Ratings).
+DOWNGRADE means St.George's rating by a Designated Rating Agency has been withdrawn or reduced resulting in St.George having:
+(i)   a short term credit rating of less than A-1 (short term) by S & P;
+(ii)  a credit rating by Moody's of less than P-1(short term) or A2 (long term); or
+(iii) a credit rating by Fitch Ratings of less than F1 (short term) or A (long term).
+MAJOR ST.GEORGE DOWNGRADE means a Downgrade in respect of St.George resulting in St.George having:
+(i)  a short term credit rating by S&P; of less than A-1 (short term);
+(ii) a credit rating by Moody's of less than P-1 (short term) or A3 (long term); or
+(iii) a credit rating by Fitch Ratings of less than F2 (short term) or BBB+ (long term).
+MINOR PARTY A DOWNGRADE means any Downgrade which is not a Major St.George Downgrade.
+NOTE DOWNGRADE means any actual or proposed withdrawal or downgrade of the ratings assigned to any Class of Notes by a Designated Rating Agency which results or would result in any rating assigned to that Class of Notes being less than that stipulated in Section 4.2(f) of the Supplementary Terms Notice.
+REPLACEMENT PROVIDER means a party that has agreed to replace St.George as Standby Interest Rate Swap Provider, or Party A as Interest Rate Swap Provider, and has a rating greater than or equal to:
+ISDA Schedule to the Master Agreement for Interest Rate Swap                                 [Allens Arthur Robinson LOGO]
+(i)   A-1 by S & P;
+(ii)  who is suitably rated such that its appointment as Standby Interest Rate Swap Provider does not result in a Note Downgrade by Moody's; and
+(iii) F1 (short term) and A (long term) by Fitch Ratings.
+SWAP COLLATERAL ACCOUNT means an account established by Party B with an Approved Bank.
+(b)  If, at any time, St.George is Downgraded and the Downgrade constitutes a Minor St.George Downgrade, St.George shall, within 30 days (or such greater period as agreed by the relevant Designated Rating Agency), comply with Section 16(d).
+(c)  If at any time St.George is Downgraded and the Downgrade constitutes a Major St.George Downgrade, St.George shall, within 5 Business Days (or such greater period as agreed by the relevant Designated Rating Agency) comply with Section 16(d), however, where the Major St.George Downgrade relates to the credit rating by Fitch Ratings of less than F2 (short term) or BBB+ (long term) then St.George must comply with either Section 16(d)(ii) or (iii).
+(d)  Where St.George is required to comply with this Section 16(d) it shall, at its cost, and at its election do one of the following:
+(i)   (CASH COLLATERALISE) deposit into a Swap Collateral Account and maintain in the Swap Collateral Account (whilst the relevant Downgrade subsists) sufficient funds to ensure that the amount standing to the credit of the Swap Collateral Account is equal to the greater of the following (the CASH COLLATERAL AMOUNT):
+(A)  zero;
+(B)  CCR; and
+(C)  an amount acceptable to Moody's and Fitch Ratings (as the case may be) sufficient to ensure that the ratings given to the Notes by Moody's and Fitch Ratings (as the case may be) are not adversely affected and that any Note Downgrade is avoided or reversed (as the case may be);
+(ii)  (NOVATE) enter into an agreement novating this Agreement to a Replacement Provider proposed by any of Party A, St.George or Party B which each Designated Rating Agency has confirmed will not result in a withdrawal or downgrade of any credit rating assigned, by it, to the Notes; or
+(iii) (OTHER ARRANGEMENTS) enter into or procure entry into any Acceptable Arrangement.
+For the purpose of this paragraph (d), the formula for calculating CCR is as follows.
+CCR = CR
+where
+CR means MTM + VB
+MTM means the mark-to-market value of the Transactions outstanding under the Agreement. Party A will have to mark the Transactions to market and post collateral on a weekly basis, with a cure period of 3 days. The mark-to-market value should reflect the
+ISDA Schedule to the Master Agreement for Interest Rate Swap                                 [Allens Arthur Robinson LOGO]
+higher of 2 bids from counterparties that will be eligible and willing to assume Party A's role in the Transactions in place of Party A. The mark-to-market value may be a positive or negative amount. A bid has a negative value if the payment would be from the counterparty to Party A and has a positive value if the payment would be from Party A to the counterparty (for the purposes of determining a higher bid, any bid of positive value is higher than any bid of a negative value).
+VB means the value calculated by multiplying the Invested Amount at the time of the calculation by the relevant percentage calculated from the following table (for the purposes of interpreting the table, "Counterparty rating" is the credit rating assigned to Party A by S&P; and "Maturities" is the period from and including the date of calculation to but excluding the scheduled maturity of the last expiring Transaction outstanding under this Agreement):
+VOLATILITY BUFFER (%)
+COUNTERPARTY   MATURITIES UP   MATURITIES UP   MATURITIES MORE RATING       TO 5 YEARS      TO 10 YEARS     THAN 10 YEARS A-2             6.50           8.25             11.75 A-3            10.00          14.50             31.75 BB+ or lower        13.00          25.75             68.50
+In addition to complying with its obligations under this Section 16, if there is a Downgrade to St.George's long term debt rating below BBB- by S&P;, St.George must immediately post collateral in accordance with Section 16(d)(i) and be immediately substituted for a Replacement Provider.
+(e)  Where St.George procures a Replacement Provider in accordance with Section 16(d)(ii), each party to this Agreement shall do all things necessary to novate the relevant obligations to the Replacement Provider.
+(f)  If, at any time, St.George's obligations under this Agreement are novated in accordance with Section 16(d)(ii) or any Acceptable Arrangement is entered into in accordance with Section 16(d)(iii), St.George shall be immediately entitled to any cash collateral amount which it has deposited in the Swap Collateral Account less any amounts applied pursuant to paragraph (h)(i) or (h)(v).
+(g)  All interest on the Swap Collateral Account will accrue and be payable monthly to the party which provides the relevant Cash Collateral Amount.
+(h)  Party B may only make withdrawals from the Swap Collateral Account only for the purpose of:
+(i)   novating obligations under this Agreement in accordance with Section 16(d)(ii) or entering into any other Acceptable Arrangement in accordance with 16(d)(iii);
+(ii)  refunding to St.George the amount of any reduction in the Swap Collateral Amount, from time to time and providing the Designated Rating Agencies have confirmed, in writing, that such refund will not result in a Note Downgrade;
+ISDA Schedule to the Master Agreement for Interest Rate Swap                                 [Allens Arthur Robinson LOGO]
+(iii) withdrawing any amount which has been incorrectly deposited into the Swap Collateral Account;
+(iv)  paying any applicable bank account taxes or equivalent payable in respect of the Swap Collateral Account; or
+(v)   funding the amount of any payment due to be made by Party A or St.George under this Agreement following the failure by Party A or St.George to make that payment.
+(i)  St.George's obligations under this Section 16 shall:
+(i)   survive the termination of this Agreement; and
+(ii)  terminate upon St.George complying with its obligations (if any) under Section 16(d).
+(j)  Where St.George fails to comply with Section 16(d), this shall constitute an Additional Termination Event and Party A shall be the Affected Party for this purpose.
+(q)  A new Section 17 is added as follows:
+17. Party B provisions
+(a)  Limitation of liability
+(A)  General
+Clause 30 of the Master Trust Deed applies to the obligations and liabilities of Party B under this agreement.
+(B)  Limitation of Party B's Liability
+(1)  Party B enters into this agreement only in its capacity as trustee of the Trust and in no other capacity (except where the Transaction Documents provide otherwise). Subject to paragraph (3) below, a liability arising under or in connection with this agreement or the Trust can be enforced against Party B only to the extent to which it can be satisfied out of the assets and property of the Trust which are available to satisfy the right of Party B to be exonerated or indemnified for the liability. This limitation of Party B's liability applies despite any other provision of this agreement and extends to all liabilities and obligations of Party B in any way connected with any representation, warranty, conduct, omission, agreement or transaction related to this agreement or the Trust.
+(2)  Subject to subparagraph (3) below, no person (including any Relevant Party) may take action against Party B in any capacity other than as trustee of the Trust or seek the appointment of a receiver (except under this agreement), or a liquidator, an administrator or any similar person to Party B or prove in any liquidation, administration or arrangements of or affecting Party B.
+ISDA Schedule to the Master Agreement for Interest Rate Swap                                 [Allens Arthur Robinson LOGO]
+(3)  The provisions of this section 17 shall not apply to any obligation or liability of Party B to the extent that it is not satisfied because under a Transaction Document or by operation of law there is a reduction in the extent of Party B's indemnification or exoneration out of the Assets of the Trust as a result of Party B's fraud, negligence, or Default.
+(4)  It is acknowledged that the Relevant Parties are responsible under the Transaction Documents for performing a variety of obligations relating to the Trust. No act or omission of Party B (including any related failure to satisfy its obligations under this agreement) will be considered fraud, negligence or Default of Party B for the purpose of subparagraph (3) above to the extent to which the act or omission was caused or contributed to by any failure by any Relevant Party or any person who has been delegated or appointed by Party B in accordance with this agreement or any other Transaction Document to fulfil its obligations relating to the Trust or by any other act or omission of a Relevant Party or any such person.
+(5)  In exercising their powers under the Transaction Documents, each of Party B, the Security Trustee and the Noteholders must ensure that no attorney, agent, delegate, receiver or receiver and manager appointed by it in accordance with this agreement has authority to act on behalf of Party B in a way which exposes Party B to any personal liability and no act or omission of any such person will be considered fraud, negligence, or Default of Party B for the purpose of subparagraph (3) above.
+(6)  In this clause, RELEVANT PARTIES means each of the Manager, the Servicer, the Calculation Agent, the Note Registrar, each Paying Agent, the Note Trustee, and the provider of a Support Facility.
+(7)  Nothing in this clause limits the obligations expressly imposed on Party B under the Transaction Documents.
+(b)  Nothing in paragraph (a) or (c) limits Party A in:
+(i)   obtaining an injunction or other order to restrain any breach of this Agreement by Party B;
+(ii)  obtaining declaratory relief; or
+(iii) relation to its rights under the Security Trust Deed.
+(c)  Except as provided in paragraphs (a) and (b), Party A shall not:
+(i)   (JUDGMENT) obtain a judgment for the payment of money or damages by Party B;
+ISDA Schedule to the Master Agreement for Interest Rate Swap                                 [Allens Arthur Robinson LOGO]
+(ii)  (STATUTORY DEMAND) issue any demand under section 459E(1) of the Corporations Act 2001 (Cth) (or any analogous provision under any other law) against Party B;
+(iii) (WINDING UP) apply for the winding up or dissolution of Party B;
+(iv)  (EXECUTION) levy or enforce any distress or other execution to, on or against any assets of Party B;
+(v)   (COURT APPOINTED RECEIVER) apply for the appointment by a court of a receiver to any of the assets of Party B;
+(vi)  (SET-OFF OR COUNTERCLAIM) exercise or seek to exercise any set-off or counterclaim against Party B (other than netting in accordance with this Agreement); or
+(vii) (ADMINISTRATOR) appoint, or agree to the appointment, of any administrator to Party B,
+or take proceedings for any of the above and Party A waives its rights to make those applications and take those proceedings.
+(r)  A new Section 18 is added as follows:
+18. Break Payments
+(a)  Party B shall pay Break Payments which it receives to Party A in accordance with clause 5.1(c) of the Supplementary Terms Notice, to the extent that amounts are available to make that payment.
+(b)  Subject to paragraph (c), if Party A or St.George in any capacity (including in its capacity as Servicer) waives or reduces the amount of any Break Payment otherwise due from an Obligor, Party A and St.George agree that Party B's obligation under paragraph (a) is reduced in respect of the Break Payment so waived or to the extent of the reduction of the Break Payment (as the case may be).
+(c)  Party A, St.George and Party B agree that (unless St.George otherwise notifies Party B in writing) St.George will waive all Break Payments otherwise payable by an Obligor if the total principal prepayments by that Obligor under the relevant Purchased Receivable (excluding scheduled principal repayments) does not exceed $5,000 in any calendar year.
+(s)  A new Section 19 is added as follows:
+19. Party A provisions
+(a)  Notwithstanding any other provision of this Agreement or any Confirmation, Party A's obligation to pay any amount to Party B or St.George is limited to Party A's assets from time to time.
+(b)  Nothing in paragraph (a) or (c) limits Party A in:
+ISDA Schedule to the Master Agreement for Interest Rate Swap                                 [Allens Arthur Robinson LOGO]
+(i)   obtaining an injunction or other order to restrain any breach of this Agreement by Party B;
+(ii)  obtaining declaratory relief; or
+(iii) in relation to its rights under the Security Trust Deed.
+(c)  Except as provided in paragraphs (a) and (b), Party B shall not:
+(i)   (JUDGMENT) obtain a judgment for the payment of money or damages by Party A;
+(ii)  (STATUTORY DEMAND) issue any demand under section 459E(1) of the Corporations Act 2001 (Cth) (or any analogous provision under any other law) against Party A;
+(iii) (WINDING UP) apply for the winding up or dissolution of Party A;
+(iv)  (EXECUTION) levy or enforce any distress or other execution to, on or against any assets of Party A;
+(v)   (COURT APPOINTED RECEIVER) apply for the appointment by a court of a receiver to any of the assets of Party A;
+(vi)  (SET-OFF OR COUNTERCLAIM) exercise or seek to exercise any set-off or counterclaim against Party A (other than netting in accordance with this Agreement); or
+(vii) (ADMINISTRATOR) appoint, or agree to the appointment, of any administrator to Party A,
+or take proceedings for any of the above and Party B waives its rights to make those applications and take those proceedings.
+(d)  Nothing in this Section 19 in any way limits St.George's obligations under Section 15.
+(t)  Party B (at the direction of Crusade Management Limited), St.George and Party A may, in their absolute discretion, agree to modify or amend this Agreement and/or or any Transaction to vary the respective notional amounts to which this Agreement or that Transaction applies, to vary the Purchased Receivables to which that Transaction applies (if applicable) or to novate all or any part of a Transaction to a third party Swap Provider, in each case upon confirmation from each Designated Rating Agency that the modification or amendment of this Agreement or Transaction (as the case may be) will not result in the downgrade or withdrawal of the rating of any Note.
+IN WITNESS WHEREOF the parties have executed this schedule on the respective dates specified below with effect from the date specified on the first page of this document.
+ISDA Schedule to the Master Agreement for Interest Rate Swap                                 [Allens Arthur Robinson LOGO]
+CRUSADE MANAGEMENT LIMITED
+By: /s/ Andrew Jinks                      Witness: /s/ James Clifford Name: Andrew Jinks                        Witness Name: James Clifford
+Title: Attorney                           Title: Lawyer
+Date: 03/13/07                            Date: 03/13/07
+ST.GEORGE BANK LIMITED
+By: /s/ Andrew Jinks                      Witness: /s/ James Clifford Name: Andrew Jinks                        Witness Name: James Clifford
+Title: Attorney                           Title: Lawyer
+Date: 03/13/07                            Date: 03/13/07
+PERPETUAL TRUSTEES CONSOLIDATED LIMITED as trustee of the Crusade Global Trust No. 1 of 2007
+By: /s/ Andrea Ruver                      Witness: /s/ James Clifford Name: Andrea Ruver                        Witness Name: James Clifford
+Title: Manager                            Title: Lawyer
+Date: 03/13/07                            Date:     03/13/07
+To:         Perpetual Trustees Consolidated Limited as trustee of Crusade Global Trust No.1 of 2007
+Attention:  Manager, Securitisation
+Copy to:    St.George Bank Limited
+Attention:  Roger Desmarchelier
+From: Crusade Management Limited
+Date: 13 March 2006
+SUBJECT: CONFIRMATION OF INTEREST RATE SWAP
+Reference No: Crusade Global Trust No.1 of 2007
+The purpose of this letter is to confirm the terms and conditions of the Transaction entered into between us on the Trade Date specified below. This letter constitutes a "Confirmation" as referred to in the Master Agreement and the Schedule to the Master Agreement specified below. The definitions and provisions contained in the 2000 ISDA Definitions as amended from time to time published by the International Swap and Derivatives Association, Inc or in the Master Trust Deed and Supplementary Terms Notice (as defined in the Master Agreement and the Schedule to the Master Agreement specified below) are incorporated in this Confirmation. In the event of any inconsistency between those definitions and provisions and this Confirmation, this Confirmation will govern. Reference to a "Transaction" shall be deemed to be a reference to a "Swap Transaction" for the purposes of the 2000 ISDA Definitions.
+1.   This Confirmation supplements, forms part of, and is subject to, the Master Agreement dated on or about 13 March 2007 and the Schedule to the Master Agreement dated on or about 13 March 2007 as amended and supplemented from time to time (the "Agreement") between the parties. All provisions contained in the Agreement govern this Confirmation except as expressly modified below.
+In this confirmation "Party A" means Crusade Management Limited and "Party B" means Perpetual Trustees Consolidated Limited as trustee of the Crusade Global Trust No.1 of 2007.
+2.   The terms of the particular Transaction to which this Confirmation relates are as follows: NOTIONAL AMOUNT: Housing Loan Principal of all Fixed Rate Loans as calculated on the first day to which that Monthly Payment Date relates.
+TRADE DATE:            Note Issue Date
+EFFECTIVE DATE:        15 March 2007
+-1-
+FINAL MATURITY DATE:   19 April 2038 or when the stated amount of the Notes is reduced to zero, subject to adjustment in accordance with the Modified Following Business Day Convention.
+RESET DATES:           The Effective Date and then each Monthly Payment Date, subject to adjustment in accordance with the Modified Following Business Day Convention.
+MONTHLY PAYMENT        19th day of each month,
+DATES:                 subject to adjustment in accordance with the Modified Following Business Day Convention.
+MORTGAGE RATE AMOUNTS
+MORTGAGE RATE:         Weighted average fixed rate of interest applicable to the Fixed Rate Loans at that Reset Date
+MORTGAGE RATE PAYER:   Perpetual Trustees Consolidated Limited as trustee of the Crusade Global Trust No.1 of 2007.
+MORTGAGE RATE          Each Monthly Payment Date, up to and including the
+PAYER PAYMENT          last Monthly Payment Date. This is subject to
+DATES:                 adjustment in accordance with the Modified Following Business Day Convention.
+The first Payment Date will be 19 April 2007.
+MORTGAGE RATE
+-2-
+PAYMENTS               (Notional Amount) x (Mortgage Rate) x (Number of days between Reset Dates / 365). Party B is not obliged to pay any amount which is attributable to any Break Payment which is due by, but not received from, an Obligor or any Loan Offset Interest Amount which is due by, but not received from, the Approved Seller, and the failure by Party B to pay that amount will not be an Event of Default.
+MORTGAGE RATE DAY      Actual / 365 (fixed).
+COUNT FRACTION:
+DESIGNATED             Not applicable.
+MATURITY:
+SPREAD:                Nil.
+BUSINESS DAYS:         Sydney, New York, London and TARGET
+FLOATING AMOUNTS
+FLOATING RATE:         Weighted Average Australian Bank Bill Rate, which is the sum of:
+(a)  One Month Bank Bill Rate (as at the start of the Monthly Interest Period for that monthly payment date) multiplied by the proportion which the aggregate Invested Amount of the Class A-3 notes bears to the aggregate Invested Amount of all notes as at the start of that Monthly Interest Period; and
+(b)  Three Month Bank Bill Rate (as at the start of the current Quarterly Interest Period) multiplied by the proportion which the aggregate Invested Amount of the Class A-1 notes, the Class A-2 notes, the Class B notes and the Class C notes bears to the aggregate Invested Amount of all notes as at the start of that Monthly Interest Period.
+FLOATING RATE          Crusade Management Limited
+-3-
+PAYER:
+FLOATING RATE          Each Monthly Payment Date, up to and including the
+PAYMENT DATES:         last Monthly Payment Date. This is subject to adjustment in accordance with the Modified Following Business Day Convention.
+The First Payment Date will be 19April 2007.
+SPREAD:                The weighted average coupon on all Notes in respect of the relevant Monthly Payment Date plus 0.75% per annum.
+FLOATING RATE          (Floating Rate + Spread) x (Notional Amount) x
+PAYMENT:               (number of days between Reset Dates / 365)
+FLOATING RATE          Each Floating Rate Payment Date.
+RESET DATES:
+FLOATING RATE DAY      Actual / 365 (fixed).
+COUNT FRACTION:
+DESIGNATED             30 days, with the exception of the initial MATURITY:              Calculation Period which will be a Linear Interpolation by reference to two rates, one of which shall be determined as if the Designated Maturity were 1 month and the other shall be determined as if the Designated Maturity were 2 months.
+NETTING OF             Applicable.
+PAYMENTS:
+COMPOUNDING:           Inapplicable.
+BUSINESS DAYS:         Sydney, New York, London and TARGET
+-4-
+CALCULATION AGENTS:    Crusade Management Limited
+PAYMENTS TO THE FLOATING RATE PAYER
+ACCOUNT FOR            Crusade Management Limited
+PAYMENT IN AUD:        St.George Bank Limited
+Level 11, 55 Market Street
+Sydney, NSW 2000 Swift Code:   SGBL AU 2S Sort Code:    RTGS-MM BSB:          112-601
+PAYMENTS TO THE MORTGAGE RATE PAYER
+ACCOUNT FOR            Perpetual Trustees Consolidated Limited as trustee of
+PAYMENT IN AUD:        Crusade Global Trust No.1 of 2007
+Bank:        St.George Bank BSB:          332-027 Account No:   777-700-241
+PAYMENTS TO ST.GEORGE BANK (AS STANDBY INTEREST RATE SWAP PROVIDER) (IF APPLICABLE)
+ACCOUNT FOR            St.George Bank Limited
+-5-
+PAYMENT IN AUD:        Level 11, 55 Market Street
+Sydney, NSW 2000 Swift Code:   SGBL AU 2S Sort Code:    RTGS-MM BSB:          112-601
+The office of the Mortgage Rate Payer for the Swap Transaction is Sydney, and the Office of the Floating Rate Payer for the Swap Transaction is Sydney.
+3. This is the Interest Rate Swap for the purposes of the Supplementary Terms Notice dated on or before 13 March 2007 relating to Crusade Global Trust No. 1 of 2007.
+4. Address for notices in connection with this Transaction
+(a)  Party A:          Crusade Management Limited Level 3, 4-16 Montgomery Street, Kogarah Attn: Compliance Manager Telephone: 612 9320-5605 Facsimile:  612 9320-5785
+(b)  Party B:          Perpetual Trustees Consolidated Limited Angel Place, Level 12, 123 Pitt Street, Sydney Attn: Manager - Securitisation Telephone: 612 9229-9000 Facsimile:  612 9221-7870
+(c)  St.George Bank:   St.George Bank Limited Level 10, 55 Market Street, Sydney Attn: Manager, Securitisation Telephone: 612 9320-5788 Facsimile: 612 9320-5785
+5.   Documents to be delivered
+-6-
+Each party shall deliver to the other, at the time of its execution of this Confirmation, evidence of the specimen signature and incumbency of each person who is executing the Confirmation on the party's behalf, unless such evidence has previously been supplied in connection with this Agreement and remains true and in effect.
+6. Relationship between the parties
+Each party will be deemed to have represented to the other party on the Trade Date that (lacking a written agreement between the parties that expressly imposes affirmative obligations to the contrary for this Transaction):
+(a) Non-Reliance. It is acting for its own account (in the case of Party B as Trustee for the Trust), and it has made its own independent decision to enter into this Transaction and as to whether this Transaction is appropriate or proper for it based upon its own judgement (and in the case of Party B also the Manager) and upon advice from such advisers as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into this Transaction; it being understood that information and explanations related to the terms and conditions of this Transaction shall not be considered investment advice or a recommendation to enter into this Transaction. No communication (written or oral) received from the other party shall be deemed to be an assurance or guarantee as to the expected results of this Transaction.
+(b) Assessment and Understanding. It is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of this Transaction. It is capable of assuming, and assumes the risks of this Transaction.
+(c) Status of Parties. The other party is not acting as a fiduciary for or an adviser to it in respect of this Transaction.
+7.   Compliance with Regulation AB.
+(a)  St.George has been advised that Party A is required under Regulation AB under the Securities Act of 1933 and the Securities Exchange Act of 1934, as amended ("Regulation AB"), to disclose certain financial information regarding St.George depending on the applicable "significance percentage" of this Confirmation, as calculated from time to time in accordance with Item 1115 of Regulation AB.
+(b)  If required, St.George shall provide to Party A the applicable financial information described under Item 1115 of Regulation AB (the "Reg AB Information") within ten (10) Local Business Days of receipt of a written request for such Reg AB Information by Party A (the "Response Period"), so long as Party A has reasonably determined, in good faith, that such information is required under Regulation AB; provided, however that if St.George in good faith determines that it is unable to provide the Reg AB Information within the
+-7-
+Response Period, then, subject to receipt of confirmation by each Designated Rating Agency that such action shall not result in withdrawal or downgrade of any credit rating assigned, by it, to the Notes, (i) St.George shall cause a Reg AB Approved Entity (as defined below) to replace St.George as party to this Confirmation on terms substantially similar to this Confirmation prior to the expiration of the Response Period, and (ii) such Reg AB Approved Entity shall provide the Reg AB Information prior to the expiration of the Response Period. "Reg AB Approved Entity" means any entity that (i) has the ability to provide the Reg AB Information and (ii) is a Replacement Provider. If Party A requests (in writing) the Reg AB Information from St.George, then Party A shall promptly (and in any event within three
+(3) Local Business Days of the date of the request for the Reg AB Information) provide St.George with a written explanation of how the significance percentage was calculated.
+(c)  St.George (or, if applicable, the Reg AB Approved Entity) shall indemnify and hold harmless Party A, its directors or officers and any person controlling Party A, from and against any and all losses, claims, damages and liabilities caused by (i) any untrue statement or alleged untrue statement of a material fact contained in any information that St.George or such Reg AB Approved Entity, as applicable, provides to Party A pursuant to this Paragraph (c) (the "St.George Information") or caused by any omission or alleged omission to state in the St.George Information a material fact required to be stated therein or necessary to make the statements therein, in light of the circumstances under which they were made, not misleading; or (ii) any failure by St.George to deliver any information or other material when and as required under this Section 7.
+-8-
+PLEASE NOTIFY US IMMEDIATELY SHOULD THE PARTICULARS OF THIS CONFIRMATION NOT BE IN ACCORDANCE WITH YOUR UNDERSTANDING.
+PLEASE QUOTE OUR REFERENCE ON ALL CORRESPONDENCE.
+Regards,
+Signed for and on behalf of Crusade Management Limited, by its attorney
+/s/ Andrew Jinks                          /s/ James Clifford Name: Andrew Jinks                        Witness Name: James Clifford Title:                                    Title: Lawyer
+Please confirm that the foregoing correctly sets forth the terms of our agreement by executing the enclosed copy of this confirmation and returning it to us.
+Confirmed as of date first written:
+For and on behalf of Perpetual Trustees Consolidated Limited (as trustee of the Crusade Global Trust No.1 of 2007)
+/s/ Andrea Ruver                          /s/ James Clifford Name: Andrea Ruver                        Witness Name: James Clifford Title: Manager                            Title: Lawyer
+Confirmed as of date first written:
+-9-
+For and on behalf of St.George Bank Limited (as Standby Interest Rate Swap Provider)
+/s/ Andrew Jinks                          /s/ James Clifford Name: Andrew Jinks                        Witness Name: James Clifford Title:                                    Title: Lawyer
+-10-

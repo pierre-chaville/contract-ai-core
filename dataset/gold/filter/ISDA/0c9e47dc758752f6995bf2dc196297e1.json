@@ -1,0 +1,13 @@
+{
+  "filename": "0c9e47dc758752f6995bf2dc196297e1.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 9,
+      "end_line": 321,
+      "confidence": 0.99,
+      "explanation": "Lines 9 to 321 comprise the full Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE' and including all the Parts (1-5) and their detailed provisions. The text after line 321 (Annexure 1, Definitions Schedule, and Credit Support Annex) are not part of the main Schedule but are annexes or confirmations. The standard pre-print and other annexes are before or after this range. Thus, lines 9-321 are the contiguous span that best matches the request for the Schedule."
+    }
+  ]
+}

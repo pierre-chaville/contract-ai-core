@@ -1,0 +1,13 @@
+{
+  "filename": "5b0d97bba758591eb4d64a958be68293.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 260,
+      "end_line": 722,
+      "confidence": 0.99,
+      "explanation": "The ISDA Schedule begins at line 260 with the heading 'SCHEDULE to the ISDA MASTER AGREEMENT' and continues through the end of the Schedule's bespoke terms, which conclude at line 722. The following sections (Annexures, Confirmations, and Credit Support Annexes) are not part of the Schedule itself but are annexes or transaction-specific documents. This span contains all the negotiated Schedule provisions and elections, as requested."
+    }
+  ]
+}

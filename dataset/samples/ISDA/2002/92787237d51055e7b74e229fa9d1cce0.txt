@@ -1,0 +1,135 @@
+SCHEDULE
+to the
+2002 Master Agreement
+dated as of August 26, 2013
+between
+FRANKLIN STREET PROPERTIES CORP. ("Party A")
+and
+BANK OF MONTREAL ("Party B")
+Part 1.     Termination Provisions.
+(a)	 " Specified Entity" means in relation to Party A for the purpose of:―
+Section 5(a)(v),     Not Applicable
+Section 5(a)(vi),     Not Applicable
+Section 5(a)(vii),     Not Applicable
+Section 5(b)(v),     Not Applicable
+and in relation to Party B for the purpose of:―
+Section 5(a)(v),     Not Applicable
+Section 5(a)(vi),     Not Applicable
+Section 5(a)(vii),     Not Applicable
+Section 5(b)(v),     Not Applicable
+(b)	 " Specified Transaction" will have the meaning specified in Section 14 of this Agreement.
+(c)	 The " Cross-Default" provisions of Section 5(a)(vi) will apply to Party A and Party B; provided, that the phrase ", or becoming capable at such time of being declared," shall be deleted from clause (1) of such Section 5(a)(vi); and the following language shall be added to the end thereof:
+"provided, however, that an Event of Default shall not occur under either (1) or (2) above if the default, event of default, or other similar condition or event referred to in (1) or the failure to pay referred to in (2) is caused not by the unavailability of funds but is caused solely due to a technical or administrative error which has been remedied within three Local Business Days after a notice of such failure is given to the party."
+29	 ISDA® 2002
+"Specified Indebtedness " (i) with respect to Party A will mean the obligations under the Credit Agreement (hereinafter defined) and (ii) with respect to Party B will have the meaning specified in Section 14 but it will not include (i) indebtedness in respect of deposits received or (ii) any payment not made because of an intervening change in law making such payment illegal, or a Force Majeure Event, provided that the party had available sufficient funds to make such payment at the time of non-payment.
+" Threshold Amount" shall have the meaning set forth below, provided that for purposes of "Threshold Amount ", " Equity" means the stockholders' equity including retained earnings, total partnership capital, net assets, or total capital and reserves, as the case may be, of the party or its Credit Support Provider.
+"Threshold Amount " means, with respect to Party A, $20,000,000.
+"Threshold Amount " means, with respect to Party B, 3% of the Equity of Party B.
+(d)	 The " Credit Event Upon Merger" provisions of Section 5(b)(v) will apply to Party A and Party B.
+(e)	 The " Automatic Early Termination" provision of Section 6(a) will not apply to Party A and will not apply to Party B.
+(f)	 " Termination Currency" means U.S. Dollars.
+(g)	 Additional Termination Event will apply. The following will constitute an Additional Termination Event:
+(i)      Party B's obligations to lend under the Credit Agreement (including Party B's participation in the Term Loan (hereinafter defined)) are terminated or Party B ceases to be a party to the Credit Agreement for any reason other than a Party B Exit Event (hereinafter defined).
+As used herein, "Party B Exit Event " means either the termination by Party B of its rights and obligations under the Credit Agreement or the voluntary assignment of its rights and obligations thereunder to a third party.
+For the purpose of the foregoing Termination Event, Party A will be the Affected Party and all Transactions will be Affected Transactions.
+Part 2.     Tax Representations.
+(a)     Payer Representation. For the purpose of Section 3(e) of this Agreement, Party A and Party B will each make the following representation:-
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 9(h) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on:
+(i)     the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement;
+(ii)     the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement; and
+30	 ISDA® 2002
+(iii)     the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement;
+except that it will not be a breach of this representation where reliance is placed on clause (ii) above and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+(b)     Payee Tax Representations. For the purpose of Section 3(f) of this Agreement, Party A and Party B make the representations specified below, if any:
+(i)	 The following representation will apply to Party A and will apply to Party B when Party B is acting through its Toronto office:
+It is fully eligible for the benefits of the "Business Profits" or "Industrial and Commercial Profits" provision, as the case may be, the "Interest" provision or the "Other Income" provision (if any) of the Specified Treaty with respect to any payment described in such provisions and received or to be received by it in connection with this Agreement and no such payment is attributable to a trade or business carried on by it through a permanent establishment in the Specified Jurisdiction.
+"Specified Treaty" means with respect to Party A or Party B as Payee, the income tax convention between Canada and the United States of America.
+"Specified Jurisdiction" means, with respect to Party A as Payee, Canada.
+"Specified Jurisdiction" means, with respect to Party B as Payee, the United States of America.
+(ii)	 The following representation will not apply to Party A and will apply to Party B when Party B is acting through its Chicago office:
+Each payment received or to be received by it in connection with this Agreement will be effectively connected with its conduct of a trade or business in the United States of America.
+(iii)	 Party B makes the following representation:
+When acting through a non-U.S. office it is a "non-U.S. branch of a foreign person" (as that term is used in section 1.1441-4(a)(3)(ii) of United States Treasury Regulations) for United States federal income tax purposes.
+(iv)	 Party B makes the following representation:
+With respect to payments made to an address outside the United States or made by a transfer of funds to an account outside the United States, it is a "non-U.S. branch of a foreign person" (as that term is used in section 1.1441-4(a)(3)(ii) of United States Treasury Regulations) for United States federal income tax purposes.
+(v)	 Party B makes the following representation:
+When acting through a non-U.S. office it is a "foreign person" (as that term is used in section 1.6041-4(a)(4) of United States Treasury Regulations) for United States federal income tax purposes.
+(vi)	 The following representation will apply to Party A and will not apply to Party B:
+It has been duly incorporated, created or organized under the laws of the United States of America or of any State of the United States of America, and it is validly existing under those laws.
+31	 ISDA® 2002
+Part 3.     Agreement to Deliver Documents.
+For the purpose of Sections 4(a)(i) and (ii) of this Agreement, each party agrees to deliver the following documents, as applicable:
+(a)     Each party shall, as soon as practicable after demand, deliver to the other party any form or document reasonably requested by the other party, including without limitation, any form or document required to enable such other party to make payments hereunder without withholding for or on account of Taxes or with such withholding at a reduced rate. Without limiting the generality of the foregoing:
+Party required to deliver document 	 Form/Document/Certificate 	 Date by which to be delivered Party A 	 Form W-9 	 Upon execution of this Agreement Party B 	 Form W-8-ECI, with respect to Transactions entered into by Party B's Chicago Office 	 Upon execution of this Agreement Party B 	 Form W-8-BEN, with respect to Transactions entered into by Party B's London and Toronto Offices 	 Upon execution of this Agreement Party A and Party B 	  For the purpose of complying with the Code (as defined below), any current or future regulations or official interpretations thereof, any agreement entered into pursuant to Section 1471(b) of the Code, or any fiscal or regulatory legislation, rules or practices adopted pursuant to any intergovernmental agreement entered into in connection with the implementation of such Sections of the Code, and notwithstanding anything in Section 4(a)(iii) of this Agreement to the contrary, each party agrees to deliver any form or document that may be required or reasonably requested to identify tax status (a "FATCA withholding certificate"), with any such FATCA withholding certificate to be accurate and completed in a manner reasonably satisfactory to the other party.   	  (1) Promptly upon reasonable demand by the other party in writing, but in no event prior to the issuance by the Internal Revenue Service of W-8 and W-9 or equivalent forms which include Chapter 4 tax status identification. (2) Promptly upon learning that the information on a previously provided FATCA withholding certificate is inaccurate or incomplete.
+32	 ISDA® 2002
+(b)     Other documents to be delivered are:
+Party required to deliver document 	 Form/Document/Certificate 	 Date by which to be delivered 	  Covered by Section 3(d) Representation Party A and Party B 	 Certificate of incumbency containing specimen signatures of each person executing the Agreement and if requested, any Confirmation 	 Upon execution of this Agreement, and if requested, each Confirmation 	 Yes Party A and Party B 	  Certified copies of all corporate authorizations and any other documents with respect to the execution, delivery and performance of this Agreement.   	 Upon execution and delivery of this Agreement. 	 Yes Party A and Party B   	 A copy of the most recent annual and quarterly consolidated financial statements of each party 	 Promptly after request by the other party, if such financial statements are not available on "EDGAR" or (i) in the case of Party A, delivered pursuant to the terms of the Credit Agreement (ii) in the case of Party B, its homepage at www.bmo.com  	 Yes
+33	 ISDA® 2002
+Part 4.      Miscellaneous.
+(a)     Addresses for Notices. For the purpose of Section 12(a) of this Agreement:
+Address(es) for notices or communications to Party A :
+Address:	 Franklin Street Properties Corp.
+401 Edgewater Place, Suite 200 Wakefield, MA 01880
+Attention: 	 John G. Demeritt, Chief Financial Officer Facsimile: 	 (781)  557-1335 Telephone: 	 (781)  557-1341 Email Address: 	 jdemeritt@franklinstreetproperties.com
+Address(es) for notices or communications to Party B :
+With respect to Transactions, excluding FX Transactions and Currency Option Transactions:
+Address:	 Bank of Montreal 250 Yonge Street, 20th Floor Toronto, Ontario M5B 2L7 Canada
+Attention: 	 Head, Derivative Operations Facsimile: 	 (416) 552-7905 Telephone: 	 (416) 552-7809
+With respect to FX Transactions and Currency Option Transactions:
+Address:	 FX/MM Operations 129 St. Jacques St. W., 11th Floor, H.O.
+Montreal, Quebec H2Y 1L6 Canada
+Attention: 	 Manager, FX Operations Facsimile: 	 (514) 877-2223 Telephone: 	 (514) 877-2203/1245 SWIFT ID No: 	 BOFMCAT2FXM
+Any other notice sent to Party B (including without limitation, any notice in connection with Section 5, 6 or 9(b)) shall be copied to the following address:
+Address:	 Bank of Montreal 10th Floor 100 King Street West Toronto, Ontario M5X 1A1
+Attention: 	 Associate General Counsel & Managing Director, Documentation Telephone: 	 (416) 867-4710 Facsimile: 	 (416) 956-2318
+34	 ISDA® 2002
+(b)     Process Agent. For purposes of Section 13(c) of this Agreement:
+Party A appoints as its Process Agent: not applicable.
+Party B appoints as its Process Agent: its Office at 3 Times Square, New York, N.Y. 10036.
+(c)     Offices. The provisions of Section 10(a) will apply to this Agreement.
+(d)     Multibranch Party. For the purpose of Section 10(b) of this Agreement:
+Party A is not a Multibranch Party and, for the purposes of this Agreement and each Transaction entered into pursuant hereto, will act through its Wakefield, MA Office.
+Party B is a Multibranch Party and, for purposes of this Agreement and each Transaction entered into pursuant hereto, may act through its Chicago and Toronto Offices.
+(e)     Calculation Agent. The Calculation Agent is Party B, unless an Event of Default has occurred and is continuing with respect to Party B, in which case Party A may appoint a Leading Dealer to act as substitute Calculation Agent for so long as such Event of Default is continuing. A "Leading Dealer" means a leading dealer in the relevant market that is not an Affiliate of either of the parties. All calculations and determinations made by the Calculation Agent shall be made in good faith and in a commercially reasonable manner.
+(f)     Credit Support Document(s). None.
+(g)     Credit Support Provider None.
+(h)	 Governing Law. This Agreement will be governed by and construed in accordance with the laws of the State of New York (without reference to choice of law doctrine).
+(i)	 Netting of Payments. Multiple Transaction Payment Netting shall not apply to all Transactions, starting at the date of this Agreement unless otherwise mutually agreed by the parties.
+(j)	 "Affiliate " will have the meaning specified in Section 14 of this Agreement.
+(k)	 Absence of Litigation. For the purpose of Section 3(c):―
+" Specified Entity" means in relation to Party A, none.
+" Specified Entity" means in relation to Party B, none.
+(l)	 No Agency. The provisions of Section 3(g) will apply to this Agreement.
+(m)	 Additional Representation will apply. For the purpose of Section 3 of this Agreement, the following will constitute an Additional Representation:―
+(i)      Relationship Between Parties. Each party will be deemed to represent to the other party on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction):―
+35	 ISDA® 2002
+(1)	 Non-Reliance. It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisers as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction, it being understood that information and explanations related to the terms and conditions of a Transaction will not be considered investment advice or a recommendation to enter into that Transaction. No communication (written or oral) received from the other party will be deemed to be an assurance or guarantee as to the expected results of that Transaction.
+(2)	 Assessment and Understanding It is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction. It is also capable of assuming, and assumes, the risks of that Transaction.
+(3)	 Status of Parties. The other party is not acting as a fiduciary for or an adviser to it in respect of that Transaction.
+(n)	 Recording of Conversations.   Each party (i) consents to the recording of telephone conversations between the trading, marketing and other relevant personnel of the parties in connection with this Agreement or any potential Transaction, (ii) agrees to obtain any necessary consent of, and give any necessary notice of such recording to, its relevant personnel and (iii) agrees, to the extent permitted by applicable law, that recordings may be submitted in evidence in any Proceedings.
+Part 5.     Other Provisions.
+(a)     2006 ISDA Definitions. This Agreement is subject to the 2006 ISDA Definitions (the "Definitions") published by the International Swaps and Derivatives Association, Inc. as amended and supplemented from time to time.
+In the event of any inconsistency between the provisions of this Agreement and the Definitions, this Agreement will prevail. In the event of any inconsistency between the provisions of any Confirmation and this Agreement or the Definitions, such Confirmation will prevail for the purpose of the relevant Transaction.
+(b)	 Bankruptcy Code. The parties hereto intend that this Agreement shall be a "swap agreement" for purposes of 11 U.S.C. §101(53B) or any successor provisions.
+(c)	 Commodity Exchange Act. Each party represents to the other party on and as of the date hereof and on each date on which a Transaction is entered into among them that:
+(i)	 such party is an "eligible contract participant" as defined in the U.S.
+Commodity Exchange Act, as amended (the "CEA");
+(ii)	 the terms of this Agreement and each Transaction have been subject to individual negotiation.
+36	 ISDA® 2002
+(d)	 Escrow. If by reason of the time difference between the cities in which payments are to be made or otherwise, it is not possible for simultaneous payments to be made on any date on which both parties are required to make payments hereunder, either party may at its option and in its sole discretion notify the other party that payments on that date are to be made in escrow. In this case deposit of the payment due earlier on that date shall be made by 2:00 p.m. (local time at the place for the earlier payment) on that date with an escrow agent selected by the party giving the notice and reasonably acceptable to the other party, accompanied by irrevocable payment instructions (a) to release the deposited payment to the intended recipient upon receipt by the escrow agent of the required deposit of the corresponding payment from the other party on the same date accompanied by irrevocable payment instructions to the same effect or (b) if the required deposit of the corresponding payment is not made on that same date, to return the payment deposited to the party that paid it into escrow. The party that elects to have payments made in escrow shall pay the costs of the escrow arrangements and shall cause those arrangements to provide that the intended recipient of the payment due to be deposited first shall be entitled to interest on that deposited payment for each day in the period of its deposit at the rate offered by the escrow agent for that day for overnight deposits in the relevant currency in the office where it holds that deposited payment (at 11:00 a.m. local time on that day) if that payment is not released by 5:00 p.m. local time on the date it is deposited for any reason other than the intended recipient's failure to make the escrow deposit it is required to make hereunder in a timely fashion.
+(e)	 WAIVER OF JURY TRIAL: EACH PARTY WAIVES, TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, ANY RIGHT IT MAY HAVE TO A TRIAL BY JURY IN RESPECT OF ANY SUIT, ACTION OR PROCEEDING RELATING TO THIS AGREEMENT, ANY CREDIT SUPPORT DOCUMENT OR ANY TRANSACTION. EACH PARTY ACKNOWLEDGES THAT IT AND THE OTHER PARTY HAVE ENTERED INTO THIS AGREEMENT AND ANY CREDIT SUPPORT DOCUMENT, AS APPLICABLE, IN RELIANCE ON, AMONG OTHER THINGS, THE MUTUAL WAIVERS IN THIS SECTION.
+(f)	 Section 5(b)(ii) of the Agreement shall be deleted in its entirety and replaced with the following:
+Force Majeure Event. After giving effect to any applicable provision, disruption fallback or remedy specified in, or pursuant to, the relevant Confirmation or elsewhere in this Agreement, by reason of any event or circumstance, including, without limitation, any natural, technological, political, governmental (which for greater certainty includes an act of State) or similar event or circumstance, occurring after a Transaction is entered into, on any day:
+(1)     the office through which such party (which will be the Affected Party) makes and receives payment or deliveries with respect to such Transaction is prevented from performing any absolute or contingent obligation to make a payment or delivery in respect of such Transaction, from receiving a payment or delivery in respect of such Transaction or from complying with any other material provision of this Agreement relating to such Transaction (or would be so prevented if such payment, delivery or compliance were required on that day), or it becomes impossible or impracticable for such Office so to perform, receive or comply (or it would be impossible or impracticable for such Office so to perform, receive or comply if such payment, delivery or compliance were required on that day); or
+(2)     such party or any Credit Support Provider of such party (which will be the Affected Party) is prevented from performing any absolute or contingent obligation to make a payment or delivery which such party or Credit Support Provider has under any Credit Support Document relating to such Transaction, from receiving a payment or delivery under such Credit Support Document or from complying with any other material provision of such Credit Support Document (or would be so prevented if such payment, delivery or compliance were required on that day), or it becomes impossible or impracticable for such party or Credit Support Provider so to perform, receive or comply (or it would be impossible or impracticable for such party or Credit Support Provider so to perform, receive or comply if such payment, delivery or compliance were required on that day),
+37	 ISDA® 2002
+so long as such event or circumstance was not anticipated at the date of entering into the Transaction (or, in the case of the Early Termination Amount, the date of entering into this Agreement, is beyond the control of such Office, such party or such Credit Support Provider, as appropriate, and such Office, party or Credit Support Provider could not, after using all reasonable efforts (which will not require such party or Credit Support Provider to incur a loss, other than immaterial, incidental expenses), overcome such prevention, impossibility or impracticability;
+(g)	 2002 Master Agreement Protocol. The parties agree that the definitions and provisions contained in Annexes 1 to 16 and Section 6 of the 2002 Master Agreement Protocol published by the International Swaps and Derivatives Association, Inc. on 15th July, 2003 are incorporated into and apply to this Agreement.
+(h)	 Transfer. Notwithstanding the provisions of Section 7 of the Agreement, Party B will not unreasonably withhold or delay its consent to assignment of this Agreement or any Transaction hereunder to a third party provided that: (i) such third party resides in a tax and legal jurisdiction acceptable to Party B (and for the purposes of making such a determination, Party B may obtain such opinions of legal and/or tax advisors as it considers appropriate); (ii) such assignment and assumption of this Agreement or any Transaction hereunder is properly documented and executed by all relevant parties; and (iii) appropriate evidence and documentation of the authority and capacity of, and enforceability against the third party is provided in a form satisfactory to Party B.
+Notwithstanding that the third party meets the above criteria, it will not be considered unreasonable for Party B to withhold its consent to the transfer if such transfer could result (whether for reasons related to the third party transferee or for any other reason) in any material adverse credit, capital or cost implications for Party A (as determined by it in its sole discretion).
+(i)	 Accuracy of Specified Information. Section 3(d) is hereby amended by adding in the third line thereof after the word "respect" and before the period, the phrase "or, in the case of audited or unaudited financial statements, a fair presentation in all material respects of the financial condition of the relevant person."
+(j)	 Foreign Account Tax Compliance Act. Withholding Tax imposed on payments to non-US counterparties under the United States Foreign Account Tax Compliance Act. "Tax" as used in Part 2(a) of this Schedule (Payer Tax Representation) and "Indemnifiable Tax" as defined in Section 14 of this Agreement shall not include any U.S. federal withholding tax imposed or collected pursuant to Sections 1471 through 1474 of the U.S. Internal Revenue Code of 1986, as amended (the "Code"), any current or future regulations or official interpretations thereof, any agreement entered into pursuant to Section 1471(b) of the Code, or any fiscal or regulatory legislation, rules or practices adopted pursuant to any intergovernmental agreement entered into in connection with the implementation of such Sections of the Code (a "FATCA Withholding Tax"). For the avoidance of doubt, a FATCA Withholding Tax is a Tax the deduction or withholding of which is required by applicable law for the purposes of Section 2(d) of this Agreement.
+(k)	 Additional Definitions. The following definitions shall be added to Section 14 in their appropriate alphabetical place:
+" Credit Agreement" means credit agreement entered into as of August 26, 2013 among Party A, together with those certain material subsidiaries of Party A thereto (as the same may be amended from time to time in accordance with the terms of this Agreement), each lender from time to time party thereto and Party B, as Administrative Agent as amended, supplemented, restated, refinanced or replaced from time to time.
+"Term Loan " has the meaning specified in the Credit Agreement.
+38	 ISDA® 2002

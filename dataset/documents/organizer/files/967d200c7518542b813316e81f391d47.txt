@@ -1,7 +1,7 @@
 EX-10.10 12 a11-4730_1ex10d10.htm EX-10.10
 EX-10.10
 (Multicurrency--Cross Border)
-ISDA Ò
+ISDA Ã’
 International Swaps and Derivatives Association, Inc.
 FIFTH AMENDMENT
 dated as of January 28, 2011
@@ -49,3 +49,16 @@ By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	 
 HANSEN SHIPPING CORP. 	    	  HARTLEY NAVIGATION CORP.
 By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary
 HENLEY MARITIME CORP. 	    	  HUDSON MARITIME CORP.
+By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary
+JESSUP MARITIME CORP. 	    	  MONTROSE MARITIME CORP.
+By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary
+OLDCASTLE SHIPPING CORP. 	    	  QUENTIN NAVIGATION CORP.
+By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary
+RECTOR SHIPPING CORP. 	    	  REMSEN NAVIGATION CORP.
+By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary
+SHEFFIELD MARITIME CORP. 	    	  SHERMAN MARITIME CORP.
+By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary STERLING SHIPPING CORP. 	    	  STRATFORD SHIPPING CORP.
+By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary VEDADO MARITIME CORP. 	    	  VERNON MARITIME CORP.
+By: 	  /s/ Tara DeMakes 	    	  By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes 	    	  Name: 	  Tara DeMakes Title: 	  Secretary 	    	  Title: 	  Secretary
+WINDSOR MARITIME CORP.
+By: 	  /s/ Tara DeMakes Name: 	  Tara DeMakes Title: 	  Secretary

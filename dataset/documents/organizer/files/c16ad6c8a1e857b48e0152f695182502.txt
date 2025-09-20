@@ -24,7 +24,7 @@ compensation in respect of that obligation or deferred obligation, as the case m
 IN WITNESS WHEREOF the parties have executed this document on the respective dates specified below with effect from the date specified on the first page of this document.
 DTE Energy Trading, Inc. 	  Summer Energy, LLC By: /s/ Michael Hunt 	  By: /s/ Neil Leibman Name: Michael Hunt 	  Name: Neil Leibman Title: Vice President 	  Title: CEO-Summer Energy Date: 4/23/2014 	  Date: 4/1/2014
 ISDAa 2002
-ISDA�
+ISDA®
 International Swaps and Derivatives Association, Inc.
 SCHEDULE
 to the
@@ -49,3 +49,296 @@ Section 5(b)(v), Not Applicable
 "Specified Indebtedness" will have the meaning specified in Section 14 of this Agreement.
 ISDAa 2002
 "Threshold Amount" Not Applicable to Party A; and means with respect to Party B, two percent (2%) of Party B's shareholders' equity, (determined in accordance with generally accepted accounting principles) as at the end of its most recently completed fiscal year.
+(d) 	  The "Credit Event Upon Merger" provisions of Section 5(b)(v), as amended, will not apply to Party A and, as amended, will apply to Party B.
+The "Credit Event Upon Merger" provisions of Section 5(b)(v), will not apply to Party A and will apply to Party B; provided, however, that "materially weaker" means (i) that the Credit Rating assigned by Standard & Poor's Financial Services LLC or a successor (if any) ("S&P") and Moody's Investors Service, Inc. or a successor (if any) ("Moody's") of the resulting, surviving or transferee entity is less than BBB- by S&P or Baa3 by Moody's or (ii) in the event the resulting, surviving or transferee entity is not rated, the Internal Policies (as defined below) of Party A in effect at the time, would lead Party A, solely as a result of a change in the nature, character, identity or condition of Party B from its state (as a party to the Agreement) prior to such consolidation, amalgamation, merger or transfer, to decline to make an extension of credit to, or enter into a Transaction with, the resulting, surviving or transferee entity.
+"Credit Rating" shall mean with respect to an entity, the respective ratings then assigned to its unsecured, senior long-term debt, not supported by third party credit enhancement, by S&P or by Moody's.
+"Internal Policies" shall mean a party's (1) internal credit limits applicable to individual entities, (2) other limits on doing business with entities domiciled in certain jurisdictions or engaging in certain activities, or (3) internal restrictions on doing business with entities with whom such party has had prior adverse business relations.
+(e) 	  The "Automatic Early Termination" provision of Section 6(a) will not apply to Party A and will not apply to Party B.
+(f) 	  "Termination Currency" means United States Dollars.
+(g) Additional Termination Event will not apply.
+(h) 	  Definitions. Section 14 shall be amended by deleting the definition of "Potential Event of Default" along with all reference to Potential Event of Default in Section 2(a)(iii), Section 3(b) and Sections 9(h)(i)(3)(B) and (C) and any other references throughout all ISDA documents.
+Part 2. Tax Representations.
+(a) 	  Payer Representations. For the purpose of Section 3(e) of this Agreement
+(i) 	  Party A and Party B each make the following representation:
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 9(h) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on (i) the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement, (ii) the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement and (iii) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement, except that it will not be a breach of this representation where reliance is placed on clause (ii) above and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+ISDAa 2002
+(b) Payee Tax Representations. For the purpose of Section 3(f) of this Agreement
+(i) 	  Party A and Party B each make the following representation:
+Party A is a corporation created or organized in the United States or under the laws of the United States and its U.S. taxpayer identification number is 38-3323526. It is "exempt" within the meaning of Treasury Regulation sections 1.6041-3(p) and 1.6049-4(c) from information reporting on Form 1099 and backup withholding.
+Party B is a Texas LLC created or organized in the United States or under the laws of the United States and its U.S. taxpayer identification number is 26-0206262. It is "exempt" within the meaning of Treasury Regulation sections 1.6041-3(p) and 1.6049-4(c) from information reporting on Form 1099 and backup withholding.
+Part 3. Agreement to Deliver Documents.
+For the purpose of Sections 4(a)(i) and 4(a)(ii) of this Agreement, each party agrees to deliver the following documents, as applicable:
+(a) Tax forms, documents or certificates to be delivered are: [none]
+Party required to deliver document 	  Form/Document/ Certificate 	  Date by which to be delivered
+(b)Other documents to be delivered are:―
+Party required to deliver document 	  Form/Document/ Certificate 	  Date by which to be delivered 	  Covered by Section 3(d) Representation Party A and Party B 	  Certified copies of resolutions of authorized body authorizing execution, delivery, and performance of this Agreement 	  Execution of Agreement 	  Yes Party A and Party B 	  Evidence of authority of signatories in a form acceptable to the other party 	  Execution of Agreement 	  Yes Party B 	  Completed W-9 (or other relevant tax form) and completed DTE's EFT Form 	  Execution of Agreement 	  Yes Party A and Party B 	  Annual audited and quarterly unaudited financial statements for such party or its Credit Support Provider, as applicable, containing consolidated financial statements for the relevant period and prepared in accordance with generally accepted accounting principles 	  If requested, and as soon as available, and in any event within 60 days after the end of each fiscal year and within 35 days after the end of each fiscal quarter of the delivering party, if such statements are not available on "EDGAR" or such party's internet home page 	  Yes Party A and Party B 	  Guarantee of Credit Support Provider in a form agreed between the parties 	  Execution of Agreement 	  Yes
+ISDAa 2002
+Part 4. Miscellaneous.
+(a) Addresses for Notices. Notwithstanding anything to the contrary in Section 12(a) of this Agreement, parties may communicate by e-mail for informational purposes only, but e-mail does not constitute a binding legal notice for the purpose of Section 12(a) of this Agreement. For the purpose of Section 12(a) of this Agreement:
+Notices or Communications (other than with respect to confirmations and/or payments) to Party A:
+Address: DTE Energy Trading, Inc.
+414 South Main Street, Suite 200
+Ann Arbor, MI 48104
+Attention: Contract Administration, Jim Buck, Director (734-887-4039)
+Telephone: (734) 887-2042 (Marcia L. Hissong); or
+(734) 887-2171 (Cynthia Klots)
+Fax: (734) 887-2235
+E-mail: hissongm@dteenergy.com; or
+klotsc@dteenergy.com
+With additional Notices of an Event of Default to: Attention: Gregory V. Staton, General Counsel & Vice President-Corporate Services Phone: (734) 887-2121 Fax: (734) 887-2235 Email: statong@dteenergy.com
+Specific Instructions:
+Confirmations to Party A:
+Attention: Judy VonBoncel
+Telephone: (734) 887-2025
+Fax: (734) 887-2056
+Email: DTE_CONFIRMS@dteenergy.com
+Payments to Party A:
+Attention: Boyd Smith, Staff Accountant
+Telephone: (734) 887-2023
+Fax: (734) 887-2140
+Email: DTEPWRSTTLMTS@dteenergy.com
+Contact Information for Dodd-Frank for Party A:
+Name: Michael Seischab
+Title: Manager-Enterprise Risk Management
+Phone: 734-887-4124
+Email: seischabm@dteenergy.com
+ISDAa 2002
+Notices or Communications (other than with respect to confirmations and/or payments) to Party B:
+Address: Summer Energy, LLC
+Address 1 800 Bering Dr., Suite 260
+City, State, Zip Houston, TX 77057
+Attention: Contract Administration Jaleea George
+Facsimile: 713-481-8470
+Telephone: 713-375-2793
+E-mail: jgeorge@summerenergy.com
+Specific Instructions:
+Confirmations to Party B:
+Telephone: 713-375-2789
+Facsimile: 713-493-7269
+Payments to Party B:
+Telephone: 713-375-2793
+Facsimile: 713-481-8470
+(b) Process Agent. For the purpose of Section 13(c) of this Agreement:
+(i) 	  Party A appoints as its Process Agent: Not applicable.
+(ii) 	  Party B appoints as its Process Agent: Not applicable.
+(c) Offices. The provisions of Section 10(a) will apply to this Agreement.
+(d) Multibranch Party. For the purpose of Section 10(b) of this Agreement:
+(i) 	  Party A is not a Multibranch Party.
+(ii) 	  Party B is not a Multibranch Party.
+(e) 	  Calculation Agent. The Calculation Agent is Party A. All determinations by the Calculation Agent shall be made in good faith and in a commercially reasonable manner.
+(f) 	  Credit Support Document. Details of any Credit Support Document:
+With respect to Party A and Party B, the Credit Agreement entered into on the same date herewith, which is incorporated by reference in, and made a part of, the Energy Marketing Agreement for Electric Power.
+The obligations of Party B will be collateralized by the Security Agreement and Membership Interest Pledge Agreement as both are defined either directly or indirectly in the Energy Marketing Agreement for Electric Power.
+(g) 	  Credit Support Provider.
+(i) 	  Credit Support Provider means in relation to Party A: Not Applicable
+(ii) 	  Credit Support Provider means in relation to Party B: Pledgor as defined under the Membership Interest Pledge Agreement
+ISDAa 2002
+(h) 	  Governing Law. This Agreement will be governed by and construed in accordance with the laws of the State of New York (without reference to choice of law doctrine that would apply the laws of another jurisdiction).
+(i) 	  Jurisdiction. Jurisdiction is subject to the Energy Marketing Agreement for Electric Power.
+(j) 	  Netting of Payments.  "Multiple Transaction Payment Netting" will apply for the purpose of Section 2(c) of this Agreement; therefore, the netting specified in Section 2(c) of this Agreement will apply across all Transactions with effect from the effective date of this Agreement. For avoidance of doubt, the parties hereby acknowledge and agree that the provisions of Section 2(c) shall not apply to any transaction or agreement not covered by this Agreement. Notwithstanding the foregoing and the netting of payments pursuant hereto, each party will provide the other party with separate invoices and documentation sufficient to permit the other party to comply with its internal accounting and record keeping procedures concerning the payment of individual Transactions.
+(k) 	  "Affiliate" will have the meaning specified in Section 14 of this Agreement, except that with respect to Party A, DTE Electric Company, DTE Gas Company and Citizens Gas Fuel Company are hereby excluded for all purposes.
+(l) No Agency. The provisions of Section 3(g) will apply to this Agreement.
+(m) 	  Recording of Conversations. Each party (i) consents to the recording of telephone conversations between the trading, marketing and other relevant personnel of the parties in connection with this Agreement or any potential Transaction, (ii) agrees to obtain any necessary consent of, and give any necessary notice of such recording to, its relevant personnel and (iii) agrees, to the extent permitted by applicable law, that recordings may be submitted in evidence in any Proceedings. Neither party shall have an obligation to make such recordings or keep copies of such recordings; provided, however, that no party may knowingly destroy, erase or otherwise tamper with a recording once the possessing party becomes aware of a dispute in which the recording may reasonably be anticipated to be evidence.
+Part 5. Other Provisions.
+(a) 	  Prior Transactions. Upon the effectiveness of this Agreement, all Transactions then outstanding between the parties shall be subject to the terms hereof. To the extent the terms hereof conflict with the terms of the relevant agreement governing the Transactions, the terms of this Agreement shall control.
+(b) 	  Set-off. The first paragraph of Section 6 (f) shall be deleted and replaced with the following:
+"(f) 	  Set-off. Any Early Termination Amount payable to one party by the other party, in circumstances where there is a Defaulting Party or where there is one Affected Party in the case where either a Credit Event Upon Merger has occurred or an Additional Termination Event in respect of which all outstanding transactions are Affected Transactions has occurred, will, at the option of the Non-defaulting Party or Non-affected Party, as the case may be ("X") (and without prior notice to the Defaulting Party or Affected Party, as the case may be ("Y")) be reduced by set-off against any other amounts ("Other Amounts") payable by X and, at X's option, Affiliates of X, to Y (whether or not arising under this Agreement or any other agreement) and whether matured or unmatured, whether or not contingent and irrespective of the currency, place of payment or place of booking of the obligation. To the extent that any Other Amounts are so set off, those Other Amounts will be discharged promptly and in all respects. X will give notice to the other party of any set-off effected under this Section 6(f), provided that failure to give such notice shall not affect the validity of the setoff."
+(c) 	  Confirmations and Procedures for Entering into Transactions. On or promptly following the date on which the parties reach agreement on the terms of a Transaction as contemplated by Section 9(e)(i), Party A will send to Party B a Confirmation. Party B will promptly thereafter confirm the accuracy of, or request the correction of, such Confirmation (in the latter case, indicating how it believes the terms of such Confirmation should be correctly stated and such other terms which should be added to or deleted from such Confirmation to make it correct). If any dispute shall arise as to whether an error exists in a
+ISDAa 2002
+Confirmation, the parties shall in good faith make reasonable efforts to resolve the dispute. If Party B has not accepted or disputed the Confirmation in the manner set forth above within two (2) Local Business Days after it was sent to Party B, the Confirmation shall be deemed binding as sent absent manifest error. When a Confirmation contains provisions, other than those provisions relating to the commercial terms of the Transaction (e.g., price, quantity), which modify or supplement the general terms and conditions of this Agreement (including without limitation Events of Default or Termination Events, or calculation of damages, settlement, netting, set-off or termination payments), any material changes to such terms shall not be deemed accepted unless made in a written amendment to this Agreement that is signed by duly authorized representatives of both parties.
+(d) 	  Accuracy of Specified Information. Section 3(d) is hereby amended by adding in the third line thereof after the word "respect" and before the period the words "or, in the case of audited or unaudited financial statements, a fair presentation of the financial condition of the relevant party."
+(e) 	  Section 3 Representations. Section 3 is hereby amended by adding at the end thereof the following Subparagraphs (h), (i), (j), and (k):
+(h) Eligible Contract Participant. It is an "eligible contract participant" ("ECP") within the meaning of Section 1a(18) of the Commodity Exchange Act, as amended (7 U.S.C. § 1a(18)) ("CEA").
+(i) Trading Excluded Commodities or Exempt Commodities on an Electronic Trading Facility. (i) In connection with trading any "excluded commodity" (as such term is defined in section 1a(19) of the CEA (7 U.S.C. §1a(19))) on an "electronic trading facility" ("ETF") (as such term is defined in section 1a(16) of the CEA (7 U.S.C. §1a(16))), it is an ECP other than solely because it is acting as a broker or performing an equivalent agency function on behalf of a person described in section 1a(18)(A) or (C) of the CEA (7 U.S.C.
+§1a(18)(A) and (C)) and otherwise satisfies the terms of section 1a(18)(B)(i) of the CEA (7 U.S.C. §1a(18)(B)(i)); and (ii) in connection with trading any "exempt commodity" (as such term is defined in section 1a(20) of the CEA (7 U.S.C. §1a(20))) on an ETF, it is an "eligible commercial entity" (as such term is defined in section 1a(17) of the CEA (7 U.S.C. §1a(17))).
+(j) Relationship Between Parties. Each party will be deemed to represent to the other party on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction):
+(1) Non-Reliance. It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisers as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction, it being understood that information and explanations related to the terms and conditions of a Transaction will not be considered investment advice or a recommendation to enter into that Transaction. No communication (written or oral) received from the other party will be deemed to be an assurance or guarantee as to the expected results of that Transaction.
+(2) Assessment and Understanding. It is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction. It is also capable of assuming, and assumes, the risks of that Transaction.
+(3) Status of Parties. The other party is not acting as a fiduciary for or an adviser to it in respect of that Transaction.
+(k) Bankruptcy Matters.
+(1) Each party acknowledges and agrees that: (1) the Agreement and all Transactions entered into hereunder constitutes a "forward contract" or a "swap agreement" within the meaning of the United States Bankruptcy Code (11 U.S.C. Section 101 (2000)); (2) each Party A and Party B is a "swap participant" within the meaning of the United States Bankruptcy Code
+ISDAa 2002
+with respect to any Transaction that constitutes a "swap agreement", (3) each of Party A and Party B is a "forward contract merchant" within the meaning of the United States Bankruptcy Code with respect to any Transactions that constitute "forward contracts"; (4) all payments made or to be made by one party to the other party pursuant to this Agreement constitute "settlement payments" within the meaning of the United States Bankruptcy Code; (5) all transfers of Eligible Credit Support by one party to the other party under this Agreement constitute "margin payments" within the meaning of the United States Bankruptcy Code; (6) each party's rights under Section 6, "Early Termination", of this Agreement constitutes a "contractual right to liquidate" the Transactions within the meaning of the United States Bankruptcy Code; and
+(7) this Agreement constitutes a master netting agreement as defined within the meaning of the United States Bankruptcy Code, as amended.
+(2) 	  To secure its obligations under this Agreement, each party hereby grants the other party a present and continuing security interest in, lien on, and right to setoff against, its respective payment obligations to the other party under this Agreement. Each party acknowledges and agrees that the pledge of its payment obligations to the other party under this Agreement shall serve to "margin", guaranty" or "secure" such obligations within the meaning of the Bankruptcy Code.
+(f) 	  LIMITATION OF LIABILITY. NO PARTY SHALL BE REQUIRED TO PAY OR BE LIABLE FOR INCIDENTAL, CONSEQUENTIAL, OR INDIRECT DAMAGES (WHETHER OR NOT ARISING FROM ITS NEGLIGENCE) TO ANY OTHER PARTY; PROVIDED, HOWEVER, THAT NOTHING IN THIS PROVISION SHALL AFFECT THE ENFORCEABILITY OF SECTION 6(e) OF THIS AGREEMENT. IF AND TO THE EXTENT ANY PAYMENT REQUIRED TO BE MADE PURSUANT TO THIS AGREEMENT IS DEEMED TO CONSTITUTE LIQUIDATED DAMAGES, THE PARTIES ACKNOWLEDGE AND AGREE THAT SUCH DAMAGES ARE DIFFICULT OR IMPOSSIBLE TO DETERMINE AND THAT SUCH PAYMENT IS INTENDED TO BE A REASONABLE APPROXIMATION OF THE AMOUNT OF SUCH DAMAGES AND NOT A PENALTY.
+(g) 	  Confidentiality. The terms of this Agreement, its contents, and the terms and contents of all Transactions under this Agreement (including but not limited to any Credit Support Documents and any Confirmations), and any information made available by one party or its Credit Support Provider to the other party or its Credit Support Provider (if any) with respect to the Agreement or any Transaction hereunder is confidential and shall not be discussed with or disclosed to any third party (nor shall any public announcement or press release be made by either party, except with the prior written consent of the other party hereto), except for such information (i) as may become generally available to the public, (ii) as may be required or appropriate in response to any summons, subpoena, or otherwise in connection with any litigation or to comply with any applicable law, order, regulation, or ruling, (iii) as may be obtained from a non-confidential source that disclosed such information in a manner that did not violate its obligations to the other party or its Credit Support Provider (if any) if making such disclosure, or (iv) as may be furnished to that party's Affiliates, auditors, attorneys, advisors, or financial institutions with which the party has a written agreement or which are otherwise required to keep the information that is disclosed in confidence.
+(h) 	  WAIVER OF JURY TRIAL. EACH PARTY IRREVOCABLY WAIVES, TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, ANY RIGHT IT MAY HAVE TO A TRIAL BY JURY IN RESPECT OF ANY SUIT, ACTION OR PROCEEDING RELATING TO THIS AGREEMENT, ANY TRANSACTION, OR ANY CREDIT SUPPORT DOCUMENT.
+(i) 	  Severability. Any provision of this Agreement which is prohibited or unenforceable in any jurisdiction in respect of any Transaction shall, as to such Transaction, be ineffective to the extent of such prohibition or unenforceability without invalidating the remaining provisions of the Agreement or affecting the validity or enforceability of such provision as to any other jurisdiction or Transaction unless such severance shall substantially impair the benefits of the remaining portions of this Agreement or changes the reciprocal obligations of the parties. The parties hereto shall endeavor in good faith negotiations to replace the prohibited or unenforceable provision with a valid provision, the economic effect of which comes as close as possible to that of the prohibited or unenforceable provision.
+ISDAa 2002
+Part 6. Additional Terms for Commodity Derivative Transactions.
+(a) 	  ISDA Definitions. This Agreement, each Confirmation, and each Transaction are subject to the 2006 ISDA Definitions (the "Swap Definitions"), the 2005 ISDA Commodity Definitions (the "Commodity Definitions") each as published by the International Swaps and Derivatives Association, Inc. (collectively the "ISDA Definitions"). The ISDA Definitions are incorporated by reference herein, and made part of, this Agreement and each Confirmation as if set forth in full in this Agreement and such Confirmations. Unless otherwise specified in a Confirmation, any capitalized terms used herein and not otherwise defined herein shall have the respective meanings ascribed to them in the Swap Definitions, and the Commodity Definitions (except that references to "Swap Transactions" in the definitions will be deemed to be references to "Transactions"). In the event of any inconsistency between the provisions of the Swap Definitions and the Commodity Definitions, the Commodity Definitions will prevail. In the event of any inconsistency between the provisions of this Agreement and the ISDA Definitions, this Agreement will prevail. In the event of any inconsistency between the provisions of the Credit Support Documents, if any, and the ISDA Definitions, the Credit Support Documents will prevail. Subject to Section 1(b) of this Agreement, in the event of any inconsistency between the provisions of any Confirmation and this Agreement or the ISDA Definitions, the Confirmation will prevail for the purpose of the relevant Transaction; provided however, a Confirmation may not amend or conflict with any provisions of this Agreement, except as provided under Part 5 (c) above of the Schedule.
+(b) 	  Commodity Definition Amendments. Unless otherwise specified in a Confirmation, the Commodity Definitions are amended as follows:
+(i) 	  The "Market Disruption Events" specified in Section 7.4(d)(i) of the Commodity Definitions shall apply, except as otherwise specifically provided in the Confirmation.
+(ii) 	  "Additional Market Disruption Events" shall apply only if so specified in the relevant Confirmation.
+(iii) 	  The following "Disruption Fallbacks" specified in Section 7.5(c) of the Commodity Definitions shall apply, in the following order, except as otherwise specified in the relevant Confirmation:
+(1) 	  "Fallback Reference Price";
+(2) 	  "Postponement", with five (5) Commodity Business Days as the Maximum Days of disruption;
+(3) 	  "Negotiated Fallback" (provided that the reference in Section 7.5(c)(ii) to "fifth Business Day" shall be amended to be "twelfth Business Day"); and
+(4) 	  "Fallback Reference Dealers"
+(5) 	  "No Fault Termination".
+ISDAa 2002
+IN WITNESS WHEREOF, the parties have executed this Schedule by their duly authorized officers as of the date hereof
+DTE Energy Trading, Inc. (Party A) 	  	  Summer Energy, LLC (Party B) By: /s/ Michael Hunt 	  	  By: /s/ Neil Leibman Name: 	  Michael Hunt 	  	  Name: 	  Neil Leibman Title: 	  Vice President 	  	  Title: 	  CEO-Summer Energy Date: 	  4/23/2014 	  	  Date: 	  4/1/2014
+ISDAa 2002
+ISDA®
+International Swaps and Derivatives Association, Inc.
+SCHEDULE
+to the
+2002 Master Agreement
+dated as of April 1, 2014
+between
+DTE Energy Trading, Inc. ("Party A")  	  	  and Summer Energy, LLC ("Party B") established as a corporation under the laws of the State of Michigan 	  	  established as a limited liability company under the laws of Texas
+Part 1. Termination Provisions.
+(a) "Specified Entity" means in relation to Party A for the purpose of:
+Section 5(a)(v), Not Applicable
+Section 5(a)(vi), Not Applicable
+Section 5(a)(vii), Not Applicable
+Section 5(b)(v), Not Applicable
+and in relation to Party B for the purpose of:
+Section 5(a)(v), Not Applicable
+Section 5(a)(vi), Not Applicable
+Section 5(a)(vii), Not Applicable
+Section 5(b)(v), Not Applicable
+(b) 	  "Specified Transaction" will have the meaning specified in Section 14 of this Agreement, except that such term is amended by adding in the eleventh line after "commodity" the words "(including without limitation, physical commodities such as electric power, electric power capacity, emission allowances, petroleum, crude oil, coal, natural gas, and byproducts thereof)".
+(c) 	  The "Cross-Default" provisions of Section 5(a)(vi), as amended, will apply to Party A and, as amended, will apply to Party B.
+(i) 	  Section 5(a)(vi) is hereby amended by deleting in the seventh line thereof the words ", or becoming capable at such time of being declared,".
+"Specified Indebtedness" will have the meaning specified in Section 14 of this Agreement.
+ISDAa 2002
+"Threshold Amount" Not Applicable to Party A; and means with respect to Party B, two percent (2%) of Party B's shareholders' equity, (determined in accordance with generally accepted accounting principles) as at the end of its most recently completed fiscal year.
+(d) 	  The "Credit Event Upon Merger" provisions of Section 5(b)(v), as amended, will not apply to Party A and, as amended, will apply to Party B.
+The "Credit Event Upon Merger" provisions of Section 5(b)(v), will not apply to Party A and will apply to Party B; provided, however, that "materially weaker" means (i) that the Credit Rating assigned by Standard & Poor's Financial Services LLC or a successor (if any) ("S&P") and Moody's Investors Service, Inc. or a successor (if any) ("Moody's") of the resulting, surviving or transferee entity is less than BBB- by S&P or Baa3 by Moody's or (ii) in the event the resulting, surviving or transferee entity is not rated, the Internal Policies (as defined below) of Party A in effect at the time, would lead Party A, solely as a result of a change in the nature, character, identity or condition of Party B from its state (as a party to the Agreement) prior to such consolidation, amalgamation, merger or transfer, to decline to make an extension of credit to, or enter into a Transaction with, the resulting, surviving or transferee entity.
+"Credit Rating" shall mean with respect to an entity, the respective ratings then assigned to its unsecured, senior long-term debt, not supported by third party credit enhancement, by S&P or by Moody's.
+"Internal Policies" shall mean a party's (1) internal credit limits applicable to individual entities, (2) other limits on doing business with entities domiciled in certain jurisdictions or engaging in certain activities, or (3) internal restrictions on doing business with entities with whom such party has had prior adverse business relations.
+(e) 	  The "Automatic Early Termination" provision of Section 6(a) will not apply to Party A and will not apply to Party B.
+(f) 	  "Termination Currency" means United States Dollars.
+(g) Additional Termination Event will not apply.
+(h) 	  Definitions. Section 14 shall be amended by deleting the definition of "Potential Event of Default" along with all reference to Potential Event of Default in Section 2(a)(iii), Section 3(b) and Sections 9(h)(i)(3)(B) and (C) and any other references throughout all ISDA documents.
+Part 2. Tax Representations.
+(a) 	  Payer Representations. For the purpose of Section 3(e) of this Agreement
+(i) 	  Party A and Party B each make the following representation:
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 9(h) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on (i) the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement, (ii) the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement and (iii) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement, except that it will not be a breach of this representation where reliance is placed on clause (ii) above and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+ISDAa 2002
+(b) Payee Tax Representations. For the purpose of Section 3(f) of this Agreement
+(i) 	  Party A and Party B each make the following representation:
+Party A is a corporation created or organized in the United States or under the laws of the United States and its U.S. taxpayer identification number is 38-3323526. It is "exempt" within the meaning of Treasury Regulation sections 1.6041-3(p) and 1.6049-4(c) from information reporting on Form 1099 and backup withholding.
+Party B is a Texas LLC created or organized in the United States or under the laws of the United States and its U.S. taxpayer identification number is 26-0206262. It is "exempt" within the meaning of Treasury Regulation sections 1.6041-3(p) and 1.6049-4(c) from information reporting on Form 1099 and backup withholding.
+Part 3. Agreement to Deliver Documents.
+For the purpose of Sections 4(a)(i) and 4(a)(ii) of this Agreement, each party agrees to deliver the following documents, as applicable:
+(a) Tax forms, documents or certificates to be delivered are: [none]
+Party required to deliver document 	  Form/Document/ Certificate 	  Date by which to be delivered
+(b)Other documents to be delivered are:―
+Party required to deliver document 	  Form/Document/ Certificate 	  Date by which to be delivered 	  Covered by Section 3(d) Representation Party A and Party B 	  Certified copies of resolutions of authorized body authorizing execution, delivery, and performance of this Agreement 	  Execution of Agreement 	  Yes Party A and Party B 	  Evidence of authority of signatories in a form acceptable to the other party 	  Execution of Agreement 	  Yes Party B 	  Completed W-9 (or other relevant tax form) and completed DTE's EFT Form 	  Execution of Agreement 	  Yes Party A and Party B 	  Annual audited and quarterly unaudited financial statements for such party or its Credit Support Provider, as applicable, containing consolidated financial statements for the relevant period and prepared in accordance with generally accepted accounting principles 	  If requested, and as soon as available, and in any event within 60 days after the end of each fiscal year and within 35 days after the end of each fiscal quarter of the delivering party, if such statements are not available on "EDGAR" or such party's internet home page 	  Yes Party A and Party B 	  Guarantee of Credit Support Provider in a form agreed between the parties 	  Execution of Agreement 	  Yes
+ISDAa 2002
+Part 4. Miscellaneous.
+(a) Addresses for Notices. Notwithstanding anything to the contrary in Section 12(a) of this Agreement, parties may communicate by e-mail for informational purposes only, but e-mail does not constitute a binding legal notice for the purpose of Section 12(a) of this Agreement. For the purpose of Section 12(a) of this Agreement:
+Notices or Communications (other than with respect to confirmations and/or payments) to Party A:
+Address: DTE Energy Trading, Inc.
+414 South Main Street, Suite 200
+Ann Arbor, MI 48104
+Attention: Contract Administration, Jim Buck, Director (734-887-4039)
+Telephone: (734) 887-2042 (Marcia L. Hissong); or
+(734) 887-2171 (Cynthia Klots)
+Fax: (734) 887-2235
+E-mail: hissongm@dteenergy.com; or
+klotsc@dteenergy.com
+With additional Notices of an Event of Default to:
+Attention: Gregory V. Staton, General Counsel & Vice President-Corporate Services
+Phone: (734) 887-2121
+Fax: (734) 887-2235
+Email: statong@dteenergy.com
+Specific Instructions:
+Confirmations to Party A:
+Attention: Judy VonBoncel
+Telephone: (734) 887-2025
+Fax: (734) 887-2056
+Email: DTE_CONFIRMS@dteenergy.com
+Payments to Party A:
+Attention: Boyd Smith, Staff Accountant
+Telephone: (734) 887-2023
+Fax: (734) 887-2140
+Email: DTEPWRSTTLMTS@dteenergy.com
+Contact Information for Dodd-Frank for Party A:
+Name: Michael Seischab
+Title: Manager-Enterprise Risk Management
+Phone: 734-887-4124
+Email: seischabm@dteenergy.com
+ISDAa 2002
+Notices or Communications (other than with respect to confirmations and/or payments) to Party B:
+Address: Summer Energy, LLC
+Address 1 800 Bering Dr., Suite 260
+City, State, Zip Houston, TX 77057
+Attention: Contract Administration Jaleea George
+Facsimile: 713-481-8470
+Telephone: 713-375-2793
+E-mail: jgeorge@summerenergy.com
+Specific Instructions:
+Confirmations to Party B:
+Telephone: 713-375-2789
+Facsimile: 713-493-7269
+Payments to Party B:
+Telephone: 713-375-2793
+Facsimile: 713-481-8470
+(b) Process Agent. For the purpose of Section 13(c) of this Agreement:
+(i) 	  Party A appoints as its Process Agent: Not applicable.
+(ii) 	  Party B appoints as its Process Agent: Not applicable.
+(c) Offices. The provisions of Section 10(a) will apply to this Agreement.
+(d) Multibranch Party. For the purpose of Section 10(b) of this Agreement:
+(i) 	  Party A is not a Multibranch Party.
+(ii) 	  Party B is not a Multibranch Party.
+(e) 	  Calculation Agent. The Calculation Agent is Party A. All determinations by the Calculation Agent shall be made in good faith and in a commercially reasonable manner.
+(f) 	  Credit Support Document. Details of any Credit Support Document:
+With respect to Party A and Party B, the Credit Agreement entered into on the same date herewith, which is incorporated by reference in, and made a part of, the Energy Marketing Agreement for Electric Power.
+The obligations of Party B will be collateralized by the Security Agreement and Membership Interest Pledge Agreement as both are defined either directly or indirectly in the Energy Marketing Agreement for Electric Power.
+(g) 	  Credit Support Provider.
+(i) 	  Credit Support Provider means in relation to Party A: Not Applicable
+(ii) 	  Credit Support Provider means in relation to Party B: Pledgor as defined under the Membership Interest Pledge Agreement
+ISDAa 2002
+(h) Governing Law. This Agreement will be governed by and construed in accordance with the laws of the State of New York (without reference to choice of law doctrine that would apply the laws of another jurisdiction).
+(i) 	  Jurisdiction. Jurisdiction is subject to the Energy Marketing Agreement for Electric Power.
+(k) 	  Netting of Payments.  "Multiple Transaction Payment Netting" will apply for the purpose of Section 2(c) of this Agreement; therefore, the netting specified in Section 2(c) of this Agreement will apply across all Transactions with effect from the effective date of this Agreement. For avoidance of doubt, the parties hereby acknowledge and agree that the provisions of Section 2(c) shall not apply to any transaction or agreement not covered by this Agreement. Notwithstanding the foregoing and the netting of payments pursuant hereto, each party will provide the other party with separate invoices and documentation sufficient to permit the other party to comply with its internal accounting and record keeping procedures concerning the payment of individual Transactions.
+(k) 	  "Affiliate" will have the meaning specified in Section 14 of this Agreement, except that with respect to Party A, DTE Electric Company, DTE Gas Company and Citizens Gas Fuel Company are hereby excluded for all purposes.
+(l) No Agency. The provisions of Section 3(g) will apply to this Agreement.
+(m) 	  Recording of Conversations. Each party (i) consents to the recording of telephone conversations between the trading, marketing and other relevant personnel of the parties in connection with this Agreement or any potential Transaction, (ii) agrees to obtain any necessary consent of, and give any necessary notice of such recording to, its relevant personnel and (iii) agrees, to the extent permitted by applicable law, that recordings may be submitted in evidence in any Proceedings. Neither party shall have an obligation to make such recordings or keep copies of such recordings; provided, however, that no party may knowingly destroy, erase or otherwise tamper with a recording once the possessing party becomes aware of a dispute in which the recording may reasonably be anticipated to be evidence.
+Part 5. Other Provisions.
+(a) 	  Prior Transactions. Upon the effectiveness of this Agreement, all Transactions then outstanding between the parties shall be subject to the terms hereof. To the extent the terms hereof conflict with the terms of the relevant agreement governing the Transactions, the terms of this Agreement shall control.
+(b) 	  Set-off. The first paragraph of Section 6 (f) shall be deleted and replaced with the following:
+"(f) 	  Set-off. Any Early Termination Amount payable to one party by the other party, in circumstances where there is a Defaulting Party or where there is one Affected Party in the case where either a Credit Event Upon Merger has occurred or an Additional Termination Event in respect of which all outstanding transactions are Affected Transactions has occurred, will, at the option of the Non-defaulting Party or Non-affected Party, as the case may be ("X") (and without prior notice to the Defaulting Party or Affected Party, as the case may be ("Y")) be reduced by set-off against any other amounts ("Other Amounts") payable by X and, at X's option, Affiliates of X, to Y (whether or not arising under this Agreement or any other agreement) and whether matured or unmatured, whether or not contingent and irrespective of the currency, place of payment or place of booking of the obligation. To the extent that any Other Amounts are so set off, those Other Amounts will be discharged promptly and in all respects. X will give notice to the other party of any set-off effected under this Section 6(f), provided that failure to give such notice shall not affect the validity of the setoff."
+(c) 	  Confirmations and Procedures for Entering into Transactions. On or promptly following the date on which the parties reach agreement on the terms of a Transaction as contemplated by Section 9(e)(i), Party A will send to Party B a Confirmation. Party B will promptly thereafter confirm the accuracy of, or request the correction of, such Confirmation (in the latter case, indicating how it believes the terms of such Confirmation should be correctly stated and such other terms which should be added to or deleted from such Confirmation to make it correct). If any dispute shall arise as to whether an error exists in a
+ISDAa 2002
+Confirmation, the parties shall in good faith make reasonable efforts to resolve the dispute. If Party B has not accepted or disputed the Confirmation in the manner set forth above within two (2) Local Business Days after it was sent to Party B, the Confirmation shall be deemed binding as sent absent manifest error. When a Confirmation contains provisions, other than those provisions relating to the commercial terms of the Transaction (e.g., price, quantity), which modify or supplement the general terms and conditions of this Agreement (including without limitation Events of Default or Termination Events, or calculation of damages, settlement, netting, set-off or termination payments), any material changes to such terms shall not be deemed accepted unless made in a written amendment to this Agreement that is signed by duly authorized representatives of both parties.
+(d) 	  Accuracy of Specified Information. Section 3(d) is hereby amended by adding in the third line thereof after the word "respect" and before the period the words "or, in the case of audited or unaudited financial statements, a fair presentation of the financial condition of the relevant party."
+(e) 	  Section 3 Representations. Section 3 is hereby amended by adding at the end thereof the following Subparagraphs (h), (i), (j), and (k):
+(h) Eligible Contract Participant. It is an "eligible contract participant" ("ECP") within the meaning of Section 1a(18) of the Commodity Exchange Act, as amended (7 U.S.C. § 1a(18)) ("CEA").
+(i) Trading Excluded Commodities or Exempt Commodities on an Electronic Trading Facility. (i) In connection with trading any "excluded commodity" (as such term is defined in section 1a(19) of the CEA (7 U.S.C. §1a(19))) on an "electronic trading facility" ("ETF") (as such term is defined in section 1a(16) of the CEA (7 U.S.C. §1a(16))), it is an ECP other than solely because it is acting as a broker or performing an equivalent agency function on behalf of a person described in section 1a(18)(A) or (C) of the CEA (7 U.S.C.
+§1a(18)(A) and (C)) and otherwise satisfies the terms of section 1a(18)(B)(i) of the CEA (7 U.S.C. §1a(18)(B)(i)); and (ii) in connection with trading any "exempt commodity" (as such term is defined in section 1a(20) of the CEA (7 U.S.C. §1a(20))) on an ETF, it is an "eligible commercial entity" (as such term is defined in section 1a(17) of the CEA (7 U.S.C. §1a(17))).
+(j) Relationship Between Parties. Each party will be deemed to represent to the other party on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction):
+(1) Non-Reliance. It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisers as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction, it being understood that information and explanations related to the terms and conditions of a Transaction will not be considered investment advice or a recommendation to enter into that Transaction. No communication (written or oral) received from the other party will be deemed to be an assurance or guarantee as to the expected results of that Transaction.
+(2) Assessment and Understanding. It is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction. It is also capable of assuming, and assumes, the risks of that Transaction.
+(3) Status of Parties. The other party is not acting as a fiduciary for or an adviser to it in respect of that Transaction.
+(k) Bankruptcy Matters.
+(2) Each party acknowledges and agrees that: (1) the Agreement and all Transactions entered into hereunder constitutes a "forward contract" or a "swap agreement" within the meaning of the United States Bankruptcy Code (11 U.S.C. Section 101 (2000)); (2) each Party A and Party B is a "swap participant" within the meaning of the United States Bankruptcy Code
+ISDAa 2002
+with respect to any Transaction that constitutes a "swap agreement", (3) each of Party A and Party B is a "forward contract merchant" within the meaning of the United States Bankruptcy Code with respect to any Transactions that constitute "forward contracts"; (4) all payments made or to be made by one party to the other party pursuant to this Agreement constitute "settlement payments" within the meaning of the United States Bankruptcy Code; (5) all transfers of Eligible Credit Support by one party to the other party under this Agreement constitute "margin payments" within the meaning of the United States Bankruptcy Code; (6) each party's rights under Section 6, "Early Termination", of this Agreement constitutes a "contractual right to liquidate" the Transactions within the meaning of the United States Bankruptcy Code; and
+(7) this Agreement constitutes a master netting agreement as defined within the meaning of the United States Bankruptcy Code, as amended.
+(2) 	  To secure its obligations under this Agreement, each party hereby grants the other party a present and continuing security interest in, lien on, and right to setoff against, its respective payment obligations to the other party under this Agreement. Each party acknowledges and agrees that the pledge of its payment obligations to the other party under this Agreement shall serve to "margin", guaranty" or "secure" such obligations within the meaning of the Bankruptcy Code.
+(f) 	  LIMITATION OF LIABILITY. NO PARTY SHALL BE REQUIRED TO PAY OR BE LIABLE FOR INCIDENTAL, CONSEQUENTIAL, OR INDIRECT DAMAGES (WHETHER OR NOT ARISING FROM ITS NEGLIGENCE) TO ANY OTHER PARTY; PROVIDED, HOWEVER, THAT NOTHING IN THIS PROVISION SHALL AFFECT THE ENFORCEABILITY OF SECTION 6(e) OF THIS AGREEMENT. IF AND TO THE EXTENT ANY PAYMENT REQUIRED TO BE MADE PURSUANT TO THIS AGREEMENT IS DEEMED TO CONSTITUTE LIQUIDATED DAMAGES, THE PARTIES ACKNOWLEDGE AND AGREE THAT SUCH DAMAGES ARE DIFFICULT OR IMPOSSIBLE TO DETERMINE AND THAT SUCH PAYMENT IS INTENDED TO BE A REASONABLE APPROXIMATION OF THE AMOUNT OF SUCH DAMAGES AND NOT A PENALTY.
+(g) 	  Confidentiality. The terms of this Agreement, its contents, and the terms and contents of all Transactions under this Agreement (including but not limited to any Credit Support Documents and any Confirmations), and any information made available by one party or its Credit Support Provider to the other party or its Credit Support Provider (if any) with respect to the Agreement or any Transaction hereunder is confidential and shall not be discussed with or disclosed to any third party (nor shall any public announcement or press release be made by either party, except with the prior written consent of the other party hereto), except for such information (i) as may become generally available to the public, (ii) as may be required or appropriate in response to any summons, subpoena, or otherwise in connection with any litigation or to comply with any applicable law, order, regulation, or ruling, (iii) as may be obtained from a non-confidential source that disclosed such information in a manner that did not violate its obligations to the other party or its Credit Support Provider (if any) if making such disclosure, or (iv) as may be furnished to that party's Affiliates, auditors, attorneys, advisors, or financial institutions with which the party has a written agreement or which are otherwise required to keep the information that is disclosed in confidence.
+(h) 	  WAIVER OF JURY TRIAL. EACH PARTY IRREVOCABLY WAIVES, TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, ANY RIGHT IT MAY HAVE TO A TRIAL BY JURY IN RESPECT OF ANY SUIT, ACTION OR PROCEEDING RELATING TO THIS AGREEMENT, ANY TRANSACTION, OR ANY CREDIT SUPPORT DOCUMENT.
+(i) 	  Severability. Any provision of this Agreement which is prohibited or unenforceable in any jurisdiction in respect of any Transaction shall, as to such Transaction, be ineffective to the extent of such prohibition or unenforceability without invalidating the remaining provisions of the Agreement or affecting the validity or enforceability of such provision as to any other jurisdiction or Transaction unless such severance shall substantially impair the benefits of the remaining portions of this Agreement or changes the reciprocal obligations of the parties. The parties hereto shall endeavor in good faith negotiations to replace the prohibited or unenforceable provision with a valid provision, the economic effect of which comes as close as possible to that of the prohibited or unenforceable provision.
+ISDAa 2002
+Part 6. Additional Terms for Commodity Derivative Transactions.
+(a) 	  ISDA Definitions. This Agreement, each Confirmation, and each Transaction are subject to the 2006 ISDA Definitions (the "Swap Definitions"), the 2005 ISDA Commodity Definitions (the "Commodity Definitions") each as published by the International Swaps and Derivatives Association, Inc. (collectively the "ISDA Definitions"). The ISDA Definitions are incorporated by reference herein, and made part of, this Agreement and each Confirmation as if set forth in full in this Agreement and such Confirmations. Unless otherwise specified in a Confirmation, any capitalized terms used herein and not otherwise defined herein shall have the respective meanings ascribed to them in the Swap Definitions, and the Commodity Definitions (except that references to "Swap Transactions" in the definitions will be deemed to be references to "Transactions"). In the event of any inconsistency between the provisions of the Swap Definitions and the Commodity Definitions, the Commodity Definitions will prevail. In the event of any inconsistency between the provisions of this Agreement and the ISDA Definitions, this Agreement will prevail. In the event of any inconsistency between the provisions of the Credit Support Documents, if any, and the ISDA Definitions, the Credit Support Documents will prevail. Subject to Section 1(b) of this Agreement, in the event of any inconsistency between the provisions of any Confirmation and this Agreement or the ISDA Definitions, the Confirmation will prevail for the purpose of the relevant Transaction; provided however, a Confirmation may not amend or conflict with any provisions of this Agreement, except as provided under Part 5 (c) above of the Schedule.
+(b) 	  Commodity Definition Amendments. Unless otherwise specified in a Confirmation, the Commodity Definitions are amended as follows:
+(ii) 	  The "Market Disruption Events" specified in Section 7.4(d)(i) of the Commodity Definitions shall apply, except as otherwise specifically provided in the Confirmation.
+(ii) 	  "Additional Market Disruption Events" shall apply only if so specified in the relevant Confirmation.
+(iii) 	  The following "Disruption Fallbacks" specified in Section 7.5(c) of the Commodity Definitions shall apply, in the following order, except as otherwise specified in the relevant Confirmation:
+(1) 	  "Fallback Reference Price";
+(2) 	  "Postponement", with five (5) Commodity Business Days as the Maximum Days of disruption;
+(3) 	  "Negotiated Fallback" (provided that the reference in Section 7.5(c)(ii) to "fifth Business Day" shall be amended to be "twelfth Business Day"); and
+(4) 	  "Fallback Reference Dealers"
+(5) 	  "No Fault Termination".
+ISDAa 2002
+IN WITNESS WHEREOF, the parties have executed this Schedule by their duly authorized officers as of the date hereof.
+DTE Energy Trading, Inc. (Party A) 	  	  Summer Energy, LLC (Party B) By: 	 /s/ Michael Hunt  	  	 By: 	 /s/ Neil Leibman Name: 	  Michael Hunt 	  	  Name: 	  Neil Leibman Title: 	  Vice President 	  	  Title: 	  CEO-Summer Energy Date: 	  4/23/2014 	  	  Date: 	  4/1/2014
+ISDAa 2002

@@ -1,0 +1,13 @@
+{
+  "filename": "5307f3f60d8a579bb291345dba73e732.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 3,
+      "end_line": 136,
+      "confidence": 0.98,
+      "explanation": "Lines 3-136 comprise the full Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE to the 2002 Master Agreement' and ending with '[Signature page to follow]'. The content includes all the negotiated terms and elections specific to the parties, which is the purpose of the Schedule. Lines before 3 are cover/identification, and lines after 136 are confirmations and annexes, not part of the Schedule."
+    }
+  ]
+}

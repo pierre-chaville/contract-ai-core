@@ -1,0 +1,13 @@
+{
+  "filename": "fda2ebf28fa8520c99b6cb5f7a88bb0f.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 264,
+      "end_line": 515,
+      "confidence": 0.99,
+      "explanation": "The ISDA Schedule begins at line 264 (\"SCHEDULE\") and continues through the signature page at line 515. This span includes all the parts of the Schedule (Parts 1-6), including elections, definitions, notice information, and modifications, and excludes the standard pre-printed Master Agreement and any annexes such as the CSA. The content is contiguous and matches the user's request to filter for the Schedule only."
+    }
+  ]
+}

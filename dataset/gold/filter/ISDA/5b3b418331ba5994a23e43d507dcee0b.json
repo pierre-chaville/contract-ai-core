@@ -1,0 +1,13 @@
+{
+  "filename": "5b3b418331ba5994a23e43d507dcee0b.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 9,
+      "end_line": 246,
+      "confidence": 0.98,
+      "explanation": "Lines 9-246 contain the full text of the ISDA Schedule to the Master Agreement, including all the negotiated terms, parties, and signatures. The content before line 9 is cover/title and after line 246 is the swap confirmation, not part of the Schedule. The Schedule proper starts with the date and parties and ends with the execution block and signatures, which is standard for an ISDA Schedule."
+    }
+  ]
+}

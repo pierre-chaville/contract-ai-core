@@ -1,0 +1,13 @@
+{
+  "filename": "6bb2b85d54dd5fceb3f642a4c84a167e.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 2,
+      "end_line": 140,
+      "confidence": 0.99,
+      "explanation": "Lines 2-140 comprise the full text of the Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE to the ISDA 2002 MASTER AGREEMENT' and ending with the execution block. The content includes all the negotiated terms and elections typical of an ISDA Schedule, and there is no indication of standard pre-printed text or annexes such as a Credit Support Annex (CSA) within this span."
+    }
+  ]
+}

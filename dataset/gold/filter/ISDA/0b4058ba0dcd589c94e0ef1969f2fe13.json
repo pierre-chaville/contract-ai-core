@@ -1,0 +1,13 @@
+{
+  "filename": "0b4058ba0dcd589c94e0ef1969f2fe13.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 244,
+      "end_line": 364,
+      "confidence": 0.99,
+      "explanation": "Lines 244-364 contain the full Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE to the Master Agreement' and ending with the execution block for the Schedule. This section includes all the negotiated terms, elections, and party-specific provisions that constitute the Schedule, and does not include the standard pre-printed Master Agreement, the Credit Support Annex, or any annexes such as Schedule A or the CSA Paragraph 13. The lines before 244 are the standard Master Agreement, and lines after 364 are annexes and other documents."
+    }
+  ]
+}

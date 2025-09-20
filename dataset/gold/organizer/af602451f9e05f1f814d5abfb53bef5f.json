@@ -1,7 +1,7 @@
 {
   "filename": "af602451f9e05f1f814d5abfb53bef5f.txt",
   "contract_type": {
-    "value": "ISDA",
+    "value": "OTHER",
     "confidence": 0.98,
     "explanation": "The document repeatedly refers to 'ISDA Master Agreement' and describes agreements substantially identical to a referenced ISDA Master Agreement."
   },

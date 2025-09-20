@@ -49,3 +49,125 @@ Wachovia
 ## (C) Account Number: 01892476728 in the name of: Party B; Institution:
 Huntington
 ##
+(D) Account Number 1255313345 in the name of : Party B; Institution: Citi
+(E) Account Number 1255313353 in the name of : Party B; Institution: Citi
+Each Lockbox Account shall be in the name of Party B and shall each, at all times, be under the control of Party A. In order to give effect to the foregoing, Party A, Party B and each Institution set forth above shall (i) with respect to each Lockbox Account at Wachovia, enter into an Account Control Agreement substantially in the form of Exhibit 11(b)(i)(A) on the Closing Date and (ii) with respect to each Lockbox Account at Citi, enter into an Account Control Agreement substantially in the form of Exhibit 11(b)(i)(D) on the Second Amendment Effective Date."
+##
+## SECTION 2.4 _Amendments to Part  11(c), Part 11(d), Part 11(g) and Part 11(j)_.
+##
+### (a) Part  11(c)(i) of the Electric ISDA Master Schedule is hereby amended to read in its entirety as follows:
+###
+"(i) Party B established Account Number 2079961065281 as the Wachovia Operating Account on or before the Closing Date at Wachovia. Party B shall identify to Party A or establish the Citi Operating Account on or before the Second Amendment Effective Date at Citi. Each Operating Account shall be in the name of Party B and shall, at all times, be under the control of Party A.
+In order to give effect to the foregoing, Party A, Party B and Wachovia shall enter into the Wachovia Control Agreement substantially in the form of Exhibit 11(b)(i)(B) on the Closing Date and Party A, Party B and Citi shall enter into the Citi Control Agreement in the form of Exhibit 11(b)(i)(E) on or prior to the Second Amendment Effective Date."
+### (b) Part  11(c)(ii) of the Electric ISDA Master Schedule is hereby amended to read in its entirety as follows:
+###
+### "(ii) Only amounts transferred from the Party A Sub Account may be deposited in an Operating Account."
+###
+### (c) Part  11(c)(iii) of the Electric ISDA Master Schedule is hereby amended by deleting the reference to "the Operating Account" contained therein and replacing such reference with a reference to "the Operating Accounts".
+###
+### (d) Part  11(c)(iv) of the Electric ISDA Master Schedule is hereby amended to read in its entirety as follows:
+###
+### "Not later than the fifth Business Day of each month, a Responsible Officer shall deliver a certificate to Party A (which certificate shall be acceptable to Party A in its sole discretion) stating the balance of each of the Operating Accounts as of the first Business Day and as of the last Business Day of the immediately preceding month and confirming that all payments from the Operating Accounts during such month were in accordance with the then current Budget."
+###
+### (e) Part  11(d)(F) is hereby amended by deleting the reference to "the Operating Account" contained therein and replacing such reference with a reference to "either of the Operating Accounts".
+###
+### (f) Part  11(g)(i) and Part  11(j) are each hereby amended by deleting the reference to "the Operating Account" contained therein and replacing such reference with a reference to "the Operating Accounts".
+###
+### 3
+###
+##
+## SECTION 2.5 Amendments to Part  11(g)(iv). Clause (A)  of _Part 11(g)(iv)_ of the Electric ISDA Master Schedule is hereby amended by deleting the text thereof and inserting in lieu thereof the following:
+##
+"(A) deliver to Bill Matrix, on or before the Second Amendment Effective Date, a new payment direction letter acceptable to Party A instructing Bill Matrix to continue making all payments directly to a Lockbox Account, including a Lockbox Account established at Citi"
+## SECTION 2.6 Amendments to Part  14(a).
+##
+### (a) Part  14(a) of the Electric ISDA Master Schedule is hereby amended by deleting the defined term "Account Control Agreement" contained therein and inserting in lieu thereof the following:
+###
+""Account Control Agreement" means, as applicable, a Citi Control Agreement, a Wachovia Control Agreement or the Huntington Control Agreement."
+### (b) Part  14(a) of the Electric ISDA Master Schedule is hereby amended by deleting the defined term "Operating Account" contained therein and inserting in lieu thereof the following:
+###
+""Operating Accounts" means the Wachovia Operating Account and the Citi.Operating Account."
+### (c) Part  14(a) of the Electric ISDA Master Schedule is hereby amended by inserting the following new defined terms in proper alphabetical sequence:
+###
+""Citi" means Citibank, N.A."
+""Citi Control Agreements" means the Account Control Agreements among Party A, Party B, the other parties thereto and Citi, in the forms of Exhibit 11(b)(i)(D) and Exhibit 11(b)(i)(E)."
+""Citi Operating Account" means account number 1255313273 at Citi."
+""Second Amendment" means that certain Second Amendment to this Agreement, dated as of the Second Amendment Effective Date."
+""Second Amendment Effective Date" means May 28, 2010."
+""Wachovia Operating Account" means account number 2079961065281 at Wachovia."
+##
+## SECTION 2.7 Amendment to Part  11(g)(ii). Part  11(g)(ii) of the Electric ISDA Master Schedule is hereby amended to read in its entirety as follows:
+##
+"MX Holdings maintains a brokerage account at Morgan Stanley, New York (Account Number 798-011175-032). The only assets in such account are Notes purchased and held by MX Holdings for its own account. MX Holdings shall not hold any other assets in such accounts. Within 30 days of the Third Amendment Effective Date (or such longer period as agreed to by Party A), Party B, Party A and Morgan Stanley shall have entered into a control agreement, in form and substance satisfactory to Party A, permitting Party A to direct the disposition of such account upon notice to Morgan Stanley."
+## SECTION 2.8 Amendments to Exhibits. The documents attached hereto as Exhibit  11(b)(i)(D), Exhibit  11(b)(i)(E) and Exhibit  7(j) hereto are hereby inserted as new Exhibit  11(b)(i)(D), 11(b)(i)(E)  and _Exhibit 7(j) respectively, to the Electric ISDA Master Schedule (and the new Exhibit 7(j) hereto replaces the current Exhibit  7(j)_).
+##
+# ARTICLE III MISCELLANEOUS
+#
+## SECTION 3.1 Electric ISDA Master Agreement. Except as amended by this Second Amendment, the Electric ISDA Master Agreement shall remain in full force and effect in accordance with its terms. This Second Amendment shall be deemed to be part of the Electric ISDA Master Agreement.
+##
+## SECTION 3.2 References to Electric ISDA Master Schedule. Whenever in any certificate, letter, notice or other instrument reference is made to the Electric ISDA Master Schedule, such reference without more shall include reference to this Second Amendment.
+##
+## SECTION 3.3 Legal, Valid and Binding Obligation. Each party hereto hereby represents and warrants that this Second Amendment is a legal, valid and binding obligation of such party and is enforceable against such party in accordance with its terms.
+##
+## SECTION 3.4 Confirmation and Reaffirmation of ISDA Documents. Party B and each Specified Entity of Party B does hereby (a) consent and acknowledge and agree to the transactions described in this Second Amendment and (b) after giving effect to this Second Amendment, (i) ratify and confirm each ISDA Document to which it is a party and (ii) confirm and agree that each such ISDA Document is, and shall continue to be, in full force and effect; provided that each reference to the Electric ISDA Master Schedule therein and in each of the other ISDA Documents shall be deemed to be a reference to the Electric ISDA Master Schedule after giving effect to this Second Amendment.
+##
+## SECTION 3.5 Condition to Effectiveness. This Second Amendment shall become effective as of the date set forth above upon receipt by each of the parties hereto of counterparts of this Second Amendment executed by each other party hereto.
+##
+## 5
+##
+##
+## SECTION 3.6 No Other Amendments/Waivers. Except as expressly amended herein, the Electric ISDA Master Schedule and the other ISDA Documents shall be unmodified and shall continue to be in full force and effect in accordance with their terms. In addition, except as expressly set forth herein, this Second Amendment shall not be deemed a waiver of any term or condition of any ISDA Document and shall not be deemed to prejudice any right or rights which Party B may now have or may have in the future under or in connection with any ISDA Document or any of the instruments or agreements referred to therein, as the same may be amended from time to time.
+##
+## SECTION 3.7 Counterparts. This Second Amendment may be executed in any number of counterparts, each of which when so executed and delivered shall be deemed an original, but all such counterparts together shall constitute but one and the same instrument. Any executed counterpart delivered by facsimile or electronic transmission shall be effective as an original for all purposes hereof.
+##
+## SECTION 3.8 GOVERNING LAW. THIS SECOND AMENDMENT, AND THE RIGHTS AND OBLIGATIONS OF THE PARTIES HERETO, SHALL BE GOVERNED BY AND CONSTRUED IN ACCORDANCE WITH THE LAWS OF THE STATE OF NEW YORK WITHOUT REFERENCE TO CHOICE OF LAW DOCTRINE, OTHER THAN SECTION 5-1401 AND SECTION 5-1402 OF THE GENERAL OBLIGATIONS LAW OF THE STATE OF NEW YORK. THE UNITED NATIONS CONVENTION ON CONTRACTS FOR THE INTERNATIONAL SALE OF GOODS SHALL NOT IN ANY WAY APPLY TO, OR GOVERN, THIS SECOND AMENDMENT.
+##
+[Remainder of Page Intentionally Left Blank]
+IN WITNESS WHEREOF, the parties hereto have caused this Second Amendment to be executed and delivered by their duly authorized officers as of the date first written above.
+SEMPRA ENERGY TRADING LLC By: 	  /s/ Wendy Lewis Name: Wendy Lewis Title: EVP MXENERGY ELECTRIC INC.
+By: 	  /s/ Chaitu Parikh Name: Chaitu Parikh Title: EVP and CFO
+Acknowledged and Agreed:
+MXENERGY HOLDINGS INC.
+By: 	  /s/ Chaitu Parikh Name: Chaitu Parikh Title: EVP and CFO MXENERGY INC.
+By: 	  /s/ Chaitu Parikh Name: Chaitu Parikh Title: EVP and CFO MXENERGY (CANADA) LTD.
+By: 	  /s/ Chaitu Parikh Name: Chaitu Parikh Title: EVP and CFO
+[Signature Page to Second Amendment]
+ONLINECHOICE, INC.
+By: 	  /s/ Chaitu Parikh Name: Chaitu Parikh Title: EVP and CFO MXENERGY GAS CAPITAL HOLDINGS CORP.
+By: 	  /s/ Chaitu Parikh Name: Chaitu Parikh Title: EVP and CFO MXENERGY ELECTRIC CAPITAL HOLDINGS CORP.
+By: 	  /s/ Chaitu Parikh Name: Chaitu Parikh Title: EVP and CFO MXENERGY GAS CAPITAL CORP.
+By: 	  /s/ Chaitu Parikh Name: Chaitu Parikh Title: EVP and CFO MXENERGY ELECTRIC CAPITAL CORP.
+By: 	  /s/ Chaitu Parikh Name: Chaitu Parikh Title: EVP and CFO
+[Signature Page to Second Amendment]
+MXENERGY CAPITAL HOLDINGS CORP.
+By: 	  /s/ Chaitu Parikh Name: Chaitu Parikh Title: EVP and CFO INFOMETER.COM INC.
+By: 	  /s/ Chaitu Parikh Name: Chaitu Parikh Title: EVP and CFO MXENERGY CAPITAL CORP.
+By: 	  /s/ Chaitu Parikh Name: Chaitu Parikh Title: EVP and CFO MXENERGY SERVICES INC.
+By: 	  /s/ Chaitu Parikh Name: Chaitu Parikh Title: EVP and CFO
+[Signature Page to Second Amendment]
+Exhibit 11(b)(i)(D)
+Form  of Citi Control Agreement (Lockbox Account)
+Exhibit 11(b)(i)(E)
+Form of Citi Control Agreement (Operating Account)
+Exhibit  7(j)
+to
+Schedule to the
+ISDA Master Agreement
+Dated as of
+September 22, 2009
+between SEMPRA ENERGY TRADING LLC, a Delaware limited liability company ("Party A "), and MxEnergy Inc., a Delaware corporation ("Party B ").
+Designated Jurisdictions
+New York 	    	  POWER:   Central Hudson Gas & Electric Corporation   Consolidated Edison Company of New York, Inc.   New York State Electric & Gas Corporation   National Grid (NIMO)   Orange & Rockland   Rochester Gas and Electric Corporation   GAS:   Central Hudson Gas & Electric Corporation   Consolidated Edison Company of New York, Inc.   Keyspan Long Island   Keyspan New York   National Fuel Gas Company
+New York State Electric & Gas Corporation   National Grid (NIMO)   Orange & Rockland   Rochester Gas and Electric Corporation
+Florida 	    	  GAS:   Florida City Gas   People Gas (FL)
+Georgia 	    	  GAS:   Atlanta Gas Light
+Indiana 	    	  GAS:   Northern Indiana Public Service Company (NIPSCO)
+Kentucky 	    	  GAS:   Columbia Gas of Kentucky
+New Jersey 	    	  GAS:   Elizabethtown Gas   New Jersey Natural Gas   Public Service Electric and Gas Company (PSE&G)   South Jersey Gas
+Michigan 	    	  GAS:   Consumers Energy Company   Michigan Consolidated Gas Company
+Illinois 	    	  GAS:   Northern Illinois Gas Company (NICOR)
+Ohio 	    	  GAS:   Columbia Gas of Ohio   Dominion East Ohio   Vectren Energy
+Pennsylvania 	    	  GAS:   Columbia Gas of Pennsylvania
+Ontario 	    	  GAS:   Enbridge
+British Columbia 	    	  GAS:   Terasen Gas
+Maryland 	    	  POWER:   Baltimore Gas and Electric Company   GAS:   Baltimore Gas and Electric Company   Columbia Gas of Maryland

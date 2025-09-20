@@ -1,0 +1,13 @@
+{
+  "filename": "44b1a05087fa5df2aefd185b306464c7.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 34,
+      "end_line": 248,
+      "confidence": 0.99,
+      "explanation": "The ISDA Schedule begins at line 34 (\"SCHEDULE to the Master Agreement\") and continues through the signature block at line 248. The preceding lines are the standard pre-printed Master Agreement, and the following lines are the Confirmation and Schedule A, not part of the Schedule. This span contains all the negotiated terms and elections of the Schedule, as requested."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "filename": "ed200834edd15803a9485a07fb773e16.txt",
+  "contract_type": "VSA",
+  "scopes": [
+    {
+      "name": "preamble",
+      "start_line": 2,
+      "end_line": 8,
+      "confidence": 0.98,
+      "explanation": "The preamble of the CSA typically includes the title, reference to the ISDA Master Agreement, date, and identification of the parties. Lines 2-8 contain the contract title, reference to the ISDA Master Agreement, the date, the parties, and the statement that the Annex supplements the Agreement. Line 8 is the transition to the main body, so the preamble ends there."
+    },
+    {
+      "name": "Annex",
+      "start_line": 10,
+      "end_line": 178,
+      "confidence": 0.99,
+      "explanation": "The Annex of a New York law CSA begins at Paragraph 13, which is explicitly introduced at line 10 ('Paragraph 13. Elections and Variables') and continues through the negotiated terms, ending before the signature block at line 179. The entire span from line 10 to 178 contains the detailed negotiated terms and elections of Paragraph 13, which is the Annex for a New York law CSA."
+    }
+  ]
+}

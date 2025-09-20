@@ -1,7 +1,7 @@
 {
   "filename": "359fd50d13c6566690d0cc51a332dec8.txt",
   "contract_type": {
-    "value": "ISDA",
+    "value": "OTHER",
     "confidence": 0.9,
     "explanation": "The document lists a '2002 ISDA MASTER AGREEMENT (2008)' and '1992 ISDA MASTER AGREEMENT (2001)' as contract names, which are ISDA Master Agreements."
   },

@@ -1,0 +1,114 @@
+SCHEDULE
+to the
+Master Agreement
+dated as of June 30, 2004
+between BEAR STEARNS FINANCIAL PRODUCTS INC., a Delaware corporation ("Party A"), and DEUTSCHE BANK NATIONAL TRUST COMPANY not individually but solely as TRUSTEE on behalf of the SEPARATE INTEREST TRUST for the THORNBURG MORTGAGE SECURITIES TRUST 2004-2 Mortgage Loan Pass-Through Certificates, Series  2004-2.
+Part 1
+Termination Provisions
+In this Agreement:
+(a) 	   	 "Specified Entity" means in relation to Party A for the purpose of:
+Section 5(a)(v), Not Applicable Section 5(a)(vi), Not Applicable Section 5(a)(vii), Not Applicable Section 5(b)(iv), Not Applicable
+in relation to Party B for the purpose of:
+Section 5(a)(v), Not Applicable Section 5(a)(vi), Not Applicable Section 5(a)(vii), Not Applicable Section 5(b)(iv), Not Applicable
+(b) 	   	 "Specified Transaction" will have the meaning specified in Section 14 of this Agreement.
+(c) 	   	 The "Cross Default" provisions of Section 5(a)(vi) will not apply to Party A and to Party B.
+"Specified Indebtedness" will have the meaning set forth in Section 14.
+(d) 	   	 The "Credit Event Upon Merger" provisions of Section 5(b)(iv) will apply to Party A and will not apply to Party B. For purposes hereof, "materially weaker" shall mean, with respect to Party A, a decline in the long-term, unsecured unsubordinated rating below
+#####
+AA- with respect to S&P (as hereinafter defined) or Aa3 with respect to Moody's (as hereinafter defined).
+(e) 	   	 The "Automatic Early Termination" provision of Section 6(a) will not apply to Party A or to Party B.
+(f) 	   	 Payments on Early Termination. For the purpose of Section 6(e) of this Agreement the Second Method and Market Quotation will apply.
+(g) 	   	 "Termination Currency" means United States Dollars.
+(h) 	   	 Additional Termination Events. The following shall be Additional Termination Event.
+(i) If Party A fails to maintain a counterparty credit rating of at least AA- as determined by Standard & Poor's Rating Services ("S&P") or at least Aa3 as determined by Moody's Investors Services, Inc. ("Moody's"), then Party A shall within ten (10) Local Business Days, at its own cost or benefit, and subject to the Rating Agency Condition, either (at its discretion) (x) with Party B's consent, which consent shall not be unreasonably withheld, assign all of its rights and obligations under this Agreement to a Substitute Counterparty or
+(y) post full market-to-market collateral to secure its obligations to Party B hereunder. Failure on the part of Party A to enter into an assignment of its rights and obligations under this Agreement or to post collateral to secure its obligations to Party B shall be an Additional Termination Event with respect to which Party A shall be the sole Affected Party. For the purposes hereof, the term "Substitute Counterparty" means a counterparty that has (i) a long-term senior unsecured debt or counterparty rating of at least AA- by S&P and (ii) a long-term senior unsecured debt or counterparty rating of at least Aa3 by Moody's.
+(ii) If any term of the Pooling and Servicing Agreement is amended or modified in any way that would affect the amount, timing or priority of any payment, or payments to Party A under this Agreement or any Transaction hereunder, or such amendment or modification could have a material adverse effect on Party A and such amendment or modification has not been consented to by Party A, it shall be an Additional Termination Event hereunder and Party B shall be the sole Affected Party.
+(i) 	   	 Additional Definitions.
+"Pooling and Servicing Agreement" means the Pooling and Servicing Agreement between and among Greenwich Capital Acceptance Inc., Thornburg Mortgage Home Loans Inc., Wells Fargo Bank, N.A. , Deutsche Bank Trust Company Delaware and Deutsche Bank National Trust Company dated as of June 1, 2004 (the "Pooling and Servicing Agreement").
+"Rating Agency Condition" means, with respect to any particular proposed act or omission to act hereunder, that the party acting or failing to act has consulted with each of the Relevant Rating Agencies then providing a rating of the Relevant Certificates and having received from each Relevant Rating Agency, a written confirmation that the proposed action or inaction would not cause a downgrading or withdrawal of the then-current rating of the Relevant Certificates.
+\- 2 -
+#####
+"Relevant Rating Agencies" means, with respect to Party B, Standard and Poor's and Moody's to the extent applicable to each class of Relevant Certificates, and with respect to Party A, Standard and Poor's and Moody's or such of them as then assigns a financial program, counterparty or similar rating to Party A at Party A's request, or any other national recognized rating agency then rating Party A at Party A's request (each, individually, a Relevant Rating Agency).
+"Relevant Certificates" means, the Class A-1, Class A-2, Class A-3, Class A-4, Class B-1, Class B-2, Class B-3, Class B-4, Class B-5 and Class B-6 as defined in the Pooling and Servicing Agreement.
+(j) 	   	 Amendment to Section 5\. The provision of Sections 5(a)(ii), 5(a)(iii), 5(a)(iv) and Section 5(a)(v) of this Agreement will not apply to Party A or Party B.
+Part 2
+(a)  Payer Representations. For the purpose of Section 3(e) of this Agreement, ach party represents to the other party:--
+(i) It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 2(e), 6(d)(ii) or 6(e) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on (i) the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement, (ii) the satisfaction of the agreement of the other party contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement and (iii) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement, provided that it shall not be a breach of this representation where reliance is placed on clause (ii) and the other party does not deliver a form or document under _Section 4(a)(iii)_ by reason of material prejudice to its legal or commercial position.
+Part 3
+Documents to be delivered
+For the purpose of Section 4(a):
+(1) Tax forms, documents, or certificates to be delivered are W-9:
+\- 3 -
+#####
+Party required to 	   	 Form/Document/ 	   	 Date by which to deliver document 	   	 Certificate 	   	 be delivered Party A and Party B  	   	 Any document required or reasonably requested to allow the other party to make payments under the Agreement without any deduction or withholding for or on the account of any Tax or with such deduction or withholding at a reduced rate  	   	 Promptly after the earlier of (i)reasonable demand by either party or (ii) learning that such form or document is required
+(2) Other documents to be delivered are:
+Party required to 	   	 Form/Document/ 	   	 Date by which to 	   	 Covered by Section deliver document 	   	 Certificate 	   	 be delivered 	   	 3(d) Representation Party A and Party B  	   	 Any documents required by the receiving party to evidence the authority of the delivering party for it to execute and deliver the Agreement, the Confirmation contemplated thereunder, and to evidence the authority of the delivering party to perform its obligations under such Agreement and Confirmation  	   	 As of the execution of this Agreement and promptly at the request of the other party upon execution of a Confirmation  	   	 Yes Party A and Party B  	   	 A certificate of an authorized officer of the party and as to the incumbency and authority of the officers of the party and for it signing this Agreement or any Confirmations  	   	 As of the execution of this Agreement and promptly at the request of the other party upon execution of a Confirmation 	   	 Yes Party A  	   	 Legal opinion(s) with respect to such party reasonably satisfactory in form and substance to the other party  	   	 As of the execution of this Agreement  	   	 No Party A  	   	 A copy of the most recent annual report of such  	   	 Promptly after request by the other party  	   	 Yes
+\- 4 -
+#####
+Party required to 	   	 Form/Document/ 	   	 Date by which to 	   	 Covered by Section deliver document 	   	 Certificate 	   	 be delivered 	   	 3(d) Representation party containing in all cases audited consolidated financial statements for each fiscal year certified by independent certified public accountants and prepared in accordance with generally accepted accounting principles in the United States or in the country in which such party is organized Party A  	   	 A copy of the unaudited consolidated financial statements of such party in each case for each fiscal period prepared in accordance with generally accepted accounting principles in the United States or in the country in which such party is organized  	   	 Promptly after request by the other party  	   	 Yes Party B  	   	 A copy of all distribution date statements that the Certificateholders are entitled to receive.  	   	 On each distribution date.  	   	 Yes Party B  	   	 A final copy of the executed Pooling and Servicing Agreement  	   	 Upon execution of this Agreement  	   	 Yes
+Part 4
+Miscellaneous
+(a) 	   	 Address for Notices: For the purposes of Section 12(a) of this Agreement:
+Address for notices or communications to Party A:
+Address:  	   	 Bear Stearns Financial Products Inc.
+383 Madison Avenue, Suite 2700 New York, New York 10179 Attention: The Derivative Product Company Manager Facsimile No.: (212) 272-5823 Telephone No.: (212) 272-4009
+\- 5 -
+#####
+With a copy to:
+One Metrotech Center, North Brooklyn, New York 11201 Attention: Derivative Operations, 7th Floor Facsimile No.: (212) 272-1634 (For all purposes) Address for notices or communications to Party B:
+Address:  	   	 Deutsche Bank National Trust Company 1761 East St. Andrew Street Santa Ana, California 92705 Attention: Trust Administration - TM0402 Facsimile No.: (714) 247-6329 Telephone No.: (714) 247-6000 With a copy to:
+Wells Fargo Bank, N.A.
+9062 Old Annapolis Road Columbia, Maryland 21045 Attention: Kristen Cronin Facsimile No.: (410) 715-2380 Telephone No.: (410) 884-2132
+(For all purposes)
+(b) 	   	 Process Agent. For the purpose of Section 13(c):
+Party A appoints as its Process Agent: Not Applicable
+Party B appoints as its Process Agent: Not Applicable
+(c) 	   	 Offices. The provisions of Section 10(a) will apply to this Agreement.
+(d) 	   	 Multibranch Party. For the purpose of Section 10(c) of this Agreement:
+Party A is not a Multibranch Party.
+Party B is not a Multibranch Party.
+(e) 	   	 Calculation Agent. The Calculation Agent is Party A, unless (i) an Event of Default has occurred and is continuing with respect to Party A, in which case the Calculation Agent will be the Securities Administrator as agent for Party B or (ii) otherwise specified in a confirmation in relation to the relevant Transactions.
+(f) 	   	 Credit Support Document. Details of any Credit Support Document.
+\- 6 -
+#####
+Party A:  	   	 Not Applicable.
+Party B:  	   	 Not Applicable
+(g) 	   	 Credit Support Provider.
+Party A:  	   	 Not Applicable Party B:  	   	 Not Applicable
+(h) 	   	 Governing Law. This Agreement will be governed by and construed in accordance with the laws of the State of New York without reference to choice of law doctrine.
+(i) 	   	 Netting of Payments. Subparagraph (ii) of Section 2(c) of this Agreement will not apply.
+(j) 	   	 "Affiliate" will have the meaning specified in Section 14 of this Agreement, provided that Party A shall not have any Affiliates for purposes of this Agreement.
+Part 5
+Other Provisions
+(a) 	   	 No Setoff. Notwithstanding any provision of this Agreement or any other existing or future agreement, each party irrevocably waives any and all rights it may have to set-off , net, recoup or otherwise withhold or suspend or condition payment or performance of any obligation between it and the other party hereunder against any obligation between it and the other party under any other agreements.
+(b) 	   	 Section 3 of the Agreement is hereby amended by adding at the end thereof the following subsections (g) and (h):
+(g) Relationship Between Parties.
+Each party represents to the other party on the date on which it enters into a Transaction that:--
+(1) Non Reliance. It is not relying on any communications (whether written or oral) of the other party as a recommendation or investment advice regarding that Transaction, other than the representations expressly made by that other party in this Agreement or in the Confirmation in respect of that Transaction.
+\- 7 -
+#####
+(2) Evaluation and Understanding.
+(i) It has the capacity to evaluate (internally or through independent professional advice) that Transaction and has made its own decision to enter into that Transaction; and
+(ii) It understands the terms, conditions and risks of that Transaction and is willing to accept those terms and conditions and to assume (financially and otherwise) those risks.
+(3) Eligible Contract Participant. It constitutes an "eligible contract participant" as such term is defined in Section 1a(12) of the Commodity Exchange Act, as amended." (4) Purpose. It is entering into this Agreement and such other documentation for the purposes of managing its borrowings or investments, hedging its underlying assets or liabilities or in connection with a line of business.
+(5) Principal. It is entering into this Agreement and such other documentation as principal, and not as agent or in any other capacity, fiduciary or otherwise except as to Party B who is acting as the Trustee on behalf of the Separate Interest Trust for the Thornburg Mortgage Securities Trust 2004-2 Mortgage Loan Pass-Through Certificates, Series 2004-2 as directed under the Pooling and Servicing Agreement.
+(h) The representations and agreements in Part 5 above of this Schedule shall be deemed representations and agreements for all purposes of this Agreement, including without limitation Sections 3, 4, 5(a)(ii) and 5(a)(iv) hereof.
+(c) 	   	 Inconsistency. In the event of any inconsistency between the provisions contained in this Agreement and those contained in any of the definitions published by ISDA (the "ISDA Definitions"), the provisions contained in this Agreement will prevail. In the event of any inconsistency between the provisions contained in a Confirmation and those contained in ISDA Definitions or the Agreement, the provisions contained in such Confirmation shall prevail unless otherwise specified in a Confirmation or other writing signed by the parties.
+(d) 	   	 Procedures for Entering into Transactions. With respect to each Transaction entered into pursuant to this Agreement, Party A will, as soon as practicable after the Trade Date thereof, send to Party B a Confirmation in such form as mutually agreed upon by the parties. Party B will no later than three (3) Local Business Days thereafter confirm the accuracy of, or request the correction of, such Confirmation (in the latter case, indicating how it believes the terms of such Confirmation should be correctly stated and such other terms which should be added to, or deleted from, such Confirmation to make it correct). Party B is required to sign and return the Confirmation promptly.
+\- 8 -
+#####
+(e) 	   	 Severability. If any term, provision, covenant, or condition of this Agreement, or the application thereof to any party or circumstance, shall be held to be invalid or unenforceable (in whole or in part) for any reason, the remaining terms, provisions, covenants, and conditions hereof shall continue in full force and effect as if this Agreement had been executed with the invalid or unenforceable portion eliminated, so long as this Agreement as so modified continues to express, without material change, the original intentions of the parties as to the subject matter of this Agreement and the deletion of such portion of this Agreement will not substantially impair the respective benefits or expectations of the parties.
+The parties shall endeavor to engage in good faith negotiations to replace any invalid or unenforceable term, provision, covenant or condition with a valid or enforceable term, provision, covenant or condition, the economic effect of which comes as close as possible to that of the invalid or unenforceable term, provision, covenant or condition.
+(f) 	   	 Consent to Recording. Each party hereto consents to the monitoring or recording, at any time and from time to time, by the other party of any and all communications between officers or employees of the parties, waives any further notice of such monitoring or recording, and agrees to notify its officers and employees of such monitoring or recording.
+(g) 	   	 Waiver of Jury Trial. Each party waives any right it may have to a trial by jury in respect of any Proceedings relating to this Agreement.
+(h) 	   	 Transfer. Section 7 of the Agreement is hereby modified by inserting the following after the word "party" but before the comma in the third line thereof: "provided ", that, subject to the Rating Agency Condition (i) Party B may transfer, in whole and not in part, its interest and obligations under this Agreement, to any successor Trustee that has been selected in accordance with the terms of the Pooling and Servicing Agreement in effect on the Closing Date or (ii) subject to Party A's consent (not to be unreasonably withheld) Party B may transfer its interest and obligations in not fewer than all Transactions under this Agreement to Thornburg Mortgage Inc. and/or any affiliate thereof, provided that such entity has executed an ISDA Master Agreement with Party A incorporating a Credit Support Annex wherein a Threshold Amount of zero is applicable to such transferee entity and the terms of which ISDA Master Agreement shall govern the terms of the transferred Transaction or Transactions".
+(i) 	   	 Amendment; Consent. Section 9(b) of the printed form Master Agreement is amended by adding the following at the end of such Section:
+"No amendment, modification or waiver in respect of this Master Agreement will be effective unless the Rating Agency Condition is satisfied."
+(j) 	   	 Trustee Capacity. It is expressly understood and agreed by the parties hereto that insofar as this agreement is executed by the Trustee (i) it is executed and delivered by Deutsche Bank National Trust Company in the exercise of the powers and authority conferred and vested in it under and in accordance with the Pooling and Servicing Agreement, (ii) each of the representations, undertakings and agreements herein made on behalf on the Separate Interest Trust is made and intended not as personal representations of the Trustee but is made and intended for the purpose of binding only the Separate Interest
+\- 9 -
+#####
+Trust for the Thornburg Mortgage Securities Trust 2004-2 Mortgage Loan Pass-Through Certificates, Series 2004-2, and (iii) under no circumstances will Deutsche Bank National Trust Company in its individual capacity be personally liable for the payment of any indebtedness or expenses or be personally liable for the breach of failure of any obligation, representation, warranty or covenant made or undertaken under this agreement.
+(k) 	   	 No Bankruptcy Petition. Party A agrees that it will not, prior to the date that is one year and one day following the termination of the Pooling and Servicing Agreement, acquiesce, petition or otherwise invoke or cause Party B to invoke the process of any governmental authority for the purpose of commencing or sustaining a case (whether voluntary or involuntary) against Party B under any bankruptcy, reorganization, arrangement, insolvency, moratorium, liquidation or similar law or proceeding or appointing a receiver, liquidator, assignee, trustee, custodian, sequestrator or other similar official of Party B or any substantial part of its property or ordering the winding-up or liquidation of the affairs of Party B; provided , that this provision shall not restrict or prohibit Party A from joining any other person in any bankruptcy, reorganization, arrangement, insolvency, moratorium or liquidation proceedings already commenced or other analogous proceedings already commenced under applicable law; and provided , further , that this provision shall not constitute a waiver by Party A of its right to the proceeds of any bankruptcy, reorganization, arrangement, insolvency, moratorium or liquidation proceedings instituted by third parties against Party B under applicable law.
+\- 10 -
+#####
+IN WITNESS WHEREOF, the parties have executed this Schedule by their duly authorized officers as of the date hereof.

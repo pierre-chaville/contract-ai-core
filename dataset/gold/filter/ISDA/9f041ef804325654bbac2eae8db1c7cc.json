@@ -1,0 +1,13 @@
+{
+  "filename": "9f041ef804325654bbac2eae8db1c7cc.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 2,
+      "end_line": 115,
+      "confidence": 0.99,
+      "explanation": "Lines 2-115 comprise the entire Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE' and including all the negotiated terms between the parties. There is no indication of standard pre-printed text or CSA annexes in this span; it is all part of the Schedule."
+    }
+  ]
+}

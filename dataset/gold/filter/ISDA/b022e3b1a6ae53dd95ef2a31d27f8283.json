@@ -1,0 +1,13 @@
+{
+  "filename": "b022e3b1a6ae53dd95ef2a31d27f8283.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 4,
+      "end_line": 156,
+      "confidence": 0.99,
+      "explanation": "Lines 4-156 comprise the full text of the Schedule to the ISDA 2002 Master Agreement, including all 'Parts' (1-5) and their subsections, but excluding the standard pre-printed Master Agreement, Credit Support Annexes, and signature pages. The Schedule begins at line 4 ('SCHEDULE') and ends at line 156, just before the signature and closing formalities. This span contains all negotiated terms and elections specific to the parties, which is what the query requests."
+    }
+  ]
+}

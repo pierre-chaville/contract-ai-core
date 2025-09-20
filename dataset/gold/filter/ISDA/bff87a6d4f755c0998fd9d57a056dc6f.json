@@ -1,0 +1,13 @@
+{
+  "filename": "bff87a6d4f755c0998fd9d57a056dc6f.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 0,
+      "end_line": 85,
+      "confidence": 0.98,
+      "explanation": "Lines 6-85 contain the full text of the Schedule to the ISDA Master Agreement, starting with 'Part I. Termination Provisions' and continuing through all the negotiated terms, representations, and signatures. The preceding lines are the title and parties, and there is no indication of CSA annexes or standard pre-print text within this span."
+    }
+  ]
+}

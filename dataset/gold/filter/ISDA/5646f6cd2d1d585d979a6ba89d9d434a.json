@@ -1,0 +1,13 @@
+{
+  "filename": "5646f6cd2d1d585d979a6ba89d9d434a.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 253,
+      "end_line": 407,
+      "confidence": 0.98,
+      "explanation": "The ISDA Schedule begins at line 253 (\"SCHEDULE\") and continues through the end of the Schedule's signature block at line 407. The preceding lines are the standard pre-printed Master Agreement, and the following lines are annexes (e.g., Credit Support Annex). The user's request is to filter for the Schedule only, which is this contiguous block."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "filename": "e68da95871915ac5be3371cbabc604ff.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 362,
+      "end_line": 513,
+      "confidence": 0.98,
+      "explanation": "Lines 362-513 contain the full text of the Schedule to the ISDA Master Agreement, including all its parts (Termination Provisions, Tax Representations, Agreement to Deliver Documents, Miscellaneous, Other Provisions, and Additional Terms for FX Transactions). The lines before 362 are the standard pre-printed Master Agreement, and lines after 513 are execution blocks. This span excludes the CSA annexes and other non-schedule material."
+    }
+  ]
+}

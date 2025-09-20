@@ -1,0 +1,13 @@
+{
+  "filename": "4f8a4483b2dc56f3a25523cda4634b43.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": -1,
+      "end_line": -1,
+      "confidence": 0.05,
+      "explanation": "The provided text contains the standard pre-printed form of the 2002 ISDA Master Agreement, including its definitions, representations, events of default, and other boilerplate provisions. There is no distinct 'Schedule' section present in the provided lines. The Schedule to the ISDA Master Agreement is a separate document or section that contains negotiated terms between the parties (such as elections, addresses, governing law, etc.), and is not included in the text above. Therefore, no suitable span matching the user's query can be identified in the provided paragraphs."
+    }
+  ]
+}

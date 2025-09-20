@@ -1,0 +1,13 @@
+{
+  "filename": "947ff687656c5cb190a76635369b778b.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 178,
+      "end_line": 261,
+      "confidence": 0.99,
+      "explanation": "The ISDA Schedule begins at line 178 with the heading 'SCHEDULE to the MASTER AGREEMENT...' and continues through the signature block at line 261. This section contains the negotiated terms between the parties, organized into Parts 1 through 5, and is distinct from the standard pre-printed Master Agreement and from any annexes or confirmations. The lines before 178 are the standard Master Agreement, and after 261 are confirmations and other documents."
+    }
+  ]
+}

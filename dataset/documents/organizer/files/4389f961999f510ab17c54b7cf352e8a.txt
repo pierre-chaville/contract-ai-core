@@ -49,3 +49,80 @@ It is a partnership for U.S. tax purposes.
 For the purposes of Section 3(f) of this Agreement, Party B makes the following representations to Party A.
 It is a partnership for U.S. tax purposes.
 Part 3
+Documents to be delivered
+(a)
+For the purpose of Sections 4(a)(i) of this Agreement, each party agrees to deliver the following documents, as applicable:
+Party required to deliver documents 	 Form/Document/Certificate 	 Date by which to be delivered Party A and  Party B  	 An executed United States Service  Form W-9 (or successor thereto). 	 (i) Upon execution and delivery of this  Agreement; (ii) promptly upon  reasonable demand by the other party;  and (iii) promptly upon learning that  any Form W-9 (or any successor  thereto) has become obsolete or  incorrect.
+(b)
+For the purposes of Section 4(a)(ii), the other documents to be delivered are as follows, which shall be covered by the representation in Section 3(d) of the Agreement if specified:
+Party required to deliver documents 	 Form/Document/Certificate 	 Date by which to be delivered 	 Section 3(d) representation Party A and  Party B  	 Any documents required by the  receiving party to evidence the authority  of the delivering party for it to execute  and deliver this Agreement, the  Confirmation to which it is a party, and  to evidence the authority of the  delivering party to perform its  obligations under this Agreement and  the Confirmation. 	 Upon execution  and delivery of this  Agreement and  applicable Confirmation. 	 Applicable.
+Party  A/Party B 	 Legal opinions satisfactory to the other  party.  	 Upon execution  and delivery of this  Agreement. 	 Not Applicable.
+Part 4
+Miscellaneous
+(a)
+Address for Notices. For the purpose of Section 12(a) of this Agreement, the addresses for notices and communications to Party A and Party B shall be as follows:
+TO PARTY A:
+MacroShares Major Metro Housing Up Trust
+c/o State Street Bank and Trust Company, N.A.
+Two World Financial Center
+225 Liberty Street
+New York, New York 10281
+Attention:  James Casey
+Facsimile:  (617) 988-9556 and (617) 451-4704
+TO PARTY B:
+MacroShares Major Metro Housing Down Trust
+c/o State Street Bank and Trust Company, N.A.
+Two World Financial Center
+225 Liberty Street
+New York, New York 10281
+Attention:  James Casey
+Facsimile:  (617) 988-9556 and (617) 451-4704
+(b)
+Process Agent. For the purpose of Section 13(c) of this Agreement:
+Party A appoints as its Process Agent:
+Not applicable.
+Party B appoints as its Process Agent:
+Not applicable.
+(c)
+Offices.  The provisions of Section 10(a) will apply to this Agreement.
+(d)
+Multibranch Party.  For purpose of Section 10(c) of this Agreement:
+(i)
+Party A is not a Multibranch Party.
+(ii)
+Party B is not a Multibranch Party.
+(e)
+The Calculation Agent  for any Transaction shall be as set forth in the confirmation for such Transaction.
+(f)
+Credit Support Document. Details of any Credit Support Document:
+With respect to Party A:  None.
+With respect to Party B:  None.
+(g)
+Credit Support Provider.  Credit Support Provider means in relation to Party A and Party B: Not applicable.
+(h)
+Governing Law :  This Agreement shall be governed by and construed in accordance with New York law.
+(i)
+Netting of Payments.  Subparagraph (ii) of Section 2(c) of this Agreement will apply all Transactions under this Agreement, so that payments due under different Transactions will NOT be netted against each other pursuant to Section 2(c).
+(j)
+"Affiliate " shall have the meaning specified in Section 14 of this Agreement.
+Part 5
+Other Provisions
+1.
+Representations
+Each party will be deemed to represent to the other party on the date that it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction):
+(i)
+Non-Reliance.  It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgement and upon advice from such advisers as it has deemed necessary.  It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction; it being understood that information and explanations related to the terms and conditions of a Transaction shall not be considered to be investment advice or a recommendation to enter into that Transaction.  No communication (written or oral) received from the other party shall be deemed to be an assurance or guarantee as to the expected results of that Transaction.
+(ii)
+Assessment and Understanding.  It is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice), and understands and accepts the terms and conditions and risks of that Transaction.  It is also capable of assuming, and assumes, the risks of that Transaction.
+(iii)
+Status of Parties.  The other party is not acting as a fiduciary for or adviser to it in respect of that Transaction.
+2.
+Withholding Tax
+Notwithstanding Section 2(d) of the Agreement, neither party shall be required to pay any additional amounts in respect of an Indemnifiable Tax or be under any obligation to pay any amount to the other party in respect of any liability for or on account of any Indemnifiable Tax.
+3.
+Definitions
+Capitalized terms not defined under this Agreement shall have the definitions ascribed to them in the MacroShares Major Metro Housing Down Trust Agreement (the "Down Trust Agreement ") or the MacroShares Major Metro Housing Up Trust Agreement (the "Up Trust Agreement "), each dated as of June 29, 2009, and each entered into among MacroShares Housing Depositor, LLC, as Depositor, State Street Bank and Trust Company, N.A., as Trustee, MacroMarkets LLC, as Administrative Agent, and Macro Financial, LLC as a Marketing Agent.
+4.
+Confirmation regarding Limitation of Trustee Liability
+It is understood and agreed that the Trustee shall not be personally liable or otherwise liable for an error of judgment or with respect to any action taken, suffered or omitted by it in good faith except as expressly set forth in the Down Trust Agreement or Up Trust Agreement, as applicable, and that any creditor of Party A or Party B or any other party asserting any claim relating to Party A or Party B, other than a claim that the Trustee has acted with gross negligence, was grossly negligent in failing to act, acted with bad faith or reckless disregard of its duties hereunder or engaged in willful misconduct, shall look solely to the assets of Party A or Party B, as applicable, and shall not look to the Trustee to satisfy such claims.
+MacroShares Major Metro Housing Up Trust 	  	 MacroShares Major Metro Housing Down Trust By: 	 State Street Bank and Trust Company, N.A.,  	  	 By:  	 State Street Bank and Trust Company, N.A., not in its individual capacity  	  	  	 not in its individual capacity but solely as Up Trustee 	  	  	 but solely as Down Trustee By: 	 /s/ James Newland 	  	 By: 	 /s/ James Newland Name: James Newland 	  	  	 Name: James Newland Title:   Vice President 	  	  	 Title:  Vice President Date:   June 29, 2009 	  	  	  Date:   June 29, 2009

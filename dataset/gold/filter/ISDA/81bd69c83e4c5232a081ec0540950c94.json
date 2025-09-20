@@ -1,0 +1,13 @@
+{
+  "filename": "81bd69c83e4c5232a081ec0540950c94.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 352,
+      "end_line": 473,
+      "confidence": 0.98,
+      "explanation": "Lines 352-473 contain the full text of the Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE' and including all the negotiated terms, elections, and amendments between the parties. The lines before 352 are the standard pre-printed Master Agreement, and lines after 473 are signatures and unrelated amendments. This span is the single contiguous section that constitutes the Schedule."
+    }
+  ]
+}

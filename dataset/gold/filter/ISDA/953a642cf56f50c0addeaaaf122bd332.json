@@ -1,0 +1,13 @@
+{
+  "filename": "953a642cf56f50c0addeaaaf122bd332.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 387,
+      "end_line": 562,
+      "confidence": 0.99,
+      "explanation": "Lines 387-562 contain the full text of the Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE to the 2002 Master Agreement' and including all the negotiated terms, elections, and party-specific provisions. The preceding lines are the standard pre-printed Master Agreement, and there is no evidence of a CSA or other annexes in this span. The Schedule ends with the parties' signatures. This is the single contiguous span that matches the user's request."
+    }
+  ]
+}

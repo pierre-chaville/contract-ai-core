@@ -1,7 +1,7 @@
 {
   "filename": "dd1b3f5fe34b5a6c913dccb4a65393eb.txt",
   "contract_type": {
-    "value": "SWAP",
+    "value": "ISDA",
     "confidence": 0.95,
     "explanation": "The document is titled 'CURRENCY SWAP AGREEMENT' and references a swap agreement multiple times."
   },

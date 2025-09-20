@@ -1,0 +1,13 @@
+{
+  "filename": "1ac97046876756bb8bcc28581198bdeb.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 0,
+      "end_line": 236,
+      "confidence": 0.98,
+      "explanation": "Lines 8-236 contain the full text of the Schedule to the ISDA Master Agreement, starting with 'Part 1. Termination Provisions' and continuing through all the Parts and provisions of the Schedule, ending just before the signature blocks. The lines before line 8 are cover/exhibit/boilerplate, and lines after 236 are signatures and closing. This span excludes standard pre-print, CSA annexes, and focuses solely on the Schedule."
+    }
+  ]
+}

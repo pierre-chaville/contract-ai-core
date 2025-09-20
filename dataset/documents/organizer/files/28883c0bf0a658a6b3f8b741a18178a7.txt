@@ -6,7 +6,7 @@ This First Amendment (the "Amendment") to the ISDA Master Agreement dated as of 
 Explanatory Statement
 A. 	 Party A and Party B are parties to the Master Agreement, as supplemented by certain Schedules.
 B. 	 Party A and Party B wish to amend the Schedule dated as of July 1, 2008 to the Master Agreement.
-C. 	 Party A and Party B intend that this Amendment comply with requirements of Sections 23A and 23B of the Federal Reserve Act (12 USC ง221 et. seq.) and with implementing federal regulations.
+C. 	 Party A and Party B intend that this Amendment comply with requirements of Sections 23A and 23B of the Federal Reserve Act (12 USC ยง221 et. seq.) and with implementing federal regulations.
 D. 	 All capitalized terms not defined herein shall have the meanings ascribed to them in the Agreement.
 NOW, THEREFORE, in consideration of the mutual covenants and promises expressed herein, the parties hereto, intending to be legally bound, hereby agree as follows.
 1\. Amendments to the Schedule. Party A and Party B hereby agree that the Schedule dated as of July 1, 2008 (the "Schedule") shall be amended, effective as of the Effective Date, as follows:

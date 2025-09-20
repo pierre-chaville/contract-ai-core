@@ -8,7 +8,7 @@ def _template_with_types() -> ContractTypeTemplate:
         name="T",
         use_case="extraction",
         description="Test",
-        prompt_scope_filter="",
+        filtering_scopes=[],
         prompt_scope_amendment="",
         clauses=[ClauseDefinition(key="a", title="A", sort_order=0)],
         datapoints=[

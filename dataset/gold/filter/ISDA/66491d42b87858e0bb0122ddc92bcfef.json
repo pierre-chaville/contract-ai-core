@@ -1,0 +1,13 @@
+{
+  "filename": "66491d42b87858e0bb0122ddc92bcfef.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 353,
+      "end_line": 453,
+      "confidence": 0.99,
+      "explanation": "Lines 353-453 contain the full text of the Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE' and including all the specific elections, representations, and additional terms agreed between the parties. This is the standard format for the Schedule, and it is clearly demarcated from the main body of the Master Agreement and any annexes or CSA documents."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "filename": "d2ba56b68f435226b6a2ce621af1c09f.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 4,
+      "end_line": 99,
+      "confidence": 0.98,
+      "explanation": "Lines 4 to 99 contain the full text of the Schedule to the ISDA Master Agreement, including all its parts and signatures. The lines before line 4 are cover/exhibit references, and lines after 99 are annexes (e.g., Exhibit A, opinion of counsel) and not part of the Schedule itself."
+    }
+  ]
+}

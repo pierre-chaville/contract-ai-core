@@ -1,0 +1,13 @@
+{
+  "filename": "aafbb062cbae5c1797a48b64e207c7f6.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 956,
+      "end_line": 1217,
+      "confidence": 0.99,
+      "explanation": "Lines 956-1217 contain the full text of the Amended and Restated Schedule to the ISDA Master Agreement, including all the 'Parts' (Termination Provisions, Tax Representations, Agreement to Deliver Documents, Miscellaneous, Other Provisions, Disruption Fallbacks, Additional Provisions, etc.) and the signature page. This is the main body of the Schedule, as requested, and excludes the standard pre-printed Master Agreement, Credit Support Annex, and Lien Annex, which are found elsewhere in the document."
+    }
+  ]
+}

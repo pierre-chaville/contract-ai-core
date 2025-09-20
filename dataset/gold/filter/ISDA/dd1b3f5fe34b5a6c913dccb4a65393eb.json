@@ -1,0 +1,13 @@
+{
+  "filename": "dd1b3f5fe34b5a6c913dccb4a65393eb.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 261,
+      "end_line": 708,
+      "confidence": 0.99,
+      "explanation": "Lines 261-708 contain the full Schedule to the ISDA Master Agreement, including all its parts and amendments, and end before the annexed Credit Support Annexes and Confirmations. This span excludes the standard pre-printed Master Agreement, CSA annexes, and transaction confirmations, focusing solely on the Schedule as requested."
+    }
+  ]
+}

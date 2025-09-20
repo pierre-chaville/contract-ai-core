@@ -1,0 +1,17 @@
+{
+    "key": "VSA",
+    "name": "Credit Support Annex (CSA) of an ISDA Master Agreement (92 or 2002 version)",
+    "use_case": "Extraction of clauses, datapoints and management of amendments for Credit Support Annex (CSA) agreements",
+    "description": "Credit support annex (CSA) of an ISDA Master Agreement (92 or 2002 version).",
+    "filtering_scopes": [
+        {
+            "name": "preamble",
+            "description": "Filter the preamble of the CSA (beginning with contract date and parties). Ignore any sections outside the preamble."
+        },
+        {
+            "name": "Annex",
+            "description": "Filter the annex of the CSA, i.e., the negotiated terms of the CSA (from Paragraph 11 for English law and Paragraph 13 for New York law). Ignore any sections outside the annex."
+        }
+    ],
+    "prompt_scope_amendment": "Identify and manage amendments within the schedule of the CSA. Ignore any amendments outside the CSA (schedule, etc.)."
+}

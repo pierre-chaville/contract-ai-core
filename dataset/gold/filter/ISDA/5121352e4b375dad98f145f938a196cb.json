@@ -1,0 +1,13 @@
+{
+  "filename": "5121352e4b375dad98f145f938a196cb.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 10,
+      "end_line": 352,
+      "confidence": 0.99,
+      "explanation": "The ISDA Master Agreement Schedule begins at line 10 with the heading 'SCHEDULE' and continues through all the 'Parts' and 'Other Provisions' that are standard for a Schedule, ending at line 352 just before the annexures (which are confirmations and notices, not part of the Schedule). The preceding lines (0-9) are cover, parties, and contact info, and lines after 352 are annexures and not part of the Schedule."
+    }
+  ]
+}

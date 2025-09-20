@@ -1,0 +1,13 @@
+{
+  "filename": "5de97e0b07f4548d8729195fea39d41d.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 3,
+      "end_line": 217,
+      "confidence": 0.99,
+      "explanation": "Lines 3-217 comprise the full text of the Schedule to the ISDA Master Agreement, including all 'Parts' (1-5) and the signature blocks. The content before line 3 is cover/exhibit information, and line 218 is a footer. The Schedule proper starts at line 3 ('SCHEDULE to the 1992 ISDA Master Agreement...') and ends at the execution signatures (line 217). This excludes any standard pre-print, CSA annexes, or other attachments."
+    }
+  ]
+}

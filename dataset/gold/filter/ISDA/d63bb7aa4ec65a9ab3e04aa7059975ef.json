@@ -1,0 +1,13 @@
+{
+  "filename": "d63bb7aa4ec65a9ab3e04aa7059975ef.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 374,
+      "end_line": 552,
+      "confidence": 0.99,
+      "explanation": "Lines 374-552 contain the full Schedule to the ISDA Master Agreement, including all the negotiated terms, elections, and amendments between the parties. The Schedule begins at line 374 with the heading 'SCHEDULE to the 2002 Master Agreement' and ends at line 552 with the execution block. This span excludes the standard pre-printed Master Agreement, definitions, and the Credit Support Annex, which starts after line 566."
+    }
+  ]
+}

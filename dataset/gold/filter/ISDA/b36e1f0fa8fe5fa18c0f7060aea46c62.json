@@ -1,0 +1,13 @@
+{
+  "filename": "b36e1f0fa8fe5fa18c0f7060aea46c62.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 247,
+      "end_line": 340,
+      "confidence": 0.98,
+      "explanation": "Lines 247-340 contain the full text of the Schedule to the ISDA Master Agreement (FMV), including all its parts and provisions. The span starts with the heading 'SCHEDULE to the ISDA Master Agreement (FMV)' and ends with the execution block, which is the standard end of a Schedule. This excludes the main body of the Master Agreement, CSA annexes, and other schedules, focusing only on the requested Schedule."
+    }
+  ]
+}

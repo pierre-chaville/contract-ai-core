@@ -1,0 +1,198 @@
+dated as of …O…ct…ob…er…3…, 2…02…3 ….
+​
+​
+Wells Fargo Commodities, LLC, a Delaware limited liability company
+between
+Montana Renewables, LLC, a Delaware limited liability company
+​
+……………………………………………………. and …………………………………………………
+("Party A")("Party B")
+​
+Paragraph 13. Elections andVariables
+​
+(a)	 Security Interest for "Obligations". The term " Obligations " as used in this Annex includes no additional obligations with respect to Party A and Party B.
+​
+(b)	 Credit Support Obligations.
+​
+(i)	 Delivery Amount, Return Amount and Credit Support Amount.
+​
+(A)" Delivery Amount " has the meaning specified in Paragraph 3(a).
+Provided that no Event of Default or Termination Event in respect of Party B has occurred and is continuing (and no Potential Event of Default in respect of Party B pursuant to Sections 5(a)(i) (Failure to Pay or Deliver) or 5(a)(vii) (Bankruptcy) of the Agreement has occurred and is continuing), Party A shall, on each Valuation Date, and regardless of whether any Commodity
+​
+​
+repurchase Transactions then exist or are permitted, fund the Delivery Amount to Party B (and Party B shall be deemed to have requested each such Delivery Amount on each such Valuation Date), from time to time subject to the Master Confirmation and the Credit Support Annex, not to exceed in aggregate the Maximum Facility Amount, but only to the extent that a calculation of Exposure would be a positive number that results in a Delivery Amount required to be delivered pursuant to the Credit Support Annex from Party A to Party B. Each party shall be deemed, on each Valuation Date, to have made demand on the other party for remittance of the applicable Delivery Amount or Return Amount, as applicable.
+​
+(B)	 " Return Amount " has the meaning specified in Paragraph 3(b).
+​
+(C)"Credit Support Amount " means, for any Valuation Date, the Secured Party's Exposure for that Valuation Date; provided,however , that the Credit Support Amount will be deemed to be zero whenever the calculation of Credit Support Amount results in an amount less than zero.
+​
+(ii)	 Eligible Collateral. Subject to the provisions of this Annex, each of the following items will qualify as "Eligible Collateral" for the party specified (as the Pledgor):
+​
+PartyA PartyBValuation
+Percentage
+​
+​
+(A)	 Cash: immediately available cash funds that are denominated in U.S.
+Dollars.
+YESYES100%
+​
+​
+(iii)	 Other Eligible Support. Not applicable.
+​
+(iv)	 Thresholds.
+​
+(A)	 " Independent Amount " means for Party A: zero; and
+​
+" Independent Amount " means for Party B: zero.
+​
+(B)	 " Threshold " means for Party A: zero; and
+​
+" Threshold " means for Party B: zero.
+​
+(C)	 " Minimum Transfer Amount " means with respect to Party A:
+$100,000; and
+​
+" Minimum Transfer Amount " means with respect to Party B: $100,000,
+​
+provided that  if an Event of Default or an Additional Termination Event exists with respect to a party, the Minimum Transfer Amount for that party shall be zero, provided further that if the Secured Party is holding Posted Collateral and the Credit Support Amount required to be maintained by the Pledgor is, or is deemed to be, zero for any day, then for purposes of Paragraph 3(b), the Secured Party's Minimum Transfer Amount for that day will be deemed to be zero with respect to that Posted Collateral.
+​
+(D)	 Rounding. The Delivery Amount and the Return Amount will be rounded up and down
+​
+respectively to the nearest integral multiple of $10,000.
+​
+​
+(c)	 Valuation and Timing.
+​
+(i)	 " Valuation Agent " means Party A, provided that it is acknowledged that the function of the Valuation Agent hereunder is administrative in nature, Party A is not acting as Party B's agent, advisor or fiduciary for such purpose, and Party B shall remain responsible for making its own demands for a Delivery Amount or Return Amount based on the Valuation Agent's calculations of Value and Exposure provided to Party B for the relevant Valuation Date; provided that in all cases, if an Event of Default has occurred and is continuing with respect to the party designated as the Valuation Agent, then in such case, and for so long as the Event of Default is continuing, the other party shall be the Valuation Agent.
+​
+(ii)" Valuation Date " means Wednesday of each calendar week during the term of this Annex (as determined pursuant to Paragraph 13(m)(iv) below), unless such day is not a Local Business Day, in which case the "Valuation Date" shall be the immediately following Local Business Day.
+​
+(iii)	 " Valuation Time " means the close of business in New York City on the Valuation Date or date of calculation, as applicable; provided that  the calculations of Value and Exposure will be made as of approximately the same time on the same date.
+​
+(iv)	 " Notification Time " means 10:00 a.m., New York time, on a Local Business Day.
+​
+(v)Transfer Timing. For purposes of Paragraph 4(b), if a demand for the Transfer of Eligible Credit Support or Posted Credit Support is made by the Notification Time, then the relevant Transfer will be made not later than the close of business on the same Local Business Day; if a demand is made after the Notification Time, then the relevant Transfer will be made not later than the close of business on the next Local Business Day.
+​
+(vi)For purposes of Paragraph 8(b)(iv)(B), "Value" shall have its meaning as defined in Paragraph 12 of this Annex, except the words "multiplied by the applicable Valuation Percentage, if any" shall be disregarded.
+​
+(d)	 Conditions Precedent and Secured Party's Rights and Remedies. The following Termination Events will be a " Specified Condition " for the party specified (that party being the Affected Party if the Termination Event occurs with respect to that party):
+​
+​	 PartyA	 PartyB Illegality	 YES	 YES Additional Termination Events	 NO	 YES
+​
+provided that , in the case of an Illegality, if the Affected Party would be entitled to receive Eligible Credit Support or Posted Credit Support from the other party but for that Specified Condition, then (i) the parties may exercise their rights under Section 6(b)(iv)(2)(A) of this Agreement for such Illegality whether or not the Waiting Period has expired, and (ii) Section 6(b)(iv)(2)(B) of this Agreement will not apply if the Affected Party fails to receive Eligible Credit Support or Posted Credit Support from the other party as the result of an event under Section 5(b)(i)(2) of this Agreement being a Specified Condition.
+​
+(e)	 Substitution. The provisions of Paragraph 4(d) will not apply.
+​
+​
+(f)Dispute Resolution. The provisions of Paragraph 5 will not apply. Dispute resolution is provided for instead in Section 11(b) of the Master Confirmation, dated as of October 3, 2023, between Party A and Party B.
+​
+(g)	 Holding and Using Posted Collateral.
+​
+(i)	 Eligibility to Hold Posted Collateral; Custodians. Subject to paragraph 6(c), Each of Party A and Party B will be entitled to hold Posted Collateral itself or through a Custodian pursuant to Paragraph 6(b).
+​
+(ii)Use of Posted Collateral. The provisions of Paragraph 6(c) will apply to both parties, and (for the avoidance of doubt) Party B shall be entitled to hold and use for any lawful purposes the Posted Collateral.
+​
+(h)	 Distributions and Interest Amount.
+​
+(i)	 Interest Rate. Notwithstanding anything to the contrary in Paragraphs 1 through 12 (inclusive), no Interest Amounts shall accrue in respect of the Posted Credit Support and instead the Parties shall exchange and apply the amounts determined in accordance with clause 3 (Transaction Fee Rate) of the Master Confirmation.
+​
+(ii)	 Transfer of Positive Interest Amount or AV Negative Interest Amount. Not applicable.
+​
+(iii)	 Alternative to Positive Interest Amount or AV Negative Interest Amount. Not applicable.
+​
+(i)	 Additional Representation(s). Not applicable.
+​
+(j)	 Other Eligible Support and Other Posted Support. Not applicable.
+​
+(k)	 Demands and Notices. Part 4(a) of the Schedule to the Agreement shall apply, mutatis mutandis , to the CSA.
+​
+ToPartyA:
+​
+WELLS FARGO COMMODITIES,LLC
+550 S. Tryon St., 6th Floor
+Coll Mgmt - MAC-- D1086-063
+Charlotte, NC 28202
+​
+Attention: Collateral Management Phone: (704) 410-9218
+Email: collateral.mgmt@wellsfargo.com
+​
+ToPartyB:
+​
+MONTANA RENEWABLES,LLC
+1807 3rd Street NW Great Falls, MT 59404
+​
+Attention: Chief Financial Officer Phone: 317-328-5660
+​
+​
+Email: vincent.donargo@calumetspecialty.com With copy to:
+Chief Financial Officer
+Calumet Specialty Products Partners, L.P. 2780 Waterfront Parkway E. Drive Indianapolis, IN 46214
+Phone: 317 328 5660
+Email: vincent.donargo@calumetspecialty.com
+​
+Calumet Legal Dept., Attention Assistant General Counsel 2780 Waterfront Parkway E. Drive
+Indianapolis, IN 46214
+Phone: 317 328 5660
+Email: greg.morical@calumetspecialty.com And
+Joshua P. Agrons, Esq.
+Norton Rose Fulbright US LLP 1301 McKinney Street, Suite 5100
+Houston, TX 77010
+Phone: 713 651 5529
+Email: josh.agrons@nortonrosefulbright.com
+​
+​
+(l)	 Addresses for Transfers. For each Transfer hereunder, instructions will be provided by the recipient for that specific Transfer.
+​
+(m)	 Other Provisions.
+​
+(i)	 Exposure. The definition of "Exposure" in Paragraph 12 shall be deemed to be deleted and instead "Exposure" shall mean, for each Valuation Date, or other date for which Exposure is calculated, an amount in U.S. Dollars determined in accordance with Appendix 1 (Exposure Calculation) hereto; and
+(i) if such amount is positive, then Party B shall be deemed to have an Exposure to Party A equal to such amount (and Party A has no Exposure to Party B), or (ii) if such amount is negative then Party A shall be deemed to have an Exposure to Party B equal to the absolute value of such amount (and Party B has no Exposure to Party A), and in either case "Credit Support Amount" shall be construed accordingly.
+​
+(ii)	 Expenses. Paragraph 10(b) is amended by adding the following at the end thereof:
+​
+"Notwithstanding this Paragraph 10(b), but subject to clause 17 of the Master Confirmation, Section 2(d) of the Agreement shall apply to any Indemnifiable Tax imposed on a payment or deemed payment by the Secured Party to the Pledgor described in Paragraph 6(d)."
+​
+(iii)Term and Termination. Notwithstanding anything to the contrary in Paragraphs 1 through 12 (inclusive), this Annex shall take effect from and including the Effective Date (as defined in the Master Confirmation, as defined in Appendix 1 hereto) and no payments or deliveries shall be made hereunder by either Party prior to such date. Irrespective of whether the Master Confirmation
+​
+​
+remains outstanding, this Annex shall terminate on the final Valuation Date in October, 2026, except as explicitly provided for in the Master Confirmation.
+Upon the end of such term the Secured Party will Transfer to the Pledgor all Posted Credit Support pursuant to Paragraph 8(d) (Final Returns), subject to Paragraphs 8(a) (Secured Party 's Rights and Remedies) and 8(b) (_Pledgor 's Rights and Remedies_) (as applicable).
+​
+(iv)Maximum Facility Size - Accordion. Party B may from time to time request in writing to Party A that the Maximum Facility Size be increased, _provided that_ :
+​
+(A)	 Party B may not make more than four such requests;
+​
+(B)	 each such request must be for an increase size of at least $10,000,000;
+​
+(C)the aggregate amount by which the Maximum Facility Size may be increased hereunder shall not exceed the Maximum Accordion Size (as defined in the Fee Letter); and
+​
+(D)Party B may not so request an increase in the Maximum Facility Size if the Total Inventory Value as of the date of such request is less than 101% of the proposed post-increase Maximum Facility Size.
+​
+Any such request may be granted by Party A in its sole discretion, subject to such additional terms as Party A and Party B may agree in respect thereof. If Party A grants any such request and the Maximum Facility Size is increased, then Party B shall pay a fee to Party A equal to the product of
+(1) the Structuring Fee Percentage (as defined in the Fee Letter, as defined in the Master Confirmation) and (2) the amount of such increase, within three Business Days of demand by Party A (provided that Party A may elect, after written notice to Party B, to set off such fee against the first Delivery Amount owing from Party A to Party B after the Valuation Date on which such increase takes effect).
+​
+(v)Inventory Reporting. On or prior to 10:00 am Central Time on each Valuation Date (and more frequently as Party A may reasonably request), Party B shall provide Party A with a report (the "Collateral Inventory Report ") in writing, substantially in the form attached as Appendix 3 hereto, describing the location, quantity, value and ownership (i.e. Party A or Party B) of all Collateral Inventory (as defined in Appendix 1 hereto) as of 11:59 pm (Mountain Standard Time) (or as close as reasonably practicable thereto) on the calendar day immediately preceding the Valuation Date or such other date on which that Collateral Inventory Report is delivered.
+​
+(n)	 2002 Master Agreement Protocol Amendments. This Annex is hereby amended by incorporating the amendments appearing in paragraphs (a) through
+(d) (inclusive) of Annex 14 of the 2002 Master Agreement Protocol published on July 15, 2003 by the International Swaps and Derivatives Association, Inc.
+​
+​
+INWITNESSWHEREOF the parties have executed this Credit Support Annex as of the date hereof.
+​
+​
+WELLS FARGO COMMODITIES, LLC
+​
+​
+​
+By: /s/ Rilla Park _
+Name: Rilla Park
+Title: Authorized Signatory
+MONTANA RENEWABLES, LLC
+​
+​
+​
+By: /s/ Vincent Donargo
+Name: Vincent Donargo
+Title: Executive Vice President and Chief Financial Officer
+​
+​

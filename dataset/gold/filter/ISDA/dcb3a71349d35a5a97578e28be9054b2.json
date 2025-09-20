@@ -1,0 +1,13 @@
+{
+  "filename": "dcb3a71349d35a5a97578e28be9054b2.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 502,
+      "end_line": 621,
+      "confidence": 1.0,
+      "explanation": "Lines 502-621 contain the full text of the Amended and Restated Schedule to the ISDA Master Agreement, as referenced in the amendment at lines 485 and 500. This span includes all the negotiated terms between the parties that supplement and modify the standard ISDA Master Agreement, and is clearly demarcated as the Schedule. It does not include the standard pre-printed Master Agreement, CSA annexes, or other unrelated sections."
+    }
+  ]
+}

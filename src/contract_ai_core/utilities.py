@@ -111,6 +111,13 @@ def get_langchain_chat_model(
     raise NotImplementedError(f"Unsupported provider: {provider}")
 
 
+def text_to_paragraphs(text: str) -> list[Paragraph]:
+    """Split text into paragraphs WITHOUT markdown cleanup and heuristic merging."""
+    if not text:
+        return []
+    return [Paragraph(index=i, text=block) for i, block in enumerate(text.split("\n")) if block]
+
+
 def split_text_into_paragraphs(text: str) -> list[Paragraph]:
     """Split text into paragraphs with markdown cleanup and heuristic merging.
 

@@ -1,0 +1,13 @@
+{
+  "filename": "fd6d2e764d4b514a8ed3f1af461e1e41.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 2,
+      "end_line": 191,
+      "confidence": 0.99,
+      "explanation": "Lines 2-191 comprise the entire Schedule to the ISDA Master Agreement, including all its Parts (1-7) and their respective provisions. The text before line 2 is cover/exhibit info, and lines after 191 are signatures and execution blocks. The Schedule proper is fully contained within lines 2-191."
+    }
+  ]
+}

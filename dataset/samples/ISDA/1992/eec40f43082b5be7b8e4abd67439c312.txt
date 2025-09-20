@@ -1,0 +1,92 @@
+SCHEDULE
+TO THE
+ISDA MASTER AGREEMENT
+dated as of January 8, 2008
+between
+KEYBANK NATIONAL ASSOCIATION 	  And 	  GENERAL MARITIME CORPORATION
+("Party A") ("Party B")
+Part 1. Termination Provisions.
+(a) "Specified Entity" means in relation to Party A for the purpose of:
+Section 5(a)(v): Not applicable.
+Section 5(a)(vi): Not applicable.
+Section 5(a)(vii): Not applicable.
+Section 5(b)(iv): Not applicable.
+and in relation to Party B for the purpose of:
+Section 5(a)(v): Not applicable.
+Section 5(a)(vi): Any current or future Affiliate of Party B.
+Section 5(a)(vii): Not applicable.
+Section 5(b)(iv): Not applicable.
+(b) "Specified Transaction" will have the meaning specified in Section 14 of this Agreement.
+(c) The "Cross Default" provisions of Section 5(a)(vi) will apply to Party A and Party B provided, however,
+Section 5(a)(vi) of the Agreement is hereby amended by the addition of the following at the end thereof: "provided, however, that notwithstanding the foregoing, an Event of Default shall not occur under either (1) or (2) above if (a) the event or condition referred to in (1) or the failure to pay referred to in (2) is a failure to pay caused by an error or omission of an administrative or operational nature; and (b) funds were available to such party to enable it to make the relevant payment when due; and (c) such relevant payment is made within three Business Days following receipt of written notices from an interested party of such failure to pay.".
+(d) 	  "Specified Indebtedness" will have the meaning specified in Section 14 of this Agreement but shall exclude deposits received in the ordinary course of a party's banking business.
+(e) 	  "Threshold Amount" means
+(i) with respect to Party A, an amount equal to 3% of its Stockholders' Equity; and
+(ii) with respect to Party B, means $10,000,000.00.
+For purposes hereof "Stockholders' Equity" means, with respect to Party A, at any time, the sum (as shown in its most recent Call Report) of (i) its capital stock (including preferred stock) outstanding,
+taken at par value, (ii) its capital surplus, and (iii) its retained earnings, minus (iv) treasury stock, each to be determined in accordance with generally accepted accounting principles.
+(f) The "Credit Event Upon Merger" provisions of Section 5(b)(iv) will apply to Party A and Party B.
+(g) The "Automatic Early Termination" provision of Section 6(a) will not apply to Party A or Party B.
+(h) Payments on Early Termination. For the purpose of Section 6(e) of this Agreement:
+The Second Method and Market Quotation will apply.
+(i) Additional Termination Event: will not apply to Party A or Party B.
+Part 2. Tax Representations. Not applicable
+(a) Payer  Representations. For the purpose of Section 3(e) of this Agreement, Party A and Party B will make the following representations:
+It is not  required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other  than interest under Section 9(h) of this Agreement) to be made by it to the  other party under this Agreement.  In making this representation, it may  rely on:
+(i)  the accuracy of any representation made by the other party pursuant to Section 3(f) of this Agreement;
+(ii) the satisfaction of the agreement of  the other party contained in Section 4(a)(i) or 4(a)(iii) and the accuracy and effectiveness of any document provided by the other party pursuant to Section  4(a)(i) or 4(a)(iii) of this Agreement; and
+(iii)  the satisfaction of  the agreement of the other party contained in Section 4(d) of this Agreement,  provided that it shall not be a breach of this representation where reliance  is placed on clause (ii) and the other party does not deliver a form or  document under Section 4(a)(iii) by reason of material prejudice to its legal  or commercial position.
+(b)  Payee Representations. For the purpose of Section 3(f) of this Agreement, Party A and Party B will each make the representations specified below:
+The following representation will apply to Party B and will not apply to Party A:
+It is a "foreign person" as that term is used in Section 1.6041-4(a)(4) of the United States Treasury Regulations (as in effect on  January 2001).
+Part 3. Agreement to Deliver Documents.
+For the purpose of Section 4(a) of this Agreement, Party B agrees to deliver the following documents:
+(a) 	  A certificate of an authorized officer of Party B evidencing the necessary corporate authorizations, resolutions, and approvals with respect to the execution, delivery and performance of this Agreement, and certifying the names, true signatures, and authority of the officer(s) signing this Agreement and executing Transactions hereunder.
+(b) 	  Quarterly and annual financial statements of Party B upon reasonable request by Party A when publicly avaialable.
+(c) A duly completed and executed IRS Form W8-BEN or IRS Form W8-ECI as appropriate (as most recently revised) upon execution of this Agreement and thereafter when requested by Party A.
+Part 4. Miscellaneous.
+(a) 	  Addresses for Notices: For the purpose of Section 10(a) of this Agreement
+Address for notices or communications to Party A:
+Address: 127 Public Square, OH-01-27-0405, Cleveland, Ohio 44114
+Attention: Interest Rate and Energy Risk Management
+Facsimile No.: 216-689-4737
+Telephone No.: 216-689-4071
+Address for notices or communications to Party B:
+Address: 299 Park Avenue New York, NY 1017
+Attention: Chief Financial Officer
+Facsimile No.: 212-763-5607
+Telephone No.: 212-763-5680
+(b) 	  Calculation Agent. The Calculation Agent is Party A, however when Party B disputes any determination, calculation or estimate, then (i) the relevant party shall immediately pay the amount, if any, that is not in dispute and (ii) the parties shall promptly appoint a mutually agreed upon independent third party that would qualify as a Reference Market-maker (a "Substitute Calculation Agent") to resolve the disptue the dermination which shall be final and binding absent manifest error. If the parties cannot agree on a Substitute Calculation Agent, each party shall elect an independent Reference Market-maker and such Reference Market-makers jointly shall appoint a third Reference Market-maker which shall be deemed to be the Substitute Calculation Agent, unless otherwise agreed in a Confirmation in relation to the relevant Transaction. The fees and expenses of such Substitute Calculation Agent shall be borne equally by both parties.
+(c) 	  Credit Support Document. In relation to Party A, means not applicable. In relation to Party B, means none as of the current date however in the future any guarantee, security agreement, or other document in effect from time to time that, by its terms, guarantees, secures or otherwise supports the performance of Party B's obligations under this Agreement
+(d) 	  Credit Support Provider. In relation to Party A, means not applicable. In relation to Party B, means each party to any Credit Support Document of Party B, other than (i) Party A or Party B, (ii) any Affiliate of Party A, or (iii) any other secured party under such Credit Support Document.
+(e) 	  Governing Law. THIS AGREEMENT WILL BE GOVERNED BY AND CONSTRUED IN ACCORDANCE WITH THE LAWS OF THE STATE OF NEW YORK WITHOUT REFERENCE TO CHOICE OF LAW DOCTRINE.
+(f) 	  Payments.
+Party A will make payments to Party B by transfer to the account of Party B at KeyBank National Association (Account Number: ).
+Party B will make payments to Party A by transfer from the account of Party B at KeyBank National Association (Account Number: _).
+Part 5. Other Provisions.
+(a) 	  Additional Representations. Party B represents to Party A (which representation will be deemed to be repeated by Party B on each date on which a Transaction is entered into) that it, or any Credit Support Provider, has (i) if a corporation, partnership, proprietorship, limited liability company or trust (1) total assets exceeding $10,000,000 or (2) a net worth exceeding $1,000,000 and is entering into the Transaction in connection with the conduct of its business or to manage the risk associated with an asset or liability owned or incurred in the conduct of its business, or (ii) if an individual, total assets exceeding (1) $10,000,000 or (2) $5,000,000 and who is entering into the transaction to manage the risk associated with an asset owned or liability incurred, or reasonably likely to be owned or incurred, by the individual, and as such, it is an "eligible contract participant" as such term is defined in Section 1a (12) of the Commodity Exchange Act (2000).
+(b) 	  Event of Default. Each party agrees to notify the other party of the occurrence of any Event of Default or Potential Event of Default as soon as reasonably practicable after learning of the occurrence thereof.
+(c) 	  Disclaimer. In entering into this Agreement, Party B acknowledges and agrees that:
+1. 	  Party B understands that there is no assurance as to the direction in which interest rates, commodity prices or other indices in the markets may move in the future and that Party A makes no covenant, representation, or warranty in this regard or in regard to the suitability of the terms of the Agreement or any Transaction to the particular needs and financial situation of Party B.
+2. 	  Party B is acting for its own account and has made its own independent, informed decision to enter into this Agreement and any Transaction, and as to whether that Transaction is appropriate or proper for it, based upon its own judgment and upon advice from such advisers as it has deemed necessary.
+3. 	  Party B represents, which representation shall be deemed repeated with respect to and at the time of each Transaction, that (A) it has had the opportunity, independently of Party A and Party A's affiliates, officers, employees, and agents, to consult its own financial advisors and has determined that it is in Party B's interest to enter into the Agreement and such Transaction, (B) it is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice) and understands and accepts the terms, conditions and risks of such Transaction and (C) it is capable of assuming and assumes all risks (financial and otherwise) associated with such Transaction, including but not limited to, Market Risk (defined as the risk that the Transaction may increase or decrease in value with a change in, among other things, commodity prices and/or indices, interest rates or the yield curve), and Liquidity Risk (defined as the risk that the Transaction cannot be closed out of or disposed of quickly at or near its value).
+4. 	  Party A is not acting as a fiduciary for or advisor to Party B in respect of any Transaction.
+5. 	  Party B is not relying on any communications (written or oral) of Party A as investment advice or as a recommendation to enter into this Transaction, it being understood that information and explanations related to the terms and conditions of this Agreement and any Transaction shall not be considered investment advice or a recommendation to enter into this Transaction.
+6. 	  Party B represents, which representation shall be deemed repeated with respect to and at the time of each Transaction, that as to Transactions to be entered into on "electronic trading facilities", it is an "eligible commercial entity" as defined in Section 101(11) of the Commodity Futures Modernization Act of 2000 (7 U.S.C.A. Section 1a(11)(West Supp. 2001)).
+7. 	  Party B acknowledges and agrees that all Transactions constitute "swap agreements" within the meaning of the United States Bankruptcy Code.
+8. 	  Party B acknowledges that the material economic terms of the Agreement, any Credit Support Document to which it is a party, and each Transaction have been individually tailored and negotiated by it; it has received and reviewed financial information concerning Party A and has had a reasonable opportunity to ask questions of and receive answers and information from Party A concerning Party A, this Agreement, such Credit Support Document, and such Transaction; the creditworthiness of Party A was a material consideration in its entering into or determining the terms of this Agreement, such Credit Support Document, and such Transaction; and the transferability of this Agreement, such Credit Support Document, and such Transaction is restricted as provided herein and therein.
+(d) 	  Waiver of Jury Trial. Each party hereby irrevocably waives, to the fullest extent permitted by applicable law, any and all rights it may have to trial by jury in respect of any proceedings arising out of or relating to this Agreement or any Transaction and acknowledges that it and the other party have been induced to enter into this Agreement by, among other things, these mutual waivers.
+(e) 	  Set-off. Any amount (the "Early Termination Amount") payable to one party (the "Payee") by the other party (the "Payer") under Section 6(e), in circumstances where there is a Defaulting Party or one Affected Party in the case where a Termination Event under Section 5(b)(iv) has occurred, will, at the option of the party ("X") other than the Defaulting Party or the Affected Party (and without prior notice to the Defaulting Party or the Affected Party), be reduced by its set-off against any amount(s) (the "Other Agreement Amount") payable (whether at such time or in the future or upon the occurrence of a contingency) by the Payee to the Payer (irrespective of the currency, place of payment or booking office of the obligation) under any other agreement(s) between the Payee and the Payor or instrument(s) or undertaking(s) issued or executed by one party to, or in favor of, the other party (and the Other Agreement Amount will be discharged promptly and in all respects to the extent it is so set-off). X will give notice to the other party of any set-off effected under this paragraph.
+For this purpose, either the Early Termination Amount or the Other Agreement Amount (or the relevant portion of such amounts) may be converted by X into the currency in which the other is denominated at the rate of exchange at which such party would be able, acting in a reasonable manner and in good faith, to purchase the relevant amount of such currency.
+If an obligation is unascertained, X may in good faith estimate that obligation and set-off in respect of the estimate, subject to the relevant party accounting to the other when the obligation is ascertained.
+Nothing in this paragraph shall be effective to create a charge or other security interest. This paragraph shall be without prejudice and in addition to any right of set-off, combination of accounts, lien or other right to which any party is at any time otherwise entitled (whether by operation of law, contract or otherwise)."
+(f) 	  USA PATRIOT Act Notice. Party A hereby notifies Party B that pursuant to the requirements of the USA Patriot Act (Title III of Pub. L 107-56 (signed into law October 26, 2001)) (the "Act"), it is required to obtain, verify and record information that identifies Party B, which information includes
+the name and address of Party B, the Tax-Identification Number, and other information that will allow Party A to identify Party B in accordance with the Act.1
+(g) 	  Termination. Party B acknowledges that upon an early termination of any or all Transactions or Specified Transactions under this Agreement, monies may be due and payable by Party B to Party A, or by Party A to Party B.
+(h) 	  Definitions. Unless otherwise specified in a Confirmation, each Transaction between the parties shall be subject to the 2000 ISDA Definitions (the "2000 Definitions") and the 2005 ISDA Commodity Definitions (the "2005 Commodity Definitions", and, together with the 2000 Definitions, the "Definitions"), each as published by the International Swaps and Derivatives Association, Inc., as such Definitions may be amended, supplemented, replaced, or modified, are incorporated by reference into this Agreement and each Confirmation as if fully set forth herein or in such Confirmation. For these purposes, all references in the Definitions to a "Swap Transaction" shall be deemed to apply to each Transaction under this Agreement. Unless expressly provided otherwise, in the event of any inconsistency between the provisions of this Agreement and the Definitions, this Agreement will prevail. In the event of any inconsistency between the provisions of any Confirmation and this Agreement or the Definitions, such Confirmation will prevail for the purpose of the relevant transaction. In the event of any inconsistency between the 2000 Definitions and the 2005 Commodity Definitions, the 2005 Commodity Definitions will prevail with respect to a Commodity Transaction.
+IN WITNESS WHEREOF, the parties have executed this Schedule by their duly authorized officers as of the date hereof.
+KEYBANK NATIONAL ASSOCIATION 	  	  GENERAL MARITIME CORPORATION
+By: /s/ Thomas J. Simenic By: /s/ Jeffrey D. Pribor
+Name: Thomas J. Simenic Name: Jeffrey D. Pribor
+Title: Senior Vice President Title: Chief Financial Officer
+Date: January 8, 2008 Date: February 15, 2008

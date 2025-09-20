@@ -49,3 +49,474 @@ It is an Australian resident and does not derive the payments under this Agreeme
 PART 3. AGREEMENT TO DELIVER DOCUMENTS
 For the purpose of Sections 4(a)(i) and (ii) of this Agreement, each party agrees to deliver to each other party the following documents, as applicable:
 (a)  TAX FORMS, DOCUMENTS OR CERTIFICATES TO BE DELIVERED ARE:
+PARTY REQUIRED TO     FORM/DOCUMENT/CERTIFICATE        DATE BY WHICH TO BE DELIVERED DELIVER DOCUMENT
+Party A and Party B   Any document or certificate      On the earlier of (a) learning reasonably required or           that such document or reasonably requested by a        certificate is required and party in connection with its     (b) as soon as reasonably obligations to make a payment    practicable following a under this Agreement which       request by a party.
+would enable that party to make the payment free from any deduction or withholding for or on account of Tax or which would reduce the rate at which deduction or withholding for or on account of Tax is applied to that payment.
+(b)  OTHER DOCUMENTS TO BE DELIVERED ARE:
+COVERED BY PARTY REQUIRED TO                                                                        SECTION 3(D) DELIVER DOCUMENT      FORM/DOCUMENT/CERTIFICATE        DATE BY WHICH TO BE DELIVERED    REPRESENTATION
+Party A               A certificate from Party A       On execution and delivery of          Yes (or, if available, Party A's     any Confirmation unless that current authorised signature     certificate has already been book) specifying the names,      supplied for that purpose and title and specimen signatures    remains true and in effect and of the Authorised Officers of    when the list is updated or Party A.                         upon request.
+Party A, Party B      A legal opinion as to the        On or at any time prior to the        No and the Manager       validity and enforceability of   Closing Date.
+that party's obligations under this Agreement in form and substance (and issued by legal counsel) reasonably acceptable to the other party.
+The Manager           A copy (certified by the         Not less than 5 Business Days         Yes Manager) of the Credit Support   (or such lesser period as Document and (without limiting   Party A agrees to) before the any obligation Party B may       Trade Date of the first have under the terms of the      occurring Transaction and in Credit Support Document to       the case of any amending notify Party A of amendments)    documents entered into a copy (certified by the         subsequent to that date, Manager) of any document that    promptly after each amending amends in any way the terms of   document (if any) has been the Credit Support Document.     entered into.
+For the purposes of this paragraph (b) a copy of a document is taken to be certified by the Manager if an Authorised Officer of the Manager or legal counsel for the Manager has certified it to be a true and complete copy of the document of which it purports to be a copy.
+PART 4. MISCELLANEOUS
+(a)  ADDRESSES FOR NOTICES. For the purpose of Section 12(a) of this Agreement:
+Address for notices or communications to PARTY A:
+Address:       Commonwealth Bank of Australia Level 1 48 Martin Place Sydney NSW 2000 AUSTRALIA
+Attention:     Manager, Securitisation
+Facsimile No.: 612 9378 2481
+Address for notices or communications to PARTY B:
+Address:       Perpetual Trustee Company Limited Level 7 9 Castlereagh Street Sydney NSW 2000 AUSTRALIA
+Attention:     Manager, Securitisation Services
+Facsimile No.: 612 9221 7870
+Additionally, a copy of all notices as well as any changes to a party's address, telephone number or facsimile number should be sent to:
+Address:       Securitisation Advisory Services Pty. Limited Level 7 48 Martin Place Sydney NSW 2000 AUSTRALIA
+Attention:     Manager, Securitisation
+Facsimile No.: 612 9378 2481
+(b)  PROCESS AGENT. For the purpose of Section 13(c) of this Agreement:
+Party A appoints as its Process Agent - Not Applicable
+Party B appoints as its Process Agent - Not Applicable
+(c)  OFFICES. The provisions of Section 10(a) will not apply to this Agreement.
+(d)  MULTIBRANCH PARTY. For the purpose of Section 10(c) of this Agreement.
+Party A is not a Multibranch Party.
+Party B is not a Multibranch Party.
+(e)  CALCULATION AGENT. The Calculation Agent is the Manager.
+(f)  CREDIT SUPPORT DOCUMENT. Details of any Credit Support Document:
+(i)  in relation to Party A: Nil;
+(ii) in relation to Party B: the Security Trust Deed.
+(g)  CREDIT SUPPORT PROVIDER.
+(i)  In relation to Party A: Not Applicable.
+(ii) In relation to Party B: Not Applicable.
+(h)  GOVERNING LAW. This Agreement will be governed by and construed in accordance with the laws in force in the State of New South Wales and Section 13(b)(i) is deleted and replaced by the following:
+"(i) submits to the non-exclusive jurisdiction of the courts of the State of New South Wales and courts of appeal from them; and".
+(i)  NETTING OF PAYMENTS. Subparagraph (ii) of Section 2(c) of this Agreement will apply in respect of all Transactions.
+(j)  "AFFILIATE" will have the meaning specified in Section 14 of this Agreement. For the purposes of Section 3(c), Party A and Party B are deemed not to have any Affiliates.
+PART 5. OTHER PROVISIONS.
+(1)  PAYMENTS: In Section 2:
+(a)  In Section 2(a)(i) add the following sentence:
+"Each payment will be by way of exchange for the corresponding payment or payments payable by the other party."
+(b)  In Section 2(a)(ii) the first sentence is deleted and replaced with the following sentence:
+"Unless specified otherwise in this Agreement, payments under this Agreement will be made by 10.00am on the due date for value on that date in the place of the account specified in the relevant Confirmation or otherwise pursuant to this Agreement, in freely transferable funds, free of any set-off, counterclaim, deduction or withholding (except as expressly provided in this Agreement) and in the manner customary for payment in the required currency."
+(c)  Insert a new paragraph (iv) in Section 2(a) immediately after Section 2(a)(iii) as follows:
+"(iv) The condition precedent in Section 2(a)(iii)(1) does not apply to a payment due to be made to a party if it has satisfied all its payment obligations under Section 2(a)(i) of this Agreement and has no future payment obligations, whether absolute or contingent under Section 2(a)(i)."
+(d)  Add the following new sentence to Section 2(b):
+"Each new account so designated will be in the same tax jurisdiction as the original
+account."
+(e)  In Section 2(c) insert the following words at the end of the first paragraph:
+"Subject to Section 2(f), the aggregate amount that would otherwise be payable will not take into account amounts due on that Payment Date pursuant to Sections 2(g), 17, 18 or 19."
+(f)  Delete Section 2(d)(i)(4) in its entirety.
+(g)  In Section 2(d)(ii)(1) delete the following where they appear:
+"in respect of which X would not be required to pay an additional amount to Y under Section 2(d)(i)(4)".
+(h)  Insert new Sections 2(f) and 2(g) as follows:
+"(f) If on a Payment Date an amount would otherwise be payable by Party A pursuant to Section 2(c):
+(i)  in respect of a Fixed Rate Swap, then such amount will, unless otherwise agreed between Party A and Party B, be satisfied in part, or whole, from the then Fixed Rate Prepayment Balance; and
+(ii) in respect of the Basis Swap, then such amount will, unless otherwise agreed between Party A and Party B, be satisfied in part, or whole, from the then Basis Prepayment Balance.
+(g)  On each Payment Date that a Fixed Rate Swap is existing Party B will pay Party A any Break Costs determined by the Manager on the preceding Determination Date in accordance with the Series Supplement."
+(2)  REPRESENTATIONS: In Section 3:
+(a)  Section 3(a)(v) is amended by inserting immediately after the words "creditors' rights generally" the following:
+"(including in the case of a party being an ADI (as that term is defined in the Banking Act, 1959 (Cth)), Section 86 of the Reserve Bank Act, 1969 (Cth) and section 13A(3) of the Banking Act, 1959 (Cth))."
+(b)  RELATIONSHIP BETWEEN PARTIES. Each party will be deemed to represent to the other parties on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction):
+(i)  NON-RELIANCE. It is acting for its own account (in the case of Party B, as trustee of the Series Trust), and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment (and in the case of Party B, also upon the judgment of the Manager) and upon advice from such advisers as it has deemed necessary. It is not relying on any communication (written or oral) of any other party as investment advice or as a recommendation to enter into that Transaction; it being understood that information and explanations related to the terms and conditions of a Transaction will not be considered investment advice
+or a recommendation to enter into that Transaction. No communication (written or oral) received from any other party will be deemed to be an assurance or guarantee as to the expected results of that Transaction.
+(ii) EVALUATION AND UNDERSTANDING. It is capable of evaluating and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction. It is also capable of assuming, and assumes, the risks of that Transaction.
+(iii) STATUS OF PARTIES. No other party is acting as a fiduciary or an adviser to it in respect of that Transaction.
+(c)  After "Section 3(f)" in line 2 insert ",3(g), 3(h) and 3(i)".
+(d)  Insert the following new paragraphs (g), (h) and (i) in Section 3 immediately after Section 3(f):
+"(g) SERIES TRUST: By Party B, in respect of Party B only:
+(i)  TRUST VALIDLY CREATED. The Series Trust has been validly created and is in existence at the date of this Agreement.
+(ii) SOLE TRUSTEE. It has been validly appointed as trustee of the Series Trust and is presently the sole trustee of the Series Trust.
+(iii) NO PROCEEDINGS TO REMOVE. No notice has been given to it and to its knowledge no resolution has been passed, or direction or notice has been given, removing it as trustee of the Series Trust.
+(iv) POWER. It has power under the Master Trust Deed to:
+(A)  enter into this Agreement and the Credit Support Documents in its capacity as trustee of the Series Trust; and
+(B)  mortgage or charge the Assets of the Series Trust in the manner provided in the Credit Support Document in relation to Party B.
+(v)  GOOD TITLE. It is the lawful owner of the Assets of the Series Trust and, subject only to the Credit Support Document in relation to Party B and any Security Interest permitted under the Credit Support Document in relation to Party B, to the best of its knowledge without due enquiry, those Assets are free of all other Security Interests (except for Party B's right of indemnity out of the Assets of the Series Trust).
+(h)  NON ASSIGNMENT. It has not assigned (whether absolutely, in equity, by way of security or otherwise), declared any trust over or given any charge over any of its rights under this Agreement or any Transaction except, in the case of Party B, for the Security Interests created under any Credit Support Document specified in relation to Party B.
+(i)  CONTRACTING AS PRINCIPAL. Each existing Transaction has been entered
+into by that party as principal and not otherwise."
+(3)  FAILURE TO PAY OR DELIVER: In Section 5(a)(i) delete the words "third Local" where they appear in line 3 and replace them with the word "tenth".
+(4)  TERMINATION: In Section 6:
+(i)  Add the following sentence at the end of the first paragraph of Section 6(b)(ii):
+"However, if Party B is the Affected Party, then Party B will only be obliged to make such efforts to effect a transfer in accordance with this Section 6(b)(ii) as it is able to make by application of funds held by it as trustee of the Series Trust being funds available for such application in accordance with the provisions of the Master Trust Deed and the Series Supplement."
+(ii) Add the following sentence at the end of the second paragraph of Section 6(b)(ii):
+"However, if Party A is that other party it must, if so requested by the Manager with the prior consent of the Rating Agencies, use reasonable efforts to make such a transfer to an Affiliate (as that expression is defined in Section 14 disregarding any modification made by this Agreement)."
+(iii) Add the following sentence at the end of the last paragraph of Section 6(b)(ii):
+"However, consent may be withheld if the other party considers that its credit exposure to the transferee would be adversely affected by the transfer."
+(iv) Section 6(e) is amended by deleting the last sentence of the first paragraph.
+(5)  FACSIMILE TRANSMISSION: In Section 12:
+(a)  delete the following words where they appear on lines 2 and 3 of Section 12(a):
+"(except that a notice or other communication under Section 5 or Section 6 may not be given by facsimile transmission or electronic messaging system)";
+(b)  replace Section 12(a)(iii) with:
+"(iii) if sent by facsimile transmission, on the date a transmission report is produced by the machine from which the facsimile was sent which indicates that the facsimile was sent in its entirety to the facsimile number of the recipient notified for the purpose of this Section unless the recipient notifies the sender within one Local Business Day of the facsimile being sent that the facsimile was not received in its entirety in legible form;"; and
+(c)  insert a new paragraph (vi) in Section 12(a) immediately after Section 12(a)(v) as follows:
+"(vi) if sent by ordinary mail, on the third (seventh, if posted to or from a place outside Australia) day after posting."
+(6)  DEFINITIONS: In this Agreement, unless the contrary intention appears:
+(a)  MASTER TRUST DEED AND SERIES SUPPLEMENT: Subject to Part 5(6)(h) of this Schedule, unless otherwise defined in this Agreement, words and phrases defined in the Master Trust Deed or the Series Supplement have the same meaning in this Agreement. Where there is any inconsistency in a definition between this
+Agreement (on the one hand) and the Master Trust Deed or the Series Supplement (on the other hand), this Agreement prevails. Subject to Part 5(6)(h) of this Schedule, where there is any inconsistency in a definition between the Master Trust Deed and the Series Supplement, the Series Supplement prevails over the Master Trust Deed in respect of the Series Trust. Where words or phrases used but not defined in this Agreement are defined in the Master Trust Deed in relation to a Series Trust (as defined in the Master Trust Deed) and/or an Other Trust such words or phrases are to be construed in this Agreement, where necessary, as being used only in relation to the Series Trust (as defined in the Series Supplement) and/or the CBA Trust, as the context requires.
+(b)  TRUSTEE CAPACITY:
+(i)  a reference to Party B is a reference to Party B in its capacity as trustee of the Series Trust only, and in no other capacity; and
+(ii) a reference to the undertaking, assets, business or money of Party B is a reference to the undertaking, assets, business or money of Party B in the capacity referred to in paragraph (i) only.
+(c)  DEFINITIONS: in Section 14:
+(i)  replace the definitions of "AFFECTED TRANSACTIONS" and "LOCAL BUSINESS DAY" with the following:
+""AFFECTED TRANSACTIONS" means, with respect to a Termination Event:
+(a)  where an Early Termination Date is designated pursuant to Part 1(g) of the Schedule, the Basis Swap; and
+(b)  where an Early Termination Date is designated following the occurrence of any other Termination Event, all Transactions."; and
+""LOCAL BUSINESS DAY" has the same meaning as "BUSINESS DAY."; and
+(ii) insert the following new definitions:
+"AMOUNTS OUTSTANDING" in relation to a Mortgage Loan means, at any given time, the amount recorded at that time as the balance of the Mortgage Loan in the Mortgage Loan System which balance includes amounts which have been charged to the Mortgage Loan but excludes amounts which have been or are, accrued against the Mortgage Loan.
+"BASIS PREPAYMENT BALANCE" means the amount then standing to the credit of the Collections Account in respect of prepayments by Party A pursuant to Sections 18(c) or (d) and which has not been utilised pursuant to Section 2(f)(ii).
+"BASIS SWAP" means the Transaction entered into between Party A, Party B and the Manager on the terms specified in the form of Confirmation set out in Annexure 1 (or as otherwise agreed between Party A, Party B and the Manager);
+"BASIS SWAP ADMINISTERED RATE" means in relation to a Distribution Date the amount determined in accordance with the following
+calculation and expressed as a percentage:
+BSAR=[(CVCI+(CBSII x BSS))/BSA] x 365/N
+BSAR means the Basis Swap Administered Rate in relation to the Distribution Date;
+BSA  means the Basis Swap Amount for the Calculation Period ending immediately before that Distribution Date;
+N    means the number of days in the Swap Collection Period ending immediately before that Distribution Date;
+CVCI means the sum of the Variable Interest Earned in respect of the Swap Collection Period ending immediately before each Distribution Date since the previous Distribution Date;
+CBSII means the sum of the Short-Term Investment Income in respect of each Distribution Date since the previous Distribution Date;
+BSS  means the Basis Swap Share determined in accordance with the following calculation and expressed as a percentage:
+BSS = BSA / (BSA + FRSA + OFRSA)
+where:
+BSA  means the Basis Swap Amount for the Calculation Period ending immediately before that Distribution Date;
+FRSA means the Fixed Rate Swap Amount for the Calculation Period ending immediately before that Distribution Date;
+OFRSA means the Other Fixed Rate Swap Amount for the Calculation Period ending immediately before that Distribution Date.
+"BASIS SWAP AMOUNT" in relation to a Calculation Period means the relevant quarterly proportion of the aggregate Amounts Outstanding in relation to all Mortgage Loans being charged a variable rate as certified by the Manager to Party B at the opening of business on the Determination Date falling within the relevant preceding Calculation Period.
+"CONVERSION" means the conversion of a Mortgage Loan forming part of the Assets of the Series Trust which is being charged interest at a variable rate to a Mortgage Loan which is being charged interest at a fixed rate.
+"ELIGIBLE ACCOUNT" means an account in the name of Party B as trustee of the Series Trust held with a financial institution with short term credit ratings of P-1 by Moody's and A-1+ by Standard & Poor's and includes the Collections Account to the extent that the holder of the Collections Account is rated in this manner.
+"END DATE" means the date on which a Mortgage Loan is to cease being charged interest at a fixed rate.
+"FIXED INTEREST EARNED" in relation to a Distribution Date, and the Swap Collection Period ending immediately prior to that Distribution Date, means the aggregate of:
+(a)  all debit entries made during that Swap Collection Period to the accounts established in the Servicer's records for the Mortgage Loans forming part of the Assets of the Series Trust representing interest charged at a fixed rate (plus any interest off-set benefits in respect of Mortgage Interest Saver Accounts which represents amounts which, if not for the terms of the Mortgage Interest Saver Accounts, would have been so debited during that Swap Collection Period to those accounts to the extent paid by CBA pursuant to clause 15.4 of the Series Supplement and deposited to the Collections Account prior to that Distribution Date); and
+(b)  the aggregate, as at the close of business on the last day of that Swap Collection Period, of all accrued but not charged fixed rate interest on the Mortgage Loans forming part of the Assets of the Series Trust less the aggregate, as at the opening of business on the first day of that Swap Collection Period, of all accrued but not charged fixed rate interest on the Mortgage Loans forming part of the Assets of the Series Trust.
+"FIXED RATE PREPAYMENT BALANCE" means the amount then standing to the credit of the Eligible Account in respect of prepayments by Party A pursuant to Sections 17(a)(iii), (b)(i), (e)(i) or (g) and which has not been utilised pursuant to Section 2(f)(i) or repaid to Party A pursuant to Sections 17(e)(ii) or (h).
+"FIXED RATE SWAP AMOUNT" in relation to a Calculation Period means:
+(a)  the relevant quarterly proportion of the aggregate Amounts Outstanding in relation to all Mortgage Loans (excluding Mortgage Loans being charged a variable rate) as certified by the Manager to Party B at the opening of business on the Determination Date falling within the relevant preceding Calculation Period;
+(b)  less the Other Fixed Rate Swap Amount in relation to the relevant Calculation Period.
+"FIXED RATE SWAP" means:
+(a)  the Transaction entered into between Party A, Party B and the Manager on the terms specified in Annexure 2 (or as otherwise agreed between Party A, Party B and the Manager); and
+(b)  each Transaction entered into pursuant to Section 16 on the terms specified in Annexure 3 (or as otherwise agreed between Party A, Party B and the Manager);
+"FIXED SWAP ADMINISTERED RATE" means in relation to a Distribution
+Date the amount determined in accordance with the following calculation and expressed as a percentage:
+FSAR=[(CFCI + (CFRSII x FRSS))/ FRSA] x 365/N
+where:
+FSAR means the Fixed Swap Administration Rate in relation to that Distribution Date;
+FRSA means Fixed Rate Swap Amount for the Calculation period ending immediately preceding that Distribution Date;
+NQ   means the number of days in the Swap Collection Period ending immediately before that Distribution Date;
+CFCI means the sum of the Fixed Interest Earned in respect of the Swap Collection Period ending immediately before each Distribution Date since the previous Distribution Date;
+CFRSII means the sum of the Short-Term Investment Income in respect of each Distribution Date since the previous Distribution Date;
+FRSS means the Fixed Rate Swap Share determined in accordance with the following calculation and expressed as a percentage:
+FRSS = (FRSA + OFRSA) / (BSA + FRSA + OFRSA)
+where:
+FRSA means the Fixed Rate Swap Amount for the Calculation Period ending immediately before that Distribution Date;
+OFRSA means the Other Fixed Rate Swap Amount for the Calculation Period ending immediately preceding that Distribution Date;
+BSA  means the Basis Swap Amount for the Calculation Period ending immediately before that Distribution Date.
+"INTEREST RATE BASIS CAP" means the interest rate cap, if any, entered into between Party A, Party B and the Manager on or prior to the Closing Date.
+"MASTER TRUST DEED" means the Master Trust Deed dated 8 October 1997 between Party B (as Trustee) and the Manager, as amended from time to time.
+"OTHER FIXED RATE SWAP AMOUNT" in relation to a Calculation Period means the relevant quarterly proportion of the aggregate Amounts Outstanding as at the opening of business on the Determination Date falling within the preceding Calculation Period in relation to each Mortgage Loan where one or more further Fixed Rate Swaps have been entered into, and are then current, to hedge the interest rate risk in
+respect of the Mortgage Loan pursuant to Section 16(b).
+"OUTSTANDING INTEREST RATE SWAP PREPAYMENT AMOUNT" means the sum of the then Basis Prepayment Balance and the then Fixed Rate Prepayment Balance.
+"PRESCRIBED RATINGS" means:
+(a)  in respect of each Fixed Rate Swap, either a long term rating of A2 or a short term rating of P-1 or higher by Moody's and a short term rating of A-1 by S & P; and
+(b)  in respect of the Basis Swap, short term ratings of P-1 by Moody's and A-1 by S&P.;
+"SERIES SUPPLEMENT" means the Series Supplement dated on or about the date of this Agreement between Party A, Party B, Homepath Pty Limited ABN 35 081 986 530 and the Manager.
+"SERIES TRUST" means the Series 2005-2G Medallion Trust constituted by the Master Trust Deed and the Series Supplement.
+"SHORT-TERM INVESTMENT INCOME" in relation to a Distribution Date means interest and other income received by Party B during the Collection Period immediately preceding that Distribution Date in respect of:
+(a)  the moneys standing to the credit of the Collections Account (other than interest earned on the Collections Account during the Collections Period in respect of the Cash Advance Deposit, the Seller Deposit or the Interest Rate Swap Provider Deposit as calculated, respectively, in accordance with clauses 8.6 and 8.8 of the Series Supplement);
+(b)  amounts representing interest paid by the Servicer pursuant to clause 22.5 of the Series Supplement; and
+(c)  Authorised Short-Term Investments held by the Series Trust (whether or not reinvested).
+"SWAP COLLECTION PERIOD" means:
+(a)  the period commencing on (and including) the Closing Date and ending on (but excluding) the Determination Date immediately preceding the first Distribution Date; and
+(b)  with respect to each subsequent Determination Date immediately preceding a Distribution Date, the period commencing on (and including) the previous Determination Date immediately preceding a Distribution Date and ending on (but excluding) that Determination Date.
+"VARIABLE INTEREST EARNED" in relation to a Distribution Date, and the Swap Collection Period ending immediately prior to that Distribution Date, means the aggregate of:
+(a)  all debit entries made during that Swap Collection Period to the accounts established in the Servicer's records for the
+Mortgage Loans forming part of the Assets of the Series Trust representing interest charged at a variable rate (plus any interest off-set benefits in respect of Mortgage Interest Saver Accounts which represents amounts which, if not for the terms of the Mortgage Interest Saver Accounts, would have been so debited during that Swap Collection Period to those accounts to the extent paid by CBA pursuant to clause 15.4 of the Series Supplement and deposited to the Collections Account prior to that Distribution Date); and
+(b)  the aggregate, as at the close of business on the last day of that Swap Collection Period, of all accrued but not charged variable rate interest on the Mortgage Loans forming part of the Assets of the Series Trust less the aggregate, as at the opening of business on the first day of that Swap Collection Period, of all accrued but not charged variable rate interest on the Mortgage Loans forming part of the Assets of the Series Trust.
+"WEIGHTED MARGIN" in relation to a Distribution Date means the amount, expressed as a percentage, determined by the following calculation:
+CA            CB WM = (--- x CAM) + (--- x CBM) TSA           TSA
+where:
+WM   means the Weighted Margin in relation to that Distribution Date;
+CA   means the A$ Equivalent of the aggregate Invested Amounts of the Class A Notes on the Determination Date immediately preceding that Distribution Date;
+CAM  means the Spread specified in paragraph 5.2 of the confirmations for the Class A Currency Swap on that Distribution Date;
+CB   means the aggregate of the Invested Amounts of the Class B Notes on the Determination Date immediately preceding that Distribution Date;
+CBM  means the Issue Margin in respect of the Class B Notes; and
+TSA  means the sum of CA and CB.
+(d)  INTERPRETATION:
+(i)  references to time are references to Sydney time;
+(ii) a reference to "WILFUL DEFAULT" in relation to Party B means, subject to Part 5(6)(d)(iii) of this Schedule, any wilful failure by Party B to comply with, or wilful breach by Party B of, any of its obligations under any Transaction Document, other than a failure or breach which:
+A.   1)   arises as a result of a breach of a Transaction
+Document by a person other than Party B or other than any other person referred to in Part 5(6)(d)(iii) of this Schedule; and
+2)   the performance of the action (the non-performance of which gave rise to such breach) is a precondition to Party B performing the said obligation;
+B.   as in accordance with a lawful court order or direction or is otherwise required by law; or
+C.   is in accordance with any proper instruction or direction of:
+1)   the Secured Creditors given at a meeting (or deemed meeting) of Secured Creditors convened under the Security Trust Deed; or
+2)   the Investors given at a meeting convened under the Master Trust Deed;
+(iii) a reference to the "FRAUD", "NEGLIGENCE" or "WILFUL DEFAULT" of Party B means the fraud, negligence or wilful default of Party B and of its officers, employees, agents and any other person where Party B is liable for the acts or omissions of such other person under the terms of any Transaction Document;
+(iv) a reference to "NEITHER PARTY" will be construed as a reference to "NO party";
+(v)  a reference to "OTHER PARTY" will be construed as a reference to "OTHER PARTIES".
+(e)  ISDA DEFINITIONS: The 2000 ISDA Definitions and the Annex to the 2000 ISDA Definitions, each as published by the International Swaps and Derivatives Association, Inc ("ISDA") (the "2000 ISDA DEFINITIONS") as at the date of this Agreement are incorporated into this Agreement and each Confirmation.
+(f)  INCONSISTENCY: Subject to Part 5(6)(a) of this Schedule, unless specified otherwise, in the event of any inconsistency between any two or more of the following documents in respect of a Transaction they will take precedence over each other in the following order in respect of that Transaction:
+(i)  any Confirmation; (ii) the Series Supplement; (iii) the Master Trust Deed; (iv) this Agreement; and
+(v)  the 2000 ISDA Definitions.
+(g)  SWAP TRANSACTION: Any reference to a:
+(i)  "SWAP TRANSACTION" in the 2000 ISDA Definitions is deemed to be a reference to a "Transaction" for the purpose of interpreting this Agreement or any Confirmation; and
+(ii) "TRANSACTION" in this Agreement or any Confirmation is deemed to be a reference to a "Swap Transaction" for the purpose of interpreting the
+2000 ISDA Definitions.
+(h)  INCORPORATED DEFINITIONS AND OTHER TRANSACTION DOCUMENTS AND PROVISIONS: Where in this Agreement a word or expression is defined by reference to its meaning in another Transaction Document or there is a reference to another Transaction Document or to a provision of another Transaction Document, any amendment to the meaning of that word or expression or to that other Transaction Document or provision (as the case may be) will be of no effect for the purposes of this Agreement unless and until the amendment is consented to by the parties to this Agreement.
+(7)  LIMITATION OF LIABILITY: Insert the following Section 15, after Section 14:
+"15. Party B's Limitation of Liability
+(a)  (LIMITATION ON PARTY B'S LIABILITY): Party B enters into this Agreement only in its capacity as trustee of the Series Trust and in no other capacity. A liability incurred by Party B acting in its capacity as trustee of the Series Trust arising under or in connection with this Agreement is limited to and can be enforced against Party B only to the extent to which it can be satisfied out of the Assets of the Series Trust out of which Party B is actually indemnified for the liability. This limitation of Party B's liability applies despite any other provision of this Agreement (other than Section 15(c)) and extends to all liabilities and obligations of Party B in any way connected with any representation, warranty, conduct, omission, agreement or transaction related to this Agreement.
+(b)  (CLAIMS AGAINST PARTY B): The parties other than Party B may not sue Party B in respect of liabilities incurred by Party B acting in its capacity as trustee of the Series Trust in any capacity other than as trustee of the Series Trust, including seek the appointment of a receiver (except in relation to Assets of the Series Trust), or a liquidator, or an administrator, or any similar person to Party B or prove in any liquidation, administration or similar arrangements of or affecting Party B (except in relation to the Assets of the Series Trust).
+(c)  (BREACH OF TRUST): The provisions of this Section 15 will not apply to any obligation or liability of Party B to the extent that it is not satisfied because under the Master Trust Deed, the Series Supplement or any other Transaction Document or by operation of law there is a reduction in the extent of Party B's indemnification out of the Assets of the Series Trust, as a result of Party B's fraud, negligence or wilful default.
+(d)  (ACTS OR OMISSIONS): It is acknowledged that the Relevant Parties are responsible under the Transaction Documents for performing a variety of obligations relating to the Series Trust. No act or omission of Party B (including any related failure to satisfy its obligations or any breach of a representation or warranty under this Agreement) will be considered fraudulent, negligent or a wilful default of Party B for the purpose of paragraph (c) of this Section 15 to the extent to which the act or omission was caused or contributed to by any Relevant Person or any other person appointed by Party B under any Transaction Document (other than a person whose acts or omissions Party B is liable for in accordance with any Transaction Document) to fulfil its obligations relating to the Series Trust or by any other act or omission of a Relevant Party or any other such person.
+(e)  (NO AUTHORITY): No attorney, agent, receiver or receiver and manager appointed in accordance with any Transaction Document has authority to act on behalf of Party B in a way which exposes Party B to any personal liability and no act or omission
+of any such person will be considered fraud, negligence or wilful default of Party B for the purposes of Section 15(c).
+(f)  (NO OBLIGATION): Party B is not obliged to enter into any commitment or obligation under this Agreement or any Transaction Document (including incur any further liability) unless Party B's liability is limited in a manner which is consistent with this Section 15 or otherwise in a manner satisfactory to Party B in its absolute discretion.".
+(8)  QUARTERLY SWAP STATEMENT: Prior to each Distribution Date the Manager will prepare and deliver to Party A and Party B a quarterly payment notice containing the information specified in Annexure 4 of this Agreement.
+(9)  FURTHER ASSURANCES: Each party will, upon request by the other party (the "REQUESTING PARTY") at the expense of the requesting party, perform all such acts and execute all such agreements, assurances and other documents and instruments as the requesting party reasonably requires (and, in the case of Party B, are within the powers granted to Party B under the Master Trust Deed) to assure and confirm the rights and powers afforded, created or intended to be afforded or created, under or in relation to this Agreement and each Transaction or other dealing which occurs under or is contemplated by it.
+(10) INTEREST RATE SWAP AGREEMENT: The parties acknowledge and agree that for the purposes of the Transaction Documents that this Agreement is an Interest Rate Swap Agreement and Party A is an Interest Rate Swap Provider.
+(11) PROCEDURES FOR ENTERING INTO TRANSACTIONS:
+(a)  For the purposes of Section 9(e)(ii), Party A will, by or promptly after the relevant Trade Date, send Party B and the Manager two Confirmations substantially in the form set out in Annexure 1 and 2 respectively (or in such other form as may be agreed between Party A, Party B and the Manager), and Party B and the Manager must promptly then confirm the accuracy of and sign and return, or request the correction of each such Confirmation.
+(b)  Party B will enter into each Transaction in its capacity as trustee of the Series Trust.
+(12) AUTHORISED OFFICER: Each party will be entitled to assume, in the absence of any knowledge to the contrary, that any person signing any Confirmation, notice or other written communication issued in respect of this Agreement on behalf of a party is an Authorised Officer of that party.
+(13) RECORDED CONVERSATIONS: Each party:
+(a)  consents to the electronic recording of its telephone conversations with the other party (or any of its associated persons) with or without the use of an automatic tone warning device;
+(b)  will provide transcripts of such recordings (if any) upon reasonable request by the other party (at the reasonable cost of the party requesting);
+(c)  acknowledges that such recordings and transcripts can be used as evidence by either party in any dispute between them; and
+(d)  acknowledges that neither is obligated to maintain copies of such recordings and transcripts for the benefit of the other party.
+(14) FURTHER FIXED RATE SWAPS AND DOWNGRADING OF PARTY A: Insert the following new
+Sections 16, 17, 18 and 19 after Section 15:
+"16. FURTHER FIXED RATE SWAPS
+(a)  If, pursuant to clause 16.6(j) of the Series Supplement, in order for the Servicer to permit a Conversion the Servicer requests the Manager (and the Manager directs Party B) to enter into a Fixed Rate Swap in accordance with this Section 16 for a maximum term not exceeding 10 years, Party B and the Manager will be deemed to have satisfied their respective obligations to enter into such Fixed Rate Swap if the calculation of the Fixed Rate Swap Amount for the purposes of a Fixed Rate Swap then existing includes the Amounts Outstanding in relation to the Mortgage Loans the subject of the Conversion.
+(b)  If Section 16(a) does not apply and Party B and the Manager enter into one or more further Fixed Rate Swaps pursuant to clause 16.6(j) of the Series Supplement to hedge the interest rate risk of one or more Mortgage Loans the subject of a Conversion, each such further Fixed Rate Swap must:
+(i)  (NOTIONAL AMOUNT): have a Notional Amount for each Calculation Period at least equal to the aggregate Amounts Outstanding as at the first day of the relevant Calculation Period in relation to the Mortgage Loans the subject of the Conversion which have the same fixed rate and End Date;
+(ii) (EFFECTIVE DATE): have as an Effective Date the Distribution Date immediately following the last day of the Swap Collection Period in which the Conversion occurs;
+(iii) (TERMINATION DATE): have a scheduled Termination Date on or prior to the tenth anniversary of its Trade Date unless the Rating Agencies confirm that entering into the Fixed Rate Swap for a longer period will not result in a reduction, qualification or withdrawal of the credit ratings then assigned by them to the Securities; and
+(iv) (CONFIRMATION): in all other respects be confirmed as a Fixed Rate Swap in accordance with this Agreement and the sample Confirmation for Fixed Rate Swaps set out in Annexure 3 to this Agreement.
+The Spread applicable to the Floating Amounts, if any, in respect of each Fixed Rate Swap entered into following a Conversion shall be the Weighted Margin in respect of the relevant Distribution Date plus 0.70% per annum.
+17.  RATINGS DOWNGRADE OF PARTY A - FIXED RATE SWAPS: If, as a result of the reduction or withdrawal of its credit rating by a Rating Agency, Party A does not have the Prescribed Ratings in relation to the Fixed Rate Swaps:
+(a)  (ACTION BY PARTY A): Party A must:
+(i)  within 30 Business Days of Party A ceasing to have such Prescribed Ratings if and while Party A has a long term credit rating of at least A3 by Moody's; or
+(ii) otherwise, and if sooner, within 5 Business Days of Party A
+ceasing to have a long term credit rating of at least A3 by Moody's,
+(or such greater period as is agreed to in writing by the Rating Agencies), at its cost alone and at its election:
+(iii) lodge in an Eligible Account as a prepayment of its obligations in respect of the Fixed Rate Swaps an amount equal to the Fixed Rate Prepayment Amount as defined in Section 17(c);
+(iv) enter into an agreement novating its rights and obligations under this Agreement in respect of the Fixed Rate Swaps to a replacement counterparty acceptable to the Manager and which the Rating Agencies confirm in writing will not result in a reduction, qualification or withdrawal of the credit ratings then assigned by them to the Securities; or
+(v)  enter into such other arrangements in respect of all Fixed Rate Swaps which are satisfactory to the Manager and which the Rating Agencies confirm in writing will not result in a reduction, qualification or withdrawal of the credit ratings then assigned by them to the Securities.
+(b)  (FIXED RATE PREPAYMENT AMOUNT): For the purposes of this Section 17 the Fixed Rate Prepayment Amount will be an amount equal to the greater of the following:
+(i)  where Party A does not have the Prescribed Rating in respect of the Fixed Rate Swap from Moody's, an amount acceptable to Moody's and sufficient to maintain the credit ratings assigned to the Securities by Moody's immediately prior to the review of Party A's credit rating; and
+(ii) where Party A does not have the Prescribed Rating in respect of the Fixed Rate Swap from S&P;, the greater of:
+A.   zero;
+B.   CR; and
+C.   the net amount (if any) as determined by the Manager that is expected to be due by Party A to Party B in respect of the Fixed Rate Swap on the immediately following Distribution Date (calculated on the basis that there will be no prepayments made by the Mortgagors under the Mortgage Loans then being charged interest at a fixed rate and no conversion of the interest rate payable under any Mortgage Loan from a fixed rate to a variable rate or from a variable rate to a fixed rate during the relevant Swap Collection Period).
+Where:
+CR = MM + V
+"MM" means the aggregate of the mark-to-market value (whether positive or negative) of all Fixed Rate Swaps determined in accordance with Section 17(c) no earlier than 3 Business Days prior to the date that the Fixed Rate Prepayment Amount is lodged.
+"V" means the volatility buffer, being the value calculated by multiplying the aggregate Notional Amounts (as defined in the relevant Confirmations) of the Fixed Rate Swaps at the most recent Distribution Date by the relevant percentage obtained from the following table:
+COUNTERPARTY   MATURITIES UP TO 5   MATURITIES UP TO 10   MATURITIES GREATER RATING         YEARS                YEARS                 THAN 10 YEARS
+A-2            6.50%                8.25%                 11.75% A-3            10.00%               14.50%                31.75% BB+ or lower   13.00%               25.75%                68.50
+(c)  (MARK-TO-MARKET VALUE): Party A must calculate the mark-to-market value of the Fixed Rate Swaps by obtaining 2 bids from counterparties with the Prescribed Ratings willing to provide the Fixed Rate Swaps in the absence of Party A. The mark-to-market value may be a positive or a negative amount. A bid has a negative value if the payment to be made is from the counterparty to Party A and has a positive value if the payment to be made is from Party A to the counterparty. The mark-to-market value is the higher of the bids (on the basis that any bid of a positive value is higher than any bid of a negative value).
+(d)  (RECALCULATION): Party A must recalculate the Fixed Rate Prepayment Amount (including the CR and the mark-to-market value) on a weekly basis. If:
+(i)  the recalculated Fixed Rate Prepayment Amount is greater than the immediately preceding Fixed Rate Prepayment Amount, Party A must make an additional prepayment in accordance with Section 17(a)(iii) within 3 Business Days of such recalculation so that the Fixed Rate Prepayment Balance equals the recalculated Fixed Rate Prepayment Amount; or
+(ii) the recalculated Fixed Rate Prepayment Amount is less than the immediately preceding Fixed Rate Prepayment Amount, Party B must upon the direction of the Manager withdraw an amount from the Eligible Account referred to in Section 17(a)(iii) and pay it to Party A within 3 Business Days of receiving notice of such recalculation so that the remaining Fixed Rate Prepayment Balance after such withdrawal equals the recalculated Fixed Rate Prepayment Amount.
+(e)  (INTEREST): Interest will be payable by Party B on any prepayment by Party A under this Section 17 in accordance with clause 8.8 of the Series Supplement.
+(f)  (UTILISATION): If the Fixed Rate Prepayment Balance is applied towards an amount payable by Party A in accordance with Section 2(f)(i) Party A
+must within 3 Business Days make an additional prepayment in accordance with Section 17(a)(iii) equal to the amount so applied.
+(g)  (REPAYMENT): If Party A regains the Prescribed Rating in respect of the Fixed Rate Swaps Party B must, upon the direction of the Manager, repay to Party A the then Fixed Rate Prepayment Balance.
+(h)  (VARIATION OF MANNER OF SATISFACTION): Notwithstanding that Party A has elected to satisfy its obligations pursuant to this Section 17 in a particular manner, it may subsequently and from time to time vary the manner in which it satisfies its obligations pursuant to this Section 17 (but will not be entitled to any additional grace period in relation to such a variation).
+18.  DOWNGRADING OF PARTY A - BASIS SWAP
+If, as a result of the reduction or withdrawal of its credit rating by a Rating Agency, Party A does not have the Prescribed Rating in respect of the Basis Swap, Party A must:
+(a)  (30 BUSINESS DAYS): within 30 Business Days of Party A ceasing to have the Prescribed Rating if and while Party A has a short term credit rating of at least P-1 by Moody's; or
+(b)  (5 BUSINESS DAYS): otherwise, and if sooner, within 5 Business Days of Party A ceasing to have a short term credit rating of at least P-1 by Moody's;
+(or such greater period as is agreed to in writing by Moody's) (the "POSTING PERIOD"), at its cost alone and at its election:
+(c)  (PREPAYMENT):
+(i)  on or before the last day of the Posting Period, pay to Party B as a prepayment of its obligations under the Basis Swap for the then Calculation Period, the relevant net amount (if any) that is expected to be due by Party A to Party B at the end of that Calculation Period; and
+(ii) on each Distribution Date which follows such prepayment, pay to Party B as a prepayment of its obligations under the Basis Swap for the Calculation Period commencing on each such Distribution Date, the net amount (if any) that is expected to be due by Party A to Party B at the end of that Calculation Period less any Basis Swap prepayments relating to any prior Distribution Date held in the Basis Prepayment Balance at the end of that Distribution Date,
+as determined by the Manager, by depositing such net amount (if any) into the Collections Account in cleared funds; or
+(d)  (OTHER ARRANGEMENTS): enter into some other arrangement satisfactory to the Manager and Party B which the Rating Agencies confirm will not result in a reduction, qualification or withdrawal of the credit ratings then assigned by them to the Securities. A prepayment on the first day of any Calculation Period by Party A under Section 18(c) will constitute a prepayment of Party A's payment obligations (to the extent thereof) in
+respect of the Basis Swap for the Calculation Period commencing on the relevant Distribution Date. Notwithstanding that Party A has elected to satisfy its obligations pursuant to this Section 18 in a particular manner, it may subsequently and from time to time vary the manner in which it satisfies its obligations pursuant to this Section 18 (but will not be entitled to any additional grace period in relation to such a variation). Interest will be payable by Party B on any prepayment by Party A under this Section 18 in accordance with clause 8.8 of the Series Supplement.
+19.  SECURITIES REPAID
+On the date that the Invested Amount in respect of the Securities has been reduced to zero, or the Securities are redeemed in full or are deemed to have been redeemed in full under the Series Supplement, whichever is the earlier, Party A's obligations under Sections 17 and 18 will cease and Party B must pay to Party A on that date the Outstanding Interest Rate Swap Prepayment Amount and interest on such payment.".
+(15) TRANSFER:
+Section 7 is replaced with:
+"7.  ESSENTIAL TERM: TRANSFER
+(a)  Neither the interests nor the obligations of either party in or under this Agreement (including any Transaction) are capable of being assigned or transferred (whether at law, in equity or otherwise), charged or the subject of any trust (other than the Series Trust or the trusts created pursuant to any Credit Support Document in relation to Party B) or other fiduciary obligation. Any action by a party which purports to do any of these things is void.
+(b)  Nothing in this Section 7:
+(i)  restricts a transfer by a party after the other party has agreed to the variation of this Agreement to the extent necessary to permit such transfer;
+(ii) restricts a novation of the interests and obligations of a party in or under this Agreement (including any Transaction) including, but not limited to, for the purposes of giving effect to a transfer under Section 6(b)(ii);
+(iii) restricts a transfer by a party of all or any part of its interest in any amount payable to it from a Defaulting Party under Section 6(e); or
+(iv) restricts Party B from granting security over a Transaction or this Agreement pursuant to any Credit Support Document in relation to Party B,
+provided that the Rating Agencies have confirmed that such transfer, variation or assignment by way of security (as the case may be) will not result in a reduction, qualification or withdrawal of the credit ratings then assigned by them to the Securities.
+(c)  Each party acknowledges that the other party enters into this Agreement and each Transaction on the basis that this Section 7 must be strictly observed and is essential to the terms of this Agreement (including each Transaction)."
+(16) KNOWLEDGE OR AWARENESS
+Subject to Section 12(a), each party will only be considered to have knowledge or awareness of, or notice of, a thing or grounds to believe anything by virtue of the officers of that party or any Related Body Corporate of that party which have the day to day responsibility for the administration or management of that party's (or a Related Body Corporate of that party's) obligations in relation to the Series Trust or the Transactions entered into under this Agreement having actual knowledge, actual awareness or actual notice of that thing, or grounds or reason to believe that thing (and similar references will be interpreted in this way).
+(17) INTEREST RATE BASIS CAP
+The parties agree that any Interest Rate Basis Cap entered into between them pursuant to clause 16.6(k) of the Series Supplement will be entered into as a transaction governed by the terms of this Agreement.
+(18) AMENDMENT TO THIS AGREEMENT
+The parties to this Agreement may only amend this Agreement in accordance with clause 33.1(b) of the Series Supplement.
+ANNEXURE 1A
+FORM OF CONFIRMATION FOR BASIS SWAP - SERIES 2005-2G MEDALLION TRUST
+[COMMONWEALTH BANK OF AUSTRALIA LETTERHEAD]
+[DATE]
+TO: Perpetual Trustee Company Limited    Securitisation Advisory Services Pty.
+Limited ABN 42 000 001 007                   ABN 88 064 133 946 as trustee of the Series Trust       Level 7 Level 7                              48 Martin Place 9 Castlereagh Street                 SYDNEY NSW 2000 SYDNEY NSW 2000 Attention: Manager, Securitisation Attention: Manager, Securitisation
+SWAP CONFIRMATION - BASIS SWAP
+The purpose of this letter is to confirm the terms and conditions of the Transaction entered into between us on the Trade Date specified below (the "TRANSACTION"). This letter constitutes a "CONFIRMATION" as referred to in the Master Agreement specified below.
+This Confirmation supplements, forms part of, and is subject to, the 1992 ISDA Master Agreement dated as of [], as amended, novated or supplemented from time to time (the "AGREEMENT"), between Commonwealth Bank of Australia, ABN 48 123 123 124 ("PARTY A"), Perpetual Trustee Company Limited as trustee of the Series Trust ("PARTY B") and Securitisation Advisory Services Pty. Limited (the "MANAGER"). All provisions contained in the Agreement govern this Confirmation except as expressly modified below.
+The terms of the particular Transaction to which this Confirmation relates are as follows:
+OUR REFERENCE:                   [_]
+TRADE DATE:                      [_]
+EFFECTIVE DATE:                  [_]
+TERMINATION DATE:                Means the earlier of:
+(a)  the Step-Up Date but only if :
+(i)  the Issue Margins (as defined in the Offered Note Conditions in respect of the Offered Notes) in respect of the Offered Notes increase as and from the Step-Up Date; and
+(ii) the weighted average Mortgage Rate applicable to the Mortgage Loans forming part of the Assets of the Series Trust which are charged interest at a variable rate is equal to or greater than the then Threshold
+Rate.
+(b)  the date that all the Securities have been redeemed in full; and
+(c)  the Termination Date for the Series Trust,
+subject to the Following Business Day Convention
+NOTIONAL AMOUNT:                 With respect to each Calculation Period means the Basis Swap Amount for that Calculation Period
+FLOATING ADMINISTERED RATE AMOUNTS:
+Floating Administered Rate    Party B Payer:
+Floating Administered Rate    Each Distribution Date Payer Payment Dates:
+Floating Rate Option:         Basis Swap Administered Rate in relation to the relevant Distribution Date
+Floating Rate Day Count       Actual/365 (Fixed) Fraction:
+FLOATING BANK BILL RATE AMOUNTS:
+Floating Bank Bill Rate       Party A Payer:
+Floating Bank Bill Rate       Each Distribution Date Payer Payment Dates:
+Floating Rate Option:         Bank Bill Rate for the Accrual Period corresponding to the Calculation Period
+Spread:                       Weighted Margin in respect of the relevant Distribution Date plus []% per annum
+Floating Rate Day Count       Actual/365 (Fixed) Fraction:
+BUSINESS DAY:                    Sydney
+BUSINESS DAY CONVENTION:         Following
+CALCULATION AGENT:               The Manager
+OTHER PROVISIONS:                For the purposes of the Agreement, the Transaction to which this Confirmation relates is the Basis Swap
+Please confirm that the above correctly sets out the terms of our agreement in respect of the Transaction to which this Confirmation relates by signing and returning this Confirmation to us by facsimile today.
+Executed documents will follow by mail.
+Yours sincerely
+SIGNED for and on behalf of PERPETUAL   SIGNED for and on behalf of TRUSTEE COMPANY LIMITED,                COMMONWEALTH BANK OF AUSTRALIA, ABN 42 000 001  007, as trustee of      ABN 48 123 123 124 the Series 2005-2G Medallion Trust
+By:                                     By:
+(Authorised Officer)                     (Authorised Officer)
+Name:                                   Name:
+Title:                                  Title:
+SIGNED for and on behalf of SECURITISATION ADVISORY SERVICES PTY. LIMITED, ABN 88 064 133 946
+By:
+(Authorised Officer)
+Name:
+Title:
+ANNEXURE 2
+FORM OF CONFIRMATION FOR FIXED RATE SWAP - SERIES 2005-2G MEDALLION TRUST
+[COMMONWEALTH BANK OF AUSTRALIA LETTERHEAD]
+[DATE]
+TO: Perpetual Trustee Company Limited    Securitisation Advisory Services Pty.
+Limited ABN 42 000 001 007                   ABN 88 064 133 946 as trustee of the Series Trust       Level 7 Level 7                              48 Martin Place 9 Castlereagh Street                 SYDNEY NSW 2000 SYDNEY NSW 2000 Attention: Manager, Securitisation Attention: Manager, Securitisation
+SWAP CONFIRMATION - FIXED RATE SWAP
+The purpose of this lFetter is to confirm the terms and conditions of the Transaction entered into between us on the Trade Date specified below (the "TRANSACTION"). This letter constitutes a "CONFIRMATION" as referred to in the Master Agreement specified below.
+This Confirmation supplements, forms part of, and is subject to, the 1992 ISDA Master Agreement dated as of [_], as amended, novated or and supplemented from time to time (the "AGREEMENT"), between Commonwealth Bank of Australia, ABN 48 123 123 124 ("PARTY A"), Perpetual Trustee Company Limited as trustee of the Series Trust ("PARTY B") and Securitisation Advisory Services Pty. Limited (the "MANAGER"). All provisions contained in the Agreement govern this Confirmation except as expressly modified below.
+The terms of the particular Transaction to which this Confirmation relates are as follows:
+OUR REFERENCE:                   []
+TRADE DATE:                      []
+EFFECTIVE DATE:                  []
+TERMINATION DATE:                Means the earlier of:
+(a)  the date that all the Securities have been redeemed in full; and
+(b)  the Termination Date for the Series Trust,
+subject to the Following Business Day Convention
+NOTIONAL AMOUNT:                 With respect to each Calculation Period means the Fixed Rate Swap Amount for that Calculation Period
+FIXED AMOUNTS:
+Fixed Rate Payer:             Party B
+Fixed Rate Payer Payment      Each Distribution Date Dates:
+Fixed Rate:                   The Fixed Swap Administered Rate in relation to the relevant Distribution Date
+Fixed Rate Day Count          Actual/365 (Fixed) Fraction:
+FLOATING AMOUNTS:
+Floating Rate Payer:          Party A
+Floating Rate Payer Payment   Each Distribution Date Dates:
+Floating Rate Option:         Bank Bill Rate for the Accrual Period corresponding to the Calculation Period
+Spread:                       Weighted Margin in respect of the relevant Distribution Date plus []% per annum
+Floating Rate Day Count       Actual/365 (Fixed) Fraction:
+BUSINESS DAY:                    Sydney
+BUSINESS DAY CONVENTION:         Following
+CALCULATION AGENT:               The Manager
+OTHER PROVISIONS:                For the purposes of the Agreement, the Transaction to which this Confirmation relates is a Fixed Rate Swap
+Please confirm that the above correctly sets out the terms of our agreement in respect of the Transaction to which this Confirmation relates by signing and returning this Confirmation to us by facsimile today.
+Executed documents will follow by mail.
+Yours sincerely
+SIGNED for and on behalf of PERPETUAL   SIGNED for and on behalf of TRUSTEE COMPANY LIMITED,                COMMONWEALTH BANK OF AUSTRALIA, ABN 42 000 001  007, as trustee of      ABN 48 123 123 124 the Series 2005-2G Medallion Trust
+By:                                     By:
+(Authorised Officer)                     (Authorised Officer)
+Name:                                   Name:
+Title:                                  Title:
+SIGNED for and on behalf of SECURITISATION ADVISORY SERVICES PTY. LIMITED, ABN 88 064 133 946
+By:
+(Authorised Officer)
+Name:
+Title:
+ANNEXURE 3
+FORM OF CONFIRMATION FOR OTHER FIXED RATE SWAPS - SERIES 2005-2G MEDALLION TRUST
+[COMMONWEALTH BANK OF AUSTRALIA LETTERHEAD]
+[DATE]
+TO: Perpetual Trustee Company Limited    Securitisation Advisory Services Pty.
+Limited ABN 42 000 001 007                   ABN 88 064 133 946 as trustee of the Series Trust       Level 7 Level 7                              48 Martin Place 9 Castlereagh Street                 SYDNEY NSW 2000 SYDNEY NSW 2000 Attention: Manager, Securitisation Attention: Manager, Securitisation
+SWAP CONFIRMATION - OTHER FIXED RATE SWAP
+The purpose of this letter is to confirm the terms and conditions of the Transaction entered into between us on the Trade Date specified below (the "TRANSACTION"). This letter constitutes a "CONFIRMATION" as referred to in the Master Agreement specified below.
+This Confirmation supplements, forms part of, and is subject to, the 1992 ISDA Master Agreement dated as of [], as amended, novated or and supplemented from time to time (the "AGREEMENT"), between Commonwealth Bank of Australia, ABN 48 123 123 124 ("PARTY A"), Perpetual Trustee Company Limited as trustee of the Series Trust ("PARTY B") and Securitisation Advisory Services Pty. Limited (the "MANAGER"). All provisions contained in the Agreement govern this Confirmation except as expressly modified below.
+The terms of the particular Transaction to which this Confirmation relates are as follows:
+OUR REFERENCE:                   []
+TRADE DATE:                      []
+EFFECTIVE DATE:                  []
+TERMINATION DATE:                Means the earlier of:
+(a)  the date that all the Securities have been redeemed in full; and
+(b)  the Termination Date for the Series Trust,
+subject to the Following Business Day Convention
+NOTIONAL AMOUNT:                 With respect to each Calculation Period means the Other Fixed Rate Swap Amount for that Calculation Period
+FIXED AMOUNTS:
+Fixed Rate Payer:             Party B
+Fixed Rate Payer Payment      Each Distribution Date Dates:
+Fixed Rate:                   The Fixed Swap Administered Rate in relation to the relevant Distribution Date
+Fixed Rate Day Count          Actual/365 (Fixed) Fraction:
+FLOATING AMOUNTS:
+Floating Rate Payer:          Party A
+Floating Rate Payer Payment   Each Distribution Date Dates:
+Floating Rate Option:         Bank Bill Rate for the Accrual Period corresponding to the Calculation Period
+Spread:                       Weighted Margin in respect of the relevant Distribution Date plus []% per annum Floating Rate Day Count Fraction:                     Actual/365 (Fixed)
+BUSINESS DAY:                    Sydney
+BUSINESS DAY CONVENTION:         Following
+CALCULATION AGENT:               The Manager
+OTHER PROVISIONS:                For the purposes of the Agreement, the Transaction to which this Confirmation relates is a Fixed Rate Swap
+Please confirm that the above correctly sets out the terms of our agreement in respect of the Transaction to which this Confirmation relates by signing and returning this Confirmation to us by facsimile today.
+Executed documents will follow by mail.
+Yours sincerely
+SIGNED for and on behalf of PERPETUAL   SIGNED for and on behalf of TRUSTEE COMPANY LIMITED,                COMMONWEALTH BANK OF AUSTRALIA, ABN 42 000 001 007, as trustee of       ABN 48 123 123 124 the Series 2005-2G Medallion Trust
+By:                                     By:
+(Authorised Officer)                     (Authorised Officer)
+Name:                                   Name:
+Title:                                  Title:
+SIGNED for and on behalf of SECURITISATION ADVISORY SERVICES PTY. LIMITED, ABN 88 064 133 946
+By:
+(Authorised Officer)
+Name:
+Title:
+ANNEXURE 4
+QUARTERLY PAYMENT NOTICE - SERIES 2005-2G MEDALLION TRUST
+TO: COMMONWEALTH BANK OF AUSTRALIA, ABN 48 123 123 124 ("PARTY A")
+AND TO: PERPETUAL TRUSTEE COMPANY LIMITED, ABN 42 000 001 007, as trustee of the Series Trust, ("PARTY B")
+FROM: SECURITISATION ADVISORY SERVICES PTY. LIMITED, ABN 88 064 133 946 (the "MANAGER")
+ISDA MASTER AGREEMENT dated [] between Party A, Party B and the Manager (the "AGREEMENT")
+Determination Date:
+The Manager has determined and gives notice of the following:
+1.   BASIS SWAP
+(a)  Notional Amount for the current Calculation Period:
+(b)  Basis Swap Administered Rate for the current Calculation Period just ended:
+2.   QUARTERLY RATE SET
+Three-month Bank Bill Rate for the current Calculation Period:
+Weighted Margin for the current Calculation Period:
+3.   FIXED RATE SWAPS
+(a)  Notional Amount for the current Calculation Period:
+(b)  Fixed Rate Administered Rate for the current Calculation Period just ended:
+4.   BREAK COSTS
+The Break Costs (if any) in respect of the Determination Date:
+5.   NET AMOUNT
+(a)  Net amount due for payment by Party A on the immediately following Payment Date:
+(b)  Net amount due for payment by Party B on the immediately following Payment Date:
+Terms used and not otherwise defined in this notice have the same meaning as in the Agreement, as amended, supplemented or novated from time to time.
+SIGNED for and on behalf of SECURITISATION ADVISORY SERVICES PTY. LIMITED, ABN 88 064 133 946
+By:
+(Authorised Officer)
+Name:
+Title:

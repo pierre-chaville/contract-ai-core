@@ -49,3 +49,72 @@ Agreement to Deliver Documents.
 For the purpose of Sections 4(a)(i) and (ii) of this Agreement, each party agrees to deliver the following documents, as applicable:
 (a) 	  Tax forms, documents or certificates to be delivered are:
 Party required to deliver documents 	  	  Form/Document/Certificate 	  	  Date by which to be delivered Party A 	  	  A correct, complete and duly executed United States Internal Revenue Service Form W-9 (or successor thereto); provided, that in the event Party A shall have assigned this Agreement and the Transaction(s) to GE Capital, GE Capital shall deliver Form W-9 (or successor thereto) 	  	  (i) Upon execution of the Agreement, (ii) promptly upon learning that any Form W-9(or any successor thereto) has become obsolete or incorrect and (iii) upon reasonable request of Party B Party B 	  	  A correct, complete and duly executed United States Internal Revenue Service Form W-9 (or successor thereto) 	  	  (i) Upon execution of the Agreement, (ii) promptly upon learning that any Form W-9 (or any successor thereto) has become obsolete or incorrect and (iii) upon reasonable request of Party A
+(b) 	  In addition, Party A and Party B each agree to deliver or cause to be delivered as soon as practicable after execution of this Agreement, the following documents which shall each be covered by the Section 3(d) representation:
+(i) 	  A certificate of an authorized officer for such party or other writing reasonably satisfactory to the other party evidencing the position, names and true signatures of the person or persons authorized to sign this Agreement.
+(ii) 	  Certified copies of documents (including any board of director approvals) evidencing each action taken by Party B to authorize its execution of this Agreement and the performance of its obligations hereunder.
+(iii) 	  Upon request, annual audited financial statements from Party B prepared in accordance with generally accepted accounting principles in the country in which the entity to which they relate is organized.
+Part 4
+Miscellaneous
+(a) 	  Notices. For the purpose of Section 12(a) of this Agreement:
+Address for notices or communications to the parties shall be as set forth below. Any notices to Party B shall also be provided to GE Capital at the address below.
+Party A: 	  Address: Attention: Telephone: 	  HSBC Bank USA, National Association 452 Fifth Avenue New York, NY 10018 Legal Department 212-525-8000 Party A: 	  Address: Attention: Telephone: 	  Cinedigm Digital Funding I LLC 55 Madison Avenue, Suite 300 Morristown, NJ 07960 Adam Mizel 646-375-3382 And copies to: 	  Address: Attention: Telephone: Facsimile: 	  General Electric Capital Corporation 201 High Ridge Road Stamford, CT 06840 Joseph Louis - Senior Analyst, Operations (IRM Program) (203) 357 4000 (203) 357 6609 And a copy to: 	  Address: Attention: Telephone: Facsimile: 	  General Electric Capital Corporation 201 High Ridge Road Stamford, CT 06927 General Counsel - Treasury (203) 961-5077 (203) 357-3490 And a copy to: 	  Address: Attention: Telephone: Facsimile: 	  GE Corporate Financial Services One Beacon Street, 4th Floor Boston, MA 02108-3107 Thomas Corcoran (617) 973-4076 (617) 378-6599
+(b) 	  Process Agent. For the purpose of Section 13(c) of this Agreement:
+(i) 	  Party A does not appoint a Process Agent.
+(ii) 	  Party B does not appoint a Process Agent.
+(c) 	  Offices. The provisions of Section 10(a) of this Agreement shall apply to this Agreement.
+(d) 	  Multibranch Party.
+For the purpose of Section 10(b) of this Agreement:
+(i) 	  Party A is not a Multibranch Party.
+(ii) 	  Party B is not a Multibranch Party.
+(e) 	  Calculation Agent. The Calculation Agent shall be Party A.
+(f) 	  Credit Support Document. Details of any Credit Support Document:
+(i) 	  With respect to Party A, Not Applicable.
+(ii) 	  With respect to Party B, the Master Assignment Agreement between GE Capital and Party A.
+(g) 	  Credit Support Providers.
+(i) 	  With respect to Party A, Not Applicable
+(ii) 	  With respect to Party B, GE Capital.
+(h) 	  Governing Law. This Agreement and each Confirmation will be governed by and construed in accordance with the laws of the State of New York, without reference to choice of law doctrine.
+(i) 	  Netting of Payments. "Multiple Transaction Payment Netting" will apply for the purpose of Section 2(c) of this Agreement to all Transactions (in each case starting from the date of this Agreement).
+(j) 	  "Affiliate" will have the meaning specified in Section 14 of this Agreement.
+(k) 	  Absence of Litigation. For the purpose of Section 3(c).
+"Specified Entity" means in relation to Party A: none specified.
+"Specified Entity" means in relation to Party B: none specified.
+(l) 	  No Agency. The provisions of Section 3(g) will apply.
+(m) 	  Additional Representations. Additional Representations will apply. For the purpose of Section 3 of this Agreement, each of the following will constitute an Additional Representation:
+(i) 	  Relationship Between Parties. Each party will be deemed to represent to the other party on the date on which it enters into a Transaction that (absent a written agreement between
+the parties that expressly imposes affirmative obligations to the contrary for that Transaction):
+(A) 	  Non-Reliance. It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisors as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction; it being understood that information and explanations related to the terms and conditions of the Transaction will not be considered investment advice or a recommendation to enter into that Transaction. No confirmation (written or oral) received from the other party will be deemed to be an assurance or guarantee as to the expected results of that Transaction.
+(B) 	  Assessment and Understanding. It is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction, including the potential incurrence of breakage costs in the event of a voluntary early termination of that Transaction. It is also capable of assuming, and assumes, the financial and other risks of that Transaction.
+(C) 	  Status of Parties. The other party is not acting as a fiduciary for or an advisor to it in respect of the Transaction.
+(ii) 	  Eligible Contract Participant. Each party represents to the other party on the date on which it enters into a Transaction that it is an "eligible contract participant" as defined in Section 1a(12) of the U.S. Commodity Exchange Act.
+(iii) 	  Party B Additional Representation. Party B represents on the date on which it enters into a Transaction that it is entering into the Transaction for the purposes of managing its borrowings or investments, hedging its underlying assets or liabilities or in connection with its business and not for purposes of speculation.
+(n) 	  Recording of Conversations. Each party (i) consents to the recording of telephone conversations between the trading, marketing and other relevant personnel of the parties in connection with this Agreement or any potential Transaction, and (ii) agrees to obtain any necessary consent of, and give notice of such recording to, its relevant personnel and (iii) agrees, to the extent permitted by applicable law, that recordings may be submitted in evidence in any Proceedings.
+Part 5
+Other Provisions
+(a) 	  Waiver of right to trial by jury.
+Each party irrevocably waives, to the fullest extent permitted by applicable law, any right it may have to trial by jury of any claim, demand or cause of action relating in any way to this Agreement or any Credit Support Document, whether sounding in contract or tort or otherwise, and agrees that either party may file a copy of this section with any court as evidence of the waiver of its jury trial rights.
+(b) 	  Section 5(a)(i) Failure to Pay or Deliver.
+Section 5(a)(i) of this Agreement is hereby amended by the deletion of the word "first" each time it appears therein and the replacement thereof with the word "third".
+(c) 	  Section 5(a)(iii) Credit Support Default.
+For the avoidance of doubt, the receipt by Party A of a written request from GE Capital to assign its rights and obligations hereunder to GE Capital shall not, in itself, be an Event of Default under Section 5(a)(iii) of this Agreement. This provision is without prejudice to Party A's right to designate an Early Termination Date following the occurrence of an Additional Termination Date as described in Part 1(g)(i).
+(d) 	  Section 5(a)(vii) Bankruptcy.
+Section 5(a)(vii) of this Agreement is hereby amended by the deletion of the words "15 days" each time they appear therein and the replacement thereof with the words "60 days".
+(e) 	  Section 5(b)(i)(1) Illegality
+Section 5(b)(i)(1) of this Agreement is amended and restated in its entirety to read as follows:
+(1) for each such party (which will be the Affected Party), through each of its Offices, including, without limitation, its head or home office or any Credit Support Provider of such party (if such Credit Support Provider is obligated to make payment or performance without notice in the same manner as such party) to perform any absolute or contingent obligation to make a payment or delivery in respect of such Transaction, to receive a payment or delivery in respect of such Transaction or to comply with any other material provision of this Agreement relating to such Transaction; or
+(f) 	  Section 5(b)(ii)(1) Force Majeure Event
+Section 5(b)(ii)(1) of this Agreement is amended and restated in its entirety to read as follows:
+(1) each such party (which will be the Affected Party), through each of its Offices including, without limitation, its head or home office or any Credit Support Provider of such party (if such Credit Support Provider is obligated to make payment or performance without notice in the same manner as such party) is prevented from performing any absolute or contingent obligation to make or receive a payment or delivery in respect of such Transaction, or from complying with any other material provision of this Agreement relating to such Transaction (or would be so prevented if such payment, delivery or compliance were required on that day), or it becomes impossible or impracticable for such party (or Credit Support Provider, if applicable as indicated above) to so perform, receive or comply (or it would be impossible or impracticable to so perform, receive or comply if such payment, delivery or compliance were required on that day); or
+(g) 	  Subsection 5(e) Inability of Head or Home Office to Perform Obligations of Branch
+Subsection 5(e) of this Agreement shall be deleted in its entirety and shall be of no force or effect in the Agreement.
+(h) 	  Transactions under this Agreement; Amendment. No transaction shall be deemed a Transaction under or governed by this Agreement without the express written acknowledgment of GE Capital, which acknowledgment shall be set forth in the applicable Confirmation. In addition to the provisions of Section 9(b) and except as provided in Part 5(i) below, no amendment, transfer or assignment of this Agreement or any Transaction hereunder shall be effective without the prior written acknowledgment of GE Capital.
+(i) 	  Consent to Assignment.
+Notwithstanding Section 7, Party B hereby agrees and consents to the assignment by Party A of this Agreement and the Transaction(s) hereunder and all rights to payment thereunder to GE Capital at any time and for any reason.
+It is further agreed that, upon such assignment, (i) Party A will relinquish all rights and will be released from its duties and obligations under this Agreement and the Transaction(s) hereunder and (ii) Party B and GE Capital will automatically and without further action on the part of any party, be deemed to have entered into an agreement and transaction containing the same terms as this Agreement and the Transaction(s) hereunder, it being understood and agreed that such agreement and transaction shall not reinstate any Transaction that may have terminated hereunder.
+(j) 	  ISDA 2002 Master Agreement Protocol.
+Section 6 and Annex 3 of the ISDA 2002 Master Agreement Protocol, as published by ISDA on July 15, 2003, are hereby incorporated into this Agreement.
+IN WITNESS WHEREOF, the parties have executed this Schedule on the respective dates specified below with effect from the date specified on the first page of this document:
+HSBC BANK USA, NATIONAL ASSOCIATION 	  	  CINEDIGM DIGITAL FUNDING I LLC By: 	  	  	  By:
+Name: 	  	  	  Name:
+Title: 	  	  	  Title:
+Date: 	  	  	  Date:

@@ -1,0 +1,96 @@
+SCHEDULE to the 2002 Master Agreement
+dated as of January 29, 2010
+between  	    	           PB CAPITALCORPORATION   	    	                       and  	    	  FOUNDRYPARKI, LLC ("Party A")  	    	    	    	  ("Party B") a Delaware corporation  	    	    	    	  a Virginia limited liability company
+Part 1.  	    	    	    	  Termination Provisions.
+(a)  	    	    	    	  " Specified Entity" means in relation to Party A for the purpose of:\ Section 5(a)(v),  	    	  not applicable Section 5(a)(vi),  	    	  not applicable Section 5(a)(vii),  	    	  not applicable Section 5(b)(v),  	    	  not applicable and in relation to Party B for the purpose of:\ Section 5(a)(v),  	    	  not applicable Section 5(a)(vi),  	    	  not applicable Section 5(a)(vii),  	    	  not applicable Section 5(b)(v),  	    	  not applicable
+EXHIBIT 10.8
+(b) " Specified Transaction" will have the meaning specified in Section 14 of this Agreement.
+(c) The " Cross-Default" provisions of Section 5(a)(vi) will apply to Party A and to Party B.
+Section 5(a)(vi) of the ISDA Master Agreement is amended by the addition of the following after the last semicolon: 'provided, however, that an Event of Default shall not occur under either (1) or (2) above if the default, event of default, or other similar condition or event referred to in (1) or the failure to pay referred to in (2) is caused not by the unavailability of funds but is caused solely due to a technical or administrative error which has been remedied within three Business Days after a notice of such failure is given to the party.'
+Section 5(a)(vi) is further amended by deleting the words ", or becoming capable at such time of being declared,".
+" Specified Indebtedness" will have the meaning specified in Section 14 of this Agreement.
+" Threshold Amount" means (i) with respect to Party A, 3% of the stockholders' equity of Party A, as shown on the most recent annual balance sheet of Party A at any time, and (ii) with respect to Party B, $ 1,000,000.
+(d) The " Credit Event Upon Merger" provisions of Section 5(b)(v) will apply to Party A and to Party B.
+(e) The " Automatic Early Termination" provision of Section 6(a) will not apply to Party A or to Party B; provided that where there is an Event of Default under Section 5(a)(vii)(1), (3), (4), (5), (6) or, to the extent analogous thereto, (8), with respect to a party, and the Defaulting Party is governed by a system of law that does not permit termination to take place after the occurrence of such Event of Default, then the Automatic Early Termination provisions of Section 6(a) of the Agreement will apply.
+(f)      	  " Termination Currency" will have the meaning specified in Section 14 of this Agreement.
+(g)      	  Additional Termination Event will apply. The following will constitute an Additional Termination Event:\
+The Loan Agreement, dated as of January 28, 2010, among Foundry Park I, LLC, a Virginia limited liability company, PB (USA) Realty Corporation, as Lender, and PB Capital Corporation, as Administrative Agent (the "Loan Agreement") shall no longer be in effect or the Loan referred to therein shall be repaid in full .
+An Event of Default, as referred to in the Loan Agreement, shall have occurred and be continuing and all amounts due under the Loan Agreement have become immediately due and payable.
+For the purpose of the foregoing Termination Events, the Affected Party or Affected Parties will be Party B.
+Part 2.
+Tax Representations.
+(a)      	  Payer Representations. For the purpose of Section 3(e) of this Agreement: \
+(i)      	  Party A and Party B each makes the following representations:\
+It is not required by any applicable law, as modified by the practice of any relevant governmental revenue authority, of any Relevant Jurisdiction to make any deduction or withholding for or on account of any Tax from any payment (other than interest under Section 9(h) of this Agreement) to be made by it to the other party under this Agreement. In making this representation, it may rely on (i) the accuracy of any representations made by the other party pursuant to Section 3(f) of this Agreement, (ii) the satisfaction of the agreement contained in Section 4(a)(i) or 4(a)(iii) of this Agreement and the accuracy and effectiveness of any document provided by the other party pursuant to Section 4(a)(i) or 4(a)(iii) of this Agreement and (iii) the satisfaction of the agreement of the other party contained in Section 4(d) of this Agreement, except that it will not be a breach of this representation where reliance is placed on clause (ii) above and the other party does not deliver a form or document under Section 4(a)(iii) by reason of material prejudice to its legal or commercial position.
+(ii)      	  Party A and Party B each makes the following representations: not applicable
+EXHIBIT 10.8
+(b) Payee Representations. For the purpose of Section 3(f) of this Agreement:\
+Party A and Party B each makes the following representation:\
+It is a "U.S. person" (as that term is used in section 1.1441-4(a)(3)(ii) of United States Treasury Regulations) for United States federal income tax purposes.
+Part 3.
+Agreement to Deliver Documents.
+For the purpose of Sections 4(a) of this Agreement, each party agrees to deliver the following documents, as applicable:\
+Party required to   	    	  Form/Document/   	    	  Date by which   	    	  Covered by deliver document   	    	  Certificate   	    	  to be delivered   	    	  Section 3(d) Representation
+Party A and  	    	  A duly executed IRS Form W-9  	    	  Upon execution and  	    	  Yes Party B  	    	    	    	  delivery of this Agreement, promptly upon learning that any Form W-9 has become obsolete or incorrect and on request thereafter
+Party B  	    	  Certified copies of all corporate  	    	  Upon execution and  	    	  Yes authorizations and any other documents  	    	  delivery of this with respect to the execution, delivery and  	    	  Agreement performance of this Agreement
+Party A and  	    	  Certificate of authority and specimen  	    	  Upon execution and  	    	  Yes Party B  	    	  signatures of individuals executing this  	    	  delivery of this Agreement and any Confirmations  	    	  Agreement
+Party B  	    	  Opinion of counsel satisfactory to Party A,  	    	  Upon execution and  	    	  No to the effect set forth in Exhibit A,  	    	  delivery of this addressed to Party A  	    	  Agreement
+Part 4.  	    	             Miscellaneous.
+(a)  	    	             Addresses for Notices. For the purpose of Section 12(a) of this Agreement:\
+Address for notices or communications to Party A:\
+Treasury Services PB Capital Corporation 230 Park Avenue 20th Floor New York, NY 10169
+Address for notices or communications to Party B:\
+Address:  	    	  c/o Newmarket Development Corporation, Manager 330 South Fourth Street Richmond, VA 23219-4350 Attention: David Fiorenza Phone: 804-788-5055
+EXHIBIT 10.8
+Facsimile: 804-788-5435
+with copies to:
+David T. McIndoe Hunton & Williams LLP 1900 K Street, NW Washington, DC 20006
+with second copies to:
+Chatham Financial Corporation 235 Whitehorse Lane Kennett Square, PA 19348
+(b)
+Process Agent. For the purpose of Section 13(c) of this Agreement:\
+Party A appoints as its Process Agent: not applicable
+Party B appoints as its Process Agent: not applicable
+(c) Waiver of Right to Trial by Jury. EACH PARTY WAIVES, TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, ANY RIGHT IT MAY HAVE TO A TRIAL BY JURY IN RESPECT OF ANY SUIT, ACTION OR PROCEEDING RELATING TO THIS AGREEMENT. Each party (A) certifies that no representative, agent or attorney of the other party has represented, expressly or otherwise, that such other party would not, in the event of such a suit action or proceeding, seek to enforce the foregoing waiver and (B) acknowledges that it and the other party have been induced to enter into this Agreement by, among other things, the mutual waivers and certifications in this clause.
+(d) Governing Law and Jurisdiction. THIS AGREEMENT SHALL BE GOVERNED BY, AND
+CONSTRUED IN ACCORDANCE WITH, THE LAWS OF THE STATE OF NEW YORK (INCLUDING FOR SUCH PURPOSES SECTIONS 5-1401 AND 5-1402 OF THE GENERAL OBLIGATIONS LAW OF THE STATE OF NEW YORK). Party A and Party B hereby irrevocably submit to the non- exclusive jurisdiction of any New York State or Federal court sitting in The Borough of Manhattan in The City of New York over any suit, action or proceeding arising out of or relating to this Agreement, and Party B hereby agrees and consents that, in addition to any methods of service of process provided for under applicable law, all service of process in any such suit, action or proceeding in any New York State or Federal court may be made by certified or registered mail, return receipt requested, directed to Party B at the address indicated in clause (a) above, and service so made shall be complete five (5) days after the same shall have been so mailed
+(e)
+Offices. The provisions of Section 10(a) will not apply to this Agreement.
+(f)
+Multibranch Party. For the purpose of Section 10(b) of this Agreement:\
+Party A is not a Multibranch Party.
+Party B is not a Multibranch Party.
+(g)      	  Calculation Agent. The Calculation Agent is Party A, unless (i) otherwise specified in a Confirmation in relation to the relevant Transaction or (ii) Party A is a Defaulting Party, in which case the Calculation Agent shall be a qualified third party financial institution appointed by Party B which shall reasonably satisfactory to Party A.
+(h)      	  Credit Support Document. Details of any Credit Support Document:\
+Party A: none
+Party B: the Deed of Trust, as defined in the Loan Agreement, as well as any other documents providing security for the obligations of Party B under the Loan Agreement
+EXHIBIT 10.8
+(i)  	    	  Credit Support Provider. Not applicable
+(j)  	    	                                                   Netting of Payments. For purposes of netting, Section 2(c) (ii) of this Agreement will apply.
+(k)  	    	  " Affiliate" will have the meaning specified in Section 14 of this Agreement
+(l)  	    	                                                   Absence of Litigation. For the purpose of Section 3(c):\ " Specified Entity" means in relation to Party A,  	    	  not applicable " Specified Entity" means in relation to Party B,  	    	  not applicable
+(m)  	    	                                                   No Agency. The provisions of Section 3(g) will apply to this Agreement.
+(n)      	  Additional Representation will apply. For the purpose of Section 3 of this Agreement, the following will constitute an
+Additional Representation:\
+(i) Relationship Between Parties. Each party will be deemed to represent to the other party on the date on which it enters into a Transaction that (absent a written agreement between the parties that expressly imposes affirmative obligations to the contrary for that Transaction):\
+(1)      	  Non-Reliance. It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisers as it has deemed necessary. It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction, it being understood that information and explanations related to the terms and conditions of a Transaction will not be considered investment advice or a recommendation to enter into that Transaction.
+No communication (written or oral) received from the other party will be deemed to be an assurance or guarantee as to the expected results of that Transaction.
+(2)      	  Assessment and Understanding. It is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction. It is also capable of assuming, and assumes, the risks of that Transaction.
+(3)      	  Status of Parties. The other party is not acting as a fiduciary for or an adviser to it in respect of that Transaction.
+(o) Recording of Conversations. Each party (i) consents to the recording of telephone conversations between the trading, marketing and other relevant personnel of the parties in connection with this Agreement or any potential Transaction, (ii) agrees to obtain any necessary consent of, and give any necessary notice of such recording to, its relevant personnel and (iii) agrees, to the extent permitted by applicable law, that recordings may be submitted in evidence in any Proceedings.
+Part 5.
+Other Provisions.
+(a) Severability. In the event that any one or more of the provisions contained in this Agreement should be held invalid, illegal, or unenforceable in any jurisdiction, the validity, legality and enforceability of the remaining provisions contained herein shall not in any way be affected or impaired thereby. The parties shall endeavor, in good faith negotiations, to replace the invalid, illegal or unenforceable provisions with valid provisions, the economic effect of which comes as close as possible to that of the invalid, illegal or unenforceable provisions.
+(b) Risk Management. Line of Business. Party B alone represents that this Agreement has been, and each Transaction hereunder has been or will he, as the case may be, entered into for the purpose of managing its borrowings or investments, hedging its underlying assets or liabilities or in connection with its line of business (including financial intermediation services) and not for the purpose of speculation.
+(c) Swap Agreement. This Agreement and each Transaction constitute a "swap agreement" within the meaning of CFTC Regulations Section 35.1(b)(1) and the CFTC Swap Policy Statement.
+EXHIBIT 10.8
+(d) Eligible Swap Participant. Each party hereto represents that it is an "eligible swap participant" within the meaning of CFTC Regulations Section 35.1(b)(2).
+(e) Agreement not Standardized. Neither this Agreement nor any Transaction is one of a fungible class of agreements that are standardized as to their material economic terms, within the meaning of CFTC Regulations Section 35.2(b).
+(f) Creditworthiness a Consideration. The creditworthiness of the other party was or will be a material consideration in entering into or determining the terms of this Agreement and each Transaction, including pricing, cost or credit enhancement terms of the Agreement or Transaction, within the meaning of CFTC Regulations Section 35.2(c).
+(g) Transfer. Section 7 of the Agreement is amended by adding the words "which consent shall not be unreasonably withheld or delayed" in the third line thereof after the word "party" before the comma.
+(h) Definitions. The 2006 ISDA Definitions (the "2006 Definitions"), as published by the International Swaps and Derivatives Association, Inc. (ISDA), are hereby incorporated by reference herein and shall be deemed to be incorporated into each Confirmation hereunder. Any terms used and not otherwise defined herein which are contained in the 2006 Definitions shall have the meaning set forth therein.
+(i) No Indemnity. Section 13(d) of this Agreement is hereby deleted in its entirety. ]
+(j) Insolvency Safe Harbor. This Agreement and each Transaction made under this Agreement constitute a "swap agreement" and/or a "master netting agreement" as defined under Title 11 of the United States Code (the "Bankruptcy Code"), (ii) it is a "swap participant" as defined under the Bankruptcy Code, (iii) the rights of the Parties under the termination provisions of this Agreement will constitute contractual rights to liquidate, net and setoff Transactions, and (iv) the Parties are entitled to and desire enforcement of the rights under, and protections afforded by each of Sections 560, 561 and 562 of the Bankruptcy Code.
+EXHIBIT 10.8
+Party A:   	    	  Party B:
+PB CAPITALCORPORATION   	    	  FOUNDRYPARKI, LLC By: /s/ Robert Bengifo  	    	  By: NEWMARKET DEVELOPMENT CORPORATION Name: Robert Bengifo  	    	     By: /s/ Bruce R. Hazelgrove, III Title: Senior Director  	    	             Name: Bruce R. Hazelgrove, III Date: January 29, 2010  	    	             Title:  	    	  Vice President Date:  	    	  January 29, 2010 By: /s/ Andrew E. Woodtli Name: Andrew E. Woodtli Title: Senior Director Date: January 29, 2010

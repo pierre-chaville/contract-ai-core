@@ -1,7 +1,7 @@
 EX-10.5 6 exhibit105isdaamendment102.htm EXHIBIT
 AMENDMENT
 to
-THE ISDA® MASTER AGREEMENT
+THE ISDAÂ® MASTER AGREEMENT
 THIS AMENDMENT, dated as of October 23, 2013 (the "Amendment"), between BANK OF AMERICA, N.A. ("Party A") and HEARTLAND PAYMENT SYSTEMS, INC. ("Party B").
 W I T N E S S E T H
 WHEREAS, Party A and Party B have previously entered into a certain ISDA Master Agreement, dated as of December 30, 2010 (the "Master Agreement") and the ISDA Schedule to the Master Agreement dated as of December 30, 2010 (the "Schedule"), (the Master Agreement and Schedule, collectively, the "Agreement"); and
@@ -49,3 +49,4 @@ IN WITNESS WHEREOF, the parties hereto have caused this Amendment to be executed
 BANK OF AMERICA, N.A.	 HEARTLAND PAYMENT SYSTEMS, INC.
 By:  /S/ Carl R. Kolbet Name: Carl R. Kobet Title: Director 	 By: /S/ Robert H. B. Baldwin, Jr.
 Name: Robert H. B. Baldwin, Jr.
+Title: Vice Chairman

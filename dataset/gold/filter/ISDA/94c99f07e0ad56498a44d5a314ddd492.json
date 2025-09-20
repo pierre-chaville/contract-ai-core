@@ -1,0 +1,13 @@
+{
+  "filename": "94c99f07e0ad56498a44d5a314ddd492.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 351,
+      "end_line": 526,
+      "confidence": 1.0,
+      "explanation": "Lines 351-526 contain the full Schedule to the ISDA Master Agreement, including all the negotiated terms between the parties. The Schedule begins at line 351 with the heading 'SCHEDULE to the 2002 Master Agreement' and ends at line 526 with the execution block. This span excludes the standard pre-printed Master Agreement, the CSA annex, and any appendices or exhibits outside the Schedule."
+    }
+  ]
+}

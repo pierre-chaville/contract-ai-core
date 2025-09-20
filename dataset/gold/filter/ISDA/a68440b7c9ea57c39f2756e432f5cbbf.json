@@ -1,0 +1,13 @@
+{
+  "filename": "a68440b7c9ea57c39f2756e432f5cbbf.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 363,
+      "end_line": 517,
+      "confidence": 0.99,
+      "explanation": "Lines 363-517 contain the full Schedule to the ISDA Master Agreement, including all 'Parts' (Termination Provisions, Tax Representations, Agreement to Deliver Documents, Miscellaneous, Other Provisions) and the signature block. The lines before 363 are the standard pre-printed Master Agreement, and lines after 517 are the Credit Support Annex and related documents, which are not part of the Schedule. This span precisely matches the user's request to filter the Schedule only."
+    }
+  ]
+}
