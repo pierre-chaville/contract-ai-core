@@ -1,0 +1,63 @@
+{
+  "filename": "fda2ebf28fa8520c99b6cb5f7a88bb0f.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA International Swaps and Derivatives Association, Inc. MASTER AGREEMENT', which matches the ISDA contract type."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 0.95,
+    "explanation": "The text at the bottom of the page states 'ISDA 1992', indicating the 1992 version of the ISDA Master Agreement."
+  },
+  "contract_date": {
+    "value": "2018-02-21",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of February 21, 2018', which is explicitly stated near the top of the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is an initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of any amendment number or amendment language."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is a Master Agreement and not an amendment or restated version; it is the initial contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and formatted as a final agreement, not a draft. While signatures are not visible, the presence of a specific date and formal structure suggest execution."
+  },
+  "party_name_1": {
+    "value": "EDF Energy Services, LLC",
+    "confidence": 1.0,
+    "explanation": "EDF Energy Services, LLC is listed first and labeled as 'Party A'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The document explicitly labels EDF Energy Services, LLC as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "Summer Energy Northeast, LLC (formerly: REP Energy, LLC)",
+    "confidence": 1.0,
+    "explanation": "Summer Energy Northeast, LLC (formerly: REP Energy, LLC) is listed second and labeled as 'Party B'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The document explicitly labels Summer Energy Northeast, LLC as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free from OCR errors or typos."
+  }
+}

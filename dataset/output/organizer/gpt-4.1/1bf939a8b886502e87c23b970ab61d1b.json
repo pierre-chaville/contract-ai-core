@@ -1,0 +1,63 @@
+{
+  "filename": "1bf939a8b886502e87c23b970ab61d1b.txt",
+  "contract_type": {
+    "value": "TERMINATION",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'TERMINATION ACKNOWLEDGMENT (TRS)' and repeatedly refers to the termination of transactions under the Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No specific versioning for 'Termination Acknowledgment' is mentioned; versioning applies to the underlying ISDA, not this document."
+  },
+  "contract_date": {
+    "value": "2011-08-11",
+    "confidence": 0.95,
+    "explanation": "The ISDA 2002 Master Agreement, which is being terminated, is dated August 11, 2011. This is the main contract date referenced."
+  },
+  "amendment_date": {
+    "value": "2013-05-24",
+    "confidence": 1.0,
+    "explanation": "The Termination Acknowledgment is dated May 24, 2013, which is the effective date of this amendment/termination."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No amendment number is mentioned in the document."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "This document is a termination acknowledgment, which is a form of amendment to the original contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.95,
+    "explanation": "The document states 'IN WITNESS WHEREOF, the undersigned have caused this Termination Acknowledgment to be duly executed as of the date first written above.'"
+  },
+  "party_name_1": {
+    "value": "Citibank, N.A.",
+    "confidence": 1.0,
+    "explanation": "Citibank, N.A. is explicitly named as a party in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "Citibank, N.A. is listed first and is typically Party A in ISDA agreements, though the role is not explicitly labeled here."
+  },
+  "party_name_2": {
+    "value": "EP Investments LLC",
+    "confidence": 1.0,
+    "explanation": "EP Investments LLC is explicitly named as the Counterparty in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "EP Investments LLC is referred to as the Counterparty, which is typically Party B in ISDA agreements, though the role is not explicitly labeled here."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of OCR errors or typos."
+  }
+}

@@ -151,22 +151,46 @@ def main() -> None:
     # Cohen's Kappa
     kappa = float(cohen_kappa_score(all_true, all_pred, labels=labels)) if all_true else 0.0
 
-    # Per-category F1 (macro averaged also)
-    f1_per_label = f1_score(all_true, all_pred, labels=labels, average=None, zero_division=0)
+    # Per-category detailed metrics
     macro_f1 = float(f1_score(all_true, all_pred, labels=labels, average="macro", zero_division=0))
-    per_category = {label: float(score) for label, score in zip(labels, f1_per_label, strict=False)}
+    # Compute TP, FP, FN, TN per label from confusion matrix
+    total = int(cm.sum()) if cm.size else 0
+    per_category_list: list[dict[str, float | int | str]] = []
+    for i, label in enumerate(labels):
+        tp = int(cm[i, i]) if cm.size else 0
+        fn = int(cm[i, :].sum() - tp) if cm.size else 0
+        fp = int(cm[:, i].sum() - tp) if cm.size else 0
+        tn = int(total - tp - fp - fn) if cm.size else 0
+        support = tp + fn
+        precision = float(tp / (tp + fp)) if (tp + fp) > 0 else 0.0
+        recall = float(tp / (tp + fn)) if (tp + fn) > 0 else 0.0
+        f1 = (
+            float(2 * precision * recall / (precision + recall))
+            if (precision + recall) > 0
+            else 0.0
+        )
+        accuracy_cat = float((tp + tn) / total) if total > 0 else 0.0
+        per_category_list.append(
+            {
+                "category": label,
+                "accuracy": accuracy_cat,
+                "count": support,
+                "f1": f1,
+                "precision": precision,
+                "recall": recall,
+            }
+        )
 
     # Write outputs
     summary = {
-        "num_examples": len(all_true),
-        "labels": labels,
-        "accuracy": accuracy,
-        "cohen_kappa": kappa,
-        "high_confidence_threshold_percent": threshold,
-        "high_confidence_accuracy": high_conf_accuracy,
-        "high_confidence_coverage": coverage,
-        "macro_f1": macro_f1,
-        "per_category_f1": per_category,
+        "Number examples": len(all_true),
+        "Accuracy": accuracy,
+        "Cohen's Kappa": kappa,
+        "High confidence threshold percent": threshold,
+        "High confidence accuracy": high_conf_accuracy,
+        "High confidence coverage": coverage,
+        "Macro F1": macro_f1,
+        "per_category": per_category_list,
     }
     with (out_dir / "summary.yaml").open("w", encoding="utf-8") as f:
         yaml.safe_dump(summary, f, sort_keys=False, allow_unicode=True)
@@ -181,15 +205,24 @@ def main() -> None:
         return f"{int(round(float(val) * 100))}%"
 
     summary_pct = {
-        "num_examples": len(all_true),
-        "labels": labels,
-        "accuracy": _to_pct(accuracy),
+        "Num examples": len(all_true),
+        "Accuracy": _to_pct(accuracy),
         "cohen_kappa": _to_pct(kappa),
-        "high_confidence_threshold_percent": threshold,
-        "high_confidence_accuracy": _to_pct(high_conf_accuracy),
-        "high_confidence_coverage": _to_pct(coverage),
-        "macro_f1": _to_pct(macro_f1),
-        "per_category_f1": {k: _to_pct(v) for k, v in per_category.items()},
+        "High confidence threshold percent": threshold,
+        "High confidence accuracy": _to_pct(high_conf_accuracy),
+        "High confidence coverage": _to_pct(coverage),
+        "Macro F1": _to_pct(macro_f1),
+        "per_category": [
+            {
+                "category": it["category"],
+                "accuracy": _to_pct(it["accuracy"]),
+                "count": it["count"],
+                "f1": _to_pct(it["f1"]),
+                "precision": _to_pct(it["precision"]),
+                "recall": _to_pct(it["recall"]),
+            }
+            for it in per_category_list
+        ],
     }
     print(yaml.safe_dump(summary_pct, sort_keys=False, allow_unicode=True))
 

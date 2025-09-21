@@ -1,0 +1,20 @@
+{
+  "filename": "a957a2573ca25c5a913f0e96e32d0002.txt",
+  "contract_type": "GMRA",
+  "scopes": [
+    {
+      "name": "preamble",
+      "start_line": 0,
+      "end_line": 8,
+      "confidence": 0.98,
+      "explanation": "The preamble is defined as the beginning of the contract up to the start of the standard preprint, which typically begins with '1. Applicability'. Here, line 9 is the start of '1. Applicability', so the preamble is lines 0 through 8."
+    },
+    {
+      "name": "annex 1",
+      "start_line": 280,
+      "end_line": 404,
+      "confidence": 0.99,
+      "explanation": "Annex 1 is clearly marked starting at line 280 ('ANNEX 1') and continues through the supplemental terms and conditions, ending just before 'ANNEX II' at line 405. Thus, lines 280-404 comprise Annex 1."
+    }
+  ]
+}

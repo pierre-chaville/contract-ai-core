@@ -1,0 +1,13 @@
+{
+  "filename": "c1e91e86c11e55f3bcaa6628b072cac4.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 351,
+      "end_line": 475,
+      "confidence": 0.98,
+      "explanation": "The ISDA Schedule begins at line 351 (\"SCHEDULE\") and continues through the parties' execution at line 475. This section contains the negotiated terms between the parties, as required by the query, and excludes the standard pre-printed Master Agreement and the Credit Support Annex, which starts at line 478. The span covers all the 'Parts' of the Schedule, including Termination Provisions, Tax Representations, Agreement to Deliver Documents, Miscellaneous, Other Provisions, and Additional Terms for FX Transactions."
+    }
+  ]
+}

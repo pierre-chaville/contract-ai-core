@@ -1,0 +1,63 @@
+{
+  "filename": "66317a701bd35483a91593879e761562.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'AMENDMENT TO THE ISDA MASTER AGREEMENT AND SCHEDULE THERETO' and repeatedly references the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No specific ISDA version (e.g., 1992 or 2002) is mentioned in the text or image."
+  },
+  "contract_date": {
+    "value": "2005-06-24",
+    "confidence": 1.0,
+    "explanation": "The original ISDA Master Agreement is stated as dated June 24, 2005."
+  },
+  "amendment_date": {
+    "value": "2009-05-29",
+    "confidence": 1.0,
+    "explanation": "The amendment is stated to be effective as of May 29, 2009."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No amendment number is specified in the document."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is explicitly an amendment to the ISDA Master Agreement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 1.0,
+    "explanation": "The document includes signatures and execution dates, indicating it is executed."
+  },
+  "party_name_1": {
+    "value": "J. ARON & COMPANY",
+    "confidence": 1.0,
+    "explanation": "J. ARON & COMPANY is named as one of the parties in both the heading and signature block."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "J. ARON & COMPANY is listed first and is typically Party A in such agreements, though the explicit label is not shown."
+  },
+  "party_name_2": {
+    "value": "COFFEYVILLE RESOURCES, LLC",
+    "confidence": 1.0,
+    "explanation": "COFFEYVILLE RESOURCES, LLC is named as the other party in both the heading and signature block."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "COFFEYVILLE RESOURCES, LLC is listed second and is typically Party B in such agreements, though the explicit label is not shown."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of significant errors."
+  }
+}

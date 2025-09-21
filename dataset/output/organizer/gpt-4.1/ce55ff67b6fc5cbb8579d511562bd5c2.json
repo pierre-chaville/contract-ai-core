@@ -1,0 +1,63 @@
+{
+  "filename": "ce55ff67b6fc5cbb8579d511562bd5c2.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'SECOND AMENDMENT AGREEMENT TO 2002 ISDA MASTER AGREEMENT', explicitly referencing the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The title and body both specify '2002 ISDA Master Agreement'."
+  },
+  "contract_date": {
+    "value": "2013-05-20",
+    "confidence": 0.95,
+    "explanation": "The original contract date is stated as '2002 ISDA Master Agreement, dated as of May 20, 2013'."
+  },
+  "amendment_date": {
+    "value": "2014-09-26",
+    "confidence": 1.0,
+    "explanation": "The amendment agreement is dated as of September 26, 2014, which is the effective date for this amendment."
+  },
+  "amendment_number": {
+    "value": "2",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'SECOND AMENDMENT AGREEMENT', indicating this is the second amendment."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is an amendment, as indicated by the title 'SECOND AMENDMENT AGREEMENT'."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final, executed amendment, not a draft."
+  },
+  "party_name_1": {
+    "value": "UBS AG",
+    "confidence": 1.0,
+    "explanation": "UBS AG is identified as Party A in the opening paragraph."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "UBS AG is explicitly referred to as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "CM FINANCE INC.",
+    "confidence": 1.0,
+    "explanation": "CM FINANCE INC. is identified as Party B in the opening paragraph."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "CM FINANCE INC. is explicitly referred to as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of OCR errors or typos."
+  }
+}

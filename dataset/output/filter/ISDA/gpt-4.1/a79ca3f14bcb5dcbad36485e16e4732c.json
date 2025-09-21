@@ -1,0 +1,13 @@
+{
+  "filename": "a79ca3f14bcb5dcbad36485e16e4732c.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 4,
+      "end_line": 157,
+      "confidence": 0.98,
+      "explanation": "Lines 4 to 157 comprise the full text of the Schedule to the ISDA 2002 Master Agreement, starting with the heading 'SCHEDULE' and including all the 'Parts' (1-5) and their provisions. The content is contiguous and does not include standard pre-printed ISDA Master Agreement text or annexes such as the Credit Support Annex, which is only referenced but not included. The signature block and closing lines (158 onward) are not part of the substantive Schedule."
+    }
+  ]
+}

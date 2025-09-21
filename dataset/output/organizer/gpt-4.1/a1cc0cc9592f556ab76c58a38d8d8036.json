@@ -1,0 +1,63 @@
+{
+  "filename": "a1cc0cc9592f556ab76c58a38d8d8036.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is explicitly a letter referencing the ISDA Master Agreement and amending a deadline under it."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No specific ISDA version (e.g., 1992 or 2002) is mentioned in the text."
+  },
+  "contract_date": {
+    "value": "2004-06-30",
+    "confidence": 1.0,
+    "explanation": "The ISDA Master Agreement is stated as dated June 30, 2004."
+  },
+  "amendment_date": {
+    "value": "2005-02-25",
+    "confidence": 1.0,
+    "explanation": "The letter amending the agreement is dated February 25, 2005."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No amendment number is mentioned in the document."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The letter is an amendment to the ISDA Master Agreement, extending a deadline."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The letter is signed and appears to be a formal, executed amendment."
+  },
+  "party_name_1": {
+    "value": "Belden & Blake Corporation",
+    "confidence": 1.0,
+    "explanation": "Belden & Blake Corporation is explicitly named as a party to the ISDA Agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "Belden & Blake is listed first and is the counterparty required to deliver the report; inferred as Party A."
+  },
+  "party_name_2": {
+    "value": "J. Aron & Company",
+    "confidence": 1.0,
+    "explanation": "J. Aron & Company is explicitly named as a party to the ISDA Agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "J. Aron is the recipient of the report and is listed second; inferred as Party B."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is clean, well-formatted, and fully readable with no OCR or typographical errors."
+  }
+}

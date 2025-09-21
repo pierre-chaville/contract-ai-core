@@ -1,0 +1,13 @@
+{
+  "filename": "4389f961999f510ab17c54b7cf352e8a.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 3,
+      "end_line": 127,
+      "confidence": 0.98,
+      "explanation": "Lines 3-127 comprise the entire Schedule to the 2002 ISDA Master Agreement, including all its Parts and signature blocks. The text before line 3 is introductory and after line 127 there is no further content. There are no CSA annexes or standard pre-print sections within this span."
+    }
+  ]
+}

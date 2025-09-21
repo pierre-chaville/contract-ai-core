@@ -1,0 +1,63 @@
+{
+  "filename": "e823b77ec78357da9461add4eae003c2.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.95,
+    "explanation": "The document repeatedly references 'ISDA Master Agreement' and describes agreements that are substantially identical to a referenced exhibit."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.8,
+    "explanation": "No explicit version year (e.g., 1992 or 2002) is mentioned in the text or visible in the image."
+  },
+  "contract_date": {
+    "value": "2004-03-24",
+    "confidence": 0.95,
+    "explanation": "Both ISDA Master Agreements are explicitly dated March 24, 2004."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 0.95,
+    "explanation": "This is not an amendment document; it describes initial contracts."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The agreements are described as new, separate ISDA Master Agreements, not amendments or restatements."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.8,
+    "explanation": "The phrase 'has been entered into' indicates the agreements have been executed."
+  },
+  "party_name_1": {
+    "value": "Morgan Stanley Capital Services, Inc.",
+    "confidence": 0.95,
+    "explanation": "Morgan Stanley Capital Services, Inc. is listed as a party in both agreements."
+  },
+  "party_role_1": {
+    "value": "Above Cap Liquidity Facility Provider",
+    "confidence": 0.95,
+    "explanation": "Morgan Stanley Capital Services, Inc. is described as 'Above Cap Liquidity Facility Provider' in both agreements."
+  },
+  "party_name_2": {
+    "value": "Wilmington Trust Company",
+    "confidence": 0.95,
+    "explanation": "Wilmington Trust Company is the counterparty in both agreements."
+  },
+  "party_role_2": {
+    "value": "Subordination Agent",
+    "confidence": 0.95,
+    "explanation": "Wilmington Trust Company is described as 'Subordination Agent' for the relevant trusts."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

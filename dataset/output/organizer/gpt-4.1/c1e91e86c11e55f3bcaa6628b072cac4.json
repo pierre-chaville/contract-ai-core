@@ -1,0 +1,63 @@
+{
+  "filename": "c1e91e86c11e55f3bcaa6628b072cac4.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA 2002 MASTER AGREEMENT' and repeatedly refers to the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called '2002 MASTER AGREEMENT' in the header and body."
+  },
+  "contract_date": {
+    "value": "2009-03-18",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of March 18, 2009' as stated clearly in the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of any amendment number or amendment language."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original '2002 MASTER AGREEMENT' and does not reference being amended or restated."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a finalized contract, not a draft."
+  },
+  "party_name_1": {
+    "value": "GMAC INVESTMENT MANAGEMENT LLC",
+    "confidence": 1.0,
+    "explanation": "Listed as the first party at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled, by convention the first listed party is Party A in ISDA agreements."
+  },
+  "party_name_2": {
+    "value": "RESIDENTIAL CAPITAL, LLC",
+    "confidence": 1.0,
+    "explanation": "Listed as the second party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled, by convention the second listed party is Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of OCR errors or typos."
+  }
+}

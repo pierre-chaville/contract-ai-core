@@ -1,0 +1,63 @@
+{
+  "filename": "44bfc10183425119bf507083874e5756.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swap Dealers Association, Inc. This matches the ISDA Master Agreement contract type."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The copyright notice at the bottom states 'Copyright (C)1992 by International Swap Dealers Association, Inc.', indicating the 1992 version."
+  },
+  "contract_date": {
+    "value": "2007-07-19",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of July 19, 2007, which is explicitly stated near the top of the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original ISDA Master Agreement, not an amendment or amended and restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and formatted as a finalized agreement, not a draft. While explicit signatures are not shown, the context and language indicate execution."
+  },
+  "party_name_1": {
+    "value": "KeyBank National Association",
+    "confidence": 1.0,
+    "explanation": "KeyBank National Association is listed as one of the parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "While the roles are not explicitly labeled, the first party listed is typically Party A in ISDA agreements."
+  },
+  "party_name_2": {
+    "value": "Jupitermedia Corporation",
+    "confidence": 1.0,
+    "explanation": "Jupitermedia Corporation is listed as the other party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "While the roles are not explicitly labeled, the second party listed is typically Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

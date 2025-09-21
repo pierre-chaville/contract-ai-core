@@ -1,0 +1,63 @@
+{
+  "filename": "5b3b418331ba5994a23e43d507dcee0b.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.95,
+    "explanation": "The document is repeatedly titled 'ISDA Schedule to the Master Agreement for Interest Rate Swap', indicating it is an ISDA Master Agreement or schedule."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.7,
+    "explanation": "No explicit reference to a specific ISDA version year (e.g., 1992 or 2002) is present in the text or image."
+  },
+  "contract_date": {
+    "value": "2007-03-13",
+    "confidence": 0.98,
+    "explanation": "The date '13 March 2007' is clearly labeled as the contract date in the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 0.95,
+    "explanation": "There is no indication that this document is an amendment; it appears to be an initial schedule."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document does not appear to be an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The document is an ISDA Schedule, not an amendment or restatement, indicating it is the initial contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.8,
+    "explanation": "The presence of a specific date and finalized party names suggests execution, though no explicit 'executed' or 'signed' statement is present."
+  },
+  "party_name_1": {
+    "value": "CRUSADE MANAGEMENT LIMITED",
+    "confidence": 0.98,
+    "explanation": "Listed as Party A in the parties section."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.98,
+    "explanation": "Explicitly labeled as 'PARTY A' in the parties section."
+  },
+  "party_name_2": {
+    "value": "PERPETUAL TRUSTEES CONSOLIDATED LIMITED as trustee of the Crusade Global Trust No. 1 of 2007",
+    "confidence": 0.98,
+    "explanation": "Listed as Party B in the parties section."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.98,
+    "explanation": "Explicitly labeled as 'PARTY B' in the parties section."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "Text and image are clear, well-formatted, and free of significant errors or OCR issues."
+  }
+}

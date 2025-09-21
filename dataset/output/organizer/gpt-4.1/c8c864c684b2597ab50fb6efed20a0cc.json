@@ -1,0 +1,63 @@
+{
+  "filename": "c8c864c684b2597ab50fb6efed20a0cc.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'FORM OF AMENDMENT TO THE ISDA MASTER AGREEMENT' and repeatedly references the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No specific ISDA version year (e.g., 1992 or 2002) is mentioned in the provided text."
+  },
+  "contract_date": {
+    "value": "2006-03-17",
+    "confidence": 1.0,
+    "explanation": "The original ISDA Master Agreement date is explicitly stated as March 17, 2006."
+  },
+  "amendment_date": {
+    "value": "2011-09-30",
+    "confidence": 1.0,
+    "explanation": "The amendment is dated as of September 30, 2011, as stated at the top of the document."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No amendment number is mentioned in the text."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is clearly labeled as an 'AMENDMENT' to the ISDA Master Agreement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.95,
+    "explanation": "The document is labeled 'Execution Version,' which typically indicates an executed contract."
+  },
+  "party_name_1": {
+    "value": "J. ARON & COMPANY",
+    "confidence": 1.0,
+    "explanation": "J. ARON & COMPANY is explicitly named as a party."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.95,
+    "explanation": "J. ARON & COMPANY is listed first and is typically Party A in ISDA agreements."
+  },
+  "party_name_2": {
+    "value": "CALUMET LUBRICANTS CO., LIMITED PARTNERSHIP",
+    "confidence": 1.0,
+    "explanation": "CALUMET LUBRICANTS CO., LIMITED PARTNERSHIP is explicitly named as a party."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.95,
+    "explanation": "CALUMET LUBRICANTS CO., LIMITED PARTNERSHIP is listed second and is typically Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

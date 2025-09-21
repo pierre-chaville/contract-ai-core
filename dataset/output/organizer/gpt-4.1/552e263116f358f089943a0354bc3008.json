@@ -1,0 +1,63 @@
+{
+  "filename": "552e263116f358f089943a0354bc3008.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'SCHEDULE to the 2002 ISDA Master Agreement', which explicitly identifies it as an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The document refers to the '2002 ISDA Master Agreement', clearly stating the version year."
+  },
+  "contract_date": {
+    "value": "2017-07-12",
+    "confidence": 1.0,
+    "explanation": "The date 'dated as of July 12, 2017' is explicitly stated as the contract date."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is a schedule to the main agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number or that this is an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.9,
+    "explanation": "The document is a schedule to the initial 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The use of 'dated as of' and the formal structure suggest this is an executed agreement, not a draft."
+  },
+  "party_name_1": {
+    "value": "JPMorgan Chase Bank, N.A.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as Party A in the agreement header."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "CMF Winton Master L.P.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as Party B in the agreement header."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

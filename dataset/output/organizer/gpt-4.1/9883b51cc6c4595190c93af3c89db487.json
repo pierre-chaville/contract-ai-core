@@ -1,0 +1,63 @@
+{
+  "filename": "9883b51cc6c4595190c93af3c89db487.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'TWENTY-SECOND AMENDMENT TO FIRST LIEN ISDA 2002 MASTER AGREEMENT', explicitly indicating it is an ISDA Master Agreement amendment."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The title and body repeatedly reference the 'ISDA 2002 Master Agreement', making the version explicit."
+  },
+  "contract_date": {
+    "value": "2016-03-17",
+    "confidence": 0.9,
+    "explanation": "The recitals state the original First Lien ISDA 2002 Master Agreement was dated as of March 17, 2016, which is the main contract date for this amendment."
+  },
+  "amendment_date": {
+    "value": "2022-04-21",
+    "confidence": 1.0,
+    "explanation": "The amendment is stated to be 'entered into as of April 21, 2022' in the opening paragraph."
+  },
+  "amendment_number": {
+    "value": "22",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'TWENTY-SECOND AMENDMENT', which corresponds to amendment number 22."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is an amendment, as indicated by the title and repeated references to 'Amendment'."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is labeled 'Execution Version', which strongly indicates it is executed."
+  },
+  "party_name_1": {
+    "value": "MERRILL LYNCH COMMODITIES, INC.",
+    "confidence": 1.0,
+    "explanation": "The opening paragraph identifies 'MERRILL LYNCH COMMODITIES, INC.' as a party."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The opening paragraph explicitly designates MERRILL LYNCH COMMODITIES, INC. as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "U.S. OIL & REFINING CO.",
+    "confidence": 1.0,
+    "explanation": "The opening paragraph identifies 'U.S. OIL & REFINING CO.' as a party."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The opening paragraph explicitly designates U.S. OIL & REFINING CO. as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

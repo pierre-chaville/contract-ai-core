@@ -1398,78 +1398,108 @@ def main() -> None:
                 st.session_state[state_key_target] = picked
                 if not picked:
                     st.info("Select a document to compare.")
+                    st.button("Compare", disabled=True)
                     st.stop()
                 target_path = next(p for p in other_files if p.name == picked)
 
-                # Read and split paragraphs
-                try:
-                    text1 = read_text_best_effort(current_path)
-                    text2 = read_text_best_effort(target_path)
-                    paras1 = [
-                        Paragraph(index=i, text=pp.text)
-                        for i, pp in enumerate(text_to_paragraphs(text1))
-                    ]
-                    paras2 = [
-                        Paragraph(index=i, text=pp.text)
-                        for i, pp in enumerate(text_to_paragraphs(text2))
-                    ]
-                except Exception as e:
-                    st.error(f"Failed to load documents: {e}")
-                    paras1, paras2 = [], []
-
-                # Build classification for doc1 (for clause labels)
-                df_cls = (
-                    load_classification_csv(template_key, model_name, current_path.stem)
-                    if model_name
-                    else None
-                )
-                classification: DocumentClassification | None
-                if df_cls is not None and not df_cls.empty:
-                    cls_pars: list[ClassifiedParagraph] = []
-                    clause_to_pars: dict[str, list[int]] = {}
-                    for _, row in df_cls.iterrows():
-                        try:
-                            idx_i = int(str(row.get("index", "")).strip())
-                        except Exception:
-                            continue
-                        txt = str(row.get("text", "")).strip()
-                        ck = str(row.get("clause_key", "")).strip() or None
-                        cp = ClassifiedParagraph(
-                            paragraph=Paragraph(index=idx_i, text=txt),
-                            clause_key=ck,
-                            confidence=None,
-                        )
-                        cls_pars.append(cp)
-                        if ck:
-                            clause_to_pars.setdefault(ck, []).append(idx_i)
-                    classification = DocumentClassification(
-                        paragraphs=cls_pars, clause_to_paragraphs=clause_to_pars or None
-                    )
-                else:
-                    classification = None
-
-                # Run compare only when we have a target and not yet computed for this pair
                 compare_cache_key = f"compare::{template_key}::{model_name}::{current_path.name}::{target_path.name}"
                 result = st.session_state.get(compare_cache_key)
-                if result is None and paras1 and paras2:
-                    try:
-                        comparer = DocumentCompare(
-                            paragraphs_doc1=paras1,
-                            paragraphs_doc2=paras2,
-                            classification_doc1=classification,
-                            config=DocumentCompareConfig(),
+                compare_clicked = st.button("Compare")
+                if result is None and compare_clicked:
+                    with st.spinner("Comparing, please wait…"):
+                        # Read and split paragraphs
+                        try:
+                            text1 = read_text_best_effort(current_path)
+                            text2 = read_text_best_effort(target_path)
+                            paras1 = [
+                                Paragraph(index=i, text=pp.text)
+                                for i, pp in enumerate(text_to_paragraphs(text1))
+                            ]
+                            paras2 = [
+                                Paragraph(index=i, text=pp.text)
+                                for i, pp in enumerate(text_to_paragraphs(text2))
+                            ]
+                        except Exception as e:
+                            st.error(f"Failed to load documents: {e}")
+                            paras1, paras2 = [], []
+
+                        # Build classification for doc1 (for clause labels)
+                        df_cls = (
+                            load_classification_csv(template_key, model_name, current_path.stem)
+                            if model_name
+                            else None
                         )
-                        result = comparer.compare()
-                        st.session_state[compare_cache_key] = result
-                    except Exception as e:
-                        import traceback
+                        classification: DocumentClassification | None
+                        if df_cls is not None and not df_cls.empty:
+                            cls_pars: list[ClassifiedParagraph] = []
+                            clause_to_pars: dict[str, list[int]] = {}
+                            for _, row in df_cls.iterrows():
+                                try:
+                                    idx_i = int(str(row.get("index", "")).strip())
+                                except Exception:
+                                    continue
+                                txt = str(row.get("text", "")).strip()
+                                ck = str(row.get("clause_key", "")).strip() or None
+                                cp = ClassifiedParagraph(
+                                    paragraph=Paragraph(index=idx_i, text=txt),
+                                    clause_key=ck,
+                                    confidence=None,
+                                )
+                                cls_pars.append(cp)
+                                if ck:
+                                    clause_to_pars.setdefault(ck, []).append(idx_i)
+                            classification = DocumentClassification(
+                                paragraphs=cls_pars, clause_to_paragraphs=clause_to_pars or None
+                            )
+                        else:
+                            classification = None
 
-                        st.error(f"Compare failed: {e}" + "\n" + traceback.format_exc())
-                        result = None
+                        # Run compare and cache result
+                        if paras1 and paras2:
+                            try:
+                                comparer = DocumentCompare(
+                                    paragraphs_doc1=paras1,
+                                    paragraphs_doc2=paras2,
+                                    classification_doc1=classification,
+                                    config=DocumentCompareConfig(),
+                                )
+                                result = comparer.compare()
+                                st.session_state[compare_cache_key] = result
+                            except Exception as e:
+                                import traceback
 
-                if not result:
+                                st.error(f"Compare failed: {e}" + "\n" + traceback.format_exc())
+                                result = None
+
+                if result is None and not compare_clicked:
+                    st.info("Click Compare to run comparison.")
+                elif not result:
                     st.info("No comparison result to display.")
                 else:
+                    # Summary of differences by severity
+                    try:
+                        items = getattr(result, "items", []) or []
+                        cnt_material = sum(
+                            1
+                            for it in items
+                            if str(getattr(it, "severity", "")).strip().lower() == "material"
+                        )
+                        cnt_important = sum(
+                            1
+                            for it in items
+                            if str(getattr(it, "severity", "")).strip().lower() == "important"
+                        )
+                        cnt_minor = sum(
+                            1
+                            for it in items
+                            if str(getattr(it, "severity", "")).strip().lower() == "minor"
+                        )
+                        st.markdown("### Summary of differences by severity")
+                        st.markdown(f"**Material:** {cnt_material}")
+                        st.markdown(f"**Important:** {cnt_important}")
+                        st.markdown(f"**Minor:** {cnt_minor}")
+                    except Exception:
+                        pass
                     # Build clause key to title mapping
                     try:
                         tmpl = load_template_dict(template_key)

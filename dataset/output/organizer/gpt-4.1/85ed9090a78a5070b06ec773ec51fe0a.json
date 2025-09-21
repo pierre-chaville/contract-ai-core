@@ -1,0 +1,63 @@
+{
+  "filename": "85ed9090a78a5070b06ec773ec51fe0a.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swap Dealers Association, Inc."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No explicit version year (e.g., 1992 or 2002) is mentioned in the visible text or image."
+  },
+  "contract_date": {
+    "value": "2010-03-04",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated as 'dated as of March 4, 2010'."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned and this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is described as a 'Master Agreement' with no reference to amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and appears to be a finalized agreement, not a draft."
+  },
+  "party_name_1": {
+    "value": "PNC BANK, NATIONAL ASSOCIATION",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party A' in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "FEDERATED INVESTORS, INC.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party B' in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, with no typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "88ef695e0ef754b29b58aa9085502093.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swap Dealers Association, matching the ISDA code."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The copyright at the bottom states 'Copyright (C)1992 by International Swap Dealers Association, Inc.', indicating the 1992 version."
+  },
+  "contract_date": {
+    "value": "2012-11-19",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of November 19, 2012', which is explicitly stated near the top of the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is an initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final document, not a draft; while signatures are not shown, the context suggests execution."
+  },
+  "party_name_1": {
+    "value": "WELLS FARGO BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as one of the parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "WELLS FARGO BANK, N.A. is listed first, which typically corresponds to Party A in ISDA agreements."
+  },
+  "party_name_2": {
+    "value": "FARMER BROS. CO.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as the other party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "FARMER BROS. CO. is listed second, which typically corresponds to Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of typos or OCR errors."
+  }
+}

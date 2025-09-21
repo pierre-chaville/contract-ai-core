@@ -1,0 +1,63 @@
+{
+  "filename": "5121352e4b375dad98f145f938a196cb.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.95,
+    "explanation": "The document is titled 'ISDA Master Agreement (Interest Rate Swap Agreement)' and references a schedule to the master agreement, which matches the ISDA code."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.7,
+    "explanation": "No explicit reference to a specific ISDA version year (e.g., 1992 or 2002) is found in the text or image."
+  },
+  "contract_date": {
+    "value": "2005-04-22",
+    "confidence": 1.0,
+    "explanation": "The schedule states 'DATED AS OF 22 APRIL 2005' as the effective date of the master agreement."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is the initial schedule to the master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The document is a schedule to the initial master agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.8,
+    "explanation": "The document is dated and appears to be a finalized schedule to the master agreement, which typically indicates execution, though no explicit 'executed' stamp is visible."
+  },
+  "party_name_1": {
+    "value": "Commonwealth Bank of Australia",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'PARTY A' in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'PARTY A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "Perpetual Trustee Company Limited as Trustee of the Medallion Trust Series 2005-2G",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'PARTY B' in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'PARTY B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, with no typos or OCR errors; document is highly readable."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "57eb626d75245ce0abd75863e5000b9e.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc., which matches the ISDA Master Agreement contract type."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT' in the header and throughout the text."
+  },
+  "contract_date": {
+    "value": "2022-06-13",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of June 13th, 2022, which is clearly stated below the title."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, as this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and formatted as a finalized agreement, not a draft. There is no 'draft' watermark or indication."
+  },
+  "party_name_1": {
+    "value": "SOCIETE GENERALE",
+    "confidence": 1.0,
+    "explanation": "SOCIETE GENERALE is explicitly listed as 'Party A' in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "SOCIETE GENERALE is labeled as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "Each entity listed on Appendix I to the Schedule hereto, severally and not jointly",
+    "confidence": 1.0,
+    "explanation": "The agreement states that 'Each entity listed on Appendix I to the Schedule hereto, severally and not jointly' is 'Party B'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The entities on Appendix I are collectively referred to as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is clean, clearly formatted, and free of typos or OCR errors."
+  }
+}

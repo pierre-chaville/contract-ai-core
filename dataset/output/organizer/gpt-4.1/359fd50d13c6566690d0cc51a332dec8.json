@@ -1,0 +1,63 @@
+{
+  "filename": "359fd50d13c6566690d0cc51a332dec8.txt",
+  "contract_type": {
+    "value": "OTHER",
+    "confidence": 0.95,
+    "explanation": "The document is a schedule listing multiple types of contracts (ISDA Master Agreements, service agreements, insurance agreements, etc.), not a single contract type."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.95,
+    "explanation": "No single contract version applies as this is a schedule of various contracts with different versions."
+  },
+  "contract_date": {
+    "value": null,
+    "confidence": 0.7,
+    "explanation": "No single contract date is provided; the document lists multiple contracts with different dates."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "This is not an amendment document but a schedule of contracts."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is present; this is not an amendment document."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.8,
+    "explanation": "This appears to be an initial schedule of assumed and assigned contracts, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.8,
+    "explanation": "Schedules of assumed and assigned contracts are typically executed as part of bankruptcy or assignment proceedings, though the document does not explicitly state 'executed.'"
+  },
+  "party_name_1": {
+    "value": "Dynegy Holdings, LLC",
+    "confidence": 0.95,
+    "explanation": "Dynegy Holdings, LLC is listed as the main party for the first set of contracts."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "Dynegy Holdings, LLC is the assignor/assignee in the context of this schedule, acting as Party A."
+  },
+  "party_name_2": {
+    "value": "Various counterparties (e.g., Ameren Illinois Company, Citigroup Energy Inc., Hess Corporation)",
+    "confidence": 0.95,
+    "explanation": "Multiple counterparties are listed for different contracts; no single Party B."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "Each listed counterparty acts as Party B for their respective contract."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, structured, and free of significant typos or OCR errors."
+  }
+}

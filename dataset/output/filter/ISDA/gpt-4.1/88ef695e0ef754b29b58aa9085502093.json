@@ -1,0 +1,13 @@
+{
+  "filename": "88ef695e0ef754b29b58aa9085502093.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": -1,
+      "end_line": -1,
+      "confidence": 0.1,
+      "explanation": "The provided text appears to be the main body of the ISDA Master Agreement, not the Schedule. The Schedule to the ISDA Master Agreement is a separate, customized section that typically follows the pre-printed standard terms and contains party-specific elections, definitions, and modifications. There is no clear demarcation or content in the provided lines that constitutes the Schedule. Therefore, no suitable span matching the query can be identified in the given text."
+    }
+  ]
+}

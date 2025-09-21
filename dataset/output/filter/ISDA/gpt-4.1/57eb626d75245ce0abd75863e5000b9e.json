@@ -1,0 +1,13 @@
+{
+  "filename": "57eb626d75245ce0abd75863e5000b9e.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 325,
+      "end_line": 477,
+      "confidence": 0.99,
+      "explanation": "Lines 325-477 contain the full text of the Schedule to the ISDA Master Agreement, including all the negotiated terms, elections, and party-specific provisions. The lines before 325 are the standard pre-printed Master Agreement, and lines after 477 are appendices and annexes (such as the Credit Support Annex)."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "filename": "97489313abb85203830b614bda4c1da5.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 1,
+      "end_line": 84,
+      "confidence": 0.98,
+      "explanation": "Lines 1-84 comprise the entire Schedule to the ISDA Master Agreement, starting with the title and parties, and including all the negotiated terms, elections, and signatures. There is no indication of standard pre-printed text or annexes (such as a Credit Support Annex) within these lines. The content is consistent with a full ISDA Schedule, ending with execution blocks. Line 0 is a document header, not part of the Schedule itself."
+    }
+  ]
+}

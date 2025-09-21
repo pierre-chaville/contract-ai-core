@@ -1,0 +1,63 @@
+{
+  "filename": "f8d899c06aab5d53add0c799ec85f966.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'AMENDMENT TO ISDA MASTER AGREEMENT' and references the 1992 ISDA Master Agreement throughout."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states '1992 ISDA Master Agreement' as the underlying agreement being amended."
+  },
+  "contract_date": {
+    "value": "2005-04-05",
+    "confidence": 1.0,
+    "explanation": "The initial contract date is stated as 'dated as of April 5, 2005' for the original ISDA Master Agreement."
+  },
+  "amendment_date": {
+    "value": "2011-05-20",
+    "confidence": 1.0,
+    "explanation": "The amendment is 'dated as of May 20, 2011' as shown at the top of the document."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No explicit amendment number is mentioned in the text or image."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'AMENDMENT TO ISDA MASTER AGREEMENT' and repeatedly refers to itself as an amendment."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The language and structure indicate this is a finalized amendment, not a draft, and it is not marked as a draft."
+  },
+  "party_name_1": {
+    "value": "SUNTRUST BANK",
+    "confidence": 1.0,
+    "explanation": "'SUNTRUST BANK' is listed as 'Party A' in the document heading."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "'SUNTRUST BANK' is explicitly labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "WRIGHT EXPRESS CORPORATION",
+    "confidence": 1.0,
+    "explanation": "'WRIGHT EXPRESS CORPORATION' is listed as 'Party B' in the document heading."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "'WRIGHT EXPRESS CORPORATION' is explicitly labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of typos or OCR errors."
+  }
+}

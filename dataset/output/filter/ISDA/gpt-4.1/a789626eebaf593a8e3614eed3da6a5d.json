@@ -1,0 +1,13 @@
+{
+  "filename": "a789626eebaf593a8e3614eed3da6a5d.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 5,
+      "end_line": 141,
+      "confidence": 0.98,
+      "explanation": "Lines 5 to 141 comprise the full text of the Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE' and including all the negotiated terms and elections. The content before line 5 is cover/exhibit information, and after line 141 are execution blocks and signatures, which are not part of the substantive Schedule. There is no indication of CSA annexes or other documents within this span."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "filename": "057d9f25d7635925b66afd94be03fa10.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 197,
+      "end_line": 288,
+      "confidence": 0.98,
+      "explanation": "Lines 197-288 contain the full text of the Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE to the Master Agreement' and including all the specific elections, amendments, and additional terms agreed by the parties. The lines before 197 are the standard pre-printed Master Agreement, and lines after 288 are signatures and boilerplate. This span excludes the CSA annexes and focuses solely on the Schedule."
+    }
+  ]
+}

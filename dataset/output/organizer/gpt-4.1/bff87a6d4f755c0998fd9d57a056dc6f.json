@@ -1,0 +1,63 @@
+{
+  "filename": "bff87a6d4f755c0998fd9d57a056dc6f.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA Schedule to the Master Agreement', which clearly indicates it is an ISDA Master Agreement or a schedule thereto."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No explicit version year (e.g., 1992 or 2002) is mentioned in the visible text or image."
+  },
+  "contract_date": {
+    "value": "2005-10-12",
+    "confidence": 1.0,
+    "explanation": "The contract is stated as 'dated as of October 12, 2005' in both the text and the image."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it appears to be an initial schedule."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is referenced; this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is a schedule to the Master Agreement and not described as amended or restated."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and lists both parties, which typically indicates execution; no 'draft' watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "Brown Brothers Harriman & Co",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as Party A in both the text and the image."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as Party A in the contract."
+  },
+  "party_name_2": {
+    "value": "Met - Pro Corporation",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as Party B in both the text and the image."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as Party B in the contract."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, with no typos or OCR errors; document is easy to read."
+  }
+}

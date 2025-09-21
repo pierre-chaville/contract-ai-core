@@ -1,0 +1,63 @@
+{
+  "filename": "240b8bed8e9a5512b289dbc1a19f4297.txt",
+  "contract_type": {
+    "value": "GMRA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'GLOBAL MASTER REPURCHASE AGREEMENT' and references TBMA/ISMA, which is the standard for GMRA."
+  },
+  "contract_type_version": {
+    "value": "2000",
+    "confidence": 1.0,
+    "explanation": "'2000 VERSION' is explicitly stated at the top of the document."
+  },
+  "contract_date": {
+    "value": "2011-07-21",
+    "confidence": 1.0,
+    "explanation": "'Dated as of July 21, 2011' is clearly stated in the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it appears to be the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and lists both parties, indicating it is executed, though signatures are not visible on this page."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A., LONDON BRANCH",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party A' in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "RACE STREET FUNDING LLC",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party B' in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and contains no visible OCR errors or typos."
+  }
+}

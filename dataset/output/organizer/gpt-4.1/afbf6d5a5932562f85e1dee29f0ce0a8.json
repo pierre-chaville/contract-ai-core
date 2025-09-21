@@ -1,0 +1,63 @@
+{
+  "filename": "afbf6d5a5932562f85e1dee29f0ce0a8.txt",
+  "contract_type": {
+    "value": "GUARANTEE",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'Guaranty' and repeatedly refers to itself as a Guaranty agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No versioning information is provided or applicable for a Guaranty agreement."
+  },
+  "contract_date": {
+    "value": "2018-05-01",
+    "confidence": 1.0,
+    "explanation": "The Guaranty is explicitly dated as of May 1, 2018 in the opening paragraph."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is an initial Guaranty."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original Guaranty, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is labeled 'Execution Version' at the top, indicating it is executed."
+  },
+  "party_name_1": {
+    "value": "Summer Energy Holdings, Inc.",
+    "confidence": 1.0,
+    "explanation": "Summer Energy Holdings, Inc. is identified as the Guarantor in the first paragraph."
+  },
+  "party_role_1": {
+    "value": "Guarantor",
+    "confidence": 1.0,
+    "explanation": "The role of Summer Energy Holdings, Inc. is explicitly stated as 'Guarantor.'"
+  },
+  "party_name_2": {
+    "value": "EDF Trading North America, LLC and EDF Energy Services, LLC",
+    "confidence": 1.0,
+    "explanation": "Both EDF Trading North America, LLC and EDF Energy Services, LLC are named as the Counterparty."
+  },
+  "party_role_2": {
+    "value": "Counterparty",
+    "confidence": 1.0,
+    "explanation": "The document refers to both EDF Trading North America, LLC and EDF Energy Services, LLC collectively as the 'Counterparty.'"
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, clearly legible, and free from OCR errors or typos."
+  }
+}

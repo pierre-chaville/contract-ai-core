@@ -1,0 +1,13 @@
+{
+  "filename": "46887bb017185e98a1c0fbc609d58a81.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 350,
+      "end_line": 464,
+      "confidence": 0.99,
+      "explanation": "The ISDA Master Agreement Schedule begins at line 350 (\"SCHEDULE\") and continues through the end of the schedule's terms, which is line 464 (\"[Remainder of Page Intentionally Left Blank.]\"). This span includes all the negotiated terms between the parties and excludes the standard pre-printed Master Agreement, definitions, and any annexes such as the CSA. The signature block for the schedule follows at line 465, but the substantive schedule content is lines 350-464."
+    }
+  ]
+}

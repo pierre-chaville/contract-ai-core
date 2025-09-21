@@ -1,0 +1,13 @@
+{
+  "filename": "417c9bbfa52f54eca5eff22887e3f941.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": -1,
+      "end_line": -1,
+      "confidence": 0.1,
+      "explanation": "The provided text is the main body of the ISDA Master Agreement, not the Schedule. The Schedule to the ISDA Master Agreement is a separate document or section that contains the parties' elections and specific terms. In the provided text, there are references to the Schedule (e.g., in definitions and certain sections), but the actual Schedule itself (with party elections, addresses, specified entities, threshold amounts, etc.) is not included in these paragraphs. Therefore, there is no contiguous span matching the user's request for the Schedule."
+    }
+  ]
+}

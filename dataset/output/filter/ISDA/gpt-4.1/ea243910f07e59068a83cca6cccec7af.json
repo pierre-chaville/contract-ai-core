@@ -1,0 +1,13 @@
+{
+  "filename": "ea243910f07e59068a83cca6cccec7af.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": -1,
+      "end_line": -1,
+      "confidence": 0.1,
+      "explanation": "The provided text contains the main body of the ISDA Master Agreement, but does not include the Schedule. The Schedule is a separate document or section that customizes the standard terms of the Master Agreement for the parties. There are references to the Schedule throughout, but the actual Schedule text (with elections, party details, etc.) is not present in the provided lines."
+    }
+  ]
+}

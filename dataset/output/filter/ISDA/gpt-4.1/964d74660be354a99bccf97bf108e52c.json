@@ -1,0 +1,13 @@
+{
+  "filename": "964d74660be354a99bccf97bf108e52c.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 351,
+      "end_line": 947,
+      "confidence": 0.99,
+      "explanation": "The ISDA Schedule begins at line 351 (\"SCHEDULE\") and continues through the signature block at line 947. This section contains the negotiated terms between the parties, including all the 'Parts' (1-7) of the Schedule, and ends before the annexes (such as the Credit Support Annex) and exhibits. The lines before 351 are the standard pre-printed Master Agreement, and lines after 947 are annexes and regulatory disclosures, not part of the Schedule."
+    }
+  ]
+}

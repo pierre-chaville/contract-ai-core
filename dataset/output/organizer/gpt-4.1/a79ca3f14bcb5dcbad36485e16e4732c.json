@@ -1,0 +1,63 @@
+{
+  "filename": "a79ca3f14bcb5dcbad36485e16e4732c.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'SCHEDULE TO THE ISDA 2002 MASTER AGREEMENT' and repeatedly references the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states 'ISDA 2002 Master Agreement'."
+  },
+  "contract_date": {
+    "value": "2016-01-19",
+    "confidence": 1.0,
+    "explanation": "The original contract date is stated as 'dated as of January 19, 2016'."
+  },
+  "amendment_date": {
+    "value": "2019-06-28",
+    "confidence": 1.0,
+    "explanation": "The document is 'amended and restated as of June 28, 2019', which is the amendment date."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No explicit amendment number is mentioned in the text."
+  },
+  "version_type": {
+    "value": "RESTATED",
+    "confidence": 1.0,
+    "explanation": "The document is described as 'amended and restated', indicating the RESTATED version type."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.95,
+    "explanation": "The document is labeled 'EXECUTION COPY', which typically means it is an executed version."
+  },
+  "party_name_1": {
+    "value": "CITIBANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "CITIBANK, N.A. is explicitly named as a party in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "CITIBANK, N.A. is referred to as 'Party A' in the document."
+  },
+  "party_name_2": {
+    "value": "CHELTENHAM FUNDING LLC",
+    "confidence": 1.0,
+    "explanation": "CHELTENHAM FUNDING LLC is explicitly named as a party in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "CHELTENHAM FUNDING LLC is referred to as 'Party B' in the document."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

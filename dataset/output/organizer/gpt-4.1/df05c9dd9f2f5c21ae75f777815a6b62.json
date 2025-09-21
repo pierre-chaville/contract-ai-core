@@ -1,0 +1,63 @@
+{
+  "filename": "df05c9dd9f2f5c21ae75f777815a6b62.txt",
+  "contract_type": {
+    "value": "VSA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'CREDIT SUPPORT ANNEX' and references the ISDA Master Agreement, which matches the 'Credit Support Annex' (VSA) code."
+  },
+  "contract_type_version": {
+    "value": "1994",
+    "confidence": 0.95,
+    "explanation": "The text states that Paragraphs 1 through 12 of the ISDA Credit Support Annex (Bilateral Form) published in 1994 are incorporated, indicating the 1994 version."
+  },
+  "contract_date": {
+    "value": "2007-07-18",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated as 'dated as of July 18, 2007' between the parties."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; this is the initial annex."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial Credit Support Annex to the ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document uses formal language and provides a specific effective date, which strongly suggests it is executed."
+  },
+  "party_name_1": {
+    "value": "WACHOVIA BANK, NATIONAL ASSOCIATION",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party A' in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "WRIGHT EXPRESS CORPORATION",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party B' in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

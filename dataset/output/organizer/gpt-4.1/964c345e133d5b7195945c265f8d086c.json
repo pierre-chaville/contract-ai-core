@@ -1,0 +1,63 @@
+{
+  "filename": "964c345e133d5b7195945c265f8d086c.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.95,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT (CURRENCY SWAP AGREEMENT)' and references a schedule to the master agreement, which matches the ISDA contract type."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.7,
+    "explanation": "No explicit reference to a specific ISDA version year (e.g., 1992 or 2002) is found in the text or image."
+  },
+  "contract_date": {
+    "value": "2003-03-13",
+    "confidence": 0.95,
+    "explanation": "The schedule is stated to be 'DATED AS OF 13 MARCH 2003' between the parties, which is the effective date of the contract."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it appears to be the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The document is a schedule to the master agreement dated as of 13 March 2003, indicating it is the initial contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.8,
+    "explanation": "The contract date is specified and the document is not marked as a draft; it is reasonable to infer it is executed."
+  },
+  "party_name_1": {
+    "value": "COMMONWEALTH BANK OF AUSTRALIA",
+    "confidence": 0.95,
+    "explanation": "Listed as 'Party A' in the parties section."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.95,
+    "explanation": "Explicitly labeled as 'Party A' in the parties section."
+  },
+  "party_name_2": {
+    "value": "PERPETUAL TRUSTEE COMPANY LIMITED",
+    "confidence": 0.95,
+    "explanation": "Listed as 'Party B' in the parties section."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.95,
+    "explanation": "Explicitly labeled as 'Party B' in the parties section."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of OCR errors or typos."
+  }
+}

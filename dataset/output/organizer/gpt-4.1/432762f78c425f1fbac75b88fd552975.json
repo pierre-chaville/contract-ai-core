@@ -1,0 +1,63 @@
+{
+  "filename": "432762f78c425f1fbac75b88fd552975.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swap Dealers Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "Copyright notice at the bottom states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.'"
+  },
+  "contract_date": {
+    "value": "2008-05-15",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of May 15, 2008'."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is the initial agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and presented as a finalized contract, not a draft."
+  },
+  "party_name_1": {
+    "value": "COMERICA BANK",
+    "confidence": 1.0,
+    "explanation": "COMERICA BANK is listed as a party to the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled, COMERICA BANK is listed first and is typically Party A in such agreements."
+  },
+  "party_name_2": {
+    "value": "MEGABINGO, INC. and MGAM SYSTEMS, INC.",
+    "confidence": 1.0,
+    "explanation": "Both MEGABINGO, INC. and MGAM SYSTEMS, INC. are listed as joint parties."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "These parties are listed after COMERICA BANK and are typically Party B in such agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

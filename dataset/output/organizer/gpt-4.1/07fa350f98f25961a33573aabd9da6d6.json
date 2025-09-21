@@ -1,0 +1,63 @@
+{
+  "filename": "07fa350f98f25961a33573aabd9da6d6.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA Master Agreement' and references the International Swap Dealers Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states 'ISDA 1992' and 'Copyright (C) 1992 by International Swap Dealers Association, Inc.'"
+  },
+  "contract_date": {
+    "value": "2005-02-22",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of February 22, 2005' as stated on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is labeled 'Execution copy,' which typically means it is the executed version."
+  },
+  "party_name_1": {
+    "value": "GREENWICH CAPITAL DERIVATIVES, INC.",
+    "confidence": 1.0,
+    "explanation": "Party A is clearly identified as GREENWICH CAPITAL DERIVATIVES, INC."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The document explicitly labels GREENWICH CAPITAL DERIVATIVES, INC. as 'Party A.'"
+  },
+  "party_name_2": {
+    "value": "NOVASTAR MORTGAGE SUPPLEMENTAL INTEREST TRUST, SERIES 2005-1, a New York common law trust",
+    "confidence": 1.0,
+    "explanation": "Party B is clearly identified as NOVASTAR MORTGAGE SUPPLEMENTAL INTEREST TRUST, SERIES 2005-1, a New York common law trust."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The document explicitly labels NOVASTAR MORTGAGE SUPPLEMENTAL INTEREST TRUST, SERIES 2005-1 as 'Party B.'"
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

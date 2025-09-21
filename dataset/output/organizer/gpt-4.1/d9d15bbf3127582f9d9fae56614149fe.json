@@ -1,0 +1,63 @@
+{
+  "filename": "d9d15bbf3127582f9d9fae56614149fe.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.95,
+    "explanation": "The document refers to amendments to an ISDA Master Agreement and its Schedule, as well as a Credit Support Annex. The main contract being amended is the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No specific version year (e.g., 1992 or 2002) of the ISDA Master Agreement is mentioned in the text."
+  },
+  "contract_date": {
+    "value": "2012-11-15",
+    "confidence": 0.95,
+    "explanation": "The original ISDA Master Agreement and Credit Support Annex are both stated as dated November 15, 2012."
+  },
+  "amendment_date": {
+    "value": "2013-11-12",
+    "confidence": 1.0,
+    "explanation": "The amending agreement is explicitly dated as of November 12, 2013."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.8,
+    "explanation": "No explicit amendment number is mentioned in the text."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'AMENDING AGREEMENT' and describes amendments to the Schedule of the ISDA Master Agreement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is not marked as draft and is dated and formatted as a final agreement, indicating execution."
+  },
+  "party_name_1": {
+    "value": "THE BANK OF NOVA SCOTIA",
+    "confidence": 1.0,
+    "explanation": "Listed as the first party in the agreement heading."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled, context and ISDA conventions indicate THE BANK OF NOVA SCOTIA is Party A."
+  },
+  "party_name_2": {
+    "value": "HALIFAX FUNDING LLC",
+    "confidence": 1.0,
+    "explanation": "Listed as the second party in the agreement heading."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled, context and ISDA conventions indicate HALIFAX FUNDING LLC is Party B."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "9bf746c2dd1c5a1cb7c1eab773dfca72.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'INTERNATIONAL SWAPS AND DERIVATIVES ASSOCIATION MASTER AGREEMENT' and repeatedly refers to ISDA and Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "Copyright notice at the bottom states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.', indicating the 1992 version."
+  },
+  "contract_date": {
+    "value": "2009-06-12",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of 12 June 2009', which is explicitly stated."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is the initial agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft; no 'draft' watermark or language."
+  },
+  "party_name_1": {
+    "value": "Newedge Group",
+    "confidence": 1.0,
+    "explanation": "Explicitly identified as 'Newedge Group (\"Party A\")'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly identified as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "Frontier Trading Company XIII, LLC",
+    "confidence": 1.0,
+    "explanation": "Explicitly identified as 'Frontier Trading Company XIII, LLC (\"Party B\")'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly identified as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

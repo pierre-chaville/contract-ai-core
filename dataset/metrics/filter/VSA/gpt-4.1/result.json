@@ -1,0 +1,32 @@
+{
+  "contract_type": "VSA",
+  "model": "gpt-4.1",
+  "counts": {
+    "files": 16,
+    "pairs": 32
+  },
+  "overall": {
+    "avg_accuracy": 1.0,
+    "avg_iou": 1.0,
+    "histogram_iou": {
+      "0-0.2": 0,
+      "0.2-0.4": 0,
+      "0.4-0.6": 0,
+      "0.6-0.8": 0,
+      "0.8-1.0": 0,
+      "1.0": 32
+    }
+  },
+  "per_scope": {
+    "Annex": {
+      "count": 16,
+      "avg_accuracy": 1.0,
+      "avg_iou": 1.0
+    },
+    "preamble": {
+      "count": 16,
+      "avg_accuracy": 1.0,
+      "avg_iou": 1.0
+    }
+  }
+}

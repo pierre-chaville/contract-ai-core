@@ -1,0 +1,63 @@
+{
+  "filename": "28883c0bf0a658a6b3f8b741a18178a7.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'FIRST AMENDMENT TO ISDA MASTER AGREEMENT' and repeatedly references the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No specific ISDA version year (e.g., 1992 or 2002) is mentioned in the text."
+  },
+  "contract_date": {
+    "value": "2007-06-12",
+    "confidence": 1.0,
+    "explanation": "The ISDA Master Agreement is stated to be dated as of June 12, 2007, which is the original contract date."
+  },
+  "amendment_date": {
+    "value": "2009-04-06",
+    "confidence": 1.0,
+    "explanation": "The amendment is stated to be made as of the 6th day of April 2009 (the 'Effective Date')."
+  },
+  "amendment_number": {
+    "value": "1",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'FIRST AMENDMENT,' indicating this is amendment number 1."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'First Amendment' and amends the original contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document includes execution blocks and signatures, indicating it is executed."
+  },
+  "party_name_1": {
+    "value": "GMAC MORTGAGE, LLC",
+    "confidence": 1.0,
+    "explanation": "GMAC MORTGAGE, LLC is identified as Party A in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The text explicitly refers to GMAC MORTGAGE, LLC as 'Party A.'"
+  },
+  "party_name_2": {
+    "value": "GMAC BANK",
+    "confidence": 1.0,
+    "explanation": "GMAC BANK is identified as Party B in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The text explicitly refers to GMAC BANK as 'Party B.'"
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

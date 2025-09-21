@@ -1,0 +1,63 @@
+{
+  "filename": "5fc7cb9313d15511834a4ffd25af3b67.txt",
+  "contract_type": {
+    "value": "GMRA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'GLOBAL MASTER REPURCHASE AGREEMENT' and references TBMA/ISMA, which is the standard for GMRA."
+  },
+  "contract_type_version": {
+    "value": "2000",
+    "confidence": 1.0,
+    "explanation": "The document explicitly states '2000 VERSION' at the top."
+  },
+  "contract_date": {
+    "value": "2013-02-06",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of February 6, 2013, which is clearly stated in the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "This is an amended and restated agreement, not a simple amendment, so amendment_date is not applicable."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number in the provided text."
+  },
+  "version_type": {
+    "value": "RESTATED",
+    "confidence": 1.0,
+    "explanation": "The document is labeled 'AMENDED AND RESTATED' indicating it is an amended and restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and lists both parties, which typically indicates an executed contract, though signatures are not shown in the excerpt."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A., LONDON BRANCH",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party in the agreement as 'Party A'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "COBBS CREEK LLC",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party in the agreement as 'Party B'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

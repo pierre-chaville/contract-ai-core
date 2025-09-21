@@ -1,0 +1,63 @@
+{
+  "filename": "36eed4189a145f6b9813868c78e0b921.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA' and references the '2002 Master Agreement,' which is the standard ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states '2002 Master Agreement'."
+  },
+  "contract_date": {
+    "value": "2012-05-25",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of May 25, 2012, as stated in the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is the initial schedule to the master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "This is the initial schedule to the 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and parties are named, which typically indicates execution. No explicit 'draft' or 'executed' label, but strong inference."
+  },
+  "party_name_1": {
+    "value": "Rabobank, N.A.",
+    "confidence": 1.0,
+    "explanation": "Rabobank, N.A. is listed as Party A in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Rabobank, N.A. is explicitly identified as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "QAD Ortega Hill, LLC, a Delaware limited liability company",
+    "confidence": 1.0,
+    "explanation": "QAD Ortega Hill, LLC is listed as Party B in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "QAD Ortega Hill, LLC is explicitly identified as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "contract_type": "ISDA",
+  "model": "gpt-4.1",
+  "counts": {
+    "files": 152,
+    "pairs": 152
+  },
+  "overall": {
+    "avg_accuracy": 0.9868421052631579,
+    "avg_iou": 0.9993189294991968,
+    "histogram_iou": {
+      "0-0.2": 0,
+      "0.2-0.4": 0,
+      "0.4-0.6": 0,
+      "0.6-0.8": 0,
+      "0.8-1.0": 2,
+      "1.0": 150
+    }
+  },
+  "per_scope": {
+    "schedule_only": {
+      "count": 152,
+      "avg_accuracy": 0.9868421052631579,
+      "avg_iou": 0.9993189294991968
+    }
+  }
+}

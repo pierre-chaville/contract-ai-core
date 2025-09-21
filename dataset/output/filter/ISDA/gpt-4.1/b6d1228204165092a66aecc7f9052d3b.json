@@ -1,0 +1,13 @@
+{
+  "filename": "b6d1228204165092a66aecc7f9052d3b.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 2,
+      "end_line": 141,
+      "confidence": 0.99,
+      "explanation": "Lines 2-141 comprise the entire Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE to the ISDA MASTER AGREEMENT' and ending with the execution block. There is no indication of standard pre-print, CSA annexes, or other extraneous material within this span."
+    }
+  ]
+}

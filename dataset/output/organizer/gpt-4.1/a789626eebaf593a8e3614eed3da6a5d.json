@@ -1,0 +1,63 @@
+{
+  "filename": "a789626eebaf593a8e3614eed3da6a5d.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA International Swaps and Derivatives Association, Inc. SCHEDULE to the 2002 Master Agreement', which clearly identifies it as an ISDA Master Agreement Schedule."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text specifies '2002 Master Agreement', indicating the version is 2002."
+  },
+  "contract_date": {
+    "value": "2023-05-19",
+    "confidence": 1.0,
+    "explanation": "The document states 'dated as of May 19, 2023', which is the effective date of the contract."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is the initial schedule to the 2002 Master Agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is a schedule to the 2002 Master Agreement and does not reference being amended or restated."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.95,
+    "explanation": "The document is labeled 'EXECUTION VERSION', which strongly indicates it is executed."
+  },
+  "party_name_1": {
+    "value": "BANK OF MONTREAL",
+    "confidence": 1.0,
+    "explanation": "The text lists 'BANK OF MONTREAL (\"Party A\")' as one of the parties."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "BANK OF MONTREAL is explicitly identified as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "FUELCELL ENERGY OPCO FINANCE 1, LLC",
+    "confidence": 1.0,
+    "explanation": "The text lists 'FUELCELL ENERGY OPCO FINANCE 1, LLC (\"Party B\")' as the other party."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "FUELCELL ENERGY OPCO FINANCE 1, LLC is explicitly identified as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free from typos or OCR errors."
+  }
+}

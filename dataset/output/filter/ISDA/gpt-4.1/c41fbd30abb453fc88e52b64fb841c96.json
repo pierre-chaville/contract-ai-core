@@ -1,0 +1,13 @@
+{
+  "filename": "c41fbd30abb453fc88e52b64fb841c96.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 261,
+      "end_line": 261,
+      "confidence": 0.98,
+      "explanation": "Lines 262-292 contain the Schedule to the ISDA Master Agreement, which is the negotiated part that supplements and amends the standard pre-printed form. The lines before this are the standard form, and there is no indication of a CSA annex or other documents in this excerpt. The Schedule is typically appended at the end, and the content here matches the expected format and content of an ISDA Schedule."
+    }
+  ]
+}

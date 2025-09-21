@@ -1,0 +1,63 @@
+{
+  "filename": "d256f19321de5d8c94dff90dce22d906.txt",
+  "contract_type": {
+    "value": "GUARANTEE",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'Guaranty' and repeatedly refers to itself as a Guaranty agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No versioning information (such as a year or edition) is provided or applicable for a Guaranty agreement."
+  },
+  "contract_date": {
+    "value": "2018-02-21",
+    "confidence": 1.0,
+    "explanation": "The Guaranty is explicitly dated as of February 21, 2018."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "This is an initial Guaranty, not an amendment."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number; this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is an initial Guaranty, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is labeled 'Execution Version,' indicating it is executed."
+  },
+  "party_name_1": {
+    "value": "Summer Energy Holdings, Inc.",
+    "confidence": 1.0,
+    "explanation": "The Guarantor is explicitly named as Summer Energy Holdings, Inc."
+  },
+  "party_role_1": {
+    "value": "Guarantor",
+    "confidence": 1.0,
+    "explanation": "Summer Energy Holdings, Inc. is described as the 'Guarantor.'"
+  },
+  "party_name_2": {
+    "value": "EDF Energy Services, LLC",
+    "confidence": 1.0,
+    "explanation": "EDF Energy Services, LLC is explicitly named as the Counterparty."
+  },
+  "party_role_2": {
+    "value": "Counterparty",
+    "confidence": 1.0,
+    "explanation": "EDF Energy Services, LLC is described as the 'Counterparty.'"
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

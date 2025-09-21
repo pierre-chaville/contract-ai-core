@@ -1,14 +1,19 @@
-structure_key,key,sort_order,title,data_type,enum_key,description
-rating_trigger,party,1,Party,enum,PARTY,Date of the contract
-rating_trigger,agency,2,Rating agency,str,,Name of party A
-rating_trigger,debt_type,3,Debt type,str,,Name of party B
-rating_trigger,debt_maturity,4,Debt maturity,str,,Specified entity Party A (null if none or not applicable)
-rating_trigger,threshold,5,Threshold,str,,Specified entity Party B (null if none or not applicable)
-nav_decline,party,1,Party,enum,PARTY,Party
-nav_decline,period_from,7,Period from,str,,Period from
-nav_decline,period_to,8,Period to,str,,Period to
-nav_decline,decline,9,Decline percentage,float,,Decline percentage
-threshold_conditions,amount,10,Amount,float,,amount for threshold amount
-threshold_conditions,currency,11,Currency,str,,currency for threshold amount
-threshold_conditions,percent,12,Percentage,float,,"percentage for threshold amount (in percentage, i.e. 3 for 3%)"
-threshold_conditions,percent_reference,13,Percentage reference,enum,THRESHOLD_REFERENCE,reference of the percentage (if percentage)
+structure_key,key,sort_order,title,data_type,enum_key,description,,,
+rating_trigger,party,1,Party,enum,PARTY,Applicable party,,,
+rating_trigger,agency,2,Rating agency,enum,RATING_AGENCY,Name of the rating agency,,,
+rating_trigger,debt_type,3,Debt type,list[enum],DEBT_TYPE,Debt type (e.g. secured),,,
+rating_trigger,debt_maturity,4,Debt maturity,enum,DEBT_MATURITY,"Debt maturirity (long, short)",,,
+rating_trigger,threshold,5,Threshold,str,,Rating threshold (e.g. BBB),,,
+nav_decline,party,1,Party,enum,PARTY,Applicable party,,,
+nav_decline,period_from,7,Period from,int,,Period from (in months),,,
+nav_decline,period_to,8,Period to,int,,Period to (in months),,,
+nav_decline,decline,9,Decline percentage,float,,Decline percentage in percentage,,,
+threshold_conditions,amount,10,Amount,int,,"Amount for threshold amount (if it is a fixed amount, not a percentage). Replace thousands or millions by a full number.",,,
+threshold_conditions,currency,11,Currency,str,,Currency for threshold amount,,,
+threshold_conditions,percent,12,Percentage,float,,"Percentage for threshold amount (in percentage, i.e. 3 for 3%)",,,
+threshold_conditions,percent_reference,13,Percentage reference,enum,THRESHOLD_REFERENCE,reference of the percentage (if percentage),,,
+multibranch,is_multibranch,14,is Multibranch,bool,,is the Party a Multibranch party?,,,
+multibranch,multibranch_offices,15,Offices,list[str],,list of offices for the Party when a Multibranch party,,,
+process_agent,is_process_agent,16,Is defined,bool,,FALSE,clause,process_agent,Is process agent applicable for Party A?
+process_agent,process_agent_name,17,Name,str,,FALSE,clause,process_agent,Name of process agent for Party A if applicable
+process_agent,process_agent_address,18,Address,str,,FALSE,clause,process_agent,Address of process agent for Party A if applicable

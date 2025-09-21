@@ -1,0 +1,13 @@
+{
+  "filename": "c61aaa46b28f56ef9cc04a0cd2729510.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 357,
+      "end_line": 581,
+      "confidence": 0.99,
+      "explanation": "Lines 357-581 contain the full Schedule to the ISDA Master Agreement, including the Preamble, Parts 1-5, and all elections, representations, and amendments specific to the parties. The Schedule begins at line 357 ('SCHEDULE to the 2002 Master Agreement') and ends at line 581 ('- Signature page to follow -'). This span excludes the standard pre-printed Master Agreement, CSA annexes, and Confirmations, focusing solely on the negotiated Schedule."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "16800388b951529f9e35659108c2f7f1.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swap Dealers Association, Inc. Master Agreement, which matches the ISDA code."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states 'Copyright (C) 1992 by International Swap Dealers Association, Inc', indicating the 1992 version."
+  },
+  "contract_date": {
+    "value": "2004-06-30",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of June 30, 2004', which is clearly stated in the text."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number or that this is an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and the parties are named, which strongly suggests it is executed, though actual signatures are not shown in the excerpt."
+  },
+  "party_name_1": {
+    "value": "Greenwich Capital Derivatives, Inc.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party A' in the agreement text."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as 'Party A' in the agreement text."
+  },
+  "party_name_2": {
+    "value": "Deutsche Bank National Trust Company, acting solely as Auction Administrator and intermediary agent for the Holders of the Auction Certificates and not individually or as Trustee or on behalf of Thornburg Mortgage Securities Trust 2004-2 Mortgage Loan Pass-Through Certificates, Series 2004-2 under the Pooling and Servicing Agreement",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as 'Party B' in the agreement text with detailed role description."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as 'Party B' in the agreement text."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

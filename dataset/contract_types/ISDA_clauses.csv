@@ -18,8 +18,8 @@ tax_event,16,Tax Event / Tax Event Upon Merger (Expanded),"Termination event whe
 ownership,17,Ownership / Change of Control,"Termination event  triggered if a party undergoes a merger, acquisition, privatization, or change in controlling ownership."
 document_event,18,Failure to comply with documents,Termination event if failure to comply with pecific  documents
 regulatory_event,19,Regulatory Event / Dodd-Frank / EMIR Event,"Termination event occurs if compliance with derivatives regulations (e.g., clearing, margin, registration) prevents or burdens performance."
-nav_trigger,20,NAV Trigger (for Funds),Termination event if a fund's Net Asset Value falls below a specified threshold or by a certain percentage.
-asset_floor,21,AUM/Asset Floor,Termination event if assets under management fall below an agreed level.
+nav_decline,20,NAV per sahre Decline (for Funds),Termination event if a fund's Net Asset Value per share declines below a specified threshold or by a certain percentage.
+asset_floor,21,AUM/Asset Floor,Termination event if total Net Asset Value or Assets under management fall below an agreed level.
 investor_redemptions,22,Investor Redemptions,"Termination event if redemptions exceed a set percentage (e.g., 25, 30% of NAV in a quarter)."
 key_person,23,Key Person Event,"Termination event if a named portfolio manager (or team) departs, termination can be triggered."
 change_investment_manager,23,Change of investment manager,Termination event if there is a change of investment manager

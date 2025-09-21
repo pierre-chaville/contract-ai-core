@@ -1,0 +1,13 @@
+{
+  "filename": "c16ad6c8a1e857b48e0152f695182502.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 28,
+      "end_line": 180,
+      "confidence": 0.98,
+      "explanation": "Lines 28-180 contain the full text of the Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE' and including all the parts (Termination Provisions, Tax Representations, Agreement to Deliver Documents, Miscellaneous, Other Provisions, Additional Terms for Commodity Derivative Transactions) and ending with the execution block. This is the main negotiated Schedule, distinct from the standard pre-printed Master Agreement and any annexes or CSA. There is a duplicate Schedule starting at line 185, but the first complete instance is lines 28-180."
+    }
+  ]
+}

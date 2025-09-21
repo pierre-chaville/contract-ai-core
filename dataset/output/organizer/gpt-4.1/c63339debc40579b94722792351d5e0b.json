@@ -1,0 +1,63 @@
+{
+  "filename": "c63339debc40579b94722792351d5e0b.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.98,
+    "explanation": "The document is titled 'AMENDMENT TO ISDA MASTER AGREEMENT' and refers to the ISDA Master Agreement multiple times."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No specific version year (e.g., 1992 or 2002) for the ISDA Master Agreement is mentioned in the text or image."
+  },
+  "contract_date": {
+    "value": "2009-03-18",
+    "confidence": 0.98,
+    "explanation": "The ISDA Master Agreement being amended is dated as of March 18, 2009, as stated in both the text and image."
+  },
+  "amendment_date": {
+    "value": "2009-06-01",
+    "confidence": 1.0,
+    "explanation": "The amendment is explicitly dated as of June 1, 2009, in both the text and image."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No amendment number is mentioned in the text or image."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is explicitly titled 'AMENDMENT' and amends a prior agreement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.95,
+    "explanation": "The document is labeled 'EXECUTION COPY,' which typically indicates an executed agreement."
+  },
+  "party_name_1": {
+    "value": "GMAC Investment Management LLC",
+    "confidence": 1.0,
+    "explanation": "GMAC Investment Management LLC is listed as a party in both the amendment and the original agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "The text refers to Party A in the context of GMAC Investment Management LLC."
+  },
+  "party_name_2": {
+    "value": "Residential Capital, LLC",
+    "confidence": 1.0,
+    "explanation": "Residential Capital, LLC is listed as the other party in both the amendment and the original agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "The text refers to Party B in the context of Residential Capital, LLC."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of typos or OCR errors."
+  }
+}

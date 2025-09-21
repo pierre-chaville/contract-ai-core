@@ -1,0 +1,56 @@
+[
+  {
+    "amendment_start_line": 8,
+    "amendment_end_line": 9,
+    "amendment_span_text": "(a) Part 4(f)(ii) of the Schedule is deleted in its entirety and replaced with the following:\n\n\"(ii) In relation to Party B, (1) the Credit Support Annex dated as of the date hereof and attached hereto between the parties hereto and (2) the Deposit Account Control Agreement referred to in said Credit Support Annex.\"",
+    "target_section": "Part 4(f)(ii) of the Schedule",
+    "confidence_target": 1.0,
+    "change_explanation": "Replaces Part 4(f)(ii) of the Schedule with new text specifying credit support arrangements related to Party B.",
+    "target_paragraph_indices": [
+      90
+    ],
+    "confidence_target_paragraph_indices": 0.95,
+    "target_paragraph_explanation": "Line 90 contains 'Credit Support Document' definition for Party B, which corresponds to Part 4(f)(ii) of the Schedule specifying credit support arrangements related to Party B.",
+    "initial_paragraphs": [
+      {
+        "index": 90,
+        "text": "(ii) In relation to Party B: Not applicable."
+      }
+    ],
+    "revised_paragraphs": [
+      {
+        "index": 90,
+        "text": "(ii) In relation to Party B, (1) the Credit Support Annex dated as of the date hereof and attached hereto between the parties hereto and (2) the Deposit Account Control Agreement referred to in said Credit Support Annex."
+      }
+    ],
+    "confidence_revision": 1.0,
+    "revision_explanation": "The original text at line 90 was replaced exactly as per the amendment instruction, deleting the original text and substituting the specified new text, preserving style and numbering."
+  },
+  {
+    "amendment_start_line": 10,
+    "amendment_end_line": 11,
+    "amendment_span_text": "(b) Part 4(g)(ii) of the Schedule is deleted in its entirety and replaced with the following:\n\n\"(ii) In relation to Party B, none.\"",
+    "target_section": "Part 4(g)(ii) of the Schedule",
+    "confidence_target": 1.0,
+    "change_explanation": "Replaces Part 4(g)(ii) of the Schedule with new text indicating no credit support arrangements for Party B.",
+    "target_paragraph_indices": [
+      93
+    ],
+    "confidence_target_paragraph_indices": 0.95,
+    "target_paragraph_explanation": "Line 93 contains 'Credit Support Provider' definition for Party B, which corresponds to Part 4(g)(ii) of the Schedule indicating no credit support arrangements for Party B.",
+    "initial_paragraphs": [
+      {
+        "index": 93,
+        "text": "(ii) Credit Support Provider means in relation to Party B: Not applicable."
+      }
+    ],
+    "revised_paragraphs": [
+      {
+        "index": 93,
+        "text": "(ii) In relation to Party B, none."
+      }
+    ],
+    "confidence_revision": 1.0,
+    "revision_explanation": "The original text was replaced exactly as per the amendment instruction, deleting the original line and substituting with the specified new text, preserving style and numbering."
+  }
+]

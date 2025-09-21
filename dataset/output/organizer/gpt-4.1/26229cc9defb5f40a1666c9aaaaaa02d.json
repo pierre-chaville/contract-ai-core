@@ -1,0 +1,63 @@
+{
+  "filename": "26229cc9defb5f40a1666c9aaaaaa02d.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association (ISDA), explicitly identifying it as an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly referred to as the '2002 MASTER AGREEMENT' in both the heading and body text."
+  },
+  "contract_date": {
+    "value": "2023-05-19",
+    "confidence": 1.0,
+    "explanation": "The contract is dated as of May 19, 2023, as clearly stated under the title."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number or that this is an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft. No draft watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "BANK OF MONTREAL",
+    "confidence": 1.0,
+    "explanation": "'BANK OF MONTREAL' is listed as one of the parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled, the first party listed is conventionally Party A in ISDA agreements."
+  },
+  "party_name_2": {
+    "value": "FUELCELL ENERGY OPCO FINANCE 1, LLC",
+    "confidence": 1.0,
+    "explanation": "'FUELCELL ENERGY OPCO FINANCE 1, LLC' is listed as the second party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled, the second party listed is conventionally Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is clean, clearly formatted, and free of typos or OCR errors."
+  }
+}

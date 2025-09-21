@@ -1,0 +1,63 @@
+{
+  "filename": "e4ac2a2ce57155cf841430b8a48a477f.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA International Swap Dealers Association, Inc. MASTER AGREEMENT' and repeatedly refers to the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The copyright notice at the bottom of the first page states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.' and 'ISDA (R) 1992'."
+  },
+  "contract_date": {
+    "value": "2008-05-16",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly dated as of May 16, 2008, at the top of the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is the initial execution of the master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number or that this is an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original execution of the ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 1.0,
+    "explanation": "The document is labeled 'Execution Version' at the top, indicating it is the executed version."
+  },
+  "party_name_1": {
+    "value": "FORD CREDIT AUTO OWNER TRUST 2008-C",
+    "confidence": 1.0,
+    "explanation": "The first party is named as 'FORD CREDIT AUTO OWNER TRUST 2008-C' in the parties section."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled, the first party listed is typically Party A in ISDA agreements."
+  },
+  "party_name_2": {
+    "value": "BNP PARIBAS",
+    "confidence": 1.0,
+    "explanation": "The second party is named as 'BNP PARIBAS' in the parties section."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled, the second party listed is typically Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

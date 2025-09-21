@@ -1,0 +1,63 @@
+{
+  "filename": "c3ab627a5c6453a0ae781c7cb983389d.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc. (ISDA), making it an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT' in both the title and body text."
+  },
+  "contract_date": {
+    "value": "2024-08-05",
+    "confidence": 1.0,
+    "explanation": "The contract is dated as of August 5, 2024, as stated under the agreement title."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft. No 'draft' watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "THE BANK OF NOVA SCOTIA",
+    "confidence": 1.0,
+    "explanation": "THE BANK OF NOVA SCOTIA is explicitly listed as one of the parties."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "THE BANK OF NOVA SCOTIA is listed first and is typically Party A in ISDA agreements, though not explicitly labeled here."
+  },
+  "party_name_2": {
+    "value": "EACH PARTY B SPECIFIED ON APPENDIX A TO THIS AGREEMENT",
+    "confidence": 1.0,
+    "explanation": "The second party is described as 'EACH PARTY B SPECIFIED ON APPENDIX A TO THIS AGREEMENT'."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The second party is referred to as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is clean, clearly formatted, and free of typos or OCR errors."
+  }
+}

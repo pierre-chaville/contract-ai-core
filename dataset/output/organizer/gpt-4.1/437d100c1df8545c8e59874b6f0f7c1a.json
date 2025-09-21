@@ -1,0 +1,63 @@
+{
+  "filename": "437d100c1df8545c8e59874b6f0f7c1a.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.95,
+    "explanation": "The document repeatedly refers to an 'ISDA Master Agreement' and its amendment, making the contract type clear."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No specific ISDA version year (e.g., 1992 or 2002) is mentioned in the text or visible in the image."
+  },
+  "contract_date": {
+    "value": "2004-05-28",
+    "confidence": 0.95,
+    "explanation": "The amendment is to an ISDA Master Agreement dated May 28, 2004, which is explicitly stated as the date of the original contract."
+  },
+  "amendment_date": {
+    "value": "2005-05-18",
+    "confidence": 0.95,
+    "explanation": "The amendment was entered into on May 18, 2005, as explicitly stated in the text."
+  },
+  "amendment_number": {
+    "value": "1",
+    "confidence": 0.95,
+    "explanation": "The document is titled 'Amendment No. 1' to the ISDA Master Agreement, which is explicitly stated."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 0.95,
+    "explanation": "The document is described as 'Amendment No. 1' to the ISDA Master Agreement, indicating it is an amendment."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The amendment is described as having been entered into, and the 8-K is reporting a completed event, suggesting execution."
+  },
+  "party_name_1": {
+    "value": "Chesapeake Exploration Limited Partnership",
+    "confidence": 0.95,
+    "explanation": "The text states that Chesapeake Exploration Limited Partnership entered into the amendment."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "Chesapeake Exploration Limited Partnership is the party amending its ISDA, likely Party A, though not explicitly labeled as such."
+  },
+  "party_name_2": {
+    "value": "Deutsche Bank AG",
+    "confidence": 0.95,
+    "explanation": "The amendment is to the ISDA Master Agreement with Deutsche Bank AG, as explicitly stated."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "Deutsche Bank AG is the counterparty to Chesapeake, likely Party B, though not explicitly labeled as such."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, structured, and free of significant errors or OCR issues."
+  }
+}

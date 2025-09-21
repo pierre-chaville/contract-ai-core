@@ -1,0 +1,63 @@
+{
+  "filename": "d0d183ecf4b0535681ba60403f1f6cba.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly referred to as the '2002 MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": null,
+    "confidence": 0.5,
+    "explanation": "The phrase 'dated as of' appears, but the actual date is not visible in the provided text or image."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it appears to be an initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The document is presented as the '2002 MASTER AGREEMENT' with no reference to amendment or restatement, indicating it is the initial contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.95,
+    "explanation": "The document is labeled 'Execution Version,' which typically means it is the executed version."
+  },
+  "party_name_1": {
+    "value": "BANK OF AMERICA, N.A.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as one of the parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "BANK OF AMERICA, N.A. is labeled as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "Verizon Owner Trust 2018-A",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as one of the parties at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Verizon Owner Trust 2018-A is labeled as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, with no visible typos or OCR errors."
+  }
+}

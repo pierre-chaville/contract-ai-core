@@ -1,0 +1,13 @@
+{
+  "filename": "1d7c4032c83b5569a8e06ae1044acead.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 323,
+      "end_line": 520,
+      "confidence": 0.99,
+      "explanation": "The ISDA Schedule begins at line 323 with the heading 'SCHEDULE' and continues through the end of the Schedule's bespoke terms, which is line 520, just before the start of the Credit Support Annex (CSA) at line 521. This span includes all the negotiated terms and elections that form the Schedule to the ISDA Master Agreement, and excludes the standard pre-printed Master Agreement, CSA annexes, and other attachments."
+    }
+  ]
+}

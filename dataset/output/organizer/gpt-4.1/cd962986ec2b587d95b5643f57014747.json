@@ -1,0 +1,63 @@
+{
+  "filename": "cd962986ec2b587d95b5643f57014747.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' under the International Swaps and Derivatives Association, Inc., which is the standard ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly referred to as the '2002 MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": "2015-12-30",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of December 30, 2015, as stated on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number, as this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and formatted as a final agreement, not a draft. No explicit draft watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "U.S. Bank National Association",
+    "confidence": 1.0,
+    "explanation": "Listed as 'Party A' on the first page."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A' next to U.S. Bank National Association."
+  },
+  "party_name_2": {
+    "value": "MACK-CALI REALTY, L.P.",
+    "confidence": 1.0,
+    "explanation": "Listed as 'Party B' on the first page."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B' next to MACK-CALI REALTY, L.P."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

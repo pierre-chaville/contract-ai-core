@@ -1,0 +1,13 @@
+{
+  "filename": "856ab885a80d50b8908539c16aa2ad16.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 4,
+      "end_line": 128,
+      "confidence": 0.98,
+      "explanation": "Lines 4-128 comprise the entire Schedule to the 2002 ISDA Master Agreement, starting with the heading 'SCHEDULE' and including all the negotiated terms (Parts 1-5) between the parties. The lines before line 4 are cover/exhibit information, and lines after 128 are execution blocks and signatures, not part of the substantive Schedule. No CSA annexes or standard pre-print sections are included in this span."
+    }
+  ]
+}

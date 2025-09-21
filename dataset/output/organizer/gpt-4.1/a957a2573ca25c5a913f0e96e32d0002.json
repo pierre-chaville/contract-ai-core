@@ -1,0 +1,63 @@
+{
+  "filename": "a957a2573ca25c5a913f0e96e32d0002.txt",
+  "contract_type": {
+    "value": "GMRA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'GLOBAL MASTER REPURCHASE AGREEMENT' and references TBMA/ISMA, which is the standard for GMRA."
+  },
+  "contract_type_version": {
+    "value": "2000",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly identified as the '2000 VERSION' in the header."
+  },
+  "contract_date": {
+    "value": "2012-10-26",
+    "confidence": 1.0,
+    "explanation": "The agreement states 'Dated as of October 26, 2012'."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it appears to be the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and lists both parties, which strongly suggests it is executed, though no explicit signatures are shown on this page."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A., LONDON BRANCH",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party in the agreement ('Party A')."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "COBBS CREEK LLC",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party in the agreement ('Party B')."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

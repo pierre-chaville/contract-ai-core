@@ -1,0 +1,63 @@
+{
+  "filename": "4986adbaccdf53b8b2b59669fa5f9210.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' under the International Swaps and Derivatives Association, Inc., which is the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly referred to as the '2002 MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": "2015-12-30",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of December 30, 2015, as stated on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and formatted as a finalized agreement, not a draft. No explicit 'draft' watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "Capital One, National Association",
+    "confidence": 1.0,
+    "explanation": "Capital One, National Association is listed as one of the parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled as 'Party A', Capital One, National Association is listed first, which is the conventional assignment."
+  },
+  "party_name_2": {
+    "value": "MACK-CALI REALTY, L.P.",
+    "confidence": 1.0,
+    "explanation": "MACK-CALI REALTY, L.P. is listed as the other party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled as 'Party B', MACK-CALI REALTY, L.P. is listed second, which is the conventional assignment."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

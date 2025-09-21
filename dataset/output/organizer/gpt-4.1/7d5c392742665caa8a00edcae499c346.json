@@ -1,0 +1,63 @@
+{
+  "filename": "7d5c392742665caa8a00edcae499c346.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc. (ISDA), which matches the ISDA Master Agreement contract type."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT' in both the heading and body text."
+  },
+  "contract_date": {
+    "value": "2020-04-02",
+    "confidence": 1.0,
+    "explanation": "The contract is 'dated as of April 2, 2020' as shown on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original '2002 MASTER AGREEMENT' and not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and lists both parties, which strongly suggests it is executed, though signatures are not shown on this page."
+  },
+  "party_name_1": {
+    "value": "HSBC BANK USA, NATIONAL ASSOCIATION",
+    "confidence": 1.0,
+    "explanation": "HSBC BANK USA, NATIONAL ASSOCIATION is listed as one of the two parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "While the explicit label 'Party A' is not shown, the first party listed is typically Party A in ISDA agreements."
+  },
+  "party_name_2": {
+    "value": "ADVANCED ENERGY INDUSTRIES, INC.",
+    "confidence": 1.0,
+    "explanation": "ADVANCED ENERGY INDUSTRIES, INC. is listed as the second party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "While the explicit label 'Party B' is not shown, the second party listed is typically Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

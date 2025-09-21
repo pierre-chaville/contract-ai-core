@@ -1,0 +1,13 @@
+{
+  "filename": "804f0aac770b52fb9ae86514599df0f6.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 2,
+      "end_line": 212,
+      "confidence": 0.99,
+      "explanation": "Lines 2-212 comprise the full Schedule to the ISDA Master Agreement, including all its Parts (1-7) and the signature blocks. The text before line 2 is cover/exhibit info, and after line 212 is a page marker. There is no CSA annex or standard pre-print included in this span."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "d94250d4eeb652308a1394b6cfd1bafa.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'THIRTIETH AMENDMENT TO FIRST LIEN ISDA 2002 MASTER AGREEMENT', explicitly identifying it as an ISDA Master Agreement amendment."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The title and body repeatedly refer to the 'ISDA 2002 Master Agreement', making the version explicit."
+  },
+  "contract_date": {
+    "value": "2016-03-17",
+    "confidence": 0.9,
+    "explanation": "The recitals state the original First Lien ISDA 2002 Master Agreement is dated as of March 17, 2016, which is the main contract date for this amendment."
+  },
+  "amendment_date": {
+    "value": "2023-02-28",
+    "confidence": 1.0,
+    "explanation": "The amendment is stated to be entered into as of February 28, 2023, which is the amendment date."
+  },
+  "amendment_number": {
+    "value": "30",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'THIRTIETH AMENDMENT', explicitly indicating this is the 30th amendment."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is an amendment, as stated in the title and body."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is labeled 'Execution Version', which typically means it is the executed version."
+  },
+  "party_name_1": {
+    "value": "MERRILL LYNCH COMMODITIES, INC.",
+    "confidence": 1.0,
+    "explanation": "MERRILL LYNCH COMMODITIES, INC. is listed as 'Party A' in the opening paragraph."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "MERRILL LYNCH COMMODITIES, INC. is explicitly called 'Party A'."
+  },
+  "party_name_2": {
+    "value": "U.S. OIL & REFINING CO.",
+    "confidence": 1.0,
+    "explanation": "U.S. OIL & REFINING CO. is listed as 'Party B' in the opening paragraph."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "U.S. OIL & REFINING CO. is explicitly called 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of OCR errors or typos."
+  }
+}

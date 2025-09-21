@@ -1,0 +1,63 @@
+{
+  "filename": "0a0acc69e9325b0e94a7611d0ce572d0.txt",
+  "contract_type": {
+    "value": "OTHER",
+    "confidence": 0.95,
+    "explanation": "The document is titled 'SWAP TRANSFER AND ASSIGNMENT AGREEMENT', which does not match any of the specific allowed codes such as ISDA, VSA, GMRA, etc. 'OTHER' is the most appropriate code."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.95,
+    "explanation": "No specific version of a contract type is applicable to a transfer and assignment agreement; the referenced ISDA Master Agreement is 1992, but this document itself is not an ISDA Master Agreement."
+  },
+  "contract_date": {
+    "value": "2004-07-16",
+    "confidence": 0.95,
+    "explanation": "The referenced 'Transferred Master Agreement' (the underlying ISDA) is dated July 16, 2004, which is the relevant contract date for the original agreement being amended/assigned."
+  },
+  "amendment_date": {
+    "value": "2012-04-12",
+    "confidence": 0.95,
+    "explanation": "The transfer and assignment agreement is dated as of April 12, 2012, which is the effective date of this amendment/assignment."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No amendment number is mentioned in the text."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 0.95,
+    "explanation": "This is an amendment (transfer and assignment) to the original contract, not an initial or restated contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement refers to execution and delivery of counterparts, suggesting it is an executed agreement."
+  },
+  "party_name_1": {
+    "value": "Merrill Lynch International",
+    "confidence": 1.0,
+    "explanation": "Explicitly named as a party to the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled as 'Party A', Merrill Lynch International is the first named party and is commonly assigned as Party A in such agreements."
+  },
+  "party_name_2": {
+    "value": "Merrill Lynch Capital Services, Inc.",
+    "confidence": 1.0,
+    "explanation": "Explicitly named as a party to the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled as 'Party B', Merrill Lynch Capital Services, Inc. is the second named party and is commonly assigned as Party B in such agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

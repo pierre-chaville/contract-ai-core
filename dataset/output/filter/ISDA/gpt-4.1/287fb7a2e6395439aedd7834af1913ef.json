@@ -1,0 +1,13 @@
+{
+  "filename": "287fb7a2e6395439aedd7834af1913ef.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": -1,
+      "end_line": -1,
+      "confidence": 0.1,
+      "explanation": "The provided text does not contain the Schedule to the ISDA Master Agreement. The paragraphs are from the standard pre-printed form and do not include the negotiated Schedule, which is typically a separate section or document. Therefore, no suitable span matching the query can be identified."
+    }
+  ]
+}

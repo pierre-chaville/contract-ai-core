@@ -1,0 +1,13 @@
+{
+  "filename": "ed88b8b8750a56ccbfc0d8a696f01415.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 348,
+      "end_line": 522,
+      "confidence": 0.99,
+      "explanation": "The ISDA Schedule begins at line 348 (\"SCHEDULE\") and continues through the signature block at line 522. This section contains the negotiated terms between the parties, including the various Parts (1-6) of the Schedule, and excludes the standard pre-printed Master Agreement and any annexed Credit Support documents or Guaranty. The Schedule is the only section that matches the user's request."
+    }
+  ]
+}

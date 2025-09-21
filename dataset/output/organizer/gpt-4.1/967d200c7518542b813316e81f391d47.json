@@ -1,0 +1,63 @@
+{
+  "filename": "967d200c7518542b813316e81f391d47.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA International Swaps and Derivatives Association, Inc.' and refers to the '2002 Master Agreement', which is an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The amendment is to the '2002 Master Agreement', as explicitly stated in the document."
+  },
+  "contract_date": {
+    "value": "2005-06-28",
+    "confidence": 0.95,
+    "explanation": "The original ISDA Master Agreement is stated as dated June 28, 2005, which is the main contract date for amendments."
+  },
+  "amendment_date": {
+    "value": "2011-01-28",
+    "confidence": 1.0,
+    "explanation": "The amendment is dated as of January 28, 2011, as explicitly stated at the top of the document."
+  },
+  "amendment_number": {
+    "value": "5",
+    "confidence": 1.0,
+    "explanation": "This is the 'Fifth Amendment', as stated in the title and body of the document."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'FIFTH AMENDMENT', indicating it is an amendment."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document uses formal language and provides effective dates, which strongly suggests it is executed, not a draft."
+  },
+  "party_name_1": {
+    "value": "Bank of America, N.A.",
+    "confidence": 1.0,
+    "explanation": "Bank of America, N.A. is listed as a party and explicitly labeled as 'Party A'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Bank of America, N.A. is explicitly labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "TBS International Limited as 'Party B Group Agent', Albemarle Maritime Corp., Arden Maritime Corp., Avon Maritime Corp., Birnam Maritime Corp., Bristol Maritime Corp., Chester Shipping Corp., Darby Navigation Corp., Dover Maritime Corp., Elrod Shipping Corp., Exeter Shipping Corp., Frankfort Maritime Corp., Glenwood Maritime Corp., Hansen Shipping Corp., Henley Maritime Corp., Hudson Maritime Corp., Montrose Maritime Corp., Oldcastle Shipping Corp., Rector Shipping Corp., Remsen Navigation Corp., Sheffield Maritime Corp., Sherman Maritime Corp., Sterling Shipping Corp., Stratford Shipping Corp., Vernon Maritime Corp., and Windsor Maritime Corp.",
+    "confidence": 1.0,
+    "explanation": "All these entities are collectively referred to as 'Party B' in the document."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The above group is explicitly labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of OCR errors or typos."
+  }
+}

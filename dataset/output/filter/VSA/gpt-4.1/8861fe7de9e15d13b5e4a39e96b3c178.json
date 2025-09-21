@@ -1,0 +1,20 @@
+{
+  "filename": "8861fe7de9e15d13b5e4a39e96b3c178.txt",
+  "contract_type": "VSA",
+  "scopes": [
+    {
+      "name": "preamble",
+      "start_line": 2,
+      "end_line": 8,
+      "confidence": 0.98,
+      "explanation": "The preamble of the CSA typically includes the contract title, date, parties, and introductory language. Lines 2-8 cover the title, reference to the ISDA Master Agreement, the parties (JPMorgan Chase Bank, N.A. and CMF Winton Master L.P.), and the statement that the annex supplements and forms part of the agreement. Line 8 is the last line before the substantive terms begin."
+    },
+    {
+      "name": "Annex",
+      "start_line": 10,
+      "end_line": 183,
+      "confidence": 0.99,
+      "explanation": "The Annex of the CSA, for New York law, begins at Paragraph 13 (line 10: 'Paragraph 13. Elections and Variables') and continues through the negotiated terms, ending at the signature block (line 183). This matches the standard structure for a New York law CSA, where Paragraph 13 is the negotiated annex."
+    }
+  ]
+}

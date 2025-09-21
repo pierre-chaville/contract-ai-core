@@ -1,0 +1,13 @@
+{
+  "filename": "432762f78c425f1fbac75b88fd552975.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 241,
+      "end_line": 317,
+      "confidence": 0.99,
+      "explanation": "Lines 241-317 contain the full Schedule to the ISDA Master Agreement, including all the negotiated terms between the parties. The Schedule begins at line 241 with the heading 'SCHEDULE to the 1992 Master Agreement' and continues through the parties' signatures at line 317. This section is distinct from the standard pre-printed Master Agreement and any annexes, and matches the user's request to filter for the Schedule only."
+    }
+  ]
+}

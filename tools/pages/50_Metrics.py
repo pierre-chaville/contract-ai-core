@@ -182,7 +182,53 @@ def render_clauses_tab() -> None:
         with summary_path.open("r", encoding="utf-8") as f:
             summary = yaml.safe_load(f)
         st.markdown("**Summary**")
-        st.json(summary)
+
+        def _pct(v: object) -> str:
+            try:
+                x = float(v)  # type: ignore[arg-type]
+                if 0.0 <= x <= 1.0:
+                    x *= 100.0
+                return f"{int(round(x))}%"
+            except Exception:
+                return str(v)
+
+        if isinstance(summary, dict):
+            # num_examples as number
+            if "Number examples" in summary:
+                st.markdown(f"**Number examples:** {summary.get('Number examples', 0)}")
+            # Other top-level fields except per_category and num_examples
+            for k, v in summary.items():
+                if k in ("Number examples", "per_category"):
+                    continue
+                if isinstance(v, dict):
+                    st.markdown(f"**{k}:**")
+                    for sk, sv in v.items():
+                        st.markdown(f"- {sk}: {_pct(sv)}")
+                else:
+                    st.markdown(f"**{k}:** {_pct(v)}")
+            # per_category as table
+            pc = summary.get("per_category")
+            if isinstance(pc, list) and pc:
+                st.markdown("**per_category**")
+                # Format percentage fields, keep count as is
+                rows = []
+                for it in pc:
+                    if not isinstance(it, dict):
+                        continue
+                    rows.append(
+                        {
+                            "category": it.get("category", ""),
+                            "accuracy": _pct(it.get("accuracy", 0.0)),
+                            "count": it.get("count", 0),
+                            "f1": _pct(it.get("f1", 0.0)),
+                            "precision": _pct(it.get("precision", 0.0)),
+                            "recall": _pct(it.get("recall", 0.0)),
+                        }
+                    )
+                if rows:
+                    st.table(rows)
+        else:
+            st.write(summary)
     else:
         st.warning(f"Summary not found: {summary_path}")
     if cm_png.exists():
@@ -216,17 +262,69 @@ def render_datapoints_tab() -> None:
         with summary_path.open("r", encoding="utf-8") as f:
             summary = yaml.safe_load(f)
         st.markdown("### Summary")
-        st.json(summary)
+
+        def _pct(v: object) -> str:
+            try:
+                x = float(v)  # type: ignore[arg-type]
+                if 0.0 <= x <= 1.0:
+                    x *= 100.0
+                return f"{int(round(x))}%"
+            except Exception:
+                return str(v)
+
+        if isinstance(summary, dict):
+            for k, v in summary.items():
+                if k == "per_key":
+                    continue
+                if isinstance(v, dict):
+                    st.markdown(f"**{k}:**")
+                    for sk, sv in v.items():
+                        st.markdown(f"- {sk}: {_pct(sv)}")
+                else:
+                    st.markdown(f"**{k}:** {_pct(v)}")
+            # Per-key metrics table if present in summary
+            pc = summary.get("per_key")
+            if isinstance(pc, list) and pc:
+                st.markdown("### Per-key metrics")
+                rows = []
+                for it in pc:
+                    if not isinstance(it, dict):
+                        continue
+                    rows.append(
+                        {
+                            "key": it.get("key", ""),
+                            "accuracy": _pct(it.get("accuracy", 0.0)),
+                            "count": it.get("count", 0),
+                            "f1": _pct(it.get("f1", 0.0)),
+                            "precision": _pct(it.get("precision", 0.0)),
+                            "recall": _pct(it.get("recall", 0.0)),
+                        }
+                    )
+                if rows:
+                    st.table(rows)
+        else:
+            st.write(summary)
     else:
         st.warning(f"Summary not found: {summary_path}")
-    if per_key_f1.exists():
-        st.markdown("### Per-key F1")
-        rows = load_csv_rows(per_key_f1)
-        st.dataframe(rows[1:], column_config=None, hide_index=True, use_container_width=True)
-    if per_key_acc.exists():
-        st.markdown("### Per-key accuracy")
-        rows = load_csv_rows(per_key_acc)
-        st.dataframe(rows[1:], column_config=None, hide_index=True, use_container_width=True)
+    # Fallback to legacy CSVs if per_key not in summary
+    if summary_path.exists():
+        try:
+            with summary_path.open("r", encoding="utf-8") as f:
+                _sum = yaml.safe_load(f)
+            has_per_key = isinstance(_sum, dict) and isinstance(_sum.get("per_key"), list)
+        except Exception:
+            has_per_key = False
+    else:
+        has_per_key = False
+    if not has_per_key:
+        if per_key_f1.exists():
+            st.markdown("### Per-key F1")
+            rows = load_csv_rows(per_key_f1)
+            st.dataframe(rows[1:], column_config=None, hide_index=True, use_container_width=True)
+        if per_key_acc.exists():
+            st.markdown("### Per-key accuracy")
+            rows = load_csv_rows(per_key_acc)
+            st.dataframe(rows[1:], column_config=None, hide_index=True, use_container_width=True)
     if mm_csv.exists():
         st.markdown("### Mismatches")
         rows = load_csv_rows(mm_csv)

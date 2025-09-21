@@ -1,0 +1,13 @@
+{
+  "filename": "6554eb3664ee501dad601757f9ac50e2.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": -1,
+      "end_line": -1,
+      "confidence": 0.0,
+      "explanation": "There is no text of the Schedule to the ISDA Master Agreement in the provided paragraphs. The provided text is the standard pre-printed form of the 2002 ISDA Master Agreement, not the Schedule, which is a separate, party-specific document typically appended after the signature block. The Schedule is not present in the given lines."
+    }
+  ]
+}

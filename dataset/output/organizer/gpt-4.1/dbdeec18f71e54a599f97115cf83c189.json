@@ -1,0 +1,63 @@
+{
+  "filename": "dbdeec18f71e54a599f97115cf83c189.txt",
+  "contract_type": {
+    "value": "IRS",
+    "confidence": 0.95,
+    "explanation": "The document is titled 'INTEREST RATE SWAP AGREEMENT' and describes an interest rate swap arrangement, which matches the IRS code."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No specific version year or edition is mentioned for the IRS contract type."
+  },
+  "contract_date": {
+    "value": "2016-03-28",
+    "confidence": 0.8,
+    "explanation": "The ISDA Master Agreement and Schedule are referenced as being dated March 28, 2016, which is likely the contract date, though the announcement is dated June 3, 2016."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is an announcement of a new agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned or applicable."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.9,
+    "explanation": "The document refers to entering into a new ISDA Master Agreement and Schedule, indicating this is the initial contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The language 'has entered into' indicates the contract has been executed."
+  },
+  "party_name_1": {
+    "value": "CPI Aerostructures, Inc.",
+    "confidence": 1.0,
+    "explanation": "CPI Aerostructures, Inc. is explicitly named as a party to the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "CPI Aero is the primary subject of the announcement and is likely Party A, though not explicitly labeled as such."
+  },
+  "party_name_2": {
+    "value": "Citizens Bank N.A.",
+    "confidence": 0.95,
+    "explanation": "Citizens Bank N.A. is explicitly named as the counterparty to the ISDA Master Agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "Citizens Bank N.A. is the counterparty and likely Party B, though not explicitly labeled as such."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

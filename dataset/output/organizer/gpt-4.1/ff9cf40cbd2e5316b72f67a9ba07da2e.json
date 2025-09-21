@@ -1,0 +1,63 @@
+{
+  "filename": "ff9cf40cbd2e5316b72f67a9ba07da2e.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 ISDA MASTER AGREEMENT' and repeatedly refers to the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 ISDA Master Agreement' in both the heading and body."
+  },
+  "contract_date": {
+    "value": "2010-06-07",
+    "confidence": 1.0,
+    "explanation": "The contract is dated as of June 7, 2010, which is clearly stated below the title."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and lists both parties, which is typical for executed agreements; there is no indication it is a draft."
+  },
+  "party_name_1": {
+    "value": "NATIXIS",
+    "confidence": 1.0,
+    "explanation": "NATIXIS is listed as one of the two parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "While the explicit label 'Party A' is not shown, the first party listed is typically Party A in ISDA agreements."
+  },
+  "party_name_2": {
+    "value": "CINEDIGM DIGITAL FUNDING I, LLC",
+    "confidence": 1.0,
+    "explanation": "CINEDIGM DIGITAL FUNDING I, LLC is listed as the second party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "While the explicit label 'Party B' is not shown, the second party listed is typically Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

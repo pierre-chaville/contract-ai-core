@@ -1,0 +1,63 @@
+{
+  "filename": "c61aaa46b28f56ef9cc04a0cd2729510.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA 2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The document explicitly states '2002 MASTER AGREEMENT'."
+  },
+  "contract_date": {
+    "value": null,
+    "confidence": 0.5,
+    "explanation": "The contract date field is blank ('dated as of __'), so the date is not provided."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is an initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number or reference to an amendment in the document."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The document is a standard pre-printed ISDA Master Agreement with no reference to amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.7,
+    "explanation": "The template is presented as a formal agreement, but the signature/date fields are blank; status is inferred as executed template, but not signed."
+  },
+  "party_name_1": {
+    "value": null,
+    "confidence": 0.5,
+    "explanation": "The parties' names are not filled in; only blank lines are present."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "Standard ISDA agreements refer to the first party as 'Party A', though not explicitly named here."
+  },
+  "party_name_2": {
+    "value": null,
+    "confidence": 0.5,
+    "explanation": "The parties' names are not filled in; only blank lines are present."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "Standard ISDA agreements refer to the second party as 'Party B', though not explicitly named here."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is a clean, legible, pre-printed form with no typos or OCR errors."
+  }
+}

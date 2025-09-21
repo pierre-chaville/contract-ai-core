@@ -1,0 +1,63 @@
+{
+  "filename": "00fb0862161354c996ba812525e0c209.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swap Dealers Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The text at the bottom of the first page states 'ISDA® 1992', indicating the 1992 version."
+  },
+  "contract_date": {
+    "value": "2010-02-04",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of February 4, 2010, which is explicitly stated multiple times."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of any amendment number or amendment language."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a finalized contract, not a draft. While signatures are not visible, the presence of a specific date and formal structure strongly indicate execution."
+  },
+  "party_name_1": {
+    "value": "BARCLAYS BANK PLC",
+    "confidence": 1.0,
+    "explanation": "BARCLAYS BANK PLC is listed as one of the parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "BARCLAYS BANK PLC is explicitly labeled as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "NATIONAL CINEMEDIA, LLC",
+    "confidence": 1.0,
+    "explanation": "NATIONAL CINEMEDIA, LLC is listed as the other party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "NATIONAL CINEMEDIA, LLC is explicitly labeled as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free from OCR errors or typos."
+  }
+}

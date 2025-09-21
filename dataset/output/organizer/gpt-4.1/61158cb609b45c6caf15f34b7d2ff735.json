@@ -1,0 +1,63 @@
+{
+  "filename": "61158cb609b45c6caf15f34b7d2ff735.txt",
+  "contract_type": {
+    "value": "TERMINATION",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'TERMINATION ACKNOWLEDGMENT (TRS)' and repeatedly refers to the termination of transactions under the Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "Termination Acknowledgment does not have a version; the referenced ISDA Master Agreement is 2002, but the termination document itself does not have a version."
+  },
+  "contract_date": {
+    "value": "2012-07-02",
+    "confidence": 0.95,
+    "explanation": "The ISDA 2002 Master Agreement is referenced as dated July 2, 2012, which is the main contract being terminated."
+  },
+  "amendment_date": {
+    "value": "2013-06-13",
+    "confidence": 1.0,
+    "explanation": "The Termination Acknowledgment is dated June 13, 2013, which is the effective date of this amendment/termination."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned in the document."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "This is a termination acknowledgment, which is an amendment to the original contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.95,
+    "explanation": "The document includes execution blocks and language indicating it has been executed as of the stated date."
+  },
+  "party_name_1": {
+    "value": "Citibank, N.A.",
+    "confidence": 1.0,
+    "explanation": "Citibank, N.A. is explicitly named as a party in the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "Citibank, N.A. is the first named party and typically acts as Party A in ISDA documentation."
+  },
+  "party_name_2": {
+    "value": "Del River LLC",
+    "confidence": 1.0,
+    "explanation": "Del River LLC is explicitly named as the Counterparty in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "Del River LLC is the second named party and typically acts as Party B in ISDA documentation."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

@@ -1,7 +1,4 @@
 key,sort_order,title,data_type,enum_key,required,scope,clause_keys,description
-date,1,Date of the contract,date,,FALSE,beginning,,Date of the contract
-party_A,2,Party A,str,,FALSE,beginning,,Name of party A
-party_B,3,party_B,str,,FALSE,beginning,,Name of party B
 specified_entity_A,4,Specified entity Party A,str,,FALSE,clause,specified_entity,Specified entity Party A (null if none or not applicable)
 specified_entity_B,5,Specified entity Party B,str,,FALSE,clause,specified_entity,Specified entity Party B (null if none or not applicable)
 specified_transaction,6,Specified transaction scope,enum,SPECIFIED_TRANSACTION_SCOPE,FALSE,clause,specified_transaction,Specified transaction scope
@@ -15,17 +12,11 @@ automatic_early_termination,19,Automatic Early Termination  applicable parties,e
 termination_currency,20,Termination Currency,str,,FALSE,clause,termination_currency,"Termination Currency in ISO format (e.g. USD, EUR, ...)"
 notices_A,21,Email for notices for Party A,str,,FALSE,clause,address_for_notices,email  for notices for Party A
 notices_B,22,Email for notices for Party B,str,,FALSE,clause,address_for_notices,email  for notices for Party B
-process_agent_A,23,Process agent for party A,bool,,FALSE,clause,process_agent,Is process agent applicable for Party A?
-process_agent_name_A,24,Name of process agent for party A,str,,FALSE,clause,process_agent,Name of process agent for Party A if applicable
-process_agent_address_A,25,Address of process agent for party A,str,,FALSE,clause,process_agent,Address of process agent for Party A if applicable
-process_agent_B,26,Process agent for party B,bool,,FALSE,clause,process_agent,Is process agent applicable for Party B?
-process_agent_name_B,27,Name of process agent for party B,str,,FALSE,clause,process_agent,Name of process agent for Party B if applicable
-process_agent_address_B,28,Address of process agent for party B,str,,FALSE,clause,process_agent,Address of process agent for Party B if applicable
-multibranch_party_A,29,Party A is a Multibranch party,bool,,FALSE,clause,multibranch_party,is Party A a Multibranch party?
-multibranch_party_A_offices,30,Party A offices,list[str],,FALSE,clause,multibranch_party,list of offices for  Party A when a Multibranch party
-multibranch_party_B,31,Party B is a Multibranch party,bool,,FALSE,clause,multibranch_party,is Party B a Multibranch party ?
-multibranch_party_B_offices,32,Party B offices,list[str],,FALSE,clause,multibranch_party,list of offices for  Party B when a Multibranch party
-calculation_agent,33,Party for calculation agent,enum,PARTY,FALSE,clause,calculation_agent,Party for calculation agent in business as usual situations
-governing_law,34,Governing Law,enum,LAW,FALSE,clause,governing_law,Governing Law
-rating_triggers,35,Rating triggers,list[object:rating_triggers],,FALSE,clause,credit_rating_downgrade,Rating downgrade triggers
-nav_declines,36,Net asset value declines,list[object:nav_decline],,FALSE,clause,nav_trigger,NAV triggers
+process_agent_A,23,Process agent for party A,object:process_agent,,FALSE,clause,process_agent,process agent details for Party A
+process_agent_B,24,Process agent for party B,object:process_agent,,FALSE,clause,process_agent,process agent details for Party B
+multibranch_party_A,25,Multibranch for Party A,object:multibranch,,FALSE,clause,multibranch_party,Multibranch party details for Party A
+multibranch_party_B,26,Multibranch for Party B,object:multibranch,,FALSE,clause,multibranch_party,Multibranch party details for Party B
+calculation_agent,27,Party for calculation agent,enum,PARTY,FALSE,clause,calculation_agent,Party for calculation agent in business as usual situations
+governing_law,28,Governing Law,enum,LAW,FALSE,clause,governing_law,Governing Law
+rating_triggers,29,Rating triggers,list[object:rating_trigger],,FALSE,clause,credit_rating_downgrade,Rating downgrade triggers
+nav_declines,30,Net asset value declines,list[object:nav_decline],,FALSE,clause,nav_trigger,NAV triggers

@@ -1,0 +1,63 @@
+{
+  "filename": "afcac2745e2a5a4d9b09d867b76696b5.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA Master Agreement' and references the International Swap Dealers Association, Inc. throughout."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The copyright notice at the bottom states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.'"
+  },
+  "contract_date": {
+    "value": "2005-05-27",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of May 27, 2005, as stated near the top of the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is an initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number, as this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is an initial ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is labeled 'Execution Copy,' which typically indicates an executed agreement."
+  },
+  "party_name_1": {
+    "value": "GREENWICH CAPITAL DERIVATIVES, INC.",
+    "confidence": 1.0,
+    "explanation": "Listed as one of the two parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A' next to the party name."
+  },
+  "party_name_2": {
+    "value": "NOVASTAR MORTGAGE SUPPLEMENTAL INTEREST TRUST, SERIES 2005-2, a New York common law trust",
+    "confidence": 1.0,
+    "explanation": "Listed as the second party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B' next to the party name."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

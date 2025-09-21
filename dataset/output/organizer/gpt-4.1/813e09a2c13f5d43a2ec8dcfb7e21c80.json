@@ -1,0 +1,63 @@
+{
+  "filename": "813e09a2c13f5d43a2ec8dcfb7e21c80.txt",
+  "contract_type": {
+    "value": "EMAIL",
+    "confidence": 1.0,
+    "explanation": "The document is explicitly labeled as 'VIA EMAIL' and is a correspondence regarding an ISDA Master Agreement, not the agreement itself."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No versioning information is applicable to an email."
+  },
+  "contract_date": {
+    "value": "2006-01-06",
+    "confidence": 0.9,
+    "explanation": "The ISDA Master Agreement referenced is dated January 6, 2006, which is the main contract date."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "This is not an amendment but an email notice regarding an event under the contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is referenced; this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.8,
+    "explanation": "The referenced ISDA Master Agreement is the initial contract, and this email refers to actions under it, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The ISDA Master Agreement is referenced as an existing, effective agreement; the email is not a draft."
+  },
+  "party_name_1": {
+    "value": "Morgan Stanley Capital Services LLC",
+    "confidence": 1.0,
+    "explanation": "Explicitly named as a party to the ISDA Master Agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "Morgan Stanley is described as the Non-Affected Party, which typically corresponds to Party A in such correspondence."
+  },
+  "party_name_2": {
+    "value": "Tiles Trust 2005-1",
+    "confidence": 1.0,
+    "explanation": "Explicitly named as the counterparty to the ISDA Master Agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "Tiles Trust 2005-1 is the other party to the ISDA; typically Party B."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

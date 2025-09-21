@@ -1,0 +1,13 @@
+{
+  "filename": "8bfb98b266735a9da2cd65340376e7e4.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 31,
+      "end_line": 181,
+      "confidence": 0.98,
+      "explanation": "Lines 31-181 contain the full text of the Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE to the 2002 MASTER AGREEMENT' and ending with the signature block. This section includes all the negotiated terms and elections that form the Schedule, and is clearly separated from the standard pre-printed Master Agreement and from annexes or exhibits (which start after line 181)."
+    }
+  ]
+}

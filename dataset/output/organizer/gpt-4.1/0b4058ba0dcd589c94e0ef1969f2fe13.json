@@ -1,0 +1,63 @@
+{
+  "filename": "0b4058ba0dcd589c94e0ef1969f2fe13.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swap Dealers Association, Inc."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No explicit reference to a version year (e.g., 1992 or 2002) is present in the visible text."
+  },
+  "contract_date": {
+    "value": "2012-11-15",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated as 'dated as of November 15, 2012'."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment is referenced, so no amendment number is applicable."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft; no draft watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "THE BANK OF NOVA SCOTIA",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party on the first page."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "Standard ISDA convention lists the first named party as Party A, though not explicitly labeled here."
+  },
+  "party_name_2": {
+    "value": "HALIFAX FUNDING LLC",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party on the first page."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "Standard ISDA convention lists the second named party as Party B, though not explicitly labeled here."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of OCR errors or typos."
+  }
+}

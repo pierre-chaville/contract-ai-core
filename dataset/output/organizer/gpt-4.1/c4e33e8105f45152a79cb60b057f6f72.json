@@ -1,0 +1,63 @@
+{
+  "filename": "c4e33e8105f45152a79cb60b057f6f72.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swap Dealers Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "Copyright (C) 1992 by International Swap Dealers Association, Inc. is explicitly stated."
+  },
+  "contract_date": {
+    "value": "2008-01-11",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of January 11, 2008, as stated on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned and this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and presented as a formal contract, indicating it is executed."
+  },
+  "party_name_1": {
+    "value": "GENERAL MARITIME CORPORATION",
+    "confidence": 1.0,
+    "explanation": "GENERAL MARITIME CORPORATION is listed as one of the parties on the first page."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled, GENERAL MARITIME CORPORATION is listed first, typically Party A."
+  },
+  "party_name_2": {
+    "value": "HSH Nordbank AG",
+    "confidence": 1.0,
+    "explanation": "HSH Nordbank AG is listed as the second party on the first page."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled, HSH Nordbank AG is listed second, typically Party B."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free from typos or OCR errors."
+  }
+}

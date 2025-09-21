@@ -1,0 +1,110 @@
+filename,field,gold_value,pred_value,gold_explanation
+025cb4065e6e551db1bfe44ef44eb83b.txt,contract_type_version,1992,2008,"The copyright notice at the bottom states 'Copyright 1992 by International Swap Dealers Association, Inc.', indicating the 1992 version."
+025cb4065e6e551db1bfe44ef44eb83b.txt,party_name_2,World Financial Network Credit Card Master Note Trust,Master Note Trust,'World Financial Network Credit Card Master Note Trust' is listed as the other party.
+072e2c5f957e5bce8aea0b2f6e82b01d.txt,party_name_2,"Each entity listed on Appendix I to the Schedule hereto, severally and not jointly","Each entity listed on Appendix I to the Schedule hereto, severally and not jointly (each such entity)","The agreement specifies 'Each entity listed on Appendix I to the Schedule hereto, severally and not jointly (each such entity, ""Party B"")' as Party B."
+0a0acc69e9325b0e94a7611d0ce572d0.txt,version_type,INITIAL,AMENDMENT,"This is the initial transfer and assignment agreement, not an amendment or restatement."
+0c9e47dc758752f6995bf2dc196297e1.txt,contract_type,ISDA,SWAP,"The document is titled 'ISDA MASTER AGREEMENT (CURRENCY SWAP AGREEMENT)' and references a schedule to the master agreement, which fits the ISDA code."
+1159d683a6005af8aba360d1c04cf5dc.txt,amendment_number,1,First Amendment,"The document is titled 'FIRST AMENDMENT,' indicating this is amendment number 1."
+150449ff60495a6ba999893a09fd46fe.txt,party_name_2,"NOVASTAR MORTGAGE SUPPLEMENTAL INTEREST TRUST, SERIES 2005-1, a New York common law trust","NOVASTAR MORTGAGE SUPPLEMENTAL INTEREST TRUST, SERIES 2005-1",This full name is given as the counterparty and labeled as 'Party B'.
+16800388b951529f9e35659108c2f7f1.txt,party_name_2,"Deutsche Bank National Trust Company, acting solely as Auction Administrator and intermediary agent for the Holders of the Auction Certificates and not individually or as Trustee or on behalf of Thornburg Mortgage Securities Trust 2004-2 Mortgage Loan Pass-Through Certificates, Series 2004-2 under the Pooling and Servicing Agreement",Deutsche Bank National Trust Company,Explicitly listed as 'Party B' in the agreement text with detailed role description.
+1904d5968c2c5061b094ff389e501651.txt,party_name_2,"QAD Ortega Hill, LLC, a Delaware limited liability company","QAD Ortega Hill, LLC","QAD Ortega Hill, LLC is listed as the other party at the top of the agreement."
+1acc4999ab0950bd92e59bfa201013c7.txt,contract_type_version,1992,2008-A,"Copyright notice at the bottom states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.'"
+1acc4999ab0950bd92e59bfa201013c7.txt,party_name_2,World Financial Network Credit Card Master Note Trust,Master Note Trust,World Financial Network Credit Card Master Note Trust is listed as the second party.
+1d944ee3ddab55fca2012dbe7e8a32a7.txt,party_name_2,CITIGROUP ENERGY INC.,,CITIGROUP ENERGY INC. is listed as the counterparty for the 2002 ISDA Master Agreement.
+1d944ee3ddab55fca2012dbe7e8a32a7.txt,party_role_2,Party B,,"As the counterparty, CITIGROUP ENERGY INC. is reasonably inferred to be Party B."
+2241af180696534ba7db80c610ae5aa4.txt,contract_type,EMAIL,ISDA,The document refers explicitly to the 'ISDA Master Agreement' and discusses provisions and calculations under this agreement.
+2357411a95215d8daa1c46f22f66d5d7.txt,contract_type,ISDA,AMENDMENT,The document is titled 'SWAP MODIFICATION AGREEMENT' and refers to modifications of swap transactions under an ISDA Master Agreement.
+2357411a95215d8daa1c46f22f66d5d7.txt,amendment_date,2020-03-31,2020-04-21,"The effective date of this modification agreement is March 31, 2020, as stated in the opening paragraph."
+28883c0bf0a658a6b3f8b741a18178a7.txt,amendment_number,1,First,"The document is titled 'FIRST AMENDMENT,' indicating this is amendment number 1."
+2d390fb1345b518f8ce7bef938e373de.txt,amendment_number,9,NINTH,"The document is titled 'NINTH AMENDMENT,' indicating this is the ninth amendment."
+359fd50d13c6566690d0cc51a332dec8.txt,contract_type_version,"2002, 1992",,"Both '2002 ISDA MASTER AGREEMENT (2008)' and '1992 ISDA MASTER AGREEMENT (2001)' are explicitly listed, indicating both versions are present."
+359fd50d13c6566690d0cc51a332dec8.txt,party_name_2,Citigroup Energy Inc.,,Citigroup Energy Inc. is listed as the counterparty to the 2002 ISDA Master Agreement.
+359fd50d13c6566690d0cc51a332dec8.txt,party_role_2,Party B,,"As the counterparty to Dynegy Holdings, LLC, Citigroup Energy Inc. is reasonably inferred to be Party B."
+36a31e571bec5cdfb2a270c772619d4e.txt,amendment_number,25,TWENTY-FIFTH,"The document is titled 'TWENTY-FIFTH AMENDMENT,' indicating this is the 25th amendment."
+36eed4189a145f6b9813868c78e0b921.txt,party_name_2,"QAD Ortega Hill, LLC, a Delaware limited liability company","QAD Ortega Hill, LLC","QAD Ortega Hill, LLC is listed as Party B in the agreement."
+437d100c1df8545c8e59874b6f0f7c1a.txt,contract_type,OTHER,ISDA,The document is described as 'Amendment No. 1 to ISDA Master Agreement' in both the text and the exhibit index.
+44bfc10183425119bf507083874e5756.txt,contract_type_version,1992,,"The copyright notice at the bottom states 'Copyright (C)1992 by International Swap Dealers Association, Inc.', indicating the 1992 version."
+4e875e5632ca5d02883692ec03d0cc6c.txt,amendment_number,2,Second Amendment,"The document is titled 'SECOND AMENDMENT,' indicating it is the second amendment."
+5121352e4b375dad98f145f938a196cb.txt,contract_type,ISDA,IRS,"The document is titled 'ISDA Master Agreement (Interest Rate Swap Agreement)' and references a schedule to the master agreement, which matches the ISDA code."
+5121352e4b375dad98f145f938a196cb.txt,party_name_2,Perpetual Trustee Company Limited as Trustee of the Medallion Trust Series 2005-2G,PERPETUAL TRUSTEE COMPANY LIMITED,Explicitly listed as 'PARTY B' in the agreement.
+5273ace62a7a5e83b8b7bcc3e335ab37.txt,amendment_number,27,Twenty Seventh,"The document is titled 'TWENTY SEVENTH AMENDMENT,' indicating this is the 27th amendment."
+5646f6cd2d1d585d979a6ba89d9d434a.txt,party_name_2,"NOVASTAR MORTGAGE SUPPLEMENTAL INTEREST TRUST, SERIES 2005-1, a New York common law trust","NOVASTAR MORTGAGE SUPPLEMENTAL INTEREST TRUST, SERIES 2005-1",Party B is clearly identified in the header.
+57eb626d75245ce0abd75863e5000b9e.txt,party_name_2,"Each entity listed on Appendix I to the Schedule hereto, severally and not jointly","Each entity listed on Appendix I to the Schedule hereto, severally and not jointly (each such entity)","The agreement states that 'Each entity listed on Appendix I to the Schedule hereto, severally and not jointly' is 'Party B'."
+5a5adf7517955ea6bd8fad0b01280b43.txt,contract_date,2008-08-20,2006-08-15,"The referenced Forbearance Agreement and Amendment is dated August 20, 2008, and this letter appears to be executed in connection with that date. No other clear execution date is provided."
+5b0d97bba758591eb4d64a958be68293.txt,contract_type,ISDA,SWAP,"The document is titled 'ISDA Master Agreement' and references the International Swap Dealers Association, Inc. Master Agreement, which matches the ISDA code."
+5b0d97bba758591eb4d64a958be68293.txt,contract_type_version,1992,,"The copyright notice at the bottom states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.', indicating the 1992 version."
+5b0d97bba758591eb4d64a958be68293.txt,party_name_2,Perpetual Trustee Company Limited in its capacity as trustee of the SMART ABS Series 2013-2US Trust,Perpetual Trustee Company Limited,Explicitly listed as 'Party B' in the agreement text.
+5b3b418331ba5994a23e43d507dcee0b.txt,party_name_2,PERPETUAL TRUSTEES CONSOLIDATED LIMITED as trustee of the Crusade Global Trust No. 1 of 2007,PERPETUAL TRUSTEES CONSOLIDATED LIMITED,Listed as Party B in the parties section.
+61144fd96fa95672bf5e800a986c8722.txt,contract_type_version,1992,,"Copyright notice at the bottom states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.'"
+7139cc85a8965b8bb389aaaf31a6ed6b.txt,contract_type,ISDA,SWAP,"The document is titled 'CURRENCY SWAP AGREEMENT' and references the ISDA Master Agreement explicitly, indicating it is an ISDA Master Agreement."
+7139cc85a8965b8bb389aaaf31a6ed6b.txt,contract_type_version,1992,,"The text states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.', indicating the 1992 version of the ISDA Master Agreement."
+7139cc85a8965b8bb389aaaf31a6ed6b.txt,party_name_2,Perpetual Trustee Company Limited in its capacity as trustee of the SMART ABS Series 2014-1US Trust,PERPETUAL TRUSTEE COMPANY LIMITED,Explicitly identified as 'Party B' in the agreement text.
+74a043b2a2c75aeca43e1782601f332a.txt,contract_type_version,1994,,"Copyright notice at the bottom states 'Copyright (C) 1994 by International Swaps and Derivatives Association, Inc.', indicating the 1994 version of the CSA."
+74a043b2a2c75aeca43e1782601f332a.txt,party_name_2,"Summer Energy Northeast, LLC (formerly: REP Energy, LLC)","Summer Energy Northeast, LLC",Explicitly listed as Party B in the agreement header.
+7c187d338ffd5feb954d2f41c3d2f5a6.txt,contract_date,2016-03-17,2016-07-18,"The recitals state the original First Lien ISDA 2002 Master Agreement was dated as of March 17, 2016, which is the initial contract date."
+7c187d338ffd5feb954d2f41c3d2f5a6.txt,amendment_number,26,TWENTY-SIXTH,"The document is titled 'TWENTY-SIXTH AMENDMENT', indicating this is the 26th amendment."
+7f99bda768395d25b2dcfe40e1115a37.txt,party_name_2,"Summer Energy, LLC, Summer Energy Northeast, LLC, and Summer Energy Midwest, LLC","Summer Energy, LLC, Summer Energy Northeast, LLC, Summer Energy Midwest, LLC",All three entities are listed as 'Party B' jointly and severally.
+804347c409985910bb29efdbfa56341b.txt,contract_type_version,2016,,The document explicitly states '2016 Credit Support Annex for Variation Margin (VM)'.
+813e09a2c13f5d43a2ec8dcfb7e21c80.txt,contract_type,EMAIL,ISDA,"The document repeatedly references the ISDA Master Agreement and its provisions, indicating this is the contract type."
+86a3d37df6d85c5f9e2743b05272c6f4.txt,amendment_number,20,Twentieth,"The document is titled 'TWENTIETH AMENDMENT,' indicating this is the 20th amendment."
+88ef695e0ef754b29b58aa9085502093.txt,contract_type_version,1992,,"The copyright at the bottom states 'Copyright (C)1992 by International Swap Dealers Association, Inc.', indicating the 1992 version."
+8bfb98b266735a9da2cd65340376e7e4.txt,party_name_1,,[Name],"'[Name]' is used as a placeholder for Party A, so the actual name is not provided in the visible text."
+8ea4b8fc2f375db1a0765c9ff3ac2134.txt,contract_type,ISDA,SWAP,The document is titled 'ISDA Schedule to the Master Agreement for Basis Swap' and references the ISDA Master Agreement throughout.
+8ea4b8fc2f375db1a0765c9ff3ac2134.txt,party_name_2,PERPETUAL TRUSTEES CONSOLIDATED LIMITED AS TRUSTEE OF CRUSADE GLOBAL TRUST NO. 1 OF 2007,PERPETUAL TRUSTEES CONSOLIDATED LIMITED,Listed as Party B in the parties section.
+95c71723d3c85e1ebc0fa5048df2c261.txt,amendment_number,2,Second Amendment,"The document is titled 'SECOND AMENDMENT,' indicating this is amendment number 2."
+964c345e133d5b7195945c265f8d086c.txt,contract_type,ISDA,SWAP,"The document is titled 'ISDA MASTER AGREEMENT (CURRENCY SWAP AGREEMENT)' and references a schedule to the master agreement, which matches the ISDA contract type."
+967d200c7518542b813316e81f391d47.txt,amendment_number,5,Fifth,"This is the 'Fifth Amendment', as stated in the title and body of the document."
+967d200c7518542b813316e81f391d47.txt,party_name_2,"TBS International Limited as 'Party B Group Agent', Albemarle Maritime Corp., Arden Maritime Corp., Avon Maritime Corp., Birnam Maritime Corp., Bristol Maritime Corp., Chester Shipping Corp., Darby Navigation Corp., Dover Maritime Corp., Elrod Shipping Corp., Exeter Shipping Corp., Frankfort Maritime Corp., Glenwood Maritime Corp., Hansen Shipping Corp., Henley Maritime Corp., Hudson Maritime Corp., Montrose Maritime Corp., Oldcastle Shipping Corp., Rector Shipping Corp., Remsen Navigation Corp., Sheffield Maritime Corp., Sherman Maritime Corp., Sterling Shipping Corp., Stratford Shipping Corp., Vernon Maritime Corp., and Windsor Maritime Corp.",TBS International Limited as Party B Group Agent and affiliated entities,All these entities are collectively referred to as 'Party B' in the document.
+96d57fd26efc55bf8c84e99d18b70106.txt,party_role_1,Secured Party,Party A,"Citibank is referred to as 'Secured Party' and 'Bank' in the Account Control Agreement, but 'Secured Party' is the primary role in this context."
+96d57fd26efc55bf8c84e99d18b70106.txt,party_role_2,Pledgor,Party B,"BDCA-CB Funding, LLC is referred to as 'Pledgor' in the Account Control Agreement and as 'Counterparty' in the ISDA context; 'Pledgor' is the primary role in this context."
+9883b51cc6c4595190c93af3c89db487.txt,amendment_number,22,Twenty-Second,"The document is titled 'TWENTY-SECOND AMENDMENT', which corresponds to amendment number 22."
+a8fb40c94e6959f5ac8417410def168c.txt,contract_type_version,,1992,"No specific versioning (like ISDA 1992/2002) applies to SWAP agreements; the referenced ISDA 1992 is for the underlying agreement, not this transfer."
+a8fb40c94e6959f5ac8417410def168c.txt,contract_date,2012-04-12,2004-08-03,"The agreement is explicitly dated as of April 12, 2012, at the top of the document."
+a8fb40c94e6959f5ac8417410def168c.txt,amendment_date,,2012-04-12,"This is a transfer and assignment agreement, not an amendment; no amendment date is present."
+a8fb40c94e6959f5ac8417410def168c.txt,version_type,INITIAL,AMENDMENT,"This is the initial transfer and assignment agreement for the swap, not an amendment or restatement."
+a8fb40c94e6959f5ac8417410def168c.txt,party_name_1,Merrill Lynch International,"Merrill Lynch Capital Services, Inc.",Explicitly named as a party at the top of the agreement.
+a8fb40c94e6959f5ac8417410def168c.txt,party_name_2,"Merrill Lynch Capital Services, Inc.",Merrill Lynch International,Explicitly named as a party at the top of the agreement.
+aafbb062cbae5c1797a48b64e207c7f6.txt,contract_type_version,1992,,"Copyright at the bottom states 'Copyright(C) 1992 by International Swap Dealers Association, Inc.', indicating the 1992 version."
+af602451f9e05f1f814d5abfb53bef5f.txt,contract_type,OTHER,ISDA,The document repeatedly refers to 'ISDA Master Agreement' and describes agreements substantially identical to a referenced ISDA Master Agreement.
+afbf6d5a5932562f85e1dee29f0ce0a8.txt,party_role_1,Guarantor,Party A,"The role of Summer Energy Holdings, Inc. is explicitly stated as 'Guarantor.'"
+afbf6d5a5932562f85e1dee29f0ce0a8.txt,party_role_2,Counterparty,Party B,"The document refers to both EDF Trading North America, LLC and EDF Energy Services, LLC collectively as the 'Counterparty.'"
+afcac2745e2a5a4d9b09d867b76696b5.txt,party_name_2,"NOVASTAR MORTGAGE SUPPLEMENTAL INTEREST TRUST, SERIES 2005-2, a New York common law trust","NOVASTAR MORTGAGE SUPPLEMENTAL INTEREST TRUST, SERIES 2005-2",Listed as the second party at the top of the agreement.
+b399d7afd978506b80bdce2edb3484bc.txt,contract_date,2016-03-17,2002-03-17,"The recitals state the original First Lien ISDA 2002 Master Agreement was dated as of March 17, 2016. This is the main contract date for the initial agreement."
+b399d7afd978506b80bdce2edb3484bc.txt,amendment_number,31,THIRTY-FIRST,"The document is titled 'THIRTY-FIRST AMENDMENT,' which clearly indicates this is the 31st amendment."
+b83b7992ab475b49bc458191f1676119.txt,amendment_number,3,THIRD,"The document is titled 'THIRD AMENDMENT,' indicating this is the third amendment."
+c4e33e8105f45152a79cb60b057f6f72.txt,contract_type_version,1992,,"Copyright (C) 1992 by International Swap Dealers Association, Inc. is explicitly stated."
+c61aaa46b28f56ef9cc04a0cd2729510.txt,status,EXECUTED,,"The template is presented as a formal agreement, but the signature/date fields are blank; status is inferred as executed template, but not signed."
+c84c5268bdee5180ba49892afa16b432.txt,amendment_number,3,Third Amendment,"The document is titled 'THIRD AMENDMENT', indicating this is the third amendment."
+cd3838f45dd45f72915f5dfee90990a3.txt,contract_type,ISDA,IRS,"The document is titled 'ISDA MASTER AGREEMENT (INTEREST RATE SWAP AGREEMENT)' and references a schedule to the master agreement, which matches the ISDA contract type."
+cd3838f45dd45f72915f5dfee90990a3.txt,party_name_2,PERPETUAL TRUSTEE COMPANY LIMITED AS TRUSTEE OF THE MEDALLION TRUST SERIES 2005-1G,PERPETUAL TRUSTEE COMPANY LIMITED,Listed as a party and referred to as 'PARTY B' in the agreement.
+ce55ff67b6fc5cbb8579d511562bd5c2.txt,amendment_number,2,SECOND,"The document is titled 'SECOND AMENDMENT AGREEMENT', indicating this is the second amendment."
+cf03a7317a7450fc8dd7d38465363fe5.txt,party_name_1,MACQUARIE BANK LIMITED (ABN 46 008 583 542),MACQUARIE BANK LIMITED,Explicitly listed as a party to the agreement.
+d256f19321de5d8c94dff90dce22d906.txt,party_role_1,Guarantor,Party A,"Summer Energy Holdings, Inc. is described as the 'Guarantor.'"
+d256f19321de5d8c94dff90dce22d906.txt,party_role_2,Counterparty,Party B,"EDF Energy Services, LLC is described as the 'Counterparty.'"
+d5d57a2874405aa78fbceb91978aa63a.txt,amendment_number,24,Twenty-Fourth,"The document is titled 'TWENTY-FOURTH AMENDMENT,' indicating this is the 24th amendment."
+d94250d4eeb652308a1394b6cfd1bafa.txt,amendment_number,30,THIRTIETH,"The document is titled 'THIRTIETH AMENDMENT', explicitly indicating this is the 30th amendment."
+d9ec3d49782551c8b5177897dce9a3f9.txt,contract_type_version,2016,,"The text specifies '2016 Credit Support Annex for Variation Margin (VM)', indicating the 2016 version."
+db89a40b5c635952b05fceb3053c178c.txt,amendment_number,,FIRST,"The amendment is called 'FIRST AMENDMENT,' but no explicit amendment number is provided in a formal field."
+dbdeec18f71e54a599f97115cf83c189.txt,amendment_date,,2016-03-24,There is no indication that this document is an amendment; it is an announcement of a new agreement.
+dbdeec18f71e54a599f97115cf83c189.txt,party_name_2,Citizens Bank N.A.,"BankUnited, N.A.",Citizens Bank N.A. is explicitly named as the counterparty to the ISDA Master Agreement.
+dc6d73fedbac5624a9aaf11685a05b04.txt,amendment_number,18,Eighteenth,"The document is titled 'EIGHTEENTH AMENDMENT,' which clearly indicates this is the 18th amendment."
+dd1b3f5fe34b5a6c913dccb4a65393eb.txt,contract_type,ISDA,SWAP,The document is titled 'CURRENCY SWAP AGREEMENT' and references a swap agreement multiple times.
+dd1b3f5fe34b5a6c913dccb4a65393eb.txt,contract_type_version,1992,,"The text states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.', indicating the 1992 ISDA version."
+df05c9dd9f2f5c21ae75f777815a6b62.txt,contract_type_version,1994,,"The text states that Paragraphs 1 through 12 of the ISDA Credit Support Annex (Bilateral Form) published in 1994 are incorporated, indicating the 1994 version."
+e4ac2a2ce57155cf841430b8a48a477f.txt,party_name_1,FORD CREDIT AUTO OWNER TRUST 2008-C,FORD CREDIT AUTO OWNER,The first party is named as 'FORD CREDIT AUTO OWNER TRUST 2008-C' in the parties section.
+e4ac2a2ce57155cf841430b8a48a477f.txt,party_name_2,BNP PARIBAS,BNP PARIBAS TRUST 2008-C,The second party is named as 'BNP PARIBAS' in the parties section.
+e823b77ec78357da9461add4eae003c2.txt,contract_type,OTHER,ISDA,"The document repeatedly refers to 'ISDA Master Agreement' and describes agreements that are substantially identical to Exhibit 4.14, confirming the contract type as ISDA Master Agreement."
+e823b77ec78357da9461add4eae003c2.txt,party_role_1,Above Cap Liquidity Facility Provider,Party A,"Morgan Stanley Capital Services, Inc. is described as 'Above Cap Liquidity Facility Provider' in both agreements."
+e823b77ec78357da9461add4eae003c2.txt,party_role_2,Subordination Agent,Party B,Wilmington Trust Company is described as 'Subordination Agent' for the relevant trusts.
+e9208e2b562852d68594841c03fc1e2d.txt,amendment_number,1,First Amendment,"The document is titled 'FIRST AMENDMENT', indicating this is amendment number 1."
+ea243910f07e59068a83cca6cccec7af.txt,party_name_1,"FIFTH THIRD FINANCIAL RISK SOLUTIONS, a division of FIFTH THIRD BANK, an Ohio banking corporation",FIFTH THIRD FINANCIAL RISK SOLUTIONS,Party A is clearly named in the agreement header.
+ea243910f07e59068a83cca6cccec7af.txt,party_name_2,"BRIDGEPORT FUEL CELL, LLC, a Virginia limited liability company","BRIDGEPORT FUEL CELL, LLC",Party B is clearly named in the agreement header.
+ed444a50dbf551cdba9793d128d06693.txt,contract_type_version,1992,2008-A,"Copyright notice at the bottom states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.'"
+f649a6f4b9bd5b7dad774f75be633a44.txt,amendment_number,13,Thirteenth,"The document is titled 'THIRTEENTH AMENDMENT', which clearly indicates this is the 13th amendment."
+fa7d4cf3ef53539285557025063f9d79.txt,amendment_number,21,TWENTY-FIRST,"The document is titled 'TWENTY-FIRST AMENDMENT,' indicating this is the 21st amendment."
+fb19c4204c355742926f8e6cd348f7fe.txt,party_name_1,TILES TRUST NO. 2005-1,MORGAN STANLEY,TILES TRUST NO. 2005-1 is explicitly named as the Counterparty.
+fb19c4204c355742926f8e6cd348f7fe.txt,party_name_2,Morgan Stanley,TILES TRUST NO. 2005-1,Morgan Stanley is explicitly identified as the Guarantor.
+fbe65b7a21a254b0b4db2986ccc787d9.txt,party_name_1,Brown Brothers Harriman & Co.,Brown Brothers Harriman & Co,Explicitly listed as one of the parties at the top of the agreement.
+fbe65b7a21a254b0b4db2986ccc787d9.txt,document_quality,high,medium,"The text and image are clear, with no significant typos or OCR errors."
+fca7233ea8a65f26932112f6dccf4d83.txt,amendment_number,23,TWENTY-THIRD,"The document is titled 'TWENTY-THIRD AMENDMENT,' which means this is the 23rd amendment."
+fda2ebf28fa8520c99b6cb5f7a88bb0f.txt,party_name_2,"Summer Energy Northeast, LLC (formerly: REP Energy, LLC)","Summer Energy Northeast, LLC","Summer Energy Northeast, LLC (formerly: REP Energy, LLC) is listed second and labeled as 'Party B'."

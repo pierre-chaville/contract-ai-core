@@ -1,0 +1,13 @@
+{
+  "filename": "97f47006838e50b099aae8fcab8b9aca.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 4,
+      "end_line": 157,
+      "confidence": 0.98,
+      "explanation": "Lines 4 to 157 comprise the entire Schedule to the 2002 ISDA Master Agreement, including all its Parts (1-5) and the bespoke elections, representations, and amendments between the parties. The text before line 4 is cover/identification, and after line 157 is execution/signature. There is no evidence of CSA annexes or standard pre-print Master Agreement text within this span."
+    }
+  ]
+}

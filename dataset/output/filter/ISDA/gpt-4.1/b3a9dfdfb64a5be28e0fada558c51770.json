@@ -1,0 +1,13 @@
+{
+  "filename": "b3a9dfdfb64a5be28e0fada558c51770.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 382,
+      "end_line": 547,
+      "confidence": 0.98,
+      "explanation": "The ISDA Schedule begins at line 382 (\"SCHEDULE to the 2002 MASTER AGREEMENT\") and continues through the end of the document at line 547. This section contains the negotiated terms between the parties, including Termination Provisions, Tax Representations, Agreement to Deliver Documents, Miscellaneous, and Other Provisions, which are all standard parts of the ISDA Schedule. The preceding lines are the standard pre-printed Master Agreement and definitions, not the Schedule."
+    }
+  ]
+}

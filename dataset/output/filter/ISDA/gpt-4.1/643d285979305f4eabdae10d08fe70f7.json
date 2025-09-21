@@ -1,0 +1,13 @@
+{
+  "filename": "643d285979305f4eabdae10d08fe70f7.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 255,
+      "end_line": 393,
+      "confidence": 0.98,
+      "explanation": "Lines 255-393 contain the full text of the Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE TO THE MASTER AGREEMENT' and ending with the execution block for the Schedule. This section is clearly demarcated and contains all the negotiated terms between the parties, as required by the query. It does not include the standard pre-printed Master Agreement, nor the CSA annexes or other exhibits."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "fbe65b7a21a254b0b4db2986ccc787d9.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swap Dealers Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "Copyright (C) 1992 by International Swap Dealers Association, Inc. is explicitly stated in the text."
+  },
+  "contract_date": {
+    "value": "2005-10-01",
+    "confidence": 0.8,
+    "explanation": "The date is given as 'dated as of October ...., ..2005'. The exact day is not specified, but October 2005 is clear. Using the first of the month as a reasonable placeholder."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is an initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is an initial ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is presented as a finalized document with parties named and a date, suggesting it is executed."
+  },
+  "party_name_1": {
+    "value": "Brown Brothers Harriman & Co.",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as one of the parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "Standard ISDA format lists the first named party as Party A, though not explicitly labeled here."
+  },
+  "party_name_2": {
+    "value": "Met-Pro Corporation",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as the second party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "Standard ISDA format lists the second named party as Party B, though not explicitly labeled here."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, with no significant typos or OCR errors."
+  }
+}

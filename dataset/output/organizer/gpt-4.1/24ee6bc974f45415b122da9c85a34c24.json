@@ -1,0 +1,63 @@
+{
+  "filename": "24ee6bc974f45415b122da9c85a34c24.txt",
+  "contract_type": {
+    "value": "GMRA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'GLOBAL MASTER REPURCHASE AGREEMENT' and explicitly references the Global Master Repurchase Agreement, matching the GMRA code."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "No explicit version year (e.g., 1995, 2000) is mentioned in the provided text or visible image; GMRA version is not specified."
+  },
+  "contract_date": {
+    "value": "2004-02-19",
+    "confidence": 1.0,
+    "explanation": "The agreement is dated as of February 19, 2004, which is explicitly stated near the top of the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number or reference to an amendment in the document."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial Global Master Repurchase Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft. No 'draft' watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "CITIGROUP GLOBAL MARKETS INC. AS AGENT FOR CITIGROUP GLOBAL MARKETS LIMITED",
+    "confidence": 1.0,
+    "explanation": "Party A is explicitly named as 'CITIGROUP GLOBAL MARKETS INC. AS AGENT FOR CITIGROUP GLOBAL MARKETS LIMITED' in the 'BETWEEN' section."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The document explicitly labels this entity as 'PARTY A'."
+  },
+  "party_name_2": {
+    "value": "CAPITALSOURCE FINANCE LLC",
+    "confidence": 1.0,
+    "explanation": "Party B is explicitly named as 'CAPITALSOURCE FINANCE LLC' in the 'BETWEEN' section."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The document explicitly labels this entity as 'PARTY B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of OCR errors or significant typos."
+  }
+}

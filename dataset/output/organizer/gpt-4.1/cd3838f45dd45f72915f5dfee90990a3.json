@@ -1,0 +1,63 @@
+{
+  "filename": "cd3838f45dd45f72915f5dfee90990a3.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.95,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT (INTEREST RATE SWAP AGREEMENT)' and references a schedule to the master agreement, which matches the ISDA contract type."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.7,
+    "explanation": "No explicit version year (e.g., 1992 or 2002) is mentioned in the visible text or image."
+  },
+  "contract_date": {
+    "value": "2005-01-21",
+    "confidence": 0.95,
+    "explanation": "The text states 'MASTER AGREEMENT DATED AS OF 21 JANUARY 2005', which is the effective date of the contract."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it appears to be the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "The document is a schedule to the master agreement dated 21 January 2005, indicating it is the initial contract."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and formatted as a finalized agreement, not a draft. No 'draft' watermark or language is present."
+  },
+  "party_name_1": {
+    "value": "COMMONWEALTH BANK OF AUSTRALIA",
+    "confidence": 0.95,
+    "explanation": "Listed as a party in the agreement and specifically referred to as 'PARTY A'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.95,
+    "explanation": "Explicitly referred to as 'PARTY A' in the agreement text."
+  },
+  "party_name_2": {
+    "value": "PERPETUAL TRUSTEE COMPANY LIMITED AS TRUSTEE OF THE MEDALLION TRUST SERIES 2005-1G",
+    "confidence": 0.95,
+    "explanation": "Listed as a party and referred to as 'PARTY B' in the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.95,
+    "explanation": "Explicitly referred to as 'PARTY B' in the agreement text."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free from OCR errors or typos."
+  }
+}

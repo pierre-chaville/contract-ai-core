@@ -7,7 +7,9 @@ Usage:
 """
 
 import argparse
+import ast as _ast
 import csv
+import json as _json
 import logging
 from pathlib import Path
 from typing import Any
@@ -241,6 +243,121 @@ def main() -> None:
     key_to_type = {
         dp["key"]: dp.get("data_type", "string") for dp in template.get("datapoints", [])
     }
+
+    # Build structure element types for flattening object/list[object] datapoints
+    def _parse_structure_type(dt: str) -> tuple[str, str | None]:
+        s = str(dt or "").strip().lower()
+        if s.startswith("list[") and "object:" in s:
+            inside = s[s.find("[") + 1 : s.rfind("]")]
+            if inside.startswith("object:"):
+                key = inside.split(":", 1)[1].strip().strip("[]")
+                return ("list_object", key)
+        if s.startswith("object:"):
+            return ("object", s.split(":", 1)[1].strip().strip("[]"))
+        return ("simple", None)
+
+    struct_el_types: dict[str, dict[str, str]] = {}
+    for sdef in template.get("structures", []) or []:
+        skey = str(sdef.get("structure_key", "")).strip()
+        if not skey:
+            continue
+        elmap: dict[str, str] = {}
+        for el in sdef.get("elements", []) or []:
+            ekey = str(el.get("key", "")).strip()
+            etype = str(el.get("data_type", "string")).strip() or "string"
+            if ekey:
+                elmap[ekey] = etype
+        struct_el_types[skey] = elmap
+
+    dp_struct_kind: dict[str, tuple[str, str]] = {}
+    for dp in template.get("datapoints", []) or []:
+        key = str(dp.get("key", "")).strip()
+        dt = str(dp.get("data_type", "")).strip()
+        kind, skey = _parse_structure_type(dt)
+        if key and kind in ("object", "list_object") and skey:
+            dp_struct_kind[key] = (kind, skey)
+
+    def _try_parse_json(text: str) -> Any:
+        if text is None:
+            return None
+        s = str(text).strip()
+        if not s:
+            return None
+        try:
+            return _json.loads(s)
+        except Exception:
+            try:
+                return _ast.literal_eval(s)
+            except Exception:
+                return None
+
+    def _extract_leaf_val(v: Any) -> str:
+        # If v is a dict with a 'value' field, take it; else str()
+        try:
+            if isinstance(v, dict) and "value" in v:
+                val = v.get("value")
+                return "" if val is None else str(val)
+            return "" if v is None else str(v)
+        except Exception:
+            return ""
+
+    def flatten_pred_map(
+        pred_map: dict[str, tuple[str, float, str]],
+    ) -> tuple[dict[str, tuple[str, float, str]], dict[str, str]]:
+        out: dict[str, tuple[str, float, str]] = {}
+        flat_types: dict[str, str] = {}
+        for key, (val, conf, expl) in pred_map.items():
+            if key in dp_struct_kind:
+                kind, skey = dp_struct_kind[key]
+                parsed = _try_parse_json(val)
+                elem_types = struct_el_types.get(skey, {})
+                if kind == "object" and isinstance(parsed, dict):
+                    for el_key, el_val in parsed.items():
+                        flat_key = f"{key}.{el_key}"
+                        out[flat_key] = (_extract_leaf_val(el_val), conf, expl)
+                        flat_types[flat_key] = elem_types.get(el_key, "string")
+                elif kind == "list_object" and isinstance(parsed, list):
+                    for i, obj in enumerate(parsed):
+                        if not isinstance(obj, dict):
+                            continue
+                        for el_key, el_val in obj.items():
+                            flat_key = f"{key}[{i}].{el_key}"
+                            out[flat_key] = (_extract_leaf_val(el_val), conf, expl)
+                            flat_types[flat_key] = elem_types.get(el_key, "string")
+                else:
+                    # Fallback: keep original
+                    out[key] = (val, conf, expl)
+            else:
+                out[key] = (val, conf, expl)
+        return out, flat_types
+
+    def flatten_gold_map(gold_map: dict[str, str]) -> tuple[dict[str, str], dict[str, str]]:
+        out: dict[str, str] = {}
+        flat_types: dict[str, str] = {}
+        for key, val in gold_map.items():
+            if key in dp_struct_kind:
+                kind, skey = dp_struct_kind[key]
+                parsed = _try_parse_json(val)
+                elem_types = struct_el_types.get(skey, {})
+                if kind == "object" and isinstance(parsed, dict):
+                    for el_key, el_val in parsed.items():
+                        flat_key = f"{key}.{el_key}"
+                        out[flat_key] = _extract_leaf_val(el_val)
+                        flat_types[flat_key] = elem_types.get(el_key, "string")
+                elif kind == "list_object" and isinstance(parsed, list):
+                    for i, obj in enumerate(parsed):
+                        if not isinstance(obj, dict):
+                            continue
+                        for el_key, el_val in obj.items():
+                            flat_key = f"{key}[{i}].{el_key}"
+                            out[flat_key] = _extract_leaf_val(el_val)
+                            flat_types[flat_key] = elem_types.get(el_key, "string")
+                else:
+                    out[key] = val
+            else:
+                out[key] = val
+        return out, flat_types
+
     required_keys = {
         dp["key"] for dp in template.get("datapoints", []) if dp.get("required", False)
     }
@@ -283,12 +400,21 @@ def main() -> None:
     hc_total_gold_present = 0
 
     for stem in common_docs:
-        gold_map = load_gold_datapoints(gold_files[stem])
-        pred_map = load_pred_datapoints(pred_files[stem])
+        gold_map_raw = load_gold_datapoints(gold_files[stem])
+        pred_map_raw = load_pred_datapoints(pred_files[stem])
+
+        # Flatten object and list[object] datapoints to element-level keys
+        gold_map, gold_flat_types = flatten_gold_map(gold_map_raw)
+        pred_map, pred_flat_types = flatten_pred_map(pred_map_raw)
 
         # Relaxed accuracy and type-specific
         for key, gold_val in gold_map.items():
-            dtype = key_to_type.get(key, "string")
+            # Prefer flattened element type if available; fallback to dp-level type
+            dtype = (
+                pred_flat_types.get(key)
+                or gold_flat_types.get(key)
+                or key_to_type.get(key, "string")
+            )
             pred_val, pred_conf, explanation = pred_map.get(key, ("", float("nan"), ""))
             if gold_val.strip() != "":
                 total_gold_present += 1
@@ -315,7 +441,7 @@ def main() -> None:
                         gp + 1,
                         cc + (1 if relaxed_equal(gold_val, pred_val, dtype) else 0),
                     )
-                if dtype.lower() in ("money", "amount"):
+                if dtype.lower() in ("int", "float"):
                     gp, cc = type_counts["money"]
                     type_counts["money"] = (
                         gp + 1,
@@ -355,38 +481,50 @@ def main() -> None:
 
     # Compute overall metrics
     relaxed_accuracy = (total_relaxed_correct / total_gold_present) if total_gold_present else 0.0
-    type_acc = {t: (c[1] / c[0] if c[0] else float("nan")) for t, c in type_counts.items()}
     completion_score = (
         (sum(completion_fractions) / len(completion_fractions)) if completion_fractions else 0.0
     )
     hc_accuracy = (hc_correct / hc_selected) if hc_selected else float("nan")
     hc_coverage = (hc_selected / hc_total_gold_present) if hc_total_gold_present else 0.0
 
-    # Per-key F1
-    per_key_f1: dict[str, float] = {}
-    for key in set(list(per_key_tp.keys()) + list(per_key_fp.keys()) + list(per_key_fn.keys())):
+    # Per-key metrics aggregated across documents
+    per_key_list: list[dict[str, float | int | str]] = []
+    all_keys = set(
+        list(per_key_tp.keys())
+        + list(per_key_fp.keys())
+        + list(per_key_fn.keys())
+        + list(per_key_present.keys())
+    )
+    for key in sorted(all_keys):
         tp = per_key_tp.get(key, 0)
         fp = per_key_fp.get(key, 0)
         fn = per_key_fn.get(key, 0)
-        precision = tp / (tp + fp) if (tp + fp) else 0.0
-        recall = tp / (tp + fn) if (tp + fn) else 0.0
-        f1 = (2 * precision * recall / (precision + recall)) if (precision + recall) else 0.0
-        per_key_f1[key] = f1
-
-    # Per-key accuracy (support-limited to gold-present docs)
-    per_key_accuracy: dict[str, float] = {}
-    for key, present in per_key_present.items():
+        present = per_key_present.get(key, 0)
         correct = per_key_correct.get(key, 0)
-        per_key_accuracy[key] = (correct / present) if present else float("nan")
+        precision = (float(tp) / float(tp + fp)) if (tp + fp) else 0.0
+        recall = (float(tp) / float(tp + fn)) if (tp + fn) else 0.0
+        f1 = (2 * precision * recall / (precision + recall)) if (precision + recall) else 0.0
+        accuracy_k = (float(correct) / float(present)) if present else float("nan")
+        per_key_list.append(
+            {
+                "key": key,
+                "accuracy": accuracy_k,
+                "count": int(present),
+                "f1": f1,
+                "precision": precision,
+                "recall": recall,
+            }
+        )
 
     summary = {
-        "relaxed_match_accuracy": relaxed_accuracy,
-        "type_specific_accuracy": type_acc,
-        "document_completion_score": completion_score,
-        "selective_90pct_accuracy": hc_accuracy,
-        "selective_90pct_coverage": hc_coverage,
-        "field_level_f1_macro": float(np.mean(list(per_key_f1.values()))) if per_key_f1 else 0.0,
-        "per_key_accuracy": per_key_accuracy,
+        "Relaxed match accuracy": relaxed_accuracy,
+        "Document completion score": completion_score,
+        "Selective 90% accuracy": hc_accuracy,
+        "Selective 90% coverage": hc_coverage,
+        "Field level F1 macro": float(np.mean([it["f1"] for it in per_key_list]))
+        if per_key_list
+        else 0.0,
+        "per_key": per_key_list,
     }
 
     def _to_pct(val: float) -> str:
@@ -404,26 +542,32 @@ def main() -> None:
             return _to_pct(float(obj))
         return obj
 
-    summary_pct = _map_to_pct(summary)
+    # Map summary to percentages where applicable, keeping counts
+    def _map_list_pct(lst: list[dict[str, object]]) -> list[dict[str, object]]:
+        out: list[dict[str, object]] = []
+        for it in lst:
+            out.append(
+                {
+                    "key": it.get("key", ""),
+                    "accuracy": _to_pct(float(it.get("accuracy", 0.0) or 0.0)),
+                    "count": it.get("count", 0),
+                    "f1": _to_pct(float(it.get("f1", 0.0) or 0.0)),
+                    "precision": _to_pct(float(it.get("precision", 0.0) or 0.0)),
+                    "recall": _to_pct(float(it.get("recall", 0.0) or 0.0)),
+                }
+            )
+        return out
+
+    summary_pct = {k: v for k, v in summary.items() if k != "per_key"}
+    summary_pct = _map_to_pct(summary_pct)
+    summary_pct["per_key"] = _map_list_pct(per_key_list)
 
     out_dir = repo_root / "dataset" / "metrics" / "extraction" / template_key / model_name
     out_dir.mkdir(parents=True, exist_ok=True)
     with (out_dir / "summary.yaml").open("w", encoding="utf-8") as f:
         yaml.safe_dump(summary, f, sort_keys=False, allow_unicode=True)
 
-    # Write per-key F1 CSV
-    with (out_dir / "per_key_f1.csv").open("w", encoding="utf-8", newline="") as f:
-        writer = csv.writer(f)
-        writer.writerow(["key", "f1"])
-        for k, v in sorted(per_key_f1.items()):
-            writer.writerow([k, v])
-
-    # Write per-key accuracy CSV (with support)
-    with (out_dir / "per_key_accuracy.csv").open("w", encoding="utf-8", newline="") as f:
-        writer = csv.writer(f)
-        writer.writerow(["key", "accuracy", "support"])
-        for k in sorted(per_key_present.keys()):
-            writer.writerow([k, per_key_accuracy.get(k, float("nan")), per_key_present[k]])
+    # No separate per-key CSVs; per-key metrics are included in the summary
 
     logging.info("\n%s", yaml.safe_dump(summary_pct, sort_keys=False, allow_unicode=True))
     if mismatches:

@@ -42,5 +42,3 @@ dist/
 .python-version
 
 # Dataset
-dataset/output
-dataset/metrics

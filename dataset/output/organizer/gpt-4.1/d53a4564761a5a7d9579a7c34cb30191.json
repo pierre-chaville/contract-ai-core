@@ -1,0 +1,63 @@
+{
+  "filename": "d53a4564761a5a7d9579a7c34cb30191.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA 2002 MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT' in both the heading and body."
+  },
+  "contract_date": {
+    "value": "2012-07-13",
+    "confidence": 1.0,
+    "explanation": "The contract is dated as of July 13, 2012, which is clearly stated below the title."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial master agreement."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of any amendment number, as this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original '2002 MASTER AGREEMENT' and not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and lists both parties, which strongly suggests it is executed, though signatures are not visible on this page."
+  },
+  "party_name_1": {
+    "value": "CITIBANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "CITIBANK, N.A. is listed as one of the two parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled, CITIBANK, N.A. is listed first and is customarily Party A in such agreements."
+  },
+  "party_name_2": {
+    "value": "405 TRS I, LLC",
+    "confidence": 1.0,
+    "explanation": "405 TRS I, LLC is listed as the second party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled, 405 TRS I, LLC is listed second and is customarily Party B in such agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is clean, clearly legible, and free of typos or OCR errors."
+  }
+}

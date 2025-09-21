@@ -1,0 +1,63 @@
+{
+  "filename": "804347c409985910bb29efdbfa56341b.txt",
+  "contract_type": {
+    "value": "VSA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2016 Credit Support Annex for Variation Margin (VM)', which is a Credit Support Annex under ISDA documentation."
+  },
+  "contract_type_version": {
+    "value": "2016",
+    "confidence": 1.0,
+    "explanation": "The document explicitly states '2016 Credit Support Annex for Variation Margin (VM)'."
+  },
+  "contract_date": {
+    "value": "2017-07-12",
+    "confidence": 1.0,
+    "explanation": "The ISDA Master Agreement date is stated as July 12, 2017, which is the main contract date referenced."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is a standalone annex."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.9,
+    "explanation": "This is the initial Credit Support Annex for Variation Margin supplementing the ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is not marked as draft and appears to be a finalized, executed annex to the ISDA Master Agreement."
+  },
+  "party_name_1": {
+    "value": "JPMORGAN CHASE BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "Party A is explicitly named as JPMORGAN CHASE BANK, N.A."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "JPMORGAN CHASE BANK, N.A. is identified as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "CMF ASPECT MASTER FUND L.P.",
+    "confidence": 1.0,
+    "explanation": "Party B is explicitly named as CMF ASPECT MASTER FUND L.P."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "CMF ASPECT MASTER FUND L.P. is identified as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

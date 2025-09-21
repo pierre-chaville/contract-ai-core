@@ -1,0 +1,16 @@
+filename,field,gold_value,pred_value,gold_explanation
+1d944ee3ddab55fca2012dbe7e8a32a7.txt,contract_type,OTHER,ISDA,"The document lists a '2002 ISDA MASTER AGREEMENT (2008)' and '1992 ISDA MASTER AGREEMENT (2001)' as contract names/descriptions, indicating ISDA Master Agreements are present."
+1d944ee3ddab55fca2012dbe7e8a32a7.txt,contract_type_version,,2002,Both '2002 ISDA MASTER AGREEMENT (2008)' and '1992 ISDA MASTER AGREEMENT (2001)' are explicitly mentioned.
+359fd50d13c6566690d0cc51a332dec8.txt,contract_type_version,"2002, 1992",,"Both '2002 ISDA MASTER AGREEMENT (2008)' and '1992 ISDA MASTER AGREEMENT (2001)' are explicitly listed, indicating both versions are present."
+359fd50d13c6566690d0cc51a332dec8.txt,party_name_2,Citigroup Energy Inc.,"Various counterparties (e.g., Ameren Illinois Company, Citigroup Energy Inc., Hess Corporation)",Citigroup Energy Inc. is listed as the counterparty to the 2002 ISDA Master Agreement.
+437d100c1df8545c8e59874b6f0f7c1a.txt,contract_type,OTHER,ISDA,The document is described as 'Amendment No. 1 to ISDA Master Agreement' in both the text and the exhibit index.
+a8fb40c94e6959f5ac8417410def168c.txt,contract_type,OTHER,ISDA,"The document is titled 'SWAP TRANSFER AND ASSIGNMENT AGREEMENT,' indicating it is a Currency Swap Agreement."
+a8fb40c94e6959f5ac8417410def168c.txt,contract_type_version,,1992,"No specific versioning (like ISDA 1992/2002) applies to SWAP agreements; the referenced ISDA 1992 is for the underlying agreement, not this transfer."
+a8fb40c94e6959f5ac8417410def168c.txt,contract_date,2012-04-12,2004-08-03,"The agreement is explicitly dated as of April 12, 2012, at the top of the document."
+a8fb40c94e6959f5ac8417410def168c.txt,amendment_date,,2012-04-12,"This is a transfer and assignment agreement, not an amendment; no amendment date is present."
+a8fb40c94e6959f5ac8417410def168c.txt,version_type,INITIAL,AMENDMENT,"This is the initial transfer and assignment agreement for the swap, not an amendment or restatement."
+af602451f9e05f1f814d5abfb53bef5f.txt,contract_type,OTHER,ISDA,The document repeatedly refers to 'ISDA Master Agreement' and describes agreements substantially identical to a referenced ISDA Master Agreement.
+af602451f9e05f1f814d5abfb53bef5f.txt,party_role_1,Party A,Above Cap Liquidity Facility Provider,"Citibank, N.A. is described as 'Above Cap Liquidity Facility Provider,' which is the primary role akin to Party A."
+af602451f9e05f1f814d5abfb53bef5f.txt,party_role_2,Party B,Subordination Agent,"Wilmington Trust Company is described as 'Subordination Agent,' which is the primary role akin to Party B."
+dd1b3f5fe34b5a6c913dccb4a65393eb.txt,party_name_2,Perpetual Trustee Company Limited,Perpetual Trustee Company Limited in its capacity as trustee of the SMART ABS Series 2015-1US Trust,Explicitly listed as a party and referred to as 'Party B' in the agreement.
+e823b77ec78357da9461add4eae003c2.txt,contract_type,OTHER,ISDA,"The document repeatedly refers to 'ISDA Master Agreement' and describes agreements that are substantially identical to Exhibit 4.14, confirming the contract type as ISDA Master Agreement."

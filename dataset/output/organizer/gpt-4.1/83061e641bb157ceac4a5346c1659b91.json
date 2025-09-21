@@ -1,0 +1,63 @@
+{
+  "filename": "83061e641bb157ceac4a5346c1659b91.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The document is explicitly called the '2002 MASTER AGREEMENT' in both the heading and body."
+  },
+  "contract_date": {
+    "value": "2005-08-11",
+    "confidence": 1.0,
+    "explanation": "The contract is dated as of August 11, 2005, as stated in the document."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number, as this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original 2002 ISDA Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and lists both parties, which strongly suggests it is executed, though signatures are not shown."
+  },
+  "party_name_1": {
+    "value": "Bank of America, N.A.",
+    "confidence": 1.0,
+    "explanation": "Bank of America, N.A. is clearly listed as one of the parties."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled, the first party listed is typically Party A in ISDA agreements."
+  },
+  "party_name_2": {
+    "value": "Katy Industries, Inc.",
+    "confidence": 1.0,
+    "explanation": "Katy Industries, Inc. is clearly listed as the other party."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "While not explicitly labeled, the second party listed is typically Party B in ISDA agreements."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

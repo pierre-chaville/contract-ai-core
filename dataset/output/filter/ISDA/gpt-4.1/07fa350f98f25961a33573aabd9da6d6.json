@@ -1,0 +1,13 @@
+{
+  "filename": "07fa350f98f25961a33573aabd9da6d6.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 256,
+      "end_line": 387,
+      "confidence": 0.99,
+      "explanation": "The ISDA Schedule begins at line 256 (\"SCHEDULE\") and continues through the execution block at line 387. This section contains the negotiated terms between the parties, including Termination Provisions, Tax Representations, Agreement to Deliver Documents, Miscellaneous, and Other Provisions. The preceding lines are the standard pre-printed Master Agreement, and the following lines (from 389 onward) are the Credit Support Annex (CSA) and its exhibits, which are not part of the Schedule itself."
+    }
+  ]
+}

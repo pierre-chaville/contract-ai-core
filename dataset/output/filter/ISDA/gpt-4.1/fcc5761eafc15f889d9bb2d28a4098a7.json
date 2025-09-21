@@ -1,0 +1,13 @@
+{
+  "filename": "fcc5761eafc15f889d9bb2d28a4098a7.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 2,
+      "end_line": 218,
+      "confidence": 0.99,
+      "explanation": "Lines 2-218 comprise the entire Schedule to the ISDA Master Agreement, starting with the heading 'SCHEDULE' and including all the negotiated terms between the parties. The content covers all the Parts (1-7) of the Schedule, including Termination Provisions, Tax Representations, Agreement to Deliver Documents, Miscellaneous, Other Provisions, FX & Currency Option Transactions, and Master Close-out and Set-off. The lines before 2 are exhibit headers, and lines after 218 are signatures and boilerplate. The CSA annexes and standard pre-print are not included in this span."
+    }
+  ]
+}

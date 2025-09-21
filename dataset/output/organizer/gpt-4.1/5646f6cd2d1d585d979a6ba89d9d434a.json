@@ -1,0 +1,63 @@
+{
+  "filename": "5646f6cd2d1d585d979a6ba89d9d434a.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA MASTER AGREEMENT' and references the International Swap Dealers Association."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 1.0,
+    "explanation": "The copyright line at the bottom states 'Copyright (C) 1992 by International Swap Dealers Association, Inc.'"
+  },
+  "contract_date": {
+    "value": "2005-02-22",
+    "confidence": 1.0,
+    "explanation": "The agreement is stated to be 'dated as of February 22, 2005'."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned and this is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original Master Agreement, not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is labeled 'Execution Copy,' which typically means it is an executed version."
+  },
+  "party_name_1": {
+    "value": "DEUTSCHE BANK AG NEW YORK",
+    "confidence": 1.0,
+    "explanation": "Party A is clearly identified as 'DEUTSCHE BANK AG NEW YORK'."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The document explicitly labels DEUTSCHE BANK AG NEW YORK as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "NOVASTAR MORTGAGE SUPPLEMENTAL INTEREST TRUST, SERIES 2005-1, a New York common law trust",
+    "confidence": 1.0,
+    "explanation": "Party B is clearly identified in the header."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The document explicitly labels NOVASTAR MORTGAGE SUPPLEMENTAL INTEREST TRUST, SERIES 2005-1 as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of OCR errors or typos."
+  }
+}

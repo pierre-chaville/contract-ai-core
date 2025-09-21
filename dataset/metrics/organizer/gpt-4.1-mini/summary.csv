@@ -1,0 +1,13 @@
+field,accuracy,support,precision,recall,f1
+contract_type,94%,232,94%,94%,94%
+contract_type_version,91%,171,97%,91%,94%
+contract_date,98%,227,98%,98%,98%
+amendment_date,98%,47,94%,98%,96%
+amendment_number,4%,23,4%,4%,4%
+version_type,99%,232,99%,99%,99%
+status,100%,232,100%,100%,100%
+party_name_1,97%,230,97%,97%,97%
+party_role_1,98%,232,98%,98%,98%
+party_name_2,88%,231,89%,88%,89%
+party_role_2,97%,232,98%,97%,98%
+document_quality,100%,232,100%,100%,100%

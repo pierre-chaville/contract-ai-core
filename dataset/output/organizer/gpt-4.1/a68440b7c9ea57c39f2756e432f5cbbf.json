@@ -1,0 +1,63 @@
+{
+  "filename": "a68440b7c9ea57c39f2756e432f5cbbf.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA 2002 MASTER AGREEMENT' and repeatedly refers to the ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The document explicitly states '2002 MASTER AGREEMENT' in the title and body."
+  },
+  "contract_date": {
+    "value": "2016-01-19",
+    "confidence": 1.0,
+    "explanation": "The agreement is 'dated as of January 19, 2016' as stated prominently on the first page."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the original '2002 MASTER AGREEMENT' and not an amendment or restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final executed contract, not a draft."
+  },
+  "party_name_1": {
+    "value": "Citibank, N.A.",
+    "confidence": 1.0,
+    "explanation": "Citibank, N.A. is listed as one of the two parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled, Citibank, N.A. is the first party listed, which is conventionally Party A."
+  },
+  "party_name_2": {
+    "value": "Cheltenham Funding LLC",
+    "confidence": 1.0,
+    "explanation": "Cheltenham Funding LLC is listed as the second party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.8,
+    "explanation": "While not explicitly labeled, Cheltenham Funding LLC is the second party listed, which is conventionally Party B."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, with no typos or OCR errors."
+  }
+}

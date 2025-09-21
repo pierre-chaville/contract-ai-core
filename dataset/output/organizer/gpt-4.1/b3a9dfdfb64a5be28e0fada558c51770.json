@@ -1,0 +1,63 @@
+{
+  "filename": "b3a9dfdfb64a5be28e0fada558c51770.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'ISDA 2002 Master Agreement' and references the International Swaps and Derivatives Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 Master Agreement'."
+  },
+  "contract_date": {
+    "value": "2016-11-04",
+    "confidence": 1.0,
+    "explanation": "The document states it is 'dated as of November 4, 2016'."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication this is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number or that this is an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is titled as a 'Master Agreement' and not as an amendment or amended and restated version."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The contract is dated and formatted as a final agreement, not a draft."
+  },
+  "party_name_1": {
+    "value": "MUFG UNION BANK, N.A.",
+    "confidence": 1.0,
+    "explanation": "Listed as 'Party A' on the first page."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party A'."
+  },
+  "party_name_2": {
+    "value": "Pricesmart, Inc.",
+    "confidence": 1.0,
+    "explanation": "Listed as 'Party B' on the first page."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly labeled as 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The document is clear, well-formatted, and contains no visible typos or OCR errors."
+  }
+}

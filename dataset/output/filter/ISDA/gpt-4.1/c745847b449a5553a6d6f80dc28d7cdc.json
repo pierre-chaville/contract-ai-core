@@ -1,0 +1,13 @@
+{
+  "filename": "c745847b449a5553a6d6f80dc28d7cdc.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 3,
+      "end_line": 240,
+      "confidence": 0.98,
+      "explanation": "The Schedule to the ISDA Master Agreement begins at line 3 (\"SCHEDULE to the ISDA 2002 MASTER AGREEMENT...\") and continues through the execution blocks at the end (lines 226-240). All content in this span is part of the Schedule, including all Parts and definitions, and excludes any standard pre-print, CSA annexes, or unrelated exhibits. The content before line 3 is cover/exhibit material, and there is no indication of annexes or unrelated sections within this span."
+    }
+  ]
+}

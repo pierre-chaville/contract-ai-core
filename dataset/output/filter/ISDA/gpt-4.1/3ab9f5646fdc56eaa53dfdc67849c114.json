@@ -1,0 +1,13 @@
+{
+  "filename": "3ab9f5646fdc56eaa53dfdc67849c114.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 335,
+      "end_line": 485,
+      "confidence": 0.99,
+      "explanation": "The ISDA Schedule begins at line 335 (\"SCHEDULE to the 2002 Master Agreement\") and continues through the end of the document at line 485, including all the specific elections, representations, and additional terms agreed between the parties. This span excludes the standard pre-printed Master Agreement and any CSA annexes, focusing solely on the Schedule as requested."
+    }
+  ]
+}

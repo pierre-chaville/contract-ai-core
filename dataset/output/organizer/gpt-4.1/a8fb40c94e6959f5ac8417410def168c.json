@@ -1,0 +1,63 @@
+{
+  "filename": "a8fb40c94e6959f5ac8417410def168c.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.9,
+    "explanation": "The document is a 'SWAP TRANSFER AND ASSIGNMENT AGREEMENT' referencing a 1992 ISDA Master Agreement and Schedule, indicating it is related to an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "1992",
+    "confidence": 0.9,
+    "explanation": "The text explicitly states 'subject to a 1992 ISDA Master Agreement including a Schedule thereto each dated August 3, 2004'."
+  },
+  "contract_date": {
+    "value": "2004-08-03",
+    "confidence": 0.9,
+    "explanation": "The contract date for the underlying ISDA Master Agreement is stated as August 3, 2004. This is the main contract date for the ISDA referenced in the transfer."
+  },
+  "amendment_date": {
+    "value": "2012-04-12",
+    "confidence": 0.9,
+    "explanation": "The swap transfer and assignment agreement is dated as of April 12, 2012, which is the amendment date for this transfer."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.8,
+    "explanation": "No explicit amendment number is mentioned in the provided text."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 0.9,
+    "explanation": "This is a transfer and assignment agreement amending the parties to the original ISDA, so it is an amendment."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.8,
+    "explanation": "The agreement is dated and references execution steps (delivery of executed counterparts), suggesting it is executed, though no explicit signatures are shown."
+  },
+  "party_name_1": {
+    "value": "Merrill Lynch International",
+    "confidence": 0.9,
+    "explanation": "Merrill Lynch International is listed as a party to the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.7,
+    "explanation": "While not explicitly labeled as 'Party A', Merrill Lynch International is the transferee and one of the two main parties."
+  },
+  "party_name_2": {
+    "value": "Merrill Lynch Capital Services, Inc.",
+    "confidence": 0.9,
+    "explanation": "Merrill Lynch Capital Services, Inc. is the other main party to the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.7,
+    "explanation": "While not explicitly labeled as 'Party B', Merrill Lynch Capital Services, Inc. is the transferor and one of the two main parties."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean and clearly legible, with no typos or OCR errors."
+  }
+}

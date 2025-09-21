@@ -1,0 +1,63 @@
+{
+  "filename": "f3bb392f8a865d92bc537d1ce21f5b2d.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled '2002 MASTER AGREEMENT' under the ISDA (International Swaps and Derivatives Association, Inc.), which is an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is explicitly called the '2002 MASTER AGREEMENT' in both the heading and body."
+  },
+  "contract_date": {
+    "value": "2014-12-17",
+    "confidence": 1.0,
+    "explanation": "The date 'dated as of December 17, 2014' is clearly stated below the title."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of any amendment number or amendment language."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is described as the '2002 MASTER AGREEMENT' and there is no reference to amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and formatted as a final contract, not a draft. The presence of a date and formal party names indicates execution."
+  },
+  "party_name_1": {
+    "value": "BANK OF AMERICA, N.A.",
+    "confidence": 1.0,
+    "explanation": "'BANK OF AMERICA, N.A.' is listed as one of the two parties at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "Standard ISDA format lists the first named party as Party A, though not explicitly labeled here."
+  },
+  "party_name_2": {
+    "value": "BOOZ ALLEN HAMILTON INC.",
+    "confidence": 1.0,
+    "explanation": "'BOOZ ALLEN HAMILTON INC.' is listed as the second party at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "Standard ISDA format lists the second named party as Party B, though not explicitly labeled here."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

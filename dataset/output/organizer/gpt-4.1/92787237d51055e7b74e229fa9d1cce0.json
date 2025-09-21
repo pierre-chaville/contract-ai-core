@@ -1,0 +1,63 @@
+{
+  "filename": "92787237d51055e7b74e229fa9d1cce0.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is explicitly titled 'ISDA MASTER AGREEMENT' and references the International Swaps and Derivatives Association, Inc."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The agreement is repeatedly referred to as the '2002 Master Agreement'."
+  },
+  "contract_date": {
+    "value": "2013-08-26",
+    "confidence": 1.0,
+    "explanation": "The date 'August 26, 2013' is clearly stated as the date of the agreement."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this document is an amendment; it is the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is mentioned and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 1.0,
+    "explanation": "The document is the initial ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreement is dated and appears to be the executed version, not a draft."
+  },
+  "party_name_1": {
+    "value": "FRANKLIN STREET PROPERTIES CORP.",
+    "confidence": 1.0,
+    "explanation": "The first party is clearly named at the top of the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 0.9,
+    "explanation": "Standard ISDA format assigns the first listed party as Party A, though not explicitly labeled here."
+  },
+  "party_name_2": {
+    "value": "BANK OF MONTREAL",
+    "confidence": 1.0,
+    "explanation": "The second party is clearly named at the top of the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 0.9,
+    "explanation": "Standard ISDA format assigns the second listed party as Party B, though not explicitly labeled here."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text and image are clear, well-formatted, and free of typos or OCR errors."
+  }
+}

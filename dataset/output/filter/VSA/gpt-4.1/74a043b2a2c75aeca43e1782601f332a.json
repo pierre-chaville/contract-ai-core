@@ -1,0 +1,20 @@
+{
+  "filename": "74a043b2a2c75aeca43e1782601f332a.txt",
+  "contract_type": "VSA",
+  "scopes": [
+    {
+      "name": "preamble",
+      "start_line": 1,
+      "end_line": 11,
+      "confidence": 0.95,
+      "explanation": "Lines 1-11 contain the contract date, parties, and introductory language that forms the preamble of the CSA. Line 11 is the transition to the main body ('Accordingly, the parties agree as follows:--')."
+    },
+    {
+      "name": "Annex",
+      "start_line": 31,
+      "end_line": 172,
+      "confidence": 0.99,
+      "explanation": "The Annex, containing the negotiated terms (Paragraph 13 for New York law), starts at line 31 ('PARAGRAPH 13') and continues through the negotiated terms, ending at line 172, which is the last substantive line before the signature block."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "filename": "cf03a7317a7450fc8dd7d38465363fe5.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'AMENDMENT AGREEMENT' to the 'ISDA 2002 Master Agreement', which is explicitly mentioned in the text."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text refers to the 'ISDA 2002 Master Agreement', making the version explicit."
+  },
+  "contract_date": {
+    "value": "2022-03-31",
+    "confidence": 1.0,
+    "explanation": "The original ISDA Master Agreement is stated as 'deemed entered into as of March 31, 2022'."
+  },
+  "amendment_date": {
+    "value": "2024-09-25",
+    "confidence": 1.0,
+    "explanation": "The amendment agreement is 'dated as of September 25, 2024', which is the date of this amendment."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 0.9,
+    "explanation": "There is no explicit mention of an amendment number in the provided text."
+  },
+  "version_type": {
+    "value": "AMENDMENT",
+    "confidence": 1.0,
+    "explanation": "The document is titled 'AMENDMENT AGREEMENT' and amends the prior ISDA Master Agreement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and formatted as a final agreement, not a draft, and there is no indication it is a draft."
+  },
+  "party_name_1": {
+    "value": "MACQUARIE BANK LIMITED (ABN 46 008 583 542)",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party to the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "MACQUARIE BANK LIMITED is labeled as 'Party A' in the agreement."
+  },
+  "party_name_2": {
+    "value": "VERTEX REFINING ALABAMA LLC",
+    "confidence": 1.0,
+    "explanation": "Explicitly listed as a party to the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "VERTEX REFINING ALABAMA LLC is labeled as 'Party B' in the agreement."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of OCR errors or typos."
+  }
+}

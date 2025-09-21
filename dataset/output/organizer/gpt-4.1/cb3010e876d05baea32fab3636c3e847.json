@@ -1,0 +1,63 @@
+{
+  "filename": "cb3010e876d05baea32fab3636c3e847.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 1.0,
+    "explanation": "The document is a Schedule to the 2002 ISDA Master Agreement, which is explicitly stated at the top of the document."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The document refers to the '2002 ISDA Master Agreement' in the heading."
+  },
+  "contract_date": {
+    "value": "2017-07-12",
+    "confidence": 1.0,
+    "explanation": "The date 'dated as of July 12, 2017' is clearly stated in the document header."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is a schedule to the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no amendment number mentioned, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "This is a schedule to the initial 2002 ISDA Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The document is dated and formatted as a finalized agreement, not a draft."
+  },
+  "party_name_1": {
+    "value": "JPMorgan Chase Bank, N.A.",
+    "confidence": 1.0,
+    "explanation": "Explicitly named as a party in the agreement header."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as 'Party A' in the agreement header."
+  },
+  "party_name_2": {
+    "value": "Cambridge Master Fund L.P.",
+    "confidence": 1.0,
+    "explanation": "Explicitly named as a party in the agreement header."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "Explicitly referred to as 'Party B' in the agreement header."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

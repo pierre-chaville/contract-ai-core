@@ -1,0 +1,13 @@
+{
+  "filename": "61144fd96fa95672bf5e800a986c8722.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 246,
+      "end_line": 435,
+      "confidence": 1.0,
+      "explanation": "The ISDA Schedule begins at line 246 (\"SCHEDULE TO THE ISDA MASTER AGREEMENT\") and ends at line 435 (the execution block for the Schedule). The preceding lines are the standard pre-printed Master Agreement, and the following lines (starting at 441) are the Credit Support Annex, which is not part of the Schedule. This span contains all the negotiated terms and elections specific to the parties, which is what the query requests."
+    }
+  ]
+}

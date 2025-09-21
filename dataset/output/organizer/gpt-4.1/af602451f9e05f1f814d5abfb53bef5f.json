@@ -1,0 +1,63 @@
+{
+  "filename": "af602451f9e05f1f814d5abfb53bef5f.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.95,
+    "explanation": "The document repeatedly refers to 'ISDA Master Agreement' and describes agreements that are substantially identical to a previously filed ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": null,
+    "confidence": 0.7,
+    "explanation": "No explicit version year (e.g., 1992 or 2002) is mentioned in the text or image."
+  },
+  "contract_date": {
+    "value": "2004-11-15",
+    "confidence": 0.95,
+    "explanation": "Both listed ISDA Master Agreements are dated November 15, 2004."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 0.95,
+    "explanation": "This is not an amendment but a summary of initial contracts; no amendment date is mentioned."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "No amendment number is referenced, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.9,
+    "explanation": "The agreements are described as new ISDA Master Agreements, not amendments or restatements."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.9,
+    "explanation": "The agreements are described as 'entered into,' which indicates execution."
+  },
+  "party_name_1": {
+    "value": "Citibank, N.A.",
+    "confidence": 0.95,
+    "explanation": "Citibank, N.A. is named as a party in both listed agreements."
+  },
+  "party_role_1": {
+    "value": "Above Cap Liquidity Facility Provider",
+    "confidence": 0.95,
+    "explanation": "Citibank, N.A. is described as 'Above Cap Liquidity Facility Provider' in both agreements."
+  },
+  "party_name_2": {
+    "value": "Wilmington Trust Company",
+    "confidence": 0.95,
+    "explanation": "Wilmington Trust Company is named as the other party in both agreements."
+  },
+  "party_role_2": {
+    "value": "Subordination Agent",
+    "confidence": 0.95,
+    "explanation": "Wilmington Trust Company is described as 'Subordination Agent' for the relevant trusts."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clear, well-formatted, and free of typos or OCR errors."
+  }
+}

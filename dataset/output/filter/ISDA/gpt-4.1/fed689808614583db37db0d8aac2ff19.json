@@ -1,0 +1,13 @@
+{
+  "filename": "fed689808614583db37db0d8aac2ff19.txt",
+  "contract_type": "ISDA",
+  "scopes": [
+    {
+      "name": "schedule_only",
+      "start_line": 328,
+      "end_line": 469,
+      "confidence": 0.99,
+      "explanation": "The ISDA Schedule begins at line 328 with the heading 'SCHEDULE to the 2002 ISDA MASTER AGREEMENT' and continues through the detailed negotiated terms, ending at line 469 just before the signature block. This span contains all the bespoke Schedule provisions, including Termination Provisions, Tax Representations, Agreement to Deliver Documents, Miscellaneous, Additional Terms for FX and Currency Option Transactions, and Dodd-Frank Regulatory Provisions. It excludes the standard pre-printed Master Agreement and any annexes or signature blocks."
+    }
+  ]
+}
