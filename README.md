@@ -12,6 +12,38 @@ AI-driven legal contract processing. This repo includes a core Python library an
 - **Composable pipeline**: Classifier → Extractor → Reviser
 - **LLM-ready**: Designed to plug in your preferred LLM provider and prompt strategy
 
+### New: Filtering scopes and metrics
+
+This repo includes a lightweight document filtering pipeline to locate named spans (scopes) in contracts.
+
+- Scopes are defined per contract type in the template as a list of `{name, description}`.
+- The filter returns, for each scope, `start_line`, `end_line`, `confidence`, and `explanation`.
+- Batch inference calls a single LLM to find all scopes at once for efficiency.
+
+CLI:
+
+```bash
+# Run scope detection for organizer files and write JSON outputs
+python tools/run_filter.py --model gpt-4.1-mini --provider openai
+
+# Compute filter metrics vs gold and write result.json per type/model
+python tools/run_filter_metrics.py --type ISDA --model gpt-4.1-mini
+```
+
+Outputs:
+
+- Predictions: `dataset/output/filter/<contract_type>/<model>/<stem>.json`
+- Metrics: `dataset/metrics/filter/<contract_type>/<model>/result.json`
+
+Sampling (optional):
+
+```bash
+# Build sample files per contract version from gold scopes
+python tools/run_sample.py --type ISDA
+```
+
+This writes text snippets by version to `dataset/samples/<contract_type>/<contract_version>/<stem>.txt`.
+
 ### Project layout
 
 ```
@@ -86,6 +118,35 @@ revised = reviser.generate_amended_and_restated(contract=paragraphs, amendment=a
 ```
 
 Documents should be `.md`/`.txt`. Use `split_text_into_paragraphs` to normalize paragraphs.
+
+### Metrics
+
+Classification metrics:
+
+- `tools/run_classification_metrics.py` writes `summary.yaml`, `confusion_matrix.csv/.png`
+- The summary includes `num_examples`, overall `accuracy`, `cohen_kappa`, high-confidence stats,
+  `macro_f1`, and a `per_category` list with: `category`, `accuracy`, `count`, `f1`, `precision`, `recall`.
+
+Extraction metrics:
+
+- `tools/run_extraction_metrics.py` writes `summary.yaml` (single consolidated file)
+- The summary includes overall scores and a `per_key` list with: `key`, `accuracy`, `count`, `f1`, `precision`, `recall`.
+- Object and list-of-object datapoints are flattened to element-level keys:
+  - `object:<structure>` → `datapoint_key.element_key`
+  - `list[object:<structure>]` → `datapoint_key[<i>].element_key`
+
+Filter metrics:
+
+- `tools/run_filter_metrics.py` aggregates accuracy/IoU per scope and provides histograms and per-scope averages.
+
+### Streamlit pages
+
+The `tools/pages` directory contains Streamlit pages to browse inputs/outputs:
+
+- `50_Metrics.py`: Metrics dashboard with tabs for Migration, Filter, Clauses, and Datapoints
+  - Summaries render as field: value lines with percentages; per-category/per-key tables where applicable
+- `20_Contracts.py`: Adds a Text tab to show the full contract and an interactive Compare tab
+- `15_Contract_filter.py`: Explore filter outputs by type/model with raw text and per-scope spans
 
 ### Environment and secrets
 
