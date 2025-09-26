@@ -68,7 +68,15 @@ def main() -> None:
     st.title("Contract types")
     st.subheader(f"{model.get('name') or selected}")
 
-    tab_overview, tab_clauses, tab_datapoints, tab_guidelines, tab_enums, tab_structures = st.tabs(
+    (
+        tab_overview,
+        tab_clauses,
+        tab_datapoints,
+        tab_guidelines,
+        tab_enums,
+        tab_structures,
+        tab_export,
+    ) = st.tabs(
         [
             "Overview",
             "Clauses",
@@ -76,6 +84,7 @@ def main() -> None:
             "Guidelines",
             "Enums",
             "Structures",
+            "Export/Import",
         ]
     )
 
@@ -219,6 +228,218 @@ def main() -> None:
                 else:
                     st.info("No options for this enum.")
                 st.divider()
+
+    with tab_export:
+        st.subheader("Export / Import CSVs")
+        repo_root = get_repo_root()
+        ct_dir = repo_root / "dataset" / "contract_types"
+        part_options = [
+            "clauses",
+            "datapoints",
+            "guidelines",
+            "enums",
+            "structures",
+            "structure elements",
+        ]
+        if "export_part" not in st.session_state:
+            st.session_state.export_part = part_options[0]
+        part = st.selectbox(
+            "Select part",
+            part_options,
+            index=part_options.index(st.session_state.get("export_part", part_options[0])),
+            help="Choose which part of the contract type to export or import.",
+        )
+        if part != st.session_state.get("export_part"):
+            st.session_state.export_part = part
+
+        def df_for_part(model_dict: dict[str, Any], which: str) -> pd.DataFrame:
+            which = which.lower().strip()
+            if which == "clauses":
+                rows = model_dict.get("clauses", []) or []
+                preferred = ["key", "title", "description", "sort_order"]
+                dfc = pd.DataFrame(rows)
+                if dfc.empty:
+                    return pd.DataFrame(columns=preferred)
+                cols = [c for c in preferred if c in dfc.columns] + [
+                    c for c in dfc.columns if c not in preferred
+                ]
+                return dfc[cols]
+            if which == "datapoints":
+                rows = model_dict.get("datapoints", []) or []
+                # Normalize clause_keys to comma-separated string for export
+                normed = []
+                for r in rows:
+                    rr = dict(r)
+                    cks = rr.get("clause_keys")
+                    if isinstance(cks, (list, tuple)):
+                        rr["clause_keys"] = ",".join(
+                            [str(x).strip() for x in cks if str(x).strip()]
+                        )
+                    normed.append(rr)
+                preferred = [
+                    "key",
+                    "title",
+                    "description",
+                    "required",
+                    "data_type",
+                    "enum_key",
+                    "scope",
+                    "clause_keys",
+                    "sort_order",
+                ]
+                dfd = pd.DataFrame(normed)
+                if dfd.empty:
+                    return pd.DataFrame(columns=preferred)
+                cols = [c for c in preferred if c in dfd.columns] + [
+                    c for c in dfd.columns if c not in preferred
+                ]
+                return dfd[cols]
+            if which == "guidelines":
+                rows = model_dict.get("guidelines", []) or []
+                # Map model "key" back to CSV column "id"
+                normed = []
+                for r in rows:
+                    rr = dict(r)
+                    rr["id"] = rr.pop("key", None)
+                    cks = rr.get("clause_keys")
+                    if isinstance(cks, (list, tuple)):
+                        rr["clause_keys"] = ",".join(
+                            [str(x).strip() for x in cks if str(x).strip()]
+                        )
+                    normed.append(rr)
+                preferred = [
+                    "id",
+                    "guideline",
+                    "scope",
+                    "clause_keys",
+                    "fallback_from_key",
+                    "priority",
+                    "sort_order",
+                ]
+                dfg = pd.DataFrame(normed)
+                if dfg.empty:
+                    return pd.DataFrame(columns=preferred)
+                cols = [c for c in preferred if c in dfg.columns] + [
+                    c for c in dfg.columns if c not in preferred
+                ]
+                return dfg[cols]
+            if which == "enums":
+                enums = model_dict.get("enums", []) or []
+                flat_rows: list[dict[str, Any]] = []
+                for e in enums:
+                    ek = e.get("key")
+                    et = e.get("title")
+                    for opt in e.get("options") or []:
+                        flat_rows.append(
+                            {
+                                "key": ek,
+                                "title": et,
+                                "code": opt.get("code"),
+                                "description": opt.get("description"),
+                            }
+                        )
+                preferred = ["key", "title", "code", "description"]
+                dfe = pd.DataFrame(flat_rows)
+                if dfe.empty:
+                    return pd.DataFrame(columns=preferred)
+                cols = [c for c in preferred if c in dfe.columns] + [
+                    c for c in dfe.columns if c not in preferred
+                ]
+                return dfe[cols]
+            if which == "structures":
+                structs = model_dict.get("structures", []) or []
+                rows = [
+                    {
+                        "structure_key": s.get("structure_key"),
+                        "title": s.get("title"),
+                        "description": s.get("description"),
+                    }
+                    for s in structs
+                ]
+                preferred = ["structure_key", "title", "description"]
+                dfs = pd.DataFrame(rows)
+                if dfs.empty:
+                    return pd.DataFrame(columns=preferred)
+                cols = [c for c in preferred if c in dfs.columns] + [
+                    c for c in dfs.columns if c not in preferred
+                ]
+                return dfs[cols]
+            if which == "structure elements":
+                structs = model_dict.get("structures", []) or []
+                rows = []
+                for s in structs:
+                    sk = s.get("structure_key")
+                    for el in s.get("elements") or []:
+                        rr = dict(el)
+                        rr["structure_key"] = sk
+                        rows.append(rr)
+                preferred = [
+                    "structure_key",
+                    "key",
+                    "title",
+                    "description",
+                    "data_type",
+                    "required",
+                    "enum_key",
+                    "sort_order",
+                ]
+                dfelem = pd.DataFrame(rows)
+                if dfelem.empty:
+                    return pd.DataFrame(columns=preferred)
+                cols = [c for c in preferred if c in dfelem.columns] + [
+                    c for c in dfelem.columns if c not in preferred
+                ]
+                return dfelem[cols]
+            return pd.DataFrame()
+
+        df_current = df_for_part(model, part)
+
+        # Export
+        file_suffix = (
+            "clauses.csv"
+            if part == "clauses"
+            else (
+                "datapoints.csv"
+                if part == "datapoints"
+                else (
+                    "guidelines.csv"
+                    if part == "guidelines"
+                    else (
+                        "enums.csv"
+                        if part == "enums"
+                        else (
+                            "structures.csv" if part == "structures" else "structure_elements.csv"
+                        )
+                    )
+                )
+            )
+        )
+        export_name = f"{selected}_{file_suffix}"
+        st.download_button(
+            label=f"Download {part} CSV",
+            data=df_current.to_csv(index=False).encode("utf-8"),
+            file_name=export_name,
+            mime="text/csv",
+        )
+
+        # Import
+        uploaded = st.file_uploader(
+            f"Upload {part} CSV to replace",
+            type=["csv"],
+            key=f"uploader::{selected}::{part}",
+            help="Uploading will overwrite the corresponding CSV on disk.",
+        )
+        if uploaded is not None:
+            try:
+                out_path = ct_dir / export_name
+                with out_path.open("wb") as f:
+                    f.write(uploaded.getbuffer())
+            except Exception as e:
+                st.error(f"Failed to save CSV: {e}")
+            else:
+                st.success(f"Saved to {out_path.as_posix()}.")
+                if st.button("Reload template"):
+                    st.rerun()
 
     with tab_structures:
         structs = model.get("structures", []) or []

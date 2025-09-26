@@ -183,6 +183,346 @@ def main() -> None:
             st.session_state.contracts_model = model_name
             st.session_state.contract_idx = 0
 
+    # Sidebar: Create new contract uploader
+    with st.sidebar.expander("Create contract", expanded=False):
+        sb_uploaded = st.file_uploader(
+            "Upload .txt", type=["txt"], key="sidebar_create_contract_uploader"
+        )
+        effective_model_sb = model_name or "gpt-4.1-mini"
+        sb_disabled = sb_uploaded is None
+        if st.button("Process and create", disabled=sb_disabled, key="sidebar_create_button"):
+            try:
+                repo_root = get_repo_root()
+                txt_bytes = sb_uploaded.getvalue()  # type: ignore[union-attr]
+                try:
+                    text_content = txt_bytes.decode("utf-8", errors="ignore")
+                except Exception:
+                    text_content = txt_bytes.decode("latin-1", errors="ignore")
+
+                # Save a copy under organizer input files
+                org_in_dir = repo_root / "dataset" / "documents" / "organizer" / "files"
+                org_in_dir.mkdir(parents=True, exist_ok=True)
+                stem = Path(sb_uploaded.name).stem  # type: ignore[arg-type]
+                (org_in_dir / f"{stem}.txt").write_text(text_content, encoding="utf-8")
+
+                # Step 1: Organizer
+                st.info("Step 1/5: Running organizer …")
+                src_dir = repo_root / "src"
+                if str(src_dir) not in sys.path:
+                    sys.path.insert(0, str(src_dir))
+                tools_dir = repo_root / "tools"
+                if str(tools_dir) not in sys.path:
+                    sys.path.insert(0, str(tools_dir))
+                from contract_ai_core.organizer import ContractOrganizer, ContractOrganizerConfig
+                from contract_ai_core.schema import Paragraph
+                from utilities import load_lookup_values  # type: ignore
+
+                temperature = 1.0 if "gpt-5" in str(effective_model_sb) else 0.2
+                organizer = ContractOrganizer(
+                    ContractOrganizerConfig(
+                        provider="openai",
+                        model=str(effective_model_sb),
+                        temperature=temperature,
+                        max_tokens=8000,
+                        lookup_contract_types=load_lookup_values("CONTRACT_TYPE"),
+                        lookup_version_types=load_lookup_values("VERSION_TYPE"),
+                        lookup_statuses=load_lookup_values("STATUS"),
+                    )
+                )
+                paragraphs = [
+                    Paragraph(text=p, index=i) for i, p in enumerate(text_content.split("\n"))
+                ]
+                with st.spinner("Organizing …"):
+                    org_results = organizer.organize([(sb_uploaded.name, paragraphs)])  # type: ignore[arg-type]
+                if not org_results:
+                    st.error("Organizer returned no result.")
+                    st.stop()
+                org_res = org_results[0]
+                # Persist organizer JSON
+                import json as _json
+
+                out_org_dir = (
+                    repo_root / "dataset" / "output" / "organizer" / str(effective_model_sb)
+                )
+                out_org_dir.mkdir(parents=True, exist_ok=True)
+                out_org_path = out_org_dir / f"{stem}.json"
+                try:
+                    data = org_res.model_dump()  # type: ignore[attr-defined]
+                except Exception:
+
+                    def _pack(field):
+                        return {
+                            "value": getattr(field, "value", None),
+                            "confidence": getattr(field, "confidence", None),
+                            "explanation": getattr(field, "explanation", None),
+                        }
+
+                    data = {
+                        "filename": getattr(org_res, "filename", sb_uploaded.name),
+                        "contract_type": _pack(getattr(org_res, "contract_type", None)),
+                        "contract_type_version": _pack(
+                            getattr(org_res, "contract_type_version", None)
+                        ),
+                        "contract_date": _pack(getattr(org_res, "contract_date", None)),
+                        "amendment_date": _pack(getattr(org_res, "amendment_date", None)),
+                        "amendment_number": _pack(getattr(org_res, "amendment_number", None)),
+                        "version_type": _pack(getattr(org_res, "version_type", None)),
+                        "status": _pack(getattr(org_res, "status", None)),
+                        "party_name_1": _pack(getattr(org_res, "party_name_1", None)),
+                        "party_role_1": _pack(getattr(org_res, "party_role_1", None)),
+                        "party_name_2": _pack(getattr(org_res, "party_name_2", None)),
+                        "party_role_2": _pack(getattr(org_res, "party_role_2", None)),
+                        "document_quality": _pack(getattr(org_res, "document_quality", None)),
+                    }
+                out_org_path.write_text(
+                    _json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
+                )
+                # Also store in gold for use by the Contract tab
+                gold_dir = repo_root / "dataset" / "gold" / "organizer"
+                gold_dir.mkdir(parents=True, exist_ok=True)
+                gold_path = gold_dir / f"{stem}.json"
+                gold_path.write_text(
+                    _json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
+                )
+                # Also store in gold for use by the Contract tab
+                gold_dir = repo_root / "dataset" / "gold" / "organizer"
+                gold_dir.mkdir(parents=True, exist_ok=True)
+                gold_path = gold_dir / f"{stem}.json"
+                gold_path.write_text(
+                    _json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
+                )
+                contract_type_val = (
+                    (data.get("contract_type") or {}).get("value")
+                    if isinstance(data, dict)
+                    else None
+                )
+                if not isinstance(contract_type_val, str) or not contract_type_val.strip():
+                    st.error("Organizer did not return a contract_type.")
+                    st.stop()
+                contract_type_val = contract_type_val.strip()
+
+                # Step 2: Filter and save text
+                st.info("Step 2/5: Running filter and saving document …")
+                from contract_ai_core import (
+                    ContractTypeTemplate,
+                    DocumentFilter,
+                    DocumentFilterConfig,
+                )
+                from utilities import load_template  # type: ignore
+
+                try:
+                    tmpl_dict = load_template(contract_type_val)
+                    template_ct = ContractTypeTemplate.model_validate(tmpl_dict)
+                except Exception as e:
+                    st.warning(f"Template load failed for {contract_type_val}: {e}")
+                    template_ct = None
+                contracts_dir = (
+                    repo_root / "dataset" / "documents" / "contracts" / contract_type_val
+                )
+                contracts_dir.mkdir(parents=True, exist_ok=True)
+                save_path = contracts_dir / f"{stem}.txt"
+                save_path.write_text(text_content, encoding="utf-8")
+                if template_ct is not None:
+                    doc_filter = DocumentFilter(
+                        DocumentFilterConfig(provider="openai", model=str(effective_model_sb))
+                    )
+                    spans = doc_filter.locate_template_scopes(
+                        document_text=text_content, template=template_ct
+                    )
+                    out_filter_dir = (
+                        repo_root
+                        / "dataset"
+                        / "output"
+                        / "filter"
+                        / contract_type_val
+                        / str(effective_model_sb)
+                    )
+                    out_filter_dir.mkdir(parents=True, exist_ok=True)
+                    out_filter_path = out_filter_dir / f"{stem}.json"
+                    result = {
+                        "filename": f"{stem}.txt",
+                        "contract_type": contract_type_val,
+                        "scopes": [
+                            {
+                                "name": name,
+                                "start_line": span[0],
+                                "end_line": span[1],
+                                "confidence": span[2],
+                                "explanation": span[3],
+                            }
+                            for name, span in spans.items()
+                        ],
+                    }
+                    out_filter_path.write_text(
+                        _json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8"
+                    )
+
+                # Steps 3-5
+                from contract_ai_core.schema import (
+                    ClassifiedParagraph,
+                    DocumentClassification,
+                )
+                from contract_ai_core.utilities import text_to_paragraphs  # type: ignore
+
+                paras = [
+                    Paragraph(index=i, text=pp.text)
+                    for i, pp in enumerate(text_to_paragraphs(text_content))
+                ]
+
+                # Step 3: Clauses
+                st.info("Step 3/5: Classifying clauses …")
+                from contract_ai_core.classifier import ClauseClassifier, ClauseClassifierConfig
+
+                classifier = ClauseClassifier(ClauseClassifierConfig(model=str(effective_model_sb)))
+                with st.spinner("Classifying …"):
+                    doc_cls = classifier.classify_paragraphs(
+                        paragraphs=paras,
+                        template=template_ct or ContractTypeTemplate.model_validate(tmpl_dict),
+                    )  # type: ignore[arg-type]
+                rows_cls: list[dict[str, object]] = []
+                for cp in doc_cls.paragraphs:
+                    try:
+                        conf_pct = (
+                            None
+                            if cp.confidence is None
+                            else int(round(float(cp.confidence) * 100.0))
+                        )
+                    except Exception:
+                        conf_pct = None
+                    rows_cls.append(
+                        {
+                            "index": cp.paragraph.index,
+                            "text": cp.paragraph.text,
+                            "clause_key": cp.clause_key or "",
+                            "confidence": conf_pct if conf_pct is not None else "",
+                        }
+                    )
+                out_cls_dir = (
+                    repo_root
+                    / "dataset"
+                    / "output"
+                    / "clauses"
+                    / contract_type_val
+                    / str(effective_model_sb)
+                )
+                out_cls_dir.mkdir(parents=True, exist_ok=True)
+                out_cls_path = out_cls_dir / f"{stem}.csv"
+                pd.DataFrame(rows_cls).to_csv(out_cls_path, index=False)
+
+                # Step 4: Datapoints
+                st.info("Step 4/5: Extracting datapoints …")
+                from contract_ai_core.extractor import DatapointExtractor, DatapointExtractorConfig
+
+                extraction = DatapointExtractor(
+                    DatapointExtractorConfig(model=str(effective_model_sb))
+                ).extract(
+                    paragraphs=paras,
+                    template=template_ct or ContractTypeTemplate.model_validate(tmpl_dict),  # type: ignore[arg-type]
+                    classified_clauses=doc_cls,
+                )
+                dp_title = {
+                    str(dp.key): (dp.title or str(dp.key))
+                    for dp in (
+                        template_ct or ContractTypeTemplate.model_validate(tmpl_dict)
+                    ).datapoints
+                }  # type: ignore[arg-type]
+                rows_dp: list[dict[str, object]] = []
+                for item in extraction.datapoints:
+                    try:
+                        conf_pct = (
+                            None
+                            if item.confidence is None
+                            else int(round(float(item.confidence) * 100.0))
+                        )
+                    except Exception:
+                        conf_pct = None
+                    rows_dp.append(
+                        {
+                            "key": item.key,
+                            "title": dp_title.get(str(item.key), str(item.key)),
+                            "value": item.value,
+                            "confidence": conf_pct if conf_pct is not None else "",
+                            "explanation": item.explanation or "",
+                            "evidence": list(item.evidence_paragraph_indices)
+                            if item.evidence_paragraph_indices
+                            else [],
+                        }
+                    )
+                out_dp_dir = (
+                    repo_root
+                    / "dataset"
+                    / "output"
+                    / "datapoints"
+                    / contract_type_val
+                    / str(effective_model_sb)
+                )
+                out_dp_dir.mkdir(parents=True, exist_ok=True)
+                out_dp_path = out_dp_dir / f"{stem}.csv"
+                pd.DataFrame(rows_dp).to_csv(out_dp_path, index=False)
+
+                # Step 5: Guidelines
+                st.info("Step 5/5: Reviewing guidelines …")
+                from contract_ai_core.reviewer import GuidelineReviewer, GuidelineReviewerConfig
+
+                reviewer = GuidelineReviewer(GuidelineReviewerConfig(model=str(effective_model_sb)))
+                reviewed = reviewer.review(
+                    paragraphs=paras,
+                    template=template_ct or ContractTypeTemplate.model_validate(tmpl_dict),
+                    classified_clauses=doc_cls,
+                )  # type: ignore[arg-type]
+                key_to_text = {
+                    g.key: g.guideline
+                    for g in (
+                        template_ct or ContractTypeTemplate.model_validate(tmpl_dict)
+                    ).guidelines
+                }  # type: ignore[arg-type]
+                rows_gl: list[dict[str, object]] = []
+                for r in reviewed:
+                    try:
+                        conf_pct = (
+                            None
+                            if r.confidence is None
+                            else int(round(float(r.confidence) * 100.0))
+                        )
+                    except Exception:
+                        conf_pct = None
+                    rows_gl.append(
+                        {
+                            "key": r.key,
+                            "guideline": key_to_text.get(r.key, r.key),
+                            "guideline_matched": str(r.guideline_matched),
+                            "confidence": conf_pct if conf_pct is not None else "",
+                            "explanation": r.explanation or "",
+                            "evidence": list(r.evidence_paragraph_indices)
+                            if r.evidence_paragraph_indices
+                            else [],
+                        }
+                    )
+                out_gl_dir = (
+                    repo_root
+                    / "dataset"
+                    / "output"
+                    / "guidelines"
+                    / contract_type_val
+                    / str(effective_model_sb)
+                )
+                out_gl_dir.mkdir(parents=True, exist_ok=True)
+                out_gl_path = out_gl_dir / f"{stem}.csv"
+                pd.DataFrame(rows_gl).to_csv(out_gl_path, index=False)
+
+            except Exception as e:
+                st.error(f"Creation failed: {e}")
+            else:
+                st.success(
+                    "Contract created successfully. Outputs written to organizer/filter/clauses/datapoints/guidelines folders."
+                )
+                try:
+                    st.session_state.contracts_template = contract_type_val
+                except Exception:
+                    pass
+                if st.button("Reload page to view new contract", key="sidebar_reload_new_contract"):
+                    st.rerun()
+
     # Contracts list
     files = find_contract_files(template_key)
     if not files:
@@ -230,7 +570,7 @@ def main() -> None:
         tab_review = st.empty()
         tab_guidelines = st.empty()
     else:
-        tab_contract, tab_text, tab_review, tab_clauses, tab_guidelines, tab_agent, tab_compare = (
+        tab_contract, tab_text, tab_review, tab_clauses, tab_guidelines, tab_agent, tab_comparee = (
             st.tabs(
                 [
                     "Contract",
@@ -340,6 +680,139 @@ def main() -> None:
         elif not model_name:
             st.info("Select a model to view datapoints.")
         else:
+            # Reprocess button (extract datapoints again for this file)
+            col_btn, col_sp = st.columns([1, 9])
+            with col_btn:
+                if st.button("Reprocess datapoints"):
+                    try:
+                        # Lazy imports to avoid heavy deps when not used
+                        repo_root = get_repo_root()
+                        src_dir = repo_root / "src"
+                        if str(src_dir) not in sys.path:
+                            sys.path.insert(0, str(src_dir))
+                        from contract_ai_core.extractor import (
+                            DatapointExtractor,
+                            DatapointExtractorConfig,
+                        )
+                        from contract_ai_core.schema import (
+                            ClassifiedParagraph,
+                            ContractTypeTemplate,
+                            DocumentClassification,
+                            Paragraph,
+                        )
+                        from contract_ai_core.utilities import text_to_paragraphs  # type: ignore
+
+                        # Load template
+                        try:
+                            tmpl = load_template_dict(template_key)
+                            contract_type = ContractTypeTemplate.model_validate(tmpl)
+                        except Exception as e:
+                            st.error(f"Template load failed: {e}")
+                            contract_type = None
+
+                        # Load text and split to paragraphs
+                        text = read_text_best_effort(current_path)
+                        paragraphs = [
+                            Paragraph(index=i, text=pp.text)
+                            for i, pp in enumerate(text_to_paragraphs(text))
+                        ]
+
+                        # Optional: load classification to scope extractions
+                        df_cls_for_dp = load_classification_csv(
+                            template_key, model_name, current_path.stem
+                        )
+                        classification: DocumentClassification | None
+                        if df_cls_for_dp is not None and not df_cls_for_dp.empty:
+                            cls_pars: list[ClassifiedParagraph] = []
+                            clause_to_pars: dict[str, list[int]] = {}
+                            for _, row in df_cls_for_dp.iterrows():
+                                try:
+                                    idx_i = int(str(row.get("index", "")).strip())
+                                except Exception:
+                                    continue
+                                txt = str(row.get("text", "")).strip()
+                                ck = str(row.get("clause_key", "")).strip() or None
+                                cls_pars.append(
+                                    ClassifiedParagraph(
+                                        paragraph=Paragraph(index=idx_i, text=txt),
+                                        clause_key=ck,
+                                        confidence=None,
+                                    )
+                                )
+                                if ck:
+                                    clause_to_pars.setdefault(ck, []).append(idx_i)
+                            classification = DocumentClassification(
+                                paragraphs=cls_pars,
+                                clause_to_paragraphs=clause_to_pars or None,
+                            )
+                        else:
+                            classification = None
+
+                        # Run extractor
+                        if not contract_type:
+                            st.stop()
+                        extractor = DatapointExtractor(
+                            DatapointExtractorConfig(model=str(model_name))
+                        )
+                        with st.spinner("Re-extracting datapoints…"):
+                            result = extractor.extract(
+                                paragraphs=paragraphs,
+                                template=contract_type,
+                                classified_clauses=classification,
+                            )
+
+                        # Build CSV rows (value, confidence in %, explanation, evidence)
+                        # Map datapoint key -> title from template for readability
+                        dp_title: dict[str, str] = {
+                            str(dp.key): (dp.title or str(dp.key))
+                            for dp in contract_type.datapoints
+                        }
+                        rows: list[dict[str, object]] = []
+                        for item in result.datapoints:
+                            conf_pct: int | None
+                            try:
+                                conf_pct = (
+                                    None
+                                    if item.confidence is None
+                                    else int(round(float(item.confidence) * 100.0))
+                                )
+                            except Exception:
+                                conf_pct = None
+                            rows.append(
+                                {
+                                    "key": item.key,
+                                    "title": dp_title.get(str(item.key), str(item.key)),
+                                    "value": item.value,
+                                    "confidence": conf_pct if conf_pct is not None else "",
+                                    "explanation": item.explanation or "",
+                                    "evidence": (
+                                        list(item.evidence_paragraph_indices)
+                                        if item.evidence_paragraph_indices
+                                        else []
+                                    ),
+                                }
+                            )
+
+                        import pandas as _pd
+
+                        out_df = _pd.DataFrame(rows)
+                        out_dir = (
+                            repo_root
+                            / "dataset"
+                            / "output"
+                            / "datapoints"
+                            / template_key
+                            / str(model_name)
+                        )
+                        out_dir.mkdir(parents=True, exist_ok=True)
+                        out_path = out_dir / f"{current_path.stem}.csv"
+                        out_df.to_csv(out_path, index=False)
+                    except Exception as e:
+                        st.error(f"Reprocess failed: {e}")
+                    else:
+                        st.success("Datapoints reprocessed and saved. Reloading…")
+                        st.rerun()
+
             df_dp_tab = load_datapoints_csv(template_key, model_name, current_path.stem)
             if df_dp_tab is None or df_dp_tab.empty:
                 st.info("No datapoints results found for this contract.")
@@ -1023,6 +1496,88 @@ def main() -> None:
         if not model_name:
             st.info("Select a model to view clauses.")
         else:
+            # Reprocess button (classify clauses again for this file)
+            col_btn_cls, _ = st.columns([1, 9])
+            with col_btn_cls:
+                if st.button("Reprocess clauses"):
+                    try:
+                        # Setup imports
+                        repo_root = get_repo_root()
+                        src_dir = repo_root / "src"
+                        if str(src_dir) not in sys.path:
+                            sys.path.insert(0, str(src_dir))
+                        from contract_ai_core.classifier import (
+                            ClauseClassifier,
+                            ClauseClassifierConfig,
+                        )
+                        from contract_ai_core.schema import (
+                            ContractTypeTemplate,
+                            Paragraph,
+                        )
+                        from contract_ai_core.utilities import text_to_paragraphs  # type: ignore
+
+                        # Load template
+                        try:
+                            tmpl_dict = load_template_dict(template_key)
+                            contract_type = ContractTypeTemplate.model_validate(tmpl_dict)
+                        except Exception as e:
+                            st.error(f"Template load failed: {e}")
+                            st.stop()
+
+                        # Load text and split to paragraphs
+                        text = read_text_best_effort(current_path)
+                        paragraphs = [
+                            Paragraph(index=i, text=pp.text)
+                            for i, pp in enumerate(text_to_paragraphs(text))
+                        ]
+
+                        # Run classifier
+                        classifier = ClauseClassifier(ClauseClassifierConfig(model=str(model_name)))
+                        with st.spinner("Reclassifying clauses…"):
+                            doc_classification = classifier.classify_paragraphs(
+                                paragraphs=paragraphs,
+                                template=contract_type,
+                                source_id=current_path.stem,
+                            )
+
+                        # Prepare CSV rows: index, text, clause_key, confidence (percent int)
+                        rows: list[dict[str, object]] = []
+                        for cp in doc_classification.paragraphs:
+                            conf_pct: int | None
+                            try:
+                                conf_pct = (
+                                    None
+                                    if cp.confidence is None
+                                    else int(round(float(cp.confidence) * 100.0))
+                                )
+                            except Exception:
+                                conf_pct = None
+                            rows.append(
+                                {
+                                    "index": cp.paragraph.index,
+                                    "text": cp.paragraph.text,
+                                    "clause_key": cp.clause_key or "",
+                                    "confidence": conf_pct if conf_pct is not None else "",
+                                }
+                            )
+
+                        out_dir = (
+                            repo_root
+                            / "dataset"
+                            / "output"
+                            / "clauses"
+                            / template_key
+                            / str(model_name)
+                        )
+                        out_dir.mkdir(parents=True, exist_ok=True)
+                        out_path = out_dir / f"{current_path.stem}.csv"
+                        pd.DataFrame(rows).to_csv(out_path, index=False)
+                    except Exception as e:
+                        st.error(f"Reprocess failed: {e}")
+                    else:
+                        st.success("Clauses reprocessed and saved. Reloading…")
+                        st.rerun()
+
             df_cls = load_classification_csv(template_key, model_name, current_path.stem)
             if df_cls is None or df_cls.empty:
                 st.info("No clause results found for this contract.")
@@ -1064,6 +1619,127 @@ def main() -> None:
         elif not model_name:
             st.info("Select a model to view guidelines.")
         else:
+            # Reprocess button (review guidelines again for this file)
+            col_btn_gl, _ = st.columns([1, 9])
+            with col_btn_gl:
+                if st.button("Reprocess guidelines"):
+                    try:
+                        repo_root = get_repo_root()
+                        src_dir = repo_root / "src"
+                        if str(src_dir) not in sys.path:
+                            sys.path.insert(0, str(src_dir))
+                        from contract_ai_core.reviewer import (
+                            GuidelineReviewer,
+                            GuidelineReviewerConfig,
+                        )
+                        from contract_ai_core.schema import (
+                            ClassifiedParagraph,
+                            ContractTypeTemplate,
+                            DocumentClassification,
+                            Paragraph,
+                        )
+                        from contract_ai_core.utilities import text_to_paragraphs  # type: ignore
+
+                        # Load template
+                        try:
+                            tmpl_dict = load_template_dict(template_key)
+                            contract_type = ContractTypeTemplate.model_validate(tmpl_dict)
+                        except Exception as e:
+                            st.error(f"Template load failed: {e}")
+                            st.stop()
+
+                        # Load text and split to paragraphs
+                        text = read_text_best_effort(current_path)
+                        paragraphs = [
+                            Paragraph(index=i, text=pp.text)
+                            for i, pp in enumerate(text_to_paragraphs(text))
+                        ]
+
+                        # Optional classification to scope guideline reviews
+                        df_cls_for_gl = load_classification_csv(
+                            template_key, model_name, current_path.stem
+                        )
+                        classification: DocumentClassification | None
+                        if df_cls_for_gl is not None and not df_cls_for_gl.empty:
+                            cls_pars: list[ClassifiedParagraph] = []
+                            clause_to_pars: dict[str, list[int]] = {}
+                            for _, row in df_cls_for_gl.iterrows():
+                                try:
+                                    idx_i = int(str(row.get("index", "")).strip())
+                                except Exception:
+                                    continue
+                                txt = str(row.get("text", "")).strip()
+                                ck = str(row.get("clause_key", "")).strip() or None
+                                cls_pars.append(
+                                    ClassifiedParagraph(
+                                        paragraph=Paragraph(index=idx_i, text=txt),
+                                        clause_key=ck,
+                                        confidence=None,
+                                    )
+                                )
+                                if ck:
+                                    clause_to_pars.setdefault(ck, []).append(idx_i)
+                            classification = DocumentClassification(
+                                paragraphs=cls_pars,
+                                clause_to_paragraphs=clause_to_pars or None,
+                            )
+                        else:
+                            classification = None
+
+                        # Run reviewer
+                        reviewer = GuidelineReviewer(GuidelineReviewerConfig(model=str(model_name)))
+                        with st.spinner("Re-reviewing guidelines…"):
+                            reviewed = reviewer.review(
+                                paragraphs=paragraphs,
+                                template=contract_type,
+                                classified_clauses=classification,
+                            )
+
+                        # Map key -> guideline text from template for CSV readability
+                        key_to_text = {g.key: g.guideline for g in contract_type.guidelines}
+
+                        rows: list[dict[str, object]] = []
+                        for r in reviewed:
+                            try:
+                                conf_pct = (
+                                    None
+                                    if r.confidence is None
+                                    else int(round(float(r.confidence) * 100.0))
+                                )
+                            except Exception:
+                                conf_pct = None
+                            rows.append(
+                                {
+                                    "key": r.key,
+                                    "guideline": key_to_text.get(r.key, r.key),
+                                    "guideline_matched": str(r.guideline_matched),
+                                    "confidence": conf_pct if conf_pct is not None else "",
+                                    "explanation": r.explanation or "",
+                                    "evidence": (
+                                        list(r.evidence_paragraph_indices)
+                                        if r.evidence_paragraph_indices
+                                        else []
+                                    ),
+                                }
+                            )
+
+                        out_dir = (
+                            repo_root
+                            / "dataset"
+                            / "output"
+                            / "guidelines"
+                            / template_key
+                            / str(model_name)
+                        )
+                        out_dir.mkdir(parents=True, exist_ok=True)
+                        out_path = out_dir / f"{current_path.stem}.csv"
+                        pd.DataFrame(rows).to_csv(out_path, index=False)
+                    except Exception as e:
+                        st.error(f"Reprocess failed: {e}")
+                    else:
+                        st.success("Guidelines reprocessed and saved. Reloading…")
+                        st.rerun()
+
             df_gl = load_guidelines_csv(template_key, model_name, current_path.stem)
             if df_gl is None or df_gl.empty:
                 st.info("No guidelines results found for this contract.")

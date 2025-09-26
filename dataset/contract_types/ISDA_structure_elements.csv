@@ -1,19 +1,19 @@
-structure_key,key,sort_order,title,data_type,enum_key,description,,,
-rating_trigger,party,1,Party,enum,PARTY,Applicable party,,,
-rating_trigger,agency,2,Rating agency,enum,RATING_AGENCY,Name of the rating agency,,,
-rating_trigger,debt_type,3,Debt type,list[enum],DEBT_TYPE,Debt type (e.g. secured),,,
-rating_trigger,debt_maturity,4,Debt maturity,enum,DEBT_MATURITY,"Debt maturirity (long, short)",,,
-rating_trigger,threshold,5,Threshold,str,,Rating threshold (e.g. BBB),,,
-nav_decline,party,1,Party,enum,PARTY,Applicable party,,,
-nav_decline,period_from,7,Period from,int,,Period from (in months),,,
-nav_decline,period_to,8,Period to,int,,Period to (in months),,,
-nav_decline,decline,9,Decline percentage,float,,Decline percentage in percentage,,,
-threshold_conditions,amount,10,Amount,int,,"Amount for threshold amount (if it is a fixed amount, not a percentage). Replace thousands or millions by a full number.",,,
-threshold_conditions,currency,11,Currency,str,,Currency for threshold amount,,,
-threshold_conditions,percent,12,Percentage,float,,"Percentage for threshold amount (in percentage, i.e. 3 for 3%)",,,
-threshold_conditions,percent_reference,13,Percentage reference,enum,THRESHOLD_REFERENCE,reference of the percentage (if percentage),,,
-multibranch,is_multibranch,14,is Multibranch,bool,,is the Party a Multibranch party?,,,
-multibranch,multibranch_offices,15,Offices,list[str],,list of offices for the Party when a Multibranch party,,,
-process_agent,is_process_agent,16,Is defined,bool,,FALSE,clause,process_agent,Is process agent applicable for Party A?
-process_agent,process_agent_name,17,Name,str,,FALSE,clause,process_agent,Name of process agent for Party A if applicable
-process_agent,process_agent_address,18,Address,str,,FALSE,clause,process_agent,Address of process agent for Party A if applicable
+structure_key,key,title,description,data_type,required,enum_key,sort_order
+rating_trigger,party,Party,Applicable party,enum,False,PARTY,1
+rating_trigger,agency,Rating agency,Name of the rating agency,enum,False,RATING_AGENCY,2
+rating_trigger,debt_type,Debt type,Debt type (e.g. secured),list[enum],False,DEBT_TYPE,3
+rating_trigger,debt_maturity,Debt maturity,"Debt maturirity (long, short)",enum,False,DEBT_MATURITY,4
+rating_trigger,threshold,Threshold,Rating threshold (e.g. BBB),str,False,,5
+nav_decline,party,Party,Applicable party,enum,False,PARTY,1
+nav_decline,period_from,Period from,Period from (in months),int,False,,7
+nav_decline,period_to,Period to,Period to (in months),int,False,,8
+nav_decline,decline,Decline percentage,Decline percentage in percentage,float,False,,9
+threshold_conditions,amount,Amount,"Amount for threshold amount (if it is a fixed amount, not a percentage). Replace thousands or millions by a full number.",int,False,,10
+threshold_conditions,currency,Currency,Currency for threshold amount,str,False,,11
+threshold_conditions,percent,Percentage,"Percentage for threshold amount (in percentage, i.e. 3 for 3%)",float,False,,12
+threshold_conditions,percent_reference,Percentage reference,reference of the percentage (if percentage),enum,False,THRESHOLD_REFERENCE,13
+multibranch,is_multibranch,is Multibranch,is the Party a Multibranch party?,bool,False,,14
+multibranch,multibranch_offices,Offices,list of offices for the Party when a Multibranch party,list[str],False,,15
+process_agent,is_process_agent,Is defined,FALSE,bool,False,,16
+process_agent,process_agent_name,Name,FALSE,str,False,,17
+process_agent,process_agent_address,Address,FALSE,str,False,,18

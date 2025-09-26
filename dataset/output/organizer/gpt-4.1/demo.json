@@ -1,0 +1,63 @@
+{
+  "filename": "demo.txt",
+  "contract_type": {
+    "value": "ISDA",
+    "confidence": 0.98,
+    "explanation": "The document is a Schedule to the 2002 Master Agreement, which is an ISDA Master Agreement."
+  },
+  "contract_type_version": {
+    "value": "2002",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states '2002 Master Agreement'."
+  },
+  "contract_date": {
+    "value": "2020-04-07",
+    "confidence": 1.0,
+    "explanation": "The date 'dated as of April 7, 2020' is clearly mentioned as the contract date."
+  },
+  "amendment_date": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no indication that this is an amendment; it is a schedule to the initial contract."
+  },
+  "amendment_number": {
+    "value": null,
+    "confidence": 1.0,
+    "explanation": "There is no mention of an amendment number, and the document is not an amendment."
+  },
+  "version_type": {
+    "value": "INITIAL",
+    "confidence": 0.95,
+    "explanation": "This is a schedule to the initial 2002 Master Agreement, not an amendment or restatement."
+  },
+  "status": {
+    "value": "EXECUTED",
+    "confidence": 0.8,
+    "explanation": "The contract is dated and between named parties, suggesting it is executed, though no explicit signature is shown in the text provided."
+  },
+  "party_name_1": {
+    "value": "BANK X, N.A.",
+    "confidence": 1.0,
+    "explanation": "'BANK X, N.A.' is listed as a party to the agreement."
+  },
+  "party_role_1": {
+    "value": "Party A",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states BANK X, N.A. is 'Party A'."
+  },
+  "party_name_2": {
+    "value": "NEW INDUSTRIES, INC.",
+    "confidence": 1.0,
+    "explanation": "'NEW INDUSTRIES, INC.' is listed as a party to the agreement."
+  },
+  "party_role_2": {
+    "value": "Party B",
+    "confidence": 1.0,
+    "explanation": "The text explicitly states NEW INDUSTRIES, INC. is 'Party B'."
+  },
+  "document_quality": {
+    "value": "high",
+    "confidence": 1.0,
+    "explanation": "The text is clean, well-formatted, and free of typos or OCR errors."
+  }
+}

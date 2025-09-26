@@ -1,22 +1,22 @@
-key,sort_order,title,data_type,enum_key,required,scope,clause_keys,description
-specified_entity_A,4,Specified entity Party A,str,,FALSE,clause,specified_entity,Specified entity Party A (null if none or not applicable)
-specified_entity_B,5,Specified entity Party B,str,,FALSE,clause,specified_entity,Specified entity Party B (null if none or not applicable)
-specified_transaction,6,Specified transaction scope,enum,SPECIFIED_TRANSACTION_SCOPE,FALSE,clause,specified_transaction,Specified transaction scope
-cross_default,7,Cross default applicable parties,enum,PARTY_TYPES,FALSE,clause,cross_default,Cross default applicable parties
-specified_indebtness_borrowed_money,8,Specified indebtness includes borrowed_money,bool,,FALSE,clause,specified_indebtness,Specified indebtness includes borrowed_money? (NO if not mentioned)
-specified_indebtness_deposits,9,Specified indebtness excludes deposits,bool,,FALSE,clause,specified_indebtness,Specified indebtness excludes deposits? (NO if not mentioned)
-threshold_A,10,Threshold amount for Party A,object:threshold_conditions,,FALSE,clause,threshold_amount,Threshold amount conditions for Party A
-threshold_B,11,Threshold amount for Party B,object:threshold_conditions,,FALSE,clause,threshold_amount,Threshold amount conditions for Party B
-credit_event_upon_merger,18,Credit Event Upon Merger  applicable parties,enum,PARTY_TYPES,FALSE,clause,credit_event_upon_merger,Credit Event Upon Merger  applicable parties
-automatic_early_termination,19,Automatic Early Termination  applicable parties,enum,PARTY_TYPES,FALSE,clause,automatic_early_termination,Automatic Early Termination  applicable parties
-termination_currency,20,Termination Currency,str,,FALSE,clause,termination_currency,"Termination Currency in ISO format (e.g. USD, EUR, ...)"
-notices_A,21,Email for notices for Party A,str,,FALSE,clause,address_for_notices,email  for notices for Party A
-notices_B,22,Email for notices for Party B,str,,FALSE,clause,address_for_notices,email  for notices for Party B
-process_agent_A,23,Process agent for party A,object:process_agent,,FALSE,clause,process_agent,process agent details for Party A
-process_agent_B,24,Process agent for party B,object:process_agent,,FALSE,clause,process_agent,process agent details for Party B
-multibranch_party_A,25,Multibranch for Party A,object:multibranch,,FALSE,clause,multibranch_party,Multibranch party details for Party A
-multibranch_party_B,26,Multibranch for Party B,object:multibranch,,FALSE,clause,multibranch_party,Multibranch party details for Party B
-calculation_agent,27,Party for calculation agent,enum,PARTY,FALSE,clause,calculation_agent,Party for calculation agent in business as usual situations
-governing_law,28,Governing Law,enum,LAW,FALSE,clause,governing_law,Governing Law
-rating_triggers,29,Rating triggers,list[object:rating_trigger],,FALSE,clause,credit_rating_downgrade,Rating downgrade triggers
-nav_declines,30,Net asset value declines,list[object:nav_decline],,FALSE,clause,nav_trigger,NAV triggers
+key,title,description,required,data_type,enum_key,scope,clause_keys,sort_order
+specified_entity_A,Specified entity Party A,Specified entity Party A (null if none or not applicable),FALSE,str,,clause,specified_entity,4
+specified_entity_B,Specified entity Party B,Specified entity Party B (null if none or not applicable),FALSE,str,,clause,specified_entity,5
+specified_transaction,Specified transaction scope,Specified transaction scope,FALSE,enum,SPECIFIED_TRANSACTION_SCOPE,clause,specified_transaction,6
+cross_default,Cross default applicable parties,Cross default applicable parties,FALSE,enum,PARTY_TYPES,clause,cross_default,7
+specified_indebtness_borrowed_money,Specified indebtness includes borrowed_money,Specified indebtness includes borrowed_money? (NO if not mentioned),FALSE,bool,,clause,specified_indebtness,8
+specified_indebtness_deposits,Specified indebtness excludes deposits,Specified indebtness excludes deposits? (NO if not mentioned),FALSE,bool,,clause,specified_indebtness,9
+threshold_A,Threshold amount for Party A,Threshold amount conditions for Party A,FALSE,object:threshold_conditions,,clause,threshold_amount,10
+threshold_B,Threshold amount for Party B,Threshold amount conditions for Party B,FALSE,object:threshold_conditions,,clause,threshold_amount,11
+credit_event_upon_merger,Credit Event Upon Merger  applicable parties,Credit Event Upon Merger  applicable parties,FALSE,enum,PARTY_TYPES,clause,credit_event_upon_merger,18
+automatic_early_termination,Automatic Early Termination  applicable parties,Automatic Early Termination  applicable parties,FALSE,enum,PARTY_TYPES,clause,automatic_early_termination,19
+termination_currency,Termination Currency,"Termination Currency in ISO format (e.g. USD, EUR, ...)",FALSE,str,,clause,termination_currency,20
+notices_A,Email for notices for Party A,email  for notices for Party A,FALSE,str,,clause,address_for_notices,21
+notices_B,Email for notices for Party B,email  for notices for Party B,FALSE,str,,clause,address_for_notices,22
+process_agent_A,Process agent for party A,process agent details for Party A,FALSE,object:process_agent,,clause,process_agent,23
+process_agent_B,Process agent for party B,process agent details for Party B,FALSE,object:process_agent,,clause,process_agent,24
+multibranch_party_A,Multibranch for Party A,Multibranch party details for Party A,FALSE,object:multibranch,,clause,multibranch_party,25
+multibranch_party_B,Multibranch for Party B,Multibranch party details for Party B,FALSE,object:multibranch,,clause,multibranch_party,26
+calculation_agent,Party for calculation agent,Party for calculation agent in business as usual situations,FALSE,enum,PARTY,clause,calculation_agent,27
+governing_law,Governing Law,Governing Law,FALSE,enum,LAW,clause,governing_law,28
+rating_triggers,Rating triggers,Rating downgrade triggers,FALSE,list[object:rating_trigger],,clause,credit_rating_downgrade,29
+nav_declines,Net asset value declines,NAV triggers,FALSE,list[object:nav_decline],,clause,nav_decline,30
