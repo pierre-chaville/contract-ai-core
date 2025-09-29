@@ -41,4 +41,5 @@ dist/
 # Local Python version files
 .python-version
 
-# Dataset
+# Database
+.db

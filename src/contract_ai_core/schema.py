@@ -263,59 +263,19 @@ class ContractMetadata(FrozenBaseModel):
     contract_type: str | None = Field(
         default=None, description="Category (e.g., employment, vendor, lease, NDA)."
     )
-
-    # Parties & Relationships
-    primary_party: str | None = Field(
-        default=None, description="Your organization's legal entity name."
+    contract_type_version: str | None = Field(
+        default=None, description="Version of contract type (e.g., 1992 or 2002 for ISDA)."
     )
-    counterparty_name: str | None = Field(default=None, description="Counterparty legal name.")
-    counterparty_type: str | None = Field(
-        default=None, description="Counterparty type (individual, corporation, LLC, etc.)."
+    contract_date: str | None = Field(default=None, description="Primary contract date.")
+    last_amendment_date: str | None = Field(
+        default=None, description="Date of last amendment if applicable, else null."
     )
-    relationship_type: str | None = Field(
-        default=None, description="Client, vendor, partner, employee, etc."
-    )
-
-    # Key Dates (ISO-8601 strings preferred)
-    execution_date: str | None = Field(default=None, description="Date signed (YYYY-MM-DD).")
-    effective_date: str | None = Field(default=None, description="When terms begin (YYYY-MM-DD).")
-    expiration_date: str | None = Field(
-        default=None, description="When contract ends (YYYY-MM-DD)."
-    )
-    notice_period: int | None = Field(
-        default=None, description="Required notice for termination, in days."
-    )
-    renewal_date: str | None = Field(
-        default=None, description="Next renewal opportunity (YYYY-MM-DD)."
-    )
-
-    # Financial Information
-    contract_value: float | None = Field(
-        default=None, description="Total monetary value of the contract."
-    )
-    currency: str | None = Field(default=None, description="Currency code (e.g., USD, EUR).")
-    payment_terms: str | None = Field(
-        default=None, description="Payment terms (e.g., Net 30, monthly, annual)."
-    )
-    billing_frequency: str | None = Field(default=None, description="How often payments occur.")
-
-    # Legal & Compliance
-    governing_law: str | None = Field(default=None, description="Jurisdiction (state/country).")
-    status: str | None = Field(
-        default=None, description="Draft, active, expired, terminated, renewed."
-    )
-    approval_status: str | None = Field(default=None, description="Pending, approved, rejected.")
-    confidentiality_level: str | None = Field(
-        default=None, description="Public, internal, confidential, restricted."
-    )
-
-    # Document Management
-    file_path: str | None = Field(default=None, description="Location of contract document.")
-    version_number: str | None = Field(default=None, description="Revision/version number.")
-    document_format: str | None = Field(default=None, description="PDF, DOCX, etc.")
-    digital_signature_status: str | None = Field(
-        default=None, description="Signed, pending, not required."
-    )
+    number_amendments: int | None = Field(default=None, description="Number of amendments.")
+    status: str | None = Field(default=None, description="Status: draft, executed, or signed.")
+    party_name_1: str | None = Field(default=None, description="Name of Party 1 (Party A).")
+    party_role_1: str | None = Field(default=None, description="Role of Party 1 (e.g., Party A).")
+    party_name_2: str | None = Field(default=None, description="Name of Party 2 (Party B).")
+    party_role_2: str | None = Field(default=None, description="Role of Party 2 (e.g., Party B).")
 
     # Business Context
     department: str | None = Field(default=None, description="Owning business unit.")
@@ -323,15 +283,6 @@ class ContractMetadata(FrozenBaseModel):
     business_purpose: str | None = Field(
         default=None, description="Brief description of contract purpose."
     )
-    tags: Sequence[str] | None = Field(default=None, description="Searchable keywords/labels.")
-
-    # Tracking & Alerts
-    created_date: str | None = Field(default=None, description="Record creation timestamp.")
-    last_modified: str | None = Field(default=None, description="Last update timestamp.")
-    alert_days_before_expiry: int | None = Field(
-        default=None, description="Notification lead time (days) before expiry."
-    )
-    auto_renewal: bool | None = Field(default=None, description="Auto-renewal flag.")
 
 
 class LookupValue(FrozenBaseModel):
