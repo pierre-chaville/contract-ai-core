@@ -570,7 +570,7 @@ def main() -> None:
         tab_review = st.empty()
         tab_guidelines = st.empty()
     else:
-        tab_contract, tab_text, tab_review, tab_clauses, tab_guidelines, tab_agent, tab_comparee = (
+        tab_contract, tab_text, tab_review, tab_clauses, tab_guidelines, tab_agent, tab_compare = (
             st.tabs(
                 [
                     "Contract",
@@ -827,6 +827,24 @@ def main() -> None:
                     tmpl = {}
                 dp_defs = (tmpl.get("datapoints") or []) if isinstance(tmpl, dict) else []
                 struct_defs = (tmpl.get("structures") or []) if isinstance(tmpl, dict) else []
+                enum_defs = (tmpl.get("enums") or []) if isinstance(tmpl, dict) else []
+
+                # Build enum lookup: enum_key -> code -> description
+                enum_map: dict[str, dict[str, str]] = {}
+                try:
+                    for e in enum_defs:
+                        ekey = str(e.get("key", "")).strip()
+                        if not ekey:
+                            continue
+                        code_to_desc: dict[str, str] = {}
+                        for opt in e.get("options") or []:
+                            code = str(opt.get("code", "")).strip()
+                            desc = str(opt.get("description", "")).strip()
+                            if code:
+                                code_to_desc[code] = desc or code
+                        enum_map[ekey] = code_to_desc
+                except Exception:
+                    enum_map = {}
 
                 def parse_structure_type(data_type: Any | None) -> tuple[str, str | None]:
                     s = str(data_type or "").strip().lower()
@@ -841,27 +859,43 @@ def main() -> None:
 
                 dp_key_to_struct: dict[str, tuple[str, str]] = {}
                 struct_key_to_el_title: dict[str, dict[str, str]] = {}
+                struct_key_to_el_meta: dict[str, dict[str, tuple[str, str | None]]] = {}
+                dp_key_to_enum_meta: dict[str, tuple[str, str | None]] = {}
                 try:
                     for sd in struct_defs:
                         skey = str(sd.get("structure_key", "")).strip()
                         el_map: dict[str, str] = {}
+                        el_meta: dict[str, tuple[str, str | None]] = {}
                         for el in sd.get("elements") or []:
                             el_key = str(el.get("key", "")).strip()
                             el_title = str(el.get("title", el_key)).strip()
+                            el_dtype = str(el.get("data_type", "")).strip()
+                            el_enum = el.get("enum_key")
                             if el_key:
                                 el_map[el_key] = el_title
+                                el_meta[el_key] = (
+                                    el_dtype,
+                                    (str(el_enum).strip() if el_enum else None),
+                                )
                         if skey:
                             struct_key_to_el_title[skey] = el_map
+                            struct_key_to_el_meta[skey] = el_meta
                 except Exception:
                     struct_key_to_el_title = {}
+                    struct_key_to_el_meta = {}
                 try:
                     for dp in dp_defs:
                         key = str(dp.get("key", "")).strip()
                         kind, skey = parse_structure_type(dp.get("data_type"))
+                        dt = str(dp.get("data_type", "")).strip()
+                        ek = dp.get("enum_key")
                         if key and skey and kind in ("object", "list_object"):
                             dp_key_to_struct[key] = (kind, skey)
+                        if key:
+                            dp_key_to_enum_meta[key] = (dt, (str(ek).strip() if ek else None))
                 except Exception:
                     dp_key_to_struct = {}
+                    dp_key_to_enum_meta = {}
 
                 # Build clause grouping helpers (group by clause_keys from template)
                 clause_key_to_title: dict[str, str] = {}
@@ -946,6 +980,58 @@ def main() -> None:
                     label = group_label_for_dp_key(k)
                     grouped_rows.setdefault(label, []).append(row)
 
+                def translate_bool_value(raw: Any, data_type: str | None) -> str | None:
+                    if data_type is None:
+                        return None
+                    dt = str(data_type).strip().lower()
+                    if "bool" not in dt:
+                        return None
+                    val = raw
+                    try:
+                        if val is None:
+                            return "No"
+                        if isinstance(val, bool):
+                            return "Yes" if val else "No"
+                        s = str(val).strip().lower()
+                        if s in ("true", "yes", "y", "1", "t"):  # truthy tokens
+                            return "Yes"
+                        if s in ("false", "no", "n", "0", "f", "none", "nan", ""):
+                            return "No"
+                        # Numeric fallback
+                        num = float(s)
+                        return "Yes" if num != 0.0 else "No"
+                    except Exception:
+                        return "No"
+
+                def translate_enum_value(
+                    raw: Any, data_type: str | None, enum_key: str | None
+                ) -> str:
+                    if not enum_key or not data_type:
+                        return str(raw)
+                    dt = str(data_type).strip().lower()
+                    e_map = enum_map.get(enum_key, {})
+
+                    def _map_one(x: Any) -> str:
+                        s = str(x).strip()
+                        return e_map.get(s, s)
+
+                    if dt.startswith("list[") and "enum" in dt:
+                        val = raw
+                        if isinstance(val, (list, tuple)):
+                            items = [_map_one(v) for v in val]
+                            return ", ".join([x for x in items if str(x).strip()])
+                        # Try JSON or comma-separated
+                        parsed = try_parse_json(val)
+                        if isinstance(parsed, (list, tuple)):
+                            items = [_map_one(v) for v in parsed]
+                            return ", ".join([x for x in items if str(x).strip()])
+                        s = str(val)
+                        parts = [p.strip() for p in s.split(",") if p.strip()]
+                        return ", ".join([_map_one(p) for p in parts]) if parts else _map_one(val)
+                    if "enum" in dt:
+                        return _map_one(raw)
+                    return str(raw)
+
                 def render_one_dp_row(row: pd.Series) -> None:
                     title = str(row.get("title", "")).strip() or str(row.get("key", "")).strip()
                     dp_key = str(row.get("key", "")).strip()
@@ -963,7 +1049,9 @@ def main() -> None:
                         parsed = try_parse_json(value_cell)
 
                         def render_one_object(
-                            obj: Any, el_titles: dict[str, str] = el_titles
+                            obj: Any,
+                            el_titles: dict[str, str] = el_titles,
+                            structure_key: str = skey,
                         ) -> None:
                             if not isinstance(obj, dict):
                                 return
@@ -973,11 +1061,43 @@ def main() -> None:
                                 ttl = el_titles.get(el_key, el_key)
                                 if isinstance(data, dict):
                                     val = data.get("value")
+                                    # Try boolean mapping first, then enum mapping
+                                    dt_meta = (
+                                        struct_key_to_el_meta.get(structure_key, {}) or {}
+                                    ).get(el_key)
+                                    if dt_meta:
+                                        el_dtype, el_enum_key = dt_meta
+                                        bool_display = translate_bool_value(val, el_dtype)
+                                        if bool_display is not None:
+                                            display_val = bool_display
+                                        else:
+                                            display_val = translate_enum_value(
+                                                val, el_dtype, el_enum_key
+                                            )
+                                    else:
+                                        display_val = val
                                     c = format_conf_percent(data.get("confidence"))
                                     expl = str(data.get("explanation", "")).strip()
-                                    st.markdown(f"- **{ttl}:** {val}\n\n`{c} {expl}`".strip())
+                                    st.markdown(
+                                        f"- **{ttl}:** {display_val}\n\n`{c} {expl}`".strip()
+                                    )
                                 else:
-                                    st.markdown(f"- **{ttl}:** {data}")
+                                    # Raw value: attempt boolean/enum mapping
+                                    dt_meta = (
+                                        struct_key_to_el_meta.get(structure_key, {}) or {}
+                                    ).get(el_key)
+                                    if dt_meta:
+                                        el_dtype, el_enum_key = dt_meta
+                                        bool_display = translate_bool_value(data, el_dtype)
+                                        if bool_display is not None:
+                                            display_val = bool_display
+                                        else:
+                                            display_val = translate_enum_value(
+                                                data, el_dtype, el_enum_key
+                                            )
+                                    else:
+                                        display_val = data
+                                    st.markdown(f"- **{ttl}:** {display_val}")
 
                         if kind == "list_object" and isinstance(parsed, list):
                             for obj in parsed:
@@ -987,8 +1107,19 @@ def main() -> None:
                             render_one_object(parsed if isinstance(parsed, dict) else {})
                             st.markdown("")
                     else:
+                        # Simple datapoint: map booleans to Yes/No and translate enum codes
+                        dt_meta = dp_key_to_enum_meta.get(dp_key)
+                        if dt_meta:
+                            dt_s, enum_key = dt_meta
+                            bool_display = translate_bool_value(value_cell, dt_s)
+                            if bool_display is not None:
+                                value_display = bool_display
+                            else:
+                                value_display = translate_enum_value(value_cell, dt_s, enum_key)
+                        else:
+                            value_display = value_cell
                         st.markdown(
-                            f"**{title}**: {value_cell}\n\n`{conf_str} {explanation}`".strip()
+                            f"**{title}**: {value_display}\n\n`{conf_str} {explanation}`".strip()
                         )
                         # st.markdown("")
 
@@ -1018,8 +1149,16 @@ def main() -> None:
                     key_to_title = {
                         str(c.get("key")): c.get("title") or str(c.get("key")) for c in clauses
                     }
+                    # Map guideline key -> priority from template
+                    gl_defs = tmpl.get("guidelines", []) or []
+                    gl_key_to_priority: dict[str, str] = {
+                        str(g.get("key", "")).strip(): str(g.get("priority", "")).strip()
+                        for g in gl_defs
+                        if str(g.get("key", "")).strip()
+                    }
                 except Exception:
                     key_to_title = {}
+                    gl_key_to_priority = {}
                 clause_title_series = clause_series.map(lambda k: key_to_title.get(str(k), str(k)))
                 conf_series = df_cls.get("confidence", pd.Series(dtype=object)).map(
                     lambda v: f"{int(v)}%" if pd.notna(v) and str(v).strip() != "" else ""
@@ -1206,7 +1345,9 @@ def main() -> None:
                             el_titles = struct_key_to_el_title.get(skey, {})
 
                             def render_one_object(
-                                obj: Any, el_titles: dict[str, str] = el_titles
+                                obj: Any,
+                                el_titles: dict[str, str] = el_titles,
+                                structure_key: str = skey,
                             ) -> list[str]:
                                 lines: list[str] = []
                                 if isinstance(obj, dict):
@@ -1214,7 +1355,17 @@ def main() -> None:
                                     for el_key in keys_in_order:
                                         data = obj.get(el_key)
                                         if not isinstance(data, dict):
-                                            val = str(data)
+                                            # Attempt enum translation for raw values
+                                            dt_meta = (
+                                                struct_key_to_el_meta.get(structure_key, {}) or {}
+                                            ).get(el_key)
+                                            if dt_meta:
+                                                el_dtype, el_enum_key = dt_meta
+                                                val = translate_enum_value(
+                                                    data, el_dtype, el_enum_key
+                                                )
+                                            else:
+                                                val = str(data)
                                             ttl = el_titles.get(el_key, el_key)
                                             sub = f"{ttl}: {val}".strip()
                                             lines.append(sub)
@@ -1227,8 +1378,19 @@ def main() -> None:
                                             except Exception:
                                                 pass
                                         expl = data.get("explanation")
+                                        # Attempt enum translation for structured objects with value/confidence/explanation
+                                        dt_meta = (
+                                            struct_key_to_el_meta.get(structure_key, {}) or {}
+                                        ).get(el_key)
+                                        if dt_meta:
+                                            el_dtype, el_enum_key = dt_meta
+                                            display_val = translate_enum_value(
+                                                val, el_dtype, el_enum_key
+                                            )
+                                        else:
+                                            display_val = val
                                         ttl = el_titles.get(el_key, el_key)
-                                        first = f"{ttl}: {val}".strip()
+                                        first = f"{ttl}: {display_val}".strip()
                                         second_parts: list[str] = []
                                         c_str = str(c).strip()
                                         expl_str = str(expl or "").strip()
@@ -1349,6 +1511,19 @@ def main() -> None:
                     }
                 except Exception:
                     key_to_title = {}
+
+                # Map guideline key -> priority from template for priority badges
+                gl_key_to_priority: dict[str, str] = {}
+                try:
+                    tmpl_gl = load_template_dict(template_key)
+                    gl_defs = tmpl_gl.get("guidelines", []) or []
+                    for g in gl_defs:
+                        gk = str(g.get("key", "")).strip()
+                        if not gk:
+                            continue
+                        gl_key_to_priority[gk] = str(g.get("priority", "")).strip()
+                except Exception:
+                    gl_key_to_priority = {}
                 clause_title_series = clause_series.map(lambda k: key_to_title.get(str(k), str(k)))
                 conf_series = df_cls.get("confidence", pd.Series(dtype=object)).map(
                     lambda v: f"{int(v)}%" if pd.notna(v) and str(v).strip() != "" else ""
@@ -1429,8 +1604,20 @@ def main() -> None:
                             continue
                     return out
 
+                def _priority_class(p: str) -> str:
+                    s = str(p or "").strip().lower()
+                    if s in ("high", "material", "critical", "severe"):
+                        return "sev-material"
+                    if s in ("medium", "important", "major"):
+                        return "sev-important"
+                    if s in ("low", "minor"):
+                        return "sev-minor"
+                    return "sev-minor"
+
                 for _, r in df_gl.iterrows():
                     guideline_text = str(r.get("guideline", "")).strip()
+                    gkey = str(r.get("key", "")).strip()
+                    prio = gl_key_to_priority.get(gkey, "")
                     matched = str(r.get("guideline_matched", "")).strip()
                     conf_val = r.get("confidence", "")
                     try:
@@ -1443,9 +1630,21 @@ def main() -> None:
                         conf_str = str(conf_val).strip()
                     explanation = str(r.get("explanation", "")).strip()
                     header = guideline_text
-                    status = f"Matched: {matched}" if matched != "" else ""
-                    trail = " ".join([p for p in [status, conf_str, explanation] if p]).strip()
-                    content_html = header if not trail else f"{header}<br/>{trail}"
+                    # Badge: Verified (green) if matched truthy; otherwise show priority chip
+                    is_matched = str(matched).strip().lower() in ("true", "yes", "1")
+                    if is_matched:
+                        badge_html = '<span class="sev verified">Verified</span>'
+                    else:
+                        pr_cls = _priority_class(prio)
+                        pr_label = (str(prio).strip() or "priority").capitalize()
+                        badge_html = f'<span class="sev {pr_cls}">{pr_label}</span>'
+                    conf_html = f'<span class="dp-conf">{conf_str}</span>' if conf_str else ""
+                    expl_html = f'<span class="dp-meta">{explanation}</span>' if explanation else ""
+                    meta_parts = [x for x in [conf_html, expl_html] if x]
+                    meta_html = (
+                        badge_html if not meta_parts else f"{badge_html} {' '.join(meta_parts)}"
+                    )
+                    content_html = header if not meta_html else f"{header}<br/>{meta_html}"
 
                     ev = parse_evidence_field(r.get("evidence", ""))
                     idx = 0
@@ -1481,6 +1680,11 @@ def main() -> None:
                         ".wrapped-table col.clause-col{width:25%;}"
                         ".wrapped-table col.dp-col{width:25%;}"
                         ".wrapped-table .dp-item{margin-bottom:0.5rem;padding-bottom:0.25rem;border-bottom:1px solid #eee;}"
+                        ".wrapped-table .sev{padding:2px 6px;border-radius:10px;font-size:0.85em;color:#fff;margin-right:6px;}"
+                        ".wrapped-table .sev-material{background:#b71c1c;}"
+                        ".wrapped-table .sev-important{background:#ef6c00;}"
+                        ".wrapped-table .sev-minor{background:#616161;}"
+                        ".wrapped-table .verified{background:#2e7d32;}"
                         "</style>"
                         '<table class="wrapped-table">'
                         "<colgroup>"
@@ -1747,6 +1951,7 @@ def main() -> None:
                 # Build clause title lookup and guideline->clause_keys mapping from template
                 clause_key_to_title: dict[str, str] = {}
                 gl_key_to_clause_keys: dict[str, tuple[str, ...]] = {}
+                gl_key_to_priority: dict[str, str] = {}
                 try:
                     tmpl2 = load_template_dict(template_key)
                     clause_defs = (tmpl2.get("clauses") or []) if isinstance(tmpl2, dict) else []
@@ -1759,6 +1964,7 @@ def main() -> None:
                     )
                     for g in guideline_defs:
                         gk = str(g.get("key", "")).strip()
+                        pr = str(g.get("priority", "")).strip()
                         cks = g.get("clause_keys") or []
                         if isinstance(cks, (list, tuple)):
                             keys = tuple(str(x).strip() for x in cks if str(x).strip())
@@ -1766,9 +1972,11 @@ def main() -> None:
                             keys = tuple()
                         if gk:
                             gl_key_to_clause_keys[gk] = keys
+                            gl_key_to_priority[gk] = pr
                 except Exception:
                     clause_key_to_title = {}
                     gl_key_to_clause_keys = {}
+                    gl_key_to_priority = {}
                 try:
                     from collections import OrderedDict
                 except Exception:
@@ -1820,24 +2028,52 @@ def main() -> None:
                         s = str(val).strip()
                         return f"{s}%" if s and not s.endswith("%") else s
 
+                def _priority_class(p: str) -> str:
+                    s = str(p or "").strip().lower()
+                    if s in ("high", "material", "critical", "severe"):
+                        return "sev-material"
+                    if s in ("medium", "important", "major"):
+                        return "sev-important"
+                    if s in ("low", "minor"):
+                        return "sev-minor"
+                    return "sev-minor"
+
                 for heading, rows in grouped_gl.items():
                     st.markdown(f"### {heading}")
                     for r in rows:
                         guideline_text = str(r.get("guideline", "")).strip()
+                        gk = str(r.get("key", "")).strip()
+                        prio = gl_key_to_priority.get(gk, "")
                         matched = str(r.get("guideline_matched", "")).strip()
                         conf_str = _format_conf(r.get("confidence", ""))
                         explanation = str(r.get("explanation", "")).strip()
 
+                        # Badge
+                        is_matched = str(matched).strip().lower() in ("true", "yes", "1")
+                        if is_matched:
+                            badge_html = '<span class="sev verified">Verified</span>'
+                        else:
+                            pr_cls = _priority_class(prio)
+                            pr_label = (str(prio).strip() or "priority").capitalize()
+                            badge_html = f'<span class="sev {pr_cls}">{pr_label}</span>'
+
+                        conf_html = (
+                            f'<span class="dp-conf">{conf_str}</span>'
+                            if str(conf_str).strip()
+                            else ""
+                        )
+                        expl_html = (
+                            f'<span class="dp-meta">{explanation}</span>'
+                            if str(explanation).strip()
+                            else ""
+                        )
+                        meta_parts = [x for x in [conf_html, expl_html] if x]
+                        meta_html = (
+                            badge_html + (" " + " ".join(meta_parts) if meta_parts else "")
+                        ).strip()
+
                         st.markdown(f"**{guideline_text}**")
-                        parts = []
-                        if matched != "":
-                            parts.append(f"Matched: {matched}")
-                        if conf_str:
-                            parts.append(conf_str)
-                        if explanation:
-                            parts.append(explanation)
-                        if parts:
-                            st.markdown("`" + " ".join(parts) + "`")
+                        st.markdown(meta_html, unsafe_allow_html=True)
 
     with tab_agent:
         repo_root = get_repo_root()

@@ -323,11 +323,6 @@ def main() -> None:
         else:
             st.subheader("Draft preview")
             try:
-                html = render_docx_to_html(Path(str(draft_path)))
-            except Exception:
-                html = render_text_to_html(draft_text or "")
-            st.markdown(html, unsafe_allow_html=True)
-            try:
                 with open(draft_path, "rb") as f:
                     data = f.read()
                 st.download_button(
@@ -338,6 +333,11 @@ def main() -> None:
                 )
             except Exception as e:
                 st.warning(f"Unable to load generated file for download: {e}")
+            try:
+                html = render_docx_to_html(Path(str(draft_path)))
+            except Exception:
+                html = render_text_to_html(draft_text or "")
+            st.markdown(html, unsafe_allow_html=True)
 
 
 if __name__ == "__main__":

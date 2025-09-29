@@ -141,7 +141,7 @@ def _load_guidelines(template_key: str, csv_path_guidelines: Path, model: dict) 
         return model
 
     # Read CSV with tolerant decoding
-    df_guidelines = pd.read_csv(csv_path_guidelines, encoding="utf-8")
+    df_guidelines = pd.read_csv(csv_path_guidelines, encoding="utf-8").fillna("")
 
     # Normalize column names (strip whitespace and BOM artefacts)
     df_guidelines.columns = [str(c).strip().lstrip("\ufeff") for c in df_guidelines.columns]
@@ -150,6 +150,7 @@ def _load_guidelines(template_key: str, csv_path_guidelines: Path, model: dict) 
         raw_id = row.get("id")
         fallback_from_key = row.get("fallback_from_key")
         guideline_text = row.get("guideline")
+        action_text = row.get("action")
         raw_priority = row.get("priority")
         raw_scope = row.get("scope")
         raw_clause_keys = row.get("clause_keys")
@@ -160,6 +161,8 @@ def _load_guidelines(template_key: str, csv_path_guidelines: Path, model: dict) 
             isinstance(guideline_text, float) and pd.isna(guideline_text)
         ):
             continue
+        if action_text is None or (isinstance(action_text, float) and pd.isna(action_text)):
+            action_text = ""
 
         # Generate a stable key if missing/blank id
         if (
@@ -211,6 +214,7 @@ def _load_guidelines(template_key: str, csv_path_guidelines: Path, model: dict) 
                 "key": guideline_key,
                 "fallback_from_key": fallback_from_key,
                 "guideline": str(guideline_text),
+                "action": str(action_text),
                 "priority": priority_value,
                 "scope": scope_value,
                 "clause_keys": (

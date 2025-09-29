@@ -175,6 +175,10 @@ class GuidelineDefinition(FrozenBaseModel):
     guideline: str = Field(
         ..., description="Human-readable guideline description (e.g., 'Guideline 1 description')."
     )
+    action: str = Field(
+        ...,
+        description="Action to be taken when the guideline is not matched (e.g., 'request approval from Risk Management').",
+    )
     priority: str = Field(
         default="medium",
         description="Priority of the guideline. Higher priority guidelines are preferred when multiple are applicable.",

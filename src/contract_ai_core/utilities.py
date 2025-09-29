@@ -48,7 +48,10 @@ def get_langchain_chat_model(
     """
     _load_dotenv_if_available()
 
-    normalized = (provider or "").strip().lower()
+    if os.getenv("PROVIDER"):
+        normalized = os.getenv("PROVIDER")
+    else:
+        normalized = (provider or "").strip().lower()
 
     if normalized == "openai":
         try:

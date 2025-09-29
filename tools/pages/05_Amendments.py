@@ -197,6 +197,214 @@ def main() -> None:
     st.set_page_config(page_title="Amendments", layout="wide")
     st.title("Amendments")
 
+    # Sidebar: Create new amendment (upload/select contract + amendment)
+    with st.sidebar.expander("Create amendment", expanded=False):
+        # Select template (contract type). Reuse list from contract types JSONs
+        def list_templates() -> list[str]:
+            repo_root = get_repo_root()
+            ct_dir = repo_root / "dataset" / "contract_types"
+            keys: list[str] = []
+            try:
+                for p in sorted(ct_dir.glob("*.json")):
+                    keys.append(p.stem)
+            except Exception:
+                pass
+            return keys
+
+        templates = list_templates()
+        if not templates:
+            st.info("No template JSON files found under dataset/contract_types/")
+        else:
+            if "amendments_template" not in st.session_state:
+                st.session_state.amendments_template = templates[0]
+            template_key = st.selectbox(
+                "Contract type",
+                templates,
+                index=templates.index(st.session_state.get("amendments_template", templates[0])),
+                key="amendments_template_select",
+            )
+            if template_key != st.session_state.get("amendments_template"):
+                st.session_state.amendments_template = template_key
+
+        # Model selection based on existing outputs
+        def list_models_for_template() -> list[str]:
+            repo_root = get_repo_root()
+            base_dir = repo_root / "dataset" / "output" / "amendments" / "instructions"
+            base_dir.mkdir(parents=True, exist_ok=True)
+            models: list[str] = []
+            try:
+                for p in base_dir.iterdir():
+                    if p.is_dir():
+                        models.append(p.name)
+            except Exception:
+                pass
+            # Provide a sane default if none exist yet
+            return sorted(models) or ["gpt-4.1-mini"]
+
+        models = list_models_for_template()
+        if "amendments_model" not in st.session_state:
+            st.session_state.amendments_model = models[0]
+        model_name = st.selectbox(
+            "Model",
+            models,
+            index=models.index(st.session_state.get("amendments_model", models[0])),
+            key="amendments_model_select",
+        )
+        if model_name != st.session_state.get("amendments_model"):
+            st.session_state.amendments_model = model_name
+
+        st.markdown("Upload initial contract and amendment (plain text or markdown).")
+        up_contract = st.file_uploader(
+            "Initial contract (.txt/.md)",
+            type=["txt", "md"],
+            key="amendment_initial_uploader",
+        )
+        up_amendment = st.file_uploader(
+            "Amendment (.txt/.md)",
+            type=["txt", "md"],
+            key="amendment_uploader",
+        )
+
+        disabled = up_contract is None or up_amendment is None or not templates
+        if st.button(
+            "Generate amended and restated", disabled=disabled, key="amendments_generate_button"
+        ):
+            try:
+                repo_root = get_repo_root()
+
+                # Decode uploads
+                def _to_text(buf: bytes) -> str:
+                    try:
+                        return buf.decode("utf-8", errors="ignore")
+                    except Exception:
+                        return buf.decode("latin-1", errors="ignore")
+
+                contract_text = _to_text(up_contract.getvalue())  # type: ignore[union-attr]
+                amendment_text = _to_text(up_amendment.getvalue())  # type: ignore[union-attr]
+
+                stem = Path(up_amendment.name).stem  # type: ignore[arg-type]
+
+                # Persist inputs under dataset paths
+                init_dir = repo_root / "dataset" / "documents" / "amendments" / "initial"
+                amd_dir = repo_root / "dataset" / "documents" / "amendments" / "amendment"
+                init_dir.mkdir(parents=True, exist_ok=True)
+                amd_dir.mkdir(parents=True, exist_ok=True)
+                (init_dir / f"{stem}.md").write_text(contract_text, encoding="utf-8")
+                (amd_dir / f"{stem}.md").write_text(amendment_text, encoding="utf-8")
+
+                # Load template
+                import sys as _sys
+
+                src_dir = repo_root / "src"
+                if str(src_dir) not in _sys.path:
+                    _sys.path.insert(0, str(src_dir))
+                tools_dir = repo_root / "tools"
+                if str(tools_dir) not in _sys.path:
+                    _sys.path.insert(0, str(tools_dir))
+                from contract_ai_core import (
+                    ContractReviser,
+                    ContractReviserConfig,
+                    ContractTypeTemplate,
+                )
+                from utilities import load_template as _load_template  # type: ignore
+
+                template = ContractTypeTemplate.model_validate(_load_template(template_key))
+
+                # Initialize reviser (match CLI defaults)
+                temperature = 1.0 if "gpt-5" in str(model_name) else 0.2
+                reviser = ContractReviser(
+                    ContractReviserConfig(
+                        provider="openai",
+                        model=str(model_name),
+                        max_tokens=8000,
+                        temperature=temperature,
+                    )
+                )
+
+                # Split to paragraphs
+                contract_paras = split_text_into_paragraphs(contract_text)
+                amendment_paras = split_text_into_paragraphs(amendment_text)
+
+                with st.spinner("Generating amended and restated document …"):
+                    revised = reviser.generate_amended_and_restated(
+                        contract=contract_paras,
+                        amendment=amendment_paras,
+                        template=template,
+                    )
+
+                # Write outputs mirroring run_reviser.py
+                out_restated_dir = (
+                    repo_root / "dataset" / "output" / "amendments" / "restated" / str(model_name)
+                )
+                out_instructions_dir = (
+                    repo_root
+                    / "dataset"
+                    / "output"
+                    / "amendments"
+                    / "instructions"
+                    / str(model_name)
+                )
+                out_restated_dir.mkdir(parents=True, exist_ok=True)
+                out_instructions_dir.mkdir(parents=True, exist_ok=True)
+
+                restated_path = out_restated_dir / f"{stem}.md"
+                with restated_path.open("w", encoding="utf-8") as f:
+                    for p in revised.new_content:
+                        f.write(p.text)
+                        f.write("\n\n")
+
+                import json as _json
+
+                instructions_path = out_instructions_dir / f"{stem}.json"
+                with instructions_path.open("w", encoding="utf-8") as f:
+                    _json.dump(
+                        [
+                            {
+                                "amendment_start_line": r.amendment_start_line,
+                                "amendment_end_line": r.amendment_end_line,
+                                "amendment_span_text": "\n\n".join(
+                                    p.text
+                                    for p in amendment_paras
+                                    if (
+                                        r.amendment_start_line is not None
+                                        and r.amendment_end_line is not None
+                                        and r.amendment_start_line
+                                        <= p.index
+                                        <= r.amendment_end_line
+                                    )
+                                ).strip(),
+                                "target_section": r.target_section,
+                                "confidence_target": r.confidence_target,
+                                "change_explanation": r.change_explanation,
+                                "target_paragraph_indices": r.target_paragraph_indices,
+                                "confidence_target_paragraph_indices": r.confidence_target_paragraph_indices,
+                                "target_paragraph_explanation": r.target_paragraph_explanation,
+                                "initial_paragraphs": [
+                                    {"index": p.index, "text": p.text}
+                                    for p in (r.initial_paragraphs or [])
+                                ],
+                                "revised_paragraphs": [
+                                    {"index": p.index, "text": p.text}
+                                    for p in (r.revised_paragraphs or [])
+                                ],
+                                "confidence_revision": r.confidence_revision,
+                                "revision_explanation": r.revision_explanation,
+                            }
+                            for r in revised.applied_instructions
+                        ],
+                        f,
+                        ensure_ascii=False,
+                        indent=2,
+                    )
+
+                st.success(
+                    f"Wrote {restated_path.relative_to(repo_root)} and {instructions_path.relative_to(repo_root)}"
+                )
+                if st.button("Reload page to view new outputs", key="sidebar_reload_new_amendment"):
+                    st.rerun()
+            except Exception as e:
+                st.error(f"Failed to generate amendment: {e}")
+
     # Sidebar filters
     st.sidebar.header("Selection")
     models = get_instruction_models()

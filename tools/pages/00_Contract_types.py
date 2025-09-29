@@ -177,6 +177,7 @@ def main() -> None:
             preferred = [
                 "key",
                 "guideline",
+                "action",
                 "scope",
                 "clause_keys",
                 "fallback_from_key",
@@ -230,10 +231,11 @@ def main() -> None:
                 st.divider()
 
     with tab_export:
-        st.subheader("Export / Import CSVs")
+        st.subheader("Export / Import")
         repo_root = get_repo_root()
         ct_dir = repo_root / "dataset" / "contract_types"
         part_options = [
+            "main json",
             "clauses",
             "datapoints",
             "guidelines",
@@ -310,6 +312,7 @@ def main() -> None:
                 preferred = [
                     "id",
                     "guideline",
+                    "action",
                     "scope",
                     "clause_keys",
                     "fallback_from_key",
@@ -392,54 +395,91 @@ def main() -> None:
                 return dfelem[cols]
             return pd.DataFrame()
 
-        df_current = df_for_part(model, part)
+        if part == "main json":
+            # Export main template JSON as-is from disk
+            json_path = ct_dir / f"{selected}.json"
+            try:
+                json_text = json_path.read_text(encoding="utf-8")
+            except Exception as e:
+                st.error(f"Failed to read JSON: {e}")
+                json_text = "{}"
 
-        # Export
-        file_suffix = (
-            "clauses.csv"
-            if part == "clauses"
-            else (
-                "datapoints.csv"
-                if part == "datapoints"
+            st.download_button(
+                label="Download main JSON",
+                data=json_text.encode("utf-8"),
+                file_name=f"{selected}.json",
+                mime="application/json",
+            )
+
+            # Import main JSON
+            uploaded_json = st.file_uploader(
+                "Upload main JSON to replace",
+                type=["json"],
+                key=f"uploader::{selected}::main_json",
+                help="Uploading will overwrite the main JSON on disk.",
+            )
+            if uploaded_json is not None:
+                try:
+                    out_path = ct_dir / f"{selected}.json"
+                    with out_path.open("wb") as f:
+                        f.write(uploaded_json.getbuffer())
+                except Exception as e:
+                    st.error(f"Failed to save JSON: {e}")
+                else:
+                    st.success(f"Saved to {out_path.as_posix()}.")
+                    if st.button("Reload template"):
+                        st.rerun()
+        else:
+            df_current = df_for_part(model, part)
+
+            # Export CSV for the selected part
+            file_suffix = (
+                "clauses.csv"
+                if part == "clauses"
                 else (
-                    "guidelines.csv"
-                    if part == "guidelines"
+                    "datapoints.csv"
+                    if part == "datapoints"
                     else (
-                        "enums.csv"
-                        if part == "enums"
+                        "guidelines.csv"
+                        if part == "guidelines"
                         else (
-                            "structures.csv" if part == "structures" else "structure_elements.csv"
+                            "enums.csv"
+                            if part == "enums"
+                            else (
+                                "structures.csv"
+                                if part == "structures"
+                                else "structure_elements.csv"
+                            )
                         )
                     )
                 )
             )
-        )
-        export_name = f"{selected}_{file_suffix}"
-        st.download_button(
-            label=f"Download {part} CSV",
-            data=df_current.to_csv(index=False).encode("utf-8"),
-            file_name=export_name,
-            mime="text/csv",
-        )
+            export_name = f"{selected}_{file_suffix}"
+            st.download_button(
+                label=f"Download {part} CSV",
+                data=df_current.to_csv(index=False).encode("utf-8"),
+                file_name=export_name,
+                mime="text/csv",
+            )
 
-        # Import
-        uploaded = st.file_uploader(
-            f"Upload {part} CSV to replace",
-            type=["csv"],
-            key=f"uploader::{selected}::{part}",
-            help="Uploading will overwrite the corresponding CSV on disk.",
-        )
-        if uploaded is not None:
-            try:
-                out_path = ct_dir / export_name
-                with out_path.open("wb") as f:
-                    f.write(uploaded.getbuffer())
-            except Exception as e:
-                st.error(f"Failed to save CSV: {e}")
-            else:
-                st.success(f"Saved to {out_path.as_posix()}.")
-                if st.button("Reload template"):
-                    st.rerun()
+            # Import CSV
+            uploaded = st.file_uploader(
+                f"Upload {part} CSV to replace",
+                type=["csv"],
+                key=f"uploader::{selected}::{part}",
+                help="Uploading will overwrite the corresponding CSV on disk.",
+            )
+            if uploaded is not None:
+                try:
+                    out_path = ct_dir / export_name
+                    with out_path.open("wb") as f:
+                        f.write(uploaded.getbuffer())
+                except Exception as e:
+                    st.error(f"Failed to save CSV: {e}")
+                else:
+                    st.success(f"Saved to {out_path.as_posix()}.")
+                    if st.button("Reload template"):
+                        st.rerun()
 
     with tab_structures:
         structs = model.get("structures", []) or []
