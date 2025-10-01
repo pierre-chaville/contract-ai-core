@@ -7,6 +7,8 @@ Fields:
 - metadata: JSON, conforms to `contract_ai_core.schema.ContractMetadata`
 - full_text: TEXT, the full contract text
 - clauses: JSON, {clause_id: clause_text}
+ - clauses_text: JSON, {clause_title: clause_text}
+- list_clauses: JSON, [clause_title, ...]
 - datapoints: JSON, {datapoint_id: value}
 - guidelines: JSON, {guideline_id: matched_bool}
 
@@ -76,7 +78,8 @@ class ContractRecord(Base):
     contract_owner: Mapped[str | None] = mapped_column(String(255), nullable=True)
     business_purpose: Mapped[str | None] = mapped_column(Text, nullable=True)
     full_text: Mapped[str] = mapped_column(Text, nullable=False)
-    clauses: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    clauses_text: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    list_clauses: Mapped[list] = mapped_column(JSON, nullable=True, default=list)
     datapoints: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
     guidelines: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
 

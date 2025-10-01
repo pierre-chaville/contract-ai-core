@@ -53,7 +53,8 @@ class ContractRecord(Base):
     contract_owner: Mapped[str | None] = mapped_column(String(255), nullable=True)
     business_purpose: Mapped[str | None] = mapped_column(Text, nullable=True)
     full_text: Mapped[str] = mapped_column(Text, nullable=False)
-    clauses: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    clauses_text: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    list_clauses: Mapped[list] = mapped_column(JSON, nullable=True, default=list)
     datapoints: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
     guidelines: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
 
@@ -99,8 +100,8 @@ def _apply_scopes_to_text(text: str, scopes: List[dict]) -> str:
 
 
 def _read_clauses_csv(path: Path) -> Dict[str, str]:
-    # Input rows represent paragraphs: index, clause_key, confidence, text
-    # We aggregate paragraph texts per clause_key, ignoring rows with empty clause_key
+    # Input rows represent paragraphs: index, clause_key, (optional) clause_title, confidence, text
+    # We aggregate paragraph texts per clause TITLE when available; fallback to key if title missing
     print(path)
     if not path.exists():
         return {}
@@ -116,18 +117,168 @@ def _read_clauses_csv(path: Path) -> Dict[str, str]:
             or columns.get("key")
             or columns.get("clause")
         )
+        # Prefer an explicit human-readable title
+        title_col = (
+            columns.get("title")
+            or columns.get("clause_title")
+            or columns.get("name")
+            or columns.get("clause_name")
+            or columns.get("label")
+        )
         text_col = columns.get("text") or columns.get("clause_text") or columns.get("value")
         for row in reader:
             clause_key = (row.get(key_col or "") or "").strip()
+            title_val = (row.get(title_col or "") or "").strip()
             paragraph_text = (row.get(text_col or "") or "").strip()
             if not paragraph_text:
                 continue
-            if not clause_key:
-                # Paragraph has no mapped clause; skip
+            # Skip rows with neither key nor title
+            if not clause_key and not title_val:
                 continue
-            aggregated.setdefault(clause_key, []).append(paragraph_text)
-    # Join paragraphs per clause with newlines
+            agg_key = title_val or clause_key
+            aggregated.setdefault(agg_key, []).append(paragraph_text)
+    # Join paragraphs per clause with newlines, keyed by TITLE
     return {k: "\n".join(v) for k, v in aggregated.items()}
+
+
+def _read_clause_titles(path: Path) -> List[str]:
+    """Return the list of clause TITLES present in the clauses CSV (fallback to keys)."""
+    if not path.exists():
+        return []
+    titles: List[str] = []
+    with path.open("r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        if not reader.fieldnames:
+            return []
+        columns = {name.lower(): name for name in reader.fieldnames}
+        key_col = (
+            columns.get("clause_key")
+            or columns.get("clause_id")
+            or columns.get("key")
+            or columns.get("clause")
+        )
+        title_col = (
+            columns.get("title")
+            or columns.get("clause_title")
+            or columns.get("name")
+            or columns.get("clause_name")
+            or columns.get("label")
+        )
+        seen = set()
+        for row in reader:
+            title_val = (row.get(title_col or "") or "").strip()
+            clause_key = (row.get(key_col or "") or "").strip()
+            value = title_val or clause_key
+            if value and value not in seen:
+                titles.append(value)
+                seen.add(value)
+    return titles
+
+
+def _load_clause_title_map(dataset_root: Path, contract_type: Optional[str]) -> Dict[str, str]:
+    """Load a mapping of clause_key -> title from dataset/contract_types/<contract_type>_clauses.csv.
+
+    Returns an empty dict if no mapping file is available.
+    """
+    if not contract_type:
+        return {}
+    map_path = dataset_root / "contract_types" / f"{contract_type}_clauses.csv"
+    if not map_path.exists():
+        return {}
+    mapping: Dict[str, str] = {}
+    with map_path.open("r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        if not reader.fieldnames:
+            return {}
+        cols = {name.lower(): name for name in reader.fieldnames}
+        key_col = (
+            cols.get("clause_key")
+            or cols.get("clause_id")
+            or cols.get("key")
+            or cols.get("id")
+            or cols.get("clause")
+        )
+        title_col = (
+            cols.get("title") or cols.get("clause_title") or cols.get("name") or cols.get("label")
+        )
+        for row in reader:
+            key_val = (row.get(key_col or "") or "").strip()
+            title_val = (row.get(title_col or "") or "").strip()
+            if key_val and title_val:
+                mapping[key_val] = title_val
+    return mapping
+
+
+def _read_clauses_csv_with_map(path: Path, title_map: Dict[str, str]) -> Dict[str, str]:
+    """Aggregate clause texts by TITLE using a provided title map; fallback to row title, then key."""
+    if not path.exists():
+        return {}
+    aggregated: Dict[str, list[str]] = {}
+    with path.open("r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        if not reader.fieldnames:
+            return {}
+        columns = {name.lower(): name for name in reader.fieldnames}
+        key_col = (
+            columns.get("clause_key")
+            or columns.get("clause_id")
+            or columns.get("key")
+            or columns.get("clause")
+        )
+        title_col = (
+            columns.get("title")
+            or columns.get("clause_title")
+            or columns.get("name")
+            or columns.get("clause_name")
+            or columns.get("label")
+        )
+        text_col = columns.get("text") or columns.get("clause_text") or columns.get("value")
+        for row in reader:
+            clause_key = (row.get(key_col or "") or "").strip()
+            row_title = (row.get(title_col or "") or "").strip()
+            paragraph_text = (row.get(text_col or "") or "").strip()
+            if not paragraph_text:
+                continue
+            if not clause_key and not row_title:
+                continue
+            mapped_title = title_map.get(clause_key, "") if clause_key else ""
+            agg_key = mapped_title or row_title or clause_key
+            aggregated.setdefault(agg_key, []).append(paragraph_text)
+    return {k: "\n".join(v) for k, v in aggregated.items()}
+
+
+def _read_clause_titles_with_map(path: Path, title_map: Dict[str, str]) -> List[str]:
+    if not path.exists():
+        return []
+    titles: List[str] = []
+    seen = set()
+    with path.open("r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        if not reader.fieldnames:
+            return []
+        columns = {name.lower(): name for name in reader.fieldnames}
+        key_col = (
+            columns.get("clause_key")
+            or columns.get("clause_id")
+            or columns.get("key")
+            or columns.get("clause")
+        )
+        title_col = (
+            columns.get("title")
+            or columns.get("clause_title")
+            or columns.get("name")
+            or columns.get("clause_name")
+            or columns.get("label")
+        )
+        for row in reader:
+            clause_key = (row.get(key_col or "") or "").strip()
+            row_title = (row.get(title_col or "") or "").strip()
+            title = title_map.get(clause_key) if clause_key else None
+            value = title or row_title or clause_key
+            if value and value not in seen:
+                titles.append(value)
+                seen.add(value)
+    return titles
 
 
 def _read_datapoints_csv(path: Path) -> Dict[str, Any]:
@@ -294,8 +445,17 @@ def load_all(dry_run: bool = False, echo: bool = False) -> None:
                         text = _apply_scopes_to_text(text, scopes)
                 full_text = text
 
-            clauses = (
-                _read_clauses_csv(paths["clauses_csv"]) if paths["clauses_csv"].exists() else {}
+            # Load mapping for clause keys -> titles by contract_type
+            title_map = _load_clause_title_map(dataset_root, contract_type)
+            clauses_text = (
+                _read_clauses_csv_with_map(paths["clauses_csv"], title_map)
+                if paths["clauses_csv"].exists()
+                else {}
+            )
+            list_clauses = (
+                _read_clause_titles_with_map(paths["clauses_csv"], title_map)
+                if paths["clauses_csv"].exists()
+                else []
             )
             datapoints = (
                 _read_datapoints_csv(paths["datapoints_csv"])
@@ -341,7 +501,8 @@ def load_all(dry_run: bool = False, echo: bool = False) -> None:
                 "business_purpose": _to_str(metadata.get("business_purpose")),
                 # content
                 "full_text": full_text or "",
-                "clauses": clauses,
+                "clauses_text": clauses_text,
+                "list_clauses": list_clauses,
                 "datapoints": datapoints,
                 # guidelines left empty for now; no source provided in request
                 "guidelines": {},

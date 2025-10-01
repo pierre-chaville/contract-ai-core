@@ -5,12 +5,17 @@ import json
 import sqlite3
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Literal, Optional
 
 import pandas as pd
 import plotly.express as px
 import streamlit as st
 from contract_ai_core.utilities import get_langchain_chat_model
+
+try:  # Prefer LangChain's Pydantic v1 shim for compatibility
+    from langchain_core.pydantic_v1 import BaseModel, Field  # type: ignore
+except Exception:  # pragma: no cover
+    from pydantic import BaseModel, Field  # type: ignore
 from rapidfuzz import fuzz
 
 DB_PATH = Path(__file__).resolve().parents[2] / "dataset" / "contracts.sqlite"
@@ -21,10 +26,27 @@ class LLMDecision:
     is_db_query: bool
     search_strategy: str  # one of {"sql_only", "text_fulltext", "fuzzy", "hybrid"}
     sql: str | None
-    output: str  # one of {"table", "bar", "line", "pie"}
+    graph_type: str | None  # one of {"bar", "line", "pie"} when graph requested
     explanation: str | None
     fuzzy_terms: List[str] | None = None
     fuzzy_threshold: int | None = None
+    outputs: List[str] | None = None  # subset of {"graph", "table", "download"}
+
+
+class PlanSchema(BaseModel):
+    is_db_query: bool = Field(..., description="Whether the question pertains to the database")
+    search_strategy: Literal["sql_only", "text_fulltext", "fuzzy", "hybrid"]
+    sql: Optional[str] = Field(None, description="Safe SQL SELECT over CONTRACTS")
+    outputs: Optional[List[Literal["graph", "table", "download"]]] = Field(
+        None, description="Which renderings to show; multiple allowed"
+    )
+    graph_type: Optional[Literal["bar", "line", "pie"]] = Field(
+        None,
+        description="Chart type to use when outputs includes 'graph'",
+    )
+    explanation: Optional[str] = None
+    fuzzy_terms: Optional[List[str]] = None
+    fuzzy_threshold: Optional[int] = None
 
 
 SYSTEM_PRIMER = (
@@ -32,18 +54,20 @@ SYSTEM_PRIMER = (
     "The SQLite database has a single table named CONTRACTS with columns: "
     "contract_id, contract_number, contract_type, contract_type_version, contract_date, last_amendment_date, "
     "number_amendments, status, party_name_1, party_role_1, party_name_2, party_role_2, department, contract_owner, "
-    "business_purpose, full_text, clauses (JSON), datapoints (JSON), guidelines (JSON). "
+    "business_purpose, full_text, clauses_text (JSON), list_clauses (JSON array), datapoints (JSON), guidelines (JSON). "
     "The user will ask a question in English. Your job is to: "
     "1) decide if the request is about this database; "
     "2) choose a search strategy (sql_only, text_fulltext, fuzzy, hybrid). full_text searches must use SQL LIKE on full_text with a :q parameter; "
     "3) produce a safe SQL SELECT query over CONTRACTS (avoid DDL/DML; no semicolons, no PRAGMAs); "
-    "4) select an output type (table, bar, line, pie) and 5) provide a 1-2 sentence explanation of the result. "
+    "4) choose visualization based on the user's request: set 'outputs' to an array subset of ['graph','table','download'] indicating which renderings to show (multiple allowed); if 'graph' is included, set 'graph_type' to one of ['bar','line','pie']. "
+    "5) provide a detailed explanation of your reasoning. "
     "Fuzzy search guidance: when strategy is fuzzy or hybrid, FIRST generate an SQL that NARROWS candidates using structured filters from the question (e.g., contract_type, contract_date range/year, status). "
     "ALWAYS include contract_id in the SELECT so downstream fuzzy matching can map results. "
     "Prefer adding a LIMIT 1000 unless the user explicitly asks for all rows. "
-    "Do not use JSON extraction functions; treat clauses/datapoints/guidelines as opaque JSON and let the fuzzy step match their text. "
+    "Treat list_clauses as a JSON array of clause titles. Use this field to generate a clauses column for fuzzy matching."
+    "Do not use JSON extraction functions; treat clauses_text/datapoints/guidelines as opaque JSON and let the fuzzy step match their text. "
     'Also provide optional "fuzzy_terms" (array of 1-3 short phrases) and "fuzzy_threshold" (int 0-100, default 90). '
-    "Return ONLY valid JSON with keys: is_db_query (bool), search_strategy (str), sql (str|null), output (str), explanation (str), fuzzy_terms (array<string>|null), fuzzy_threshold (int|nil)."
+    "Return ONLY valid JSON with keys: is_db_query (bool), search_strategy (str), sql (str|null), outputs (array<string>|null), graph_type (str|null), explanation (str), fuzzy_terms (array<string>|null), fuzzy_threshold (int|nil)."
 )
 
 
@@ -51,6 +75,31 @@ def call_llm_plan(question: str) -> LLMDecision:
     model = get_langchain_chat_model(
         provider="openai", model_name="gpt-4.1", temperature=0.0, max_tokens=800
     )
+    try:
+        structured = model.with_structured_output(PlanSchema)  # type: ignore[attr-defined]
+    except Exception:
+        structured = None
+
+    if structured is not None:
+        resp = structured.invoke(
+            [
+                {"role": "system", "content": SYSTEM_PRIMER},
+                {"role": "user", "content": question},
+            ]
+        )  # type: ignore[attr-defined]
+        plan: PlanSchema = resp  # type: ignore[assignment]
+        return LLMDecision(
+            is_db_query=bool(plan.is_db_query),
+            search_strategy=str(plan.search_strategy),
+            sql=plan.sql,
+            graph_type=str(plan.graph_type) if plan.graph_type is not None else None,
+            explanation=plan.explanation,
+            fuzzy_terms=plan.fuzzy_terms,
+            fuzzy_threshold=plan.fuzzy_threshold,
+            outputs=plan.outputs,
+        )
+
+    # Fallback to previous JSON parsing if structured output isn't available
     messages = [
         {"role": "system", "content": SYSTEM_PRIMER},
         {"role": "user", "content": question},
@@ -59,12 +108,10 @@ def call_llm_plan(question: str) -> LLMDecision:
     content = getattr(resp, "content", None) or getattr(resp, "text", None)
     if not isinstance(content, str):
         raise RuntimeError("LLM returned empty content")
-    # Some providers may wrap JSON in code fences; strip if present
     content_str = content.strip()
     if content_str.startswith("```"):
         content_str = content_str.strip("`")
     content_str = content_str.strip()
-    # Try json parse; if fails, attempt to extract the first JSON object
     try:
         obj = json.loads(content_str)
     except Exception:
@@ -79,12 +126,13 @@ def call_llm_plan(question: str) -> LLMDecision:
         is_db_query=bool(obj.get("is_db_query", True)),
         search_strategy=str(obj.get("search_strategy", "sql_only")),
         sql=(obj.get("sql") if obj.get("sql") is not None else None),
-        output=str(obj.get("output", "table")),
+        graph_type=(str(obj.get("graph_type")) if obj.get("graph_type") is not None else None),
         explanation=obj.get("explanation"),
         fuzzy_terms=(obj.get("fuzzy_terms") if isinstance(obj.get("fuzzy_terms"), list) else None),
         fuzzy_threshold=(
             int(obj.get("fuzzy_threshold")) if obj.get("fuzzy_threshold") is not None else None
         ),
+        outputs=(obj.get("outputs") if isinstance(obj.get("outputs"), list) else None),
     )
 
 
@@ -99,43 +147,89 @@ def run_sql(sql: str, like_text: Optional[str] = None) -> pd.DataFrame:
         return pd.read_sql_query(sql, conn, params=params)
 
 
-def render_output(df: pd.DataFrame, output_type: str) -> None:
+def render_output(df: pd.DataFrame, output_type: str, outputs: Optional[List[str]] = None) -> None:
     if df.empty:
         st.info("No rows matched.")
         return
-    if output_type == "bar":
-        # Heuristic: if there is a numeric column, pick the first numeric as y and first non-numeric as x
-        num_cols = df.select_dtypes(include=["number"]).columns.tolist()
-        non_num_cols = [c for c in df.columns if c not in num_cols]
-        if num_cols and non_num_cols:
-            fig = px.bar(df, x=non_num_cols[0], y=num_cols[0])
+
+    # Determine which elements to show
+    outputs_norm = [str(x).lower() for x in outputs] if outputs else None
+    show_graph = outputs_norm is None or ("graph" in outputs_norm)
+    show_table = outputs_norm is None or ("table" in outputs_norm)
+    show_download = outputs_norm is None or ("download" in outputs_norm)
+
+    # Infer reasonable defaults for x, y, and an optional series (color) dimension
+    num_cols = df.select_dtypes(include=["number"]).columns.tolist()
+    y_col = _infer_count_col(df) or (num_cols[0] if num_cols else None)
+
+    # Choose x based on chart type with sensible preferences
+    if output_type == "line":
+        preferred_x = [
+            "year",
+            "contract_date",
+            "contract_type",
+            "status",
+            "department",
+            "party_name_1",
+            "party_name_2",
+        ]
+    else:  # bar or other categorical-friendly charts
+        preferred_x = [
+            "year",
+            "contract_date",
+            "contract_type",
+            "status",
+            "department",
+            "party_name_1",
+            "party_name_2",
+        ]
+    x_col = _first_categorical_col(df, preferred=preferred_x)
+
+    # Series (color) column: pick a different categorical with multiple levels
+    series_preferences = ["contract_type", "status", "department", "party_name_1", "party_name_2"]
+    series_col: Optional[str] = None
+    for cand in series_preferences + [c for c in df.columns if c != x_col]:
+        if cand == x_col or cand not in df.columns:
+            continue
+        try:
+            if (
+                pd.api.types.is_object_dtype(df[cand])
+                or pd.api.types.is_string_dtype(df[cand])
+                or cand in {"year", "contract_date"}
+            ) and df[cand].nunique(dropna=True) > 1:
+                series_col = cand
+                break
+        except Exception:
+            continue
+
+    if show_graph:
+        if output_type == "bar" and y_col and x_col:
+            fig = px.bar(df, x=x_col, y=y_col, color=series_col if series_col else None)
+            if series_col:
+                fig.update_layout(barmode="stack", showlegend=True, legend_title_text=series_col)
             st.plotly_chart(fig, use_container_width=True)
-        else:
-            st.dataframe(df, use_container_width=True)
-    elif output_type == "line":
-        num_cols = df.select_dtypes(include=["number"]).columns.tolist()
-        non_num_cols = [c for c in df.columns if c not in num_cols]
-        if num_cols and non_num_cols:
-            fig = px.line(df, x=non_num_cols[0], y=num_cols[0])
+        elif output_type == "line" and y_col and x_col:
+            fig = px.line(df, x=x_col, y=y_col, color=series_col if series_col else None)
+            if series_col:
+                fig.update_layout(showlegend=True, legend_title_text=series_col)
             st.plotly_chart(fig, use_container_width=True)
-        else:
-            st.dataframe(df, use_container_width=True)
-    elif output_type == "pie":
-        num_cols = df.select_dtypes(include=["number"]).columns.tolist()
-        if len(df.columns) >= 2 and num_cols:
-            fig = px.pie(df, names=df.columns[0], values=num_cols[0])
-            st.plotly_chart(fig, use_container_width=True)
-        else:
-            st.dataframe(df, use_container_width=True)
-    else:
+        elif output_type == "pie":
+            num_cols = df.select_dtypes(include=["number"]).columns.tolist()
+            if len(df.columns) >= 2 and num_cols:
+                fig = px.pie(df, names=df.columns[0], values=num_cols[0])
+                st.plotly_chart(fig, use_container_width=True)
+            elif not show_table:
+                st.dataframe(df, use_container_width=True)
+
+    if show_table:
         st.dataframe(df, use_container_width=True)
 
-    # Download
-    csv_buf = io.StringIO()
-    df.to_csv(csv_buf, index=False)
-    st.download_button(
-        "Download CSV", data=csv_buf.getvalue(), file_name="results.csv", mime="text/csv"
-    )
+    if show_download:
+        csv_buf = io.StringIO()
+        df.to_csv(csv_buf, index=False)
+        st.download_button(
+            "Download CSV", data=csv_buf.getvalue(), file_name="results.csv", mime="text/csv"
+        )
 
 
 def _compose_text_for_fuzzy(row: pd.Series) -> str:
@@ -262,7 +356,7 @@ def apply_fuzzy_filter(df: pd.DataFrame, terms: List[str], threshold: int) -> pd
             placeholders = ",".join(["?"] * len(ids))
             with sqlite3.connect(DB_PATH) as conn:
                 extra = pd.read_sql_query(
-                    f"SELECT contract_id, full_text, clauses FROM CONTRACTS WHERE contract_id IN ({placeholders})",
+                    f"SELECT contract_id, full_text, clauses_text as clauses FROM CONTRACTS WHERE contract_id IN ({placeholders})",
                     conn,
                     params=ids,
                 )
@@ -439,7 +533,7 @@ def page() -> None:
         placeholder="e.g., Show top 10 counterparties by count for ISDA contracts signed after 2016",
     )
 
-    if st.button("Run", type="primary") and question.strip():
+    if st.button("Submit", type="primary") and question.strip():
         with st.spinner("Planning with LLM..."):
             try:
                 decision = call_llm_plan(question)
@@ -451,10 +545,16 @@ def page() -> None:
             st.warning("This question is out of scope for the contracts database.")
             return
 
-        st.markdown("**Search strategy**: " + decision.search_strategy)
-        st.markdown("**decision**: " + str(decision))
-        st.markdown("**Fuzzy terms**: " + str(decision.fuzzy_terms))
-        st.markdown("**Fuzzy threshold**: " + str(decision.fuzzy_threshold))
+        with st.expander("Decision (LLM plan)", expanded=False):
+            st.markdown("**is_db_query**: " + str(decision.is_db_query))
+            st.markdown("**search_strategy**: " + str(decision.search_strategy))
+            st.markdown("**SQL**")
+            st.code(decision.sql)
+            st.markdown("**graph_type**: " + str(decision.graph_type))
+            st.markdown("**outputs**: " + str(decision.outputs))
+            st.markdown("**explanation**: " + (decision.explanation or ""))
+            st.markdown("**fuzzy_terms**: " + str(decision.fuzzy_terms))
+            st.markdown("**fuzzy_threshold**: " + str(decision.fuzzy_threshold))
         # If the plan requests full text search, hint the LLM expects LIKE with :q
         like_text: Optional[str] = None
         if (
@@ -477,9 +577,6 @@ def page() -> None:
                 st.exception(e)
                 return
 
-        st.markdown("**SQL**")
-        st.code(decision.sql)
-
         # Optional fuzzy post-filtering
         if decision.search_strategy in {"fuzzy", "hybrid"}:
             terms = decision.fuzzy_terms or _extract_terms_from_question(question)
@@ -491,7 +588,8 @@ def page() -> None:
                     st.warning("Fuzzy filtering failed; showing raw SQL results.")
                     st.exception(e)
 
-        render_output(df, decision.output)
+        chart_type = decision.graph_type or "bar"
+        render_output(df, chart_type, outputs=decision.outputs)
 
         # LLM-based explanation of results
         with st.spinner("Explaining results..."):
