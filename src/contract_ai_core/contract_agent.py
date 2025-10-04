@@ -67,6 +67,7 @@ class Agent:
         self._guidelines: list[ReviewedGuideline] = list(analysis.reviewed_guidelines or [])
 
         self._clause_key_to_title: dict[str, str] = {}
+        self._clause_key_to_description: dict[str, str] = {}
         self._dp_key_to_title: dict[str, str] = {}
         self._guideline_key_to_text: dict[str, str] = {}
         if self.contract_type is not None:
@@ -76,6 +77,12 @@ class Agent:
                 }
             except Exception:
                 self._clause_key_to_title = {}
+            try:
+                self._clause_key_to_description = {
+                    c.key: (c.description or "") for c in (self.contract_type.clauses or [])
+                }
+            except Exception:
+                self._clause_key_to_description = {}
             try:
                 self._dp_key_to_title = {
                     d.key: (d.title or d.key) for d in (self.contract_type.datapoints or [])
@@ -96,7 +103,8 @@ class Agent:
         categories = self._choose_context_categories(question)
         context_sections = self._collect_context(question, categories)
         prompt = self._build_prompt(question, context_sections)
-
+        print("--------------------------------")
+        print("prompt", prompt)
         result = self._llm.invoke(prompt)
         try:
             answer = getattr(result, "content", str(result))
@@ -180,7 +188,6 @@ class Agent:
                 chosen.append("guidelines")
             if not chosen:
                 chosen = ["text", "datapoints"]
-            print("prompt", prompt)
             print("chosen", chosen)
             return chosen
         except Exception:
@@ -249,43 +256,28 @@ class Agent:
         return "\n\n".join(p.text for p in selected if p.text)
 
     def _build_relevant_clauses_block(self, question: str) -> str:
-        q = (question or "").lower()
-        pairs: list[tuple[str, str]] = []  # (title, text)
+        clause_items: list[tuple[str, str, str, str]] = []  # (key, title, description, text)
 
-        # Prefer explicit title/key matches
+        # Include all clauses
         for ck, text in self._clause_key_to_text.items():
             title = self._clause_key_to_title.get(ck, ck)
-            if (ck and ck.lower() in q) or (title and title.lower() in q):
-                pairs.append((title, text))
+            description = self._clause_key_to_description.get(ck, "")
+            clause_items.append((ck, title, description, text))
 
-        # Fallback: top 3 longest clause texts
-        if not pairs:
-            top = sorted(self._clause_key_to_text.items(), key=lambda kv: len(kv[1]), reverse=True)[
-                :3
-            ]
-            for ck, text in top:
-                pairs.append((self._clause_key_to_title.get(ck, ck), text))
-
-        if not pairs:
+        if not clause_items:
             return ""
-        lines: list[str] = []
-        for title, text in pairs:
-            lines.append(f"- {title}:\n{text}")
-        return "\n\n".join(lines)
+
+        lines: list[str] = ["List of all clauses:"]
+        for _key, title, description, text in clause_items:
+            lines.append(f"\nClause: {title}")
+            if description:
+                lines.append(f"Description: {description}")
+            lines.append(f"Text:\n{text}")
+        return "\n".join(lines)
 
     def _build_datapoints_block(self, question: str) -> str:
-        q = (question or "").lower()
-        items: list[ExtractedDatapoint] = []
-
-        # Prefer explicit key/title mentions
-        for key, dp in self._dp_key_to_item.items():
-            title = self._dp_key_to_title.get(key, key)
-            if (key and key.lower() in q) or (title and title.lower() in q):
-                items.append(dp)
-
-        if not items:
-            # Include up to 15 datapoints for context
-            items = list(self._dp_key_to_item.values())[:15]
+        # Include all datapoints
+        items = list(self._dp_key_to_item.values())
 
         if not items:
             return ""
@@ -301,16 +293,9 @@ class Agent:
         return "\n".join(lines)
 
     def _build_guidelines_block(self, question: str) -> str:
-        q = (question or "").lower()
-        items: list[ReviewedGuideline] = []
+        # Include all guidelines
+        items = self._guidelines
 
-        for g in self._guidelines:
-            g_text = self._guideline_key_to_text.get(g.key, g.key)
-            if (g.key and g.key.lower() in q) or (g_text and g_text.lower() in q):
-                items.append(g)
-
-        if not items:
-            items = self._guidelines[:15]
         if not items:
             return ""
 
