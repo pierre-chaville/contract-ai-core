@@ -595,6 +595,69 @@ def main() -> None:
                 subset=["Text"],
                 **{"width": "90%", "white-space": "pre-wrap", "vertical-align": "top"},
             )
+
+            # Export to PDF button
+            if st.button("Export to PDF", key="export_revised_pdf"):
+                try:
+                    from io import BytesIO
+
+                    from reportlab.lib.pagesizes import letter
+                    from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
+                    from reportlab.lib.units import inch
+                    from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
+
+                    # Create PDF in memory
+                    buffer = BytesIO()
+                    doc = SimpleDocTemplate(
+                        buffer,
+                        pagesize=letter,
+                        rightMargin=0.75 * inch,
+                        leftMargin=0.75 * inch,
+                        topMargin=0.75 * inch,
+                        bottomMargin=0.75 * inch,
+                    )
+
+                    # Build story
+                    story = []
+                    styles = getSampleStyleSheet()
+
+                    # Add title
+                    title_style = ParagraphStyle(
+                        "CustomTitle", parent=styles["Heading1"], fontSize=16, spaceAfter=30
+                    )
+                    story.append(Paragraph(f"Amended and Restated Contract: {stem}", title_style))
+                    story.append(Spacer(1, 0.2 * inch))
+
+                    # Add paragraphs
+                    body_style = styles["BodyText"]
+                    for line in lines:
+                        # Escape special characters for reportlab
+                        safe_text = (
+                            line.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                        )
+                        story.append(Paragraph(safe_text, body_style))
+                        story.append(Spacer(1, 0.15 * inch))
+
+                    # Build PDF
+                    doc.build(story)
+
+                    # Offer download
+                    pdf_bytes = buffer.getvalue()
+                    buffer.close()
+
+                    st.download_button(
+                        label="Download PDF",
+                        data=pdf_bytes,
+                        file_name=f"{stem}_revised.pdf",
+                        mime="application/pdf",
+                        key="download_revised_pdf",
+                    )
+                    st.success("PDF generated successfully!")
+                except ImportError:
+                    st.error("reportlab library not installed. Run: pip install reportlab")
+                except Exception as e:
+                    st.error(f"Failed to generate PDF: {e}")
+
             st.table(rev_styler)
 
 
