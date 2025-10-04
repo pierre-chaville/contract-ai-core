@@ -95,6 +95,21 @@ def read_text_best_effort(path: Path) -> str:
     return path.read_text(encoding="utf-8", errors="replace")
 
 
+def read_docx_text(path: Path) -> str:
+    """Read text from a .docx file."""
+    try:
+        import docx  # type: ignore
+
+        doc = docx.Document(str(path))
+        paragraphs = []
+        for para in doc.paragraphs:
+            if para.text.strip():
+                paragraphs.append(para.text)
+        return "\n\n".join(paragraphs)
+    except Exception as e:
+        raise ValueError(f"Failed to read .docx file: {e}") from e
+
+
 def load_classification_csv(
     template_key: str, model_name: str, stem: str
 ) -> Optional[pd.DataFrame]:
@@ -534,9 +549,51 @@ def main() -> None:
     idx = int(st.session_state.contract_idx) % len(files)
     current_path = files[idx]
 
-    col_title, col_prev, col_next = st.columns([8, 1, 1])
-    with col_title:
-        st.subheader(f"{template_key} — File {idx + 1} / {len(files)}: {current_path.name}")
+    # Load metadata for all files to create selection list
+    import json as _json
+
+    repo_root = get_repo_root()
+    gold_dir = repo_root / "dataset" / "gold" / "organizer"
+
+    def get_contract_display_name(file_path, file_idx):
+        """Generate a display name for a contract based on its metadata."""
+        stem = file_path.stem
+        json_path = gold_dir / f"{stem}.json"
+
+        display_name = f"{file_idx + 1}. {file_path.name}"
+        if json_path.exists():
+            try:
+                metadata = _json.loads(json_path.read_text(encoding="utf-8"))
+                contract_type = (metadata.get("contract_type") or {}).get("value") or ""
+                contract_type_version = (metadata.get("contract_type_version") or {}).get(
+                    "value"
+                ) or ""
+                contract_date = (metadata.get("contract_date") or {}).get("value") or ""
+                party_name_1 = (metadata.get("party_name_1") or {}).get("value") or ""
+                party_name_2 = (metadata.get("party_name_2") or {}).get("value") or ""
+                party_name_1_short = " ".join(party_name_1.split()[:2]) if party_name_1 else ""
+                party_name_2_short = " ".join(party_name_2.split()[:2]) if party_name_2 else ""
+                display_name = f"{file_idx + 1}. {contract_type} {contract_type_version} - {contract_date} - {party_name_1_short}/{party_name_2_short}"
+            except Exception:
+                pass  # Fall back to default display name
+        return display_name
+
+    # Generate display names for all contracts
+    contract_options = [get_contract_display_name(f, i) for i, f in enumerate(files)]
+
+    # Selectbox for contract selection
+    st.selectbox(
+        "Select contract:",
+        options=range(len(files)),
+        index=idx,
+        format_func=lambda i: contract_options[i],
+        key="contract_selector",
+        on_change=lambda: setattr(
+            st.session_state, "contract_idx", st.session_state.contract_selector
+        ),
+    )
+
+    col_prev, col_next = st.columns([2, 8])
     with col_prev:
         if st.button("◀ Previous contract"):
             st.session_state.contract_idx = (int(st.session_state.contract_idx) - 1) % len(files)
@@ -2265,7 +2322,7 @@ def main() -> None:
                 st.rerun()
 
     with tab_compare:
-        # Compare current document to another from the same template folder
+        # Compare current document to another from the same template folder or a template
         repo_root = get_repo_root()
         src_dir = repo_root / "src"
         if str(src_dir) not in sys.path:
@@ -2282,106 +2339,188 @@ def main() -> None:
         except Exception as e:
             st.error(f"Unable to load compare module: {e}")
         else:
-            # File picker for the second document
-            other_files = [p for p in files if p != current_path]
-            if not other_files:
-                st.info("No other files found to compare against.")
-            else:
-                other_names = [p.name for p in other_files]
-                state_key_target = (
-                    f"compare_target::{template_key}::{model_name}::{current_path.name}"
-                )
-                current_val = st.session_state.get(state_key_target, "")
-                picked = st.selectbox(
-                    "Compare current file with",
-                    [""] + other_names,
-                    index=([""] + other_names).index(current_val)
-                    if current_val in ([""] + other_names)
-                    else 0,
-                    help="Select another document to start comparison.",
-                )
-                if picked != current_val:
-                    # Clear any cached result for old selection
-                    for k in list(st.session_state.keys()):
-                        if k.startswith(
-                            f"compare::{template_key}::{model_name}::{current_path.name}::"
-                        ):
-                            st.session_state.pop(k, None)
-                st.session_state[state_key_target] = picked
-                if not picked:
-                    st.info("Select a document to compare.")
+            # Add switch to choose between Contract and Template
+            compare_type = st.radio(
+                "Compare with:",
+                ["Contract", "Template"],
+                horizontal=True,
+                key=f"compare_type::{template_key}::{current_path.name}",
+            )
+
+            if compare_type == "Template":
+                # Find template files
+                templates_dir = repo_root / "dataset" / "documents" / "templates" / template_key
+                template_files = []
+                if templates_dir.exists():
+                    template_files = sorted(templates_dir.glob("*.docx"))
+
+                if not template_files:
+                    st.info(f"No template files found in {templates_dir.relative_to(repo_root)}.")
                     st.button("Compare", disabled=True)
                     st.stop()
-                target_path = next(p for p in other_files if p.name == picked)
+                else:
+                    template_names = [f.name for f in template_files]
+                    state_key_template = f"compare_template::{template_key}::{current_path.name}"
+                    current_template_val = st.session_state.get(state_key_template, "")
 
-                compare_cache_key = f"compare::{template_key}::{model_name}::{current_path.name}::{target_path.name}"
-                result = st.session_state.get(compare_cache_key)
-                compare_clicked = st.button("Compare")
-                if result is None and compare_clicked:
-                    with st.spinner("Comparing, please wait…"):
-                        # Read and split paragraphs
-                        try:
-                            text1 = read_text_best_effort(current_path)
-                            text2 = read_text_best_effort(target_path)
-                            paras1 = [
-                                Paragraph(index=i, text=pp.text)
-                                for i, pp in enumerate(text_to_paragraphs(text1))
-                            ]
-                            paras2 = [
-                                Paragraph(index=i, text=pp.text)
-                                for i, pp in enumerate(text_to_paragraphs(text2))
-                            ]
-                        except Exception as e:
-                            st.error(f"Failed to load documents: {e}")
-                            paras1, paras2 = [], []
+                    picked_template = st.selectbox(
+                        "Select template",
+                        [""] + template_names,
+                        index=([""] + template_names).index(current_template_val)
+                        if current_template_val in ([""] + template_names)
+                        else 0,
+                        help="Select a template to compare with.",
+                    )
 
-                        # Build classification for doc1 (for clause labels)
-                        df_cls = (
-                            load_classification_csv(template_key, model_name, current_path.stem)
-                            if model_name
-                            else None
+                    if picked_template != current_template_val:
+                        # Clear any cached result for old selection
+                        for k in list(st.session_state.keys()):
+                            if k.startswith(
+                                f"compare::{template_key}::{model_name}::{current_path.name}::template::"
+                            ):
+                                st.session_state.pop(k, None)
+                    st.session_state[state_key_template] = picked_template
+
+                    if not picked_template:
+                        st.info("Select a template to compare.")
+                        st.button("Compare", disabled=True)
+                        st.stop()
+
+                    target_path = next(f for f in template_files if f.name == picked_template)
+                    is_template_comparison = True
+            else:
+                # File picker for the second document (contract)
+                other_files = [p for p in files if p != current_path]
+                if not other_files:
+                    st.info("No other files found to compare against.")
+                    st.button("Compare", disabled=True)
+                    st.stop()
+                else:
+                    # Generate display names for other files using metadata
+                    other_file_indices = [i for i, p in enumerate(files) if p != current_path]
+                    other_display_names = [
+                        get_contract_display_name(files[i], i) for i in other_file_indices
+                    ]
+                    other_names = [p.name for p in other_files]
+
+                    # Map display names back to file names
+                    display_to_filename = dict(zip(other_display_names, other_names, strict=False))
+
+                    state_key_target = (
+                        f"compare_target::{template_key}::{model_name}::{current_path.name}"
+                    )
+                    current_val = st.session_state.get(state_key_target, "")
+
+                    # Find the index for the current selection
+                    try:
+                        current_display_idx = (
+                            ([""] + other_names).index(current_val)
+                            if current_val in ([""] + other_names)
+                            else 0
                         )
-                        classification: DocumentClassification | None
-                        if df_cls is not None and not df_cls.empty:
-                            cls_pars: list[ClassifiedParagraph] = []
-                            clause_to_pars: dict[str, list[int]] = {}
-                            for _, row in df_cls.iterrows():
-                                try:
-                                    idx_i = int(str(row.get("index", "")).strip())
-                                except Exception:
-                                    continue
-                                txt = str(row.get("text", "")).strip()
-                                ck = str(row.get("clause_key", "")).strip() or None
-                                cp = ClassifiedParagraph(
-                                    paragraph=Paragraph(index=idx_i, text=txt),
-                                    clause_key=ck,
-                                    confidence=None,
-                                )
-                                cls_pars.append(cp)
-                                if ck:
-                                    clause_to_pars.setdefault(ck, []).append(idx_i)
-                            classification = DocumentClassification(
-                                paragraphs=cls_pars, clause_to_paragraphs=clause_to_pars or None
-                            )
+                    except ValueError:
+                        current_display_idx = 0
+
+                    picked_display = st.selectbox(
+                        "Compare current file with",
+                        [""] + other_display_names,
+                        index=current_display_idx,
+                        help="Select another document to start comparison.",
+                    )
+
+                    # Convert display name back to filename
+                    picked = display_to_filename.get(picked_display, "") if picked_display else ""
+
+                    if picked != current_val:
+                        # Clear any cached result for old selection
+                        for k in list(st.session_state.keys()):
+                            if k.startswith(
+                                f"compare::{template_key}::{model_name}::{current_path.name}::"
+                            ):
+                                st.session_state.pop(k, None)
+                    st.session_state[state_key_target] = picked
+                    if not picked:
+                        st.info("Select a document to compare.")
+                        st.button("Compare", disabled=True)
+                        st.stop()
+                    target_path = next(p for p in other_files if p.name == picked)
+                    is_template_comparison = False
+
+            # Generate cache key based on comparison type
+            compare_type_key = "template" if is_template_comparison else "contract"
+            compare_cache_key = f"compare::{template_key}::{model_name}::{current_path.name}::{compare_type_key}::{target_path.name}"
+            result = st.session_state.get(compare_cache_key)
+            compare_clicked = st.button("Compare")
+            if result is None and compare_clicked:
+                with st.spinner("Comparing, please wait…"):
+                    # Read and split paragraphs
+                    try:
+                        text1 = read_text_best_effort(current_path)
+                        # Read second document based on type
+                        if is_template_comparison:
+                            text2 = read_docx_text(target_path)
                         else:
-                            classification = None
+                            text2 = read_text_best_effort(target_path)
+                        paras1 = [
+                            Paragraph(index=i, text=pp.text)
+                            for i, pp in enumerate(text_to_paragraphs(text1))
+                        ]
+                        paras2 = [
+                            Paragraph(index=i, text=pp.text)
+                            for i, pp in enumerate(text_to_paragraphs(text2))
+                        ]
 
-                        # Run compare and cache result
-                        if paras1 and paras2:
+                    except Exception as e:
+                        st.error(f"Failed to load documents: {e}")
+                        paras1, paras2 = [], []
+
+                    # Build classification for doc1 (for clause labels)
+                    df_cls = (
+                        load_classification_csv(template_key, model_name, current_path.stem)
+                        if model_name
+                        else None
+                    )
+                    classification: DocumentClassification | None
+                    if df_cls is not None and not df_cls.empty:
+                        cls_pars: list[ClassifiedParagraph] = []
+                        clause_to_pars: dict[str, list[int]] = {}
+                        for _, row in df_cls.iterrows():
                             try:
-                                comparer = DocumentCompare(
-                                    paragraphs_doc1=paras1,
-                                    paragraphs_doc2=paras2,
-                                    classification_doc1=classification,
-                                    config=DocumentCompareConfig(),
-                                )
-                                result = comparer.compare()
-                                st.session_state[compare_cache_key] = result
-                            except Exception as e:
-                                import traceback
+                                idx_i = int(str(row.get("index", "")).strip())
+                            except Exception:
+                                continue
+                            txt = str(row.get("text", "")).strip()
+                            ck = str(row.get("clause_key", "")).strip() or None
+                            cp = ClassifiedParagraph(
+                                paragraph=Paragraph(index=idx_i, text=txt),
+                                clause_key=ck,
+                                confidence=None,
+                            )
+                            cls_pars.append(cp)
+                            if ck:
+                                clause_to_pars.setdefault(ck, []).append(idx_i)
+                        classification = DocumentClassification(
+                            paragraphs=cls_pars, clause_to_paragraphs=clause_to_pars or None
+                        )
+                    else:
+                        classification = None
 
-                                st.error(f"Compare failed: {e}" + "\n" + traceback.format_exc())
-                                result = None
+                    # Run compare and cache result
+                    if paras1 and paras2:
+                        try:
+                            comparer = DocumentCompare(
+                                paragraphs_doc1=paras1,
+                                paragraphs_doc2=paras2,
+                                classification_doc1=classification,
+                                config=DocumentCompareConfig(),
+                            )
+                            result = comparer.compare()
+                            st.session_state[compare_cache_key] = result
+                        except Exception as e:
+                            import traceback
+
+                            st.error(f"Compare failed: {e}" + "\n" + traceback.format_exc())
+                            result = None
 
                 if result is None and not compare_clicked:
                     st.info("Click Compare to run comparison.")
