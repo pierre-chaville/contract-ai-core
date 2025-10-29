@@ -54,7 +54,7 @@ SYSTEM_PRIMER = (
     "The SQLite database has a single table named CONTRACTS with columns: "
     "contract_id, contract_number, contract_type, contract_type_version, contract_date, last_amendment_date, "
     "number_amendments, status, party_name_1, party_role_1, party_name_2, party_role_2, department, contract_owner, "
-    "business_purpose, full_text, clauses_text (JSON), list_clauses (JSON array), datapoints (JSON), guidelines (JSON). "
+    "business_purpose, full_text, clauses_text (JSON), list_clauses (JSON array of clause keys), datapoints (JSON dictionary of datapoint keys: values), guidelines (JSON). "
     "The user will ask a question in English. Your job is to: "
     "1) decide if the request is about this database; "
     "2) choose a search strategy (sql_only, text_fulltext, fuzzy, hybrid). full_text searches must use SQL LIKE on full_text with a :q parameter; "
@@ -64,11 +64,93 @@ SYSTEM_PRIMER = (
     "Fuzzy search guidance: when strategy is fuzzy or hybrid, FIRST generate an SQL that NARROWS candidates using structured filters from the question (e.g., contract_type, contract_date range/year, status). "
     "ALWAYS include contract_id in the SELECT so downstream fuzzy matching can map results. "
     "Prefer adding a LIMIT 1000 unless the user explicitly asks for all rows. "
-    "Treat list_clauses as a JSON array of clause titles. Use this field to generate a clauses column for fuzzy matching."
-    "Do not use JSON extraction functions; treat clauses_text/datapoints/guidelines as opaque JSON and let the fuzzy step match their text. "
+    # "Treat list_clauses as a JSON array of clause keys. Use this field to generate a clauses column for sql queries."
+    # "Treat datapoints as a JSON dictionary of datapoint keys: values. Use this field to generate a datapoints column for sql queries."
+    # "Do not use JSON extraction functions; treat clauses_text/datapoints/guidelines as opaque JSON and let the fuzzy step match their text. "
     'Also provide optional "fuzzy_terms" (array of 1-3 short phrases) and "fuzzy_threshold" (int 0-100, default 90). '
     "Return ONLY valid JSON with keys: is_db_query (bool), search_strategy (str), sql (str|null), outputs (array<string>|null), graph_type (str|null), explanation (str), fuzzy_terms (array<string>|null), fuzzy_threshold (int|nil)."
 )
+
+
+def _load_isda_definitions() -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Load ISDA clauses and datapoints definitions from dataset/contract_types.
+
+    Returns (clauses, datapoints), each a list of dicts with the requested fields.
+    """
+    base = Path(__file__).resolve().parents[2] / "dataset" / "contract_types"
+    clauses_csv = base / "ISDA_clauses.csv"
+    datapoints_csv = base / "ISDA_datapoints.csv"
+
+    clauses: list[dict[str, Any]] = []
+    datapoints: list[dict[str, Any]] = []
+
+    try:
+        if clauses_csv.exists():
+            df_c = pd.read_csv(clauses_csv, encoding="utf-8").fillna("")
+            df_c.columns = [str(c).strip().lstrip("\ufeff") for c in df_c.columns]
+            for _, row in df_c.iterrows():
+                key = row.get("key")
+                title = row.get("title")
+                desc = row.get("description")
+                if key is None or title is None:
+                    continue
+                clauses.append(
+                    {
+                        "key": str(key),
+                        "title": str(title),
+                        "description": None if desc == "" else str(desc),
+                    }
+                )
+    except Exception:
+        clauses = []
+
+    try:
+        if datapoints_csv.exists():
+            df_d = pd.read_csv(datapoints_csv, encoding="utf-8").fillna("")
+            df_d.columns = [str(c).strip().lstrip("\ufeff") for c in df_d.columns]
+            for _, row in df_d.iterrows():
+                key = row.get("key")
+                title = row.get("title")
+                desc = row.get("description")
+                dt = row.get("data_type")
+                if key is None or title is None:
+                    continue
+                datapoints.append(
+                    {
+                        "key": str(key),
+                        "title": str(title),
+                        "description": None if desc == "" else str(desc),
+                        "data_type": str(dt) if dt != "" else "",
+                    }
+                )
+    except Exception:
+        datapoints = []
+
+    return clauses, datapoints
+
+
+def _build_isda_reference_text() -> str:
+    """Compose a compact ISDA reference section for the planning prompt."""
+    clauses, datapoints = _load_isda_definitions()
+    lines: list[str] = []
+    if clauses:
+        lines.append("ISDA CLAUSES (key | title | description):")
+        for c in clauses:
+            desc = c.get("description") or ""
+            desc_short = desc.replace("\n", " ").strip()
+            lines.append(f"- {c.get('key')} | {c.get('title')} | {desc_short}")
+        lines.append("")
+    if datapoints:
+        lines.append("ISDA DATAPOINTS (key | title | description | data_type):")
+        for d in datapoints:
+            desc = d.get("description") or ""
+            desc_short = desc.replace("\n", " ").strip()
+            dtype = d.get("data_type") or ""
+            lines.append(f"- {d.get('key')} | {d.get('title')} | {desc_short} | {dtype}")
+        lines.append("")
+    if not lines:
+        return ""
+    return "\n".join(lines)
 
 
 def call_llm_plan(question: str) -> LLMDecision:
@@ -81,9 +163,14 @@ def call_llm_plan(question: str) -> LLMDecision:
         structured = None
 
     if structured is not None:
+        primer = SYSTEM_PRIMER
+        ref_text = _build_isda_reference_text()
+        print("ref_text", ref_text)
+        if ref_text:
+            primer = primer + "\n\n" + ref_text
         resp = structured.invoke(
             [
-                {"role": "system", "content": SYSTEM_PRIMER},
+                {"role": "system", "content": primer},
                 {"role": "user", "content": question},
             ]
         )  # type: ignore[attr-defined]
@@ -100,8 +187,13 @@ def call_llm_plan(question: str) -> LLMDecision:
         )
 
     # Fallback to previous JSON parsing if structured output isn't available
+    primer = SYSTEM_PRIMER
+    ref_text = _build_isda_reference_text()
+    if ref_text:
+        primer = primer + "\n\n" + ref_text
+    print("primer", primer)
     messages = [
-        {"role": "system", "content": SYSTEM_PRIMER},
+        {"role": "system", "content": primer},
         {"role": "user", "content": question},
     ]
     resp = model.invoke(messages)  # type: ignore[attr-defined]
@@ -481,8 +573,23 @@ def explain_results_with_llm(
     system_msg = (
         "You are a helpful data analyst. Explain results clearly and concisely for a non-technical user. "
         "Summarize key findings, counts, trends by year or type if present, and call out caveats/limits. "
-        "Do NOT restate the raw SQL; focus on what the results mean."
+        "Do NOT paste the raw SQL. Also include a short section titled 'How results were selected' "
+        "that explains, in plain language, the selection process based on the provided decision context "
+        "(search strategy, any text LIKE usage, and fuzzy terms/threshold)."
     )
+
+    # Build a compact decision context to guide the LLM's explanation of selection mechanics
+    decision_context: Dict[str, Any] = {
+        "is_db_query": bool(decision.is_db_query),
+        "search_strategy": str(decision.search_strategy),
+        "outputs": decision.outputs,
+        "graph_type": decision.graph_type,
+        "fuzzy_terms": decision.fuzzy_terms,
+        "fuzzy_threshold": decision.fuzzy_threshold,
+        # Heuristics to hint at text LIKE usage without exposing SQL
+        "used_text_like": (":q" in (sql or ""))
+        and (decision.search_strategy in {"text_fulltext", "hybrid"}),
+    }
     payload = {
         "question": question,
         "search_strategy": decision.search_strategy,
@@ -490,12 +597,16 @@ def explain_results_with_llm(
         "fuzzy_threshold": decision.fuzzy_threshold,
         "sql": sql,
         "results_context": context,
+        "decision_context": decision_context,
     }
     messages = [
         {"role": "system", "content": system_msg},
         {
             "role": "user",
-            "content": ("Explain these query results:\n" + json.dumps(payload, ensure_ascii=False)),
+            "content": (
+                "Explain these query results and how they were selected:\n"
+                + json.dumps(payload, ensure_ascii=False)
+            ),
         },
     ]
     resp = model.invoke(messages)  # type: ignore[attr-defined]

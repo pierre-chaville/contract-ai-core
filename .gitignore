@@ -41,6 +41,10 @@ dist/
 # Local Python version files
 .python-version
 
+dataset/output/
+dataset/metrics/
+dataset/gold/
+
 # Database
 .db
 .sqlite

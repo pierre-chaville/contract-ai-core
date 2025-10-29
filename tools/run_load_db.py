@@ -175,6 +175,31 @@ def _read_clause_titles(path: Path) -> List[str]:
     return titles
 
 
+def _read_clause_keys(path: Path) -> List[str]:
+    """Return the list of clause KEYS present in the clauses CSV."""
+    if not path.exists():
+        return []
+    keys: List[str] = []
+    seen = set()
+    with path.open("r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        if not reader.fieldnames:
+            return []
+        columns = {name.lower(): name for name in reader.fieldnames}
+        key_col = (
+            columns.get("clause_key")
+            or columns.get("clause_id")
+            or columns.get("key")
+            or columns.get("clause")
+        )
+        for row in reader:
+            clause_key = (row.get(key_col or "") or "").strip()
+            if clause_key and clause_key not in seen:
+                keys.append(clause_key)
+                seen.add(clause_key)
+    return keys
+
+
 def _load_clause_title_map(dataset_root: Path, contract_type: Optional[str]) -> Dict[str, str]:
     """Load a mapping of clause_key -> title from dataset/contract_types/<contract_type>_clauses.csv.
 
@@ -453,9 +478,7 @@ def load_all(dry_run: bool = False, echo: bool = False) -> None:
                 else {}
             )
             list_clauses = (
-                _read_clause_titles_with_map(paths["clauses_csv"], title_map)
-                if paths["clauses_csv"].exists()
-                else []
+                _read_clause_keys(paths["clauses_csv"]) if paths["clauses_csv"].exists() else []
             )
             datapoints = (
                 _read_datapoints_csv(paths["datapoints_csv"])
