@@ -153,6 +153,85 @@ def _build_isda_reference_text() -> str:
     return "\n".join(lines)
 
 
+def _build_contract_types_reference_text() -> str:
+    """List available contract types with key, name, use_case, description.
+
+    Prefer dataset/contract_types/lookup_values.csv (category == CONTRACT_TYPE). If unavailable,
+    fall back to scanning individual JSON files.
+    """
+    base = Path(__file__).resolve().parents[2] / "dataset" / "contract_types"
+    items: list[dict[str, Any]] = []
+
+    # Preferred: lookup_values.csv
+    try:
+        lv_path = base / "lookup_values.csv"
+        if lv_path.exists():
+            df = pd.read_csv(lv_path, encoding="utf-8").fillna("")
+            df.columns = [str(c).strip().lstrip("\ufeff") for c in df.columns]
+            # Normalize and filter to CONTRACT_TYPE category
+            df_cat = df[df["category"].astype(str).str.strip() == "CONTRACT_TYPE"].copy()
+            for _, row in df_cat.iterrows():
+                key = (row.get("key") or "").strip()
+                label = (row.get("label") or "").strip()
+                desc = row.get("description")
+                meta = row.get("metadata")
+                use_case_val = ""
+                if meta not in (None, "", "nan", "NaN"):
+                    try:
+                        meta_obj = json.loads(meta) if not isinstance(meta, dict) else meta
+                        if isinstance(meta_obj, dict):
+                            use_case_val = str(meta_obj.get("use_case") or "").strip()
+                    except Exception:
+                        use_case_val = ""
+                if key and label:
+                    items.append(
+                        {
+                            "key": key,
+                            "name": label,
+                            "use_case": use_case_val,
+                            "description": ("" if desc == "" else str(desc)).replace("\n", " ").strip(),
+                        }
+                    )
+    except Exception:
+        items = []
+
+    # Fallback: scan JSON templates if no lookup records found
+    if not items:
+        try:
+            for p in sorted(base.glob("*.json")):
+                try:
+                    data = json.loads(p.read_text(encoding="utf-8"))
+                except Exception:
+                    continue
+                if not isinstance(data, dict):
+                    continue
+                key = data.get("key") or p.stem
+                name = data.get("name") or ""
+                use_case = data.get("use_case") or ""
+                desc = data.get("description") or ""
+                items.append(
+                    {
+                        "key": str(key),
+                        "name": str(name),
+                        "use_case": str(use_case),
+                        "description": str(desc).replace("\n", " ").strip(),
+                    }
+                )
+        except Exception:
+            items = []
+
+    if not items:
+        return ""
+    # Stable sort by key for determinism
+    items.sort(key=lambda x: x.get("key", ""))
+    lines = ["CONTRACT TYPES (key | name | use_case | description):"]
+    for it in items:
+        lines.append(
+            f"- {it.get('key')} | {it.get('name')} | {it.get('use_case')} | {it.get('description')}"
+        )
+    return "\n".join(lines)
+
+
 def call_llm_plan(question: str) -> LLMDecision:
     model = get_langchain_chat_model(
         provider="openai", model_name="gpt-4.1", temperature=0.0, max_tokens=800
@@ -164,7 +243,14 @@ def call_llm_plan(question: str) -> LLMDecision:
 
     if structured is not None:
         primer = SYSTEM_PRIMER
-        ref_text = _build_isda_reference_text()
+        parts: list[str] = []
+        ct_ref = _build_contract_types_reference_text()
+        if ct_ref:
+            parts.append(ct_ref)
+        isda_ref = _build_isda_reference_text()
+        if isda_ref:
+            parts.append(isda_ref)
+        ref_text = "\n\n".join(parts)
         print("ref_text", ref_text)
         if ref_text:
             primer = primer + "\n\n" + ref_text
@@ -188,7 +274,14 @@ def call_llm_plan(question: str) -> LLMDecision:
 
     # Fallback to previous JSON parsing if structured output isn't available
     primer = SYSTEM_PRIMER
-    ref_text = _build_isda_reference_text()
+    parts: list[str] = []
+    ct_ref = _build_contract_types_reference_text()
+    if ct_ref:
+        parts.append(ct_ref)
+    isda_ref = _build_isda_reference_text()
+    if isda_ref:
+        parts.append(isda_ref)
+    ref_text = "\n\n".join(parts)
     if ref_text:
         primer = primer + "\n\n" + ref_text
     print("primer", primer)
