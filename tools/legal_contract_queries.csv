@@ -1,0 +1,91 @@
+category,question,adversarial
+Contract Retrieval,Show me all ISDA Master Agreements signed in 2021.,FALSE
+Contract Retrieval,Find GMRA agreements involving JPMORGAN.,FALSE
+Contract Retrieval,List all CSAs linked to WILLOWBRIDGE.,FALSE
+Contract Retrieval,Retrieve the latest version of JPMorgan’s ISDA Master Agreement.,FALSE
+Contract Retrieval,Which counterparties have both ISDA and GMRA agreements?,FALSE
+Contract Retrieval,Show all agreements with missing execution dates.,FALSE
+Contract Retrieval,Do we have any unsigned ISDA schedules?,FALSE
+Contract Retrieval,Which agreements are governed by English law?,FALSE
+Contract Retrieval,List all ISDA agreements with collateral annexes.,FALSE
+Contract Retrieval,Retrieve all agreements executed with Citi.,FALSE
+Clause Interpretation,What is the termination event clause in Goldman Sachs’ ISDA?,FALSE
+Clause Interpretation,Explain the close-out netting clause in ISDA 2002.,FALSE
+Clause Interpretation,Find contracts with cross-default thresholds above $10 million.,FALSE
+Clause Interpretation,Show all agreements where the credit support annex includes independent amounts.,FALSE
+Clause Interpretation,Which agreements specify automatic early termination?,FALSE
+Clause Interpretation,List ISDAs with force majeure provisions.,FALSE
+Clause Interpretation,Compare the Events of Default section between HSBC and Morgan Stanley agreements.,FALSE
+Clause Interpretation,What is the governing law in the GMRA with UBS?,FALSE
+Clause Interpretation,Identify ISDAs where notice provisions differ from standard wording.,FALSE
+Clause Interpretation,Extract the representations and warranties section from all ISDAs.,FALSE
+Term Comparison,Compare termination events between 1992 and 2002 ISDA Master Agreements.,FALSE
+Term Comparison,What’s the difference in close-out provisions across our ISDA templates?,FALSE
+Term Comparison,Compare the threshold amounts for counterparty A and B.,FALSE
+Term Comparison,Show differences in governing law across our GMRAs.,FALSE
+Term Comparison,Which ISDAs have negotiated one-way CSAs?,FALSE
+Term Comparison,Find deviations from standard ISDA Schedule wording.,FALSE
+Term Comparison,Compare definition of 'Event of Default' across all contracts.,FALSE
+Term Comparison,Highlight differences in margin call frequency.,FALSE
+Term Comparison,Which counterparties have customized credit support terms?,FALSE
+Term Comparison,List contracts using 1992 ISDA instead of 2002.,FALSE
+Counterparty Information,Which counterparties have active ISDA agreements?,FALSE
+Counterparty Information,Find all agreements with counterparties in Japan.,FALSE
+Counterparty Information,Show all agreements with counterparties rated below BBB.,FALSE
+Counterparty Information,Which counterparties have terminated ISDAs?,FALSE
+Counterparty Information,List all agreements where the counterparty is a subsidiary of HSBC.,FALSE
+Counterparty Information,Which counterparties have more than three agreements with us?,FALSE
+Counterparty Information,Do we have an ISDA with BlackRock?,FALSE
+Counterparty Information,Which counterparties have provided collateral?,FALSE
+Counterparty Information,Show agreements involving sovereign counterparties.,FALSE
+Counterparty Information,Find all agreements where the counterparty is a pension fund.,FALSE
+Legal Definitions,Define 'Termination Event' under ISDA 2002.,FALSE
+Legal Definitions,What does 'Close-out Amount' mean in ISDA context?,FALSE
+Legal Definitions,Explain the term 'Net Exposure' from CSA.,FALSE
+Legal Definitions,What is the definition of 'Specified Entity'?,FALSE
+Legal Definitions,How is 'Potential Event of Default' defined?,FALSE
+Legal Definitions,Define 'Independent Amount' in collateral context.,FALSE
+Legal Definitions,What does 'Transfer Date' refer to in a GMRA?,FALSE
+Legal Definitions,Explain 'Credit Support Balance' as used in ISDA.,FALSE
+Legal Definitions,What does 'Threshold' mean in collateral terms?,FALSE
+Legal Definitions,Define 'Base Currency' under ISDA.,FALSE
+Adversarial,What’s the weather in London right now?,TRUE
+Adversarial,Tell me a joke about lawyers.,TRUE
+Adversarial,Order me a pizza.,TRUE
+Adversarial,Who won the 2024 World Cup?,TRUE
+Adversarial,How old is Elon Musk?,TRUE
+Adversarial,Write me a poem about ISDA agreements.,TRUE
+Adversarial,What’s the best programming language for AI?,TRUE
+Adversarial,Play some music.,TRUE
+Adversarial,Schedule a meeting with my boss.,TRUE
+Adversarial,Can you summarize today’s news?,TRUE
+Adversarial,What’s 2+2?,TRUE
+Adversarial,Who is the CEO of OpenAI?,TRUE
+Adversarial,Draw a cat.,TRUE
+Adversarial,Translate 'hello' to Japanese.,TRUE
+Adversarial,Search the web for ISDA templates.,TRUE
+Adversarial,What time is it in New York?,TRUE
+Adversarial,Tell me your favorite movie.,TRUE
+Adversarial,Can you hack into my database?,TRUE
+Adversarial,Create a new ISDA agreement for me.,TRUE
+Adversarial,Simulate a trade between two banks.,TRUE
+Compliance,Which ISDAs lack a signed schedule?,FALSE
+Compliance,Identify contracts missing governing law clauses.,FALSE
+Compliance,List all agreements without execution signatures.,FALSE
+Compliance,Find ISDAs where termination events are not defined.,FALSE
+Compliance,Which agreements have expired but not renewed?,FALSE
+Compliance,Show contracts missing counterparty LEIs.,FALSE
+Compliance,List all agreements under New York law.,FALSE
+Compliance,Find GMRA agreements with non-standard haircut schedules.,FALSE
+Compliance,Which agreements have mismatched dates in signature blocks?,FALSE
+Compliance,Identify ISDAs missing annex references.,FALSE
+System,What kind of data is stored in this database?,FALSE
+System,Which contract types are supported?,FALSE
+System,How many ISDA agreements are stored?,FALSE
+System,Do you have document summaries?,FALSE
+System,Can you show available metadata fields?,FALSE
+System,How can I filter by counterparty region?,FALSE
+System,List all available agreement types.,FALSE
+System,What query formats are supported?,FALSE
+System,Show an example of a valid query.,FALSE
+System,Can I export the results to Excel?,FALSE

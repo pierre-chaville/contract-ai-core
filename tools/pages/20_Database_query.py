@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import io
 import json
+import hashlib
 import sqlite3
 from dataclasses import dataclass
 from pathlib import Path
@@ -19,56 +20,106 @@ except Exception:  # pragma: no cover
 from rapidfuzz import fuzz
 
 DB_PATH = Path(__file__).resolve().parents[2] / "dataset" / "contracts.sqlite"
+QUERIES_CSV = Path(__file__).resolve().parents[2] / "tools" / "legal_contract_queries.csv"
+OUTPUT_QUERIES_DIR = Path(__file__).resolve().parents[2] / "dataset" / "output" / "queries"
 
 
 @dataclass
 class LLMDecision:
     is_db_query: bool
-    search_strategy: str  # one of {"sql_only", "text_fulltext", "fuzzy", "hybrid"}
+    search_strategy: str  # free-text explanation from the LLM
     sql: str | None
     graph_type: str | None  # one of {"bar", "line", "pie"} when graph requested
     explanation: str | None
-    fuzzy_terms: List[str] | None = None
     fuzzy_threshold: int | None = None
-    outputs: List[str] | None = None  # subset of {"graph", "table", "download"}
+    render_types: Optional[List[str]] = None  # subset of {"graph", "table", "download"}
+    select_fields: Optional[List[str]] = None  # preferred display fields/columns
+    clauses_filter_expr: Optional[str] = None
+    datapoints_filter_expr: Optional[str] = None
+    fuzzy_fields_terms: Optional[Dict[str, List[str]]] = None
 
 
 class PlanSchema(BaseModel):
-    is_db_query: bool = Field(..., description="Whether the question pertains to the database")
-    search_strategy: Literal["sql_only", "text_fulltext", "fuzzy", "hybrid"]
+    is_db_query: bool = Field(
+        ..., description="Whether the question pertains to the CONTRACTS database"
+    )
+    search_strategy: str = Field(
+        ..., description="Free-text explanation of the search approach chosen by the LLM"
+    )
     sql: Optional[str] = Field(None, description="Safe SQL SELECT over CONTRACTS")
-    outputs: Optional[List[Literal["graph", "table", "download"]]] = Field(
+    render_types: Optional[List[Literal["graph", "table", "download"]]] = Field(
         None, description="Which renderings to show; multiple allowed"
+    )
+    select_fields: Optional[List[str]] = Field(
+        None, description="Preferred list of fields/columns to display in the results"
     )
     graph_type: Optional[Literal["bar", "line", "pie"]] = Field(
         None,
-        description="Chart type to use when outputs includes 'graph'",
+        description="Chart type to use when render_types includes 'graph'",
     )
     explanation: Optional[str] = None
-    fuzzy_terms: Optional[List[str]] = None
     fuzzy_threshold: Optional[int] = None
+    clauses_filter_expr: Optional[str] = Field(
+        None,
+        description=(
+            "Optional Python boolean expression evaluated per row when clause selection is required. "
+            "Use variable list_clauses (list[str]) to reference row clause keys."
+        ),
+    )
+    datapoints_filter_expr: Optional[str] = Field(
+        None,
+        description=(
+            "Optional Python boolean expression evaluated per row when datapoint selection is required. "
+            "Use variable list_datapoints (dict[str, Any]) to reference row datapoints."
+        ),
+    )
+    fuzzy_fields_terms: Optional[Dict[str, List[str]]] = Field(
+        None,
+        description=(
+            "Optional mapping of field name -> list of fuzzy terms to match after expressions. "
+            "Example: {\"party_name_1\": [\"JP\"], \"full_text\": [\"events\", \"termination\"]}."
+        ),
+    )
 
 
 SYSTEM_PRIMER = (
     "You are a helpful data assistant for a contracts database. "
-    "The SQLite database has a single table named CONTRACTS with columns: "
-    "contract_id, contract_number, contract_type, contract_type_version, contract_date, last_amendment_date, "
-    "number_amendments, status, party_name_1, party_role_1, party_name_2, party_role_2, department, contract_owner, "
-    "business_purpose, full_text, clauses_text (JSON), list_clauses (JSON array of clause keys), datapoints (JSON dictionary of datapoint keys: values), guidelines (JSON). "
+    "The SQLite database has a single table named CONTRACTS. Column reference:\n"
+    "| field | type | description | example |\n"
+    "|------|------|-------------|---------|\n"
+    "| contract_id | TEXT | Unique stable identifier | ISDA_000123 |\n"
+    "| contract_number | TEXT | Business contract number | 2018-ISDA-45 |\n"
+    "| contract_type | TEXT | Contract family key | ISDA |\n"
+    "| contract_type_version | TEXT | Standard/version of the contract type | 2002 |\n"
+    "| contract_date | DATE (YYYY-MM-DD) | Execution date of the contract | 2018-06-15 |\n"
+    "| last_amendment_date | DATE (YYYY-MM-DD) | Date of most recent amendment | 2021-11-30 |\n"
+    "| number_amendments | INTEGER | Count of amendments applied | 3 |\n"
+    "| status | TEXT | Lifecycle status | Active |\n"
+    "| party_name_1 | TEXT | Legal name of the first party | JPMorgan Chase Bank N.A. |\n"
+    "| party_role_1 | TEXT | Role of the first party | Dealer |\n"
+    "| party_name_2 | TEXT | Legal name of the second party | ACME Corp |\n"
+    "| party_role_2 | TEXT | Role of the second party | Client |\n"
+    "| department | TEXT | Internal department owning the contract | Treasury |\n"
+    "| contract_owner | TEXT | Internal owner/responsible person | Jane Doe |\n"
+    "| business_purpose | TEXT | Short description of business purpose | Hedging program |\n"
+    "| full_text | TEXT | Full OCR/plaintext of the contract | ...long text... |\n"
+    "| clauses_text | JSON | Map of clause_key -> clause text | {termination_event: '...'} |\n"
+    "| list_clauses | JSON (array) | Clause keys present in the contract | [termination_event, setoff] |\n"
+    "| datapoints | JSON (object) | Datapoint key -> value pairs | {governing_law: 'English'} |\n"
+    "| guidelines | JSON | Review guidelines/flags or metadata | {risk: 'medium'} |\n"
     "The user will ask a question in English. Your job is to: "
-    "1) decide if the request is about this database; "
-    "2) choose a search strategy (sql_only, text_fulltext, fuzzy, hybrid). full_text searches must use SQL LIKE on full_text with a :q parameter; "
-    "3) produce a safe SQL SELECT query over CONTRACTS (avoid DDL/DML; no semicolons, no PRAGMAs); "
-    "4) choose visualization based on the user's request: set 'outputs' to an array subset of ['graph','table','download'] indicating which renderings to show (multiple allowed); if 'graph' is included, set 'graph_type' to one of ['bar','line','pie']. "
-    "5) provide a detailed explanation of your reasoning. "
-    "Fuzzy search guidance: when strategy is fuzzy or hybrid, FIRST generate an SQL that NARROWS candidates using structured filters from the question (e.g., contract_type, contract_date range/year, status). "
-    "ALWAYS include contract_id in the SELECT so downstream fuzzy matching can map results. "
-    "Prefer adding a LIMIT 1000 unless the user explicitly asks for all rows. "
-    # "Treat list_clauses as a JSON array of clause keys. Use this field to generate a clauses column for sql queries."
-    # "Treat datapoints as a JSON dictionary of datapoint keys: values. Use this field to generate a datapoints column for sql queries."
-    # "Do not use JSON extraction functions; treat clauses_text/datapoints/guidelines as opaque JSON and let the fuzzy step match their text. "
-    'Also provide optional "fuzzy_terms" (array of 1-3 short phrases) and "fuzzy_threshold" (int 0-100, default 90). '
-    "Return ONLY valid JSON with keys: is_db_query (bool), search_strategy (str), sql (str|null), outputs (array<string>|null), graph_type (str|null), explanation (str), fuzzy_terms (array<string>|null), fuzzy_threshold (int|nil)."
+    "2) Plan in three steps regardless of strategy: (a) SQL to filter by available scalar fields (do NOT rely on list_clauses or datapoints in SQL), (b) optional Python expressions to filter by list_clauses and datapoints, (c) optional fuzzy filtering on the resulting rows by specific fields. "
+    "For full text searches in SQL, use LIKE with a :q parameter on full_text. "
+    "Produce a safe SQL SELECT (avoid DDL/DML; no semicolons, no PRAGMAs). ALWAYS include contract_id in the SELECT so downstream steps can map results. Prefer adding a LIMIT 1000 unless the user explicitly asks for all rows. "
+    'Provide optional "fuzzy_fields_terms" as a mapping of field -> list of fuzzy terms, and "fuzzy_threshold" (0-100, default 90). '
+    "If the selection involves clauses or datapoints, include Python boolean expressions to post-filter rows: "
+    "'clauses_filter_expr' uses variable list_clauses (list[str]) and should return True/False; "
+    "'datapoints_filter_expr' uses variable list_datapoints (dict[str, Any]) and should return True/False. "
+    "Examples: list_clauses and {'termination_event': 'Yes'}.get('key') style checks are valid. "
+    "Set 'is_db_query' to true if the question pertains to querying the CONTRACTS table; otherwise false. "
+    "Provide 'search_strategy' as a short free-text explanation of the overall approach (SQL filtering, expressions, fuzzy). "
+    "Provide 'render_types' as an array of strings, each one of 'graph', 'table', or 'download'. Add 'graph' if the user asks for a chart, and 'table' if the user asks for a table. Use 'download' except if requested otherwise."
+    "Return ONLY valid JSON with keys: is_db_query (bool), search_strategy (str), sql (str|null), render_types (array<string>|null), select_fields (array<string>|null), graph_type (str|null), explanation (str), fuzzy_fields_terms (object|null), fuzzy_threshold (int|nil), clauses_filter_expr (str|null), datapoints_filter_expr (str|null)."
 )
 
 
@@ -261,15 +312,19 @@ def call_llm_plan(question: str) -> LLMDecision:
             ]
         )  # type: ignore[attr-defined]
         plan: PlanSchema = resp  # type: ignore[assignment]
+        print("plan", plan)
         return LLMDecision(
             is_db_query=bool(plan.is_db_query),
             search_strategy=str(plan.search_strategy),
-            sql=plan.sql,
-            graph_type=str(plan.graph_type) if plan.graph_type is not None else None,
             explanation=plan.explanation,
-            fuzzy_terms=plan.fuzzy_terms,
+            sql=plan.sql,
+            render_types=plan.render_types,
+            graph_type=str(plan.graph_type) if plan.graph_type is not None else None,
             fuzzy_threshold=plan.fuzzy_threshold,
-            outputs=plan.outputs,
+            select_fields=plan.select_fields,
+            clauses_filter_expr=plan.clauses_filter_expr,
+            datapoints_filter_expr=plan.datapoints_filter_expr,
+            fuzzy_fields_terms=plan.fuzzy_fields_terms,
         )
 
     # Fallback to previous JSON parsing if structured output isn't available
@@ -309,15 +364,18 @@ def call_llm_plan(question: str) -> LLMDecision:
 
     return LLMDecision(
         is_db_query=bool(obj.get("is_db_query", True)),
-        search_strategy=str(obj.get("search_strategy", "sql_only")),
+        search_strategy=str(obj.get("search_strategy", "")),
         sql=(obj.get("sql") if obj.get("sql") is not None else None),
         graph_type=(str(obj.get("graph_type")) if obj.get("graph_type") is not None else None),
         explanation=obj.get("explanation"),
-        fuzzy_terms=(obj.get("fuzzy_terms") if isinstance(obj.get("fuzzy_terms"), list) else None),
         fuzzy_threshold=(
             int(obj.get("fuzzy_threshold")) if obj.get("fuzzy_threshold") is not None else None
         ),
-        outputs=(obj.get("outputs") if isinstance(obj.get("outputs"), list) else None),
+        render_types=(obj.get("render_types") if isinstance(obj.get("render_types"), list) else None),
+        select_fields=(obj.get("select_fields") if isinstance(obj.get("select_fields"), list) else None),
+        clauses_filter_expr=(obj.get("clauses_filter_expr") if isinstance(obj.get("clauses_filter_expr"), str) else None),
+        datapoints_filter_expr=(obj.get("datapoints_filter_expr") if isinstance(obj.get("datapoints_filter_expr"), str) else None),
+        fuzzy_fields_terms=(obj.get("fuzzy_fields_terms") if isinstance(obj.get("fuzzy_fields_terms"), dict) else None),
     )
 
 
@@ -339,7 +397,10 @@ def render_output(df: pd.DataFrame, output_type: str, outputs: Optional[List[str
 
     # Determine which elements to show
     outputs_norm = [str(x).lower() for x in outputs] if outputs else None
-    show_graph = outputs_norm is None or ("graph" in outputs_norm)
+    show_graph = outputs_norm is None or (
+        (outputs_norm is not None)
+        and ("graph" in outputs_norm or any(x in {"bar", "line", "pie"} for x in outputs_norm))
+    )
     show_table = outputs_norm is None or ("table" in outputs_norm)
     show_download = outputs_norm is None or ("download" in outputs_norm)
 
@@ -403,8 +464,33 @@ def render_output(df: pd.DataFrame, output_type: str, outputs: Optional[List[str
             if len(df.columns) >= 2 and num_cols:
                 fig = px.pie(df, names=df.columns[0], values=num_cols[0])
                 st.plotly_chart(fig, use_container_width=True)
-            elif not show_table:
-                st.dataframe(df, use_container_width=True)
+            else:
+                # Fallback: derive counts for a categorical column and plot by counts
+                preferred_names = [
+                    "status",
+                    "contract_type",
+                    "department",
+                    "party_name_1",
+                    "party_name_2",
+                ]
+                names_col = _first_categorical_col(df, preferred=preferred_names) or (
+                    df.columns[0] if len(df.columns) > 0 else None
+                )
+                if names_col is not None:
+                    counts = (
+                        df[names_col]
+                        .astype(str)
+                        .value_counts(dropna=False)
+                        .reset_index()
+                    )
+                    counts.columns = [names_col, "count"]
+                    if not counts.empty:
+                        fig = px.pie(counts, names=names_col, values="count")
+                        st.plotly_chart(fig, use_container_width=True)
+                    elif not show_table:
+                        st.dataframe(df, use_container_width=True)
+                elif not show_table:
+                    st.dataframe(df, use_container_width=True)
 
     if show_table:
         st.dataframe(df, use_container_width=True)
@@ -554,6 +640,180 @@ def apply_fuzzy_filter(df: pd.DataFrame, terms: List[str], threshold: int) -> pd
     return df.drop(columns=["fuzzy_text"]) if "fuzzy_text" in df.columns else df
 
 
+def _ensure_list_fields(df: pd.DataFrame, need_clauses: bool, need_datapoints: bool) -> pd.DataFrame:
+    """Ensure dataframe has list_clauses and/or datapoints columns by fetching as needed.
+
+    If missing and contract_id is available, fetch from DB and merge.
+    """
+    missing_clauses = need_clauses and ("list_clauses" not in df.columns)
+    missing_datapoints = need_datapoints and ("datapoints" not in df.columns)
+    if not (missing_clauses or missing_datapoints):
+        return df
+    if "contract_id" not in df.columns:
+        st.warning(
+            "Cannot apply clauses/datapoints filter because contract_id is not present in results."
+        )
+        return df
+    ids = (
+        df["contract_id"].dropna().astype(str).unique().tolist()
+        if "contract_id" in df.columns
+        else []
+    )
+    if not ids:
+        return df
+    placeholders = ",".join(["?"] * len(ids))
+    select_cols = ["contract_id"]
+    if missing_clauses:
+        select_cols.append("list_clauses")
+    if missing_datapoints:
+        select_cols.append("datapoints")
+    with sqlite3.connect(DB_PATH) as conn:
+        extra = pd.read_sql_query(
+            f"SELECT {', '.join(select_cols)} FROM CONTRACTS WHERE contract_id IN ({placeholders})",
+            conn,
+            params=ids,
+        )
+    return df.merge(extra, on="contract_id", how="left")
+
+
+def _ensure_fields_for_fuzzy(df: pd.DataFrame, fields: List[str]) -> pd.DataFrame:
+    """Ensure dataframe has required fields for fuzzy matching by fetching as needed.
+
+    If missing and contract_id is available, fetch from DB and merge.
+    """
+    missing = [f for f in fields if f not in df.columns]
+    if not missing:
+        return df
+    if "contract_id" not in df.columns:
+        st.warning("Cannot apply fuzzy field matching because contract_id is missing.")
+        return df
+    ids = df["contract_id"].dropna().astype(str).unique().tolist()
+    if not ids:
+        return df
+    placeholders = ",".join(["?"] * len(ids))
+    select_cols = ["contract_id"] + missing
+    with sqlite3.connect(DB_PATH) as conn:
+        extra = pd.read_sql_query(
+            f"SELECT {', '.join(select_cols)} FROM CONTRACTS WHERE contract_id IN ({placeholders})",
+            conn,
+            params=ids,
+        )
+    return df.merge(extra, on="contract_id", how="left")
+
+
+def apply_fuzzy_fields_filter(
+    df: pd.DataFrame,
+    fields_terms: Dict[str, List[str]],
+    threshold: int,
+) -> pd.DataFrame:
+    """Apply fuzzy matching per specified fields with given terms.
+
+    Requires each field's match score (min across its terms) to be >= threshold.
+    Adds a 'fuzzy_score' column as the minimum score across all fields.
+    """
+    if df.empty or not fields_terms:
+        return df
+    needed_fields = sorted(set(fields_terms.keys()))
+    df = _ensure_fields_for_fuzzy(df, needed_fields)
+
+    def field_score(row: pd.Series, field: str, terms: List[str]) -> int:
+        val = row.get(field)
+        text = "" if val is None else str(val)
+        return _fuzzy_score(text, terms)
+
+    scores_per_field: Dict[str, List[int]] = {f: [] for f in needed_fields}
+    combined: List[int] = []
+
+    for _, row in df.iterrows():
+        per_field_scores: List[int] = []
+        for f in needed_fields:
+            s = field_score(row, f, fields_terms.get(f, []))
+            scores_per_field[f].append(s)
+            per_field_scores.append(s)
+        combined.append(min(per_field_scores) if per_field_scores else 0)
+
+    df = df.copy()
+    df["fuzzy_score"] = combined
+    for f in needed_fields:
+        df[f"fuzzy_score__{f}"] = scores_per_field[f]
+    df = df[df["fuzzy_score"] >= threshold].sort_values(by="fuzzy_score", ascending=False)
+    return df
+
+
+def _safe_eval_expr(expr: str, list_clauses: Any, list_datapoints: Any) -> bool:
+    """Evaluate a boolean expression with limited safe globals.
+
+    Provides list_clauses (list) and list_datapoints (dict) plus a few safe builtins.
+    Returns False on any exception.
+    """
+    try:
+        safe_globals: Dict[str, Any] = {
+            "__builtins__": {},
+        }
+        safe_locals: Dict[str, Any] = {
+            "list_clauses": list_clauses,
+            "list_datapoints": list_datapoints,
+            # Selected safe helpers
+            "len": len,
+            "any": any,
+            "all": all,
+            "set": set,
+            "sorted": sorted,
+        }
+        return bool(eval(expr, safe_globals, safe_locals))
+    except Exception:
+        return False
+
+
+def apply_post_expressions(
+    df: pd.DataFrame,
+    clauses_expr: Optional[str],
+    datapoints_expr: Optional[str],
+) -> pd.DataFrame:
+    """Apply optional Python expressions to filter rows using list_clauses/datapoints.
+
+    - clauses_expr: expression using list_clauses (list[str])
+    - datapoints_expr: expression using list_datapoints (dict[str, Any])
+    """
+    if df.empty:
+        return df
+    need_clauses = bool(clauses_expr)
+    need_datapoints = bool(datapoints_expr)
+    if not (need_clauses or need_datapoints):
+        return df
+    df = _ensure_list_fields(df, need_clauses, need_datapoints)
+
+    def parse_json_val(val: Any, default: Any) -> Any:
+        if val is None:
+            return default
+        if isinstance(val, (list, dict)):
+            return val
+        if isinstance(val, str):
+            try:
+                parsed = json.loads(val)
+                if isinstance(default, list) and isinstance(parsed, list):
+                    return parsed
+                if isinstance(default, dict) and isinstance(parsed, dict):
+                    return parsed
+            except Exception:
+                return default
+        return default
+
+    flags: list[bool] = []
+    for _, row in df.iterrows():
+        lc = parse_json_val(row.get("list_clauses"), [])
+        dp = parse_json_val(row.get("datapoints"), {})
+        ok = True
+        if clauses_expr:
+            ok = ok and _safe_eval_expr(clauses_expr, lc, dp)
+        if datapoints_expr:
+            ok = ok and _safe_eval_expr(datapoints_expr, lc, dp)
+        flags.append(bool(ok))
+
+    mask = pd.Series(flags, index=df.index)
+    return df[mask]
+
+
 def _infer_count_col(df: pd.DataFrame) -> Optional[str]:
     candidates = ["count", "counts", "cnt", "total", "n", "num", "value"]
     lower_map = {c.lower(): c for c in df.columns}
@@ -673,20 +933,21 @@ def explain_results_with_llm(
 
     # Build a compact decision context to guide the LLM's explanation of selection mechanics
     decision_context: Dict[str, Any] = {
-        "is_db_query": bool(decision.is_db_query),
         "search_strategy": str(decision.search_strategy),
-        "outputs": decision.outputs,
+        "render_types": decision.render_types,
+        "select_fields": decision.select_fields,
         "graph_type": decision.graph_type,
-        "fuzzy_terms": decision.fuzzy_terms,
+        "fuzzy_fields_terms": decision.fuzzy_fields_terms,
         "fuzzy_threshold": decision.fuzzy_threshold,
-        # Heuristics to hint at text LIKE usage without exposing SQL
-        "used_text_like": (":q" in (sql or ""))
-        and (decision.search_strategy in {"text_fulltext", "hybrid"}),
+        # Heuristic to hint at text LIKE usage without exposing SQL
+        "used_text_like": (":q" in (sql or "")),
     }
     payload = {
         "question": question,
         "search_strategy": decision.search_strategy,
-        "fuzzy_terms": decision.fuzzy_terms,
+        "render_types": decision.render_types,
+        "select_fields": decision.select_fields,
+        "fuzzy_fields_terms": decision.fuzzy_fields_terms,
         "fuzzy_threshold": decision.fuzzy_threshold,
         "sql": sql,
         "results_context": context,
@@ -730,14 +991,127 @@ def page() -> None:
         )
         model_name = st.text_input("Model name", value=model_name_default)
 
+    # Load canned queries and provide navigation
+    if "queries_list" not in st.session_state:
+        try:
+            if QUERIES_CSV.exists():
+                dfq = pd.read_csv(QUERIES_CSV, encoding="utf-8").fillna("")
+                # Try to detect a column named 'question' or first column
+                if "question" in dfq.columns:
+                    st.session_state["queries_list"] = dfq["question"].astype(str).tolist()
+                else:
+                    st.session_state["queries_list"] = dfq.iloc[:, 0].astype(str).tolist()
+            else:
+                st.session_state["queries_list"] = []
+        except Exception:
+            st.session_state["queries_list"] = []
+    if "query_idx" not in st.session_state:
+        st.session_state["query_idx"] = 0
+    if "manual_mode" not in st.session_state:
+        st.session_state["manual_mode"] = False
+
+    # Navigation controls
+    nav_col1, nav_col2, nav_col3, nav_col4 = st.columns([1, 1, 1, 6])
+    with nav_col1:
+        if st.button("Previous") and st.session_state["queries_list"]:
+            st.session_state["manual_mode"] = False
+            st.session_state["query_idx"] = max(0, st.session_state["query_idx"] - 1)
+    with nav_col2:
+        if st.button("Next") and st.session_state["queries_list"]:
+            st.session_state["manual_mode"] = False
+            st.session_state["query_idx"] = min(
+                len(st.session_state["queries_list"]) - 1, st.session_state["query_idx"] + 1
+            )
+    with nav_col3:
+        if st.button("New query"):
+            st.session_state["manual_mode"] = True
+
     st.write("")
+    # Determine initial text for the question input
+    initial_q = ""
+    if not st.session_state["manual_mode"] and st.session_state["queries_list"]:
+        try:
+            initial_q = st.session_state["queries_list"][st.session_state["query_idx"]]
+        except Exception:
+            initial_q = ""
     question = st.text_area(
         "Your question",
+        value=initial_q,
         height=120,
         placeholder="e.g., Show top 10 counterparties by count for ISDA contracts signed after 2016",
     )
 
+    # If a saved result exists for this question, show it directly
+    if (question or "").strip():
+        try:
+            OUTPUT_QUERIES_DIR.mkdir(parents=True, exist_ok=True)
+            qid_preview = hashlib.md5((question or "").strip().encode("utf-8")).hexdigest()
+            saved_path = OUTPUT_QUERIES_DIR / f"{qid_preview}.json"
+            if saved_path.exists():
+                with saved_path.open("r", encoding="utf-8") as f:
+                    saved_obj = json.load(f)
+                saved_dec = saved_obj.get("decision", {})
+                saved_rows = saved_obj.get("data", [])
+                saved_expl = saved_obj.get("explanation", "")
+                df_saved = pd.DataFrame(saved_rows)
+                with st.expander("Saved decision", expanded=False):
+                    st.markdown("**In DB scope**: " + str(saved_dec.get("is_db_query", "")))
+                    st.markdown("**Search strategy**: " + str(saved_dec.get("search_strategy", "")))
+                    st.markdown("**Explanation**: " + str(saved_obj.get("explanation") or saved_dec.get("explanation") or ""))
+                    st.markdown("**SQL query**")
+                    st.code(saved_dec.get("sql") or "")
+                    rendering_list = saved_dec.get("render_types") or []
+                    rendering_display = [
+                        ("graph" if str(x).lower() in {"bar", "line", "pie"} else str(x))
+                        for x in rendering_list
+                    ]
+                    st.markdown("**Rendering**: " + ", ".join(rendering_display))
+                    st.markdown("**Graph type**: " + str(saved_dec.get("graph_type", "")))
+                    sel_fields = saved_dec.get("select_fields") or []
+                    st.markdown(
+                        "**Display fields**: "
+                        + (", ".join([str(x) for x in sel_fields]) if sel_fields else "")
+                    )
+                    if saved_dec.get("fuzzy_fields_terms") is not None:
+                        st.markdown("**fuzzy_fields_terms**:")
+                        try:
+                            st.json(saved_dec.get("fuzzy_fields_terms"))
+                        except Exception:
+                            st.write(saved_dec.get("fuzzy_fields_terms"))
+                    if saved_dec.get("clauses_filter_expr") or saved_dec.get("datapoints_filter_expr"):
+                        st.markdown(
+                            "**Clauses filter expression**: "
+                            + str(saved_dec.get("clauses_filter_expr"))
+                        )
+                        st.markdown(
+                            "**Datapoints filter expression**: "
+                            + str(saved_dec.get("datapoints_filter_expr"))
+                        )
+
+                chart_type_saved = (saved_dec.get("graph_type") or "bar")
+                render_output(df_saved, chart_type_saved, outputs=(saved_dec.get("render_types") or None))
+                if saved_expl:
+                    st.markdown("**Explanation**")
+                    st.write(saved_expl)
+        except Exception as e:
+            st.warning("Failed to load saved results for this question.")
+            st.exception(e)
+
     if st.button("Submit", type="primary") and question.strip():
+        # First: ask LLM if question is in scope for the database
+        with st.spinner("Checking question scope..."):
+            try:
+                # Lightweight scope check by leveraging the planner's boolean as primary signal
+                scope_decision = call_llm_plan(question)
+            except Exception as e:
+                st.exception(e)
+                return
+        if not scope_decision.is_db_query:
+            st.error("This question is out of scope for the contracts database.")
+            with st.expander("Why not?"):
+                st.write(scope_decision.explanation or scope_decision.search_strategy or "Not related to database content.")
+            return
+
         with st.spinner("Planning with LLM..."):
             try:
                 decision = call_llm_plan(question)
@@ -745,27 +1119,36 @@ def page() -> None:
                 st.exception(e)
                 return
 
-        if not decision.is_db_query:
-            st.warning("This question is out of scope for the contracts database.")
-            return
-
         with st.expander("Decision (LLM plan)", expanded=False):
-            st.markdown("**is_db_query**: " + str(decision.is_db_query))
-            st.markdown("**search_strategy**: " + str(decision.search_strategy))
-            st.markdown("**SQL**")
+            st.markdown("**In DB scope**: " + str(decision.is_db_query))
+            st.markdown("**Search strategy**: " + str(decision.search_strategy))
+            st.markdown("**Explanation**: " + (decision.explanation or ""))
+            st.markdown("**SQL query**")
             st.code(decision.sql)
-            st.markdown("**graph_type**: " + str(decision.graph_type))
-            st.markdown("**outputs**: " + str(decision.outputs))
-            st.markdown("**explanation**: " + (decision.explanation or ""))
-            st.markdown("**fuzzy_terms**: " + str(decision.fuzzy_terms))
-            st.markdown("**fuzzy_threshold**: " + str(decision.fuzzy_threshold))
-        # If the plan requests full text search, hint the LLM expects LIKE with :q
+            rendering_list = decision.render_types or []
+            rendering_display = [
+                ("graph" if str(x).lower() in {"bar", "line", "pie"} else str(x))
+                for x in rendering_list
+            ]
+            st.markdown("**Rendering**: " + ", ".join(rendering_display))
+            st.markdown("**Graph type**: " + str(decision.graph_type))
+            st.markdown("**Display fields**: " + ", ".join(decision.select_fields or []) if decision.select_fields else "")
+            # No global fuzzy terms; use fuzzy_fields_terms
+            st.markdown("**fuzzy threshold**: " + str(decision.fuzzy_threshold))
+            if decision.fuzzy_fields_terms is not None:
+                st.markdown("**fuzzy_fields_terms**:")
+                try:
+                    st.json(decision.fuzzy_fields_terms)
+                except Exception:
+                    st.write(decision.fuzzy_fields_terms)
+            if decision.clauses_filter_expr or decision.datapoints_filter_expr:
+                st.markdown("**Clauses filter expression**: " + str(decision.clauses_filter_expr))
+                st.markdown(
+                    "**Datapoints filter expression**: " + str(decision.datapoints_filter_expr)
+                )
+        # Support LIKE with :q if present
         like_text: Optional[str] = None
-        if (
-            decision.search_strategy in {"text_fulltext", "hybrid"}
-            and decision.sql
-            and ":q" in decision.sql
-        ):
+        if decision.sql and ":q" in decision.sql:
             like_text = question
 
         if not decision.sql:
@@ -781,19 +1164,40 @@ def page() -> None:
                 st.exception(e)
                 return
 
-        # Optional fuzzy post-filtering
-        if decision.search_strategy in {"fuzzy", "hybrid"}:
-            terms = decision.fuzzy_terms or _extract_terms_from_question(question)
-            threshold = decision.fuzzy_threshold or 75
-            with st.spinner("Applying fuzzy matching..."):
+        # Optional Python expression post-filtering for clauses/datapoints
+        if decision.clauses_filter_expr or decision.datapoints_filter_expr:
+            with st.spinner("Applying clauses/datapoints filters..."):
                 try:
-                    df = apply_fuzzy_filter(df, terms=terms, threshold=threshold)
+                    df = apply_post_expressions(
+                        df,
+                        clauses_expr=decision.clauses_filter_expr,
+                        datapoints_expr=decision.datapoints_filter_expr,
+                    )
                 except Exception as e:
-                    st.warning("Fuzzy filtering failed; showing raw SQL results.")
+                    st.warning("Post-expression filtering failed; showing current results.")
                     st.exception(e)
 
+        # Optional fuzzy field-based filtering on current results
+        if decision.fuzzy_fields_terms:
+            threshold = decision.fuzzy_threshold or 75
+            with st.spinner("Applying fuzzy field matching..."):
+                try:
+                    df = apply_fuzzy_fields_filter(df, decision.fuzzy_fields_terms, threshold)
+                except Exception as e:
+                    st.warning("Fuzzy field filtering failed; showing current results.")
+                    st.exception(e)
+
+        # Prepare display dataframe per select_fields (after all filtering)
+        display_df = df
+        if decision.select_fields:
+            wanted = [c for c in decision.select_fields if c in display_df.columns]
+            if wanted:
+                display_df = display_df[wanted]
+            else:
+                st.warning("Requested select_fields not present in results; showing all columns.")
+
         chart_type = decision.graph_type or "bar"
-        render_output(df, chart_type, outputs=decision.outputs)
+        render_output(display_df, chart_type, outputs=decision.render_types)
 
         # LLM-based explanation of results
         with st.spinner("Explaining results..."):
@@ -822,6 +1226,38 @@ def page() -> None:
                 st.json(context)
             except Exception:
                 st.write(context)
+
+        # Persist query results to JSON in dataset/output/queries
+        try:
+            OUTPUT_QUERIES_DIR.mkdir(parents=True, exist_ok=True)
+            qid = hashlib.md5((question or "").strip().encode("utf-8")).hexdigest()
+            out_path = OUTPUT_QUERIES_DIR / f"{qid}.json"
+            print(f"Saving query results to {out_path}")
+            decision_dict = {
+                "is_db_query": getattr(decision, "is_db_query", None),
+                "search_strategy": decision.search_strategy,
+                "render_types": decision.render_types,
+                "select_fields": decision.select_fields,
+                "graph_type": decision.graph_type,
+                "fuzzy_fields_terms": decision.fuzzy_fields_terms,
+                "fuzzy_threshold": decision.fuzzy_threshold,
+                "sql": decision.sql,
+            }
+            data_rows: list[dict[str, Any]] = []
+            try:
+                data_rows = df.head(200).to_dict(orient="records")
+            except Exception:
+                data_rows = df.to_dict(orient="records")
+            payload = {
+                "question": question,
+                "decision": decision_dict,
+                "data": data_rows,
+                "explanation": explanation,
+            }
+            out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+        except Exception as e:
+            st.warning("Saving query results failed.")
+            st.exception(e)
 
 
 if __name__ == "__main__":  # For local single-file debugging
