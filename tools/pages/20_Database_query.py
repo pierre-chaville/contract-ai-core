@@ -512,7 +512,83 @@ def render_output(df: pd.DataFrame, output_type: str, outputs: Optional[List[str
                     st.dataframe(df, use_container_width=True)
 
     if show_table:
-        st.dataframe(df, use_container_width=True)
+        # If results include contract_id and either list_clauses or datapoints, render expandable rows
+        has_contract_id = "contract_id" in df.columns
+        has_clauses_list = "list_clauses" in df.columns
+        has_datapoints = "datapoints" in df.columns
+        if has_contract_id and (has_clauses_list or has_datapoints):
+            # Render one expander per contract with detailed clauses/datapoints
+            # Limit extremely large outputs
+            max_rows = 500
+            df_view = df.copy().head(max_rows)
+
+            def _parse_json_like(val: Any, default: Any) -> Any:
+                if val is None:
+                    return default
+                if isinstance(val, (list, dict)):
+                    return val
+                if isinstance(val, str):
+                    try:
+                        parsed = json.loads(val)
+                        if isinstance(default, list) and isinstance(parsed, list):
+                            return parsed
+                        if isinstance(default, dict) and isinstance(parsed, dict):
+                            return parsed
+                    except Exception:
+                        return default
+                return default
+
+            summary_cols = [
+                "contract_number",
+                "contract_type",
+                "contract_date",
+                "party_name_1",
+                "party_name_2",
+                "status",
+            ]
+            for _, row in df_view.iterrows():
+                cid = row.get("contract_id")
+                if cid is None:
+                    continue
+                header_parts: List[str] = [str(cid)]
+                if "contract_number" in df_view.columns and row.get("contract_number"):
+                    header_parts.append(str(row.get("contract_number")))
+                if "party_name_1" in df_view.columns and row.get("party_name_1"):
+                    header_parts.append(str(row.get("party_name_1")))
+                if "party_name_2" in df_view.columns and row.get("party_name_2"):
+                    header_parts.append(str(row.get("party_name_2")))
+                with st.expander(" | ".join(header_parts), expanded=False):
+                    # Basic summary
+                    basics: Dict[str, Any] = {}
+                    for col in summary_cols:
+                        if col in df_view.columns and row.get(col) not in (None, ""):
+                            basics[col] = row.get(col)
+                    if basics:
+                        st.subheader("Summary")
+                        st.table(pd.DataFrame([basics]).T.rename(columns={0: "value"}))
+
+                    # Clauses list
+                    if has_clauses_list:
+                        clauses_val = _parse_json_like(row.get("list_clauses"), [])
+                        st.subheader("Clauses")
+                        if isinstance(clauses_val, list) and clauses_val:
+                            st.table(pd.DataFrame({"clause": [str(x) for x in clauses_val]}))
+                        else:
+                            st.write("(no clauses)")
+
+                    # Datapoints
+                    if has_datapoints:
+                        datapoints_val = _parse_json_like(row.get("datapoints"), {})
+                        st.subheader("Datapoints")
+                        if isinstance(datapoints_val, dict) and datapoints_val:
+                            items = [
+                                (str(k), datapoints_val[k]) for k in sorted(datapoints_val.keys())
+                            ]
+                            st.table(pd.DataFrame(items, columns=["key", "value"]))
+                        else:
+                            st.write("(no datapoints)")
+        else:
+            st.dataframe(df, use_container_width=True)
 
     if show_download:
         csv_buf = io.StringIO()
