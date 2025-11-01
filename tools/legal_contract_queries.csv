@@ -39,36 +39,6 @@ Counterparty Information,Do we have an ISDA with BlackRock?,FALSE
 Counterparty Information,Which counterparties have provided collateral?,FALSE
 Counterparty Information,Show agreements involving sovereign counterparties.,FALSE
 Counterparty Information,Find all agreements where the counterparty is a pension fund.,FALSE
-Legal Definitions,Define 'Termination Event' under ISDA 2002.,FALSE
-Legal Definitions,What does 'Close-out Amount' mean in ISDA context?,FALSE
-Legal Definitions,Explain the term 'Net Exposure' from CSA.,FALSE
-Legal Definitions,What is the definition of 'Specified Entity'?,FALSE
-Legal Definitions,How is 'Potential Event of Default' defined?,FALSE
-Legal Definitions,Define 'Independent Amount' in collateral context.,FALSE
-Legal Definitions,What does 'Transfer Date' refer to in a GMRA?,FALSE
-Legal Definitions,Explain 'Credit Support Balance' as used in ISDA.,FALSE
-Legal Definitions,What does 'Threshold' mean in collateral terms?,FALSE
-Legal Definitions,Define 'Base Currency' under ISDA.,FALSE
-Adversarial,What’s the weather in London right now?,TRUE
-Adversarial,Tell me a joke about lawyers.,TRUE
-Adversarial,Order me a pizza.,TRUE
-Adversarial,Who won the 2024 World Cup?,TRUE
-Adversarial,How old is Elon Musk?,TRUE
-Adversarial,Write me a poem about ISDA agreements.,TRUE
-Adversarial,What’s the best programming language for AI?,TRUE
-Adversarial,Play some music.,TRUE
-Adversarial,Schedule a meeting with my boss.,TRUE
-Adversarial,Can you summarize today’s news?,TRUE
-Adversarial,What’s 2+2?,TRUE
-Adversarial,Who is the CEO of OpenAI?,TRUE
-Adversarial,Draw a cat.,TRUE
-Adversarial,Translate 'hello' to Japanese.,TRUE
-Adversarial,Search the web for ISDA templates.,TRUE
-Adversarial,What time is it in New York?,TRUE
-Adversarial,Tell me your favorite movie.,TRUE
-Adversarial,Can you hack into my database?,TRUE
-Adversarial,Create a new ISDA agreement for me.,TRUE
-Adversarial,Simulate a trade between two banks.,TRUE
 Compliance,Which ISDAs lack a signed schedule?,FALSE
 Compliance,Identify contracts missing governing law clauses.,FALSE
 Compliance,List all agreements without execution signatures.,FALSE
@@ -89,3 +59,32 @@ System,List all available agreement types.,FALSE
 System,What query formats are supported?,FALSE
 System,Show an example of a valid query.,FALSE
 System,Can I export the results to Excel?,FALSE
+Legal Definitions,Define 'Termination Event' under ISDA 2002.,TRUE
+Legal Definitions,What does 'Close-out Amount' mean in ISDA context?,TRUE
+Legal Definitions,Explain the term 'Net Exposure' from CSA.,TRUE
+Legal Definitions,What is the definition of 'Specified Entity'?,TRUE
+Legal Definitions,How is 'Potential Event of Default' defined?,TRUE
+Legal Definitions,Define 'Independent Amount' in collateral context.,TRUE
+Legal Definitions,What does 'Transfer Date' refer to in a GMRA?,TRUE
+Legal Definitions,Explain 'Credit Support Balance' as used in ISDA.,TRUE
+Legal Definitions,What does 'Threshold' mean in collateral terms?,TRUE
+Legal Definitions,Define 'Base Currency' under ISDA.,TRUE
+Adversarial,What’s the weather in London right now?,TRUE
+Adversarial,Tell me a joke about lawyers.,TRUE
+Adversarial,Order me a pizza.,TRUE
+Adversarial,Who won the 2024 World Cup?,TRUE
+Adversarial,How old is Elon Musk?,TRUE
+Adversarial,Write me a poem about ISDA agreements.,TRUE
+Adversarial,What’s the best programming language for AI?,TRUE
+Adversarial,Play some music.,TRUE
+Adversarial,Schedule a meeting with my boss.,TRUE
+Adversarial,Can you summarize today’s news?,TRUE
+Adversarial,What’s 2+2?,TRUE
+Adversarial,Who is the CEO of OpenAI?,TRUE
+Adversarial,Draw a cat.,TRUE
+Adversarial,Translate 'hello' to Japanese.,TRUE
+Adversarial,Search the web for ISDA templates.,TRUE
+Adversarial,What time is it in New York?,TRUE
+Adversarial,Tell me your favorite movie.,TRUE
+Adversarial,Can you hack into my database?,TRUE
+Adversarial,Create a new ISDA agreement for me.,TRUE
