@@ -16,11 +16,12 @@ Usage:
 """
 
 import argparse
+import ast
 import csv
 import json
 import os
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 from sqlalchemy import JSON, Integer, String, Text, create_engine, select
 from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column
@@ -102,7 +103,6 @@ def _apply_scopes_to_text(text: str, scopes: List[dict]) -> str:
 def _read_clauses_csv(path: Path) -> Dict[str, str]:
     # Input rows represent paragraphs: index, clause_key, (optional) clause_title, confidence, text
     # We aggregate paragraph texts per clause TITLE when available; fallback to key if title missing
-    print(path)
     if not path.exists():
         return {}
     aggregated: Dict[str, list[str]] = {}
@@ -324,6 +324,280 @@ def _read_datapoints_csv(path: Path) -> Dict[str, Any]:
     return result
 
 
+# === Datapoints enrichment (titles, enums, objects) ===
+
+
+def _load_enums(dataset_root: Path) -> Dict[str, Dict[str, str]]:
+    """Load enum sets from contract_types/ISDA_enums.csv.
+
+    Returns mapping: enum_set_name -> { key -> title }
+    """
+    path = dataset_root / "contract_types" / "ISDA_enums.csv"
+    enums: Dict[str, Dict[str, str]] = {}
+    if not path.exists():
+        print("no enums file", path)
+        return enums
+    with path.open("r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        if not reader.fieldnames:
+            print("no fieldnames", path)
+            return enums
+        cols = {str(n).strip().lstrip("\ufeff").lower(): n for n in reader.fieldnames}
+        # ISDA_enums.csv uses: key (enum set), title (set title), code (enum key), description (enum item title)
+        set_col = (
+            cols.get("enum")
+            or cols.get("set")
+            or cols.get("group")
+            or cols.get("set_name")
+            or cols.get("key")
+        )
+        code_col = cols.get("code") or cols.get("enum_code") or cols.get("id")
+        title_col = cols.get("description") or cols.get("title") or cols.get("label")
+        for row in reader:
+            set_name = (row.get(set_col or "") or "").strip()
+            key = (row.get(code_col or "") or "").strip()
+            title = (row.get(title_col or "") or "").strip()
+            if not set_name or not key:
+                continue
+            if set_name not in enums:
+                enums[set_name] = {}
+            enums[set_name][key] = title or key
+    return enums
+
+
+def _load_datapoint_definitions(
+    dataset_root: Path, contract_type: Optional[str]
+) -> Dict[str, Tuple[str, str, str]]:
+    """Load datapoint definitions: id -> (title, data_type, enum_key).
+
+    Attempts contract_types/<contract_type>_datapoints.csv, else ISDA_datapoints.csv.
+    """
+    candidates: List[Path] = []
+    if contract_type:
+        ct = str(contract_type).strip()
+        candidates.append(dataset_root / "contract_types" / f"{ct}_datapoints.csv")
+    candidates.append(dataset_root / "contract_types" / "ISDA_datapoints.csv")
+    defs: Dict[str, Tuple[str, str, str]] = {}
+    path = next((p for p in candidates if p.exists()), None)
+    if not path:
+        return defs
+    with path.open("r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        if not reader.fieldnames:
+            return defs
+        cols = {n.lower(): n for n in reader.fieldnames}
+        id_col = cols.get("key") or cols.get("id") or cols.get("datapoint_id")
+        title_col = cols.get("title") or cols.get("label") or cols.get("name")
+        type_col = cols.get("data_type") or cols.get("type")
+        enum_col = cols.get("enum_key") or cols.get("enum") or cols.get("enum_set")
+        for row in reader:
+            did = (row.get(id_col or "") or "").strip()
+            title = (row.get(title_col or "") or did).strip()
+            dtype = (row.get(type_col or "") or "").strip()
+            enum_key = (row.get(enum_col or "") or "").strip()
+            if did:
+                defs[did] = (title, dtype, enum_key)
+    return defs
+
+
+def _load_structure_definitions(dataset_root: Path) -> Dict[str, Dict[str, Tuple[str, str, str]]]:
+    """Load structures and their elements: struct -> field_key -> (title, data_type, enum_key)."""
+    elems_path = dataset_root / "contract_types" / "ISDA_structure_elements.csv"
+    # We mostly need field title and data_type per structure key
+    # The structures file may define structures; elements file links structure->field
+    field_defs: Dict[str, Dict[str, Tuple[str, str, str]]] = {}
+    if not elems_path.exists():
+        return field_defs
+    with elems_path.open("r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        if not reader.fieldnames:
+            return field_defs
+        cols = {str(n).strip().lstrip("\ufeff").lower(): n for n in reader.fieldnames}
+        struct_col = cols.get("structure") or cols.get("structure_key") or cols.get("key")
+        field_key_col = (
+            cols.get("field") or cols.get("field_key") or cols.get("key_field") or cols.get("key")
+        )
+        title_col = cols.get("title") or cols.get("label") or cols.get("name")
+        dtype_col = cols.get("data_type") or cols.get("type")
+        enum_col = cols.get("enum_key") or cols.get("enum") or cols.get("enum_set")
+        for row in reader:
+            sname = (row.get(struct_col or "") or "").strip()
+            fkey = (row.get(field_key_col or "") or "").strip()
+            ftitle = (row.get(title_col or "") or fkey).strip()
+            fdtype = (row.get(dtype_col or "") or "").strip()
+            fenum = (row.get(enum_col or "") or "").strip()
+            if not sname or not fkey:
+                continue
+            field_defs.setdefault(sname, {})[fkey] = (ftitle, fdtype, fenum)
+    return field_defs
+
+
+def _parse_type_spec(type_spec: str) -> Dict[str, str]:
+    s = (type_spec or "").strip()
+    if not s:
+        return {"kind": "string"}
+    low = s.lower().replace(" ", "")
+    # list[...] pattern
+    if low.startswith("list[") and low.endswith("]"):
+        inner = low[5:-1]
+        if inner.startswith("enum"):
+            # list[enum:SET] or list[enum/SET]
+            return {"kind": "list_enum"}
+        if inner.startswith("object"):
+            struct = (
+                inner.split(":", 1)[1]
+                if ":" in inner
+                else inner.split("/", 1)[1]
+                if "/" in inner
+                else ""
+            )
+            return {"kind": "list_object", "struct": struct}
+        return {"kind": "list_string"}
+    # enum
+    if low.startswith("enum"):
+        return {"kind": "enum"}
+    # object
+    if low.startswith("object"):
+        struct = low.split(":", 1)[1] if ":" in low else low.split("/", 1)[1] if "/" in low else ""
+        return {"kind": "object", "struct": struct}
+    return {"kind": "string"}
+
+
+def _safe_json_load(val: Any) -> Any:
+    if isinstance(val, (dict, list)):
+        return val
+    if isinstance(val, str):
+        try:
+            return json.loads(val)
+        except Exception:
+            # Fallback: handle Python-literal-like strings with single quotes
+            try:
+                lit = ast.literal_eval(val)
+                if isinstance(lit, (dict, list)):
+                    return lit
+            except Exception:
+                pass
+            return val
+    return val
+
+
+def _unwrap_leaf_value(val: Any) -> Any:
+    """Recursively unwrap common wrapper objects to their 'value' payload.
+
+    - Dicts with a 'value' key return that value (recursively unwrapped)
+    - Lists are unwrapped element-wise
+    - Other types returned as-is
+    """
+    if isinstance(val, dict):
+        if "value" in val:
+            return _unwrap_leaf_value(val.get("value"))
+        # Not a typical wrapper; return as-is
+        return val
+    if isinstance(val, list):
+        return [_unwrap_leaf_value(v) for v in val]
+    return val
+
+
+def _transform_enum_value(enum_sets: Dict[str, Dict[str, str]], enum_name: str, value: Any) -> Any:
+    mapping = enum_sets.get(enum_name) or {}
+    base = _unwrap_leaf_value(_safe_json_load(value))
+    if isinstance(base, list):
+        return [mapping.get(str(v), str(v)) for v in base]
+    return mapping.get(str(base), str(base))
+
+
+def _transform_object_value(
+    struct_defs: Dict[str, Dict[str, Tuple[str, str, str]]],
+    enum_sets: Dict[str, Dict[str, str]],
+    struct_name: str,
+    value: Any,
+) -> Any:
+    print("struct_name", struct_name)
+    print("value", value)
+    print("data", _safe_json_load(value))
+    data = _safe_json_load(value)
+    fields = struct_defs.get(struct_name) or {}
+    print("type(data)", type(data))
+    if isinstance(data, dict):
+        print("------> is dict")
+        out: Dict[str, Any] = {}
+        for fkey, fval in data.items():
+            ftitle, fdtype, fenum = fields.get(fkey, (fkey, "", ""))
+            spec = _parse_type_spec(fdtype)
+            print("ftitle", ftitle, "fdtype", fdtype, "fenum", fenum, "------> spec", spec)
+            print("------> fval", fval)
+            if spec["kind"] == "enum":
+                print("------> is enum")
+                out[ftitle] = _transform_enum_value(enum_sets, fenum, fval)
+            elif spec["kind"] == "list_enum":
+                out[ftitle] = _transform_enum_value(enum_sets, fenum, fval)
+            elif spec["kind"] == "object":
+                out[ftitle] = _transform_object_value(
+                    struct_defs, enum_sets, spec.get("struct", ""), fval
+                )
+            elif spec["kind"] == "list_object":
+                inner = _safe_json_load(fval)
+                if isinstance(inner, list):
+                    out[ftitle] = [
+                        _transform_object_value(struct_defs, enum_sets, spec.get("struct", ""), it)
+                        for it in inner
+                    ]
+                else:
+                    out[ftitle] = inner
+            else:
+                out[ftitle] = _unwrap_leaf_value(fval)
+        return out
+    # If list of dicts
+    if isinstance(data, list):
+        return [
+            _transform_object_value(struct_defs, enum_sets, struct_name, it)
+            if isinstance(it, (dict, list))
+            else it
+            for it in data
+        ]
+    return data
+
+
+def _transform_datapoints(
+    dataset_root: Path,
+    contract_type: Optional[str],
+    raw: Dict[str, Any],
+) -> Dict[str, Any]:
+    dp_defs = _load_datapoint_definitions(dataset_root, contract_type)
+    enum_sets = _load_enums(dataset_root)
+    struct_defs = _load_structure_definitions(dataset_root)
+    out: Dict[str, Any] = {}
+    for did, raw_val in raw.items():
+        title, dtype, denum = dp_defs.get(did, (did, "", ""))
+        spec = _parse_type_spec(dtype)
+        print(title, "spec", spec)
+        try:
+            if spec["kind"] == "enum":
+                out[title] = _transform_enum_value(enum_sets, denum, raw_val)
+            elif spec["kind"] == "list_enum":
+                out[title] = _transform_enum_value(enum_sets, denum, raw_val)
+            elif spec["kind"] == "object":
+                out[title] = _transform_object_value(
+                    struct_defs, enum_sets, spec.get("struct", ""), raw_val
+                )
+                print(title, "->", out[title])
+            elif spec["kind"] == "list_object":
+                inner = _safe_json_load(raw_val)
+                if isinstance(inner, list):
+                    out[title] = [
+                        _transform_object_value(struct_defs, enum_sets, spec.get("struct", ""), it)
+                        for it in inner
+                    ]
+                else:
+                    out[title] = inner
+            else:
+                out[title] = _unwrap_leaf_value(raw_val)
+        except Exception:
+            out[title] = _unwrap_leaf_value(raw_val)
+
+    return out
+
+
 def _discover_organizer_jsons(dataset_root: Path) -> List[Path]:
     return sorted((dataset_root / "gold" / "organizer").glob("*.json"))
 
@@ -482,11 +756,12 @@ def load_all(dry_run: bool = False, echo: bool = False) -> None:
                 if paths["clauses_csv"].exists()
                 else []
             )
-            datapoints = (
+            datapoints_raw = (
                 _read_datapoints_csv(paths["datapoints_csv"])
                 if paths["datapoints_csv"].exists()
                 else {}
             )
+            datapoints = _transform_datapoints(dataset_root, contract_type, datapoints_raw)
 
             def _unwrap_value(v: Any) -> Any:
                 # Common pattern {'value': X, ...}

@@ -44,6 +44,7 @@ dist/
 dataset/output/
 dataset/metrics/
 dataset/gold/
+dataset/contracts.sqlite
 
 # Database
 .db

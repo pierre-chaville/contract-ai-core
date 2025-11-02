@@ -109,7 +109,7 @@ SYSTEM_PRIMER = (
     "| full_text | TEXT | Full OCR/plaintext of the contract | ...long text... |\n"
     "| clauses_text | JSON | Map of clause_title (or key) -> clause text | {Termination Event: '...'} |\n"
     "| list_clauses | JSON (array) | Clause TITLES present in the contract | [Termination Event, Set-off] |\n"
-    "| datapoints | JSON (object) | Datapoint key -> value pairs | {governing_law: 'English'} |\n"
+    "| datapoints | JSON (object) | Datapoint title -> value pairs | {'Governing Law': 'English'} |\n"
     "| guidelines | JSON | Review guidelines/flags or metadata | {risk: 'medium'} |\n"
     "The user will ask a question in English. Your job is to: "
     "2) Plan in four steps regardless of strategy: (a) SQL to filter by available scalar fields (do NOT rely on list_clauses or datapoints in SQL), (b) optional Python expressions to filter by list_clauses and datapoints, (c) optional fuzzy filtering on the resulting rows by specific fields. d) optional final sql aggregation over the filtered results in-memory; reference the interim rows as table RESULTS; SELECT-only, no DDL/DML, no semicolons."
@@ -119,7 +119,7 @@ SYSTEM_PRIMER = (
     "If the selection involves clauses or datapoints, include Python boolean expressions to post-filter rows: "
     "'clauses_filter_expr' uses variable list_clauses (list[str], clause TITLES) and should return True/False; "
     "'datapoints_filter_expr' uses variable list_datapoints (dict[str, Any]) and should return True/False. "
-    "Examples: ('Termination Event' in list_clauses) and (list_datapoints.get('governing_law') == 'English'). "
+    "Examples: ('Termination Event' in list_clauses) and (list_datapoints.get('Governing Law') == 'English'). "
     "Set 'is_db_query' to true if the question pertains to querying the CONTRACTS table; otherwise false. "
     "Provide 'search_strategy' as a short free-text explanation of the overall approach (SQL filtering, expressions, fuzzy). "
     "Provide 'render_types' as an array of strings, each one of 'graph', 'table', or 'download'. Add 'graph' if the user asks for a chart, and 'table' if the user asks for a table. Use 'download' except if requested otherwise."
@@ -198,12 +198,12 @@ def _build_isda_reference_text() -> str:
             lines.append(f"- {c.get('title')} | {desc_short}")
         lines.append("")
     if datapoints:
-        lines.append("ISDA DATAPOINTS (key | title | description | data_type):")
+        lines.append("ISDA DATAPOINTS (title | description | data_type):")
         for d in datapoints:
             desc = d.get("description") or ""
             desc_short = desc.replace("\n", " ").strip()
             dtype = d.get("data_type") or ""
-            lines.append(f"- {d.get('key')} | {d.get('title')} | {desc_short} | {dtype}")
+            lines.append(f"- {d.get('title')} | {desc_short} | {dtype}")
         lines.append("")
     if not lines:
         return ""
