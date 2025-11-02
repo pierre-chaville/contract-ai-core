@@ -60,7 +60,7 @@ class PlanSchema(BaseModel):
         None,
         description=(
             "Optional Python boolean expression evaluated per row when clause selection is required. "
-            "Use variable list_clauses (list[str]) to reference row clause keys."
+            "Use variable list_clauses (list[str]) to reference row clause TITLES."
         ),
     )
     datapoints_filter_expr: Optional[str] = Field(
@@ -107,8 +107,8 @@ SYSTEM_PRIMER = (
     "| contract_owner | TEXT | Internal owner/responsible person | Jane Doe |\n"
     "| business_purpose | TEXT | Short description of business purpose | Hedging program |\n"
     "| full_text | TEXT | Full OCR/plaintext of the contract | ...long text... |\n"
-    "| clauses_text | JSON | Map of clause_key -> clause text | {termination_event: '...'} |\n"
-    "| list_clauses | JSON (array) | Clause keys present in the contract | [termination_event, setoff] |\n"
+    "| clauses_text | JSON | Map of clause_title (or key) -> clause text | {Termination Event: '...'} |\n"
+    "| list_clauses | JSON (array) | Clause TITLES present in the contract | [Termination Event, Set-off] |\n"
     "| datapoints | JSON (object) | Datapoint key -> value pairs | {governing_law: 'English'} |\n"
     "| guidelines | JSON | Review guidelines/flags or metadata | {risk: 'medium'} |\n"
     "The user will ask a question in English. Your job is to: "
@@ -117,9 +117,9 @@ SYSTEM_PRIMER = (
     "Produce a safe SQL SELECT (avoid DDL/DML; no semicolons, no PRAGMAs). ALWAYS include contract_id in the SELECT so downstream steps can map results. Prefer adding a LIMIT 1000 unless the user explicitly asks for all rows. "
     'Provide optional "fuzzy_fields_terms" as a mapping of field -> list of fuzzy terms, and "fuzzy_threshold" (0-100, default 90). '
     "If the selection involves clauses or datapoints, include Python boolean expressions to post-filter rows: "
-    "'clauses_filter_expr' uses variable list_clauses (list[str]) and should return True/False; "
+    "'clauses_filter_expr' uses variable list_clauses (list[str], clause TITLES) and should return True/False; "
     "'datapoints_filter_expr' uses variable list_datapoints (dict[str, Any]) and should return True/False. "
-    "Examples: list_clauses and {'termination_event': 'Yes'}.get('key') style checks are valid. "
+    "Examples: ('Termination Event' in list_clauses) and (list_datapoints.get('governing_law') == 'English'). "
     "Set 'is_db_query' to true if the question pertains to querying the CONTRACTS table; otherwise false. "
     "Provide 'search_strategy' as a short free-text explanation of the overall approach (SQL filtering, expressions, fuzzy). "
     "Provide 'render_types' as an array of strings, each one of 'graph', 'table', or 'download'. Add 'graph' if the user asks for a chart, and 'table' if the user asks for a table. Use 'download' except if requested otherwise."
@@ -191,11 +191,11 @@ def _build_isda_reference_text() -> str:
     clauses, datapoints = _load_isda_definitions()
     lines: list[str] = []
     if clauses:
-        lines.append("ISDA CLAUSES (key | title | description):")
+        lines.append("ISDA CLAUSES (title | description):")
         for c in clauses:
             desc = c.get("description") or ""
             desc_short = desc.replace("\n", " ").strip()
-            lines.append(f"- {c.get('key')} | {c.get('title')} | {desc_short}")
+            lines.append(f"- {c.get('title')} | {desc_short}")
         lines.append("")
     if datapoints:
         lines.append("ISDA DATAPOINTS (key | title | description | data_type):")
@@ -869,7 +869,7 @@ def apply_post_expressions(
 ) -> pd.DataFrame:
     """Apply optional Python expressions to filter rows using list_clauses/datapoints.
 
-    - clauses_expr: expression using list_clauses (list[str])
+    - clauses_expr: expression using list_clauses (list[str], clause TITLES)
     - datapoints_expr: expression using list_datapoints (dict[str, Any])
     """
     if df.empty:

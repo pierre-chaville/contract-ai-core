@@ -478,7 +478,9 @@ def load_all(dry_run: bool = False, echo: bool = False) -> None:
                 else {}
             )
             list_clauses = (
-                _read_clause_keys(paths["clauses_csv"]) if paths["clauses_csv"].exists() else []
+                _read_clause_titles_with_map(paths["clauses_csv"], title_map)
+                if paths["clauses_csv"].exists()
+                else []
             )
             datapoints = (
                 _read_datapoints_csv(paths["datapoints_csv"])
