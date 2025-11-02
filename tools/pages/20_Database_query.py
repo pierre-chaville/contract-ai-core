@@ -120,6 +120,7 @@ SYSTEM_PRIMER = (
     "'clauses_filter_expr' uses variable list_clauses (list[str], clause TITLES) and should return True/False; "
     "'datapoints_filter_expr' uses variable list_datapoints (dict[str, Any]) and should return True/False. "
     "Examples: ('Termination Event' in list_clauses) and (list_datapoints.get('Governing Law') == 'English'). "
+    "When comparing credit ratings across contracts, use rating_scale(rating_string) to convert ratings (e.g., 'AAA', 'BB-') into a numeric scale where higher is better, and also the threshold of the datapoint with ratings thresholds. "
     "Set 'is_db_query' to true if the question pertains to querying the CONTRACTS table; otherwise false. "
     "Provide 'search_strategy' as a short free-text explanation of the overall approach (SQL filtering, expressions, fuzzy). "
     "Provide 'render_types' as an array of strings, each one of 'graph', 'table', or 'download'. Add 'graph' if the user asks for a chart, and 'table' if the user asks for a table. Use 'download' except if requested otherwise."
@@ -183,12 +184,134 @@ def _load_isda_definitions() -> tuple[list[dict[str, Any]], list[dict[str, Any]]
     except Exception:
         datapoints = []
 
+    # print("clauses", clauses)
+    # print("datapoints", datapoints)
     return clauses, datapoints
 
 
+def _load_enum_titles_map() -> dict[str, list[str]]:
+    """Return mapping of enum_set -> list of enum item titles using ISDA_enums.csv.
+
+    Assumes columns like: key (enum set), code (enum key), description (enum item title).
+    """
+    base = Path(__file__).resolve().parents[2] / "dataset" / "contract_types"
+    enums_csv = base / "ISDA_enums.csv"
+    mapping: dict[str, list[str]] = {}
+    try:
+        if enums_csv.exists():
+            df = pd.read_csv(enums_csv, encoding="utf-8").fillna("")
+            df.columns = [str(c).strip().lstrip("\ufeff").lower() for c in df.columns]
+            set_col = "key" if "key" in df.columns else ("enum" if "enum" in df.columns else None)
+            code_col = "code" if "code" in df.columns else ("id" if "id" in df.columns else None)
+            title_col = (
+                "description"
+                if "description" in df.columns
+                else ("title" if "title" in df.columns else None)
+            )
+            if set_col and code_col and title_col:
+                for _, row in df.iterrows():
+                    enum_set = str(row.get(set_col) or "").strip()
+                    item_title = str(row.get(title_col) or "").strip()
+                    if not enum_set or not item_title:
+                        continue
+                    mapping.setdefault(enum_set, []).append(item_title)
+    except Exception:
+        mapping = {}
+    return mapping
+
+
+def _load_structure_elements_defs() -> dict[str, list[dict[str, str]]]:
+    """Return mapping of structure_key -> list of field defs with titles and types.
+
+    Each field dict contains: {title, data_type, enum_key}
+    """
+    base = Path(__file__).resolve().parents[2] / "dataset" / "contract_types"
+    elems_csv = base / "ISDA_structure_elements.csv"
+    struct_fields: dict[str, list[dict[str, str]]] = {}
+    try:
+        if elems_csv.exists():
+            df = pd.read_csv(elems_csv, encoding="utf-8").fillna("")
+            df.columns = [str(c).strip().lstrip("\ufeff").lower() for c in df.columns]
+            for _, row in df.iterrows():
+                skey = str(row.get("structure_key") or row.get("structure") or "").strip()
+                ftitle = str(row.get("title") or row.get("label") or row.get("name") or "").strip()
+                dtype = str(row.get("data_type") or row.get("type") or "").strip()
+                enum_key = str(
+                    row.get("enum_key") or row.get("enum") or row.get("enum_set") or ""
+                ).strip()
+                if not skey or not ftitle:
+                    continue
+                struct_fields.setdefault(skey, []).append(
+                    {"title": ftitle, "data_type": dtype, "enum_key": enum_key}
+                )
+    except Exception:
+        struct_fields = {}
+    return struct_fields
+
+
+def _load_datapoints_details() -> list[dict[str, Any]]:
+    """Load datapoints with enum_key for enriched reference text.
+
+    Returns list of dicts: {key, title, description, data_type, enum_key}
+    """
+    base = Path(__file__).resolve().parents[2] / "dataset" / "contract_types"
+    datapoints_csv = base / "ISDA_datapoints.csv"
+    items: list[dict[str, Any]] = []
+    try:
+        if datapoints_csv.exists():
+            df = pd.read_csv(datapoints_csv, encoding="utf-8").fillna("")
+            df.columns = [str(c).strip().lstrip("\ufeff").lower() for c in df.columns]
+            for _, row in df.iterrows():
+                items.append(
+                    {
+                        "key": str(row.get("key") or row.get("id") or "").strip(),
+                        "title": str(row.get("title") or "").strip(),
+                        "description": str(row.get("description") or "").strip(),
+                        "data_type": str(row.get("data_type") or row.get("type") or "").strip(),
+                        "enum_key": str(
+                            row.get("enum_key") or row.get("enum") or row.get("enum_set") or ""
+                        ).strip(),
+                    }
+                )
+    except Exception:
+        items = []
+    return [it for it in items if it.get("title")]
+
+
+def _parse_dtype(type_spec: str) -> dict[str, str]:
+    s = (type_spec or "").strip()
+    low = s.lower().replace(" ", "")
+    if low.startswith("list[") and low.endswith("]"):
+        inner = low[5:-1]
+        if inner.startswith("enum"):
+            return {"kind": "list_enum"}
+        if inner.startswith("object"):
+            struct = (
+                inner.split(":", 1)[1]
+                if ":" in inner
+                else inner.split("/", 1)[1]
+                if "/" in inner
+                else ""
+            )
+            return {"kind": "list_object", "struct": struct}
+        return {"kind": "list"}
+    if low.startswith("enum"):
+        return {"kind": "enum"}
+    if low.startswith("object"):
+        struct = low.split(":", 1)[1] if ":" in low else low.split("/", 1)[1] if "/" in low else ""
+        return {"kind": "object", "struct": struct}
+    return {"kind": s or "string"}
+
+
 def _build_isda_reference_text() -> str:
-    """Compose a compact ISDA reference section for the planning prompt."""
-    clauses, datapoints = _load_isda_definitions()
+    """Compose a compact ISDA reference section for the planning prompt.
+
+    Enrich datapoint types by expanding enums and object field structures.
+    """
+    clauses, _ = _load_isda_definitions()
+    enum_titles_map = _load_enum_titles_map()
+    struct_defs = _load_structure_elements_defs()
+    datapoints = _load_datapoints_details()
     lines: list[str] = []
     if clauses:
         lines.append("ISDA CLAUSES (title | description):")
@@ -198,12 +321,39 @@ def _build_isda_reference_text() -> str:
             lines.append(f"- {c.get('title')} | {desc_short}")
         lines.append("")
     if datapoints:
-        lines.append("ISDA DATAPOINTS (title | description | data_type):")
+        lines.append("ISDA DATAPOINTS (title | description | data_type [enriched]):")
         for d in datapoints:
             desc = d.get("description") or ""
             desc_short = desc.replace("\n", " ").strip()
             dtype = d.get("data_type") or ""
-            lines.append(f"- {d.get('title')} | {desc_short} | {dtype}")
+            enum_key = d.get("enum_key") or ""
+            info = _parse_dtype(dtype)
+            enriched = dtype
+            if info.get("kind") in {"enum", "list_enum"}:
+                titles = enum_titles_map.get(enum_key, [])
+                if titles:
+                    enriched = f"{dtype} / {enum_key}: {', '.join(titles)}"
+            elif info.get("kind") in {"object", "list_object"}:
+                struct = info.get("struct") or ""
+                fields = struct_defs.get(struct) or []
+                if fields:
+                    field_parts: list[str] = []
+                    for fld in fields:
+                        ftitle = fld.get("title") or ""
+                        ftype = fld.get("data_type") or ""
+                        finfo = _parse_dtype(ftype)
+                        if finfo.get("kind") in {"enum", "list_enum"}:
+                            fenum = fld.get("enum_key") or ""
+                            ftitles = enum_titles_map.get(fenum, [])
+                            if ftitles:
+                                ftype_disp = f"{ftype} / {fenum}: {', '.join(ftitles)}"
+                            else:
+                                ftype_disp = ftype
+                        else:
+                            ftype_disp = ftype
+                        field_parts.append(f"{ftitle} ({ftype_disp})")
+                    enriched = f"{dtype} — fields: " + "; ".join(field_parts)
+            lines.append(f"- {d.get('title')} | {desc_short} | {enriched}")
         lines.append("")
     if not lines:
         return ""
@@ -615,6 +765,87 @@ def _compose_text_for_fuzzy(row: pd.Series) -> str:
     return "\n".join(text_parts)[:200000]
 
 
+def rating_scale(rating: Any) -> int:
+    """Map S&P/Fitch ratings (AAA..D) to a numeric scale (higher is better).
+
+    Returns 0 when unknown or empty.
+    Scale: D=1, ..., AAA=22.
+    """
+    if rating is None:
+        return 0
+    text = str(rating).strip()
+    if not text:
+        return 0
+    sp_order = [
+        "D",
+        "C",
+        "CC",
+        "CCC-",
+        "CCC",
+        "CCC+",
+        "B-",
+        "B",
+        "B+",
+        "BB-",
+        "BB",
+        "BB+",
+        "BBB-",
+        "BBB",
+        "BBB+",
+        "A-",
+        "A",
+        "A+",
+        "AA-",
+        "AA",
+        "AA+",
+        "AAA",
+    ]
+    rank: dict[str, int] = {name: i + 1 for i, name in enumerate(sp_order)}
+    ru = text.upper()
+    # Direct S&P/Fitch style
+    if ru in rank:
+        return rank[ru]
+
+    # Moody's style mapping (uppercased for comparison):
+    # Aaa -> AAA; Aa1/Aa2/Aa3 -> AA+/AA/AA-; A1/A2/A3 -> A+/A/A-; etc.
+    # Explicit mapping using uppercased Moody's tokens
+    moodys_to_sp = {
+        "AAA": "AAA",
+        # Aa bucket
+        "AA1": "AA+",
+        "AA2": "AA",
+        "AA3": "AA-",
+        # A bucket
+        "A1": "A+",
+        "A2": "A",
+        "A3": "A-",
+        # Baa bucket
+        "BAA1": "BBB+",
+        "BAA2": "BBB",
+        "BAA3": "BBB-",
+        # Ba bucket
+        "BA1": "BB+",
+        "BA2": "BB",
+        "BA3": "BB-",
+        # B bucket
+        "B1": "B+",
+        "B2": "B",
+        "B3": "B-",
+        # Caa bucket
+        "CAA1": "CCC+",
+        "CAA2": "CCC",
+        "CAA3": "CCC-",
+        # Ca and C
+        "CA": "CC",
+        "C": "C",
+    }
+    sp_equiv = moodys_to_sp.get(ru)
+    if sp_equiv and sp_equiv in rank:
+        return rank[sp_equiv]
+
+    return 0
+
+
 STOPWORDS = {
     "the",
     "a",
@@ -844,10 +1075,9 @@ def _safe_eval_expr(expr: str, list_clauses: Any, list_datapoints: Any) -> bool:
     Returns False on any exception.
     """
     try:
-        safe_globals: Dict[str, Any] = {
-            "__builtins__": {},
-        }
-        safe_locals: Dict[str, Any] = {
+        # Note: comprehensions/generators inside eval use the GLOBALS dict for name resolution.
+        # To ensure names are available inside those scopes, register allowed names in globals.
+        allowed: Dict[str, Any] = {
             "list_clauses": list_clauses,
             "list_datapoints": list_datapoints,
             # Selected safe helpers
@@ -856,8 +1086,12 @@ def _safe_eval_expr(expr: str, list_clauses: Any, list_datapoints: Any) -> bool:
             "all": all,
             "set": set,
             "sorted": sorted,
+            "rating_scale": rating_scale,
         }
-        return bool(eval(expr, safe_globals, safe_locals))
+        safe_globals: Dict[str, Any] = {"__builtins__": {}}
+        safe_globals.update(allowed)
+        # Locals are also provided, but comprehensions will primarily see globals
+        return bool(eval(expr, safe_globals, allowed))
     except Exception:
         return False
 
