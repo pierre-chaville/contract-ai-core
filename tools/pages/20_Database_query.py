@@ -98,16 +98,16 @@ SYSTEM_PRIMER = (
     "| contract_date | DATE (YYYY-MM-DD) | Execution date of the contract | 2018-06-15 |\n"
     "| last_amendment_date | DATE (YYYY-MM-DD) | Date of most recent amendment | 2021-11-30 |\n"
     "| number_amendments | INTEGER | Count of amendments applied | 3 |\n"
-    "| status | TEXT | Lifecycle status | Active |\n"
+    "| status | TEXT | Lifecycle status between DRAFT, EXECUTED | EXECUTED |\n"
     "| party_name_1 | TEXT | Legal name of the first party | JPMorgan Chase Bank N.A. |\n"
-    "| party_role_1 | TEXT | Role of the first party | Dealer |\n"
+    "| party_role_1 | TEXT | Role of the first party | Party A |\n"
     "| party_name_2 | TEXT | Legal name of the second party | ACME Corp |\n"
-    "| party_role_2 | TEXT | Role of the second party | Client |\n"
+    "| party_role_2 | TEXT | Role of the second party | Party B, Client |\n"
     "| department | TEXT | Internal department owning the contract | Treasury |\n"
     "| contract_owner | TEXT | Internal owner/responsible person | Jane Doe |\n"
     "| business_purpose | TEXT | Short description of business purpose | Hedging program |\n"
     "| full_text | TEXT | Full OCR/plaintext of the contract | ...long text... |\n"
-    "| clauses_text | JSON | Map of clause_title (or key) -> clause text | {Termination Event: '...'} |\n"
+    "| clauses_text | JSON | Map of clause title -> clause text | {Termination Event: '...'} |\n"
     "| list_clauses | JSON (array) | Clause TITLES present in the contract | [Termination Event, Set-off] |\n"
     "| list_datapoints | JSON (object) | Dictionary of Datapoint title -> value pairs | {'Governing Law': 'English'} |\n"
     "| list_guidelines | JSON | Dictionary of Review guidelines/flags or metadata | {risk: 'medium'} |\n"
@@ -121,6 +121,7 @@ SYSTEM_PRIMER = (
     "'datapoints_filter_expr' uses variable list_datapoints (dict[str, Any]) and should return True/False. "
     "Examples: ('Termination Event' in list_clauses) and (list_datapoints.get('Governing Law') == 'English'). "
     "When comparing credit ratings across contracts, use rating_scale(rating_string) to convert ratings (e.g., 'AAA', 'BB-') into a numeric scale where higher is better, and also the threshold of the datapoint with ratings thresholds. "
+    "If the user selected specific display fields, INCLUDE those fields explicitly in the SQL SELECT in addition to minimal identifiers (e.g., contract_id). "
     "Set 'is_db_query' to true if the question pertains to querying the CONTRACTS table; otherwise false. "
     "Provide 'search_strategy' as a short free-text explanation of the overall approach (SQL filtering, expressions, fuzzy). "
     "Provide 'render_types' as an array of strings, each one of 'graph', 'table', or 'download'. Add 'graph' if the user asks for a chart, and 'table' if the user asks for a table. Use 'download' except if requested otherwise."
@@ -459,6 +460,16 @@ def call_llm_plan(question: str) -> LLMDecision:
         isda_ref = _build_isda_reference_text()
         if isda_ref:
             parts.append(isda_ref)
+        # Inject user-selected fields to nudge the LLM to include them in SELECT
+        try:
+            selected_fields = st.session_state.get("selected_fields") or []
+            if selected_fields:
+                parts.append(
+                    "USER SELECTED FIELDS TO INCLUDE IN SELECT: "
+                    + ", ".join([str(f) for f in selected_fields])
+                )
+        except Exception:
+            pass
         ref_text = "\n\n".join(parts)
         print("ref_text", ref_text)
         if ref_text:
@@ -494,6 +505,16 @@ def call_llm_plan(question: str) -> LLMDecision:
     isda_ref = _build_isda_reference_text()
     if isda_ref:
         parts.append(isda_ref)
+    # Inject user-selected fields to nudge the LLM to include them in SELECT
+    try:
+        selected_fields = st.session_state.get("selected_fields") or []
+        if selected_fields:
+            parts.append(
+                "USER SELECTED FIELDS TO INCLUDE IN SELECT: "
+                + ", ".join([str(f) for f in selected_fields])
+            )
+    except Exception:
+        pass
     ref_text = "\n\n".join(parts)
     if ref_text:
         primer = primer + "\n\n" + ref_text
@@ -1444,6 +1465,42 @@ def page() -> None:
         placeholder="e.g., Show top 10 counterparties by count for ISDA contracts signed after 2016",
     )
 
+    # User-selected display fields (applies to table and CSV download)
+    with st.expander("Display fields (table and CSV)", expanded=False):
+        # Known common columns from CONTRACTS plus JSON columns
+        common_fields = [
+            "contract_id",
+            "contract_number",
+            "contract_type",
+            "contract_type_version",
+            "contract_date",
+            "last_amendment_date",
+            "number_amendments",
+            "status",
+            "party_name_1",
+            "party_role_1",
+            "party_name_2",
+            "party_role_2",
+            "department",
+            "contract_owner",
+            "business_purpose",
+            "list_clauses",
+            "list_datapoints",
+        ]
+        default_fields = [
+            "contract_id",
+            "contract_type",
+            "contract_date",
+            "party_name_1",
+            "party_name_2",
+            "status",
+        ]
+        st.session_state["selected_fields"] = st.multiselect(
+            "Choose columns to show/export",
+            options=common_fields,
+            default=[c for c in default_fields if c in common_fields],
+        )
+
     submit_clicked = st.button("Submit", type="primary")
     if submit_clicked and question.strip():
         st.session_state["_just_submitted"] = True
@@ -1553,8 +1610,18 @@ def page() -> None:
                     st.warning("Aggregation step failed; showing non-aggregated results.")
                     st.exception(e)
 
+        # Apply selected fields for display/export
+        display_df = df
+        sel_fields = st.session_state.get("selected_fields") or []
+        if sel_fields:
+            present = [c for c in sel_fields if c in display_df.columns]
+            if present:
+                display_df = display_df[present]
+            else:
+                st.info("Selected fields not present in results; showing all columns.")
+
         chart_type = decision.graph_type or "bar"
-        render_output(df, chart_type, outputs=decision.render_types)
+        render_output(display_df, chart_type, outputs=decision.render_types)
 
         # LLM-based explanation of results
         with st.spinner("Explaining results..."):
@@ -1666,9 +1733,16 @@ def page() -> None:
                         st.markdown("**Aggregate SQL**")
                         st.code(saved_dec.get("aggregate_sql") or "")
 
+                # Apply current selected fields to saved display as well
+                display_saved = df_saved
+                sel_fields = st.session_state.get("selected_fields") or []
+                if sel_fields:
+                    present = [c for c in sel_fields if c in display_saved.columns]
+                    if present:
+                        display_saved = display_saved[present]
                 chart_type_saved = saved_dec.get("graph_type") or "bar"
                 render_output(
-                    df_saved, chart_type_saved, outputs=(saved_dec.get("render_types") or None)
+                    display_saved, chart_type_saved, outputs=(saved_dec.get("render_types") or None)
                 )
                 if saved_expl:
                     st.markdown("**Explanation**")
