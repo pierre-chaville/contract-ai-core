@@ -109,10 +109,10 @@ SYSTEM_PRIMER = (
     "| full_text | TEXT | Full OCR/plaintext of the contract | ...long text... |\n"
     "| clauses_text | JSON | Map of clause_title (or key) -> clause text | {Termination Event: '...'} |\n"
     "| list_clauses | JSON (array) | Clause TITLES present in the contract | [Termination Event, Set-off] |\n"
-    "| datapoints | JSON (object) | Datapoint title -> value pairs | {'Governing Law': 'English'} |\n"
-    "| guidelines | JSON | Review guidelines/flags or metadata | {risk: 'medium'} |\n"
+    "| list_datapoints | JSON (object) | Dictionary of Datapoint title -> value pairs | {'Governing Law': 'English'} |\n"
+    "| list_guidelines | JSON | Dictionary of Review guidelines/flags or metadata | {risk: 'medium'} |\n"
     "The user will ask a question in English. Your job is to: "
-    "2) Plan in four steps regardless of strategy: (a) SQL to filter by available scalar fields (do NOT rely on list_clauses or datapoints in SQL), (b) optional Python expressions to filter by list_clauses and datapoints, (c) optional fuzzy filtering on the resulting rows by specific fields. d) optional final sql aggregation over the filtered results in-memory; reference the interim rows as table RESULTS; SELECT-only, no DDL/DML, no semicolons."
+    "2) Plan in four steps regardless of strategy: (a) SQL to filter by available scalar fields (do NOT rely on list_clauses or list_datapoints in SQL), (b) optional Python expressions to filter by list_clauses and list_datapoints: in this case include list_clauses and list_datapoints in the SELECT, (c) optional fuzzy filtering on the resulting rows by specific fields. d) optional final sql aggregation over the filtered results in-memory; reference the interim rows as table RESULTS; SELECT-only, no DDL/DML, no semicolons."
     "For full text searches in SQL, use LIKE with a :q parameter on full_text. "
     "Produce a safe SQL SELECT (avoid DDL/DML; no semicolons, no PRAGMAs). ALWAYS include contract_id in the SELECT so downstream steps can map results. Prefer adding a LIMIT 1000 unless the user explicitly asks for all rows. "
     'Provide optional "fuzzy_fields_terms" as a mapping of field -> list of fuzzy terms, and "fuzzy_threshold" (0-100, default 90). '
@@ -665,7 +665,7 @@ def render_output(df: pd.DataFrame, output_type: str, outputs: Optional[List[str
         # If results include contract_id and either list_clauses or datapoints, render expandable rows
         has_contract_id = "contract_id" in df.columns
         has_clauses_list = "list_clauses" in df.columns
-        has_datapoints = "datapoints" in df.columns
+        has_datapoints = "list_datapoints" in df.columns
         if has_contract_id and (has_clauses_list or has_datapoints):
             # Render one expander per contract with detailed clauses/datapoints
             # Limit extremely large outputs
@@ -696,6 +696,8 @@ def render_output(df: pd.DataFrame, output_type: str, outputs: Optional[List[str
                 "party_name_2",
                 "status",
             ]
+            st.subheader("Contract Details")
+
             for _, row in df_view.iterrows():
                 cid = row.get("contract_id")
                 if cid is None:
@@ -728,7 +730,7 @@ def render_output(df: pd.DataFrame, output_type: str, outputs: Optional[List[str
 
                     # Datapoints
                     if has_datapoints:
-                        datapoints_val = _parse_json_like(row.get("datapoints"), {})
+                        datapoints_val = _parse_json_like(row.get("list_datapoints"), {})
                         st.subheader("Datapoints")
                         if isinstance(datapoints_val, dict) and datapoints_val:
                             items = [
@@ -974,7 +976,7 @@ def _ensure_list_fields(
     If missing and contract_id is available, fetch from DB and merge.
     """
     missing_clauses = need_clauses and ("list_clauses" not in df.columns)
-    missing_datapoints = need_datapoints and ("datapoints" not in df.columns)
+    missing_datapoints = need_datapoints and ("list_datapoints" not in df.columns)
     if not (missing_clauses or missing_datapoints):
         return df
     if "contract_id" not in df.columns:
@@ -994,7 +996,7 @@ def _ensure_list_fields(
     if missing_clauses:
         select_cols.append("list_clauses")
     if missing_datapoints:
-        select_cols.append("datapoints")
+        select_cols.append("list_datapoints")
     with sqlite3.connect(DB_PATH) as conn:
         extra = pd.read_sql_query(
             f"SELECT {', '.join(select_cols)} FROM CONTRACTS WHERE contract_id IN ({placeholders})",
@@ -1101,7 +1103,7 @@ def apply_post_expressions(
     clauses_expr: Optional[str],
     datapoints_expr: Optional[str],
 ) -> pd.DataFrame:
-    """Apply optional Python expressions to filter rows using list_clauses/datapoints.
+    """Apply optional Python expressions to filter rows using list_clauses/list_datapoints.
 
     - clauses_expr: expression using list_clauses (list[str], clause TITLES)
     - datapoints_expr: expression using list_datapoints (dict[str, Any])
@@ -1133,7 +1135,7 @@ def apply_post_expressions(
     flags: list[bool] = []
     for _, row in df.iterrows():
         lc = parse_json_val(row.get("list_clauses"), [])
-        dp = parse_json_val(row.get("datapoints"), {})
+        dp = parse_json_val(row.get("list_datapoints"), {})
         ok = True
         if clauses_expr:
             ok = ok and _safe_eval_expr(clauses_expr, lc, dp)

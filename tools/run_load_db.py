@@ -56,8 +56,8 @@ class ContractRecord(Base):
     full_text: Mapped[str] = mapped_column(Text, nullable=False)
     clauses_text: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
     list_clauses: Mapped[list] = mapped_column(JSON, nullable=True, default=list)
-    datapoints: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
-    guidelines: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    list_datapoints: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    list_guidelines: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
 
 
 def _sqlite_url(db_path: str) -> str:
@@ -761,7 +761,7 @@ def load_all(dry_run: bool = False, echo: bool = False) -> None:
                 if paths["datapoints_csv"].exists()
                 else {}
             )
-            datapoints = _transform_datapoints(dataset_root, contract_type, datapoints_raw)
+            list_datapoints = _transform_datapoints(dataset_root, contract_type, datapoints_raw)
 
             def _unwrap_value(v: Any) -> Any:
                 # Common pattern {'value': X, ...}
@@ -803,9 +803,9 @@ def load_all(dry_run: bool = False, echo: bool = False) -> None:
                 "full_text": full_text or "",
                 "clauses_text": clauses_text,
                 "list_clauses": list_clauses,
-                "datapoints": datapoints,
+                "list_datapoints": list_datapoints,
                 # guidelines left empty for now; no source provided in request
-                "guidelines": {},
+                "list_guidelines": {},
             }
 
             upsert_contract(session, payload, dry_run=dry_run)

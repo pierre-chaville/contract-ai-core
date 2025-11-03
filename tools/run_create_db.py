@@ -80,8 +80,8 @@ class ContractRecord(Base):
     full_text: Mapped[str] = mapped_column(Text, nullable=False)
     clauses_text: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
     list_clauses: Mapped[list] = mapped_column(JSON, nullable=True, default=list)
-    datapoints: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
-    guidelines: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    list_datapoints: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
+    list_guidelines: Mapped[dict] = mapped_column(JSON, nullable=False, default=dict)
 
     def __repr__(self) -> str:  # pragma: no cover - representation helper
         return (
